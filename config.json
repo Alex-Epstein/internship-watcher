@@ -1,0 +1,20 @@
+{
+  "filters": {
+    "title_keywords": ["intern", "internship", "co-op", "co op", "coop"],
+    "title_exclude": [],
+    "years": ["2027"]
+  },
+  "firms": [
+    { "name": "Aquatic Capital",        "ats": "greenhouse", "token": "aquaticcapitalmanagement", "verified": true },
+    { "name": "Tudor Investment Group", "ats": "greenhouse", "token": "tudorgroup",                "verified": true },
+    { "name": "Blackedge Capital",      "ats": "greenhouse", "token": "blackedgecapital",          "verified": true },
+    { "name": "Akuna Capital",          "ats": "greenhouse", "token": "akunacapital",              "verified": true },
+    { "name": "Hudson River Trading",   "ats": "greenhouse", "token": "wehrtyou",                  "verified": true },
+    { "name": "Optiver (US)",           "ats": "greenhouse", "token": "optiverus",                 "verified": true },
+    { "name": "Optiver (Campus)",       "ats": "greenhouse", "token": "optiverprivate",            "verified": true },
+    { "name": "Ansatz Capital",         "ats": "lever",      "token": "ansatzcapital",             "verified": true },
+    { "name": "HAP Capital",            "ats": "lever",      "token": "hap-capital",               "verified": true },
+
+    { "name": "EXAMPLE Workday firm - EDIT or DELETE", "ats": "workday", "host": "TENANT.wd5.myworkdayjobs.com", "tenant": "TENANT", "site": "Careers", "locale": "en-US", "enabled": false }
+  ]
+}
