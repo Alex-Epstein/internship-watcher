@@ -15,6 +15,7 @@ GitHub Action). Email goes over SMTP using credentials in environment variables.
 
 import json
 import os
+import re
 import smtplib
 import sys
 import time
@@ -137,29 +138,96 @@ def fetch_workday(firm):
     return out
 
 
+def fetch_github_json(firm):
+    """
+    Poll a community internship-tracker repo that publishes a machine-readable
+    listings.json (the Simplify / Pitt CSC / vanshb03 family format). One source
+    can cover hundreds of companies.
+    Config fields: url (raw listings.json). Optional: cycle_year (e.g. "2027",
+    injected so repo-scoped listings pass the year filter even when the title has
+    no year), seasons (e.g. ["Summer"] to drop Winter/Fall entries).
+    """
+    url = firm["url"]
+    cycle_year = str(firm.get("cycle_year", ""))
+    seasons = [s.lower() for s in firm.get("seasons", [])]
+    r = requests.get(url, headers=HEADERS, timeout=TIMEOUT)
+    r.raise_for_status()
+    out = []
+    for j in r.json():
+        if not isinstance(j, dict):
+            continue
+        if j.get("active") is False or j.get("is_visible") is False:
+            continue
+        title = (j.get("title") or "").strip()
+        company = (j.get("company_name") or j.get("company") or "").strip()
+        locs = j.get("locations") or j.get("location") or []
+        location = ", ".join(str(x) for x in locs) if isinstance(locs, list) else str(locs)
+        link = j.get("url") or j.get("application_link") or ""
+        jid = str(j.get("id") or link or f"{company}|{title}")
+        terms = j.get("terms") or []
+        season_text = ((" ".join(terms) if isinstance(terms, list) else str(terms))
+                       + " " + str(j.get("season") or "")).lower()
+        if seasons and not any(s in season_text for s in seasons):
+            continue
+        out.append({
+            "id": jid,
+            "title": title,
+            "company": company,
+            "location": location,
+            "url": link,
+            "content": "",
+            "year_text": f"{title} {season_text} {cycle_year}",
+        })
+    return out
+
+
 FETCHERS = {
     "greenhouse": fetch_greenhouse,
     "lever": fetch_lever,
     "workday": fetch_workday,
+    "github_json": fetch_github_json,
 }
 
 
 # ----------------------------- filtering ----------------------------------- #
+def _has_term(title, term):
+    """Whole-word match for short abbreviations (ai, ml, cv) so they don't match
+    inside words like 'training' or 'email'; plain substring for longer terms."""
+    term = term.lower()
+    if len(term) <= 3:
+        return re.search(r"\b" + re.escape(term) + r"\b", title) is not None
+    return term in title
+
+
 def is_relevant(job, filters):
     title = job["title"].lower()
 
+    # 1) must look like an internship
     keywords = filters.get("title_keywords", [])
     if keywords and not any(k.lower() in title for k in keywords):
         return False
 
+    # 2) must be in a domain you care about (skip this gate if the list is empty)
+    require = filters.get("title_require_any", [])
+    if require and not any(_has_term(title, t) for t in require):
+        return False
+
+    # 3) drop anything explicitly excluded (PhD / Masters / etc.)
     for bad in filters.get("title_exclude", []):
         if bad.lower() in title:
             return False
 
+    # 4) year must appear in the title (ATS) or the listing's year text (repos)
     years = filters.get("years", [])
     if years:
-        haystack = title + " " + job.get("content", "")
-        if not any(str(y) in haystack for y in years):
+        year_hay = (job.get("year_text") or job["title"]).lower()
+        if not any(str(y) in year_hay for y in years):
+            return False
+
+    # 5) optional location exclusions (e.g. drop overseas offices)
+    location = job.get("location", "").lower()
+    for bad in filters.get("location_exclude", []):
+        if bad.lower() in location:
             return False
 
     return True
@@ -177,9 +245,12 @@ def build_email_html(grouped, baseline=False):
     for firm in sorted(grouped):
         parts.append(f"<h3 style='margin:16px 0 4px'>{escape(firm)}</h3><ul>")
         for job in grouped[firm]:
+            company = job.get("company")
+            label = (f"{escape(company)} &mdash; {escape(job['title'])}"
+                     if company else escape(job["title"]))
             loc = f" &mdash; {escape(job['location'])}" if job["location"] else ""
             parts.append(
-                f"<li><a href='{escape(job['url'])}'>{escape(job['title'])}</a>{loc}</li>"
+                f"<li><a href='{escape(job['url'])}'>{label}</a>{loc}</li>"
             )
         parts.append("</ul>")
     parts.append(
