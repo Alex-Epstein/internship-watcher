@@ -7,7 +7,11 @@
       "computer vision", "research", "data scien", "robotics", "perception",
       "autonomy", "algorithm", "systems", "ai", "ml", "cv"
     ],
-    "title_exclude": ["phd", "ph.d", "doctoral", "masters", "master's"],
+    "title_exclude": [
+      "phd", "ph.d", "doctoral", "masters", "master's",
+      "2026", "fy26", "fy 26",
+      "sales & trading", "sales trading", "sales and trading"
+    ],
     "years": ["2027"],
     "location_exclude": []
   },
@@ -27,7 +31,7 @@
 
     { "name": "Tracker: vanshb03 Summer2027", "ats": "github_json", "url": "https://raw.githubusercontent.com/vanshb03/Summer2027-Internships/dev/.github/scripts/listings.json", "cycle_year": "2027", "seasons": ["Summer"], "verified": true },
 
-    { "name": "Tracker: sharunkumar Summer-Internships", "ats": "github_json", "url": "https://raw.githubusercontent.com/sharunkumar/Summer-Internships/dev/.github/scripts/listings.json", "seasons": ["Summer 2027"], "verified": true },
+    { "name": "Tracker: sharunkumar Summer-Internships", "ats": "github_json", "url": "https://raw.githubusercontent.com/sharunkumar/Summer-Internships/dev/.github/scripts/listings.json", "seasons": ["Summer 2027"], "verified": true, "enabled": false },
 
     { "name": "EXAMPLE Workday firm - EDIT or DELETE", "ats": "workday", "host": "TENANT.wd5.myworkdayjobs.com", "tenant": "TENANT", "site": "Careers", "locale": "en-US", "enabled": false }
   ]
