@@ -2,8 +2,8 @@ name: Internship Watcher
 
 on:
   schedule:
-    # Every 30 minutes (UTC). GitHub may delay scheduled runs by a few minutes.
-    - cron: "*/30 * * * *"
+    # Hourly (UTC). The run now polls 200+ auto-discovered boards.
+    - cron: "0 * * * *"
   workflow_dispatch: {}   # adds a "Run workflow" button so you can test on demand
 
 permissions:
@@ -16,6 +16,7 @@ concurrency:
 jobs:
   watch:
     runs-on: ubuntu-latest
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
         with:
@@ -35,6 +36,8 @@ jobs:
           SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
           SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
           EMAIL_TO: ${{ secrets.EMAIL_TO }}
+          USAJOBS_API_KEY: ${{ secrets.USAJOBS_API_KEY }}
+          USAJOBS_EMAIL: ${{ secrets.USAJOBS_EMAIL }}
         run: python watcher.py
 
       - name: Save state
