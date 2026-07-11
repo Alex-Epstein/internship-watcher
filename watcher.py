@@ -177,6 +177,7 @@ def fetch_github_json(firm):
             "location": location,
             "url": link,
             "content": "",
+            "sponsorship": (j.get("sponsorship") or ""),
             "year_text": f"{title} {season_text} {cycle_year}",
         })
     return out
@@ -341,6 +342,65 @@ def fetch_amazon(firm):
     return out
 
 
+def fetch_github_md(firm):
+    """
+    Parse a tracker repo whose data lives in a markdown TABLE (not listings.json).
+    Handles both common shapes:
+      | Company | Role | Location | [apply](url) | Added |          (sndsh404)
+      | <a href=co><b>Co</b></a> | Position | Loc | $/hr | <a href=url><img></a> | Age |  (speedyapply)
+    Config: url (raw README). Optional: cycle_year (injected so year-less titles
+    still pass the year filter, since the whole repo is one cycle).
+    """
+    r = requests.get(firm["url"], headers=HEADERS, timeout=TIMEOUT)
+    r.raise_for_status()
+    cycle_year = str(firm.get("cycle_year", ""))
+
+    def clean(cell):
+        cell = re.sub(r"<[^>]+>", " ", cell)                 # strip html tags
+        cell = re.sub(r"!?\[([^\]]*)\]\([^)]*\)", r"\1", cell)  # md links -> text
+        cell = re.sub(r"[*`|]", " ", cell)
+        return re.sub(r"\s+", " ", cell).strip()
+
+    out, last_company = [], ""
+    for line in r.text.splitlines():
+        line = line.strip()
+        if not line.startswith("|") or line.count("|") < 4:
+            continue
+        if re.match(r"^\|[\s\-:|]+\|$", line):               # separator row
+            continue
+        cells = [c for c in line.strip("|").split("|")]
+        if len(cells) < 3:
+            continue
+
+        company = clean(cells[0])
+        title = clean(cells[1])
+        location = clean(cells[2]) if len(cells) > 2 else ""
+        if not title or company.lower() in ("company",) or title.lower() in ("position", "role"):
+            continue                                          # header row
+        if company in ("↳", "->", "") and last_company:       # "same as above" marker
+            company = last_company
+        last_company = company or last_company
+
+        # apply link = a URL from the later cells (cell 0 is the company homepage)
+        urls = []
+        for c in cells[1:]:
+            urls += re.findall(r"https?://[^\s\"')<>]+", c)
+        if not urls:
+            continue
+        link = urls[0].rstrip(").,")
+
+        out.append({
+            "id": link,
+            "title": title,
+            "company": company,
+            "location": location,
+            "url": link,
+            "content": "",
+            "year_text": f"{title} {cycle_year}",
+        })
+    return out
+
+
 FETCHERS = {
     "greenhouse": fetch_greenhouse,
     "lever": fetch_lever,
@@ -348,6 +408,7 @@ FETCHERS = {
     "ashby": fetch_ashby,
     "amazon": fetch_amazon,
     "github_json": fetch_github_json,
+    "github_md": fetch_github_md,
     "nuft": fetch_nuft,
     "pagewatch": fetch_pagewatch,
 }
@@ -397,7 +458,33 @@ def is_relevant(job, filters):
     return True
 
 
+def is_clearance(job, filters):
+    """
+    True if a role requires U.S. citizenship or a security clearance -- i.e. roles
+    most applicants are ineligible for. These get their own priority section in
+    the email. Checks the tracker's sponsorship field, the title, and (where the
+    ATS gives us one) the job description.
+    """
+    kws = [k.lower() for k in filters.get("clearance_keywords", [])]
+    if not kws:
+        return False
+    hay = " ".join([
+        job.get("title", "") or "",
+        job.get("sponsorship", "") or "",
+        (job.get("content", "") or "")[:6000],
+    ]).lower()
+    return any(k in hay for k in kws)
+
+
 # ----------------------------- email --------------------------------------- #
+def _job_li(job, with_company=True):
+    company = job.get("company") if with_company else None
+    label = (f"{escape(company)} &mdash; {escape(job['title'])}"
+             if company else escape(job["title"]))
+    loc = f" &mdash; {escape(job['location'])}" if job["location"] else ""
+    return f"<li><a href='{escape(job['url'])}'>{label}</a>{loc}</li>"
+
+
 def build_email_html(grouped, baseline=False):
     intro = (
         "Baseline of currently-open roles. Future emails will contain only "
@@ -406,17 +493,38 @@ def build_email_html(grouped, baseline=False):
         else "These internship postings just opened:"
     )
     parts = [f"<p>{intro}</p>"]
-    for firm in sorted(grouped):
+
+    # Split out clearance / US-citizen-required roles -- fewer people can apply
+    # to these, so they lead the email.
+    cleared, rest = [], {}
+    for firm in grouped:
+        for j in grouped[firm]:
+            if j.get("clearance"):
+                j = dict(j)
+                j.setdefault("company", firm)
+                cleared.append(j)
+            else:
+                rest.setdefault(firm, []).append(j)
+
+    if cleared:
+        parts.append(
+            "<div style='border-left:4px solid #b7791f;padding:6px 12px;margin:14px 0;"
+            "background:#fffbeb'>"
+            f"<h3 style='margin:4px 0'>US Citizen / Clearance required &mdash; "
+            f"{len(cleared)} role(s)</h3>"
+            "<p style='margin:2px 0;color:#666;font-size:12px'>Most applicants are "
+            "ineligible for these. You are not.</p><ul>"
+        )
+        for j in cleared:
+            parts.append(_job_li(j))
+        parts.append("</ul></div>")
+
+    for firm in sorted(rest):
         parts.append(f"<h3 style='margin:16px 0 4px'>{escape(firm)}</h3><ul>")
-        for job in grouped[firm]:
-            company = job.get("company")
-            label = (f"{escape(company)} &mdash; {escape(job['title'])}"
-                     if company else escape(job["title"]))
-            loc = f" &mdash; {escape(job['location'])}" if job["location"] else ""
-            parts.append(
-                f"<li><a href='{escape(job['url'])}'>{label}</a>{loc}</li>"
-            )
+        for job in rest[firm]:
+            parts.append(_job_li(job))
         parts.append("</ul>")
+
     parts.append(
         "<p style='color:#888;font-size:12px'>Sent automatically by your "
         "internship watcher.</p>"
@@ -476,7 +584,11 @@ def main():
             continue
 
         relevant = [j for j in jobs if j.get("bypass_filters") or is_relevant(j, filters)]
-        print(f"  ok {name}: {len(jobs)} jobs, {len(relevant)} relevant")
+        for j in relevant:
+            j["clearance"] = is_clearance(j, filters)
+        n_clear = sum(1 for j in relevant if j["clearance"])
+        print(f"  ok {name}: {len(jobs)} jobs, {len(relevant)} relevant"
+              + (f" ({n_clear} clearance/US-citizen)" if n_clear else ""))
         for j in relevant:
             url = (j.get("url") or "").strip().lower()
             gkey = url if url else f"{name}:{j['id']}"
