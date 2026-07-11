@@ -183,25 +183,6 @@ def fetch_github_json(firm):
     return out
 
 
-def _classify_board_url(u):
-    """Turn a greenhouse/lever/workday URL into a pollable source dict, or None."""
-    if "lever.co/" in u:
-        m = re.search(r"lever\.co/([A-Za-z0-9\-_]+)", u)
-        return {"ats": "lever", "token": m.group(1)} if m else None
-    if "greenhouse.io" in u:
-        m = re.search(r"[?&]for=([A-Za-z0-9\-_]+)", u) or re.search(r"greenhouse\.io/([A-Za-z0-9\-_]+)", u)
-        if m and m.group(1) not in ("embed", "job_board", "v1"):
-            return {"ats": "greenhouse", "token": m.group(1)}
-        return None
-    if "myworkdayjobs.com" in u:
-        m = re.search(r"https?://([^/]*myworkdayjobs\.com)/(?:[a-z]{2}-[A-Z]{2}/)?([^/?#]+)", u)
-        if m:
-            host = m.group(1)
-            return {"ats": "workday", "host": host, "tenant": host.split(".")[0],
-                    "site": m.group(2), "locale": "en-US"}
-    return None
-
-
 def fetch_nuft(firm):
     """
     Meta-source: read the NUFT quant-internships README (markdown), extract every
@@ -401,14 +382,180 @@ def fetch_github_md(firm):
     return out
 
 
+def fetch_smartrecruiters(firm):
+    token = firm["token"]
+    url = f"https://api.smartrecruiters.com/v1/companies/{token}/postings?limit=100"
+    r = requests.get(url, headers=HEADERS, timeout=TIMEOUT)
+    r.raise_for_status()
+    out = []
+    for j in r.json().get("content", []):
+        loc = j.get("location", {}) or {}
+        out.append({
+            "id": str(j.get("id", "")),
+            "title": j.get("name", "") or "",
+            "location": ", ".join(x for x in [loc.get("city"), loc.get("region"),
+                                              loc.get("country")] if x),
+            "url": f"https://jobs.smartrecruiters.com/{token}/{j.get('id','')}",
+            "content": "",
+        })
+    return out
+
+
+def fetch_workable(firm):
+    token = firm["token"]
+    url = f"https://apply.workable.com/api/v1/widget/accounts/{token}?details=true"
+    r = requests.get(url, headers=HEADERS, timeout=TIMEOUT)
+    r.raise_for_status()
+    out = []
+    for j in r.json().get("jobs", []):
+        out.append({
+            "id": str(j.get("shortcode") or j.get("id") or ""),
+            "title": j.get("title", "") or "",
+            "location": ", ".join(x for x in [j.get("city"), j.get("state"),
+                                              j.get("country")] if x),
+            "url": j.get("url") or j.get("application_url") or "",
+            "content": (j.get("description", "") or "").lower(),
+        })
+    return out
+
+
+def _classify_board_url(u):
+    """Turn any apply URL into a pollable board spec, or None."""
+    if "jobs.lever.co/" in u:
+        m = re.search(r"lever\.co/([A-Za-z0-9\-_.]+)", u)
+        return {"ats": "lever", "token": m.group(1)} if m else None
+    if "greenhouse.io" in u:
+        m = (re.search(r"[?&]for=([A-Za-z0-9\-_.]+)", u)
+             or re.search(r"greenhouse\.io/([A-Za-z0-9\-_.]+)", u))
+        if m and m.group(1) not in ("embed", "job_board", "v1", "boards"):
+            return {"ats": "greenhouse", "token": m.group(1)}
+        return None
+    if "jobs.ashbyhq.com/" in u:
+        m = re.search(r"jobs\.ashbyhq\.com/([A-Za-z0-9\-_.]+)", u)
+        return {"ats": "ashby", "token": m.group(1)} if m else None
+    if "myworkdayjobs.com" in u:
+        m = re.search(r"https?://([^/]*myworkdayjobs\.com)/(?:[a-z]{2}-[A-Z]{2}/)?([^/?#]+)", u)
+        if m:
+            host = m.group(1)
+            site = m.group(2)
+            if site.lower() in ("job", "jobs"):
+                return None
+            return {"ats": "workday", "host": host, "tenant": host.split(".")[0],
+                    "site": site, "locale": "en-US", "search_text": "intern"}
+        return None
+    if "smartrecruiters.com/" in u and "/api" not in u:
+        m = re.search(r"smartrecruiters\.com/([A-Za-z0-9\-_.]+)", u)
+        if m and m.group(1) not in ("api",):
+            return {"ats": "smartrecruiters", "token": m.group(1)}
+        return None
+    if "apply.workable.com/" in u:
+        m = re.search(r"apply\.workable\.com/([A-Za-z0-9\-_.]+)", u)
+        if m and m.group(1) not in ("api", "j"):
+            return {"ats": "workable", "token": m.group(1)}
+    return None
+
+
+def fetch_autodiscover(firm):
+    """
+    THE self-expanding source. Reads the tracker repos, harvests every apply URL,
+    works out which ATS board each one belongs to, then polls that company's FULL
+    board directly. Two big wins over reading the trackers alone:
+      1. you see ALL of a company's intern roles, not just the one row a tracker listed
+      2. you see them the hour they post, instead of waiting for a maintainer
+    It grows by itself: any company a tracker ever adds gets polled from then on.
+    """
+    boards, out = {}, []
+    for src in firm.get("sources", []):
+        try:
+            r = requests.get(src, headers=HEADERS, timeout=TIMEOUT)
+            r.raise_for_status()
+            text = r.text
+        except Exception as e:  # noqa: BLE001
+            print(f"    autodiscover: source failed ({e}) {src[:60]}")
+            continue
+        for u in re.findall(r"https?://[^\s\"'<>)\]\\]+", text):
+            c = _classify_board_url(u)
+            if not c:
+                continue
+            key = (c["ats"], c.get("token") or c.get("host"))
+            if key not in boards:
+                c["name"] = (c.get("token") or c.get("tenant") or "board")
+                boards[key] = c
+
+    print(f"    autodiscover: {len(boards)} boards found across trackers")
+    ok = 0
+    for (ats, _), b in boards.items():
+        sub = FETCHERS.get(ats)
+        if not sub:
+            continue
+        try:
+            jobs = sub(b)
+        except Exception:  # noqa: BLE001 -- dead/renamed boards are expected; stay quiet
+            continue
+        ok += 1
+        for j in jobs:
+            j.setdefault("company", b["name"])
+            out.append(j)
+        time.sleep(0.15)
+    print(f"    autodiscover: {ok}/{len(boards)} boards polled OK, {len(out)} raw postings")
+    return out
+
+
+def fetch_usajobs(firm):
+    """
+    USAJOBS = every federal internship & research opening in one API: NASA, DOE
+    national labs, NSA, Army/Navy research labs, Pathways. Needs a FREE API key
+    (https://developer.usajobs.gov/apirequest/), stored as repo secrets
+    USAJOBS_API_KEY and USAJOBS_EMAIL. Skipped with a note if unset.
+    """
+    key = os.environ.get("USAJOBS_API_KEY")
+    email = os.environ.get("USAJOBS_EMAIL")
+    if not (key and email):
+        raise RuntimeError(
+            "no USAJOBS_API_KEY/USAJOBS_EMAIL secret set -- get a free key at "
+            "developer.usajobs.gov/apirequest to enable federal + NASA/DOE roles")
+    h = {"Host": "data.usajobs.gov", "User-Agent": email, "Authorization-Key": key}
+    out, seen_ids = [], set()
+    for kw in firm.get("keywords", ["student intern software"]):
+        try:
+            r = requests.get("https://data.usajobs.gov/api/search",
+                             params={"Keyword": kw, "ResultsPerPage": 250},
+                             headers=h, timeout=TIMEOUT)
+            r.raise_for_status()
+        except Exception as e:  # noqa: BLE001
+            print(f"    usajobs '{kw}' failed: {e}")
+            continue
+        for it in r.json().get("SearchResult", {}).get("SearchResultItems", []):
+            d = it.get("MatchedObjectDescriptor", {}) or {}
+            jid = str(it.get("MatchedObjectId") or d.get("PositionID") or "")
+            if jid in seen_ids:
+                continue
+            seen_ids.add(jid)
+            locs = d.get("PositionLocation", []) or []
+            out.append({
+                "id": jid,
+                "title": d.get("PositionTitle", "") or "",
+                "company": (d.get("OrganizationName") or "Federal"),
+                "location": "; ".join(l.get("LocationName", "") for l in locs[:3]),
+                "url": d.get("PositionURI", "") or "",
+                "content": (d.get("QualificationSummary", "") or "").lower(),
+            })
+        time.sleep(0.3)
+    return out
+
+
 FETCHERS = {
     "greenhouse": fetch_greenhouse,
     "lever": fetch_lever,
     "workday": fetch_workday,
     "ashby": fetch_ashby,
+    "smartrecruiters": fetch_smartrecruiters,
+    "workable": fetch_workable,
     "amazon": fetch_amazon,
+    "usajobs": fetch_usajobs,
     "github_json": fetch_github_json,
     "github_md": fetch_github_md,
+    "autodiscover": fetch_autodiscover,
     "nuft": fetch_nuft,
     "pagewatch": fetch_pagewatch,
 }
