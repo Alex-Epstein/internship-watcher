@@ -414,6 +414,12 @@ FETCHERS = {
 }
 
 
+US_STATE_RE = re.compile(
+    r",\s*(al|ak|az|ar|ca|co|ct|dc|de|fl|ga|hi|ia|id|il|in|ks|ky|la|ma|md|me|mi|mn|"
+    r"mo|ms|mt|nc|nd|ne|nh|nj|nm|nv|ny|oh|ok|or|pa|ri|sc|sd|tn|tx|ut|va|vt|wa|wi|wv|wy)\b"
+)
+
+
 # ----------------------------- filtering ----------------------------------- #
 def _has_term(title, term):
     """Whole-word match for short abbreviations (ai, ml, cv) so they don't match
@@ -449,10 +455,14 @@ def is_relevant(job, filters):
         if not any(str(y) in year_hay for y in years):
             return False
 
-    # 5) optional location exclusions (e.g. drop overseas offices)
-    location = job.get("location", "").lower()
-    for bad in filters.get("location_exclude", []):
-        if bad.lower() in location:
+    # 5) location: drop foreign-only postings, but KEEP anything that also lists a
+    #    US location (e.g. "Chicago; London" stays, "Amsterdam; Mumbai" goes)
+    location = (job.get("location") or "").lower()
+    excl = filters.get("location_exclude", [])
+    if location and excl and any(b.lower() in location for b in excl):
+        us = filters.get("location_us_markers", [])
+        has_us = any(m.lower() in location for m in us) or bool(US_STATE_RE.search(location))
+        if not has_us:
             return False
 
     return True
@@ -568,6 +578,7 @@ def main():
 
     current = {}        # key -> job (everything relevant right now)
     grouped_new = {}    # firm -> [jobs] (relevant AND not seen before)
+    sigs_this_run = set()  # company|title|location, for cross-source dedup
 
     for firm in config.get("firms", []):
         if not firm.get("enabled", True):
@@ -592,8 +603,15 @@ def main():
         for j in relevant:
             url = (j.get("url") or "").strip().lower()
             gkey = url if url else f"{name}:{j['id']}"
-            if gkey in current:   # already claimed by an earlier source this run
+            # secondary dedup: same company+title+location from a different URL
+            sig = "|".join([
+                (j.get("company") or name).lower().strip(),
+                (j.get("title") or "").lower().strip(),
+                (j.get("location") or "").lower().strip(),
+            ])
+            if gkey in current or (not j.get("bypass_filters") and sig in sigs_this_run):
                 continue
+            sigs_this_run.add(sig)
             current[gkey] = {"src": name, "job": j}
             if gkey not in seen:
                 grouped_new.setdefault(name, []).append(j)
