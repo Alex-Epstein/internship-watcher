@@ -97,7 +97,23 @@
     "years": [
       "2027"
     ],
-    "location_exclude": []
+    "location_exclude": [],
+    "clearance_keywords": [
+      "u.s. citizenship is required",
+      "us citizenship is required",
+      "security clearance",
+      "clearance",
+      "ts/sci",
+      "top secret",
+      "secret clearance",
+      "polygraph",
+      "u.s. citizen",
+      "us citizen",
+      "united states citizen",
+      "itar",
+      "doe q",
+      "public trust"
+    ]
   },
   "firms": [
     {
@@ -277,6 +293,132 @@
         "intern"
       ],
       "note": "best-effort"
+    },
+    {
+      "name": "Anduril",
+      "ats": "greenhouse",
+      "token": "andurilindustries",
+      "verified": true
+    },
+    {
+      "name": "Palantir",
+      "ats": "lever",
+      "token": "palantir",
+      "verified": true
+    },
+    {
+      "name": "Shield AI",
+      "ats": "lever",
+      "token": "shieldai",
+      "verified": true
+    },
+    {
+      "name": "Page: Lockheed Martin (search)",
+      "ats": "pagewatch",
+      "url": "https://www.lockheedmartinjobs.com/search-jobs",
+      "watch_keywords": [
+        "2027",
+        "intern"
+      ]
+    },
+    {
+      "name": "Page: L3Harris (new grads & interns)",
+      "ats": "pagewatch",
+      "url": "https://careers.l3harris.com/en/new-grads-and-interns",
+      "watch_keywords": [
+        "2027",
+        "intern"
+      ]
+    },
+    {
+      "name": "Page: Leidos careers",
+      "ats": "pagewatch",
+      "url": "https://careers.leidos.com/",
+      "watch_keywords": [
+        "2027",
+        "intern"
+      ]
+    },
+    {
+      "name": "Page: Booz Allen careers",
+      "ats": "pagewatch",
+      "url": "https://www.boozallen.com/careers.html",
+      "watch_keywords": [
+        "2027",
+        "intern"
+      ]
+    },
+    {
+      "name": "Page: General Dynamics Mission Systems",
+      "ats": "pagewatch",
+      "url": "https://careers-gdms.icims.com/jobs/search?ss=1&searchKeyword=intern",
+      "watch_keywords": [
+        "2027",
+        "intern"
+      ]
+    },
+    {
+      "name": "Page: MIT Lincoln Laboratory",
+      "ats": "pagewatch",
+      "url": "https://www.ll.mit.edu/careers/entry-professionals/internships-cooperative-programs",
+      "watch_keywords": [
+        "2027",
+        "apply"
+      ]
+    },
+    {
+      "name": "Page: Johns Hopkins APL",
+      "ats": "pagewatch",
+      "url": "https://www.jhuapl.edu/careers/internships",
+      "watch_keywords": [
+        "2027",
+        "apply"
+      ]
+    },
+    {
+      "name": "Page: GTRI student assistant roles",
+      "ats": "pagewatch",
+      "url": "https://careers.gatech.edu/",
+      "watch_keywords": [
+        "gtri",
+        "student assistant",
+        "intern"
+      ]
+    },
+    {
+      "name": "Page: MITRE students",
+      "ats": "pagewatch",
+      "url": "https://www.mitre.org/careers/student-programs",
+      "watch_keywords": [
+        "2027",
+        "intern"
+      ]
+    },
+    {
+      "name": "Flow Traders",
+      "ats": "greenhouse",
+      "token": "flowtraders",
+      "verified": true
+    },
+    {
+      "name": "IMC Trading",
+      "ats": "greenhouse",
+      "token": "imc",
+      "verified": true
+    },
+    {
+      "name": "Tracker: sndsh404 Summer2027 (quant-heavy)",
+      "ats": "github_md",
+      "url": "https://raw.githubusercontent.com/sndsh404/summer-2027-internships/main/README.md",
+      "cycle_year": "2027",
+      "verified": true
+    },
+    {
+      "name": "Tracker: speedyapply 2027 SWE (US)",
+      "ats": "github_md",
+      "url": "https://raw.githubusercontent.com/speedyapply/2027-SWE-College-Jobs/main/README.md",
+      "cycle_year": "2027",
+      "verified": true
     },
     {
       "name": "Tracker: vanshb03 Summer2027",
