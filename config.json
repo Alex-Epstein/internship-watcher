@@ -206,6 +206,79 @@
       "verified": true
     },
     {
+      "name": "Amazon (AWS / Robotics / all)",
+      "ats": "amazon",
+      "query": "intern",
+      "note": "undocumented endpoint; skips gracefully if blocked"
+    },
+    {
+      "name": "OpenAI",
+      "ats": "ashby",
+      "token": "openai",
+      "verified": true
+    },
+    {
+      "name": "Anthropic",
+      "ats": "greenhouse",
+      "token": "anthropic",
+      "verified": true
+    },
+    {
+      "name": "Databricks",
+      "ats": "greenhouse",
+      "token": "databricks"
+    },
+    {
+      "name": "Page: Google Careers (interns)",
+      "ats": "pagewatch",
+      "url": "https://www.google.com/about/careers/applications/jobs/results?employment_type=INTERN",
+      "watch_keywords": [
+        "2027",
+        "intern"
+      ],
+      "note": "JS-heavy SPA - weak signal; also set Google's own job alert"
+    },
+    {
+      "name": "Page: Meta Careers (internships)",
+      "ats": "pagewatch",
+      "url": "https://www.metacareers.com/jobs",
+      "watch_keywords": [
+        "2027",
+        "intern"
+      ],
+      "note": "JS-heavy SPA - weak signal; also set Meta's own job alert"
+    },
+    {
+      "name": "Page: Apple Jobs",
+      "ats": "pagewatch",
+      "url": "https://jobs.apple.com/en-us/search?team=internships-STDNT-INTRN",
+      "watch_keywords": [
+        "2027",
+        "intern"
+      ],
+      "note": "best-effort"
+    },
+    {
+      "name": "Page: Microsoft Careers",
+      "ats": "pagewatch",
+      "url": "https://careers.microsoft.com/v2/global/en/students.html",
+      "watch_keywords": [
+        "2027",
+        "intern"
+      ],
+      "note": "best-effort; API is bearer-token gated"
+    },
+    {
+      "name": "Page: Netflix Jobs",
+      "ats": "pagewatch",
+      "url": "https://explore.jobs.netflix.net/careers",
+      "watch_keywords": [
+        "2027",
+        "intern"
+      ],
+      "note": "best-effort"
+    },
+    {
       "name": "Tracker: vanshb03 Summer2027",
       "ats": "github_json",
       "url": "https://raw.githubusercontent.com/vanshb03/Summer2027-Internships/dev/.github/scripts/listings.json",
