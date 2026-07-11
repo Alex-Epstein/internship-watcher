@@ -112,7 +112,8 @@ def fetch_workday(firm):
     while True:
         r = requests.post(
             api,
-            json={"appliedFacets": {}, "limit": limit, "offset": offset, "searchText": ""},
+            json={"appliedFacets": {}, "limit": limit, "offset": offset,
+                  "searchText": firm.get("search_text", "")},
             headers=HEADERS,
             timeout=TIMEOUT,
         )
@@ -181,11 +182,174 @@ def fetch_github_json(firm):
     return out
 
 
+def _classify_board_url(u):
+    """Turn a greenhouse/lever/workday URL into a pollable source dict, or None."""
+    if "lever.co/" in u:
+        m = re.search(r"lever\.co/([A-Za-z0-9\-_]+)", u)
+        return {"ats": "lever", "token": m.group(1)} if m else None
+    if "greenhouse.io" in u:
+        m = re.search(r"[?&]for=([A-Za-z0-9\-_]+)", u) or re.search(r"greenhouse\.io/([A-Za-z0-9\-_]+)", u)
+        if m and m.group(1) not in ("embed", "job_board", "v1"):
+            return {"ats": "greenhouse", "token": m.group(1)}
+        return None
+    if "myworkdayjobs.com" in u:
+        m = re.search(r"https?://([^/]*myworkdayjobs\.com)/(?:[a-z]{2}-[A-Z]{2}/)?([^/?#]+)", u)
+        if m:
+            host = m.group(1)
+            return {"ats": "workday", "host": host, "tenant": host.split(".")[0],
+                    "site": m.group(2), "locale": "en-US"}
+    return None
+
+
+def fetch_nuft(firm):
+    """
+    Meta-source: read the NUFT quant-internships README (markdown), extract every
+    firm's Greenhouse/Lever/Workday board link, and poll each one. As NUFT adds
+    apply links when firms open roles, this picks them up automatically.
+    Note: firms whose only NUFT link is a plain marketing site (Jane Street, DE
+    Shaw, SIG, etc.) can't be polled until a real board link appears for them.
+    """
+    r = requests.get(firm["url"], headers=HEADERS, timeout=TIMEOUT)
+    r.raise_for_status()
+    text = r.text
+    # split into firm sections by markdown headers
+    sections, name, buf = [], None, []
+    for ln in text.splitlines():
+        h = re.match(r"^#{1,4}\s+(.*\S)\s*$", ln)
+        if h:
+            if name:
+                sections.append((name, "\n".join(buf)))
+            name = re.sub(r"[#*`]", "", h.group(1)).strip()
+            buf = []
+        else:
+            buf.append(ln)
+    if name:
+        sections.append((name, "\n".join(buf)))
+
+    skip = {"table of contents", "contributing", "license", "resources", "faq"}
+    boards, seen = [], set()
+    for sect_name, body in sections:
+        if sect_name.lower() in skip:
+            continue
+        for u in re.findall(r"\((https?://[^)]+)\)", body):
+            c = _classify_board_url(u)
+            if not c:
+                continue
+            key = (c["ats"], c.get("token") or c.get("host"))
+            if key in seen:
+                continue
+            seen.add(key)
+            c["name"] = sect_name
+            boards.append(c)
+
+    out = []
+    for b in boards:
+        sub = FETCHERS.get(b["ats"])
+        if not sub:
+            continue
+        try:
+            jobs = sub(b)
+        except Exception as e:  # noqa: BLE001 -- skip a bad board, keep going
+            print(f"    NUFT/{b['name']} ({b['ats']}) skipped: {e}")
+            continue
+        for j in jobs:
+            j["company"] = b["name"]
+            out.append(j)
+    print(f"    NUFT: discovered {len(boards)} pollable boards")
+    return out
+
+
+def fetch_pagewatch(firm):
+    """
+    Change-detector for feed-less pages (REUs, NASA OSTEM, lab portals). Fetches
+    the page, reduces it to text, and alerts when it changes. With watch_keywords
+    (e.g. ["2027","apply"]), it alerts specifically when those words appear/change
+    on the page -- i.e. "tell me when applications open." Always bypasses the
+    intern/domain/year filters.
+    """
+    import hashlib
+    r = requests.get(firm["url"], headers=HEADERS, timeout=TIMEOUT)
+    r.raise_for_status()
+    html = re.sub(r"(?is)<(script|style).*?</\1>", " ", r.text)
+    text = re.sub(r"\s+", " ", re.sub(r"(?s)<[^>]+>", " ", html)).strip().lower()
+    kws = [k.lower() for k in firm.get("watch_keywords", [])]
+    signal = ",".join(sorted(k for k in kws if k in text)) if kws else text
+    digest = hashlib.sha256(signal.encode("utf-8")).hexdigest()[:16]
+    return [{
+        "id": digest,
+        "title": f"Page changed - check {firm.get('name', 'page')} (may mean applications opened)",
+        "location": "",
+        "url": firm["url"],
+        "content": "",
+        "bypass_filters": True,
+    }]
+
+
+def fetch_ashby(firm):
+    """
+    Ashby's public job-board API. Used by many AI labs / top startups (OpenAI etc).
+    Token = the slug in jobs.ashbyhq.com/{token}
+    """
+    token = firm["token"]
+    url = f"https://api.ashbyhq.com/posting-api/job-board/{token}?includeCompensation=false"
+    r = requests.get(url, headers=HEADERS, timeout=TIMEOUT)
+    r.raise_for_status()
+    out = []
+    for j in r.json().get("jobs", []):
+        out.append({
+            "id": str(j.get("id", "")),
+            "title": j.get("title", "") or "",
+            "location": j.get("location", "") or "",
+            "url": j.get("jobUrl") or j.get("applyUrl") or "",
+            "content": (j.get("descriptionPlain", "") or "").lower(),
+        })
+    return out
+
+
+def fetch_amazon(firm):
+    """
+    Amazon publishes no official jobs API; this calls the same undocumented
+    endpoint amazon.jobs itself uses. Best-effort: if Amazon changes or blocks it,
+    this source is simply skipped and logged (never crashes the run).
+    Covers AWS, Amazon Robotics, Leo, etc. -- all under one board.
+    """
+    base = "https://www.amazon.jobs/en/search.json"
+    query = firm.get("query", "intern")
+    out, offset, limit = [], 0, 100
+    for _ in range(8):  # page cap
+        r = requests.get(base, params={
+            "base_query": query, "offset": offset,
+            "result_limit": limit, "sort": "recent",
+        }, headers=HEADERS, timeout=TIMEOUT)
+        r.raise_for_status()
+        data = r.json()
+        jobs = data.get("jobs", []) or []
+        for j in jobs:
+            path = j.get("job_path", "") or ""
+            out.append({
+                "id": str(j.get("id_icims") or j.get("id") or path),
+                "title": j.get("title", "") or "",
+                "location": (j.get("normalized_location") or j.get("location") or ""),
+                "url": f"https://www.amazon.jobs{path}" if path else base,
+                "content": (j.get("description", "") or "").lower(),
+            })
+        total = data.get("hits", 0) or 0
+        offset += limit
+        if not jobs or offset >= total:
+            break
+        time.sleep(0.3)
+    return out
+
+
 FETCHERS = {
     "greenhouse": fetch_greenhouse,
     "lever": fetch_lever,
     "workday": fetch_workday,
+    "ashby": fetch_ashby,
+    "amazon": fetch_amazon,
     "github_json": fetch_github_json,
+    "nuft": fetch_nuft,
+    "pagewatch": fetch_pagewatch,
 }
 
 
@@ -311,24 +475,27 @@ def main():
             print(f"  x {name} skipped: {e}")
             continue
 
-        relevant = [j for j in jobs if is_relevant(j, filters)]
+        relevant = [j for j in jobs if j.get("bypass_filters") or is_relevant(j, filters)]
         print(f"  ok {name}: {len(jobs)} jobs, {len(relevant)} relevant")
         for j in relevant:
-            key = f"{name}:{j['id']}"
-            current[key] = j
-            if key not in seen:
+            url = (j.get("url") or "").strip().lower()
+            gkey = url if url else f"{name}:{j['id']}"
+            if gkey in current:   # already claimed by an earlier source this run
+                continue
+            current[gkey] = {"src": name, "job": j}
+            if gkey not in seen:
                 grouped_new.setdefault(name, []).append(j)
         time.sleep(0.3)  # be polite between firms
 
     # Remember everything currently relevant (merge so closed roles stay "seen")
     new_seen = dict(seen)
-    for key, j in current.items():
-        new_seen[key] = {"title": j["title"], "url": j["url"]}
+    for gkey, rec in current.items():
+        new_seen[gkey] = {"title": rec["job"]["title"], "url": rec["job"].get("url", "")}
 
     if first_run:
         grouped = {}
-        for key, j in current.items():
-            grouped.setdefault(key.split(":", 1)[0], []).append(j)
+        for gkey, rec in current.items():
+            grouped.setdefault(rec["src"], []).append(rec["job"])
         if grouped:
             send_email(
                 f"[Internship Watcher] Baseline: {len(current)} open role(s)",
