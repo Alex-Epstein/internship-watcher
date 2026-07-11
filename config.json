@@ -116,42 +116,7 @@
     "years": [
       "2027"
     ],
-    "location_exclude": [
-      "india",
-      "mumbai",
-      "bangalore",
-      "delhi",
-      "netherlands",
-      "amsterdam",
-      "china",
-      "shanghai",
-      "beijing",
-      "singapore",
-      "japan",
-      "tokyo",
-      "hong kong",
-      "korea",
-      "taiwan",
-      "israel",
-      "germany",
-      "france",
-      "costa rica",
-      "brazil",
-      "mexico",
-      "victoria, aus",
-      "aus)",
-      ", aus",
-      "irl",
-      "ireland",
-      "dublin",
-      "canada",
-      "toronto",
-      "montreal",
-      "vancouver",
-      "ottawa",
-      "united kingdom",
-      "belfast"
-    ],
+    "location_exclude": [],
     "clearance_keywords": [
       "u.s. citizenship is required",
       "us citizenship is required",
@@ -168,46 +133,7 @@
       "doe q",
       "public trust"
     ],
-    "location_us_markers": [
-      "united states",
-      "usa",
-      "u.s.",
-      "chicago",
-      "new york",
-      "boston",
-      "san francisco",
-      "seattle",
-      "austin",
-      "miami",
-      "houston",
-      "atlanta",
-      "dallas",
-      "los angeles",
-      "san jose",
-      "palo alto",
-      "mountain view",
-      "denver",
-      "philadelphia",
-      "bala cynwyd",
-      "jupiter",
-      "greenwich",
-      "mclean",
-      "plano",
-      "arlington",
-      "chantilly",
-      "reston",
-      "kent",
-      "menlo park",
-      "san mateo",
-      "santa clara",
-      "sunnyvale",
-      "irvine",
-      "costa mesa",
-      "el segundo",
-      "cambridge",
-      "redwood city",
-      "stamford"
-    ]
+    "location_us_markers": []
   },
   "firms": [
     {
@@ -499,6 +425,84 @@
       "ats": "greenhouse",
       "token": "imc",
       "verified": true
+    },
+    {
+      "name": "AUTO-DISCOVER (all boards found in trackers)",
+      "ats": "autodiscover",
+      "sources": [
+        "https://raw.githubusercontent.com/vanshb03/Summer2027-Internships/dev/.github/scripts/listings.json",
+        "https://raw.githubusercontent.com/sndsh404/summer-2027-internships/main/README.md",
+        "https://raw.githubusercontent.com/speedyapply/2027-SWE-College-Jobs/main/README.md",
+        "https://raw.githubusercontent.com/speedyapply/2027-SWE-College-Jobs/main/INTERN_INTL.md",
+        "https://raw.githubusercontent.com/northwesternfintech/2027QuantInternships/main/README.md"
+      ]
+    },
+    {
+      "name": "USAJOBS (NASA / DOE labs / NSA / federal research)",
+      "ats": "usajobs",
+      "keywords": [
+        "software intern",
+        "student trainee computer science",
+        "research intern",
+        "machine learning intern",
+        "data science intern",
+        "pathways intern engineering"
+      ],
+      "note": "needs free USAJOBS_API_KEY + USAJOBS_EMAIL secrets"
+    },
+    {
+      "name": "Page: NSF ETAP (all NSF REUs)",
+      "ats": "pagewatch",
+      "url": "https://etap.nsf.gov/",
+      "watch_keywords": [
+        "2027",
+        "apply",
+        "open"
+      ]
+    },
+    {
+      "name": "Page: Pathways to Science (REU database)",
+      "ats": "pagewatch",
+      "url": "https://www.pathwaystoscience.org/",
+      "watch_keywords": [
+        "summer 2027",
+        "2027"
+      ]
+    },
+    {
+      "name": "Page: karanwxliaa research-for-UG list",
+      "ats": "pagewatch",
+      "url": "https://raw.githubusercontent.com/karanwxliaa/Research-for-UG-Students/main/README.md",
+      "watch_keywords": [
+        "2027"
+      ]
+    },
+    {
+      "name": "Page: JPL internships",
+      "ats": "pagewatch",
+      "url": "https://www.jpl.nasa.gov/careers/internships/",
+      "watch_keywords": [
+        "2027",
+        "apply"
+      ]
+    },
+    {
+      "name": "Page: Sandia internships",
+      "ats": "pagewatch",
+      "url": "https://www.sandia.gov/careers/students-postdocs/internships/",
+      "watch_keywords": [
+        "2027",
+        "apply"
+      ]
+    },
+    {
+      "name": "Page: LLNL DSSI",
+      "ats": "pagewatch",
+      "url": "https://data-science.llnl.gov/dssi",
+      "watch_keywords": [
+        "2027",
+        "apply"
+      ]
     },
     {
       "name": "Tracker: sndsh404 Summer2027 (quant-heavy)",
