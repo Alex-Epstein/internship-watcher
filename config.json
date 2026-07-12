@@ -87,7 +87,6 @@
       "doctoral",
       "masters",
       "master's",
-      "2026",
       "fy26",
       "fy 26",
       "sales & trading",
@@ -133,7 +132,22 @@
       "doe q",
       "public trust"
     ],
-    "location_us_markers": []
+    "location_us_markers": [],
+    "reject_cycle_phrases": [
+      "summer 2026",
+      "summer 2025",
+      "summer 2024",
+      "fall 2026",
+      "spring 2026",
+      "winter 2026",
+      "2026 summer",
+      "fy26",
+      "fy 26",
+      "2026 intern",
+      "2026 internship",
+      "- 2026",
+      "(2026)"
+    ]
   },
   "firms": [
     {
