@@ -816,6 +816,50 @@ def send_email(subject, html):
     print(f"Email sent to {to_addr}: {subject}")
 
 
+# ----------------------------- open-roles report --------------------------- #
+OPEN_ROLES_FILE = "OPEN_ROLES.md"
+
+
+def write_open_roles(current):
+    """Regenerate OPEN_ROLES.md every run: a browsable snapshot of every
+    relevant role open right now (not just the new ones that get emailed).
+    Committed alongside seen_jobs.json, so it's always live on GitHub."""
+    cleared, by_src = [], {}
+    for rec in current.values():
+        j = dict(rec["job"])
+        j.setdefault("company", rec["src"])
+        (cleared if j.get("clearance") else by_src.setdefault(rec["src"], [])).append(j)
+
+    def md_line(j):
+        title = j["title"].replace("[", "(").replace("]", ")")
+        company = (j.get("company") or "").replace("[", "(").replace("]", ")")
+        loc = f" — {j['location']}" if j.get("location") else ""
+        return f"- [{company} — {title}]({j.get('url', '')}){loc}"
+
+    stamp = time.strftime("%Y-%m-%d %H:%M UTC", time.gmtime())
+    lines = [
+        "# Open roles right now",
+        "",
+        f"_Auto-generated each run; do not hand-edit. Last update: {stamp}. "
+        f"{len(current)} posting(s) currently open and matching filters._",
+        "",
+    ]
+    if cleared:
+        collapsed = _collapse_locations(cleared)
+        lines += [f"## US Citizen / Clearance required ({len(collapsed)})", ""]
+        lines += [md_line(j) for j in collapsed]
+        lines.append("")
+    for src in sorted(by_src):
+        collapsed = _collapse_locations(by_src[src])
+        lines += [f"## {src} ({len(collapsed)})", ""]
+        lines += [md_line(j) for j in collapsed]
+        lines.append("")
+
+    with open(OPEN_ROLES_FILE, "w", encoding="utf-8") as fh:
+        fh.write("\n".join(lines))
+    print(f"{OPEN_ROLES_FILE} written: {len(current)} open role(s).")
+
+
 # ----------------------------- main ---------------------------------------- #
 def main():
     config = load_json(CONFIG_FILE, None)
@@ -835,12 +879,14 @@ def main():
     # send what we have -- an email with most of the roles beats no email.
     run_budget = int(os.environ.get("RUN_BUDGET_SECONDS", "1500"))
     started = time.time()
+    sweep_complete = True
 
     for firm in config.get("firms", []):
         if not firm.get("enabled", True):
             continue
         if time.time() - started > run_budget:
             print("  ! run budget hit -- skipping remaining sources this run")
+            sweep_complete = False
             break
         name = firm.get("name", "?")
         fetcher = FETCHERS.get(firm.get("ats"))
@@ -901,6 +947,13 @@ def main():
             )
         else:
             print("No new roles this run.")
+
+    # Only rewrite the snapshot after a FULL sweep -- a budget-truncated run
+    # would shrink the file to just the sources it reached.
+    if sweep_complete:
+        write_open_roles(current)
+    else:
+        print(f"{OPEN_ROLES_FILE} not rewritten (partial sweep).")
 
     if DROP_COUNTS:
         top = sorted(DROP_COUNTS.items(), key=lambda kv: -kv[1])

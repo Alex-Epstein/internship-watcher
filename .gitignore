@@ -1,2 +1,4 @@
 .DS_Store
 __pycache__/
+# private application tracker -- never publish (public repo)
+applications.md

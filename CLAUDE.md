@@ -21,6 +21,8 @@ Summer 2027 internship opens** in CS / math / quant / AI / ML / CV / defense.
 | `watcher.py` | All logic. Fetchers → filters → dedup → email |
 | `config.json` | Sources + filters. **Most changes belong here, not in code.** |
 | `seen_jobs.json` | State. Auto-committed each run. Never hand-edit. |
+| `OPEN_ROLES.md` | Auto-generated snapshot of every role currently open, rewritten each full sweep and committed. Never hand-edit. |
+| `applications.md` | **Private, gitignored** (repo is public!). Alex's application tracker: one section per role — company, status, resume used, notes. Claude edits this directly on request. Never commit it. |
 
 **Secrets (repo → Settings → Secrets → Actions):** `SMTP_USERNAME` (a Gmail
 address), `SMTP_PASSWORD` (Gmail **App Password**, not the account password),
