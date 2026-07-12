@@ -595,12 +595,27 @@ def is_relevant(job, filters):
         if bad.lower() in title:
             return False
 
-    # 4) year must appear in the title (ATS) or the listing's year text (repos)
-    years = filters.get("years", [])
-    if years:
-        year_hay = (job.get("year_text") or job["title"]).lower()
-        if not any(str(y) in year_hay for y in years):
+    # 4) CYCLE CHECK.
+    #    Recruiting runs ~a year ahead, so a LIVE intern posting that states no year
+    #    is almost always the current (2027) cycle -- most companies never put the
+    #    year in the title (e.g. Palantir's "... - Internship - Intel"). So:
+    #      a) if the TITLE names any year(s), one of them must be ours
+    #      b) otherwise check the description/tracker text; if it names another
+    #         cycle, drop -- if it names nothing, keep.
+    years = [str(y) for y in filters.get("years", [])]
+    title_years = set(re.findall(r"\b(20\d{2})\b", title))
+    if years and title_years:
+        if not (title_years & set(years)):
             return False
+    elif years:
+        hay = " ".join([
+            (job.get("year_text") or ""),
+            title,
+            (job.get("content") or "")[:4000],
+        ]).lower()
+        if not any(y in hay for y in years):
+            if any(p.lower() in hay for p in filters.get("reject_cycle_phrases", [])):
+                return False
 
     # 5) location: drop foreign-only postings, but KEEP anything that also lists a
     #    US location (e.g. "Chicago; London" stays, "Amsterdam; Mumbai" goes)
