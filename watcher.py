@@ -19,6 +19,7 @@ import re
 import smtplib
 import sys
 import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from html import escape
@@ -27,7 +28,7 @@ import requests
 
 CONFIG_FILE = "config.json"
 SEEN_FILE = "seen_jobs.json"
-TIMEOUT = 25
+TIMEOUT = 15
 # A browser-like User-Agent reduces the chance Workday's bot filter blocks us.
 HEADERS = {
     "User-Agent": (
@@ -108,8 +109,10 @@ def fetch_workday(firm):
     api = f"https://{host}/wday/cxs/{tenant}/{site}/jobs"
 
     out = []
-    offset, limit, total = 0, 20, None
-    while True:
+    offset, limit = 0, 20
+    total = None
+    max_pages = int(firm.get("max_pages", 25))
+    for _ in range(max_pages):
         r = requests.post(
             api,
             json={"appliedFacets": {}, "limit": limit, "offset": offset,
@@ -133,9 +136,8 @@ def fetch_workday(firm):
                 "content": "",  # listing has no description; year must be in title
             })
         offset += limit
-        if not postings or (total is not None and offset >= total) or offset > 2000:
+        if not postings or (total is not None and offset >= total):
             break
-        time.sleep(0.3)
     return out
 
 
@@ -483,21 +485,45 @@ def fetch_autodiscover(firm):
                 boards[key] = c
 
     print(f"    autodiscover: {len(boards)} boards found across trackers")
-    ok = 0
-    for (ats, _), b in boards.items():
-        sub = FETCHERS.get(ats)
+
+    # Poll boards in PARALLEL with a hard time budget -- sequentially this would
+    # take hours (Workday tenants paginate), and a single slow board must never
+    # be able to hang the whole run.
+    budget = float(firm.get("budget_seconds", 600))
+    deadline = time.time() + budget
+    max_workers = int(firm.get("max_workers", 10))
+
+    def poll(b):
+        if time.time() > deadline:
+            return []
+        sub = FETCHERS.get(b["ats"])
         if not sub:
-            continue
+            return []
+        if b["ats"] == "workday":
+            b.setdefault("max_pages", 3)      # searchText=intern -> 60 hits is plenty
         try:
             jobs = sub(b)
-        except Exception:  # noqa: BLE001 -- dead/renamed boards are expected; stay quiet
-            continue
-        ok += 1
+        except Exception:  # noqa: BLE001 -- dead/renamed/blocked boards are expected
+            return []
         for j in jobs:
             j.setdefault("company", b["name"])
-            out.append(j)
-        time.sleep(0.15)
-    print(f"    autodiscover: {ok}/{len(boards)} boards polled OK, {len(out)} raw postings")
+        return jobs
+
+    ok = 0
+    with ThreadPoolExecutor(max_workers=max_workers) as pool:
+        futures = [pool.submit(poll, b) for b in boards.values()]
+        for fut in as_completed(futures):
+            try:
+                jobs = fut.result()
+            except Exception:  # noqa: BLE001
+                continue
+            if jobs:
+                ok += 1
+                out.extend(jobs)
+
+    elapsed = int(budget - max(0, deadline - time.time()))
+    print(f"    autodiscover: {ok}/{len(boards)} boards returned postings, "
+          f"{len(out)} raw, {elapsed}s")
     return out
 
 
@@ -742,9 +768,17 @@ def main():
     grouped_new = {}    # firm -> [jobs] (relevant AND not seen before)
     sigs_this_run = set()  # company|title|location, for cross-source dedup
 
+    # Hard ceiling on the whole sweep. If we blow through it, stop polling and
+    # send what we have -- an email with most of the roles beats no email.
+    run_budget = int(os.environ.get("RUN_BUDGET_SECONDS", "1500"))
+    started = time.time()
+
     for firm in config.get("firms", []):
         if not firm.get("enabled", True):
             continue
+        if time.time() - started > run_budget:
+            print("  ! run budget hit -- skipping remaining sources this run")
+            break
         name = firm.get("name", "?")
         fetcher = FETCHERS.get(firm.get("ats"))
         if not fetcher:
