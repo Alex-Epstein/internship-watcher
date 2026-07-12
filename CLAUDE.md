@@ -84,6 +84,19 @@ Read the Actions log to see which sources actually resolved.
    a tracker — you see the posting the hour it goes up instead of when a maintainer
    adds it. That's the whole point of `autodiscover`.
 
+7. **Substring keyword matching floods the email with garbage.** `"intern" in
+   title` matches Intern**al**, Intern**ational**, Intern**als**, Intern**et** —
+   one baseline email had 100+ "Internal Audit" / "International Sales" directors.
+   Same trap: `"systems"` matched "Eco**systems**". `_title_is_internship()` and
+   `_has_term()` use word-boundary regexes; keep it that way for any new keyword
+   gate. Filters now count every drop by reason (`DROP_COUNTS`) and print a
+   summary at the end of each run — check it after any filter change.
+
+8. **Emails show one line per role.** `_collapse_locations()` merges the same
+   company+title posted in N cities into one entry ("NYC · Palo Alto +2 more").
+   Display-only: every posting URL is still tracked individually in
+   `seen_jobs.json`, so a role opening in a new city later still alerts.
+
 ## Pending / next upgrades
 
 - **`SimplifyJobs/Summer2027-Internships` does not exist yet.** The moment it

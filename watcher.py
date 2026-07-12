@@ -594,32 +594,67 @@ US_STATE_RE = re.compile(
 
 
 # ----------------------------- filtering ----------------------------------- #
+# Every drop is counted (and sampled) so filters can never silently eat roles
+# again -- see gotcha #2 in CLAUDE.md. Printed at the end of each run.
+DROP_COUNTS = {}
+DROP_SAMPLES = {}
+
+
+def _drop(reason, title):
+    DROP_COUNTS[reason] = DROP_COUNTS.get(reason, 0) + 1
+    samples = DROP_SAMPLES.setdefault(reason, [])
+    if len(samples) < 3:
+        samples.append(title)
+    return False
+
+
+_KW_RES = {}
+
+
+def _title_is_internship(title, keywords):
+    """Word-boundary match: 'intern' matches Intern / Interns / Internship(s)
+    but NOT Internal / International / Internals / Internet. Plain substring
+    matching here once flooded an email with 'Internal Audit' directors and
+    'International Sales' managers."""
+    for k in keywords:
+        k = k.lower()
+        rx = _KW_RES.get(k)
+        if rx is None:
+            rx = re.compile(r"\b" + re.escape(k) + r"(s|ship|ships)?\b")
+            _KW_RES[k] = rx
+        if rx.search(title):
+            return True
+    return False
+
+
 def _has_term(title, term):
     """Whole-word match for short abbreviations (ai, ml, cv) so they don't match
-    inside words like 'training' or 'email'; plain substring for longer terms."""
+    inside words like 'training' or 'email'. Longer terms must START at a word
+    boundary -- prefix matching keeps 'develop'->development and
+    'quant'->quantitative, while 'systems' no longer matches 'ecosystems'."""
     term = term.lower()
     if len(term) <= 3:
         return re.search(r"\b" + re.escape(term) + r"\b", title) is not None
-    return term in title
+    return re.search(r"\b" + re.escape(term), title) is not None
 
 
 def is_relevant(job, filters):
     title = job["title"].lower()
 
-    # 1) must look like an internship
+    # 1) must look like an internship (word-boundary: 'intern' != 'internal')
     keywords = filters.get("title_keywords", [])
-    if keywords and not any(k.lower() in title for k in keywords):
-        return False
+    if keywords and not _title_is_internship(title, keywords):
+        return _drop("no-intern-word", title)
 
     # 2) must be in a domain you care about (skip this gate if the list is empty)
     require = filters.get("title_require_any", [])
     if require and not any(_has_term(title, t) for t in require):
-        return False
+        return _drop("no-domain-match", title)
 
     # 3) drop anything explicitly excluded (PhD / Masters / etc.)
     for bad in filters.get("title_exclude", []):
         if bad.lower() in title:
-            return False
+            return _drop(f"excluded:{bad}", title)
 
     # 4) CYCLE CHECK.
     #    Recruiting runs ~a year ahead, so a LIVE intern posting that states no year
@@ -632,7 +667,7 @@ def is_relevant(job, filters):
     title_years = set(re.findall(r"\b(20\d{2})\b", title))
     if years and title_years:
         if not (title_years & set(years)):
-            return False
+            return _drop("wrong-year-in-title", title)
     elif years:
         hay = " ".join([
             (job.get("year_text") or ""),
@@ -641,7 +676,7 @@ def is_relevant(job, filters):
         ]).lower()
         if not any(y in hay for y in years):
             if any(p.lower() in hay for p in filters.get("reject_cycle_phrases", [])):
-                return False
+                return _drop("wrong-cycle-phrase", title)
 
     # 5) location: drop foreign-only postings, but KEEP anything that also lists a
     #    US location (e.g. "Chicago; London" stays, "Amsterdam; Mumbai" goes)
@@ -651,7 +686,7 @@ def is_relevant(job, filters):
         us = filters.get("location_us_markers", [])
         has_us = any(m.lower() in location for m in us) or bool(US_STATE_RE.search(location))
         if not has_us:
-            return False
+            return _drop("excluded-location", title)
 
     return True
 
@@ -675,6 +710,33 @@ def is_clearance(job, filters):
 
 
 # ----------------------------- email --------------------------------------- #
+def _collapse_locations(jobs):
+    """One line per role: the same company+title posted in N locations becomes
+    a single entry ('New York, Palo Alto +2 more') linking to the first URL.
+    Display-only -- every posting is still tracked individually in seen state."""
+    merged, order = {}, []
+    for j in jobs:
+        key = ((j.get("company") or "").lower(), j["title"].strip().lower())
+        if key not in merged:
+            m = dict(j)
+            m["_locs"] = []
+            merged[key] = m
+            order.append(key)
+        loc = (j.get("location") or "").strip()
+        if loc and loc not in merged[key]["_locs"]:
+            merged[key]["_locs"].append(loc)
+    out = []
+    for key in order:
+        m = merged[key]
+        locs = m.pop("_locs")
+        if len(locs) > 3:
+            m["location"] = " · ".join(locs[:3]) + f" +{len(locs) - 3} more"
+        else:
+            m["location"] = " · ".join(locs)
+        out.append(m)
+    return out
+
+
 def _job_li(job, with_company=True):
     company = job.get("company") if with_company else None
     label = (f"{escape(company)} &mdash; {escape(job['title'])}"
@@ -705,6 +767,7 @@ def build_email_html(grouped, baseline=False):
                 rest.setdefault(firm, []).append(j)
 
     if cleared:
+        cleared = _collapse_locations(cleared)
         parts.append(
             "<div style='border-left:4px solid #b7791f;padding:6px 12px;margin:14px 0;"
             "background:#fffbeb'>"
@@ -719,7 +782,7 @@ def build_email_html(grouped, baseline=False):
 
     for firm in sorted(rest):
         parts.append(f"<h3 style='margin:16px 0 4px'>{escape(firm)}</h3><ul>")
-        for job in rest[firm]:
+        for job in _collapse_locations(rest[firm]):
             parts.append(_job_li(job))
         parts.append("</ul>")
 
@@ -838,6 +901,13 @@ def main():
             )
         else:
             print("No new roles this run.")
+
+    if DROP_COUNTS:
+        top = sorted(DROP_COUNTS.items(), key=lambda kv: -kv[1])
+        print("Filter drops this run: "
+              + ", ".join(f"{k}={v}" for k, v in top[:12]))
+        for k, _ in top[:5]:
+            print(f"    e.g. {k}: " + " | ".join(DROP_SAMPLES[k]))
 
     save_json(SEEN_FILE, new_seen)
     print(f"State saved: {len(new_seen)} known role(s).")
