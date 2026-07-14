@@ -630,6 +630,272 @@
       "site": "Careers",
       "locale": "en-US",
       "enabled": false
+    },
+    {
+      "name": "Program: SIG students (Discovery Day)",
+      "ats": "pagewatch",
+      "url": "https://careers.sig.com/students",
+      "watch_keywords": [
+        "discovery day",
+        "sophomore",
+        "2027",
+        "application",
+        "apply",
+        "register",
+        "deadline"
+      ],
+      "note": ""
+    },
+    {
+      "name": "Program: Citadel students (Discover / datathon)",
+      "ats": "pagewatch",
+      "url": "https://www.citadel.com/careers/students/",
+      "watch_keywords": [
+        "discover",
+        "datathon",
+        "2027",
+        "application",
+        "apply",
+        "register",
+        "deadline"
+      ],
+      "note": ""
+    },
+    {
+      "name": "Program: Jane Street programs & events (INSIGHT/AMP/ETC)",
+      "ats": "pagewatch",
+      "url": "https://www.janestreet.com/join-jane-street/programs-and-events/",
+      "watch_keywords": [
+        "insight",
+        "amp",
+        "etc",
+        "trading challenge",
+        "2027",
+        "application",
+        "apply",
+        "register",
+        "deadline"
+      ],
+      "note": ""
+    },
+    {
+      "name": "Program: IMC students (Launchpad)",
+      "ats": "pagewatch",
+      "url": "https://careers.imc.com/us/en/students",
+      "watch_keywords": [
+        "launchpad",
+        "discovery",
+        "2027",
+        "application",
+        "apply",
+        "register",
+        "deadline"
+      ],
+      "note": ""
+    },
+    {
+      "name": "Program: DRW students",
+      "ats": "pagewatch",
+      "url": "https://drw.com/work-at-drw/students",
+      "watch_keywords": [
+        "discovery",
+        "insight",
+        "2027",
+        "application",
+        "apply",
+        "register",
+        "deadline"
+      ],
+      "note": ""
+    },
+    {
+      "name": "Program: Optiver students (Springboard)",
+      "ats": "pagewatch",
+      "url": "https://optiver.com/working-at-optiver/students/",
+      "watch_keywords": [
+        "springboard",
+        "insight",
+        "sophomore",
+        "2027",
+        "application",
+        "apply",
+        "register",
+        "deadline"
+      ],
+      "note": ""
+    },
+    {
+      "name": "Program: HRT students",
+      "ats": "pagewatch",
+      "url": "https://www.hudsonrivertrading.com/students/",
+      "watch_keywords": [
+        "class",
+        "program",
+        "2027",
+        "application",
+        "apply",
+        "register",
+        "deadline"
+      ],
+      "note": ""
+    },
+    {
+      "name": "Program: Two Sigma events",
+      "ats": "pagewatch",
+      "url": "https://careers.twosigma.com/careers/SitePage/159397/events",
+      "watch_keywords": [
+        "freshman",
+        "sophomore",
+        "event",
+        "2027",
+        "application",
+        "apply",
+        "register",
+        "deadline"
+      ],
+      "note": ""
+    },
+    {
+      "name": "Competition: IMC Prosperity",
+      "ats": "pagewatch",
+      "url": "https://prosperity.imc.com/",
+      "watch_keywords": [
+        "registration",
+        "prosperity",
+        "2027",
+        "application",
+        "apply",
+        "register",
+        "deadline"
+      ],
+      "note": ""
+    },
+    {
+      "name": "Competition: Citadel x Correlation One datathons",
+      "ats": "pagewatch",
+      "url": "https://www.correlation-one.com/citadel",
+      "watch_keywords": [
+        "datathon",
+        "invitational",
+        "2027",
+        "application",
+        "apply",
+        "register",
+        "deadline"
+      ],
+      "note": ""
+    },
+    {
+      "name": "Competition: WorldQuant BRAIN",
+      "ats": "pagewatch",
+      "url": "https://www.worldquant.com/brain/",
+      "watch_keywords": [
+        "challenge",
+        "alphathon",
+        "consultant",
+        "2027",
+        "application",
+        "apply",
+        "register",
+        "deadline"
+      ],
+      "note": ""
+    },
+    {
+      "name": "Hackathons: MLH 2027 season",
+      "ats": "pagewatch",
+      "url": "https://mlh.io/seasons/2027/events",
+      "watch_keywords": [
+        "hackathon",
+        "atlanta",
+        "georgia"
+      ],
+      "note": ""
+    },
+    {
+      "name": "Startup: YC events",
+      "ats": "pagewatch",
+      "url": "https://events.ycombinator.com/",
+      "watch_keywords": [
+        "application",
+        "startup school",
+        "future founders",
+        "2027",
+        "application",
+        "apply",
+        "register",
+        "deadline"
+      ],
+      "note": ""
+    },
+    {
+      "name": "REU: NSF ETAP portal",
+      "ats": "pagewatch",
+      "url": "https://etap.nsf.gov/",
+      "watch_keywords": [
+        "REU",
+        "open",
+        "opportunity",
+        "2027",
+        "application",
+        "apply",
+        "register",
+        "deadline"
+      ],
+      "note": ""
+    },
+    {
+      "name": "Lab: DOE SULI",
+      "ats": "pagewatch",
+      "url": "https://science.osti.gov/wdts/suli",
+      "watch_keywords": [
+        "2027",
+        "application",
+        "apply",
+        "register",
+        "deadline"
+      ],
+      "note": ""
+    },
+    {
+      "name": "Lab: NREIP (Navy research)",
+      "ats": "pagewatch",
+      "url": "https://navalsteminterns.us/nreip/",
+      "watch_keywords": [
+        "2027",
+        "application",
+        "apply",
+        "register",
+        "deadline"
+      ],
+      "note": ""
+    },
+    {
+      "name": "Lab: MIT Lincoln Laboratory summer program",
+      "ats": "pagewatch",
+      "url": "https://careers.ll.mit.edu/content/Summer-Research/",
+      "watch_keywords": [
+        "summer research",
+        "2027",
+        "application",
+        "apply",
+        "register",
+        "deadline"
+      ],
+      "note": ""
+    },
+    {
+      "name": "Lab: LLNL Data Science Summer Institute",
+      "ats": "pagewatch",
+      "url": "https://data-science.llnl.gov/dssi",
+      "watch_keywords": [
+        "2027",
+        "application",
+        "apply",
+        "register",
+        "deadline"
+      ],
+      "note": ""
     }
   ]
 }
