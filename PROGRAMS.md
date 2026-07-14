@@ -48,3 +48,56 @@ Pagewatchers in config.json alert on changes; this file is the master calendar.
 - NEW: zapplyjobs/underclassmen-internships, zapplyjobs/Research-Internships-
   for-Undergraduates, Jose-Gael-Cruz-Lopez/underclassmen-opportunities (md, in)
 - SimplifyJobs/Summer2027 does not exist yet (probed 2026-07-13) — auto-probe on
+
+
+## 💰 Scholarships & fellowships (verified 2026-07-13 sweep)
+
+APPLY NOW (rolling, no deadline):
+- Z Fellows ($10k, 1-week SF) · Emergent Ventures (grant) · Afore Grants
+  ($1k, must be ≤21 — age-gated!) · 1517 Medici ($1k+) · Telora ($10k, <24)
+- CIA (+NGA/DIA) Summer 2027 undergrad internships — they run ~12 months
+  ahead, so the window is effectively NOW; clearance shortens everything
+
+FALL 2026 (junior year) calendar:
+- ~Aug: Mitacs Globalink opens (Canada summer research) · Neo Scholars cohort
+  expected (CS soph/juniors — HIGHEST prestige fit) · Contrary VP apps
+- Sep 16: UPE/ACM award ($1,500) — join ACM + GT ACM chapter FIRST (~$19)
+- Sep 30: IEEE CS Merwin — join IEEE+CS society NOW (3-month member clock)
+- Sep-Oct: Jane Street ETC · Two Sigma pool · KP Fellows + 8VC (Summer 2027
+  placements) · Goldwater national app opens (GT internal ~Dec 1 — email
+  fellowshipsadvising@gatech.edu NOW to start; needs research narrative)
+- Oct 31: UPE Scholarship ($1-4k, needs GT UPE membership; one nominee/chapter)
+- Fall: accept HKN Beta Mu induction if invited (CoC juniors 3.5+ eligible)
+  → unlocks Madni $1k (May 2027)
+- ~Dec 1: ETH Zurich CS summer fellowship · ~mid-Dec: DAAD RISE Germany
+- Jan 1: O'Shaughnessy Fellowships reopen ($100k equity-free)
+- ~Mar 30: Astronaut Scholarship (GT is a partner school, 3 GT winners in
+  2026; needs faculty nomination)
+- DEAD ENDS (verified): Tau Beta Pi (GT chapter = engineering majors only),
+  Boren for Spring 2027 (deadline passed Jan 2026), Gilman (needs Pell)
+- Senior-year flags (fall 2027): Churchill (Cambridge Part III), Hertz,
+  Phi Kappa Phi (accept top-7.5% invite), Marshall/Rhodes, CRA Outstanding
+  Undergrad Researcher (needs research record — start via PURA now)
+
+## 🌍 Abroad-compatible (Spring 2027 + Summer 2027)
+- Spring 2027 destination candidates: GT-Lorraine (Metz, GT-CNRS lab access),
+  AIT Budapest (CS), Budapest Semesters in Mathematics (classic quant signal)
+- Summer 2027 funded research abroad: DAAD RISE (~Dec), ETH SSRF (~Dec 1),
+  EPFL E3 (~Jan-Feb), CERN openlab (~Dec-Jan), Mitacs (~Aug-Sep!), Imperial
+  UROP (email faculty directly), Google Summer of Code (remote, ~Mar-Apr)
+- While in Europe: Optiver + Flow Traders + IMC Amsterdam student events,
+  Da Vinci Derivatives (board now polled directly)
+- Doable from abroad online: COMAP MCM/ICM (Feb, team of 3), NCL spring
+  season, GSoC
+
+## 🎖️ NatSec / cyber / GT-internal (gap-hunt finds)
+- NSA Codebreaker Challenge (fall, school-ranked — CyberPatriot lineage)
+- Hivestorm (Oct, collegiate CyberPatriot sibling) · NCL (fall+spring) ·
+  US Cyber Games (18-26) · MITRE eCTF (Jan-Apr) · DOE CyberForce (Nov)
+- NSIN X-Force paid defense fellowship (verify cycle post-DIU-reorg)
+- GT PURA: $1,500 salary award per semester for research w/ faculty sponsor —
+  near-guaranteed for a 3.87 student; also unlocks CRA nomination later
+- GTRI student positions beyond CIPHER (rolling; clearance = huge edge)
+- CREATE-X Startup Launch ($5k+ for Volee, apps ~Jan-Mar for summer)
+- VT Regional Math Contest (late Oct, free, taken at GT) · IMC university
+  math olympiad (check if GT sends a team) · HackMIT apps ~Aug-Sep

@@ -949,6 +949,311 @@
         "freshman",
         "sophomore"
       ]
+    },
+    {
+      "name": "Da Vinci Derivatives (Amsterdam quant)",
+      "ats": "greenhouse",
+      "token": "davinciderivatives"
+    },
+    {
+      "name": "Bessemer Fellows (relaunch detector)",
+      "ats": "greenhouse",
+      "token": "bessemerventurepartnersfellows"
+    },
+    {
+      "name": "Kleiner Perkins Fellows",
+      "ats": "ashby",
+      "token": "kleinerperkinsfellows"
+    },
+    {
+      "name": "Scholarship: Goldwater key dates",
+      "ats": "pagewatch",
+      "url": "https://goldwaterscholarship.gov/important-dates/",
+      "watch_keywords": [
+        "open",
+        "apply",
+        "application",
+        "deadline",
+        "2026",
+        "2027"
+      ]
+    },
+    {
+      "name": "Scholarship: GT fellowships office (Goldwater/Astronaut internal deadlines)",
+      "ats": "pagewatch",
+      "url": "https://fellowships.oue.gatech.edu/",
+      "watch_keywords": [
+        "open",
+        "apply",
+        "application",
+        "deadline",
+        "2026",
+        "2027"
+      ]
+    },
+    {
+      "name": "Scholarship: UPE (CS honor society) awards",
+      "ats": "pagewatch",
+      "url": "https://upe.acm.org/scholarship/",
+      "watch_keywords": [
+        "open",
+        "apply",
+        "application",
+        "deadline",
+        "2026",
+        "2027"
+      ]
+    },
+    {
+      "name": "Scholarship: IEEE CS Merwin",
+      "ats": "pagewatch",
+      "url": "https://www.computer.org/volunteering/awards/scholarships/merwin",
+      "watch_keywords": [
+        "open",
+        "apply",
+        "application",
+        "deadline",
+        "2026",
+        "2027"
+      ]
+    },
+    {
+      "name": "Scholarship: IEEE CS UPE award",
+      "ats": "pagewatch",
+      "url": "https://www.computer.org/volunteering/awards/scholarships/upe-student-award",
+      "watch_keywords": [
+        "open",
+        "apply",
+        "application",
+        "deadline",
+        "2026",
+        "2027"
+      ]
+    },
+    {
+      "name": "Scholarship: HKN awards (Madni)",
+      "ats": "pagewatch",
+      "url": "https://hkn.ieee.org/awards",
+      "watch_keywords": [
+        "open",
+        "apply",
+        "application",
+        "deadline",
+        "2026",
+        "2027"
+      ]
+    },
+    {
+      "name": "Scholarship: GT HKN Beta Mu (induction cycles)",
+      "ats": "pagewatch",
+      "url": "https://hkn.gtorg.gatech.edu/",
+      "watch_keywords": [
+        "induction",
+        "apply",
+        "application",
+        "fall",
+        "spring"
+      ]
+    },
+    {
+      "name": "Scholarship: Masason Foundation",
+      "ats": "pagewatch",
+      "url": "https://masason-foundation.org/en/requirements/",
+      "watch_keywords": [
+        "open",
+        "apply",
+        "application",
+        "deadline",
+        "2026",
+        "2027"
+      ]
+    },
+    {
+      "name": "Fellowship: Neo Scholars (via Substack archive)",
+      "ats": "pagewatch",
+      "url": "https://neo.substack.com/archive",
+      "watch_keywords": [
+        "scholars",
+        "application",
+        "cohort",
+        "open"
+      ]
+    },
+    {
+      "name": "Fellowship: 8VC",
+      "ats": "pagewatch",
+      "url": "https://www.8vc.com/fellowships",
+      "watch_keywords": [
+        "open",
+        "apply",
+        "application",
+        "deadline",
+        "2026",
+        "2027"
+      ]
+    },
+    {
+      "name": "Fellowship: O'Shaughnessy (reopens Jan 1)",
+      "ats": "pagewatch",
+      "url": "https://www.osv.llc/fellowships",
+      "watch_keywords": [
+        "open",
+        "apply",
+        "application",
+        "deadline",
+        "2026",
+        "2027"
+      ]
+    },
+    {
+      "name": "Fellowship: Soma Fellows",
+      "ats": "pagewatch",
+      "url": "https://programs.somacap.com/fellows",
+      "watch_keywords": [
+        "open",
+        "apply",
+        "application",
+        "deadline",
+        "2026",
+        "2027"
+      ]
+    },
+    {
+      "name": "Fellowship: Interact",
+      "ats": "pagewatch",
+      "url": "https://joininteract.com/",
+      "watch_keywords": [
+        "open",
+        "apply",
+        "application",
+        "deadline",
+        "2026",
+        "2027"
+      ]
+    },
+    {
+      "name": "Fellowship: Contrary blog (VP app announcements)",
+      "ats": "pagewatch",
+      "url": "https://contrary.com/blog",
+      "watch_keywords": [
+        "venture partner",
+        "application",
+        "fellowship",
+        "open"
+      ]
+    },
+    {
+      "name": "Abroad: DAAD RISE Germany (opens ~Nov)",
+      "ats": "pagewatch",
+      "url": "https://www.daad.de/rise/en/rise-germany/",
+      "watch_keywords": [
+        "open",
+        "apply",
+        "application",
+        "deadline",
+        "2026",
+        "2027"
+      ]
+    },
+    {
+      "name": "Abroad: ETH Zurich CS summer fellowship",
+      "ats": "pagewatch",
+      "url": "https://inf.ethz.ch/studies/summer-research-fellowship.html",
+      "watch_keywords": [
+        "open",
+        "apply",
+        "application",
+        "deadline",
+        "2026",
+        "2027"
+      ]
+    },
+    {
+      "name": "Abroad: Mitacs Globalink (opens ~Aug!)",
+      "ats": "pagewatch",
+      "url": "https://www.mitacs.ca/our-programs/globalink-research-internship-students/",
+      "watch_keywords": [
+        "open",
+        "apply",
+        "application",
+        "deadline",
+        "2026",
+        "2027"
+      ]
+    },
+    {
+      "name": "Abroad: CERN openlab summer",
+      "ats": "pagewatch",
+      "url": "https://openlab.cern/education/CERN-openlab-Summer-Student-Programme",
+      "watch_keywords": [
+        "open",
+        "apply",
+        "application",
+        "deadline",
+        "2026",
+        "2027"
+      ]
+    },
+    {
+      "name": "NatSec: NSA Codebreaker (fall launch)",
+      "ats": "pagewatch",
+      "url": "https://nsa-codebreaker.org/",
+      "watch_keywords": [
+        "challenge",
+        "register",
+        "2026",
+        "2027"
+      ]
+    },
+    {
+      "name": "NatSec: NSIN X-Force fellowship",
+      "ats": "pagewatch",
+      "url": "https://www.nsin.us/x-force/",
+      "watch_keywords": [
+        "open",
+        "apply",
+        "application",
+        "deadline",
+        "2026",
+        "2027"
+      ]
+    },
+    {
+      "name": "NatSec: CIA student programs",
+      "ats": "pagewatch",
+      "url": "https://www.cia.gov/careers/student-programs/",
+      "watch_keywords": [
+        "undergraduate",
+        "internship",
+        "apply",
+        "deadline"
+      ]
+    },
+    {
+      "name": "GT: PURA salary award deadlines",
+      "ats": "pagewatch",
+      "url": "https://experiential.learning.gatech.edu/urop/pura-salary/",
+      "watch_keywords": [
+        "open",
+        "apply",
+        "application",
+        "deadline",
+        "2026",
+        "2027"
+      ]
+    },
+    {
+      "name": "GT: CREATE-X Startup Launch",
+      "ats": "pagewatch",
+      "url": "https://create-x.gatech.edu/launch/startup-launch",
+      "watch_keywords": [
+        "open",
+        "apply",
+        "application",
+        "deadline",
+        "2026",
+        "2027"
+      ]
     }
   ]
 }
