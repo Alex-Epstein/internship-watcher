@@ -870,8 +870,36 @@ def write_open_roles(current):
     print(f"{OPEN_ROLES_FILE} written: {len(current)} open role(s).")
 
 
+# ----------------------------- weekly digest -------------------------------- #
+def send_weekly_digest():
+    """Sunday email: PROGRAMS.md content (scholarships/fellowships/REU deadlines)
+    plus a reminder link to the live OPEN_ROLES.md. Separate from the hourly
+    new-role alerts -- this is the 'don't forget the whole calendar' nudge."""
+    try:
+        programs = open("PROGRAMS.md", encoding="utf-8").read()
+    except FileNotFoundError:
+        print("PROGRAMS.md not found; skipping digest.")
+        return
+    html_body = re.sub(r"^# ", "<h2>", programs, flags=re.M)
+    html_body = re.sub(r"^## (.*)$", r"<h3>\1</h3>", html_body, flags=re.M)
+    html_body = re.sub(r"^- (.*)$", r"<li>\1</li>", html_body, flags=re.M)
+    html_body = html_body.replace("\n\n", "<br><br>")
+    html = (
+        "<p>Weekly reminder: scholarships, fellowships, REUs, competitions, "
+        "abroad programs -- everything with a deadline that isn't a normal "
+        "internship posting.</p>"
+        "<p>Live open-roles snapshot: see OPEN_ROLES.md in the repo.</p>"
+        f"<hr>{html_body}"
+    )
+    send_email("[Internship Watcher] Weekly programs & deadlines digest", html)
+
+
 # ----------------------------- main ---------------------------------------- #
 def main():
+    if os.environ.get("DIGEST_MODE") == "1":
+        send_weekly_digest()
+        return
+
     config = load_json(CONFIG_FILE, None)
     if not config:
         print(f"ERROR: {CONFIG_FILE} is missing or invalid.", file=sys.stderr)

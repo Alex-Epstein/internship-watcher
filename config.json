@@ -860,35 +860,6 @@
       "note": ""
     },
     {
-      "name": "REU: NSF ETAP portal",
-      "ats": "pagewatch",
-      "url": "https://etap.nsf.gov/",
-      "watch_keywords": [
-        "REU",
-        "open",
-        "opportunity",
-        "2027",
-        "application",
-        "apply",
-        "register",
-        "deadline"
-      ],
-      "note": ""
-    },
-    {
-      "name": "Lab: DOE SULI",
-      "ats": "pagewatch",
-      "url": "https://science.osti.gov/wdts/suli",
-      "watch_keywords": [
-        "2027",
-        "application",
-        "apply",
-        "register",
-        "deadline"
-      ],
-      "note": ""
-    },
-    {
       "name": "Lab: NREIP (Navy research)",
       "ats": "pagewatch",
       "url": "https://navalsteminterns.us/nreip/",
@@ -916,26 +887,9 @@
       "note": ""
     },
     {
-      "name": "Lab: LLNL Data Science Summer Institute",
-      "ats": "pagewatch",
-      "url": "https://data-science.llnl.gov/dssi",
-      "watch_keywords": [
-        "2027",
-        "application",
-        "apply",
-        "register",
-        "deadline"
-      ],
-      "note": ""
-    },
-    {
       "name": "Trackers: underclassmen + research programs (zapplyjobs, JGCL)",
       "ats": "github_md",
-      "urls": [
-        "https://raw.githubusercontent.com/zapplyjobs/underclassmen-internships/main/README.md",
-        "https://raw.githubusercontent.com/zapplyjobs/Research-Internships-for-Undergraduates/main/README.md",
-        "https://raw.githubusercontent.com/Jose-Gael-Cruz-Lopez/underclassmen-opportunities/main/README.md"
-      ]
+      "url": "https://raw.githubusercontent.com/zapplyjobs/underclassmen-internships/main/README.md"
     },
     {
       "name": "Program: NVIDIA Ignite (2-week Oct window!)",
@@ -1413,18 +1367,6 @@
       ]
     },
     {
-      "name": "Program: Jane Street SEE/Preview/QTC",
-      "ats": "pagewatch",
-      "url": "https://www.janestreet.com/join-jane-street/programs-and-events/",
-      "watch_keywords": [
-        "SEE",
-        "Preview",
-        "QTC",
-        "2027",
-        "apply"
-      ]
-    },
-    {
       "name": "Scholarship: Two Sigma undergrad (check Sept)",
       "ats": "pagewatch",
       "url": "https://www.twosigma.com/undergraduate-students/",
@@ -1538,6 +1480,16 @@
         "registration",
         "competition"
       ]
+    },
+    {
+      "name": "zapplyjobs research internships tracker",
+      "ats": "github_md",
+      "url": "https://raw.githubusercontent.com/zapplyjobs/Research-Internships-for-Undergraduates/main/README.md"
+    },
+    {
+      "name": "underclassmen opportunities (deadlines)",
+      "ats": "github_md",
+      "url": "https://raw.githubusercontent.com/Jose-Gael-Cruz-Lopez/underclassmen-opportunities/main/README.md"
     }
   ]
 }
