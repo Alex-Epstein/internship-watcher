@@ -1254,6 +1254,290 @@
         "2026",
         "2027"
       ]
+    },
+    {
+      "name": "Abroad: EPFL ERIP (GT students use ERIP not E3)",
+      "ats": "pagewatch",
+      "url": "https://www.epfl.ch/education/international/en/coming-to-epfl/research-internships/",
+      "watch_keywords": [
+        "October",
+        "2027",
+        "open",
+        "nomination"
+      ]
+    },
+    {
+      "name": "Abroad: CERN summer student",
+      "ats": "pagewatch",
+      "url": "https://careers.cern/summer",
+      "watch_keywords": [
+        "open",
+        "apply",
+        "application",
+        "deadline",
+        "2027"
+      ]
+    },
+    {
+      "name": "Abroad: UMich CERN REU (US route)",
+      "ats": "pagewatch",
+      "url": "https://cern-reu.physics.lsa.umich.edu/",
+      "watch_keywords": [
+        "2027",
+        "portal",
+        "open"
+      ]
+    },
+    {
+      "name": "Abroad: Max Planck CS internships",
+      "ats": "pagewatch",
+      "url": "https://www.cis.mpg.de/internships/",
+      "watch_keywords": [
+        "open",
+        "apply",
+        "application",
+        "deadline",
+        "2027"
+      ]
+    },
+    {
+      "name": "Abroad: G-Research Spring into Quant Finance",
+      "ats": "pagewatch",
+      "url": "https://www.gresearch.com/spring-into-quant-finance/",
+      "watch_keywords": [
+        "open",
+        "apply",
+        "application",
+        "deadline",
+        "2027"
+      ]
+    },
+    {
+      "name": "Abroad: IMC EU student programs (Launchpad)",
+      "ats": "pagewatch",
+      "url": "https://www.imc.com/eu/careers/students-graduates/programs",
+      "watch_keywords": [
+        "Launchpad",
+        "2027",
+        "apply"
+      ]
+    },
+    {
+      "name": "Abroad: AIT Budapest (Spring 2027 semester)",
+      "ats": "pagewatch",
+      "url": "https://cs.ait-budapest.com/application/application-dates",
+      "watch_keywords": [
+        "Spring 2027",
+        "deadline"
+      ]
+    },
+    {
+      "name": "Abroad: ISTernship ISTA Austria (watch relaunch)",
+      "ats": "pagewatch",
+      "url": "https://phd.pages.ist.ac.at/isternship/",
+      "watch_keywords": [
+        "2027",
+        "open"
+      ]
+    },
+    {
+      "name": "Scholarship: AFCEA STEM Majors (national)",
+      "ats": "pagewatch",
+      "url": "https://www.afcea.org/stem-majors-scholarships",
+      "watch_keywords": [
+        "open",
+        "apply",
+        "application",
+        "deadline",
+        "2027"
+      ]
+    },
+    {
+      "name": "Scholarship: AFCEA NOVA (Arlington eligible)",
+      "ats": "pagewatch",
+      "url": "https://nova.afceachapters.org/scholarships",
+      "watch_keywords": [
+        "open",
+        "apply",
+        "application",
+        "deadline",
+        "2027"
+      ]
+    },
+    {
+      "name": "Scholarship: AFCEA Belvoir Kevin Carroll",
+      "ats": "pagewatch",
+      "url": "https://belvoir.afceachapters.org/scholarships",
+      "watch_keywords": [
+        "open",
+        "apply",
+        "application",
+        "deadline",
+        "2027"
+      ]
+    },
+    {
+      "name": "Scholarship: DoD Cyber Service Academy",
+      "ats": "pagewatch",
+      "url": "https://public.cyber.mil/wid/csa/",
+      "watch_keywords": [
+        "open",
+        "apply",
+        "application",
+        "deadline",
+        "2027"
+      ]
+    },
+    {
+      "name": "Scholarship: Lockheed STEM (relaunch watch)",
+      "ats": "pagewatch",
+      "url": "https://www.lockheedmartin.com/en-us/who-we-are/communities/stem-education/lm-scholarship-program.html",
+      "watch_keywords": [
+        "open",
+        "apply",
+        "application",
+        "deadline",
+        "2027"
+      ]
+    },
+    {
+      "name": "Scholarship: GT cyber (SCP scholarships)",
+      "ats": "pagewatch",
+      "url": "https://scp.cc.gatech.edu/scholarships",
+      "watch_keywords": [
+        "open",
+        "apply",
+        "application",
+        "deadline",
+        "2027"
+      ]
+    },
+    {
+      "name": "Program: Jane Street SEE/Preview/QTC",
+      "ats": "pagewatch",
+      "url": "https://www.janestreet.com/join-jane-street/programs-and-events/",
+      "watch_keywords": [
+        "SEE",
+        "Preview",
+        "QTC",
+        "2027",
+        "apply"
+      ]
+    },
+    {
+      "name": "Scholarship: Two Sigma undergrad (check Sept)",
+      "ats": "pagewatch",
+      "url": "https://www.twosigma.com/undergraduate-students/",
+      "watch_keywords": [
+        "scholarship",
+        "deadline",
+        "2027"
+      ]
+    },
+    {
+      "name": "Program: HRT CppCon scholarship",
+      "ats": "pagewatch",
+      "url": "https://cppcon.org/hrt-scholarship/",
+      "watch_keywords": [
+        "open",
+        "apply",
+        "application",
+        "deadline",
+        "2027"
+      ]
+    },
+    {
+      "name": "Program: D.E. Shaw fellowships (Nexus watch)",
+      "ats": "pagewatch",
+      "url": "https://campus.deshaw.com/fellowships",
+      "watch_keywords": [
+        "Nexus",
+        "apply",
+        "2027"
+      ]
+    },
+    {
+      "name": "GT: VIP research application",
+      "ats": "pagewatch",
+      "url": "https://vip.gatech.edu/application/",
+      "watch_keywords": [
+        "apply",
+        "phase",
+        "open"
+      ]
+    },
+    {
+      "name": "GT: CREATE-X Idea to Prototype",
+      "ats": "pagewatch",
+      "url": "https://create-x.gatech.edu/make/idea-to-prototype",
+      "watch_keywords": [
+        "open",
+        "apply",
+        "application",
+        "deadline",
+        "2027"
+      ]
+    },
+    {
+      "name": "GT: GT-Europe (Metz) semester",
+      "ats": "pagewatch",
+      "url": "https://europe.gatech.edu/",
+      "watch_keywords": [
+        "Spring 2027",
+        "apply",
+        "deadline"
+      ]
+    },
+    {
+      "name": "Competition: DOE CyberForce",
+      "ats": "pagewatch",
+      "url": "https://cyberforce.energy.gov/",
+      "watch_keywords": [
+        "2026",
+        "apply",
+        "open",
+        "registration"
+      ]
+    },
+    {
+      "name": "Competition: National Cyber League",
+      "ats": "pagewatch",
+      "url": "https://nationalcyberleague.org/competition",
+      "watch_keywords": [
+        "registration",
+        "season",
+        "2026"
+      ]
+    },
+    {
+      "name": "Competition: US Cyber Games",
+      "ats": "pagewatch",
+      "url": "https://www.uscybergames.com/",
+      "watch_keywords": [
+        "open",
+        "combine",
+        "season",
+        "2026"
+      ]
+    },
+    {
+      "name": "Competition: COMAP MCM/ICM",
+      "ats": "pagewatch",
+      "url": "https://www.contest.comap.com/undergraduate/contests/",
+      "watch_keywords": [
+        "2027",
+        "registration"
+      ]
+    },
+    {
+      "name": "Competition: picoCTF",
+      "ats": "pagewatch",
+      "url": "https://picoctf.org/",
+      "watch_keywords": [
+        "2027",
+        "registration",
+        "competition"
+      ]
     }
   ]
 }

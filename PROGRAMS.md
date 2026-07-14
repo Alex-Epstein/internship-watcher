@@ -101,3 +101,25 @@ FALL 2026 (junior year) calendar:
 - CREATE-X Startup Launch ($5k+ for Volee, apps ~Jan-Mar for summer)
 - VT Regional Math Contest (late Oct, free, taken at GT) · IMC university
   math olympiad (check if GT sends a team) · HackMIT apps ~Aug-Sep
+
+## 🎯 Highest-priority nearest deadlines (from full sweep, verified 2026-07-13)
+- **~Aug 2026:** Mitacs Globalink opens (soonest abroad deadline) · Neo Scholars cohort · CyberForce apps open
+- **Aug 1:** DoD SMART Scholarship opens (full ride + guaranteed DoD job; clearance = easy adjudication)
+- **Sep 1-Oct 31:** join ACM/IEEE now → UPE-ACM (Sep 16), Merwin (Sep 30), UPE-CS (Oct 1-31)
+- **Sep 30:** DOE SULI Spring 2027 deadline
+- **~Oct:** GT PURA Spring-2027 deadline · NREIP · AIT Budapest (Oct 1) · BSM (Oct 15) · NSA Codebreaker launches
+- **Oct-Dec:** EPFL ERIP nomination · DAAD RISE (Nov 30) · ETH SSRF (~Dec 16) · MPI-CS (~Nov 1) · Goldwater GT deadline (~Dec 1)
+- **Dec 2026-Feb 2027:** DoD Cyber Service Academy (senior-year full ride — chase GT POC via scp.cc.gatech.edu)
+
+## 📌 Abroad Spring 2027 (you'll be overseas — verified fits)
+- **Best "be the semester itself":** GT-Europe/Metz (stack IRL 2958 research), AIT Budapest (CS), Budapest Semesters in Math, EPFL ERIP (Feb-Aug, pays you to research)
+- **Apply NOW:** Da Vinci Derivatives quant intern (May 2027, Amsterdam, targets 2028 grads) — board now polled
+- **Remote-from-abroad:** COMAP MCM/ICM (Jan 28-Feb 1), picoCTF (Mar), NCL spring, Google Summer of Code
+- **Physically-in-Europe edge:** G-Research Spring into Quant Finance (Easter, no class-year cap), IMC Launchpad (May, Amsterdam)
+- **DEAD for you:** Imperial UROP (Jan 2026 rule change bars non-UK students), Flow Traders (no intern visa sponsorship), CERN Technical Student (member-state only)
+
+## ⚠️ Verified dead-ends (stop considering)
+- Tau Beta Pi (GT chapter = engineering majors only) · Boren Spring 2027 (deadline passed) · Gilman (needs Pell)
+- Most quant "diversity" programs (JS INSIGHT/IN FOCUS, DES Discovery/Latitude/Momentum, Two Sigma Diversity)
+- Sophomore-window programs you aged out of: DES Nexus, Discover Citadel 2026, Two Sigma scholarship (verify Sept)
+- RTX/Boeing/Northrop/Lockheed(paused)/Booz general scholarships (all restricted or dead)
