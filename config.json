@@ -180,6 +180,30 @@
       "2026 internship",
       "- 2026",
       "(2026)"
+    ],
+    "priority_locations": [
+      "new york",
+      "nyc",
+      "manhattan",
+      "brooklyn",
+      "jersey city",
+      "san francisco",
+      "menlo park",
+      "palo alto",
+      "mountain view",
+      "sunnyvale",
+      "santa clara",
+      "san jose",
+      "berkeley",
+      "oakland",
+      "san diego",
+      "la jolla",
+      "boston",
+      "cambridge",
+      "somerville",
+      "miami",
+      "philadelphia",
+      "bala cynwyd"
     ]
   },
   "firms": [
@@ -896,6 +920,28 @@
         "deadline"
       ],
       "note": ""
+    },
+    {
+      "name": "Trackers: underclassmen + research programs (zapplyjobs, JGCL)",
+      "ats": "github_md",
+      "urls": [
+        "https://raw.githubusercontent.com/zapplyjobs/underclassmen-internships/main/README.md",
+        "https://raw.githubusercontent.com/zapplyjobs/Research-Internships-for-Undergraduates/main/README.md",
+        "https://raw.githubusercontent.com/Jose-Gael-Cruz-Lopez/underclassmen-opportunities/main/README.md"
+      ]
+    },
+    {
+      "name": "Program: NVIDIA Ignite (2-week Oct window!)",
+      "ats": "pagewatch",
+      "url": "https://www.nvidia.com/en-us/about-nvidia/careers/university-recruiting/",
+      "watch_keywords": [
+        "ignite",
+        "2027",
+        "application",
+        "apply",
+        "freshman",
+        "sophomore"
+      ]
     }
   ]
 }

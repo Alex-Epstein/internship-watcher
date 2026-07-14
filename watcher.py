@@ -739,13 +739,23 @@ def _collapse_locations(jobs):
 
 def _job_li(job, with_company=True):
     company = job.get("company") if with_company else None
-    label = (f"{escape(company)} &mdash; {escape(job['title'])}"
+    pin = "&#128205; " if job.get("_ploc") else ""
+    label = pin + (f"{escape(company)} &mdash; {escape(job['title'])}"
              if company else escape(job["title"]))
     loc = f" &mdash; {escape(job['location'])}" if job["location"] else ""
     return f"<li><a href='{escape(job['url'])}'>{label}</a>{loc}</li>"
 
 
-def build_email_html(grouped, baseline=False):
+def _mark_and_sort_priority(jobs, filters):
+    """Pin-mark and float roles in Alex's priority cities (NYC/SF/SD/Boston/
+    Miami/Philly) to the top of each group. Display-only."""
+    plocs = [p.lower() for p in (filters or {}).get("priority_locations", [])]
+    for j in jobs:
+        j["_ploc"] = bool(plocs) and any(p in (j.get("location") or "").lower() for p in plocs)
+    return sorted(jobs, key=lambda j: not j.get("_ploc"))
+
+
+def build_email_html(grouped, baseline=False, filters=None):
     intro = (
         "Baseline of currently-open roles. Future emails will contain only "
         "<b>newly opened</b> postings."
@@ -767,7 +777,7 @@ def build_email_html(grouped, baseline=False):
                 rest.setdefault(firm, []).append(j)
 
     if cleared:
-        cleared = _collapse_locations(cleared)
+        cleared = _mark_and_sort_priority(_collapse_locations(cleared), filters)
         parts.append(
             "<div style='border-left:4px solid #b7791f;padding:6px 12px;margin:14px 0;"
             "background:#fffbeb'>"
@@ -782,7 +792,7 @@ def build_email_html(grouped, baseline=False):
 
     for firm in sorted(rest):
         parts.append(f"<h3 style='margin:16px 0 4px'>{escape(firm)}</h3><ul>")
-        for job in _collapse_locations(rest[firm]):
+        for job in _mark_and_sort_priority(_collapse_locations(rest[firm]), filters):
             parts.append(_job_li(job))
         parts.append("</ul>")
 
@@ -934,7 +944,7 @@ def main():
         if grouped:
             send_email(
                 f"[Internship Watcher] Baseline: {len(current)} open role(s)",
-                build_email_html(grouped, baseline=True),
+                build_email_html(grouped, baseline=True, filters=filters),
             )
         else:
             print("Baseline run: no relevant roles open right now.")
@@ -943,7 +953,7 @@ def main():
         if total_new:
             send_email(
                 f"[Internship Watcher] {total_new} new role(s) just opened",
-                build_email_html(grouped_new),
+                build_email_html(grouped_new, filters=filters),
             )
         else:
             print("No new roles this run.")
@@ -954,6 +964,20 @@ def main():
         write_open_roles(current)
     else:
         print(f"{OPEN_ROLES_FILE} not rewritten (partial sweep).")
+
+    # Weekly programs digest: the 13:00 UTC Sunday run (9am ET) mails
+    # PROGRAMS.md so upcoming windows (SMART, SULI, NREIP...) never slip.
+    now = time.gmtime()
+    if now.tm_wday == 6 and now.tm_hour == 13:
+        try:
+            prog = open("PROGRAMS.md", encoding="utf-8").read()
+            send_email(
+                "[Internship Watcher] Weekly programs digest -- apply early",
+                "<pre style='font-family:monospace;font-size:13px'>"
+                + escape(prog) + "</pre>",
+            )
+        except Exception as e:  # noqa: BLE001
+            print(f"  x weekly digest skipped: {e}")
 
     if DROP_COUNTS:
         top = sorted(DROP_COUNTS.items(), key=lambda kv: -kv[1])
