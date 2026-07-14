@@ -4382,5 +4382,9 @@
   "https://picoctf.org/": {
     "title": "Page changed - check Competition: picoCTF (may mean applications opened)",
     "url": "https://picoctf.org/"
+  },
+  "https://public.cyber.mil/wid/csa/": {
+    "title": "Page changed - check Scholarship: DoD Cyber Service Academy (may mean applications opened)",
+    "url": "https://public.cyber.mil/wid/csa/"
   }
 }
