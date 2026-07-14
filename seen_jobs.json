@@ -1256,7 +1256,7 @@
     "url": "https://jobs.ashbyhq.com/auctor/9d67c881-3ca7-4616-a059-e94c03e19607"
   },
   "https://jobs.ashbyhq.com/tessera-labs/4614d053-2c8f-4317-8cd2-1d1290721b06": {
-    "title": "Software Engineering Intern, Frontend",
+    "title": "Software Engineering Intern - Frontend",
     "url": "https://jobs.ashbyhq.com/tessera-labs/4614d053-2c8f-4317-8cd2-1d1290721b06"
   },
   "https://jobs.ashbyhq.com/atomicsemi/615feebf-d9e3-4583-9c85-ba16af44e65c": {
@@ -4518,5 +4518,21 @@
   "https://careers-jobyaviation.icims.com/jobs/5168/software-engineer-intern----air-taxi/job": {
     "title": "Software Engineer Intern - Air Taxi",
     "url": "https://careers-jobyaviation.icims.com/jobs/5168/software-engineer-intern----air-taxi/job"
+  },
+  "https://job-boards.greenhouse.io/fiveringsllc/jobs/5349219008": {
+    "title": "Summer Intern 2027 - Quantitative Researcher",
+    "url": "https://job-boards.greenhouse.io/fiveringsllc/jobs/5349219008"
+  },
+  "https://job-boards.greenhouse.io/fiveringsllc/jobs/5139668008": {
+    "title": "Summer Intern 2027 - Quantitative Trader",
+    "url": "https://job-boards.greenhouse.io/fiveringsllc/jobs/5139668008"
+  },
+  "https://job-boards.greenhouse.io/fiveringsllc/jobs/5349707008": {
+    "title": "Summer Intern 2027 - Software Developer",
+    "url": "https://job-boards.greenhouse.io/fiveringsllc/jobs/5349707008"
+  },
+  "https://liveramp.wd5.myworkdayjobs.com/en-us/liverampcareers/job/san-francisco/co-op--software-engineer---conversions-api_jr012232-1": {
+    "title": "Co-Op, Software Engineer - Action Runtime",
+    "url": "https://liveramp.wd5.myworkdayjobs.com/en-US/LiveRampCareers/job/San-Francisco/Co-Op--Software-Engineer---Conversions-API_JR012232-1"
   }
 }
