@@ -870,6 +870,130 @@ def write_open_roles(current):
     print(f"{OPEN_ROLES_FILE} written: {len(current)} open role(s).")
 
 
+# ----------------------------- top picks ----------------------------------- #
+TOP_PICKS_FILE = "TOP_PICKS.md"
+
+# Cities Alex actually wants. Whitelist, so anything not listed (India, China,
+# SE Asia, LatAm, etc.) is excluded automatically.
+GOOD_LOC_RE = re.compile(
+    r"new york|nyc|manhattan|brooklyn|"
+    r"san francisco|\bsf\b|bay area|palo alto|menlo|mountain view|sunnyvale|"
+    r"santa clara|san jose|redwood|cupertino|"
+    r"boston|cambridge, ma|somerville|"
+    r"chicago|evanston|"
+    r"austin|dallas|houston|"
+    r"seattle|bellevue|redmond|kirkland|"
+    r"los angeles|santa monica|el segundo|pasadena|culver city|"
+    r"miami|tampa|jupiter, fl|west palm|"
+    r"philadelphia|bala cynwyd|"
+    r"san diego|la jolla|"
+    r"washington|arlington|mclean|reston|chantilly|bethesda|d\.c\.|\bdc\b|"
+    r"atlanta|denver|boulder|"
+    r"stamford|greenwich|"
+    r"remote - us|remote, us|remote \(us|us remote|remote-us|"
+    r"dublin|london|amsterdam|zurich|"
+    r"\b(ny|ca|ma|il|tx|wa|fl|pa|va|md|ga|co|ct|nj)\b",
+    re.I,
+)
+BAD_LOC_RE = re.compile(
+    r"india|china|bangalore|hyderabad|pune|mumbai|delhi|chennai|gurgaon|noida|"
+    r"shanghai|beijing|shenzhen|guangzhou|suzhou|hangzhou|wuhan|xiamen|hefei|"
+    r"chengdu|zhongshan|malaysia|penang|kuala lumpur|philippines|manila|"
+    r"vietnam|hanoi|ho chi minh|indonesia|jakarta|thailand|bangkok|taiwan|"
+    r"taipei|hsinchu|tainan|korea|seoul|japan|tokyo|brazil|sao paulo|mexico|"
+    r"guadalajara|monterrey|poland|krakow|warsaw|romania|bucharest|bulgaria|"
+    r"sofia|egypt|cairo|turkey|israel|argentina|cordoba|belarus|minsk|"
+    r"sri lanka|africa|dubai|riyadh|saudi|new zealand|auckland|australia|"
+    r"sydney|melbourne|canada|toronto|vancouver|ottawa|montreal",
+    re.I,
+)
+# Roles he wants: quant + SWE + ML/AI. Not hardware/mech/test/validation.
+WANT_RE = re.compile(
+    r"quant|trading|trader|software eng|software dev|swe\b|backend|back-end|"
+    r"full.?stack|infrastructure|platform|systems eng|distributed|devops|sre\b|"
+    r"site reliability|machine learning|deep learning|\bml\b|\bai\b|artificial "
+    r"intelligence|computer vision|\bcv\b|\bnlp\b|\bllm\b|research eng|"
+    r"applied scien|research scien|data eng|data scien|algorithm|forward deployed",
+    re.I,
+)
+SKIP_RE = re.compile(
+    r"hardware|mechanical|electrical|\bfpga\b|asic|analog|circuit|rf eng|"
+    r"manufactur|process eng|quality|test eng|validation|verification|"
+    r"industrial|chemical|materials|thermal|packaging|supply chain|"
+    r"technician|field eng|sales|marketing|business|recruit|hr\b|people ops",
+    re.I,
+)
+SWEET_SPOT = [
+    "transmarket", "akuna", "virtu", "gts", "old mission", "wolverine",
+    "belvedere", "geneva", "peak6", "group one", "allston", "3red",
+    "dv trading", "chicago trading", "ctc", "voloridge", "schonfeld",
+    "exoduspoint", "voleon", "worldquant", "weiss", "flow traders", "ice ",
+    "intercontinental", "walleye", "capula", "arrowstreet", "aquatic",
+]
+ELITE = [
+    "jane street", "hudson river", "hrt", "citadel", "imc", "optiver",
+    "two sigma", "jump trading", "drw", "point72", "cubist", "susquehanna",
+    "sig ", "tower research", "five rings", "xtx", "radix", "pdt", "headlands",
+    "d. e. shaw", "d.e. shaw", "deshaw",
+]
+
+
+def _tier(company):
+    c = (company or "").lower()
+    if any(s in c for s in SWEET_SPOT):
+        return 0
+    if any(e in c for e in ELITE):
+        return 2
+    return 1
+
+
+def write_top_picks(current):
+    """Curated subset of OPEN_ROLES: quant/SWE/ML only, target cities only,
+    sweet-spot firms first. Regenerated every full sweep like OPEN_ROLES.md."""
+    picks = []
+    for rec in current.values():
+        j = rec["job"]
+        title = j.get("title", "")
+        loc = j.get("location", "") or ""
+        comp = j.get("company") or rec["src"]
+        if not WANT_RE.search(title) or SKIP_RE.search(title):
+            continue
+        if BAD_LOC_RE.search(loc):
+            continue
+        if loc and not GOOD_LOC_RE.search(loc):
+            continue
+        picks.append((_tier(comp), comp.lower(), title, comp, loc, j.get("url", ""),
+                      bool(j.get("clearance"))))
+    picks.sort(key=lambda p: (p[0], p[1], p[2]))
+
+    stamp = time.strftime("%Y-%m-%d %H:%M UTC", time.gmtime())
+    lines = [
+        "# Top picks (auto-generated)",
+        "",
+        f"_Quant / SWE / ML roles in target cities only. {len(picks)} of "
+        f"{len(current)} open roles. Rebuilt every sweep: {stamp}._",
+        "",
+        "Sections: sweet-spot firms first, then everything else, elite last.",
+        "",
+    ]
+    headers = {0: "## 🎯 Sweet spot (apply first)",
+               1: "## Other relevant roles",
+               2: "## Elite tier (low odds, cheap to apply)"}
+    seen_tier = None
+    for tier, _, title, comp, loc, url, clr in picks:
+        if tier != seen_tier:
+            lines += ["", headers[tier], ""]
+            seen_tier = tier
+        flag = " 🇺🇸" if clr else ""
+        t = title.replace("[", "(").replace("]", ")")
+        c = comp.replace("[", "(").replace("]", ")")
+        lines.append(f"- [{c} — {t}]({url}){flag}" + (f" — {loc}" if loc else ""))
+
+    with open(TOP_PICKS_FILE, "w", encoding="utf-8") as fh:
+        fh.write("\n".join(lines) + "\n")
+    print(f"{TOP_PICKS_FILE} written: {len(picks)} pick(s).")
+
+
 # ----------------------------- weekly digest -------------------------------- #
 def send_weekly_digest():
     """Sunday email: PROGRAMS.md content (scholarships/fellowships/REU deadlines)
@@ -990,6 +1114,7 @@ def main():
     # would shrink the file to just the sources it reached.
     if sweep_complete:
         write_open_roles(current)
+        write_top_picks(current)
     else:
         print(f"{OPEN_ROLES_FILE} not rewritten (partial sweep).")
 

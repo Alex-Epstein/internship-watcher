@@ -49,6 +49,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add seen_jobs.json
           [ -f OPEN_ROLES.md ] && git add OPEN_ROLES.md || true
+          [ -f TOP_PICKS.md ] && git add TOP_PICKS.md || true
           if git diff --quiet --cached; then
             echo "No state changes to push."
             exit 0
