@@ -1,6 +1,6 @@
 # Top picks (auto-generated)
 
-_Quant / SWE / ML roles in target cities only. 212 of 541 open roles. Rebuilt every sweep: 2026-07-16 11:02 UTC._
+_Quant / SWE / ML roles in target cities only. 212 of 547 open roles. Rebuilt every sweep: 2026-07-16 12:27 UTC._
 
 Sections: sweet-spot firms first, then everything else, elite last.
 
