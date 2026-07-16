@@ -1,6 +1,6 @@
 # Top picks (auto-generated)
 
-_Quant / SWE / ML roles in target cities only. 214 of 550 open roles. Rebuilt every sweep: 2026-07-16 05:42 UTC._
+_Quant / SWE / ML roles in target cities only. 212 of 546 open roles. Rebuilt every sweep: 2026-07-16 08:12 UTC._
 
 Sections: sweet-spot firms first, then everything else, elite last.
 
@@ -58,6 +58,7 @@ Sections: sweet-spot firms first, then everything else, elite last.
 - [base-power — Software Engineering Intern](https://jobs.ashbyhq.com/base-power/5353ea33-57d4-46fa-9a96-e392a3f841bc) — Austin, TX
 - [Beacon Software — Software Engineering Intern](https://jobs.ashbyhq.com/beaconsoftware/2452d342-a069-4eda-adbe-9df296808ca1) — San Francisco, CA
 - [brunswick — Computer Graphics Software Developer Intern](https://brunswick.wd1.myworkdayjobs.com/en-US/search/job/Champaign-IL/Computer-Graphics-Software-Developer-Intern_JR-050234) — Champaign, IL
+- [cat — 2027 Internship -  Solutions Platforms Engineered](https://cat.wd5.myworkdayjobs.com/en-US/SolarTurbines/job/San-Diego-California/XMLNAME-2027-Internship----Solutions-Platforms-Engineered_R0000381657) — San Diego, California
 - [centerfield — Data Science Intern](https://jobs.ashbyhq.com/centerfield/916dcf42-d69a-4f00-875a-f8fe630e0f33) — Los Angeles, California
 - [centerfield — Software Engineer Intern](https://jobs.ashbyhq.com/centerfield/3279e803-56ab-4e12-8168-c2fd60bc8e60) — Los Angeles, California
 - [Chevron — 2026-2027 Information Technology - Software Engineer - Intern](https://chevron.wd5.myworkdayjobs.com/en-US/jobs/job/Houston-Texas-United-States-of-America/XMLNAME-2026-2027-Information-Technology---Software-Engineer---Intern_R000072398) — Houston, TX
@@ -81,9 +82,6 @@ Sections: sweet-spot firms first, then everything else, elite last.
 - [genbio — Software Engineering Intern](https://jobs.lever.co/genbio/4bdb14ae-e19f-40c8-84db-1307dbdabe74) — Palo Alto, CA
 - [H&CO — Software Development Intern](https://career41.sapsf.com/career?career_ns=job_listing&company=hcollp&career_job_req_id=3507) — Coral Gables, FL
 - [Homebase — Forward Deployed Engineering Intern, AI-Native](https://jobs.ashbyhq.com/homebase/a7ab59c0-786e-4675-b684-2ed19b240fb2) — Houston, TX, San Francisco, CA
-- [ing — AI Agent Developer Internship](https://ing.wd3.myworkdayjobs.com/en-US/icsgblcor/job/CDR-Amsterdam---Cedar/AI-Agent-Developer-Intern-2_REQ-10117343) — CDR (Amsterdam - Cedar)
-- [ing — Internship – Non-Financial Risk AI Agent Developer](https://ing.wd3.myworkdayjobs.com/en-US/icsgblcor/job/CDR-Amsterdam---Cedar/Graduate-Internship---NFR-AI-Agent-Developer_REQ-10116402) — CDR (Amsterdam - Cedar)
-- [ing — Internship – Non-Financial Risk AI Agent Developer](https://ing.wd3.myworkdayjobs.com/en-US/icsgblcor/job/ACT-Amsterdam---Acanthus/Graduate-Internship---NFR-AI-Agent-Developer-1_REQ-10117758) — ACT (Amsterdam - Acanthus)
 - [Joby Aviation — Software Engineer Intern - Air Taxi](https://careers-jobyaviation.icims.com/jobs/5168/software-engineer-intern----air-taxi/job) — San Carlos, CA
 - [kos.ai — Software Engineer Intern](https://jobs.ashbyhq.com/kos.ai/efab6ffb-9658-47f7-8b5f-a295c55957d3) — San Francisco
 - [Kudu Dynamics — Software Engineer Intern (1) 🇺🇸](https://leidos.wd5.myworkdayjobs.com/External/job/Chantilly-VA/Software-Engineer-Intern_R-00183707) — Chantilly, VA
