@@ -1,6 +1,6 @@
 # Top picks (auto-generated)
 
-_Quant / SWE / ML roles in target cities only. 231 of 573 open roles. Rebuilt every sweep: 2026-07-17 03:18 UTC._
+_Quant / SWE / ML roles in target cities only. 231 of 573 open roles. Rebuilt every sweep: 2026-07-17 06:17 UTC._
 
 Sections: sweet-spot firms first, then everything else, elite last.
 
@@ -63,7 +63,7 @@ Sections: sweet-spot firms first, then everything else, elite last.
 - [cat — 2027 Internship -  Solutions Platforms Engineered](https://cat.wd5.myworkdayjobs.com/en-US/SolarTurbines/job/San-Diego-California/XMLNAME-2027-Internship----Solutions-Platforms-Engineered_R0000381657) — San Diego, California
 - [centerfield — Data Science Intern](https://jobs.ashbyhq.com/centerfield/916dcf42-d69a-4f00-875a-f8fe630e0f33) — Los Angeles, California
 - [centerfield — Software Engineer Intern](https://jobs.ashbyhq.com/centerfield/3279e803-56ab-4e12-8168-c2fd60bc8e60) — Los Angeles, California
-- [Chevron — Information Technology Software Engineer Intern (2026-2027)](https://chevron.wd5.myworkdayjobs.com/en-US/jobs/job/Houston-Texas-United-States-of-America/XMLNAME-2026-2027-Information-Technology---Software-Engineer---Intern_R000072398) — Houston, TX
+- [Chevron — 2026-2027 Information Technology - Software Engineer - Intern](https://chevron.wd5.myworkdayjobs.com/en-US/jobs/job/Houston-Texas-United-States-of-America/XMLNAME-2026-2027-Information-Technology---Software-Engineer---Intern_R000072398) — Houston, TX
 - [circleback — Software Engineering Intern (Summer 2027)](https://jobs.ashbyhq.com/circleback/2bb6be67-d1a8-42f7-bb1b-64ee36bf613f) — San Francisco
 - [Circleback — Software Engineering Intern (Summer 2027) 🛂](https://www.ycombinator.com/companies/circleback/jobs/QMpriul-software-engineering-intern-summer-2027) — San Francisco, CA
 - [CloudFit Software — Summer Intern, Early Interest (Software / AI/ML / Cyber) 🇺🇸](https://cloudfitsoftware.applytojob.com/apply/oaG5GcybAo) — Lynchburg, VA
@@ -200,13 +200,13 @@ Sections: sweet-spot firms first, then everything else, elite last.
 - [D. E. Shaw — Software Developer Intern](https://www.deshaw.com/careers/software-developer-intern-new-york-summer-2027-5894) — New York, NY
 - [D. E. Shaw — Systems Engineering Intern](https://www.deshaw.com/careers/systems-engineering-intern-new-york-summer-2027-5916) — New York, NY
 - [D. E. Shaw & Co. — Software Developer Intern - New York - Summer 2027](https://www.deshaw.com/careers/5894) — New York City, NY
-- [drweng — Quantitative Research Intern](https://job-boards.greenhouse.io/drweng/jobs/7957756) — London
 - [drweng — Quantitative Research Intern](https://job-boards.greenhouse.io/drweng/jobs/7818540) — Chicago, New York City
+- [drweng — Quantitative Research Intern](https://job-boards.greenhouse.io/drweng/jobs/7957756) — London
 - [drweng — Quantitative Trading Analyst Intern](https://job-boards.greenhouse.io/drweng/jobs/7668776) — Chicago, Illinois
 - [drweng — Quantitative Trading Analyst Intern](https://job-boards.greenhouse.io/drweng/jobs/7957243) — London
-- [drweng — Software Developer Intern](https://job-boards.greenhouse.io/drweng/jobs/7942281) — London
 - [drweng — Software Developer Intern](https://job-boards.greenhouse.io/drweng/jobs/7992936) — Chicago
 - [drweng — Software Developer Intern](https://job-boards.greenhouse.io/drweng/jobs/8020364) — Amsterdam
+- [drweng — Software Developer Intern](https://job-boards.greenhouse.io/drweng/jobs/7942281) — London
 - [Hudson River Trading — Algorithm Development (Quant Research) Internship – Summer 2027](https://www.hudsonrivertrading.com/careers/job/?gh_jid=7964062) — New York, NY, United States; Singapore
 - [Hudson River Trading — Software Engineering Intern (Summer 2027, C++ / Python)](https://www.hudsonrivertrading.com/hrt-job/software-engineering-internship-c-or-python-summer-2027/) — New York, NY (multiple)
 - [Hudson River Trading — Software Engineering Internship (C++ or Python) – Summer 2027](https://www.hudsonrivertrading.com/careers/job/?gh_jid=8052083) — Austin, TX, United States; Chicago, Illinois, United States; New York, NY, United States; Singapore
