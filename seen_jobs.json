@@ -560,7 +560,7 @@
     "url": "https://jobs.ashbyhq.com/homebase/a7ab59c0-786e-4675-b684-2ed19b240fb2"
   },
   "https://salesforce.wd12.myworkdayjobs.com/external_career_site/job/california---san-francisco/summer-2027-intern---software-engineer_jr340771-1": {
-    "title": "Software Engineer Intern (Futureforce)",
+    "title": "Software Engineer Intern (Futureforce) 🔒",
     "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/California---San-Francisco/Summer-2027-Intern---Software-Engineer_JR340771-1"
   },
   "https://www.amazon.jobs/en/jobs/3136266/robotics-software-development-engineer-intern-co-op-2026?no_int_redir=1": {
@@ -4596,7 +4596,7 @@
     "url": "https://pwc.wd3.myworkdayjobs.com/en-US/nonpublic_postings/job/Rome/Risk-Analytics-Intern----Roma--OTS-_744840WD"
   },
   "https://chevron.wd5.myworkdayjobs.com/en-us/jobs/job/houston-texas-united-states-of-america/xmlname-2026-2027-information-technology---software-engineer---intern_r000072398": {
-    "title": "2026-2027 Information Technology - Software Engineer - Intern",
+    "title": "Information Technology Software Engineer Intern (2026-2027)",
     "url": "https://chevron.wd5.myworkdayjobs.com/en-US/jobs/job/Houston-Texas-United-States-of-America/XMLNAME-2026-2027-Information-Technology---Software-Engineer---Intern_R000072398"
   },
   "https://tmx.wd3.myworkdayjobs.com/en-us/tmx_careers/job/montreal---1190-av-des-canadiens-de-montreal/student-intern--devops--fall-term-_r-6097": {
@@ -4728,7 +4728,7 @@
     "url": "https://www.citadelsecurities.com/careers/details/software-engineer-intern-us/"
   },
   "https://www.oldmissioncapital.com/careers/?gh_jid=7796180003": {
-    "title": "Software Engineer - 2027 Internship Program - June Start",
+    "title": "Software Engineer – 2027 Internship Program (June Start)",
     "url": "https://www.oldmissioncapital.com/careers/?gh_jid=7796180003"
   },
   "https://copart.wd12.myworkdayjobs.com/en-us/copart/job/dallas-tx---headquarters/software-engineering-intern_jr109673": {
@@ -4746,5 +4746,101 @@
   "https://cae.wd3.myworkdayjobs.com/en-us/career/job/montreal-st-laurent/c-it-106---ai-intern_122744": {
     "title": "C-IT-106 - AI Intern",
     "url": "https://cae.wd3.myworkdayjobs.com/en-US/career/job/Montreal-St-Laurent/C-IT-106---AI-Intern_122744"
+  },
+  "https://intel.wd1.myworkdayjobs.com/en-us/external/job/prc-shanghai/mba-internship---ecosystem-development-specialist_jr0285771": {
+    "title": "MBA Internship – Ecosystem Development Specialist",
+    "url": "https://intel.wd1.myworkdayjobs.com/en-US/External/job/PRC-Shanghai/MBA-Internship---Ecosystem-Development-Specialist_JR0285771"
+  },
+  "https://boards.greenhouse.io/neuralink/jobs/7565469003?gh_jid=7565469003": {
+    "title": "Analog and Mixed-Signal IC Design Engineer Intern ",
+    "url": "https://boards.greenhouse.io/neuralink/jobs/7565469003?gh_jid=7565469003"
+  },
+  "https://boards.greenhouse.io/neuralink/jobs/7702527003?gh_jid=7702527003": {
+    "title": "Electrical Engineer Intern, Implant Embedded Systems",
+    "url": "https://boards.greenhouse.io/neuralink/jobs/7702527003?gh_jid=7702527003"
+  },
+  "https://boards.greenhouse.io/neuralink/jobs/6283663003?gh_jid=6283663003": {
+    "title": "Embedded Software Engineer Intern, Implant Embedded Systems",
+    "url": "https://boards.greenhouse.io/neuralink/jobs/6283663003?gh_jid=6283663003"
+  },
+  "https://boards.greenhouse.io/neuralink/jobs/6648992003?gh_jid=6648992003": {
+    "title": "Firmware Engineer Intern, Robotics and Surgery Engineering",
+    "url": "https://boards.greenhouse.io/neuralink/jobs/6648992003?gh_jid=6648992003"
+  },
+  "https://boards.greenhouse.io/neuralink/jobs/7736276003?gh_jid=7736276003": {
+    "title": "IT Systems Administrator Intern",
+    "url": "https://boards.greenhouse.io/neuralink/jobs/7736276003?gh_jid=7736276003"
+  },
+  "https://boards.greenhouse.io/neuralink/jobs/6594261003?gh_jid=6594261003": {
+    "title": "Machine Learning Engineer Intern",
+    "url": "https://boards.greenhouse.io/neuralink/jobs/6594261003?gh_jid=6594261003"
+  },
+  "https://boards.greenhouse.io/neuralink/jobs/7666761003?gh_jid=7666761003": {
+    "title": "Manufacturing Intern, Surgery & Robot Hardware",
+    "url": "https://boards.greenhouse.io/neuralink/jobs/7666761003?gh_jid=7666761003"
+  },
+  "https://boards.greenhouse.io/neuralink/jobs/6594422003?gh_jid=6594422003": {
+    "title": "Software Engineer Intern, BCI Applications",
+    "url": "https://boards.greenhouse.io/neuralink/jobs/6594422003?gh_jid=6594422003"
+  },
+  "https://boards.greenhouse.io/neuralink/jobs/6569018003?gh_jid=6569018003": {
+    "title": "Software Engineer Intern, Implant",
+    "url": "https://boards.greenhouse.io/neuralink/jobs/6569018003?gh_jid=6569018003"
+  },
+  "https://boards.greenhouse.io/neuralink/jobs/5469298003?gh_jid=5469298003": {
+    "title": "Software Engineer Intern, Infrastructure",
+    "url": "https://boards.greenhouse.io/neuralink/jobs/5469298003?gh_jid=5469298003"
+  },
+  "https://boards.greenhouse.io/neuralink/jobs/6083322003?gh_jid=6083322003": {
+    "title": "Software Engineer Intern, Internal Apps",
+    "url": "https://boards.greenhouse.io/neuralink/jobs/6083322003?gh_jid=6083322003"
+  },
+  "https://boards.greenhouse.io/neuralink/jobs/5469305003?gh_jid=5469305003": {
+    "title": "Software Engineer Intern, Robotics",
+    "url": "https://boards.greenhouse.io/neuralink/jobs/5469305003?gh_jid=5469305003"
+  },
+  "https://jobs.smartrecruiters.com/westerndigital/744000136953840": {
+    "title": "Intern- Firmware Engineering",
+    "url": "https://jobs.smartrecruiters.com/WesternDigital/744000136953840"
+  },
+  "https://jobs.smartrecruiters.com/westerndigital/744000136392387": {
+    "title": "Intern - AI Information Technology & Network Automation Engineer (Studying Bachelor Degree) ",
+    "url": "https://jobs.smartrecruiters.com/WesternDigital/744000136392387"
+  },
+  "https://job-boards.greenhouse.io/neuralink/jobs/6594422003": {
+    "title": "Software Engineer Intern, BCI Applications",
+    "url": "https://job-boards.greenhouse.io/neuralink/jobs/6594422003"
+  },
+  "https://job-boards.greenhouse.io/point72/jobs/7297642002": {
+    "title": "Quantitative Research Intern (Summer 2027)",
+    "url": "https://job-boards.greenhouse.io/point72/jobs/7297642002"
+  },
+  "https://www.capitalonecareers.com/job/-/-/234/97421687312": {
+    "title": "Product Development Internship Program (Summer 2027)",
+    "url": "https://www.capitalonecareers.com/job/-/-/234/97421687312"
+  },
+  "https://cat.wd5.myworkdayjobs.com/solarturbines/job/san-diego-california/xmlname-2027-internship----solutions-platforms-engineered_r0000381657": {
+    "title": "Solutions Platforms Engineered Intern (2027)",
+    "url": "https://cat.wd5.myworkdayjobs.com/SolarTurbines/job/San-Diego-California/XMLNAME-2027-Internship----Solutions-Platforms-Engineered_R0000381657"
+  },
+  "https://cat.wd5.myworkdayjobs.com/caterpillarcareers/job/peoria-illinois/xmlname-2026-summer-corporate-intern---digital-and-analytics_r0000379955": {
+    "title": "Corporate Intern, Digital and Analytics (Summer 2027)",
+    "url": "https://cat.wd5.myworkdayjobs.com/caterpillarcareers/job/Peoria-Illinois/XMLNAME-2026-Summer-Corporate-Intern---Digital-and-Analytics_R0000379955"
+  },
+  "https://job-boards.greenhouse.io/oldmissioncapital/jobs/7796180003": {
+    "title": "Software Engineer Intern (Summer 2027, June Start)",
+    "url": "https://job-boards.greenhouse.io/oldmissioncapital/jobs/7796180003"
+  },
+  "https://akunacapital.com/careers/job/8018847/?gh_jid=8018847": {
+    "title": "Software Engineer Intern (Summer 2027, Python / C++ / Full Stack / C# .NET)",
+    "url": "https://akunacapital.com/careers/job/8018847/?gh_jid=8018847"
+  },
+  "https://www.hudsonrivertrading.com/hrt-job/software-engineering-internship-c-or-python-summer-2027/": {
+    "title": "Software Engineering Intern (Summer 2027, C++ / Python)",
+    "url": "https://www.hudsonrivertrading.com/hrt-job/software-engineering-internship-c-or-python-summer-2027/"
+  },
+  "https://jobs.baesystems.com/global/en/job/bae1us127293brexternal/software-engineering-intern-i-summer-2027": {
+    "title": "Software Engineering Intern I (Summer 2027) 🇺🇸",
+    "url": "https://jobs.baesystems.com/global/en/job/BAE1US127293BREXTERNAL/Software-Engineering-Intern-I-Summer-2027"
   }
 }
