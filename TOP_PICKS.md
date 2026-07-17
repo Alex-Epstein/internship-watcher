@@ -1,6 +1,6 @@
 # Top picks (auto-generated)
 
-_Quant / SWE / ML roles in target cities only. 233 of 574 open roles. Rebuilt every sweep: 2026-07-17 13:26 UTC._
+_Quant / SWE / ML roles in target cities only. 230 of 578 open roles. Rebuilt every sweep: 2026-07-17 15:15 UTC._
 
 Sections: sweet-spot firms first, then everything else, elite last.
 
@@ -51,8 +51,8 @@ Sections: sweet-spot firms first, then everything else, elite last.
 - [Amazon (AWS / Robotics / all) — 2027 Software Dev Engineer Intern](https://www.amazon.jobs/en/jobs/10418355/2027-software-dev-engineer-intern) — Dublin, IRL
 - [Amazon (AWS / Robotics / all) — Quantum Signal Train Engineer Internship, Amazon Center for Quantum Computing](https://www.amazon.jobs/en/jobs/10387501/quantum-signal-train-engineer-internship-amazon-center-for-quantum-computing) — Pasadena, California, USA
 - [Amazon (AWS / Robotics / all) — Software Development Engineer Internship, Costa Rica](https://www.amazon.jobs/en/jobs/3126072/software-development-engineer-internship-costa-rica) — San Jose, San Jose, CRI
-- [Anduril — 2027 Software Engineer Intern](https://boards.greenhouse.io/andurilindustries/jobs/5148079007?gh_jid=5148079007) 🇺🇸 — Atlanta, Georgia, United States; Boston, Massachusetts, United States; Costa Mesa, California, United States; Irvine, California, United States; Reston, Virginia, United States; Seattle, Washington, United States
 - [Anduril — Software Engineer Intern](https://job-boards.greenhouse.io/andurilindustries/jobs/5148079007?gh_jid=5148079007) — Atlanta, GA, Boston, MA, Costa Mesa, CA, Irvine, CA, Reston, VA, Seattle, WA
+- [andurilindustries — 2027 Software Engineer Intern](https://boards.greenhouse.io/andurilindustries/jobs/5148079007?gh_jid=5148079007) 🇺🇸 — Atlanta, Georgia, United States; Boston, Massachusetts, United States; Costa Mesa, California, United States; Irvine, California, United States; Reston, Virginia, United States; Seattle, Washington, United States
 - [Apex Technology, Inc. — Software Engineering Intern, Embedded Systems](https://jobs.ashbyhq.com/apex-technology-inc/5ec2dfa9-724d-4ce4-ab97-5067ec747f11) — Los Angeles
 - [auctor — Software Engineering Intern](https://jobs.ashbyhq.com/auctor/9d67c881-3ca7-4616-a059-e94c03e19607) — New York
 - [Avanade — Software Engineering Intern](https://accenture.wd103.myworkdayjobs.com/en-GB/AvanadeCareers/job/Los-Angeles-6181-W-Centinela-Ave-Corp/Intern--Software-Engineering---June-2026_R00319370?jr_id=69e6a556f8fa2f3ec32a3173) — Los Angeles, CA, Seattle, WA
@@ -63,13 +63,14 @@ Sections: sweet-spot firms first, then everything else, elite last.
 - [cat — 2027 Internship -  Solutions Platforms Engineered](https://cat.wd5.myworkdayjobs.com/en-US/SolarTurbines/job/San-Diego-California/XMLNAME-2027-Internship----Solutions-Platforms-Engineered_R0000381657) — San Diego, California
 - [centerfield — Data Science Intern](https://jobs.ashbyhq.com/centerfield/916dcf42-d69a-4f00-875a-f8fe630e0f33) — Los Angeles, California
 - [centerfield — Software Engineer Intern](https://jobs.ashbyhq.com/centerfield/3279e803-56ab-4e12-8168-c2fd60bc8e60) — Los Angeles, California
-- [Chevron — 2026-2027 Information Technology - Software Engineer - Intern](https://chevron.wd5.myworkdayjobs.com/en-US/jobs/job/Houston-Texas-United-States-of-America/XMLNAME-2026-2027-Information-Technology---Software-Engineer---Intern_R000072398) — Houston, TX
+- [chevron — 2026-2027 Information Technology - Software Engineer - Intern](https://chevron.wd5.myworkdayjobs.com/en-US/university/job/Houston-Texas-United-States-of-America/XMLNAME-2026-2027-Information-Technology---Software-Engineer---Intern_R000072398-1) — Houston, Texas, United States of America
 - [circleback — Software Engineering Intern (Summer 2027)](https://jobs.ashbyhq.com/circleback/2bb6be67-d1a8-42f7-bb1b-64ee36bf613f) — San Francisco
 - [Circleback — Software Engineering Intern (Summer 2027) 🛂](https://www.ycombinator.com/companies/circleback/jobs/QMpriul-software-engineering-intern-summer-2027) — San Francisco, CA
 - [CloudFit Software — Summer Intern, Early Interest (Software / AI/ML / Cyber) 🇺🇸](https://cloudfitsoftware.applytojob.com/apply/oaG5GcybAo) — Lynchburg, VA
+- [composio — Full-stack Intern](https://jobs.ashbyhq.com/composio/4d819015-0b9a-466f-9b41-8e1cc1e5b6d9) — sf
 - [copart — DevOps Engineering Intern](https://copart.wd12.myworkdayjobs.com/en-US/copart/job/Dallas-TX---Headquarters/DevOps-Engineering-Intern_JR109490) — Dallas, TX - Headquarters
 - [copart — Software Engineering Intern](https://copart.wd12.myworkdayjobs.com/en-US/copart/job/Dallas-TX---Headquarters/Software-Engineering-Intern_JR109393) — Dallas, TX - Headquarters
-- [Copart — Software Engineering Intern](https://copart.wd12.myworkdayjobs.com/en-US/copart/job/Dallas-TX---Headquarters/Software-Engineering-Intern_JR109673) — Dallas, TX
+- [Copart — Software Engineering Intern](https://copart.wd12.myworkdayjobs.com/en-US/copart/job/Dallas-TX---Headquarters/Software-Engineering-Intern_JR109897) — Dallas, TX
 - [ctgt — Software Engineering Intern (Summer 2027)](https://jobs.ashbyhq.com/ctgt/f657c2f5-125e-42b6-a68a-646bbea3d155) — San Francisco
 - [CTGT — Software Engineering Intern / Research Intern, Interpretability (Summer 2027)](https://www.ycombinator.com/companies/ctgt/jobs/b3hTkK4-software-engineering-intern-summer-2027) — San Francisco, CA
 - [Da Vinci Derivatives (Amsterdam quant) — Quant Trading Intern](https://job-boards.eu.greenhouse.io/davinciderivatives/jobs/4196845101) — Amsterdam, North Holland, Netherlands
@@ -84,8 +85,6 @@ Sections: sweet-spot firms first, then everything else, elite last.
 - [genbio — Software Engineering Intern](https://jobs.lever.co/genbio/4bdb14ae-e19f-40c8-84db-1307dbdabe74) — Palo Alto, CA
 - [H&CO — Software Development Intern](https://career41.sapsf.com/career?career_ns=job_listing&company=hcollp&career_job_req_id=3507) — Coral Gables, FL
 - [Homebase — Forward Deployed Engineering Intern, AI-Native](https://jobs.ashbyhq.com/homebase/a7ab59c0-786e-4675-b684-2ed19b240fb2) — Houston, TX, San Francisco, CA
-- [ing — AI & Finance Transformation Intern](https://ing.wd3.myworkdayjobs.com/en-US/icsgblcor/job/ACT-Amsterdam---Acanthus/AI---Finance-Transformation-Intern_REQ-10118227) — ACT (Amsterdam - Acanthus)
-- [ing — MSc Internship Financial Markets | Quantitative Analytics](https://ing.wd3.myworkdayjobs.com/en-US/icsgblcor/job/TRC-Amsterdam---Treasury-Center/MSc-Internship-Financial-Markets---Quantitative-Analytics_REQ-10118450) — TRC (Amsterdam - Treasury Center)
 - [Joby Aviation — Software Engineer Intern - Air Taxi](https://careers-jobyaviation.icims.com/jobs/5168/software-engineer-intern----air-taxi/job) — San Carlos, CA
 - [kos.ai — Software Engineer Intern](https://jobs.ashbyhq.com/kos.ai/efab6ffb-9658-47f7-8b5f-a295c55957d3) — San Francisco
 - [Kudu Dynamics — Software Engineer Intern (1) 🇺🇸](https://leidos.wd5.myworkdayjobs.com/External/job/Chantilly-VA/Software-Engineer-Intern_R-00183707) — Chantilly, VA
@@ -98,7 +97,6 @@ Sections: sweet-spot firms first, then everything else, elite last.
 - [lilasciences — Co-op, Machine Learning for Digital Twins](https://job-boards.greenhouse.io/lilasciences/jobs/4280809009) — Cambridge, MA USA
 - [LiveRamp — Software Engineer Intern, Pixel Serving](https://liveramp.wd5.myworkdayjobs.com/LiveRampCareers/job/New-York/Intern--Software-Engineer---Pixel-Serving_JR012201) — New York, NY
 - [make-rain — Software Engineering Intern](https://jobs.lever.co/make-rain/b45f954e-19df-45b1-8748-c8ae442a2e8b) — El Segundo, CA
-- [meshy — Infrastructure Intern](https://jobs.ashbyhq.com/meshy/c2f596a3-378c-4a57-b2cd-0bccd88866d7) — Bay Area Office
 - [Naive — Software Engineer Intern 🇺🇸](https://www.workatastartup.com/jobs/94647) — San Francisco, CA / Remote (US)
 - [Nash — Full Stack Engineering Intern 🇺🇸](https://www.workatastartup.com/jobs/94993) — San Francisco, CA
 - [netic — Full-Stack Software Engineer (Product) - Intern - 2026-2027](https://jobs.ashbyhq.com/netic/f291394a-f3c5-4f46-9b87-77aea3d487ef) — San Francisco
@@ -187,7 +185,6 @@ Sections: sweet-spot firms first, then everything else, elite last.
 - [TikTok — LLM Post-training Engineer Intern, Research & Product](https://lifeattiktok.com/search/7631599293708126517) — San Jose, CA
 - [towerresearchcapital — Quantitative Developer Intern - Summer 2027](https://www.tower-research.com/open-positions/?gh_jid=8044334) — New York, Chicago
 - [towerresearchcapital — Quantitative Trader Intern - Summer 2027](https://www.tower-research.com/open-positions/?gh_jid=8024128) — New York, Chicago
-- [Traackr — Software Engineering Intern - Part-Time - Internal Tooling](https://jobs.lever.co/traackr/9d884d26-018c-45b2-8cfb-f17d29d4e688) — New York City, NY
 - [Trata — Research Scientist Intern](https://www.workatastartup.com/jobs/94620) — San Francisco, CA / New York, NY
 - [Veeam Software — Software Engineering Intern, Platform, Security & AI](https://job-boards.eu.greenhouse.io/veeamsoftware/jobs/4857832101) — San Jose, CA
 - [Veeam Software — Software Engineering Intern, Policy Engineering](https://job-boards.eu.greenhouse.io/veeamsoftware/jobs/4857828101) — San Jose, CA
@@ -206,9 +203,9 @@ Sections: sweet-spot firms first, then everything else, elite last.
 - [drweng — Quantitative Research Intern](https://job-boards.greenhouse.io/drweng/jobs/7818540) — Chicago, New York City
 - [drweng — Quantitative Trading Analyst Intern](https://job-boards.greenhouse.io/drweng/jobs/7957243) — London
 - [drweng — Quantitative Trading Analyst Intern](https://job-boards.greenhouse.io/drweng/jobs/7668776) — Chicago, Illinois
-- [drweng — Software Developer Intern](https://job-boards.greenhouse.io/drweng/jobs/7942281) — London
-- [drweng — Software Developer Intern](https://job-boards.greenhouse.io/drweng/jobs/7992936) — Chicago
 - [drweng — Software Developer Intern](https://job-boards.greenhouse.io/drweng/jobs/8020364) — Amsterdam
+- [drweng — Software Developer Intern](https://job-boards.greenhouse.io/drweng/jobs/7992936) — Chicago
+- [drweng — Software Developer Intern](https://job-boards.greenhouse.io/drweng/jobs/7942281) — London
 - [Hudson River Trading — Algorithm Development (Quant Research) Internship – Summer 2027](https://www.hudsonrivertrading.com/careers/job/?gh_jid=7964062) — New York, NY, United States; Singapore
 - [Hudson River Trading — Software Engineering Intern (Summer 2027, C++ / Python)](https://www.hudsonrivertrading.com/hrt-job/software-engineering-internship-c-or-python-summer-2027/) — New York, NY (multiple)
 - [Hudson River Trading — Software Engineering Internship (C++ or Python) – Summer 2027](https://www.hudsonrivertrading.com/careers/job/?gh_jid=8052083) — Austin, TX, United States; Chicago, Illinois, United States; New York, NY, United States; Singapore
