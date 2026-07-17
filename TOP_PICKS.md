@@ -1,6 +1,6 @@
 # Top picks (auto-generated)
 
-_Quant / SWE / ML roles in target cities only. 231 of 573 open roles. Rebuilt every sweep: 2026-07-17 09:10 UTC._
+_Quant / SWE / ML roles in target cities only. 232 of 574 open roles. Rebuilt every sweep: 2026-07-17 11:23 UTC._
 
 Sections: sweet-spot firms first, then everything else, elite last.
 
@@ -177,6 +177,7 @@ Sections: sweet-spot firms first, then everything else, elite last.
 - [StarSling — Software Engineer Intern](https://www.workatastartup.com/jobs/95003) 🇺🇸 — San Mateo, CA
 - [Stoke Space — Software Engineer Intern](https://www.stokespace.com/careers/current-openings/?gh_jid=5987663004&jr_id=69fae0acd21cf86d1e3cd79c) — Kent, WA
 - [Stoke Space — Software Engineer Intern 🇺🇸](https://www.stokespace.com/careers/current-openings/?gh_jid=5987663004) — Kent, WA
+- [tencent — AI Product Manager Intern](https://tencent.wd1.myworkdayjobs.com/en-US/tencent_careers/job/Netherlands-Amsterdam/AI-Product-Manager-Intern_R107776) — Netherlands-Amsterdam
 - [tencent — Research Intern – Video World Models (Research & ML Systems)](https://tencent.wd1.myworkdayjobs.com/en-US/tencent_careers/job/US-California-Palo-Alto/Research-Intern---Video-World-Models--Research---ML-Systems-_R107752-1) — US-California-Palo Alto
 - [tencent — Software Engineering Intern](https://tencent.wd1.myworkdayjobs.com/en-US/tencent_careers/job/United-Kindom-London/Software-Engineering-Intern_R107162-1) — United Kindom-London
 - [Terranox AI — Summer Intern - AI/ML Engineering](https://www.workatastartup.com/jobs/94631) 🇺🇸 — San Francisco, CA
@@ -202,8 +203,8 @@ Sections: sweet-spot firms first, then everything else, elite last.
 - [D. E. Shaw & Co. — Software Developer Intern - New York - Summer 2027](https://www.deshaw.com/careers/5894) — New York City, NY
 - [drweng — Quantitative Research Intern](https://job-boards.greenhouse.io/drweng/jobs/7957756) — London
 - [drweng — Quantitative Research Intern](https://job-boards.greenhouse.io/drweng/jobs/7818540) — Chicago, New York City
-- [drweng — Quantitative Trading Analyst Intern](https://job-boards.greenhouse.io/drweng/jobs/7668776) — Chicago, Illinois
 - [drweng — Quantitative Trading Analyst Intern](https://job-boards.greenhouse.io/drweng/jobs/7957243) — London
+- [drweng — Quantitative Trading Analyst Intern](https://job-boards.greenhouse.io/drweng/jobs/7668776) — Chicago, Illinois
 - [drweng — Software Developer Intern](https://job-boards.greenhouse.io/drweng/jobs/7942281) — London
 - [drweng — Software Developer Intern](https://job-boards.greenhouse.io/drweng/jobs/7992936) — Chicago
 - [drweng — Software Developer Intern](https://job-boards.greenhouse.io/drweng/jobs/8020364) — Amsterdam
