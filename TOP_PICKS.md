@@ -1,6 +1,6 @@
 # Top picks (auto-generated)
 
-_Quant / SWE / ML roles in target cities only. 232 of 590 open roles. Rebuilt every sweep: 2026-07-19 15:58 UTC._
+_Quant / SWE / ML roles in target cities only. 233 of 591 open roles. Rebuilt every sweep: 2026-07-19 17:01 UTC._
 
 Sections: sweet-spot firms first, then everything else, elite last.
 
@@ -43,6 +43,7 @@ Sections: sweet-spot firms first, then everything else, elite last.
 
 ## Other relevant roles
 
+- [Abroad: G-Research Spring into Quant Finance — Page changed - check Abroad: G-Research Spring into Quant Finance (may mean applications opened)](https://www.gresearch.com/spring-into-quant-finance/)
 - [Abundant — Software Engineering Intern, Research Focused](https://www.workatastartup.com/jobs/94634) 🇺🇸 — San Francisco, CA
 - [Affinius Capital — Data Scientist Intern](https://careers-affiniuscapital.icims.com/jobs/2284/summer-2027-data-scientist-intern/job) — San Antonio, TX
 - [Al Warren Oil Company — Software Developer Intern](https://apply.workable.com/al-warren-oil-company-inc/j/A4487B349D/) — Bensenville, IL
