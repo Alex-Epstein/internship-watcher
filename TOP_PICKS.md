@@ -1,6 +1,6 @@
 # Top picks (auto-generated)
 
-_Quant / SWE / ML roles in target cities only. 233 of 591 open roles. Rebuilt every sweep: 2026-07-19 13:20 UTC._
+_Quant / SWE / ML roles in target cities only. 232 of 590 open roles. Rebuilt every sweep: 2026-07-19 14:56 UTC._
 
 Sections: sweet-spot firms first, then everything else, elite last.
 
@@ -43,7 +43,6 @@ Sections: sweet-spot firms first, then everything else, elite last.
 
 ## Other relevant roles
 
-- [Abroad: G-Research Spring into Quant Finance — Page changed - check Abroad: G-Research Spring into Quant Finance (may mean applications opened)](https://www.gresearch.com/spring-into-quant-finance/)
 - [Abundant — Software Engineering Intern, Research Focused](https://www.workatastartup.com/jobs/94634) 🇺🇸 — San Francisco, CA
 - [Affinius Capital — Data Scientist Intern](https://careers-affiniuscapital.icims.com/jobs/2284/summer-2027-data-scientist-intern/job) — San Antonio, TX
 - [Al Warren Oil Company — Software Developer Intern](https://apply.workable.com/al-warren-oil-company-inc/j/A4487B349D/) — Bensenville, IL
@@ -70,7 +69,7 @@ Sections: sweet-spot firms first, then everything else, elite last.
 - [composio — Full-stack Intern](https://jobs.ashbyhq.com/composio/4d819015-0b9a-466f-9b41-8e1cc1e5b6d9) — sf
 - [copart — DevOps Engineering Intern](https://copart.wd12.myworkdayjobs.com/en-US/copart/job/Dallas-TX---Headquarters/DevOps-Engineering-Intern_JR109490) — Dallas, TX - Headquarters
 - [copart — Software Engineering Intern](https://copart.wd12.myworkdayjobs.com/en-US/copart/job/Dallas-TX---Headquarters/Software-Engineering-Intern_JR109393) — Dallas, TX - Headquarters
-- [Copart — Software Engineering Intern](https://copart.wd12.myworkdayjobs.com/en-US/copart/job/Dallas-TX---Headquarters/Software-Engineering-Intern_JR109689) — Dallas, TX
+- [Copart — Software Engineering Intern](https://copart.wd12.myworkdayjobs.com/en-US/copart/job/Dallas-TX---Headquarters/Software-Engineering-Intern_JR109673) — Dallas, TX
 - [ctgt — Software Engineering Intern (Summer 2027)](https://jobs.ashbyhq.com/ctgt/f657c2f5-125e-42b6-a68a-646bbea3d155) — San Francisco
 - [CTGT — Software Engineering Intern / Research Intern, Interpretability (Summer 2027)](https://www.ycombinator.com/companies/ctgt/jobs/b3hTkK4-software-engineering-intern-summer-2027) — San Francisco, CA
 - [Da Vinci Derivatives (Amsterdam quant) — Quant Trading Intern](https://job-boards.eu.greenhouse.io/davinciderivatives/jobs/4196845101) — Amsterdam, North Holland, Netherlands
