@@ -891,7 +891,8 @@ GOOD_LOC_RE = re.compile(
     r"atlanta|denver|boulder|"
     r"stamford|greenwich|"
     r"remote - us|remote, us|remote \(us|us remote|remote-us|"
-    r"dublin|london|amsterdam|zurich|"
+    r"dublin|london|amsterdam|zurich|paris|frankfurt|munich|madrid|milan|"
+    r"stockholm|copenhagen|brussels|vienna|luxembourg|tokyo|"
     r"\b(ny|ca|ma|il|tx|wa|fl|pa|va|md|ga|co|ct|nj)\b",
     re.I,
 )
@@ -904,7 +905,8 @@ BAD_LOC_RE = re.compile(
     r"guadalajara|monterrey|poland|krakow|warsaw|romania|bucharest|bulgaria|"
     r"sofia|egypt|cairo|turkey|israel|argentina|cordoba|belarus|minsk|"
     r"sri lanka|africa|dubai|riyadh|saudi|new zealand|auckland|australia|"
-    r"sydney|melbourne|canada|toronto|vancouver|ottawa|montreal",
+    r"sydney|melbourne|canada|toronto|vancouver|ottawa|montreal|"
+    r"singapore|hong kong",
     re.I,
 )
 # Roles he wants: quant + SWE + ML/AI. Not hardware/mech/test/validation.
@@ -958,7 +960,7 @@ def write_top_picks(current):
         comp = j.get("company") or rec["src"]
         if not WANT_RE.search(title) or SKIP_RE.search(title):
             continue
-        if BAD_LOC_RE.search(loc):
+        if BAD_LOC_RE.search(loc) and not GOOD_LOC_RE.search(loc):
             continue
         if loc and not GOOD_LOC_RE.search(loc):
             continue
