@@ -1490,6 +1490,418 @@
       "name": "underclassmen opportunities (deadlines)",
       "ats": "github_md",
       "url": "https://raw.githubusercontent.com/Jose-Gael-Cruz-Lopez/underclassmen-opportunities/main/README.md"
+    },
+    {
+      "name": "Quant: 3Red Partners",
+      "ats": "greenhouse",
+      "token": "3redpartners",
+      "verified": true
+    },
+    {
+      "name": "Quant: AQR",
+      "ats": "greenhouse",
+      "token": "aqr",
+      "verified": true
+    },
+    {
+      "name": "Quant: Belvedere Trading",
+      "ats": "lever",
+      "token": "belvederetrading",
+      "verified": true
+    },
+    {
+      "name": "Quant: Chicago Trading (CTC)",
+      "ats": "greenhouse",
+      "token": "chicagotrading",
+      "verified": true
+    },
+    {
+      "name": "Quant: DRW",
+      "ats": "greenhouse",
+      "token": "drweng",
+      "verified": true
+    },
+    {
+      "name": "Quant: DV Trading",
+      "ats": "greenhouse",
+      "token": "dvtrading",
+      "verified": true
+    },
+    {
+      "name": "Quant: ExodusPoint",
+      "ats": "greenhouse",
+      "token": "exoduspoint",
+      "verified": true
+    },
+    {
+      "name": "Quant: Five Rings",
+      "ats": "greenhouse",
+      "token": "fiveringsllc",
+      "verified": true
+    },
+    {
+      "name": "Quant: GSA Capital",
+      "ats": "greenhouse",
+      "token": "gsacapital",
+      "verified": true
+    },
+    {
+      "name": "Quant: Geneva Trading",
+      "ats": "greenhouse",
+      "token": "genevatrading",
+      "verified": true
+    },
+    {
+      "name": "Quant: Grasshopper",
+      "ats": "greenhouse",
+      "token": "grasshopperasia",
+      "verified": true
+    },
+    {
+      "name": "Quant: Jane Street",
+      "ats": "greenhouse",
+      "token": "janestreet",
+      "verified": true
+    },
+    {
+      "name": "Quant: Jump Trading",
+      "ats": "greenhouse",
+      "token": "jumptrading",
+      "verified": true
+    },
+    {
+      "name": "Quant: Mako Trading",
+      "ats": "greenhouse",
+      "token": "mako",
+      "verified": true
+    },
+    {
+      "name": "Quant: Man Group",
+      "ats": "greenhouse",
+      "token": "mangroup",
+      "verified": true
+    },
+    {
+      "name": "Quant: Marshall Wace",
+      "ats": "greenhouse",
+      "token": "marshallwace",
+      "verified": true
+    },
+    {
+      "name": "Quant: Old Mission",
+      "ats": "greenhouse",
+      "token": "oldmissioncapital",
+      "verified": true
+    },
+    {
+      "name": "Quant: Optiver",
+      "ats": "greenhouse",
+      "token": "optiver",
+      "verified": true
+    },
+    {
+      "name": "Quant: PDT Partners",
+      "ats": "greenhouse",
+      "token": "pdtpartners",
+      "verified": true
+    },
+    {
+      "name": "Quant: Point72 / Cubist",
+      "ats": "greenhouse",
+      "token": "point72",
+      "verified": true
+    },
+    {
+      "name": "Quant: Qube RT",
+      "ats": "greenhouse",
+      "token": "quberesearchandtechnologies",
+      "verified": true
+    },
+    {
+      "name": "Quant: Schonfeld",
+      "ats": "greenhouse",
+      "token": "schonfeld",
+      "verified": true
+    },
+    {
+      "name": "Quant: Squarepoint",
+      "ats": "greenhouse",
+      "token": "squarepointcapital",
+      "verified": true
+    },
+    {
+      "name": "Quant: Tower Research",
+      "ats": "greenhouse",
+      "token": "towerresearchcapital",
+      "verified": true
+    },
+    {
+      "name": "Quant: Vatic Labs",
+      "ats": "greenhouse",
+      "token": "vaticlabs",
+      "verified": true
+    },
+    {
+      "name": "Quant: Virtu",
+      "ats": "greenhouse",
+      "token": "virtu",
+      "verified": true
+    },
+    {
+      "name": "Quant: Voloridge",
+      "ats": "greenhouse",
+      "token": "voloridgeinvestmentmanagement",
+      "verified": true
+    },
+    {
+      "name": "Quant: Walleye",
+      "ats": "greenhouse",
+      "token": "walleyecapital",
+      "verified": true
+    },
+    {
+      "name": "Quant: Weiss Asset Mgmt",
+      "ats": "greenhouse",
+      "token": "weissassetmanagement",
+      "verified": true
+    },
+    {
+      "name": "Quant: WorldQuant",
+      "ats": "greenhouse",
+      "token": "worldquant",
+      "verified": true
+    },
+    {
+      "name": "Quant: HRT (talent community)",
+      "ats": "greenhouse",
+      "token": "hrttalentcommunity",
+      "verified": true
+    },
+    {
+      "name": "Quant: XTX Markets",
+      "ats": "greenhouse",
+      "token": "xtxmarketstechnologies",
+      "verified": true
+    },
+    {
+      "name": "Quant SPA: Balyasny",
+      "ats": "pagewatch",
+      "url": "https://www.bam.com/careers/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Millennium",
+      "ats": "pagewatch",
+      "url": "https://careers.mlp.com/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Citadel",
+      "ats": "pagewatch",
+      "url": "https://www.citadel.com/careers/open-opportunities/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Citadel Securities",
+      "ats": "pagewatch",
+      "url": "https://www.citadelsecurities.com/careers/open-positions/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Two Sigma",
+      "ats": "pagewatch",
+      "url": "https://careers.twosigma.com/careers/Search",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Verition",
+      "ats": "pagewatch",
+      "url": "https://www.verition.com/careers/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Peak6",
+      "ats": "pagewatch",
+      "url": "https://peak6.com/careers/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Group One Trading",
+      "ats": "pagewatch",
+      "url": "https://www.grouponetrading.com/careers/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Wolverine Trading",
+      "ats": "pagewatch",
+      "url": "https://www.wolve.com/careers",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Maven Securities",
+      "ats": "pagewatch",
+      "url": "https://www.mavensecurities.com/careers/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Voleon",
+      "ats": "pagewatch",
+      "url": "https://voleon.com/careers/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: GTS",
+      "ats": "pagewatch",
+      "url": "https://www.gtsx.com/careers",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Bridgewater",
+      "ats": "pagewatch",
+      "url": "https://www.bridgewater.com/working-at-bridgewater",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Allston Trading",
+      "ats": "pagewatch",
+      "url": "https://www.allstontrading.com/careers/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Quantlab",
+      "ats": "pagewatch",
+      "url": "https://www.quantlab.com/careers/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Cboe",
+      "ats": "pagewatch",
+      "url": "https://cboe.wd1.myworkdayjobs.com/External",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Radix Trading",
+      "ats": "pagewatch",
+      "url": "https://www.radix-trading.com/careers",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Headlands Tech",
+      "ats": "pagewatch",
+      "url": "https://www.headlandstech.com/careers/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Cumberland (DRW)",
+      "ats": "pagewatch",
+      "url": "https://cumberland.io/careers/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Wintermute",
+      "ats": "pagewatch",
+      "url": "https://www.wintermute.com/careers",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
     }
   ]
 }
