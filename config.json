@@ -1902,6 +1902,197 @@
         "summer",
         "campus"
       ]
+    },
+    {
+      "name": "Quant/Tech: Simplex Trading",
+      "ats": "greenhouse",
+      "token": "simplextrading",
+      "verified": true
+    },
+    {
+      "name": "Quant/Tech: Winton",
+      "ats": "greenhouse",
+      "token": "winton",
+      "verified": true
+    },
+    {
+      "name": "Quant/Tech: Apollo",
+      "ats": "greenhouse",
+      "token": "apollo",
+      "verified": true
+    },
+    {
+      "name": "Quant/Tech: Amber Group",
+      "ats": "lever",
+      "token": "ambergroup",
+      "verified": true
+    },
+    {
+      "name": "Quant/Tech: Galaxy",
+      "ats": "greenhouse",
+      "token": "galaxydigitalservices",
+      "verified": true
+    },
+    {
+      "name": "Quant/Tech: B2C2",
+      "ats": "greenhouse",
+      "token": "b2c2",
+      "verified": true
+    },
+    {
+      "name": "Quant/Tech: Keyrock",
+      "ats": "ashby",
+      "token": "keyrock",
+      "verified": true
+    },
+    {
+      "name": "Quant/Tech: Kraken",
+      "ats": "lever",
+      "token": "kraken",
+      "verified": true
+    },
+    {
+      "name": "Quant/Tech: Ramp",
+      "ats": "ashby",
+      "token": "ramp",
+      "verified": true
+    },
+    {
+      "name": "Quant/Tech: Modal Labs",
+      "ats": "ashby",
+      "token": "modal",
+      "verified": true
+    },
+    {
+      "name": "Quant/Tech: Robinhood",
+      "ats": "greenhouse",
+      "token": "robinhood",
+      "verified": true
+    },
+    {
+      "name": "Quant/Tech: Scale AI",
+      "ats": "greenhouse",
+      "token": "scaleai",
+      "verified": true
+    },
+    {
+      "name": "Quant/Tech: Anyscale",
+      "ats": "ashby",
+      "token": "anyscale",
+      "verified": true
+    },
+    {
+      "name": "Quant/Tech: Brex",
+      "ats": "greenhouse",
+      "token": "brex",
+      "verified": true
+    },
+    {
+      "name": "Quant/Tech: Plaid",
+      "ats": "lever",
+      "token": "plaid",
+      "verified": true
+    },
+    {
+      "name": "Quant/Tech: Cohere",
+      "ats": "ashby",
+      "token": "cohere",
+      "verified": true
+    },
+    {
+      "name": "Quant/Tech: Sierra",
+      "ats": "ashby",
+      "token": "sierra",
+      "verified": true
+    },
+    {
+      "name": "Quant/Tech: Notion",
+      "ats": "ashby",
+      "token": "notion",
+      "verified": true
+    },
+    {
+      "name": "Quant/Tech: Vercel",
+      "ats": "greenhouse",
+      "token": "vercel",
+      "verified": true
+    },
+    {
+      "name": "Firm SPA: Goldman Sachs",
+      "ats": "pagewatch",
+      "url": "https://www.goldmansachs.com/careers/students/programs/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Firm SPA: Bloomberg",
+      "ats": "pagewatch",
+      "url": "https://careers.bloomberg.com/job/search?q=intern+2027",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Firm SPA: Capital One",
+      "ats": "pagewatch",
+      "url": "https://www.capitalonecareers.com/search-jobs/intern",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Firm SPA: BlackRock",
+      "ats": "pagewatch",
+      "url": "https://careers.blackrock.com/students/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Firm SPA: Apollo Global",
+      "ats": "pagewatch",
+      "url": "https://www.apollo.com/careers",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Firm SPA: RBC Capital Markets",
+      "ats": "pagewatch",
+      "url": "https://jobs.rbc.com/ca/en/campus",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Firm SPA: Salesforce Futureforce",
+      "ats": "pagewatch",
+      "url": "https://www.salesforce.com/company/careers/university-recruiting/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
     }
   ]
 }
