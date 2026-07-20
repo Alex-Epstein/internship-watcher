@@ -1,6 +1,6 @@
 # Top picks (auto-generated)
 
-_Quant / SWE / ML roles in target cities only. 233 of 587 open roles. Rebuilt every sweep: 2026-07-20 10:01 UTC._
+_Quant / SWE / ML roles in target cities only. 234 of 589 open roles. Rebuilt every sweep: 2026-07-20 12:25 UTC._
 
 Sections: sweet-spot firms first, then everything else, elite last.
 
@@ -31,6 +31,7 @@ Sections: sweet-spot firms first, then everything else, elite last.
 - [virtu — 2027 Internship - Quant Research (Undergrad)](https://job-boards.greenhouse.io/virtu/jobs/8142539002) — New York
 - [virtu — 2027 Internship - Quantitative Strategist and Research Intern](https://job-boards.greenhouse.io/virtu/jobs/8631180002) — Dublin, Ireland
 - [virtu — 2027 Internship - Quantitative Trading ](https://job-boards.greenhouse.io/virtu/jobs/8547254002) — Dublin, Ireland
+- [virtu — 2027 Internship - Software Engineer](https://job-boards.greenhouse.io/virtu/jobs/8551566002) — Dublin, Ireland
 - [Voloridge Investment Management — Quantitative Developer Intern](https://voloridge-investment-management.hiringthing.com/job/1013126/quantitative-developer-intern-2027?s=lif&jr_id=69eaa8e4dc35f7132c4ab803) — Jupiter, FL
 - [voloridgeinvestmentmanagement — Quantitative Developer Intern 2027](https://job-boards.greenhouse.io/voloridgeinvestmentmanagement/jobs/4224862009) — Jupiter, FL
 - [voloridgeinvestmentmanagement — Quantitative Research Intern 2027](https://job-boards.greenhouse.io/voloridgeinvestmentmanagement/jobs/4226247009) — Jupiter, FL
