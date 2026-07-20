@@ -1,6 +1,6 @@
 # Top picks (auto-generated)
 
-_Quant / SWE / ML roles in target cities only. 233 of 589 open roles. Rebuilt every sweep: 2026-07-19 23:57 UTC._
+_Quant / SWE / ML roles in target cities only. 233 of 589 open roles. Rebuilt every sweep: 2026-07-20 03:13 UTC._
 
 Sections: sweet-spot firms first, then everything else, elite last.
 
@@ -181,7 +181,7 @@ Sections: sweet-spot firms first, then everything else, elite last.
 - [Stoke Space — Software Engineer Intern 🇺🇸](https://www.stokespace.com/careers/current-openings/?gh_jid=5987663004) — Kent, WA
 - [tencent — AI Product Manager Intern](https://tencent.wd1.myworkdayjobs.com/en-US/tencent_careers/job/Netherlands-Amsterdam/AI-Product-Manager-Intern_R107776) — Netherlands-Amsterdam
 - [tencent — Research Intern – Video World Models (Research & ML Systems)](https://tencent.wd1.myworkdayjobs.com/en-US/tencent_careers/job/US-California-Palo-Alto/Research-Intern---Video-World-Models--Research---ML-Systems-_R107752-1) — US-California-Palo Alto
-- [tencent — Software Engineering Intern](https://tencent.wd1.myworkdayjobs.com/en-US/tencent_careers/job/United-Kindom-London/Software-Engineering-Intern_R107162-1) — United Kindom-London
+- [tencent — Software Engineering Intern](https://tencent.wd1.myworkdayjobs.com/en-US/tencent_careers/job/United-Kingdom-London/Software-Engineering-Intern_R107162-1) — United Kingdom-London
 - [Terranox AI — Summer Intern - AI/ML Engineering](https://www.workatastartup.com/jobs/94631) 🇺🇸 — San Francisco, CA
 - [TETRAMEM — Software Engineer Intern, Embedded](https://tetramem.hrmdirect.com/employment/job-opening.php?req=3491042#job) — San Jose, CA
 - [thetradedesk — 2027 North America Software Engineering Internship](https://job-boards.greenhouse.io/thetradedesk/jobs/5187605007) — Bellevue; Boulder; Denver; Irvine; New York; Seattle
