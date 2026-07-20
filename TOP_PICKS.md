@@ -1,6 +1,6 @@
 # Top picks (auto-generated)
 
-_Quant / SWE / ML roles in target cities only. 265 of 640 open roles. Rebuilt every sweep: 2026-07-20 21:15 UTC._
+_Quant / SWE / ML roles in target cities only. 266 of 645 open roles. Rebuilt every sweep: 2026-07-20 21:24 UTC._
 
 Sections: sweet-spot firms first, then everything else, elite last.
 
@@ -177,6 +177,7 @@ Sections: sweet-spot firms first, then everything else, elite last.
 - [pylon-labs — Software Engineer, Intern](https://jobs.ashbyhq.com/pylon-labs/fcea8b52-81f1-4b0c-b575-d7b180faec4d) — San Francisco
 - [Quant SPA: Bridgewater — Page changed - check Quant SPA: Bridgewater (may mean applications opened)](https://www.bridgewater.com/working-at-bridgewater)
 - [Quant SPA: Cboe — Page changed - check Quant SPA: Cboe (may mean applications opened)](https://cboe.wd1.myworkdayjobs.com/External)
+- [Quant SPA: Maven Securities — Page changed - check Quant SPA: Maven Securities (may mean applications opened)](https://www.mavensecurities.com/careers/)
 - [Quant SPA: Quantlab — Page changed - check Quant SPA: Quantlab (may mean applications opened)](https://www.quantlab.com/careers/)
 - [Quant SPA: Wintermute — Page changed - check Quant SPA: Wintermute (may mean applications opened)](https://www.wintermute.com/careers)
 - [Quant: GSA Capital — Quantitative Researcher - Intern](https://www.gsacapital.com/careers/gh/?gh_jid=8570661002) — London, New York
