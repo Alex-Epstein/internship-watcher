@@ -1,6 +1,6 @@
 # Top picks (auto-generated)
 
-_Quant / SWE / ML roles in target cities only. 274 of 651 open roles. Rebuilt every sweep: 2026-07-20 21:47 UTC._
+_Quant / SWE / ML roles in target cities only. 273 of 649 open roles. Rebuilt every sweep: 2026-07-20 23:02 UTC._
 
 Sections: sweet-spot firms first, then everything else, elite last.
 
@@ -157,6 +157,8 @@ Sections: sweet-spot firms first, then everything else, elite last.
 - [perplexity — Internship - Search Machine Learning Engineer](https://jobs.ashbyhq.com/perplexity/71168628-1998-47d3-87a9-be7bc56a430d) — London
 - [persona.ai — Teleoperation Software Engineering Internship](https://jobs.ashbyhq.com/persona.ai/6078fafd-ba34-4c89-b260-7eb15be3cb9c) — Pensacola, FL or Houston, TX 
 - [phia — Full Stack Engineer Intern](https://jobs.ashbyhq.com/phia/71c26b8b-86cd-446d-a63f-8cd8c2a3f162) — New York City
+- [Plus — Software Engineer Intern - Data](https://jobs.lever.co/plus-2/012a2134-8a6a-4982-8f25-f906178a24e4) — Santa Clara, CA
+- [Plus — Software Engineer Intern - Data Infrastructure and Tools](https://jobs.lever.co/plus-2/06b808df-85a1-4ddd-863c-3e1cbe61eda9) — Santa Clara, CA
 - [plus-2 — Computer Vision Engineer Intern](https://jobs.lever.co/plus-2/c143df6e-66c2-4498-b19b-8323f9954ca9) — Santa Clara, CA
 - [plus-2 — Deep Learning Intern](https://jobs.lever.co/plus-2/58d77886-bf3a-4707-8af8-e1af47162e2e) — Santa Clara, CA
 - [plus-2 — Deep Learning Research Intern](https://jobs.lever.co/plus-2/2f2c1cd9-f099-483a-9717-0da83a391333) — Santa Clara, CA
@@ -165,13 +167,10 @@ Sections: sweet-spot firms first, then everything else, elite last.
 - [plus-2 — Machine Learning Engineer Intern - Planning](https://jobs.lever.co/plus-2/91a07eb1-2244-48bf-a65b-dc166a327ddc) — Santa Clara, CA
 - [plus-2 — Machine Learning Engineer Intern - Scenario Generation](https://jobs.lever.co/plus-2/1432ed29-d5e2-4348-acc4-9c42bf0897e2) — Santa Clara, CA
 - [plus-2 — Machine Learning Engineer Intern - Scenario Simulation](https://jobs.lever.co/plus-2/b4f750e7-0148-41f0-b2b1-ff054450a320) — Santa Clara, CA
-- [plus-2 — Machine Learning Infrastructure Engineer Intern](https://jobs.lever.co/plus-2/30dd9b9b-48c8-4777-97f6-8edb30db12e4) — Santa Clara, CA
 - [plus-2 — Research Engineer Intern](https://jobs.lever.co/plus-2/5f066e92-3ca3-4c04-ae21-2377352166ca) — Santa Clara, CA
 - [plus-2 — Research Engineer Intern - Control](https://jobs.lever.co/plus-2/ac7f8f73-88d0-48d5-8d4f-71ed4cfa6ecc) — Santa Clara, CA
 - [plus-2 — Research Engineer Intern - Mapping & Localization](https://jobs.lever.co/plus-2/efbb82d3-1c4a-4fc9-8b40-ee1545085061) — Santa Clara, CA
 - [plus-2 — Robotics Systems Intern - Sensor Platform](https://jobs.lever.co/plus-2/c6560f15-5446-442a-878d-b7c72606149b) — Santa Clara, CA
-- [plus-2 — Software Engineer Intern - Data](https://jobs.lever.co/plus-2/012a2134-8a6a-4982-8f25-f906178a24e4) — Santa Clara, CA
-- [plus-2 — Software Engineer Intern - Data Infrastructure and Tools](https://jobs.lever.co/plus-2/06b808df-85a1-4ddd-863c-3e1cbe61eda9) — Santa Clara, CA
 - [plus-2 — Software Engineer Intern - Robotics](https://jobs.lever.co/plus-2/7a1afea9-b468-4b7c-a508-185e8e4032db) — Santa Clara, CA
 - [plus-2 — Software Engineer Intern- Runtime, Robotics](https://jobs.lever.co/plus-2/a3bcdba6-b0d0-46ba-9af3-a387926a6fb4) — Santa Clara, CA
 - [plus-2 — Systems Engineering Intern](https://jobs.lever.co/plus-2/1864b1be-25e5-424f-9626-09e58f6147f2) — Santa Clara, CA
