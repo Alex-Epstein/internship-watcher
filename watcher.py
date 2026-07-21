@@ -969,6 +969,9 @@ def _bucket(comp, title, loc):
     return 3      # non-quant SWE/ML in target cities
 
 
+DEAD_URLS = {"https://careers.ice.com/jobs/12830"}
+
+
 def write_top_picks(current):
     """Curated subset of OPEN_ROLES: quant/SWE/ML only, target cities only.
     Ranked NYC-quant first, Chicago-quant second (Alex's stated criteria),
@@ -980,6 +983,8 @@ def write_top_picks(current):
         loc = j.get("location", "") or ""
         comp = j.get("company") or rec["src"]
         if not WANT_RE.search(title) or SKIP_RE.search(title):
+            continue
+        if any(d in (j.get('url','')) for d in DEAD_URLS):
             continue
         if BAD_LOC_RE.search(loc) and not GOOD_LOC_RE.search(loc):
             continue
