@@ -899,6 +899,7 @@ GOOD_LOC_RE = re.compile(
     r"madrid|barcelona|spain|milan|rome|italy|"
     r"stockholm|sweden|copenhagen|denmark|oslo|norway|helsinki|finland|"
     r"brussels|belgium|vienna|austria|luxembourg|lisbon|portugal|dublin|"
+    r"sydney|melbourne|australia|brazil|sao paulo|"
     # --- US state-code fallback (last resort) ---
     r"(ny|ca|ma|il|tx|wa|fl|pa|va|md|ga|co|ct|nj|az|nc|oh|mi|mn|or)",
     re.I,
@@ -969,11 +970,13 @@ def _bucket(comp, title, loc):
     is_quant = bool(QUANT_RE.search(title) or _tier(comp) in (0, 2))
     if is_quant and NYC_RE.search(loc):
         return 0  # 🗽 NYC quant — top priority
+    if NYC_RE.search(loc):
+        return 1  # 🗽 any NYC role — he wants NYC summer
     if is_quant and CHI_RE.search(loc):
-        return 1  # 🌆 Chicago quant — second
+        return 2  # 🌆 Chicago quant
     if is_quant:
-        return 2  # quant elsewhere (other US / EU)
-    return 3      # non-quant SWE/ML in target cities
+        return 3  # quant elsewhere (other US / EU)
+    return 4      # non-quant SWE/ML in target cities
 
 
 DEAD_URLS = {"https://careers.ice.com/jobs/12830"}
@@ -1015,9 +1018,10 @@ def write_top_picks(current):
         "",
     ]
     headers = {0: "## 🗽 NYC QUANT — apply first",
-               1: "## 🌆 CHICAGO QUANT — apply second",
-               2: "## Quant elsewhere (other US / Europe)",
-               3: "## Other SWE / ML in target cities"}
+               1: "## 🗽 NYC (any role) — he wants NYC summer",
+               2: "## 🌆 CHICAGO QUANT",
+               3: "## Quant elsewhere (other US / Europe)",
+               4: "## Other SWE / ML in target cities"}
     seen_b = None
     for b, tier, _, title, comp, loc, url, clr in picks:
         if b != seen_b:
