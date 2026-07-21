@@ -2093,6 +2093,1821 @@
         "summer",
         "campus"
       ]
+    },
+    {
+      "name": "Quant: Gelber Group",
+      "ats": "greenhouse",
+      "token": "gelbergroup",
+      "verified": true
+    },
+    {
+      "name": "Quant: Radix Trading",
+      "ats": "greenhouse",
+      "token": "radixuniversity",
+      "verified": true
+    },
+    {
+      "name": "Quant: Valkyrie Trading",
+      "ats": "lever",
+      "token": "valkyrietrading",
+      "verified": true
+    },
+    {
+      "name": "Quant: Headlands Technologies",
+      "ats": "greenhouse",
+      "token": "headlandstechnologiesllc",
+      "verified": true
+    },
+    {
+      "name": "Quant: Maven Securities",
+      "ats": "greenhouse",
+      "token": "mavensecuritiesholdingltd",
+      "verified": true
+    },
+    {
+      "name": "Quant: Eagle Seven",
+      "ats": "workable",
+      "token": "eagle-seven",
+      "verified": true
+    },
+    {
+      "name": "Quant: Tanius Technology",
+      "ats": "greenhouse",
+      "token": "tanius",
+      "verified": true
+    },
+    {
+      "name": "Quant: tastytrade (IG US)",
+      "ats": "greenhouse",
+      "token": "tastytrade",
+      "verified": true
+    },
+    {
+      "name": "Quant: TransFICC",
+      "ats": "greenhouse",
+      "token": "transficc",
+      "verified": true
+    },
+    {
+      "name": "Quant: Gelber Group (Handshake board)",
+      "ats": "greenhouse",
+      "token": "gelberhandshake",
+      "verified": true
+    },
+    {
+      "name": "Quant: Quadrature Capital",
+      "ats": "greenhouse",
+      "token": "quadraturecapital",
+      "verified": true
+    },
+    {
+      "name": "Quant: Capula Investment Management",
+      "ats": "workable",
+      "token": "capula-investment-management-ltd",
+      "verified": true
+    },
+    {
+      "name": "Quant: BlueCrest Capital Management",
+      "ats": "greenhouse",
+      "token": "bluecrestcapitalmanagement",
+      "verified": true
+    },
+    {
+      "name": "Quant: Capital Fund Management (CFM)",
+      "ats": "greenhouse",
+      "token": "cfm",
+      "verified": true
+    },
+    {
+      "name": "Quant: OxFORD Asset Management",
+      "ats": "greenhouse",
+      "token": "oxam",
+      "verified": true
+    },
+    {
+      "name": "Quant: Smarkets",
+      "ats": "ashby",
+      "token": "smarkets",
+      "verified": true
+    },
+    {
+      "name": "Quant: Wintermute",
+      "ats": "lever",
+      "token": "wintermute-trading",
+      "verified": true
+    },
+    {
+      "name": "Quant: GSR",
+      "ats": "greenhouse",
+      "token": "gsrmarkets",
+      "verified": true
+    },
+    {
+      "name": "Quant: Maverick Derivatives",
+      "ats": "greenhouse",
+      "token": "maverickderivatives",
+      "verified": true
+    },
+    {
+      "name": "Quant: Tibra Capital",
+      "ats": "workable",
+      "token": "tibra",
+      "verified": true
+    },
+    {
+      "name": "Quant: Wincent",
+      "ats": "ashby",
+      "token": "wincent",
+      "verified": true
+    },
+    {
+      "name": "Quant: FalconX",
+      "ats": "greenhouse",
+      "token": "falconx",
+      "verified": true
+    },
+    {
+      "name": "Quant: Anchorage Digital",
+      "ats": "lever",
+      "token": "anchorage",
+      "verified": true
+    },
+    {
+      "name": "Quant: Auros",
+      "ats": "greenhouse",
+      "token": "aurosglobal",
+      "verified": true
+    },
+    {
+      "name": "Quant: Talos",
+      "ats": "ashby",
+      "token": "Talos-Trading",
+      "verified": true
+    },
+    {
+      "name": "Quant: Gemini",
+      "ats": "greenhouse",
+      "token": "gemini",
+      "verified": true
+    },
+    {
+      "name": "Quant: Polymarket",
+      "ats": "ashby",
+      "token": "polymarket",
+      "verified": true
+    },
+    {
+      "name": "Quant: Gauntlet",
+      "ats": "lever",
+      "token": "gauntlet",
+      "verified": true
+    },
+    {
+      "name": "Quant: Grayscale Investments",
+      "ats": "greenhouse",
+      "token": "grayscaleinvestments",
+      "verified": true
+    },
+    {
+      "name": "Quant: Uniswap Labs",
+      "ats": "ashby",
+      "token": "uniswap",
+      "verified": true
+    },
+    {
+      "name": "Quant: Engineers Gate",
+      "ats": "greenhouse",
+      "token": "engineersgate",
+      "verified": true
+    },
+    {
+      "name": "Quant: Capstone Investment Advisors",
+      "ats": "greenhouse",
+      "token": "capstoneinvestmentadvisors",
+      "verified": true
+    },
+    {
+      "name": "Quant: Graham Capital Management",
+      "ats": "greenhouse",
+      "token": "grahamcapitalmanagement",
+      "verified": true
+    },
+    {
+      "name": "Quant: Quantbot Technologies",
+      "ats": "greenhouse",
+      "token": "quantbot-technologies",
+      "verified": true
+    },
+    {
+      "name": "Quant: TGS Management",
+      "ats": "lever",
+      "token": "tgsmc",
+      "verified": true
+    },
+    {
+      "name": "Quant: Voleon Group",
+      "ats": "ashby",
+      "token": "voleon",
+      "verified": true
+    },
+    {
+      "name": "Quant: Engelhart (incl. Trailstone)",
+      "ats": "greenhouse",
+      "token": "engelhart",
+      "verified": true
+    },
+    {
+      "name": "Quant: Gridmatic",
+      "ats": "lever",
+      "token": "gridmatic",
+      "verified": true
+    },
+    {
+      "name": "Quant: Spearmint Energy",
+      "ats": "greenhouse",
+      "token": "spearmintenergy",
+      "verified": true
+    },
+    {
+      "name": "Quant: Tyba Energy",
+      "ats": "ashby",
+      "token": "tyba",
+      "verified": true
+    },
+    {
+      "name": "Quant: Habitat Energy",
+      "ats": "workable",
+      "token": "habitat-energy",
+      "verified": true
+    },
+    {
+      "name": "Quant: Modo Energy",
+      "ats": "greenhouse",
+      "token": "modoenergy",
+      "verified": true
+    },
+    {
+      "name": "Quant: Yes Energy",
+      "ats": "greenhouse",
+      "token": "yesenergy",
+      "verified": true
+    },
+    {
+      "name": "Quant: Amperon",
+      "ats": "greenhouse",
+      "token": "amperon",
+      "verified": true
+    },
+    {
+      "name": "Quant: Ascend Analytics",
+      "ats": "greenhouse",
+      "token": "ascendanalytics",
+      "verified": true
+    },
+    {
+      "name": "Quant: Kpler",
+      "ats": "lever",
+      "token": "kpler",
+      "verified": true
+    },
+    {
+      "name": "Quant: Onyx Capital Group",
+      "ats": "workable",
+      "token": "onyx-capital-group",
+      "verified": true
+    },
+    {
+      "name": "Quant: Trillium Trading",
+      "ats": "greenhouse",
+      "token": "trillium",
+      "verified": true
+    },
+    {
+      "name": "Quant: Laurion Capital Management",
+      "ats": "greenhouse",
+      "token": "laurioncapitalmanagement",
+      "verified": true
+    },
+    {
+      "name": "Quant: Clear Street",
+      "ats": "greenhouse",
+      "token": "clearstreet",
+      "verified": true
+    },
+    {
+      "name": "Quant: Chimera Securities",
+      "ats": "workable",
+      "token": "chimera-securities-llc",
+      "verified": true
+    },
+    {
+      "name": "Quant: Garda Capital Partners",
+      "ats": "greenhouse",
+      "token": "gardacp",
+      "verified": true
+    },
+    {
+      "name": "Quant: Symmetry Investments",
+      "ats": "lever",
+      "token": "symmetryinvestments",
+      "verified": true
+    },
+    {
+      "name": "Quant: Crabel Capital Management",
+      "ats": "greenhouse",
+      "token": "crabel",
+      "verified": true
+    },
+    {
+      "name": "Quant: Databento",
+      "ats": "greenhouse",
+      "token": "databento",
+      "verified": true
+    },
+    {
+      "name": "Quant: IEX Group",
+      "ats": "greenhouse",
+      "token": "iex",
+      "verified": true
+    },
+    {
+      "name": "Quant: MEMX",
+      "ats": "greenhouse",
+      "token": "memx",
+      "verified": true
+    },
+    {
+      "name": "Quant: DriveWealth",
+      "ats": "greenhouse",
+      "token": "drivewealth",
+      "verified": true
+    },
+    {
+      "name": "Quant: Alpaca",
+      "ats": "greenhouse",
+      "token": "alpaca",
+      "verified": true
+    },
+    {
+      "name": "Quant: Trumid",
+      "ats": "greenhouse",
+      "token": "trumid",
+      "verified": true
+    },
+    {
+      "name": "Quant: BMLL Technologies",
+      "ats": "workable",
+      "token": "bmlltech",
+      "verified": true
+    },
+    {
+      "name": "Quant: Pico",
+      "ats": "greenhouse",
+      "token": "picoquantitativetrading",
+      "verified": true
+    },
+    {
+      "name": "Quant: OneChronos",
+      "ats": "ashby",
+      "token": "onechronos",
+      "verified": true
+    },
+    {
+      "name": "Quant: BestEx Research",
+      "ats": "workable",
+      "token": "bestex-research",
+      "verified": true
+    },
+    {
+      "name": "Quant SPA: XR Trading",
+      "ats": "pagewatch",
+      "url": "https://www.xrtrading.com/careers",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Sumo Capital",
+      "ats": "pagewatch",
+      "url": "https://sumo.co/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: WH Trading",
+      "ats": "pagewatch",
+      "url": "https://www.whtrading.com/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Hard Eight Trading",
+      "ats": "pagewatch",
+      "url": "https://www.hard8trading.com/careers.html",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Prime Trading",
+      "ats": "pagewatch",
+      "url": "https://www.prime-trading.com/careers",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Consolidated Trading",
+      "ats": "pagewatch",
+      "url": "https://www.consolidatedtrading.com/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Edgehog Trading",
+      "ats": "pagewatch",
+      "url": "https://www.edgehogtrading.com/careers/open-positions",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Nico Trading (Nico Holdings)",
+      "ats": "pagewatch",
+      "url": "https://www.nicotrading.com/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Volant Trading",
+      "ats": "pagewatch",
+      "url": "https://volanttrading.com/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Archelon",
+      "ats": "pagewatch",
+      "url": "https://www.archelon-group.com/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Bluefin Capital Management",
+      "ats": "pagewatch",
+      "url": "https://www.bfcm.com/careers/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Marquette Partners",
+      "ats": "pagewatch",
+      "url": "http://www.marquettepartnersholdingsllc.com/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Blue Trading Systems",
+      "ats": "pagewatch",
+      "url": "https://www.bluetradingsystems.com/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: G-Research",
+      "ats": "pagewatch",
+      "url": "https://www.gresearch.com/vacancies/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Aspect Capital",
+      "ats": "pagewatch",
+      "url": "https://www.aspectcapital.com/about/team/research-internships-with-aspect-capital/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Systematica Investments",
+      "ats": "pagewatch",
+      "url": "https://www.systematica.com/careers",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Man AHL (Man Group)",
+      "ats": "pagewatch",
+      "url": "https://www.man.com/careers",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: LMR Partners",
+      "ats": "pagewatch",
+      "url": "https://www.lmrpartners.com/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Fulcrum Asset Management",
+      "ats": "pagewatch",
+      "url": "https://www.fulcrumasset.com/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Flowdesk",
+      "ats": "pagewatch",
+      "url": "https://www.flowdesk.co/careers/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: QuantCube Technology",
+      "ats": "pagewatch",
+      "url": "https://www.quant-cube.com/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Quantica Capital",
+      "ats": "pagewatch",
+      "url": "https://www.quantica.ch/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: swissQuant Group",
+      "ats": "pagewatch",
+      "url": "https://www.swissquant.com/careers/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: All Options",
+      "ats": "pagewatch",
+      "url": "https://www.alloptions.nl/careers/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: WEBB Traders",
+      "ats": "pagewatch",
+      "url": "https://www.webbtraders.com/careers",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Deep Blue Capital",
+      "ats": "pagewatch",
+      "url": "https://www.deepbluecap.com/careers/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Nyenburgh",
+      "ats": "pagewatch",
+      "url": "https://www.nyenburgh.com/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: XBTO",
+      "ats": "pagewatch",
+      "url": "https://www.xbto.com/careers",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Nonco",
+      "ats": "pagewatch",
+      "url": "https://nonco.com/company/careers",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Dexterity Capital",
+      "ats": "pagewatch",
+      "url": "https://dexterity.capital/recruitment/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Chaos Labs",
+      "ats": "pagewatch",
+      "url": "https://chaoslabs.xyz/careers",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Pantera Capital",
+      "ats": "pagewatch",
+      "url": "https://jobs.panteracapital.com/jobs",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: BlockFills",
+      "ats": "pagewatch",
+      "url": "https://www.blockfills.com/careers/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Wolverine Trading",
+      "ats": "pagewatch",
+      "url": "https://www.wolve.com/open-positions",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Group One Trading",
+      "ats": "pagewatch",
+      "url": "https://group1.com/careers",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Quantlab",
+      "ats": "pagewatch",
+      "url": "https://www.quantlab.com/careers",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Trexquant Investment",
+      "ats": "pagewatch",
+      "url": "https://trexquant.com/careers",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Stevens Capital Management",
+      "ats": "pagewatch",
+      "url": "https://www.scm-lp.com/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Tradebot Systems",
+      "ats": "pagewatch",
+      "url": "https://www.tradebot.com/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Verition Fund Management",
+      "ats": "pagewatch",
+      "url": "https://www.verition.com/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Renaissance Technologies",
+      "ats": "pagewatch",
+      "url": "https://www.rentec.com/Careers.action?jobs=true",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Acadian Asset Management",
+      "ats": "pagewatch",
+      "url": "https://www.acadian-asset.com/careers",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: AQR Capital Management",
+      "ats": "pagewatch",
+      "url": "https://careers.aqr.com/jobs/department/university-jobs",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Campbell & Company",
+      "ats": "pagewatch",
+      "url": "https://campbell.com/careers/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Squarepoint Capital",
+      "ats": "pagewatch",
+      "url": "https://www.squarepoint-capital.com/early-careers",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Qube Research & Technologies",
+      "ats": "pagewatch",
+      "url": "https://www.qube-rt.com/careers",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: GTS",
+      "ats": "pagewatch",
+      "url": "https://gtsx.com/careers/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: DC Energy",
+      "ats": "pagewatch",
+      "url": "https://www.dc-energy.com/careers",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: e360 Power",
+      "ats": "pagewatch",
+      "url": "https://www.e360power.com/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Appian Way Energy Partners",
+      "ats": "pagewatch",
+      "url": "https://www.appianwayenergy.com/careers",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: SESCO Enterprises",
+      "ats": "pagewatch",
+      "url": "https://sescollc.com/careers/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Elmagin Capital",
+      "ats": "pagewatch",
+      "url": "http://www.elmagincapital.com/careers",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Mercuria Energy America",
+      "ats": "pagewatch",
+      "url": "https://mercuria.com/careers/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Freepoint Commodities",
+      "ats": "pagewatch",
+      "url": "https://www.freepoint.com/life-at-freepoint/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Hartree Partners",
+      "ats": "pagewatch",
+      "url": "https://www.hartreepartners.com/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Tenaska (Power Services)",
+      "ats": "pagewatch",
+      "url": "https://recruiting.ultipro.com/TEN1001TEINC/JobBoard/52989607-07f5-4be5-b6f7-1878fa879db5/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: The Energy Authority",
+      "ats": "pagewatch",
+      "url": "https://www3.teainc.org/careers/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Boston Energy Trading and Marketing (BETM)",
+      "ats": "pagewatch",
+      "url": "https://www.betm.com/careers",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Boston Energy Group",
+      "ats": "pagewatch",
+      "url": "https://www.bostonenergygroup.com/careers/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Statar Capital",
+      "ats": "pagewatch",
+      "url": "https://www.statarcapital.com/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Skylar Capital Management",
+      "ats": "pagewatch",
+      "url": "https://www.skylarcapital.com/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Saracen Energy",
+      "ats": "pagewatch",
+      "url": "https://saracenenergy.com/careers.html",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Twin Eagle Resource Management",
+      "ats": "pagewatch",
+      "url": "https://twineagleresourcemanagement.applytojob.com/apply",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: InCommodities North America",
+      "ats": "pagewatch",
+      "url": "https://incommodities.com/join-us",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: HC Tech (HC Technologies)",
+      "ats": "pagewatch",
+      "url": "https://www.hctech.com/careers",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: XO Energy",
+      "ats": "pagewatch",
+      "url": "http://www.xo-energy.com/jobs",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: AEGIS Hedging",
+      "ats": "pagewatch",
+      "url": "https://aegis-hedging.com/careers",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: ACES Power",
+      "ats": "pagewatch",
+      "url": "https://acespower.com/careers/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Nodal Exchange",
+      "ats": "pagewatch",
+      "url": "https://www.nodalexchange.com/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: PCI Energy Solutions",
+      "ats": "pagewatch",
+      "url": "https://www.pcienergysolutions.com/about/careers/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Aurora Energy Research",
+      "ats": "pagewatch",
+      "url": "https://auroraer.com/careers/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Seven Eight Capital",
+      "ats": "pagewatch",
+      "url": "https://www.seveneightcapital.com/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Jain Global",
+      "ats": "pagewatch",
+      "url": "https://www.jainglobal.com/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Hudson Bay Capital",
+      "ats": "pagewatch",
+      "url": "https://www.hudsonbaycapital.com/careers",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Saba Capital Management",
+      "ats": "pagewatch",
+      "url": "https://www.sabacapital.com/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Kepos Capital",
+      "ats": "pagewatch",
+      "url": "https://www.keposcapital.com/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Dark Forest Capital Management",
+      "ats": "pagewatch",
+      "url": "https://www.darkforesttech.com/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Quantitative Brokers",
+      "ats": "pagewatch",
+      "url": "https://www.quantitativebrokers.com/careers",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: SMB Capital",
+      "ats": "pagewatch",
+      "url": "https://smbcap.com/careers/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: T3 Trading Group",
+      "ats": "pagewatch",
+      "url": "https://t3trading.com/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Seven Points Capital",
+      "ats": "pagewatch",
+      "url": "https://sevenpointscapital.pinpointhq.com/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: First New York (FNY)",
+      "ats": "pagewatch",
+      "url": "https://www.firstny.com/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Marathon Trading Investment Management",
+      "ats": "pagewatch",
+      "url": "https://marathontradingllc.com/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Tradition (Compagnie Financiere Tradition / TFS)",
+      "ats": "pagewatch",
+      "url": "https://www.tradition.com/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Proof Trading",
+      "ats": "pagewatch",
+      "url": "https://prooftrading.com/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Quantitative Investment Management (QIM)",
+      "ats": "pagewatch",
+      "url": "https://quantitative.com/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Fort LP",
+      "ats": "pagewatch",
+      "url": "https://www.fortlp.com/careers",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Freestone Grove Partners",
+      "ats": "pagewatch",
+      "url": "https://jobs.gem.com/freestone-grove-partners",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: PanAgora Asset Management",
+      "ats": "pagewatch",
+      "url": "https://www.panagora.com/careers-panagora-asset-management/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: GMO",
+      "ats": "pagewatch",
+      "url": "https://www.gmo.com/americas/careers/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Geode Capital Management",
+      "ats": "pagewatch",
+      "url": "https://www.geodecapital.com/careers",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Millburn Ridgefield",
+      "ats": "pagewatch",
+      "url": "https://www.millburncorp.com/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Welton Investment Partners",
+      "ats": "pagewatch",
+      "url": "https://www.welton.com/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Research Affiliates",
+      "ats": "pagewatch",
+      "url": "https://www.researchaffiliates.com/about-us/careers",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Los Angeles Capital Management",
+      "ats": "pagewatch",
+      "url": "https://www.lacapm.com/careers",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Jacobs Levy Equity Management",
+      "ats": "pagewatch",
+      "url": "https://jlem.com/careers",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Intech Investment Management",
+      "ats": "pagewatch",
+      "url": "https://www.intechinvestments.com/careers",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Coatue Management",
+      "ats": "pagewatch",
+      "url": "https://www.coatue.com/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Quantedge Capital",
+      "ats": "pagewatch",
+      "url": "https://www.quantedge.com/careers",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Massive (formerly Polygon.io)",
+      "ats": "pagewatch",
+      "url": "https://massive.com/careers",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: OTC Markets Group",
+      "ats": "pagewatch",
+      "url": "https://www.otcmarkets.com/careers",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: MIAX (Miami International Holdings)",
+      "ats": "pagewatch",
+      "url": "https://www.miaxglobal.com/company/about/careers",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: TXSE Group (Texas Stock Exchange)",
+      "ats": "pagewatch",
+      "url": "https://www.txse.com",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Apex Fintech Solutions",
+      "ats": "pagewatch",
+      "url": "https://careers.apexfintechsolutions.com/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: MarketAxess",
+      "ats": "pagewatch",
+      "url": "https://www.marketaxess.com/careers",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Tradeweb",
+      "ats": "pagewatch",
+      "url": "https://www.tradeweb.com/careers/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Kaiko",
+      "ats": "pagewatch",
+      "url": "https://jobs.kaiko.ai/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Exegy",
+      "ats": "pagewatch",
+      "url": "https://www.exegy.com/careers/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Options Technology",
+      "ats": "pagewatch",
+      "url": "https://optionsit.bamboohr.com/careers",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Deephaven Data Labs",
+      "ats": "pagewatch",
+      "url": "https://deephaven.io/company/careers/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: OneMarketData (OneTick)",
+      "ats": "pagewatch",
+      "url": "https://www.onetick.com/careers",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: oneZero Financial Systems",
+      "ats": "pagewatch",
+      "url": "https://www.onezero.com/careers/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: LMAX Group",
+      "ats": "pagewatch",
+      "url": "https://careers.lmax.com/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Adaptive Financial Consulting",
+      "ats": "pagewatch",
+      "url": "https://weareadaptive.com/careers/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Beacon Platform",
+      "ats": "pagewatch",
+      "url": "https://www.beacon.io/careers",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Trading Technologies",
+      "ats": "pagewatch",
+      "url": "https://www.tradingtechnologies.com/careers/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: CQG",
+      "ats": "pagewatch",
+      "url": "https://www.cqg.com/about-us/careers",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Barchart",
+      "ats": "pagewatch",
+      "url": "https://www.barchart.com/solutions/company/careers",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: SpiderRock",
+      "ats": "pagewatch",
+      "url": "https://spiderrock.net/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Sterling Trading Tech",
+      "ats": "pagewatch",
+      "url": "https://sterlingtradingtech.com/careers",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Eventus",
+      "ats": "pagewatch",
+      "url": "https://www.eventus.com/careers/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Ridgeline",
+      "ats": "pagewatch",
+      "url": "https://ridgeline.ai/careers",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: McKay Brothers / Quincy Data",
+      "ats": "pagewatch",
+      "url": "https://mckay-brothers.com/careers",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Connamara Technologies",
+      "ats": "pagewatch",
+      "url": "https://connamara.com/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Aquis Exchange",
+      "ats": "pagewatch",
+      "url": "https://www.aquis.eu/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: TS Imagine",
+      "ats": "pagewatch",
+      "url": "https://tsimagine.com/careers/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: FlexTrade Systems",
+      "ats": "pagewatch",
+      "url": "https://flextrade.com/careers/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: MayStreet",
+      "ats": "pagewatch",
+      "url": "https://www.lseg.com/en/careers",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Hudson Fintech",
+      "ats": "pagewatch",
+      "url": "https://www.hudson-fintech.com/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "campus"
+      ]
+    },
+    {
+      "name": "Quant SPA: Geneva Trading (open positions)",
+      "ats": "pagewatch",
+      "url": "https://www.genevatrading.com/careers-open-positions/",
+      "watch_keywords": [
+        "intern",
+        "2027",
+        "summer",
+        "trader",
+        "developer"
+      ]
     }
   ]
 }
