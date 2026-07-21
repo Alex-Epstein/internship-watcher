@@ -1,6 +1,6 @@
 # Top picks (auto-generated)
 
-_Quant / SWE / ML roles in target cities only. 273 of 653 open roles. Rebuilt every sweep: 2026-07-21 04:17 UTC._
+_Quant / SWE / ML roles in target cities only. 386 of 771 open roles. Rebuilt every sweep: 2026-07-21 05:09 UTC._
 
 Sections: sweet-spot firms first, then everything else, elite last.
 
@@ -26,10 +26,15 @@ Sections: sweet-spot firms first, then everything else, elite last.
 - [Flow Traders — Quantitative Trading Intern Summer 2027](https://job-boards.greenhouse.io/flowtraders/jobs/8047166) — New York
 - [Intercontinental Exchange, Inc. — Artificial Intelligence, Data & Machine Learning Intern](https://careers.ice.com/jobs/12830?lang=en-us&iis=LinkedIn&iisn=Linkedin&mode=apply&jr_id=69e67bb27820c036924d0af9) — New York, NY
 - [Old Mission — Software Engineer Intern (Summer 2027, June Start)](https://job-boards.greenhouse.io/oldmissioncapital/jobs/7796180003) — Chicago, IL
+- [Quant SPA: Geneva Trading (open positions) — Page changed - check Quant SPA: Geneva Trading (open positions) (may mean applications opened)](https://www.genevatrading.com/careers-open-positions/)
 - [Quant SPA: Group One Trading — Page changed - check Quant SPA: Group One Trading (may mean applications opened)](https://www.grouponetrading.com/careers/)
+- [Quant SPA: Group One Trading — Page changed - check Quant SPA: Group One Trading (may mean applications opened)](https://group1.com/careers)
 - [Quant SPA: GTS — Page changed - check Quant SPA: GTS (may mean applications opened)](https://www.gtsx.com/careers)
+- [Quant SPA: GTS — Page changed - check Quant SPA: GTS (may mean applications opened)](https://gtsx.com/careers/)
 - [Quant SPA: Peak6 — Page changed - check Quant SPA: Peak6 (may mean applications opened)](https://peak6.com/careers/)
 - [Quant SPA: Wolverine Trading — Page changed - check Quant SPA: Wolverine Trading (may mean applications opened)](https://www.wolve.com/careers)
+- [Quant SPA: Wolverine Trading — Page changed - check Quant SPA: Wolverine Trading (may mean applications opened)](https://www.wolve.com/open-positions)
+- [Quant: Capula Investment Management — 2027 Trading and Research Summer Internship](https://apply.workable.com/j/A15A62A8BE) — London, England, United Kingdom
 - [TransMarket Group — DevOps/SRE Intern](https://job-boards.greenhouse.io/transmarketgroup/jobs/5151577007?gh_jid=5151577007) — Chicago, Illinois, United States
 - [TransMarket Group — Quantitative Trader Intern](https://job-boards.greenhouse.io/transmarketgroup/jobs/5151569007?gh_jid=5151569007) — Chicago, Illinois, United States
 - [virtu — 2027 Internship - Quant Research (Undergrad)](https://job-boards.greenhouse.io/virtu/jobs/8142539002) — New York
@@ -178,10 +183,117 @@ Sections: sweet-spot firms first, then everything else, elite last.
 - [Poshmark — Cloud Platform Engineer Intern, Growth](https://jobs.ashbyhq.com/poshmark/062b84e6-1633-43ae-870b-83cb62893caa) — Redwood City, CA
 - [Prospect Equities — Backend / Frontend Developer Intern](http://prospectequities.applytojob.com/apply/XTbzSAcNtg/Backend-Frontend-Developer-Intern) — Chicago, IL
 - [pylon-labs — Software Engineer, Intern](https://jobs.ashbyhq.com/pylon-labs/fcea8b52-81f1-4b0c-b575-d7b180faec4d) — San Francisco
+- [Quant SPA: Acadian Asset Management — Page changed - check Quant SPA: Acadian Asset Management (may mean applications opened)](https://www.acadian-asset.com/careers)
+- [Quant SPA: Adaptive Financial Consulting — Page changed - check Quant SPA: Adaptive Financial Consulting (may mean applications opened)](https://weareadaptive.com/careers/)
+- [Quant SPA: AEGIS Hedging — Page changed - check Quant SPA: AEGIS Hedging (may mean applications opened)](https://aegis-hedging.com/careers)
+- [Quant SPA: All Options — Page changed - check Quant SPA: All Options (may mean applications opened)](https://www.alloptions.nl/careers/)
+- [Quant SPA: Apex Fintech Solutions — Page changed - check Quant SPA: Apex Fintech Solutions (may mean applications opened)](https://careers.apexfintechsolutions.com/)
+- [Quant SPA: Appian Way Energy Partners — Page changed - check Quant SPA: Appian Way Energy Partners (may mean applications opened)](https://www.appianwayenergy.com/careers)
+- [Quant SPA: AQR Capital Management — Page changed - check Quant SPA: AQR Capital Management (may mean applications opened)](https://careers.aqr.com/jobs/department/university-jobs)
+- [Quant SPA: Archelon — Page changed - check Quant SPA: Archelon (may mean applications opened)](https://www.archelon-group.com/)
+- [Quant SPA: Aspect Capital — Page changed - check Quant SPA: Aspect Capital (may mean applications opened)](https://www.aspectcapital.com/about/team/research-internships-with-aspect-capital/)
+- [Quant SPA: Aurora Energy Research — Page changed - check Quant SPA: Aurora Energy Research (may mean applications opened)](https://auroraer.com/careers/)
+- [Quant SPA: Barchart — Page changed - check Quant SPA: Barchart (may mean applications opened)](https://www.barchart.com/solutions/company/careers)
+- [Quant SPA: Beacon Platform — Page changed - check Quant SPA: Beacon Platform (may mean applications opened)](https://www.beacon.io/careers)
+- [Quant SPA: BlockFills — Page changed - check Quant SPA: BlockFills (may mean applications opened)](https://www.blockfills.com/careers/)
+- [Quant SPA: Blue Trading Systems — Page changed - check Quant SPA: Blue Trading Systems (may mean applications opened)](https://www.bluetradingsystems.com/)
+- [Quant SPA: Bluefin Capital Management — Page changed - check Quant SPA: Bluefin Capital Management (may mean applications opened)](https://www.bfcm.com/careers/)
+- [Quant SPA: Boston Energy Group — Page changed - check Quant SPA: Boston Energy Group (may mean applications opened)](https://www.bostonenergygroup.com/careers/)
 - [Quant SPA: Bridgewater — Page changed - check Quant SPA: Bridgewater (may mean applications opened)](https://www.bridgewater.com/working-at-bridgewater)
+- [Quant SPA: Campbell & Company — Page changed - check Quant SPA: Campbell & Company (may mean applications opened)](https://campbell.com/careers/)
 - [Quant SPA: Cboe — Page changed - check Quant SPA: Cboe (may mean applications opened)](https://cboe.wd1.myworkdayjobs.com/External)
+- [Quant SPA: Chaos Labs — Page changed - check Quant SPA: Chaos Labs (may mean applications opened)](https://chaoslabs.xyz/careers)
+- [Quant SPA: Coatue Management — Page changed - check Quant SPA: Coatue Management (may mean applications opened)](https://www.coatue.com/)
+- [Quant SPA: Connamara Technologies — Page changed - check Quant SPA: Connamara Technologies (may mean applications opened)](https://connamara.com/)
+- [Quant SPA: Dark Forest Capital Management — Page changed - check Quant SPA: Dark Forest Capital Management (may mean applications opened)](https://www.darkforesttech.com/)
+- [Quant SPA: DC Energy — Page changed - check Quant SPA: DC Energy (may mean applications opened)](https://www.dc-energy.com/careers)
+- [Quant SPA: Deephaven Data Labs — Page changed - check Quant SPA: Deephaven Data Labs (may mean applications opened)](https://deephaven.io/company/careers/)
+- [Quant SPA: e360 Power — Page changed - check Quant SPA: e360 Power (may mean applications opened)](https://www.e360power.com/)
+- [Quant SPA: Elmagin Capital — Page changed - check Quant SPA: Elmagin Capital (may mean applications opened)](http://www.elmagincapital.com/careers)
+- [Quant SPA: Eventus — Page changed - check Quant SPA: Eventus (may mean applications opened)](https://www.eventus.com/careers/)
+- [Quant SPA: Exegy — Page changed - check Quant SPA: Exegy (may mean applications opened)](https://www.exegy.com/careers/)
+- [Quant SPA: First New York (FNY) — Page changed - check Quant SPA: First New York (FNY) (may mean applications opened)](https://www.firstny.com/)
+- [Quant SPA: FlexTrade Systems — Page changed - check Quant SPA: FlexTrade Systems (may mean applications opened)](https://flextrade.com/careers/)
+- [Quant SPA: Flowdesk — Page changed - check Quant SPA: Flowdesk (may mean applications opened)](https://www.flowdesk.co/careers/)
+- [Quant SPA: Fort LP — Page changed - check Quant SPA: Fort LP (may mean applications opened)](https://www.fortlp.com/careers)
+- [Quant SPA: Freepoint Commodities — Page changed - check Quant SPA: Freepoint Commodities (may mean applications opened)](https://www.freepoint.com/life-at-freepoint/)
+- [Quant SPA: Freestone Grove Partners — Page changed - check Quant SPA: Freestone Grove Partners (may mean applications opened)](https://jobs.gem.com/freestone-grove-partners)
+- [Quant SPA: Fulcrum Asset Management — Page changed - check Quant SPA: Fulcrum Asset Management (may mean applications opened)](https://www.fulcrumasset.com/)
+- [Quant SPA: G-Research — Page changed - check Quant SPA: G-Research (may mean applications opened)](https://www.gresearch.com/vacancies/)
+- [Quant SPA: Geode Capital Management — Page changed - check Quant SPA: Geode Capital Management (may mean applications opened)](https://www.geodecapital.com/careers)
+- [Quant SPA: GMO — Page changed - check Quant SPA: GMO (may mean applications opened)](https://www.gmo.com/americas/careers/)
+- [Quant SPA: Hard Eight Trading — Page changed - check Quant SPA: Hard Eight Trading (may mean applications opened)](https://www.hard8trading.com/careers.html)
+- [Quant SPA: Hartree Partners — Page changed - check Quant SPA: Hartree Partners (may mean applications opened)](https://www.hartreepartners.com/)
+- [Quant SPA: Hudson Bay Capital — Page changed - check Quant SPA: Hudson Bay Capital (may mean applications opened)](https://www.hudsonbaycapital.com/careers)
+- [Quant SPA: InCommodities North America — Page changed - check Quant SPA: InCommodities North America (may mean applications opened)](https://incommodities.com/join-us)
+- [Quant SPA: Intech Investment Management — Page changed - check Quant SPA: Intech Investment Management (may mean applications opened)](https://www.intechinvestments.com/careers)
+- [Quant SPA: Jacobs Levy Equity Management — Page changed - check Quant SPA: Jacobs Levy Equity Management (may mean applications opened)](https://jlem.com/careers)
+- [Quant SPA: Jain Global — Page changed - check Quant SPA: Jain Global (may mean applications opened)](https://www.jainglobal.com/)
+- [Quant SPA: Kaiko — Page changed - check Quant SPA: Kaiko (may mean applications opened)](https://jobs.kaiko.ai/)
+- [Quant SPA: Kepos Capital — Page changed - check Quant SPA: Kepos Capital (may mean applications opened)](https://www.keposcapital.com/)
+- [Quant SPA: LMAX Group — Page changed - check Quant SPA: LMAX Group (may mean applications opened)](https://careers.lmax.com/)
+- [Quant SPA: LMR Partners — Page changed - check Quant SPA: LMR Partners (may mean applications opened)](https://www.lmrpartners.com/)
+- [Quant SPA: Los Angeles Capital Management — Page changed - check Quant SPA: Los Angeles Capital Management (may mean applications opened)](https://www.lacapm.com/careers)
+- [Quant SPA: Man AHL (Man Group) — Page changed - check Quant SPA: Man AHL (Man Group) (may mean applications opened)](https://www.man.com/careers)
+- [Quant SPA: MarketAxess — Page changed - check Quant SPA: MarketAxess (may mean applications opened)](https://www.marketaxess.com/careers)
+- [Quant SPA: Marquette Partners — Page changed - check Quant SPA: Marquette Partners (may mean applications opened)](http://www.marquettepartnersholdingsllc.com/)
+- [Quant SPA: Massive (formerly Polygon.io) — Page changed - check Quant SPA: Massive (formerly Polygon.io) (may mean applications opened)](https://massive.com/careers)
+- [Quant SPA: MayStreet — Page changed - check Quant SPA: MayStreet (may mean applications opened)](https://www.lseg.com/en/careers)
+- [Quant SPA: McKay Brothers / Quincy Data — Page changed - check Quant SPA: McKay Brothers / Quincy Data (may mean applications opened)](https://mckay-brothers.com/careers)
+- [Quant SPA: MIAX (Miami International Holdings) — Page changed - check Quant SPA: MIAX (Miami International Holdings) (may mean applications opened)](https://www.miaxglobal.com/company/about/careers)
+- [Quant SPA: Nico Trading (Nico Holdings) — Page changed - check Quant SPA: Nico Trading (Nico Holdings) (may mean applications opened)](https://www.nicotrading.com/)
+- [Quant SPA: Nodal Exchange — Page changed - check Quant SPA: Nodal Exchange (may mean applications opened)](https://www.nodalexchange.com/)
+- [Quant SPA: Nonco — Page changed - check Quant SPA: Nonco (may mean applications opened)](https://nonco.com/company/careers)
+- [Quant SPA: OneMarketData (OneTick) — Page changed - check Quant SPA: OneMarketData (OneTick) (may mean applications opened)](https://www.onetick.com/careers)
+- [Quant SPA: oneZero Financial Systems — Page changed - check Quant SPA: oneZero Financial Systems (may mean applications opened)](https://www.onezero.com/careers/)
+- [Quant SPA: Options Technology — Page changed - check Quant SPA: Options Technology (may mean applications opened)](https://optionsit.bamboohr.com/careers)
+- [Quant SPA: OTC Markets Group — Page changed - check Quant SPA: OTC Markets Group (may mean applications opened)](https://www.otcmarkets.com/careers)
+- [Quant SPA: PanAgora Asset Management — Page changed - check Quant SPA: PanAgora Asset Management (may mean applications opened)](https://www.panagora.com/careers-panagora-asset-management/)
+- [Quant SPA: Pantera Capital — Page changed - check Quant SPA: Pantera Capital (may mean applications opened)](https://jobs.panteracapital.com/jobs)
+- [Quant SPA: PCI Energy Solutions — Page changed - check Quant SPA: PCI Energy Solutions (may mean applications opened)](https://www.pcienergysolutions.com/about/careers/)
+- [Quant SPA: Proof Trading — Page changed - check Quant SPA: Proof Trading (may mean applications opened)](https://prooftrading.com/)
+- [Quant SPA: QuantCube Technology — Page changed - check Quant SPA: QuantCube Technology (may mean applications opened)](https://www.quant-cube.com/)
+- [Quant SPA: Quantedge Capital — Page changed - check Quant SPA: Quantedge Capital (may mean applications opened)](https://www.quantedge.com/careers)
+- [Quant SPA: Quantica Capital — Page changed - check Quant SPA: Quantica Capital (may mean applications opened)](https://www.quantica.ch/)
+- [Quant SPA: Quantitative Brokers — Page changed - check Quant SPA: Quantitative Brokers (may mean applications opened)](https://www.quantitativebrokers.com/careers)
+- [Quant SPA: Quantitative Investment Management (QIM) — Page changed - check Quant SPA: Quantitative Investment Management (QIM) (may mean applications opened)](https://quantitative.com/)
 - [Quant SPA: Quantlab — Page changed - check Quant SPA: Quantlab (may mean applications opened)](https://www.quantlab.com/careers/)
+- [Quant SPA: Quantlab — Page changed - check Quant SPA: Quantlab (may mean applications opened)](https://www.quantlab.com/careers)
+- [Quant SPA: Qube Research & Technologies — Page changed - check Quant SPA: Qube Research & Technologies (may mean applications opened)](https://www.qube-rt.com/careers)
+- [Quant SPA: Renaissance Technologies — Page changed - check Quant SPA: Renaissance Technologies (may mean applications opened)](https://www.rentec.com/Careers.action?jobs=true)
+- [Quant SPA: Research Affiliates — Page changed - check Quant SPA: Research Affiliates (may mean applications opened)](https://www.researchaffiliates.com/about-us/careers)
+- [Quant SPA: Ridgeline — Page changed - check Quant SPA: Ridgeline (may mean applications opened)](https://ridgeline.ai/careers)
+- [Quant SPA: Saba Capital Management — Page changed - check Quant SPA: Saba Capital Management (may mean applications opened)](https://www.sabacapital.com/)
+- [Quant SPA: Saracen Energy — Page changed - check Quant SPA: Saracen Energy (may mean applications opened)](https://saracenenergy.com/careers.html)
+- [Quant SPA: Seven Eight Capital — Page changed - check Quant SPA: Seven Eight Capital (may mean applications opened)](https://www.seveneightcapital.com/)
+- [Quant SPA: Seven Points Capital — Page changed - check Quant SPA: Seven Points Capital (may mean applications opened)](https://sevenpointscapital.pinpointhq.com/)
+- [Quant SPA: SMB Capital — Page changed - check Quant SPA: SMB Capital (may mean applications opened)](https://smbcap.com/careers/)
+- [Quant SPA: SpiderRock — Page changed - check Quant SPA: SpiderRock (may mean applications opened)](https://spiderrock.net/)
+- [Quant SPA: Squarepoint Capital — Page changed - check Quant SPA: Squarepoint Capital (may mean applications opened)](https://www.squarepoint-capital.com/early-careers)
+- [Quant SPA: Statar Capital — Page changed - check Quant SPA: Statar Capital (may mean applications opened)](https://www.statarcapital.com/)
+- [Quant SPA: Sterling Trading Tech — Page changed - check Quant SPA: Sterling Trading Tech (may mean applications opened)](https://sterlingtradingtech.com/careers)
+- [Quant SPA: Stevens Capital Management — Page changed - check Quant SPA: Stevens Capital Management (may mean applications opened)](https://www.scm-lp.com/)
+- [Quant SPA: Sumo Capital — Page changed - check Quant SPA: Sumo Capital (may mean applications opened)](https://sumo.co/)
+- [Quant SPA: swissQuant Group — Page changed - check Quant SPA: swissQuant Group (may mean applications opened)](https://www.swissquant.com/careers/)
+- [Quant SPA: Systematica Investments — Page changed - check Quant SPA: Systematica Investments (may mean applications opened)](https://www.systematica.com/careers)
+- [Quant SPA: T3 Trading Group — Page changed - check Quant SPA: T3 Trading Group (may mean applications opened)](https://t3trading.com/)
+- [Quant SPA: Tenaska (Power Services) — Page changed - check Quant SPA: Tenaska (Power Services) (may mean applications opened)](https://recruiting.ultipro.com/TEN1001TEINC/JobBoard/52989607-07f5-4be5-b6f7-1878fa879db5/)
+- [Quant SPA: The Energy Authority — Page changed - check Quant SPA: The Energy Authority (may mean applications opened)](https://www3.teainc.org/careers/)
+- [Quant SPA: Tradebot Systems — Page changed - check Quant SPA: Tradebot Systems (may mean applications opened)](https://www.tradebot.com/)
+- [Quant SPA: Trading Technologies — Page changed - check Quant SPA: Trading Technologies (may mean applications opened)](https://www.tradingtechnologies.com/careers/)
+- [Quant SPA: Tradition (Compagnie Financiere Tradition / TFS) — Page changed - check Quant SPA: Tradition (Compagnie Financiere Tradition / TFS) (may mean applications opened)](https://www.tradition.com/)
+- [Quant SPA: Trexquant Investment — Page changed - check Quant SPA: Trexquant Investment (may mean applications opened)](https://trexquant.com/careers)
+- [Quant SPA: TS Imagine — Page changed - check Quant SPA: TS Imagine (may mean applications opened)](https://tsimagine.com/careers/)
+- [Quant SPA: Twin Eagle Resource Management — Page changed - check Quant SPA: Twin Eagle Resource Management (may mean applications opened)](https://twineagleresourcemanagement.applytojob.com/apply)
+- [Quant SPA: TXSE Group (Texas Stock Exchange) — Page changed - check Quant SPA: TXSE Group (Texas Stock Exchange) (may mean applications opened)](https://www.txse.com)
+- [Quant SPA: Verition Fund Management — Page changed - check Quant SPA: Verition Fund Management (may mean applications opened)](https://www.verition.com/)
+- [Quant SPA: Volant Trading — Page changed - check Quant SPA: Volant Trading (may mean applications opened)](https://volanttrading.com/)
+- [Quant SPA: WEBB Traders — Page changed - check Quant SPA: WEBB Traders (may mean applications opened)](https://www.webbtraders.com/careers)
+- [Quant SPA: Welton Investment Partners — Page changed - check Quant SPA: Welton Investment Partners (may mean applications opened)](https://www.welton.com/)
+- [Quant SPA: WH Trading — Page changed - check Quant SPA: WH Trading (may mean applications opened)](https://www.whtrading.com/)
 - [Quant SPA: Wintermute — Page changed - check Quant SPA: Wintermute (may mean applications opened)](https://www.wintermute.com/careers)
+- [Quant SPA: XBTO — Page changed - check Quant SPA: XBTO (may mean applications opened)](https://www.xbto.com/careers)
+- [Quant SPA: XO Energy — Page changed - check Quant SPA: XO Energy (may mean applications opened)](http://www.xo-energy.com/jobs)
 - [Quant/Tech: Ramp — Software Engineer Internship, Android ](https://jobs.ashbyhq.com/ramp/67fadb77-43d8-4449-954b-d4cf2c6d3b8b) — New York, NY (HQ)
 - [Quant/Tech: Scale AI — AI Builder Intern](https://job-boards.greenhouse.io/scaleai/jobs/4703343005) — San Francisco, CA; New York, NY
 - [Quant: GSA Capital — Quantitative Researcher - Intern](https://www.gsacapital.com/careers/gh/?gh_jid=8570661002) — London, New York
@@ -223,10 +335,10 @@ Sections: sweet-spot firms first, then everything else, elite last.
 - [D. E. Shaw — Software Developer Intern](https://www.deshaw.com/careers/software-developer-intern-new-york-summer-2027-5894) — New York, NY
 - [D. E. Shaw — Systems Engineering Intern](https://www.deshaw.com/careers/systems-engineering-intern-new-york-summer-2027-5916) — New York, NY
 - [D. E. Shaw & Co. — Software Developer Intern - New York - Summer 2027](https://www.deshaw.com/careers/5894) — New York City, NY
-- [drweng — Quantitative Research Intern](https://job-boards.greenhouse.io/drweng/jobs/7957756) — London
 - [drweng — Quantitative Research Intern](https://job-boards.greenhouse.io/drweng/jobs/7818540) — Chicago, New York City
-- [drweng — Quantitative Trading Analyst Intern](https://job-boards.greenhouse.io/drweng/jobs/7957243) — London
+- [drweng — Quantitative Research Intern](https://job-boards.greenhouse.io/drweng/jobs/7957756) — London
 - [drweng — Quantitative Trading Analyst Intern](https://job-boards.greenhouse.io/drweng/jobs/7668776) — Chicago, Illinois
+- [drweng — Quantitative Trading Analyst Intern](https://job-boards.greenhouse.io/drweng/jobs/7957243) — London
 - [drweng — Software Developer Intern](https://job-boards.greenhouse.io/drweng/jobs/8020364) — Amsterdam
 - [drweng — Software Developer Intern](https://job-boards.greenhouse.io/drweng/jobs/7992936) — Chicago
 - [drweng — Software Developer Intern](https://job-boards.greenhouse.io/drweng/jobs/7942281) — London
@@ -277,6 +389,7 @@ Sections: sweet-spot firms first, then everything else, elite last.
 - [Quant: Jump Trading — Campus Software Engineer (Intern)](https://www.jumptrading.com/hr/job?gh_jid=7975026) — London
 - [Quant: Jump Trading — Campus Systems Engineer (Intern)](https://www.jumptrading.com/hr/job?gh_jid=8000323) — London; Amsterdam
 - [Quant: Jump Trading — Campus UI Software Engineer (Intern)](https://www.jumptrading.com/hr/job?gh_jid=7974943) — London
+- [Quant: Radix Trading — Quantitative Technologist (C++ Intern) ](https://job-boards.greenhouse.io/radixuniversity/jobs/8500265002) — Chicago
 - [Quant: XTX Markets — AI Research Internship - XTY Labs](https://job-boards.greenhouse.io/xtxmarketstechnologies/jobs/6274458003) — New York
 - [Susquehanna — Quantitative Strategy Developer Intern](https://careers.sig.com/jobs/10838) — Bala Cynwyd, PA
 - [Susquehanna — Trading System Engineering Intern](https://careers.sig.com/jobs/10837?lang=en-us&mode=apply&iis=LinkedIn&jr_id=69f3d11158b23a2329da8088) — Bala Cynwyd, PA
