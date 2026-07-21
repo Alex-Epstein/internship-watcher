@@ -949,9 +949,30 @@ def _tier(company):
     return 1
 
 
+NYC_RE = re.compile(r"new york|nyc|manhattan|brooklyn|\bny\b", re.I)
+CHI_RE = re.compile(r"chicago|evanston|\bil\b", re.I)
+QUANT_RE = re.compile(
+    r"quant|trading|trader|market mak|systematic|volatility|options|"
+    r"alpha|signal|execution|low.?latency|derivativ", re.I)
+
+
+def _bucket(comp, title, loc):
+    """Alex's priority: NYC-quant first, Chicago-quant second, then the rest.
+    Lower number = higher on the list."""
+    is_quant = bool(QUANT_RE.search(title) or _tier(comp) in (0, 2))
+    if is_quant and NYC_RE.search(loc):
+        return 0  # 🗽 NYC quant — top priority
+    if is_quant and CHI_RE.search(loc):
+        return 1  # 🌆 Chicago quant — second
+    if is_quant:
+        return 2  # quant elsewhere (other US / EU)
+    return 3      # non-quant SWE/ML in target cities
+
+
 def write_top_picks(current):
-    """Curated subset of OPEN_ROLES: quant/SWE/ML only, target cities only,
-    sweet-spot firms first. Regenerated every full sweep like OPEN_ROLES.md."""
+    """Curated subset of OPEN_ROLES: quant/SWE/ML only, target cities only.
+    Ranked NYC-quant first, Chicago-quant second (Alex's stated criteria),
+    then quant-elsewhere, then non-quant. Regenerated every full sweep."""
     picks = []
     for rec in current.values():
         j = rec["job"]
@@ -964,32 +985,37 @@ def write_top_picks(current):
             continue
         if loc and not GOOD_LOC_RE.search(loc):
             continue
-        picks.append((_tier(comp), comp.lower(), title, comp, loc, j.get("url", ""),
-                      bool(j.get("clearance"))))
-    picks.sort(key=lambda p: (p[0], p[1], p[2]))
+        picks.append((_bucket(comp, title, loc), _tier(comp), comp.lower(),
+                      title, comp, loc, j.get("url", ""), bool(j.get("clearance"))))
+    # sort: bucket, then sweet-spot before elite within a bucket, then name
+    picks.sort(key=lambda p: (p[0], p[1], p[2], p[3]))
 
     stamp = time.strftime("%Y-%m-%d %H:%M UTC", time.gmtime())
     lines = [
         "# Top picks (auto-generated)",
         "",
-        f"_Quant / SWE / ML roles in target cities only. {len(picks)} of "
+        f"_Quant / SWE / ML roles in target cities. {len(picks)} of "
         f"{len(current)} open roles. Rebuilt every sweep: {stamp}._",
         "",
-        "Sections: sweet-spot firms first, then everything else, elite last.",
+        "Ranked by Alex's criteria: NYC quant first, Chicago quant second, "
+        "then quant elsewhere, then other SWE/ML. Within each, sweet-spot "
+        "firms before elite.",
         "",
     ]
-    headers = {0: "## 🎯 Sweet spot (apply first)",
-               1: "## Other relevant roles",
-               2: "## Elite tier (low odds, cheap to apply)"}
-    seen_tier = None
-    for tier, _, title, comp, loc, url, clr in picks:
-        if tier != seen_tier:
-            lines += ["", headers[tier], ""]
-            seen_tier = tier
+    headers = {0: "## 🗽 NYC QUANT — apply first",
+               1: "## 🌆 CHICAGO QUANT — apply second",
+               2: "## Quant elsewhere (other US / Europe)",
+               3: "## Other SWE / ML in target cities"}
+    seen_b = None
+    for b, tier, _, title, comp, loc, url, clr in picks:
+        if b != seen_b:
+            lines += ["", headers[b], ""]
+            seen_b = b
         flag = " 🇺🇸" if clr else ""
+        tg = " ⚡elite" if tier == 2 else ""
         t = title.replace("[", "(").replace("]", ")")
         c = comp.replace("[", "(").replace("]", ")")
-        lines.append(f"- [{c} — {t}]({url}){flag}" + (f" — {loc}" if loc else ""))
+        lines.append(f"- [{c} — {t}]({url}){flag}{tg}" + (f" — {loc}" if loc else ""))
 
     with open(TOP_PICKS_FILE, "w", encoding="utf-8") as fh:
         fh.write("\n".join(lines) + "\n")
