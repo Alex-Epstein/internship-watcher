@@ -876,8 +876,9 @@ TOP_PICKS_FILE = "TOP_PICKS.md"
 # Cities Alex actually wants. Whitelist, so anything not listed (India, China,
 # SE Asia, LatAm, etc.) is excluded automatically.
 GOOD_LOC_RE = re.compile(
+    # --- United States (cities) ---
     r"new york|nyc|manhattan|brooklyn|"
-    r"san francisco|\bsf\b|bay area|palo alto|menlo|mountain view|sunnyvale|"
+    r"san francisco|sf|bay area|palo alto|menlo|mountain view|sunnyvale|"
     r"santa clara|san jose|redwood|cupertino|"
     r"boston|cambridge, ma|somerville|"
     r"chicago|evanston|"
@@ -887,13 +888,19 @@ GOOD_LOC_RE = re.compile(
     r"miami|tampa|jupiter, fl|west palm|"
     r"philadelphia|bala cynwyd|"
     r"san diego|la jolla|"
-    r"washington|arlington|mclean|reston|chantilly|bethesda|d\.c\.|\bdc\b|"
-    r"atlanta|denver|boulder|"
-    r"stamford|greenwich|"
-    r"remote - us|remote, us|remote \(us|us remote|remote-us|"
-    r"dublin|london|amsterdam|zurich|paris|frankfurt|munich|madrid|milan|"
-    r"stockholm|copenhagen|brussels|vienna|luxembourg|tokyo|"
-    r"\b(ny|ca|ma|il|tx|wa|fl|pa|va|md|ga|co|ct|nj)\b",
+    r"washington|arlington|mclean|reston|chantilly|bethesda|d\.c\.|dc|"
+    r"atlanta|denver|boulder|stamford|greenwich|"
+    r"remote - us|remote, us|remote \(us|us remote|remote-us|united states|usa|"
+    # --- Western Europe (cities + countries) ---
+    r"dublin|ireland|london|united kingdom|uk|england|"
+    r"amsterdam|netherlands|rotterdam|"
+    r"zurich|geneva|switzerland|"
+    r"paris|france|frankfurt|munich|berlin|germany|"
+    r"madrid|barcelona|spain|milan|rome|italy|"
+    r"stockholm|sweden|copenhagen|denmark|oslo|norway|helsinki|finland|"
+    r"brussels|belgium|vienna|austria|luxembourg|lisbon|portugal|dublin|"
+    # --- US state-code fallback (last resort) ---
+    r"(ny|ca|ma|il|tx|wa|fl|pa|va|md|ga|co|ct|nj|az|nc|oh|mi|mn|or)",
     re.I,
 )
 BAD_LOC_RE = re.compile(
