@@ -948,6 +948,24 @@ ELITE = [
 ]
 
 
+EXCLUDE_FIRMS = [
+    # applied OR too-longshot per Alex (2026-07-22) — hidden from TOP_PICKS entirely
+    "flow traders", "flowtraders", "intercontinental", " ice", "virtu", "walleye",
+    "gsa capital", "gsa", "tower research", "tower-research", "towerresearch",
+    "d. e. shaw", "d.e. shaw", "deshaw", "drw", "hudson river", "hrt",
+    "jane street", "jump trading", "jump", "point72", "cubist", "akuna",
+    "aquatic", "chicago trading", "ctc", "ctccampus", "old mission", "oldmission",
+    "transmarket", "blackedge", "imc", "optiver", "five rings", "fivering",
+    "citadel", "two sigma", "arrowstreet", "voloridge", "capula", "palantir",
+    "seven research", "sevenresearch", "scale ai", "schonfeld",
+]
+
+
+def _excluded(company):
+    c = (company or "").lower()
+    return any(x in c for x in EXCLUDE_FIRMS)
+
+
 def _tier(company):
     c = (company or "").lower()
     if any(s in c for s in SWEET_SPOT):
@@ -995,6 +1013,8 @@ def write_top_picks(current):
         if not WANT_RE.search(title) or SKIP_RE.search(title):
             continue
         if any(d in (j.get('url','')) for d in DEAD_URLS):
+            continue
+        if _excluded(comp):
             continue
         if BAD_LOC_RE.search(loc) and not GOOD_LOC_RE.search(loc):
             continue
