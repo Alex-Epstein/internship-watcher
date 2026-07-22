@@ -1,6 +1,6 @@
 # Top picks (auto-generated)
 
-_Quant / SWE / ML roles in target cities. 261 of 825 open roles. Rebuilt every sweep: 2026-07-22 21:13 UTC._
+_Quant / SWE / ML roles in target cities. 238 of 615 open roles. Rebuilt every sweep: 2026-07-22 22:01 UTC._
 
 Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant elsewhere, then other SWE/ML. Within each, sweet-spot firms before elite.
 
@@ -42,8 +42,6 @@ Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant els
 - [chevron — 2026-2027 Supply & Trading TAMU TRIP Program - Full-Time (Previous Intern)](https://chevron.wd5.myworkdayjobs.com/en-US/university/job/Houston-1400-Smith-Street/XMLNAME-2026-2027-Supply---Trading-TAMU-TRIP-Program---Full-Time_R000072489) — Houston 1400 Smith Street
 - [chevron — 2026-2027 Supply & Trading TAMU TRIP Program Intern](https://chevron.wd5.myworkdayjobs.com/en-US/university/job/Houston-1400-Smith-Street/XMLNAME-2026-2027-Supply---Trading-TAMU-TRIP-Program-Intern_R000072485) — Houston 1400 Smith Street
 - [chevron — 2026-2027 Supply & Trading TAMU TRIP Program Intern (Previous Intern)](https://chevron.wd5.myworkdayjobs.com/en-US/university/job/Houston-1400-Smith-Street/XMLNAME-2026-2027-Supply---Trading-TAMU-TRIP-Program-Intern_R000072487) — Houston 1400 Smith Street
-- [Da Vinci Derivatives (Amsterdam quant) — Quant Trading Intern](https://job-boards.eu.greenhouse.io/davinciderivatives/jobs/4196845101) — Amsterdam, North Holland, Netherlands
-- [ing — Financial Risk Intern – Trading Risk Management (TRM)](https://ing.wd3.myworkdayjobs.com/en-US/icsgblcor/job/CDR-Amsterdam---Cedar/Financial-Risk-Intern---Trading-Risk-Management--TRM-_REQ-10118493) — CDR (Amsterdam - Cedar)
 - [Quant SPA: Acadian Asset Management — Page changed - check Quant SPA: Acadian Asset Management (may mean applications opened)](https://www.acadian-asset.com/careers)
 - [Quant SPA: Adaptive Financial Consulting — Page changed - check Quant SPA: Adaptive Financial Consulting (may mean applications opened)](https://weareadaptive.com/careers/)
 - [Quant SPA: AEGIS Hedging — Page changed - check Quant SPA: AEGIS Hedging (may mean applications opened)](https://aegis-hedging.com/careers)
@@ -165,27 +163,18 @@ Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant els
 
 - [Abundant — Software Engineering Intern, Research Focused](https://www.workatastartup.com/jobs/94634) 🇺🇸 — San Francisco, CA
 - [Amazon — Robotics - Software Development Engineer Intern/Co-op](https://www.amazon.jobs/en/jobs/3136266/robotics-software-development-engineer-intern-co-op-2026?no_int_redir=1) — Sunnyvale, CA, North Reading, MA, Westboro, MA, Nashville, TN, Austin, TX, Arlington, VA, Bellevue, WA, Seattle, WA
-- [Amazon (AWS / Robotics / all) — 2027 Applied Science Intern (Computer Vision), Amazon International Machine Learning](https://www.amazon.jobs/en/jobs/10459543/2027-applied-science-intern-computer-vision-amazon-international-machine-learning) — Melbourne, Victoria, AUS
-- [Amazon (AWS / Robotics / all) — 2027 Applied Science Intern (Machine Learning, Recommender Systems), Amazon International Machine Learning](https://www.amazon.jobs/en/jobs/10456239/2027-applied-science-intern-machine-learning-recommender-systems-amazon-international-machine-learning) — Melbourne, Victoria, AUS
-- [Amazon (AWS / Robotics / all) — 2027 Software Dev Engineer Intern](https://www.amazon.jobs/en/jobs/10418355/2027-software-dev-engineer-intern) — Dublin, IRL
-- [Amazon (AWS / Robotics / all) — Software Dev Engineer internship - Embedded Development](https://www.amazon.jobs/en/jobs/3134271/software-dev-engineer-internship-embedded-development) — Berlin, Berlin, DEU
-- [Amazon (AWS / Robotics / all) — Software Development Engineer Intern, Amazon University Talent Acquisition ](https://www.amazon.jobs/en/jobs/3063220/software-development-engineer-intern-amazon-university-talent-acquisition) — Sao Paulo, Sao Paulo, BRA
 - [Amazon (AWS / Robotics / all) — Software Development Engineer Internship, Costa Rica](https://www.amazon.jobs/en/jobs/3126072/software-development-engineer-internship-costa-rica) — San Jose, San Jose, CRI
 - [Anduril — 2027 Software Engineer Intern](https://boards.greenhouse.io/andurilindustries/jobs/5148079007?gh_jid=5148079007) 🇺🇸 — Atlanta, Georgia, United States; Boston, Massachusetts, United States; Costa Mesa, California, United States; Irvine, California, United States; Reston, Virginia, United States; Seattle, Washington, United States
 - [Anduril — Software Engineer Intern](https://job-boards.greenhouse.io/andurilindustries/jobs/5148079007?gh_jid=5148079007) — Atlanta, GA, Boston, MA, Costa Mesa, CA, Irvine, CA, Reston, VA, Seattle, WA
 - [Apex Technology, Inc. — Software Engineering Intern, Embedded Systems](https://jobs.ashbyhq.com/apex-technology-inc/5ec2dfa9-724d-4ce4-ab97-5067ec747f11) — Los Angeles
 - [Apple — Software Engineer Intern, Undergrad](https://jobs.apple.com/en-us/details/200664785/software-undergrad-engineering-internships) — United States
-- [asml — Artificial Intelligence | Data Science internship: customer support AI](https://asml.wd3.myworkdayjobs.com/en-US/asmlext1/job/Veldhoven-Netherlands/Artificial-Intelligence---Data-Science-internship--customer-support-AI_J-00339991) — Veldhoven, Netherlands
-- [autodesk — Software Engineering Intern Summer 2027](https://autodesk.wd1.myworkdayjobs.com/en-US/ext/job/Norway---Oslo/Software-Engineering-Intern-Summer-2027_26WD100046) — Norway - Oslo
 - [Avanade — Software Engineering Intern](https://accenture.wd103.myworkdayjobs.com/en-GB/AvanadeCareers/job/Los-Angeles-6181-W-Centinela-Ave-Corp/Intern--Software-Engineering---June-2026_R00319370?jr_id=69e6a556f8fa2f3ec32a3173) — Los Angeles, CA, Seattle, WA
 - [base-power — Software Engineering Intern](https://jobs.ashbyhq.com/base-power/5353ea33-57d4-46fa-9a96-e392a3f841bc) — Austin, TX
 - [Beacon Software — Software Engineering Intern](https://jobs.ashbyhq.com/beaconsoftware/2452d342-a069-4eda-adbe-9df296808ca1) — San Francisco, CA
 - [bild-ai — AI/SWE Intern](https://jobs.ashbyhq.com/bild-ai/b333f0f7-0ca6-4509-8697-9303396b5364) — San Francisco
-- [biotechne — Software Development / QA Intern](https://biotechne.wd5.myworkdayjobs.com/en-US/biotechne/job/Tolochenaz-Switzerland/Software-Development---QA-Intern_JR101900-1) — Tolochenaz, Switzerland
 - [brilliancanada — Intern - Software Development](https://brilliancanada.wd3.myworkdayjobs.com/en-US/insuresoft/job/United-States---Tuscaloosa-AL/Intern---Software-Development_R46472) — United States - Tuscaloosa, AL
 - [centerfield — Data Science Intern](https://jobs.ashbyhq.com/centerfield/916dcf42-d69a-4f00-875a-f8fe630e0f33) — Los Angeles, California
 - [centerfield — Software Engineer Intern](https://jobs.ashbyhq.com/centerfield/3279e803-56ab-4e12-8168-c2fd60bc8e60) — Los Angeles, California
-- [cgg — Software Engineering Intern](https://cgg.wd103.myworkdayjobs.com/en-US/viridiencareers/job/Crawley-United-Kingdom/Software-Engineering-Intern_JR101336-1) — Crawley, United Kingdom
 - [chevron — 2026-2027 Information Technology - Software Engineer - Intern](https://chevron.wd5.myworkdayjobs.com/en-US/university/job/Houston-Texas-United-States-of-America/XMLNAME-2026-2027-Information-Technology---Software-Engineer---Intern_R000072398-1) — Houston, Texas, United States of America
 - [circleback — Software Engineering Intern (Summer 2027)](https://jobs.ashbyhq.com/circleback/2bb6be67-d1a8-42f7-bb1b-64ee36bf613f) — San Francisco
 - [Circleback — Software Engineering Intern (Summer 2027) 🛂](https://www.ycombinator.com/companies/circleback/jobs/QMpriul-software-engineering-intern-summer-2027) — San Francisco, CA
@@ -195,35 +184,30 @@ Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant els
 - [ctgt — Software Engineering Intern (Summer 2027)](https://jobs.ashbyhq.com/ctgt/f657c2f5-125e-42b6-a68a-646bbea3d155) — San Francisco
 - [CTGT — Software Engineering Intern / Research Intern, Interpretability (Summer 2027)](https://www.ycombinator.com/companies/ctgt/jobs/b3hTkK4-software-engineering-intern-summer-2027) — San Francisco, CA
 - [Dedalus Labs — Systems Engineer / Product Manager Intern (Summer 2027)](https://www.ycombinator.com/companies/dedalus-labs/jobs/YtbvXM8-systems-engineer-summer-2027-intern) — San Francisco, CA
-- [dxctechnology — Intern AI Engineer](https://dxctechnology.wd1.myworkdayjobs.com/en-US/dxcjobs/job/AUS---VIC---MELBOURNE/Intern-AI-Engineer_51585286-1) — AUS - VIC - MELBOURNE
 - [Etched — Infrastructure Intern](https://jobs.ashbyhq.com/Etched/1b073af4-6764-45ca-a22d-40a4823f0877) — San Jose
 - [Etched — Infrastructure Intern](https://jobs.ashbyhq.com/Etched/80926a71-0a62-4bf8-a877-b6d96df279b7) — San Jose, CA
 - [exowatt — Software Engineering Intern  - Inventory Automation & IoT/Robotics](https://jobs.lever.co/exowatt/46c8f4fd-f059-4ad6-a5f4-4fcd55d84f9c) — Austin, TX
 - [exowatt — Software Engineering Intern - Agent Platform (AI)](https://jobs.lever.co/exowatt/2623555d-8b81-4f95-8bca-de9fafd2381c) — Miami, FL
-- [genbio — Software Engineering Intern](https://jobs.lever.co/genbio/4bdb14ae-e19f-40c8-84db-1307dbdabe74) — Palo Alto, CA
+- [GenBio AI — Software Engineering Intern](https://jobs.lever.co/genbio/4bdb14ae-e19f-40c8-84db-1307dbdabe74) — Palo Alto, CA
 - [Google — Software Engineering Intern - BS - Summer 2027](https://www.google.com/about/careers/applications/jobs/results/85564713261245126) — Mountain View, CA +29
 - [Google — Software Engineering Intern - MS - Summer 2027](https://www.google.com/about/careers/applications/jobs/results/95141459539174086) — Mountain View, CA +29
 - [Google — Software Engineering Intern, BS (Summer 2027)](https://www.google.com/about/careers/applications/jobs/results/85564713261245126-software-engineering-intern/) — Mountain View, CA (multiple US)
 - [gritt — ML & Cloud Infrastructure Engineer Intern](https://jobs.ashbyhq.com/gritt/46af6e69-40fc-4e53-940e-a99757137523) — South San Francisco
 - [Halo Industries — Software Engineer Intern - Machine Learning Workflow](https://apply.workable.com/halo-industries/j/29728B1DAF/) — Santa Clara, CA
 - [halo-industries — Software Engineer Intern - Machine Learning Workflow](https://apply.workable.com/j/29728B1DAF) — Santa Clara, California, United States
-- [harmattan-ai — Embedded Software Engineer Intern](https://jobs.ashbyhq.com/harmattan-ai/aed0cdba-ba9f-4740-9935-78bffc18cb39) — Paris
 - [hitachi — Research Science Intern, Financial Innovation Lab](https://hitachi.wd1.myworkdayjobs.com/en-US/hitachi/job/Santa-Clara-California-United-States/Research-Science-Intern--Financial-Innovation-Lab_R0084929) — Santa Clara, California, United States
 - [Homebase — Forward Deployed Engineering Intern, AI-Native](https://jobs.ashbyhq.com/homebase/a7ab59c0-786e-4675-b684-2ed19b240fb2) — Houston, TX, San Francisco, CA
 - [human-computer-lab — Intern - Software/ML Engineering](https://jobs.ashbyhq.com/human-computer-lab/7d13ae27-1f02-4d9b-8d39-e3d9d67df705) — San Francisco
 - [iherb — Software Development Intern](https://job-boards.greenhouse.io/iherb/jobs/7776154003) — United States of America - Remote / Home Office
-- [ing — MBO - internship - Azure Devops CICD](https://ing.wd3.myworkdayjobs.com/en-US/icsgblcor/job/HBP-Amsterdam---Haarlerbergpark/MBO---internship---Azure-Devops-CICD_REQ-10118267) — HBP (Amsterdam - Haarlerbergpark)
 - [kos.ai — Software Engineer Intern](https://jobs.ashbyhq.com/kos.ai/efab6ffb-9658-47f7-8b5f-a295c55957d3) — San Francisco
 - [Kudu Dynamics — Software Engineer Intern (1) 🇺🇸](https://leidos.wd5.myworkdayjobs.com/External/job/Chantilly-VA/Software-Engineer-Intern_R-00183707) — Chantilly, VA
 - [Kudu Dynamics — Software Engineer Intern (2) 🇺🇸](https://leidos.wd5.myworkdayjobs.com/External/job/Chantilly-VA/Software-Engineer-Intern_R-00183721) — Chantilly, VA
 - [Kudu Dynamics — Software Engineer Intern (3) 🇺🇸](https://leidos.wd5.myworkdayjobs.com/External/job/Chantilly-VA/Software-Engineer-Intern_R-00183714) — Chantilly, VA
-- [lighting — SEO and AI visibility intern](https://lighting.wd3.myworkdayjobs.com/en-US/jobs-and-careers/job/Madrid/SEO-and-AI-visibility-intern_364548) — Madrid
 - [lilasciences — Co-Op, AI Security](https://job-boards.greenhouse.io/lilasciences/jobs/4280945009) — Cambridge, MA USA
 - [lilasciences — Co-Op, LS AI, ML Scientist for Protein Engineering](https://job-boards.greenhouse.io/lilasciences/jobs/4289387009) — San Francisco, CA USA
 - [lilasciences — Co-Op, ML Scientist for Biology](https://job-boards.greenhouse.io/lilasciences/jobs/4294212009) — San Francisco, CA USA
 - [lilasciences — Co-op, Machine Learning for Digital Twins](https://job-boards.greenhouse.io/lilasciences/jobs/4280809009) — Cambridge, MA USA
 - [make-rain — Software Engineering Intern](https://jobs.lever.co/make-rain/b45f954e-19df-45b1-8748-c8ae442a2e8b) — El Segundo, CA
-- [manex — AI Software Engineer - Internship (f/m/d)](https://jobs.ashbyhq.com/manex/ba2e6b81-606f-4176-9919-2ee0157a8475) — Munich
 - [Naive — Software Engineer Intern 🇺🇸](https://www.workatastartup.com/jobs/94647) — San Francisco, CA / Remote (US)
 - [Nash — Full Stack Engineering Intern 🇺🇸](https://www.workatastartup.com/jobs/94993) — San Francisco, CA
 - [netic — Full-Stack Software Engineer (Product) - Intern - 2026-2027](https://jobs.ashbyhq.com/netic/f291394a-f3c5-4f46-9b87-77aea3d487ef) — San Francisco
@@ -235,9 +219,6 @@ Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant els
 - [neuralink — Software Engineer Intern, Infrastructure](https://boards.greenhouse.io/neuralink/jobs/5469298003?gh_jid=5469298003) — South San Francisco, California, United States
 - [neuralink — Software Engineer Intern, Internal Apps](https://boards.greenhouse.io/neuralink/jobs/6083322003?gh_jid=6083322003) — Austin, Texas, United States; South San Francisco, California, United States
 - [neuralink — Software Engineer Intern, Robotics](https://boards.greenhouse.io/neuralink/jobs/5469305003?gh_jid=5469305003) — Austin, Texas, United States; South San Francisco, California, United States
-- [pear-vc — Software Engineering Intern](https://jobs.ashbyhq.com/pear-vc/781a43c0-a13a-4e27-95a8-0dde6279d33f) — London
-- [perplexity — AI Inference Internship ](https://jobs.ashbyhq.com/perplexity/79a07e2d-6150-4929-80fe-bbe13a641763) — London
-- [perplexity — Internship - Search Machine Learning Engineer](https://jobs.ashbyhq.com/perplexity/71168628-1998-47d3-87a9-be7bc56a430d) — London
 - [persona.ai — Teleoperation Software Engineering Internship](https://jobs.ashbyhq.com/persona.ai/6078fafd-ba34-4c89-b260-7eb15be3cb9c) — Pensacola, FL or Houston, TX 
 - [Plus — Software Engineer Intern - Data](https://jobs.lever.co/plus-2/012a2134-8a6a-4982-8f25-f906178a24e4) — Santa Clara, CA
 - [Plus — Software Engineer Intern - Data Infrastructure and Tools](https://jobs.lever.co/plus-2/06b808df-85a1-4ddd-863c-3e1cbe61eda9) — Santa Clara, CA
@@ -261,15 +242,11 @@ Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant els
 - [Poshmark — Cloud Platform Engineer Intern, Growth](https://jobs.ashbyhq.com/poshmark/062b84e6-1633-43ae-870b-83cb62893caa) — Redwood City, CA
 - [Prospect Equities — Backend / Frontend Developer Intern](http://prospectequities.applytojob.com/apply/XTbzSAcNtg/Backend-Frontend-Developer-Intern) — Chicago, IL
 - [pylon-labs — Software Engineer, Intern](https://jobs.ashbyhq.com/pylon-labs/fcea8b52-81f1-4b0c-b575-d7b180faec4d) — San Francisco
-- [Quant: Garda Capital Partners — AI Intern](https://job-boards.greenhouse.io/gardacp/jobs/5843263004) — Geneva, Geneva, Switzerland; Zug, Zug, Switzerland
-- [reonic — Go-to-Market AI & Data Intern (Greentech) (m/f/d)](https://jobs.ashbyhq.com/reonic/79d56c30-6b6f-4f1d-9370-2873e2db8b9b) — Berlin
-- [reonic — Software Engineering Intern (Greentech) (m/f/d)](https://jobs.ashbyhq.com/reonic/dd26ab09-62de-4d27-9e11-64eccb2e33df) — Berlin
 - [Salesforce — Software Engineer Intern (Futureforce) 🔒](https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/California---San-Francisco/Summer-2027-Intern---Software-Engineer_JR340771-1) — San Francisco, CA
 - [selinc — Software Engineer Intern](https://selinc.wd1.myworkdayjobs.com/en-US/sel/job/Washington---Pullman/Software-Engineer-Intern_2026-21720) — Washington - Pullman
 - [serval — Software Engineer Intern](https://jobs.ashbyhq.com/serval/d7fb089c-db8a-4877-a5f3-73a09e67f54b) — San Francisco
 - [Solar Turbines (Caterpillar) — Solutions Platforms Engineered Intern (2027)](https://cat.wd5.myworkdayjobs.com/SolarTurbines/job/San-Diego-California/XMLNAME-2027-Internship----Solutions-Platforms-Engineered_R0000381657) — San Diego, CA
 - [sonyglobal — Software Engineer Intern](https://sonyglobal.wd1.myworkdayjobs.com/en-US/sonyglobalcareers/job/San-Diego/Software-Engineer-Intern_JR-119282) — San Diego
-- [tencent — AI Product Manager Intern](https://tencent.wd1.myworkdayjobs.com/en-US/tencent_careers/job/Netherlands-Amsterdam/AI-Product-Manager-Intern_R107776) — Netherlands-Amsterdam
 - [tencent — Research Intern – Video World Models (Research & ML Systems)](https://tencent.wd1.myworkdayjobs.com/en-US/tencent_careers/job/US-California-Palo-Alto/Research-Intern---Video-World-Models--Research---ML-Systems-_R107752-1) — US-California-Palo Alto
 - [Terranox AI — Summer Intern - AI/ML Engineering](https://www.workatastartup.com/jobs/94631) 🇺🇸 — San Francisco, CA
 - [TETRAMEM — Software Engineer Intern, Embedded](https://tetramem.hrmdirect.com/employment/job-opening.php?req=3491042#job) — San Jose, CA
