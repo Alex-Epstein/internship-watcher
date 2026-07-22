@@ -1,6 +1,6 @@
 # Top picks (auto-generated)
 
-_Quant / SWE / ML roles in target cities. 260 of 826 open roles. Rebuilt every sweep: 2026-07-22 17:23 UTC._
+_Quant / SWE / ML roles in target cities. 260 of 826 open roles. Rebuilt every sweep: 2026-07-22 19:22 UTC._
 
 Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant elsewhere, then other SWE/ML. Within each, sweet-spot firms before elite.
 
@@ -90,7 +90,6 @@ Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant els
 - [Quant SPA: Intech Investment Management — Page changed - check Quant SPA: Intech Investment Management (may mean applications opened)](https://www.intechinvestments.com/careers)
 - [Quant SPA: Jacobs Levy Equity Management — Page changed - check Quant SPA: Jacobs Levy Equity Management (may mean applications opened)](https://jlem.com/careers)
 - [Quant SPA: Jain Global — Page changed - check Quant SPA: Jain Global (may mean applications opened)](https://www.jainglobal.com/)
-- [Quant SPA: Kaiko — Page changed - check Quant SPA: Kaiko (may mean applications opened)](https://jobs.kaiko.ai/)
 - [Quant SPA: Kepos Capital — Page changed - check Quant SPA: Kepos Capital (may mean applications opened)](https://www.keposcapital.com/)
 - [Quant SPA: LMAX Group — Page changed - check Quant SPA: LMAX Group (may mean applications opened)](https://careers.lmax.com/)
 - [Quant SPA: LMR Partners — Page changed - check Quant SPA: LMR Partners (may mean applications opened)](https://www.lmrpartners.com/)
@@ -147,6 +146,7 @@ Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant els
 - [Quant SPA: TS Imagine — Page changed - check Quant SPA: TS Imagine (may mean applications opened)](https://tsimagine.com/careers/)
 - [Quant SPA: Twin Eagle Resource Management — Page changed - check Quant SPA: Twin Eagle Resource Management (may mean applications opened)](https://twineagleresourcemanagement.applytojob.com/apply)
 - [Quant SPA: TXSE Group (Texas Stock Exchange) — Page changed - check Quant SPA: TXSE Group (Texas Stock Exchange) (may mean applications opened)](https://www.txse.com)
+- [Quant SPA: Verition Fund Management — Page changed - check Quant SPA: Verition Fund Management (may mean applications opened)](https://www.verition.com/)
 - [Quant SPA: Volant Trading — Page changed - check Quant SPA: Volant Trading (may mean applications opened)](https://volanttrading.com/)
 - [Quant SPA: WEBB Traders — Page changed - check Quant SPA: WEBB Traders (may mean applications opened)](https://www.webbtraders.com/careers)
 - [Quant SPA: Welton Investment Partners — Page changed - check Quant SPA: Welton Investment Partners (may mean applications opened)](https://www.welton.com/)
