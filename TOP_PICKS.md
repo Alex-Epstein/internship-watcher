@@ -1,6 +1,6 @@
 # Top picks (auto-generated)
 
-_Quant / SWE / ML roles in target cities. 256 of 788 open roles. Rebuilt every sweep: 2026-07-22 05:55 UTC._
+_Quant / SWE / ML roles in target cities. 255 of 786 open roles. Rebuilt every sweep: 2026-07-22 08:33 UTC._
 
 Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant elsewhere, then other SWE/ML. Within each, sweet-spot firms before elite.
 
@@ -54,6 +54,7 @@ Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant els
 - [Quant SPA: Aspect Capital — Page changed - check Quant SPA: Aspect Capital (may mean applications opened)](https://www.aspectcapital.com/about/team/research-internships-with-aspect-capital/)
 - [Quant SPA: Aurora Energy Research — Page changed - check Quant SPA: Aurora Energy Research (may mean applications opened)](https://auroraer.com/careers/)
 - [Quant SPA: Barchart — Page changed - check Quant SPA: Barchart (may mean applications opened)](https://www.barchart.com/solutions/company/careers)
+- [Quant SPA: Beacon Platform — Page changed - check Quant SPA: Beacon Platform (may mean applications opened)](https://www.beacon.io/careers)
 - [Quant SPA: BlockFills — Page changed - check Quant SPA: BlockFills (may mean applications opened)](https://www.blockfills.com/careers/)
 - [Quant SPA: Blue Trading Systems — Page changed - check Quant SPA: Blue Trading Systems (may mean applications opened)](https://www.bluetradingsystems.com/)
 - [Quant SPA: Bluefin Capital Management — Page changed - check Quant SPA: Bluefin Capital Management (may mean applications opened)](https://www.bfcm.com/careers/)
@@ -180,10 +181,8 @@ Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant els
 - [Beacon Software — Software Engineering Intern](https://jobs.ashbyhq.com/beaconsoftware/2452d342-a069-4eda-adbe-9df296808ca1) — San Francisco, CA
 - [biotechne — Software Development / QA Intern](https://biotechne.wd5.myworkdayjobs.com/en-US/biotechne/job/Tolochenaz-Switzerland/Software-Development---QA-Intern_JR101900-1) — Tolochenaz, Switzerland
 - [brilliancanada — Intern - Software Development](https://brilliancanada.wd3.myworkdayjobs.com/en-US/insuresoft/job/United-States---Tuscaloosa-AL/Intern---Software-Development_R46472) — United States - Tuscaloosa, AL
-- [cat — 2027 Internship -  Solutions Platforms Engineered](https://cat.wd5.myworkdayjobs.com/en-US/SolarTurbines/job/San-Diego-California/XMLNAME-2027-Internship----Solutions-Platforms-Engineered_R0000381657) — San Diego, California
 - [centerfield — Data Science Intern](https://jobs.ashbyhq.com/centerfield/916dcf42-d69a-4f00-875a-f8fe630e0f33) — Los Angeles, California
 - [centerfield — Software Engineer Intern](https://jobs.ashbyhq.com/centerfield/3279e803-56ab-4e12-8168-c2fd60bc8e60) — Los Angeles, California
-- [centific — Tech Intern - Responsible AI](https://centific.wd1.myworkdayjobs.com/en-US/centific_global/job/Redmond-Washington/Tech-Intern---Responsible-AI_JR107893-1) — Redmond, Washington
 - [cgg — Software Engineering Intern](https://cgg.wd103.myworkdayjobs.com/en-US/viridiencareers/job/Crawley-United-Kingdom/Software-Engineering-Intern_JR101336-1) — Crawley, United Kingdom
 - [chevron — 2026-2027 Information Technology - Software Engineer - Intern](https://chevron.wd5.myworkdayjobs.com/en-US/university/job/Houston-Texas-United-States-of-America/XMLNAME-2026-2027-Information-Technology---Software-Engineer---Intern_R000072398-1) — Houston, Texas, United States of America
 - [circleback — Software Engineering Intern (Summer 2027)](https://jobs.ashbyhq.com/circleback/2bb6be67-d1a8-42f7-bb1b-64ee36bf613f) — San Francisco
