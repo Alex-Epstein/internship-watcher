@@ -1,6 +1,6 @@
 # Top picks (auto-generated)
 
-_Quant / SWE / ML roles in target cities. 238 of 615 open roles. Rebuilt every sweep: 2026-07-22 22:01 UTC._
+_Quant / SWE / ML roles in target cities. 238 of 616 open roles. Rebuilt every sweep: 2026-07-22 23:08 UTC._
 
 Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant elsewhere, then other SWE/ML. Within each, sweet-spot firms before elite.
 
@@ -131,7 +131,6 @@ Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant els
 - [Quant SPA: Squarepoint Capital — Page changed - check Quant SPA: Squarepoint Capital (may mean applications opened)](https://www.squarepoint-capital.com/early-careers)
 - [Quant SPA: Statar Capital — Page changed - check Quant SPA: Statar Capital (may mean applications opened)](https://www.statarcapital.com/)
 - [Quant SPA: Sterling Trading Tech — Page changed - check Quant SPA: Sterling Trading Tech (may mean applications opened)](https://sterlingtradingtech.com/careers)
-- [Quant SPA: Stevens Capital Management — Page changed - check Quant SPA: Stevens Capital Management (may mean applications opened)](https://www.scm-lp.com/)
 - [Quant SPA: Sumo Capital — Page changed - check Quant SPA: Sumo Capital (may mean applications opened)](https://sumo.co/)
 - [Quant SPA: swissQuant Group — Page changed - check Quant SPA: swissQuant Group (may mean applications opened)](https://www.swissquant.com/careers/)
 - [Quant SPA: Systematica Investments — Page changed - check Quant SPA: Systematica Investments (may mean applications opened)](https://www.systematica.com/careers)
@@ -197,6 +196,7 @@ Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant els
 - [halo-industries — Software Engineer Intern - Machine Learning Workflow](https://apply.workable.com/j/29728B1DAF) — Santa Clara, California, United States
 - [hitachi — Research Science Intern, Financial Innovation Lab](https://hitachi.wd1.myworkdayjobs.com/en-US/hitachi/job/Santa-Clara-California-United-States/Research-Science-Intern--Financial-Innovation-Lab_R0084929) — Santa Clara, California, United States
 - [Homebase — Forward Deployed Engineering Intern, AI-Native](https://jobs.ashbyhq.com/homebase/a7ab59c0-786e-4675-b684-2ed19b240fb2) — Houston, TX, San Francisco, CA
+- [hp — Software Engineering Intern, Device Experiences](https://hp.wd5.myworkdayjobs.com/en-US/externalcareersite/job/San-Francisco-California-United-States-of-America/Software-Engineering-Intern--Device-Experiences_3164166-1) — San Francisco, California, United States of America
 - [human-computer-lab — Intern - Software/ML Engineering](https://jobs.ashbyhq.com/human-computer-lab/7d13ae27-1f02-4d9b-8d39-e3d9d67df705) — San Francisco
 - [iherb — Software Development Intern](https://job-boards.greenhouse.io/iherb/jobs/7776154003) — United States of America - Remote / Home Office
 - [kos.ai — Software Engineer Intern](https://jobs.ashbyhq.com/kos.ai/efab6ffb-9658-47f7-8b5f-a295c55957d3) — San Francisco
