@@ -1055,6 +1055,7 @@ EXCLUDE_FIRMS = [
     "transmarket", "blackedge", "imc", "optiver", "five rings", "fivering",
     "citadel", "two sigma", "arrowstreet", "voloridge", "capula", "palantir",
     "seven research", "sevenresearch", "scale ai", "schonfeld",
+    "scm", "stevens capital",
 ]
 
 
