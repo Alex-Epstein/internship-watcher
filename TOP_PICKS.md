@@ -1,6 +1,6 @@
 # Top picks (auto-generated)
 
-_Quant / SWE / ML roles in target cities. 257 of 791 open roles. Rebuilt every sweep: 2026-07-22 02:36 UTC._
+_Quant / SWE / ML roles in target cities. 256 of 788 open roles. Rebuilt every sweep: 2026-07-22 05:55 UTC._
 
 Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant elsewhere, then other SWE/ML. Within each, sweet-spot firms before elite.
 
@@ -54,7 +54,6 @@ Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant els
 - [Quant SPA: Aspect Capital — Page changed - check Quant SPA: Aspect Capital (may mean applications opened)](https://www.aspectcapital.com/about/team/research-internships-with-aspect-capital/)
 - [Quant SPA: Aurora Energy Research — Page changed - check Quant SPA: Aurora Energy Research (may mean applications opened)](https://auroraer.com/careers/)
 - [Quant SPA: Barchart — Page changed - check Quant SPA: Barchart (may mean applications opened)](https://www.barchart.com/solutions/company/careers)
-- [Quant SPA: Beacon Platform — Page changed - check Quant SPA: Beacon Platform (may mean applications opened)](https://www.beacon.io/careers)
 - [Quant SPA: BlockFills — Page changed - check Quant SPA: BlockFills (may mean applications opened)](https://www.blockfills.com/careers/)
 - [Quant SPA: Blue Trading Systems — Page changed - check Quant SPA: Blue Trading Systems (may mean applications opened)](https://www.bluetradingsystems.com/)
 - [Quant SPA: Bluefin Capital Management — Page changed - check Quant SPA: Bluefin Capital Management (may mean applications opened)](https://www.bfcm.com/careers/)
