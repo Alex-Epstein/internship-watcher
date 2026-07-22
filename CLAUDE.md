@@ -6,12 +6,20 @@ Summer 2027 internship opens** in CS / math / quant / AI / ML / CV / defense.
 ## Who this is for (drives all filtering)
 
 - Georgia Tech, B.S. Mathematics & Computer Science, **graduating May 2028**
-- **U.S. Citizen with an active Secret security clearance** — this is a major edge.
-  Clearance / US-citizen-required roles get their own **priority section at the top
-  of every email**, because most applicants are ineligible for them.
+- **U.S. Citizen with an active Secret security clearance** — still a major edge for
+  defense/gov roles, but as of 2026-07-22 clearance roles are **no longer broken into
+  their own email section** (Alex's call). `clearance_keywords` / `is_clearance()` are
+  still computed for logging, they just don't drive the email layout anymore.
+- **Email is ranked into 4 categories, in this exact order** (Alex's priority — he's
+  locked on quant, NYC first): ① Quant in NYC ② Quant in other US locations
+  ③ SWE / ML / AI (best location first) ④ everything else. Within each, NYC floats
+  to the top, then other US hubs. See `build_email_html`.
 - Targets: quant (dev / research / trading), SWE, ML / AI / CV, robotics, defense
   primes & defense tech, national labs, REUs / research programs.
-- **Summer 2027 only.** International locations are fine.
+- **Summer 2027 only. US-only** (2026-07-22): non-US roles are dropped from the email,
+  TOP_PICKS, and OPEN_ROLES via `_is_us_location()` at the sweep's `relevant` stage
+  (drops are logged `[-N non-US]`). Western Europe/AUS/Brazil, previously allowed, are
+  now excluded. To re-enable a region, edit `NON_US_RE`.
 
 ## Layout
 
@@ -55,7 +63,10 @@ Read the Actions log to see which sources actually resolved.
 2. `title_require_any` — must be a CS/math domain (73 keywords)
 3. `title_exclude` — PhD/Masters, off-cycle (spring/winter/fall), non-CS engineering
 4. **Cycle check** — see gotcha #1 below
-5. `clearance_keywords` — flags US-citizen/clearance roles into the priority section
+5. **US-only gate** (`_is_us_location`) — clearly-non-US roles are dropped after the
+   relevance check; empty/ambiguous locations are kept (never silent-drop a US role)
+6. `clearance_keywords` — still computed by `is_clearance()` for the run log, but no
+   longer creates an email section (see "Who this is for")
 
 ## HARD-WON GOTCHAS — read before changing anything
 

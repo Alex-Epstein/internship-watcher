@@ -755,6 +755,43 @@ def _mark_and_sort_priority(jobs, filters):
     return sorted(jobs, key=lambda j: not j.get("_ploc"))
 
 
+# Secondary US hubs (after NYC) for sorting roles within a category.
+_HUB_RE = re.compile(
+    r"san francisco|\bsf\b|bay area|palo alto|menlo|mountain view|sunnyvale|"
+    r"santa clara|san jose|boston|cambridge|chicago|evanston|seattle|bellevue|"
+    r"austin|dallas|houston|los angeles|santa monica|el segundo|philadelphia|"
+    r"bala cynwyd|radnor|jersey city|san diego|washington|arlington|mclean|"
+    r"reston|stamford|greenwich|atlanta|denver|miami", re.I)
+
+
+# Broad SWE/ML/AI title matcher for the email's category 3 (wider than WANT_RE,
+# which needs the literal word "software" -- this also catches bare "Developer
+# Internship", "Systems Engineer", "Controls/Robotics Engineer", etc.).
+SWE_RE = re.compile(
+    r"software|developer|\bdev\b|engineer|programmer|backend|back-end|"
+    r"full.?stack|front.?end|machine learning|deep learning|\bml\b|\bai\b|"
+    r"artificial intelligence|data scien|data eng|computer vision|\bnlp\b|"
+    r"\bllm\b|infrastructure|platform|\bsre\b|devops|research|robotics|"
+    r"embedded|systems|algorithm|cloud|perception", re.I)
+
+
+def _is_quant(company, title):
+    """A role is 'quant' if the title reads quant/trading OR it's at a known
+    quant firm (sweet-spot or elite tier)."""
+    return bool(QUANT_RE.search(title or "") or _tier(company) in (0, 2))
+
+
+def _loc_rank(loc):
+    """Lower = more desirable location, so best cities float to the top of a
+    category. NYC first (Alex's #1 target), then other US hubs, then the rest."""
+    s = loc or ""
+    if NYC_RE.search(s):
+        return 0
+    if _HUB_RE.search(s):
+        return 1
+    return 2 if s.strip() else 3
+
+
 def build_email_html(grouped, baseline=False, filters=None):
     intro = (
         "Baseline of currently-open roles. Future emails will contain only "
@@ -764,37 +801,47 @@ def build_email_html(grouped, baseline=False, filters=None):
     )
     parts = [f"<p>{intro}</p>"]
 
-    # Split out clearance / US-citizen-required roles -- fewer people can apply
-    # to these, so they lead the email.
-    cleared, rest = [], {}
+    # Alex's 4 categories (2026-07-22), in priority order. US-only is already
+    # enforced upstream, so every role here is US.
+    #   0) Quant in NYC   1) Quant elsewhere   2) SWE/ML/AI   3) everything else
+    cats = {0: [], 1: [], 2: [], 3: []}
     for firm in grouped:
         for j in grouped[firm]:
-            if j.get("clearance"):
-                j = dict(j)
-                j.setdefault("company", firm)
-                cleared.append(j)
+            j = dict(j)
+            j.setdefault("company", firm)
+            comp, title = j.get("company") or firm, j.get("title", "")
+            loc = j.get("location") or ""
+            if _is_quant(comp, title):
+                cats[0 if NYC_RE.search(loc) else 1].append(j)
+            elif SWE_RE.search(title):
+                cats[2].append(j)
             else:
-                rest.setdefault(firm, []).append(j)
+                cats[3].append(j)
 
-    if cleared:
-        cleared = _mark_and_sort_priority(_collapse_locations(cleared), filters)
+    meta = [
+        (0, "&#128509; Quant &mdash; New York", "#1553b0",
+         "Your #1 target: quant roles in NYC."),
+        (1, "&#128200; Quant &mdash; other US locations", "#2f6f4f",
+         "Quant everywhere else in the US."),
+        (2, "&#128187; SWE / ML / AI", "#5b3fa0",
+         "Software, machine-learning and AI roles, best locations first."),
+        (3, "Other matched roles", "#777", None),
+    ]
+    for cid, header, color, sub in meta:
+        jobs = _collapse_locations(cats[cid])
+        if not jobs:
+            continue
+        jobs.sort(key=lambda j: (_loc_rank(j.get("location") or ""),
+                                  (j.get("company") or "").lower()))
         parts.append(
-            "<div style='border-left:4px solid #b7791f;padding:6px 12px;margin:14px 0;"
-            "background:#fffbeb'>"
-            f"<h3 style='margin:4px 0'>US Citizen / Clearance required &mdash; "
-            f"{len(cleared)} role(s)</h3>"
-            "<p style='margin:2px 0;color:#666;font-size:12px'>Most applicants are "
-            "ineligible for these. You are not.</p><ul>"
+            f"<div style='border-left:4px solid {color};padding:4px 12px;margin:16px 0'>"
+            f"<h3 style='margin:4px 0'>{header} &mdash; {len(jobs)} role(s)</h3>"
+            + (f"<p style='margin:2px 0;color:#888;font-size:12px'>{sub}</p>" if sub else "")
+            + "<ul>"
         )
-        for j in cleared:
+        for j in jobs:
             parts.append(_job_li(j))
         parts.append("</ul></div>")
-
-    for firm in sorted(rest):
-        parts.append(f"<h3 style='margin:16px 0 4px'>{escape(firm)}</h3><ul>")
-        for job in _mark_and_sort_priority(_collapse_locations(rest[firm]), filters):
-            parts.append(_job_li(job))
-        parts.append("</ul>")
 
     parts.append(
         "<p style='color:#888;font-size:12px'>Sent automatically by your "
@@ -834,11 +881,11 @@ def write_open_roles(current):
     """Regenerate OPEN_ROLES.md every run: a browsable snapshot of every
     relevant role open right now (not just the new ones that get emailed).
     Committed alongside seen_jobs.json, so it's always live on GitHub."""
-    cleared, by_src = [], {}
+    by_src = {}
     for rec in current.values():
         j = dict(rec["job"])
         j.setdefault("company", rec["src"])
-        (cleared if j.get("clearance") else by_src.setdefault(rec["src"], [])).append(j)
+        by_src.setdefault(rec["src"], []).append(j)
 
     def md_line(j):
         title = j["title"].replace("[", "(").replace("]", ")")
@@ -854,11 +901,6 @@ def write_open_roles(current):
         f"{len(current)} posting(s) currently open and matching filters._",
         "",
     ]
-    if cleared:
-        collapsed = _collapse_locations(cleared)
-        lines += [f"## US Citizen / Clearance required ({len(collapsed)})", ""]
-        lines += [md_line(j) for j in collapsed]
-        lines.append("")
     for src in sorted(by_src):
         collapsed = _collapse_locations(by_src[src])
         lines += [f"## {src} ({len(collapsed)})", ""]
@@ -917,6 +959,61 @@ BAD_LOC_RE = re.compile(
     r"singapore|hong kong",
     re.I,
 )
+
+# US-ONLY gate (Alex, 2026-07-22): he wants US roles only for now. NON_US_RE
+# names places that are clearly outside the US -- everything in BAD_LOC_RE plus
+# Western Europe (which used to be allowed). US_LOC_RE is a positive US matcher
+# used only to rescue a co-listed role ("London / New York"). A role is dropped
+# only when its location clearly names a non-US place AND names no US place --
+# empty/ambiguous locations are KEPT so US roles are never silently dropped.
+NON_US_RE = re.compile(
+    r"\bindia\b|china|bangalore|hyderabad|pune|mumbai|delhi|chennai|gurgaon|"
+    r"noida|shanghai|beijing|shenzhen|guangzhou|suzhou|hangzhou|wuhan|xiamen|"
+    r"hefei|chengdu|zhongshan|malaysia|penang|kuala lumpur|philippines|manila|"
+    r"vietnam|hanoi|ho chi minh|indonesia|jakarta|thailand|bangkok|taiwan|"
+    r"taipei|hsinchu|tainan|korea|seoul|japan|tokyo|brazil|sao paulo|"
+    r"(?<!new )mexico|guadalajara|monterrey|queretaro|poland|krakow|warsaw|"
+    r"romania|bucharest|bulgaria|sofia|egypt|cairo|turkey|israel|argentina|"
+    r"cordoba|belarus|minsk|sri lanka|africa|dubai|riyadh|saudi|new zealand|"
+    r"auckland|australia|sydney|melbourne|canada|toronto|vancouver|ottawa|"
+    r"montreal|ontario|quebec|alberta|manitoba|saskatchewan|\bcad\b|"
+    r"singapore|hong kong|"
+    # Western Europe -- previously allowed, now excluded (US-only)
+    r"united kingdom|england|scotland|wales|\buk\b|london|dublin|ireland|"
+    r"amsterdam|netherlands|rotterdam|the hague|zurich|geneva, |switzerland|"
+    r"paris|france|frankfurt|munich|berlin|hamburg|germany|"
+    r"madrid|barcelona|spain|milan|rome|italy|"
+    r"stockholm|sweden|copenhagen|denmark|oslo|norway|helsinki|finland|"
+    r"brussels|belgium|vienna|austria|luxembourg|lisbon|portugal|"
+    r"\beurope\b|\bemea\b|\bapac\b|\blatam\b",
+    re.I,
+)
+US_LOC_RE = re.compile(
+    r"new york|nyc|manhattan|brooklyn|new jersey|jersey city|"
+    r"san francisco|\bsf\b|bay area|palo alto|menlo|mountain view|sunnyvale|"
+    r"santa clara|san jose|redwood|cupertino|"
+    r"boston|cambridge, ma|somerville|chicago|evanston|"
+    r"austin|dallas|houston|seattle|bellevue|redmond|kirkland|"
+    r"los angeles|santa monica|el segundo|pasadena|culver city|"
+    r"miami|tampa|west palm|jupiter, fl|philadelphia|bala cynwyd|radnor|"
+    r"san diego|la jolla|new mexico|albuquerque|santa fe|"
+    r"washington|arlington|mclean|reston|chantilly|bethesda|d\.c\.|"
+    r"atlanta|denver|boulder|stamford|greenwich|"
+    r"united states|\busa\b|u\.s\.|remote - us|remote us|us remote|remote, us|"
+    r"\b(ny|ca|ma|il|tx|wa|fl|pa|va|md|ga|co|ct|nj|az|nc|oh|mi|mn|or|nm|dc)\b",
+    re.I,
+)
+
+
+def _is_us_location(loc):
+    """True unless the location clearly names a non-US place with no US co-listing.
+    Empty/unknown locations return True (kept) to avoid silent US drops."""
+    s = (loc or "").strip()
+    if not s:
+        return True
+    return not (NON_US_RE.search(s) and not US_LOC_RE.search(s))
+
+
 # Roles he wants: quant + SWE + ML/AI. Not hardware/mech/test/validation.
 WANT_RE = re.compile(
     r"quant|trading|trader|software eng|software dev|swe\b|backend|back-end|"
@@ -1126,11 +1223,18 @@ def main():
             continue
 
         relevant = [j for j in jobs if j.get("bypass_filters") or is_relevant(j, filters)]
+        # US-only (Alex, 2026-07-22): drop clearly-non-US roles from everything
+        # downstream (email, TOP_PICKS, OPEN_ROLES). Keep bypass alerts as-is.
+        us_relevant = [j for j in relevant
+                       if j.get("bypass_filters") or _is_us_location(j.get("location"))]
+        n_drop = len(relevant) - len(us_relevant)
+        relevant = us_relevant
         for j in relevant:
             j["clearance"] = is_clearance(j, filters)
         n_clear = sum(1 for j in relevant if j["clearance"])
         print(f"  ok {name}: {len(jobs)} jobs, {len(relevant)} relevant"
-              + (f" ({n_clear} clearance/US-citizen)" if n_clear else ""))
+              + (f" ({n_clear} clearance/US-citizen)" if n_clear else "")
+              + (f" [-{n_drop} non-US]" if n_drop else ""))
         for j in relevant:
             url = (j.get("url") or "").strip().lower()
             gkey = url if url else f"{name}:{j['id']}"
