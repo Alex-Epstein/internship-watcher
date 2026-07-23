@@ -1,6 +1,6 @@
 # Top picks (auto-generated)
 
-_Quant / SWE / ML roles in target cities. 238 of 616 open roles. Rebuilt every sweep: 2026-07-23 02:42 UTC._
+_Quant / SWE / ML roles in target cities. 237 of 616 open roles. Rebuilt every sweep: 2026-07-23 06:00 UTC._
 
 Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant elsewhere, then other SWE/ML. Within each, sweet-spot firms before elite.
 
@@ -93,7 +93,6 @@ Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant els
 - [Quant SPA: LMAX Group — Page changed - check Quant SPA: LMAX Group (may mean applications opened)](https://careers.lmax.com/)
 - [Quant SPA: LMR Partners — Page changed - check Quant SPA: LMR Partners (may mean applications opened)](https://www.lmrpartners.com/)
 - [Quant SPA: Los Angeles Capital Management — Page changed - check Quant SPA: Los Angeles Capital Management (may mean applications opened)](https://www.lacapm.com/careers)
-- [Quant SPA: Man AHL (Man Group) — Page changed - check Quant SPA: Man AHL (Man Group) (may mean applications opened)](https://www.man.com/careers)
 - [Quant SPA: MarketAxess — Page changed - check Quant SPA: MarketAxess (may mean applications opened)](https://www.marketaxess.com/careers)
 - [Quant SPA: Marquette Partners — Page changed - check Quant SPA: Marquette Partners (may mean applications opened)](http://www.marquettepartnersholdingsllc.com/)
 - [Quant SPA: Massive (formerly Polygon.io) — Page changed - check Quant SPA: Massive (formerly Polygon.io) (may mean applications opened)](https://massive.com/careers)
