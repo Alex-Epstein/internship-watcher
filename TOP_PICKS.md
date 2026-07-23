@@ -1,6 +1,6 @@
 # Top picks (auto-generated)
 
-_Quant / SWE / ML roles in target cities. 239 of 615 open roles. Rebuilt every sweep: 2026-07-23 14:00 UTC._
+_Quant / SWE / ML roles in target cities. 236 of 610 open roles. Rebuilt every sweep: 2026-07-23 16:01 UTC._
 
 Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant elsewhere, then other SWE/ML. Within each, sweet-spot firms before elite.
 
@@ -15,7 +15,6 @@ Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant els
 - [ellipsislabs — Software Engineer - 2027 Interns](https://jobs.ashbyhq.com/ellipsislabs/02136b22-35b1-4b3d-8bef-567c3380a849) — New York, New York
 - [Latent Defense — Software Engineer Intern](https://jobs.ashbyhq.com/latent%20defense/54841e7d-d80a-4c2f-8c44-d492fe8eb487) — New York City, NY
 - [LiveRamp — Software Engineer Intern, Pixel Serving](https://liveramp.wd5.myworkdayjobs.com/LiveRampCareers/job/New-York/Intern--Software-Engineer---Pixel-Serving_JR012201) — New York, NY
-- [Phia — Full Stack Engineer Intern](https://jobs.ashbyhq.com/phia/71c26b8b-86cd-446d-a63f-8cd8c2a3f162) — New York City, NY
 - [Quant/Tech: Ramp — Software Engineer Internship, Android ](https://jobs.ashbyhq.com/ramp/67fadb77-43d8-4449-954b-d4cf2c6d3b8b) — New York, NY (HQ)
 - [sonyglobal — Research Intern on Generative and Protective AI for Content Creation](https://sonyglobal.wd1.myworkdayjobs.com/en-US/sonyglobalcareers/job/Remote---New-York/Research-Intern-on-Generative-and-Protective-AI-for-Content-Creation_JR-119335) — Remote - New York
 - [thetradedesk — 2027 North America Software Engineering Internship](https://job-boards.greenhouse.io/thetradedesk/jobs/5187605007) — Bellevue; Boulder; Denver; Irvine; New York; Seattle
@@ -66,7 +65,6 @@ Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant els
 - [Quant SPA: Connamara Technologies — Page changed - check Quant SPA: Connamara Technologies (may mean applications opened)](https://connamara.com/)
 - [Quant SPA: Dark Forest Capital Management — Page changed - check Quant SPA: Dark Forest Capital Management (may mean applications opened)](https://www.darkforesttech.com/)
 - [Quant SPA: DC Energy — Page changed - check Quant SPA: DC Energy (may mean applications opened)](https://www.dc-energy.com/careers)
-- [Quant SPA: Deep Blue Capital — Page changed - check Quant SPA: Deep Blue Capital (may mean applications opened)](https://www.deepbluecap.com/careers/)
 - [Quant SPA: Deephaven Data Labs — Page changed - check Quant SPA: Deephaven Data Labs (may mean applications opened)](https://deephaven.io/company/careers/)
 - [Quant SPA: e360 Power — Page changed - check Quant SPA: e360 Power (may mean applications opened)](https://www.e360power.com/)
 - [Quant SPA: Elmagin Capital — Page changed - check Quant SPA: Elmagin Capital (may mean applications opened)](http://www.elmagincapital.com/careers)
@@ -98,7 +96,6 @@ Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant els
 - [Quant SPA: MarketAxess — Page changed - check Quant SPA: MarketAxess (may mean applications opened)](https://www.marketaxess.com/careers)
 - [Quant SPA: Marquette Partners — Page changed - check Quant SPA: Marquette Partners (may mean applications opened)](http://www.marquettepartnersholdingsllc.com/)
 - [Quant SPA: Massive (formerly Polygon.io) — Page changed - check Quant SPA: Massive (formerly Polygon.io) (may mean applications opened)](https://massive.com/careers)
-- [Quant SPA: Maven Securities — Page changed - check Quant SPA: Maven Securities (may mean applications opened)](https://www.mavensecurities.com/careers/)
 - [Quant SPA: MayStreet — Page changed - check Quant SPA: MayStreet (may mean applications opened)](https://www.lseg.com/en/careers)
 - [Quant SPA: McKay Brothers / Quincy Data — Page changed - check Quant SPA: McKay Brothers / Quincy Data (may mean applications opened)](https://mckay-brothers.com/careers)
 - [Quant SPA: MIAX (Miami International Holdings) — Page changed - check Quant SPA: MIAX (Miami International Holdings) (may mean applications opened)](https://www.miaxglobal.com/company/about/careers)
@@ -181,7 +178,7 @@ Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant els
 - [Circleback — Software Engineering Intern (Summer 2027) 🛂](https://www.ycombinator.com/companies/circleback/jobs/QMpriul-software-engineering-intern-summer-2027) — San Francisco, CA
 - [copart — DevOps Engineering Intern](https://copart.wd12.myworkdayjobs.com/en-US/copart/job/Dallas-TX---Headquarters/DevOps-Engineering-Intern_JR109490) — Dallas, TX - Headquarters
 - [copart — Software Engineering Intern](https://copart.wd12.myworkdayjobs.com/en-US/copart/job/Dallas-TX---Headquarters/Software-Engineering-Intern_JR109393) — Dallas, TX - Headquarters
-- [Copart — Software Engineering Intern](https://copart.wd12.myworkdayjobs.com/en-US/copart/job/Dallas-TX---Headquarters/Software-Engineering-Intern_JR109673) — Dallas, TX
+- [Copart — Software Engineering Intern](https://copart.wd12.myworkdayjobs.com/en-US/copart/job/Dallas-TX---Headquarters/Software-Engineering-Intern_JR110011) — Dallas, TX
 - [ctgt — Software Engineering Intern (Summer 2027)](https://jobs.ashbyhq.com/ctgt/f657c2f5-125e-42b6-a68a-646bbea3d155) — San Francisco
 - [CTGT — Software Engineering Intern / Research Intern, Interpretability (Summer 2027)](https://www.ycombinator.com/companies/ctgt/jobs/b3hTkK4-software-engineering-intern-summer-2027) — San Francisco, CA
 - [Dedalus Labs — Systems Engineer / Product Manager Intern (Summer 2027)](https://www.ycombinator.com/companies/dedalus-labs/jobs/YtbvXM8-systems-engineer-summer-2027-intern) — San Francisco, CA
@@ -189,7 +186,6 @@ Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant els
 - [Etched — Infrastructure Intern](https://jobs.ashbyhq.com/Etched/80926a71-0a62-4bf8-a877-b6d96df279b7) — San Jose, CA
 - [exowatt — Software Engineering Intern  - Inventory Automation & IoT/Robotics](https://jobs.lever.co/exowatt/46c8f4fd-f059-4ad6-a5f4-4fcd55d84f9c) — Austin, TX
 - [exowatt — Software Engineering Intern - Agent Platform (AI)](https://jobs.lever.co/exowatt/2623555d-8b81-4f95-8bca-de9fafd2381c) — Miami, FL
-- [GenBio AI — Software Engineering Intern](https://jobs.lever.co/genbio/4bdb14ae-e19f-40c8-84db-1307dbdabe74) — Palo Alto, CA
 - [Google — Software Engineering Intern - BS - Summer 2027](https://www.google.com/about/careers/applications/jobs/results/85564713261245126) — Mountain View, CA +29
 - [Google — Software Engineering Intern - MS - Summer 2027](https://www.google.com/about/careers/applications/jobs/results/95141459539174086) — Mountain View, CA +29
 - [Google — Software Engineering Intern, BS (Summer 2027)](https://www.google.com/about/careers/applications/jobs/results/85564713261245126-software-engineering-intern/) — Mountain View, CA (multiple US)
@@ -198,8 +194,11 @@ Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant els
 - [halo-industries — Software Engineer Intern - Machine Learning Workflow](https://apply.workable.com/j/29728B1DAF) — Santa Clara, California, United States
 - [hitachi — Research Science Intern, Financial Innovation Lab](https://hitachi.wd1.myworkdayjobs.com/en-US/hitachi/job/Santa-Clara-California-United-States/Research-Science-Intern--Financial-Innovation-Lab_R0084929) — Santa Clara, California, United States
 - [Homebase — Forward Deployed Engineering Intern, AI-Native](https://jobs.ashbyhq.com/homebase/a7ab59c0-786e-4675-b684-2ed19b240fb2) — Houston, TX, San Francisco, CA
+- [HP — Software Engineering Intern - Device Experiences](https://hp.wd5.myworkdayjobs.com/en-US/exteu-ac-careersite/job/San-Francisco-California-United-States-of-America/Software-Engineering-Intern--Device-Experiences_3164166) — San Francisco, CA
 - [hp — Software Engineering Intern, Device Experiences](https://hp.wd5.myworkdayjobs.com/en-US/externalcareersite/job/San-Francisco-California-United-States-of-America/Software-Engineering-Intern--Device-Experiences_3164166-1) — San Francisco, California, United States of America
 - [human-computer-lab — Intern - Software/ML Engineering](https://jobs.ashbyhq.com/human-computer-lab/7d13ae27-1f02-4d9b-8d39-e3d9d67df705) — San Francisco
+- [hyperlight — Software Engineer Intern](https://apply.workable.com/j/5581EA0668) — Cambridge, Massachusetts, United States
+- [HyperLight — Software Engineer Intern](https://apply.workable.com/hyperlight/j/5581EA0668/) — Cambridge, MA
 - [iherb — Software Development Intern](https://job-boards.greenhouse.io/iherb/jobs/7776154003) — United States of America - Remote / Home Office
 - [kos.ai — Software Engineer Intern](https://jobs.ashbyhq.com/kos.ai/efab6ffb-9658-47f7-8b5f-a295c55957d3) — San Francisco
 - [Kudu Dynamics — Software Engineer Intern (1) 🇺🇸](https://leidos.wd5.myworkdayjobs.com/External/job/Chantilly-VA/Software-Engineer-Intern_R-00183707) — Chantilly, VA
@@ -221,8 +220,6 @@ Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant els
 - [neuralink — Software Engineer Intern, Internal Apps](https://boards.greenhouse.io/neuralink/jobs/6083322003?gh_jid=6083322003) — Austin, Texas, United States; South San Francisco, California, United States
 - [neuralink — Software Engineer Intern, Robotics](https://boards.greenhouse.io/neuralink/jobs/5469305003?gh_jid=5469305003) — Austin, Texas, United States; South San Francisco, California, United States
 - [persona.ai — Teleoperation Software Engineering Internship](https://jobs.ashbyhq.com/persona.ai/6078fafd-ba34-4c89-b260-7eb15be3cb9c) — Pensacola, FL or Houston, TX 
-- [Plus — Software Engineer Intern - Data](https://jobs.lever.co/plus-2/012a2134-8a6a-4982-8f25-f906178a24e4) — Santa Clara, CA
-- [Plus — Software Engineer Intern - Data Infrastructure and Tools](https://jobs.lever.co/plus-2/06b808df-85a1-4ddd-863c-3e1cbe61eda9) — Santa Clara, CA
 - [plus-2 — Computer Vision Engineer Intern](https://jobs.lever.co/plus-2/c143df6e-66c2-4498-b19b-8323f9954ca9) — Santa Clara, CA
 - [plus-2 — Deep Learning Intern](https://jobs.lever.co/plus-2/58d77886-bf3a-4707-8af8-e1af47162e2e) — Santa Clara, CA
 - [plus-2 — Deep Learning Research Intern](https://jobs.lever.co/plus-2/2f2c1cd9-f099-483a-9717-0da83a391333) — Santa Clara, CA
