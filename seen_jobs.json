@@ -4832,7 +4832,7 @@
     "url": "https://job-boards.greenhouse.io/oldmissioncapital/jobs/7796180003"
   },
   "https://akunacapital.com/careers/job/8018847/?gh_jid=8018847": {
-    "title": "Software Engineer Intern (Summer 2027, Python / C++ / Full Stack / C# .NET)",
+    "title": "Software Engineer Intern, C++",
     "url": "https://akunacapital.com/careers/job/8018847/?gh_jid=8018847"
   },
   "https://www.hudsonrivertrading.com/hrt-job/software-engineering-internship-c-or-python-summer-2027/": {
@@ -5905,7 +5905,7 @@
   },
   "https://selinc.wd1.myworkdayjobs.com/en-us/sel/job/idaho---boise/software-engineer-intern_2026-22321": {
     "title": "Software Engineer Intern",
-    "url": "https://selinc.wd1.myworkdayjobs.com/en-US/sel/job/Idaho---Boise/Software-Engineer-Intern_2026-22321"
+    "url": "https://selinc.wd1.myworkdayjobs.com/en-US/SEL/job/Idaho---Boise/Software-Engineer-Intern_2026-22321"
   },
   "https://jobs.smartrecruiters.com/westerndigital/744000139010858": {
     "title": "Intern - AI Software Developer",
@@ -6182,5 +6182,97 @@
   "https://jobs.smartrecruiters.com/grab/744000139522739": {
     "title": "Intern, Software Engineer Mobile",
     "url": "https://jobs.smartrecruiters.com/Grab/744000139522739"
+  },
+  "https://jobs.ashbyhq.com/phonely/c83696cb-ca3a-4a9d-9e87-bfcf4f79fef5": {
+    "title": "Software Engineer Intern",
+    "url": "https://jobs.ashbyhq.com/phonely/c83696cb-ca3a-4a9d-9e87-bfcf4f79fef5"
+  },
+  "https://www.google.com/about/careers/applications/jobs/results/85564713261245126-software-engineering-intern-bs-summer-2027": {
+    "title": "Software Engineering Intern",
+    "url": "https://www.google.com/about/careers/applications/jobs/results/85564713261245126-software-engineering-intern-bs-summer-2027"
+  },
+  "https://akunacapital.com/careers/job/8018856/?gh_jid=8018856": {
+    "title": "Platform Engineer Intern",
+    "url": "https://akunacapital.com/careers/job/8018856/?gh_jid=8018856"
+  },
+  "https://akunacapital.com/careers/job/8018880/?gh_jid=8018880": {
+    "title": "Hardware Engineer Intern",
+    "url": "https://akunacapital.com/careers/job/8018880/?gh_jid=8018880"
+  },
+  "https://akunacapital.com/careers/job/8018853/?gh_jid=8018853": {
+    "title": "Python Software Engineer Intern",
+    "url": "https://akunacapital.com/careers/job/8018853/?gh_jid=8018853"
+  },
+  "https://akunacapital.com/careers/job/8018893/?gh_jid=8018893": {
+    "title": "Software Engineer Intern, Full Stack Web",
+    "url": "https://akunacapital.com/careers/job/8018893/?gh_jid=8018893"
+  },
+  "https://akunacapital.com/careers/job/8018886/?gh_jid=8018886": {
+    "title": "Software Engineer Intern, C# .NET Desktop",
+    "url": "https://akunacapital.com/careers/job/8018886/?gh_jid=8018886"
+  },
+  "https://www.hudsonrivertrading.com/hrt-job/software-engineering-internship-c-or-python-summer-2027/?gh_src=": {
+    "title": "Software Engineer Intern",
+    "url": "https://www.hudsonrivertrading.com/hrt-job/software-engineering-internship-c-or-python-summer-2027/?gh_src="
+  },
+  "https://selinc.wd1.myworkdayjobs.com/sel/job/idaho---boise/software-engineer-intern_2026-22321": {
+    "title": "Software Engineer Intern",
+    "url": "https://selinc.wd1.myworkdayjobs.com/SEL/job/Idaho---Boise/Software-Engineer-Intern_2026-22321"
+  },
+  "https://www.janestreet.com/join-jane-street/position/8617344002/": {
+    "title": "Quantitative Trader Intern",
+    "url": "https://www.janestreet.com/join-jane-street/position/8617344002/"
+  },
+  "https://www.janestreet.com/join-jane-street/position/8498547002/": {
+    "title": "Quantitative Researcher Intern",
+    "url": "https://www.janestreet.com/join-jane-street/position/8498547002/"
+  },
+  "https://www.janestreet.com/join-jane-street/position/8611307002/": {
+    "title": "Machine Learning Engineer Intern",
+    "url": "https://www.janestreet.com/join-jane-street/position/8611307002/"
+  },
+  "https://www.janestreet.com/join-jane-street/position/8384490002/": {
+    "title": "Machine Learning Researcher Intern",
+    "url": "https://www.janestreet.com/join-jane-street/position/8384490002/"
+  },
+  "https://www.janestreet.com/join-jane-street/position/8632723002/": {
+    "title": "Cybersecurity Analyst Intern",
+    "url": "https://www.janestreet.com/join-jane-street/position/8632723002/"
+  },
+  "https://www.janestreet.com/join-jane-street/position/8631973002/": {
+    "title": "Data Engineer Intern",
+    "url": "https://www.janestreet.com/join-jane-street/position/8631973002/"
+  },
+  "https://www.janestreet.com/join-jane-street/position/8347286002/": {
+    "title": "Fundamental Research Analyst Intern",
+    "url": "https://www.janestreet.com/join-jane-street/position/8347286002/"
+  },
+  "https://www.janestreet.com/join-jane-street/position/8624440002/": {
+    "title": "Hardware Engineer (FPGA/ASIC) Intern",
+    "url": "https://www.janestreet.com/join-jane-street/position/8624440002/"
+  },
+  "https://www.janestreet.com/join-jane-street/position/8620793002/": {
+    "title": "Network Engineer Intern",
+    "url": "https://www.janestreet.com/join-jane-street/position/8620793002/"
+  },
+  "https://www.janestreet.com/join-jane-street/position/5869205002/": {
+    "title": "Tools and Compilers Research and Development Intern",
+    "url": "https://www.janestreet.com/join-jane-street/position/5869205002/"
+  },
+  "https://www.janestreet.com/join-jane-street/position/8621450002/": {
+    "title": "Trading Desk Operations Engineer Intern",
+    "url": "https://www.janestreet.com/join-jane-street/position/8621450002/"
+  },
+  "https://www.janestreet.com/join-jane-street/position/8599644002/": {
+    "title": "Software Engineer Intern",
+    "url": "https://www.janestreet.com/join-jane-street/position/8599644002/"
+  },
+  "https://akunacapital.com/careers/job/8021481/?gh_jid=8021481": {
+    "title": "Quantitative Development & Strategy Intern",
+    "url": "https://akunacapital.com/careers/job/8021481/?gh_jid=8021481"
+  },
+  "https://akunacapital.com/careers/job/8036614/?gh_jid=8036614": {
+    "title": "Quantitative Research Intern",
+    "url": "https://akunacapital.com/careers/job/8036614/?gh_jid=8036614"
   }
 }

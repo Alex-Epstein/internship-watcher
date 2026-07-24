@@ -1,6 +1,6 @@
 # Top picks (auto-generated)
 
-_Quant / SWE / ML roles in target cities. 236 of 620 open roles. Rebuilt every sweep: 2026-07-24 06:31 UTC._
+_Quant / SWE / ML roles in target cities. 239 of 645 open roles. Rebuilt every sweep: 2026-07-24 09:27 UTC._
 
 Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant elsewhere, then other SWE/ML. Within each, sweet-spot firms before elite.
 
@@ -13,6 +13,7 @@ Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant els
 
 - [auctor — Software Engineering Intern](https://jobs.ashbyhq.com/auctor/9d67c881-3ca7-4616-a059-e94c03e19607) — New York
 - [ellipsislabs — Software Engineer - 2027 Interns](https://jobs.ashbyhq.com/ellipsislabs/02136b22-35b1-4b3d-8bef-567c3380a849) — New York, New York
+- [Google — Software Engineering Intern](https://www.google.com/about/careers/applications/jobs/results/85564713261245126-software-engineering-intern-bs-summer-2027) — Mountain View, CA, Atlanta, GA, Austin, TX, Boulder, CO, Cambridge, MA, Bellevue, WA, Chicago, IL, Houston, TX, Irvine, CA, Kirkland, WA, Los Angeles, CA, Madison, WI, New York, NY, Palo Alto, CA, Portland, OR, Pittsburgh, PA, Raleigh, NC, Durham, NC, Reston, VA, Redmond, WA, Redwood City, CA, San Diego, CA, Goleta, CA, San Bruno, CA, Seattle, WA, San Francisco, CA, San Jose, CA, Santa Cruz, CA, South San Francisco, CA, Sunnyvale, CA
 - [Latent Defense — Software Engineer Intern](https://jobs.ashbyhq.com/latent%20defense/54841e7d-d80a-4c2f-8c44-d492fe8eb487) — New York City, NY
 - [LiveRamp — Software Engineer Intern, Pixel Serving](https://liveramp.wd5.myworkdayjobs.com/LiveRampCareers/job/New-York/Intern--Software-Engineer---Pixel-Serving_JR012201) — New York, NY
 - [Quant/Tech: Ramp — Software Engineer Internship, Android ](https://jobs.ashbyhq.com/ramp/67fadb77-43d8-4449-954b-d4cf2c6d3b8b) — New York, NY (HQ)
@@ -22,7 +23,7 @@ Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant els
 
 ## 🌆 CHICAGO QUANT
 
-- [Quant: Radix Trading — Quantitative Technologist (C++ Intern) ](https://job-boards.greenhouse.io/radixuniversity/jobs/8500265002) ⚡elite — Chicago
+- [radixuniversity — Quantitative Technologist (C++ Intern) ](https://job-boards.greenhouse.io/radixuniversity/jobs/8500265002) ⚡elite — Chicago
 
 ## Quant elsewhere (other US / Europe)
 
@@ -111,6 +112,7 @@ Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant els
 - [Quant SPA: PCI Energy Solutions — Page changed - check Quant SPA: PCI Energy Solutions (may mean applications opened)](https://www.pcienergysolutions.com/about/careers/)
 - [Quant SPA: Proof Trading — Page changed - check Quant SPA: Proof Trading (may mean applications opened)](https://prooftrading.com/)
 - [Quant SPA: QuantCube Technology — Page changed - check Quant SPA: QuantCube Technology (may mean applications opened)](https://www.quant-cube.com/)
+- [Quant SPA: Quantedge Capital — Page changed - check Quant SPA: Quantedge Capital (may mean applications opened)](https://www.quantedge.com/careers)
 - [Quant SPA: Quantica Capital — Page changed - check Quant SPA: Quantica Capital (may mean applications opened)](https://www.quantica.ch/)
 - [Quant SPA: Quantitative Brokers — Page changed - check Quant SPA: Quantitative Brokers (may mean applications opened)](https://www.quantitativebrokers.com/careers)
 - [Quant SPA: Quantitative Investment Management (QIM) — Page changed - check Quant SPA: Quantitative Investment Management (QIM) (may mean applications opened)](https://quantitative.com/)
@@ -220,6 +222,7 @@ Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant els
 - [neuralink — Software Engineer Intern, Internal Apps](https://boards.greenhouse.io/neuralink/jobs/6083322003?gh_jid=6083322003) — Austin, Texas, United States; South San Francisco, California, United States
 - [neuralink — Software Engineer Intern, Robotics](https://boards.greenhouse.io/neuralink/jobs/5469305003?gh_jid=5469305003) — Austin, Texas, United States; South San Francisco, California, United States
 - [persona.ai — Teleoperation Software Engineering Internship](https://jobs.ashbyhq.com/persona.ai/6078fafd-ba34-4c89-b260-7eb15be3cb9c) — Pensacola, FL or Houston, TX 
+- [phonely — Software Engineer Intern](https://jobs.ashbyhq.com/phonely/c83696cb-ca3a-4a9d-9e87-bfcf4f79fef5) — San Francisco, California
 - [plus-2 — Computer Vision Engineer Intern](https://jobs.lever.co/plus-2/c143df6e-66c2-4498-b19b-8323f9954ca9) — Santa Clara, CA
 - [plus-2 — Deep Learning Intern](https://jobs.lever.co/plus-2/58d77886-bf3a-4707-8af8-e1af47162e2e) — Santa Clara, CA
 - [plus-2 — Deep Learning Research Intern](https://jobs.lever.co/plus-2/2f2c1cd9-f099-483a-9717-0da83a391333) — Santa Clara, CA
