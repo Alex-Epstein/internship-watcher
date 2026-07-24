@@ -1,6 +1,6 @@
 # Top picks (auto-generated)
 
-_Quant / SWE / ML roles in target cities. 245 of 648 open roles. Rebuilt every sweep: 2026-07-24 21:09 UTC._
+_Quant / SWE / ML roles in target cities. 244 of 644 open roles. Rebuilt every sweep: 2026-07-24 23:06 UTC._
 
 Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant elsewhere, then other SWE/ML. Within each, sweet-spot firms before elite.
 
@@ -35,6 +35,7 @@ Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant els
 - [Competition: WorldQuant BRAIN — Page changed - check Competition: WorldQuant BRAIN (may mean applications opened)](https://www.worldquant.com/brain/)
 - [Quant SPA: Geneva Trading (open positions) — Page changed - check Quant SPA: Geneva Trading (open positions) (may mean applications opened)](https://www.genevatrading.com/careers-open-positions/)
 - [Quant SPA: Group One Trading — Page changed - check Quant SPA: Group One Trading (may mean applications opened)](https://www.grouponetrading.com/careers/)
+- [Quant SPA: Group One Trading — Page changed - check Quant SPA: Group One Trading (may mean applications opened)](https://group1.com/careers)
 - [Quant SPA: GTS — Page changed - check Quant SPA: GTS (may mean applications opened)](https://www.gtsx.com/careers)
 - [Quant SPA: GTS — Page changed - check Quant SPA: GTS (may mean applications opened)](https://gtsx.com/careers/)
 - [Quant SPA: Peak6 — Page changed - check Quant SPA: Peak6 (may mean applications opened)](https://peak6.com/careers/)
@@ -61,6 +62,7 @@ Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant els
 - [Quant SPA: BlockFills — Page changed - check Quant SPA: BlockFills (may mean applications opened)](https://www.blockfills.com/careers/)
 - [Quant SPA: Blue Trading Systems — Page changed - check Quant SPA: Blue Trading Systems (may mean applications opened)](https://www.bluetradingsystems.com/)
 - [Quant SPA: Bluefin Capital Management — Page changed - check Quant SPA: Bluefin Capital Management (may mean applications opened)](https://www.bfcm.com/careers/)
+- [Quant SPA: Boston Energy Group — Page changed - check Quant SPA: Boston Energy Group (may mean applications opened)](https://www.bostonenergygroup.com/careers/)
 - [Quant SPA: Bridgewater — Page changed - check Quant SPA: Bridgewater (may mean applications opened)](https://www.bridgewater.com/working-at-bridgewater)
 - [Quant SPA: Campbell & Company — Page changed - check Quant SPA: Campbell & Company (may mean applications opened)](https://campbell.com/careers/)
 - [Quant SPA: Cboe — Page changed - check Quant SPA: Cboe (may mean applications opened)](https://cboe.wd1.myworkdayjobs.com/External)
@@ -69,7 +71,6 @@ Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant els
 - [Quant SPA: Connamara Technologies — Page changed - check Quant SPA: Connamara Technologies (may mean applications opened)](https://connamara.com/)
 - [Quant SPA: Dark Forest Capital Management — Page changed - check Quant SPA: Dark Forest Capital Management (may mean applications opened)](https://www.darkforesttech.com/)
 - [Quant SPA: DC Energy — Page changed - check Quant SPA: DC Energy (may mean applications opened)](https://www.dc-energy.com/careers)
-- [Quant SPA: Deep Blue Capital — Page changed - check Quant SPA: Deep Blue Capital (may mean applications opened)](https://www.deepbluecap.com/careers/)
 - [Quant SPA: Deephaven Data Labs — Page changed - check Quant SPA: Deephaven Data Labs (may mean applications opened)](https://deephaven.io/company/careers/)
 - [Quant SPA: e360 Power — Page changed - check Quant SPA: e360 Power (may mean applications opened)](https://www.e360power.com/)
 - [Quant SPA: Elmagin Capital — Page changed - check Quant SPA: Elmagin Capital (may mean applications opened)](http://www.elmagincapital.com/careers)
@@ -101,7 +102,6 @@ Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant els
 - [Quant SPA: MarketAxess — Page changed - check Quant SPA: MarketAxess (may mean applications opened)](https://www.marketaxess.com/careers)
 - [Quant SPA: Marquette Partners — Page changed - check Quant SPA: Marquette Partners (may mean applications opened)](http://www.marquettepartnersholdingsllc.com/)
 - [Quant SPA: Massive (formerly Polygon.io) — Page changed - check Quant SPA: Massive (formerly Polygon.io) (may mean applications opened)](https://massive.com/careers)
-- [Quant SPA: Maven Securities — Page changed - check Quant SPA: Maven Securities (may mean applications opened)](https://www.mavensecurities.com/careers/)
 - [Quant SPA: MayStreet — Page changed - check Quant SPA: MayStreet (may mean applications opened)](https://www.lseg.com/en/careers)
 - [Quant SPA: McKay Brothers / Quincy Data — Page changed - check Quant SPA: McKay Brothers / Quincy Data (may mean applications opened)](https://mckay-brothers.com/careers)
 - [Quant SPA: MIAX (Miami International Holdings) — Page changed - check Quant SPA: MIAX (Miami International Holdings) (may mean applications opened)](https://www.miaxglobal.com/company/about/careers)
@@ -157,7 +157,6 @@ Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant els
 - [Quant SPA: Wintermute — Page changed - check Quant SPA: Wintermute (may mean applications opened)](https://www.wintermute.com/careers)
 - [Quant SPA: XBTO — Page changed - check Quant SPA: XBTO (may mean applications opened)](https://www.xbto.com/careers)
 - [Quant SPA: XO Energy — Page changed - check Quant SPA: XO Energy (may mean applications opened)](http://www.xo-energy.com/jobs)
-- [Quant SPA: XR Trading — Page changed - check Quant SPA: XR Trading (may mean applications opened)](https://www.xrtrading.com/careers)
 - [Quant: Trillium Trading — Summer 2027 Equity Trader Internship](https://www.trlm.com/apply/5076067007?gh_jid=5076067007) 🇺🇸 — Miami
 - [Quant SPA: Headlands Tech — Page changed - check Quant SPA: Headlands Tech (may mean applications opened)](https://www.headlandstech.com/careers/) ⚡elite
 - [Susquehanna — Quantitative Strategy Developer Intern](https://careers.sig.com/jobs/10838) ⚡elite — Bala Cynwyd, PA
