@@ -2508,7 +2508,7 @@
     "url": "https://job-boards.greenhouse.io/lilasciences/jobs/4300246009"
   },
   "https://job-boards.greenhouse.io/lilasciences/jobs/4289387009": {
-    "title": "Co-Op, LS AI, ML Scientist for Protein Engineering",
+    "title": "Co-Op, ML Scientist for Protein Engineering",
     "url": "https://job-boards.greenhouse.io/lilasciences/jobs/4289387009"
   },
   "https://job-boards.greenhouse.io/lilasciences/jobs/4280809009": {
@@ -6330,5 +6330,13 @@
   "https://jobs.smartrecruiters.com/boschgroup/744000139649345": {
     "title": "Autonomous Driving – Internship in Machine Learning",
     "url": "https://jobs.smartrecruiters.com/BoschGroup/744000139649345"
+  },
+  "https://job-boards.greenhouse.io/blackedgecapital/jobs/4703821005": {
+    "title": "Quantitative Developer Intern",
+    "url": "https://job-boards.greenhouse.io/blackedgecapital/jobs/4703821005"
+  },
+  "https://careers.appian.com/jobs/8041237-software-engineering-intern": {
+    "title": "Software Engineering Intern",
+    "url": "https://careers.appian.com/jobs/8041237-software-engineering-intern"
   }
 }
