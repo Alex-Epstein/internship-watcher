@@ -1,6 +1,6 @@
 # Top picks (auto-generated)
 
-_Quant / SWE / ML roles in target cities. 245 of 645 open roles. Rebuilt every sweep: 2026-07-25 13:27 UTC._
+_Quant / SWE / ML roles in target cities. 244 of 642 open roles. Rebuilt every sweep: 2026-07-25 15:07 UTC._
 
 Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant elsewhere, then other SWE/ML. Within each, sweet-spot firms before elite.
 
@@ -9,8 +9,8 @@ Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant els
 
 - [anthelioncap — Quant Developer / Quant Research Intern - 2026/2027](https://jobs.ashbyhq.com/anthelioncap/5e2ea37b-2369-474e-b717-c24c60976e96) — New York City
 - [Quant: Trillium Trading — Summer 2027 Equity Trader Internship](https://www.trlm.com/apply/5076003007?gh_jid=5076003007) 🇺🇸 — NYC
-- [Quant: PDT Partners — Summer 2027 Software Engineering Intern](https://job-boards.greenhouse.io/pdtpartners/jobs/8077685) ⚡elite — New York, NY
-- [Quant: PDT Partners — Summer 2027 Systems Engineering Intern](https://job-boards.greenhouse.io/pdtpartners/jobs/8083292) ⚡elite — New York, NY
+- [pdtpartners — Summer 2027 Software Engineering Intern](https://job-boards.greenhouse.io/pdtpartners/jobs/8077685) ⚡elite — New York, NY
+- [pdtpartners — Summer 2027 Systems Engineering Intern](https://job-boards.greenhouse.io/pdtpartners/jobs/8083292) ⚡elite — New York, NY
 - [Quant: XTX Markets — AI Research Internship - XTY Labs](https://job-boards.greenhouse.io/xtxmarketstechnologies/jobs/6274458003) ⚡elite — New York
 
 ## 🗽 NYC (any role) — he wants NYC summer
@@ -71,7 +71,6 @@ Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant els
 - [Quant SPA: Connamara Technologies — Page changed - check Quant SPA: Connamara Technologies (may mean applications opened)](https://connamara.com/)
 - [Quant SPA: Dark Forest Capital Management — Page changed - check Quant SPA: Dark Forest Capital Management (may mean applications opened)](https://www.darkforesttech.com/)
 - [Quant SPA: DC Energy — Page changed - check Quant SPA: DC Energy (may mean applications opened)](https://www.dc-energy.com/careers)
-- [Quant SPA: Deep Blue Capital — Page changed - check Quant SPA: Deep Blue Capital (may mean applications opened)](https://www.deepbluecap.com/careers/)
 - [Quant SPA: Deephaven Data Labs — Page changed - check Quant SPA: Deephaven Data Labs (may mean applications opened)](https://deephaven.io/company/careers/)
 - [Quant SPA: e360 Power — Page changed - check Quant SPA: e360 Power (may mean applications opened)](https://www.e360power.com/)
 - [Quant SPA: Elmagin Capital — Page changed - check Quant SPA: Elmagin Capital (may mean applications opened)](http://www.elmagincapital.com/careers)
