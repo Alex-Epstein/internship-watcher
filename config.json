@@ -2131,6 +2131,36 @@
       "verified": true
     },
     {
+      "name": "Quant: Xantium",
+      "ats": "greenhouse",
+      "token": "xantium",
+      "verified": true
+    },
+    {
+      "name": "Quant: Seven Research",
+      "ats": "greenhouse",
+      "token": "sevenresearch",
+      "verified": true
+    },
+    {
+      "name": "Quant: Bracebridge Capital",
+      "ats": "greenhouse",
+      "token": "bracebridgecapital",
+      "verified": true
+    },
+    {
+      "name": "Quant: Numerai",
+      "ats": "workable",
+      "token": "numerai",
+      "verified": true
+    },
+    {
+      "name": "Quant: Universa",
+      "ats": "workable",
+      "token": "universa",
+      "verified": true
+    },
+    {
       "name": "Quant: Tanius Technology",
       "ats": "greenhouse",
       "token": "tanius",
