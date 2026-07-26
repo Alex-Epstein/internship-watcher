@@ -1,6 +1,6 @@
 # Top picks (auto-generated)
 
-_Quant / SWE / ML roles in target cities. 245 of 642 open roles. Rebuilt every sweep: 2026-07-26 11:24 UTC._
+_Quant / SWE / ML roles in target cities. 246 of 643 open roles. Rebuilt every sweep: 2026-07-26 13:24 UTC._
 
 Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant elsewhere, then other SWE/ML. Within each, sweet-spot firms before elite.
 
@@ -129,6 +129,7 @@ Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant els
 - [Quant SPA: Research Affiliates — Page changed - check Quant SPA: Research Affiliates (may mean applications opened)](https://www.researchaffiliates.com/about-us/careers)
 - [Quant SPA: Ridgeline — Page changed - check Quant SPA: Ridgeline (may mean applications opened)](https://ridgeline.ai/careers)
 - [Quant SPA: Saba Capital Management — Page changed - check Quant SPA: Saba Capital Management (may mean applications opened)](https://www.sabacapital.com/)
+- [Quant SPA: Saracen Energy — Page changed - check Quant SPA: Saracen Energy (may mean applications opened)](https://saracenenergy.com/careers.html)
 - [Quant SPA: Seven Eight Capital — Page changed - check Quant SPA: Seven Eight Capital (may mean applications opened)](https://www.seveneightcapital.com/)
 - [Quant SPA: Seven Points Capital — Page changed - check Quant SPA: Seven Points Capital (may mean applications opened)](https://sevenpointscapital.pinpointhq.com/)
 - [Quant SPA: SMB Capital — Page changed - check Quant SPA: SMB Capital (may mean applications opened)](https://smbcap.com/careers/)
