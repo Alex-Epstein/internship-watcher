@@ -1,6 +1,6 @@
 # Top picks (auto-generated)
 
-_Quant / SWE / ML roles in target cities. 249 of 659 open roles. Rebuilt every sweep: 2026-07-27 13:46 UTC._
+_Quant / SWE / ML roles in target cities. 250 of 658 open roles. Rebuilt every sweep: 2026-07-27 16:24 UTC._
 
 Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant elsewhere, then other SWE/ML. Within each, sweet-spot firms before elite.
 
@@ -119,6 +119,7 @@ Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant els
 - [Quant SPA: PCI Energy Solutions — Page changed - check Quant SPA: PCI Energy Solutions (may mean applications opened)](https://www.pcienergysolutions.com/about/careers/)
 - [Quant SPA: Proof Trading — Page changed - check Quant SPA: Proof Trading (may mean applications opened)](https://prooftrading.com/)
 - [Quant SPA: QuantCube Technology — Page changed - check Quant SPA: QuantCube Technology (may mean applications opened)](https://www.quant-cube.com/)
+- [Quant SPA: Quantedge Capital — Page changed - check Quant SPA: Quantedge Capital (may mean applications opened)](https://www.quantedge.com/careers)
 - [Quant SPA: Quantica Capital — Page changed - check Quant SPA: Quantica Capital (may mean applications opened)](https://www.quantica.ch/)
 - [Quant SPA: Quantitative Brokers — Page changed - check Quant SPA: Quantitative Brokers (may mean applications opened)](https://www.quantitativebrokers.com/careers)
 - [Quant SPA: Quantitative Investment Management (QIM) — Page changed - check Quant SPA: Quantitative Investment Management (QIM) (may mean applications opened)](https://quantitative.com/)
@@ -129,6 +130,7 @@ Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant els
 - [Quant SPA: Research Affiliates — Page changed - check Quant SPA: Research Affiliates (may mean applications opened)](https://www.researchaffiliates.com/about-us/careers)
 - [Quant SPA: Ridgeline — Page changed - check Quant SPA: Ridgeline (may mean applications opened)](https://ridgeline.ai/careers)
 - [Quant SPA: Saba Capital Management — Page changed - check Quant SPA: Saba Capital Management (may mean applications opened)](https://www.sabacapital.com/)
+- [Quant SPA: Saracen Energy — Page changed - check Quant SPA: Saracen Energy (may mean applications opened)](https://saracenenergy.com/careers.html)
 - [Quant SPA: Seven Eight Capital — Page changed - check Quant SPA: Seven Eight Capital (may mean applications opened)](https://www.seveneightcapital.com/)
 - [Quant SPA: Seven Points Capital — Page changed - check Quant SPA: Seven Points Capital (may mean applications opened)](https://sevenpointscapital.pinpointhq.com/)
 - [Quant SPA: SMB Capital — Page changed - check Quant SPA: SMB Capital (may mean applications opened)](https://smbcap.com/careers/)
@@ -202,10 +204,8 @@ Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant els
 - [halo-industries — Software Engineer Intern - Machine Learning Workflow](https://apply.workable.com/j/29728B1DAF) — Santa Clara, California, United States
 - [hitachi — Research Science Intern, Financial Innovation Lab](https://hitachi.wd1.myworkdayjobs.com/en-US/hitachi/job/Santa-Clara-California-United-States/Research-Science-Intern--Financial-Innovation-Lab_R0084929) — Santa Clara, California, United States
 - [Homebase — Forward Deployed Engineering Intern, AI-Native](https://jobs.ashbyhq.com/homebase/a7ab59c0-786e-4675-b684-2ed19b240fb2) — Houston, TX, San Francisco, CA
-- [HP — Software Engineering Intern - Device Experiences](https://hp.wd5.myworkdayjobs.com/en-US/externalcareersite/job/San-Francisco-California-United-States-of-America/Software-Engineering-Intern--Device-Experiences_3164166-1) — San Francisco, CA
-- [hp — Software Engineering Intern, Device Experiences](https://hp.wd5.myworkdayjobs.com/en-US/exteu-ac-careersite/job/San-Francisco-California-United-States-of-America/Software-Engineering-Intern--Device-Experiences_3164166) — San Francisco, California, United States of America
+- [HP — Software Engineering Intern - Device Experiences](https://hp.wd5.myworkdayjobs.com/en-US/exteu-ac-careersite/job/San-Francisco-California-United-States-of-America/Software-Engineering-Intern--Device-Experiences_3164166) — San Francisco, CA
 - [human-computer-lab — Intern - Software/ML Engineering](https://jobs.ashbyhq.com/human-computer-lab/7d13ae27-1f02-4d9b-8d39-e3d9d67df705) — San Francisco
-- [hyperlight — Software Engineer Intern](https://apply.workable.com/j/5581EA0668) — Cambridge, Massachusetts, United States
 - [HyperLight — Software Engineer Intern](https://apply.workable.com/hyperlight/j/5581EA0668/) — Cambridge, MA
 - [iherb — Software Development Intern](https://job-boards.greenhouse.io/iherb/jobs/7776154003) — United States of America - Remote / Home Office
 - [kos.ai — Software Engineer Intern](https://jobs.ashbyhq.com/kos.ai/efab6ffb-9658-47f7-8b5f-a295c55957d3) — San Francisco
@@ -227,6 +227,7 @@ Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant els
 - [neuralink — Software Engineer Intern, Infrastructure](https://boards.greenhouse.io/neuralink/jobs/5469298003?gh_jid=5469298003) — South San Francisco, California, United States
 - [neuralink — Software Engineer Intern, Internal Apps](https://boards.greenhouse.io/neuralink/jobs/6083322003?gh_jid=6083322003) — Austin, Texas, United States; South San Francisco, California, United States
 - [neuralink — Software Engineer Intern, Robotics](https://boards.greenhouse.io/neuralink/jobs/5469305003?gh_jid=5469305003) — Austin, Texas, United States; South San Francisco, California, United States
+- [Northrop Grumman — 2027 Returning Intern Software Engineer](https://ngc.wd1.myworkdayjobs.com/en-US/Northrop_Grumman_External_Site/job/United-States-Florida-Melbourne/XMLNAME-2027-Returning-Intern-Software-Engineer_R10242378) — United States-Florida-Melbourne
 - [Northrop Grumman — Software Engineer Intern](https://ngc.wd1.myworkdayjobs.com/northrop_grumman_external_site/job/United-States-Florida-Melbourne/XMLNAME-2027-Intern-Software-Engineer_R10239275) — Melbourne, FL
 - [persona.ai — Teleoperation Software Engineering Internship](https://jobs.ashbyhq.com/persona.ai/6078fafd-ba34-4c89-b260-7eb15be3cb9c) — Pensacola, FL or Houston, TX 
 - [phonely — Software Engineer Intern](https://jobs.ashbyhq.com/phonely/c83696cb-ca3a-4a9d-9e87-bfcf4f79fef5) — San Francisco, California
