@@ -1,6 +1,6 @@
 # Top picks (auto-generated)
 
-_Quant / SWE / ML roles in target cities. 251 of 667 open roles. Rebuilt every sweep: 2026-07-28 07:43 UTC._
+_Quant / SWE / ML roles in target cities. 250 of 665 open roles. Rebuilt every sweep: 2026-07-28 10:39 UTC._
 
 Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant elsewhere, then other SWE/ML. Within each, sweet-spot firms before elite.
 
@@ -96,7 +96,6 @@ Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant els
 - [Quant SPA: Intech Investment Management — Page changed - check Quant SPA: Intech Investment Management (may mean applications opened)](https://www.intechinvestments.com/careers)
 - [Quant SPA: Jacobs Levy Equity Management — Page changed - check Quant SPA: Jacobs Levy Equity Management (may mean applications opened)](https://jlem.com/careers)
 - [Quant SPA: Jain Global — Page changed - check Quant SPA: Jain Global (may mean applications opened)](https://www.jainglobal.com/)
-- [Quant SPA: Kaiko — Page changed - check Quant SPA: Kaiko (may mean applications opened)](https://jobs.kaiko.ai/)
 - [Quant SPA: Kepos Capital — Page changed - check Quant SPA: Kepos Capital (may mean applications opened)](https://www.keposcapital.com/)
 - [Quant SPA: LMAX Group — Page changed - check Quant SPA: LMAX Group (may mean applications opened)](https://careers.lmax.com/)
 - [Quant SPA: LMR Partners — Page changed - check Quant SPA: LMR Partners (may mean applications opened)](https://www.lmrpartners.com/)
@@ -259,8 +258,8 @@ Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant els
 - [sonyglobal — Software Engineer Intern](https://sonyglobal.wd1.myworkdayjobs.com/en-US/sonyglobalcareers/job/San-Diego/Software-Engineer-Intern_JR-119282) — San Diego
 - [tenstorrentuniversity —  Software Engineering Intern, Power Modeling & AI Tools](https://job-boards.greenhouse.io/tenstorrentuniversity/jobs/5186916007) — Santa Clara, California, United States
 - [tenstorrentuniversity — CPU/AI Workload Analysis Intern](https://job-boards.greenhouse.io/tenstorrentuniversity/jobs/5158533007) — Santa Clara, California, United States
-- [tenstorrentuniversity — Software Intern - AI Compilers](https://job-boards.greenhouse.io/tenstorrentuniversity/jobs/4968219007) — Austin, Texas, United States
 - [tenstorrentuniversity — Software Intern - AI Compilers](https://job-boards.greenhouse.io/tenstorrentuniversity/jobs/4501189007) — Santa Clara, California, United States
+- [tenstorrentuniversity — Software Intern - AI Compilers](https://job-boards.greenhouse.io/tenstorrentuniversity/jobs/4968219007) — Austin, Texas, United States
 - [Terranox AI — Summer Intern - AI/ML Engineering](https://www.workatastartup.com/jobs/94631) 🇺🇸 — San Francisco, CA
 - [TETRAMEM — Software Engineer Intern, Embedded](https://tetramem.hrmdirect.com/employment/job-opening.php?req=3491042#job) — San Jose, CA
 - [TikTok — LLM Post-training Engineer Intern, Research & Product](https://lifeattiktok.com/search/7631599293708126517) — San Jose, CA
