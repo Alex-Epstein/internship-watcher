@@ -888,7 +888,7 @@
     "url": "https://www.ycombinator.com/companies/ctgt/jobs/b3hTkK4-software-engineering-intern-summer-2027"
   },
   "https://job-boards.greenhouse.io/virtu/jobs/8142539002": {
-    "title": "2027 Internship - Quant Research (Undergrad)",
+    "title": "2027 Internship - Quantitative Researcher (Undergrad)",
     "url": "https://job-boards.greenhouse.io/virtu/jobs/8142539002"
   },
   "https://delta.avature.net/en_us/careers/jobdetail?jobid=32928": {
@@ -5888,7 +5888,7 @@
     "url": "https://job-boards.greenhouse.io/ctccampusboard/jobs/4709545005"
   },
   "https://job-boards.greenhouse.io/virtu/jobs/8624408002": {
-    "title": "Internship - Quantitative Trading",
+    "title": "2027 Internship - Quantitative Trading",
     "url": "https://job-boards.greenhouse.io/virtu/jobs/8624408002"
   },
   "https://job-boards.greenhouse.io/skhynixmemorysolutionsamericainc/jobs/4264591009": {
@@ -6092,7 +6092,7 @@
     "url": "https://trendmicro.wd3.myworkdayjobs.com/en-US/external/job/Toronto/Vulnerability-Research-Intern_R0009992"
   },
   "https://hp.wd5.myworkdayjobs.com/en-us/externalcareersite/job/san-francisco-california-united-states-of-america/software-engineering-intern--device-experiences_3164166-1": {
-    "title": "Software Engineering Intern - Device Experiences",
+    "title": "Software Engineering Intern, Device Experiences",
     "url": "https://hp.wd5.myworkdayjobs.com/en-US/externalcareersite/job/San-Francisco-California-United-States-of-America/Software-Engineering-Intern--Device-Experiences_3164166-1"
   },
   "https://job-boards.greenhouse.io/optiverprivate/jobs/8402208002": {
@@ -6432,8 +6432,8 @@
     "url": "https://coreandmain.wd1.myworkdayjobs.com/en-US/coreandmain/job/Saint-Louis-MO-63146/Intern---Data-Engineering----Corp_45804"
   },
   "https://globalhr.wd5.myworkdayjobs.com/en-us/rec_rtx_ext_gateway/job/us-pa-state-college-5a--302-science-park-rd--bldg-5a/software-engineering-intern--on-site-_01860801": {
-    "title": "Software Engineering Intern (On-site)",
-    "url": "https://globalhr.wd5.myworkdayjobs.com/en-US/REC_RTX_Ext_Gateway/job/US-PA-STATE-COLLEGE-5A--302-Science-Park-Rd--BLDG-5A/Software-Engineering-Intern--On-site-_01860801"
+    "title": "Software Engineering Intern - On-site",
+    "url": "https://globalhr.wd5.myworkdayjobs.com/en-US/rec_rtx_ext_gateway/job/US-PA-STATE-COLLEGE-5A--302-Science-Park-Rd--BLDG-5A/Software-Engineering-Intern--On-site-_01860801"
   },
   "https://copart.wd12.myworkdayjobs.com/en-us/copart/job/dallas-tx---headquarters/data-engineering-intern_jr110075": {
     "title": "Data Engineering Intern",
@@ -6449,7 +6449,7 @@
   },
   "https://ngc.wd1.myworkdayjobs.com/en-us/northrop_grumman_external_site/job/united-states-florida-melbourne/xmlname-2027-returning-intern-software-engineer_r10242378": {
     "title": "2027 Returning Intern Software Engineer",
-    "url": "https://ngc.wd1.myworkdayjobs.com/en-US/Northrop_Grumman_External_Site/job/United-States-Florida-Melbourne/XMLNAME-2027-Returning-Intern-Software-Engineer_R10242378"
+    "url": "https://ngc.wd1.myworkdayjobs.com/en-US/northrop_grumman_external_site/job/United-States-Florida-Melbourne/XMLNAME-2027-Returning-Intern-Software-Engineer_R10242378"
   },
   "https://philips.wd3.myworkdayjobs.com/en-us/jobs-and-careers/job/drachten/internship--measurement---analysis_586111": {
     "title": "Internship: Measurement Systems Development",
@@ -6494,5 +6494,13 @@
   "https://nxp.wd3.myworkdayjobs.com/en-us/careers/job/munich/intern--f-m-d--embedded-software---automotive-networking_r-10065362": {
     "title": "Intern (f/m/d) Embedded Software & Automotive Networking",
     "url": "https://nxp.wd3.myworkdayjobs.com/en-US/careers/job/Munich/Intern--f-m-d--Embedded-Software---Automotive-Networking_R-10065362"
+  },
+  "https://rsm.wd1.myworkdayjobs.com/en-us/rsmcareers/job/houston/cyber-strategy-intern---summer-2027_jr117283": {
+    "title": "Cyber Strategy Intern - Summer 2027",
+    "url": "https://rsm.wd1.myworkdayjobs.com/en-US/rsmcareers/job/Houston/Cyber-Strategy-Intern---Summer-2027_JR117283"
+  },
+  "https://careers-sri.icims.com/jobs/6432/drexel-university-co-op%3a-software-engineering-full-stack-development/job": {
+    "title": "Drexel University Co-op: Software Engineering/Full stack development",
+    "url": "https://careers-sri.icims.com/jobs/6432/drexel-university-co-op%3a-software-engineering-full-stack-development/job"
   }
 }
