@@ -1,6 +1,6 @@
 # Top picks (auto-generated)
 
-_Quant / SWE / ML roles in target cities. 251 of 666 open roles. Rebuilt every sweep: 2026-07-28 04:13 UTC._
+_Quant / SWE / ML roles in target cities. 251 of 667 open roles. Rebuilt every sweep: 2026-07-28 07:43 UTC._
 
 Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant elsewhere, then other SWE/ML. Within each, sweet-spot firms before elite.
 
@@ -131,6 +131,7 @@ Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant els
 - [Quant SPA: Research Affiliates — Page changed - check Quant SPA: Research Affiliates (may mean applications opened)](https://www.researchaffiliates.com/about-us/careers)
 - [Quant SPA: Ridgeline — Page changed - check Quant SPA: Ridgeline (may mean applications opened)](https://ridgeline.ai/careers)
 - [Quant SPA: Saba Capital Management — Page changed - check Quant SPA: Saba Capital Management (may mean applications opened)](https://www.sabacapital.com/)
+- [Quant SPA: Saracen Energy — Page changed - check Quant SPA: Saracen Energy (may mean applications opened)](https://saracenenergy.com/careers.html)
 - [Quant SPA: Seven Eight Capital — Page changed - check Quant SPA: Seven Eight Capital (may mean applications opened)](https://www.seveneightcapital.com/)
 - [Quant SPA: Seven Points Capital — Page changed - check Quant SPA: Seven Points Capital (may mean applications opened)](https://sevenpointscapital.pinpointhq.com/)
 - [Quant SPA: SMB Capital — Page changed - check Quant SPA: SMB Capital (may mean applications opened)](https://smbcap.com/careers/)
@@ -256,11 +257,10 @@ Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant els
 - [serval — Software Engineer Intern](https://jobs.ashbyhq.com/serval/d7fb089c-db8a-4877-a5f3-73a09e67f54b) — San Francisco
 - [Solar Turbines (Caterpillar) — Solutions Platforms Engineered Intern (2027)](https://cat.wd5.myworkdayjobs.com/SolarTurbines/job/San-Diego-California/XMLNAME-2027-Internship----Solutions-Platforms-Engineered_R0000381657) — San Diego, CA
 - [sonyglobal — Software Engineer Intern](https://sonyglobal.wd1.myworkdayjobs.com/en-US/sonyglobalcareers/job/San-Diego/Software-Engineer-Intern_JR-119282) — San Diego
-- [tencent — Research Intern – Video World Models (Research & ML Systems)](https://tencent.wd1.myworkdayjobs.com/en-US/tencent_careers/job/US-California-Palo-Alto/Research-Intern---Video-World-Models--Research---ML-Systems-_R107752-1) — US-California-Palo Alto
 - [tenstorrentuniversity —  Software Engineering Intern, Power Modeling & AI Tools](https://job-boards.greenhouse.io/tenstorrentuniversity/jobs/5186916007) — Santa Clara, California, United States
 - [tenstorrentuniversity — CPU/AI Workload Analysis Intern](https://job-boards.greenhouse.io/tenstorrentuniversity/jobs/5158533007) — Santa Clara, California, United States
-- [tenstorrentuniversity — Software Intern - AI Compilers](https://job-boards.greenhouse.io/tenstorrentuniversity/jobs/4501189007) — Santa Clara, California, United States
 - [tenstorrentuniversity — Software Intern - AI Compilers](https://job-boards.greenhouse.io/tenstorrentuniversity/jobs/4968219007) — Austin, Texas, United States
+- [tenstorrentuniversity — Software Intern - AI Compilers](https://job-boards.greenhouse.io/tenstorrentuniversity/jobs/4501189007) — Santa Clara, California, United States
 - [Terranox AI — Summer Intern - AI/ML Engineering](https://www.workatastartup.com/jobs/94631) 🇺🇸 — San Francisco, CA
 - [TETRAMEM — Software Engineer Intern, Embedded](https://tetramem.hrmdirect.com/employment/job-opening.php?req=3491042#job) — San Jose, CA
 - [TikTok — LLM Post-training Engineer Intern, Research & Product](https://lifeattiktok.com/search/7631599293708126517) — San Jose, CA
