@@ -1141,7 +1141,7 @@
   },
   "https://nwis.wd12.myworkdayjobs.com/en-us/nw/job/annapolis-junction-md/software---hardware-engineering---intern_jr101733": {
     "title": "Software / Hardware Engineering - Intern",
-    "url": "https://nwis.wd12.myworkdayjobs.com/en-US/nw/job/Annapolis-Junction-MD/Software---Hardware-Engineering---Intern_JR101733"
+    "url": "https://nwis.wd12.myworkdayjobs.com/en-US/NW/job/Annapolis-Junction-MD/Software---Hardware-Engineering---Intern_JR101733"
   },
   "https://jobs.ashbyhq.com/beaconsoftware/2452d342-a069-4eda-adbe-9df296808ca1": {
     "title": "Software Engineering Intern",
@@ -6502,5 +6502,9 @@
   "https://careers-sri.icims.com/jobs/6432/drexel-university-co-op%3a-software-engineering-full-stack-development/job": {
     "title": "Drexel University Co-op: Software Engineering/Full stack development",
     "url": "https://careers-sri.icims.com/jobs/6432/drexel-university-co-op%3a-software-engineering-full-stack-development/job"
+  },
+  "https://jobs.smartrecruiters.com/boschgroup/744000140317669": {
+    "title": "ADAS Software Engineering Intern",
+    "url": "https://jobs.smartrecruiters.com/BoschGroup/744000140317669"
   }
 }
