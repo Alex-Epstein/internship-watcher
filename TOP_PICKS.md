@@ -1,6 +1,6 @@
 # Top picks (auto-generated)
 
-_Quant / SWE / ML roles in target cities. 251 of 665 open roles. Rebuilt every sweep: 2026-07-30 05:46 UTC._
+_Quant / SWE / ML roles in target cities. 251 of 666 open roles. Rebuilt every sweep: 2026-07-30 08:29 UTC._
 
 Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant elsewhere, then other SWE/ML. Within each, sweet-spot firms before elite.
 
@@ -120,6 +120,7 @@ Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant els
 - [Quant SPA: PCI Energy Solutions — Page changed - check Quant SPA: PCI Energy Solutions (may mean applications opened)](https://www.pcienergysolutions.com/about/careers/)
 - [Quant SPA: Proof Trading — Page changed - check Quant SPA: Proof Trading (may mean applications opened)](https://prooftrading.com/)
 - [Quant SPA: QuantCube Technology — Page changed - check Quant SPA: QuantCube Technology (may mean applications opened)](https://www.quant-cube.com/)
+- [Quant SPA: Quantedge Capital — Page changed - check Quant SPA: Quantedge Capital (may mean applications opened)](https://www.quantedge.com/careers)
 - [Quant SPA: Quantica Capital — Page changed - check Quant SPA: Quantica Capital (may mean applications opened)](https://www.quantica.ch/)
 - [Quant SPA: Quantitative Brokers — Page changed - check Quant SPA: Quantitative Brokers (may mean applications opened)](https://www.quantitativebrokers.com/careers)
 - [Quant SPA: Quantitative Investment Management (QIM) — Page changed - check Quant SPA: Quantitative Investment Management (QIM) (may mean applications opened)](https://quantitative.com/)
@@ -149,7 +150,6 @@ Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant els
 - [Quant SPA: Tradition (Compagnie Financiere Tradition / TFS) — Page changed - check Quant SPA: Tradition (Compagnie Financiere Tradition / TFS) (may mean applications opened)](https://www.tradition.com/)
 - [Quant SPA: Trexquant Investment — Page changed - check Quant SPA: Trexquant Investment (may mean applications opened)](https://trexquant.com/careers)
 - [Quant SPA: TS Imagine — Page changed - check Quant SPA: TS Imagine (may mean applications opened)](https://tsimagine.com/careers/)
-- [Quant SPA: Twin Eagle Resource Management — Page changed - check Quant SPA: Twin Eagle Resource Management (may mean applications opened)](https://twineagleresourcemanagement.applytojob.com/apply)
 - [Quant SPA: TXSE Group (Texas Stock Exchange) — Page changed - check Quant SPA: TXSE Group (Texas Stock Exchange) (may mean applications opened)](https://www.txse.com)
 - [Quant SPA: Verition Fund Management — Page changed - check Quant SPA: Verition Fund Management (may mean applications opened)](https://www.verition.com/)
 - [Quant SPA: Volant Trading — Page changed - check Quant SPA: Volant Trading (may mean applications opened)](https://volanttrading.com/)
