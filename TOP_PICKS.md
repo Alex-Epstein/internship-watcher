@@ -1,6 +1,6 @@
 # Top picks (auto-generated)
 
-_Quant / SWE / ML roles in target cities. 252 of 664 open roles. Rebuilt every sweep: 2026-07-30 15:59 UTC._
+_Quant / SWE / ML roles in target cities. 250 of 664 open roles. Rebuilt every sweep: 2026-07-30 17:37 UTC._
 
 Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant elsewhere, then other SWE/ML. Within each, sweet-spot firms before elite.
 
@@ -171,7 +171,6 @@ Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant els
 
 - [Abundant — Software Engineering Intern, Research Focused](https://www.workatastartup.com/jobs/94634) 🇺🇸 — San Francisco, CA
 - [Amazon — Robotics - Software Development Engineer Intern/Co-op](https://www.amazon.jobs/en/jobs/3136266/robotics-software-development-engineer-intern-co-op-2026?no_int_redir=1) — Sunnyvale, CA, North Reading, MA, Westboro, MA, Nashville, TN, Austin, TX, Arlington, VA, Bellevue, WA, Seattle, WA
-- [Amazon (AWS / Robotics / all) — Software Development Engineer Internship, Costa Rica](https://www.amazon.jobs/en/jobs/3126072/software-development-engineer-internship-costa-rica) — San Jose, San Jose, CRI
 - [Anduril — 2027 Software Engineer Intern](https://boards.greenhouse.io/andurilindustries/jobs/5148079007?gh_jid=5148079007) 🇺🇸 — Atlanta, Georgia, United States; Boston, Massachusetts, United States; Costa Mesa, California, United States; Irvine, California, United States; Reston, Virginia, United States; Seattle, Washington, United States
 - [Anduril — Software Engineer Intern](https://job-boards.greenhouse.io/andurilindustries/jobs/5148079007?gh_jid=5148079007) — Atlanta, GA, Boston, MA, Costa Mesa, CA, Irvine, CA, Reston, VA, Seattle, WA
 - [Apex Technology, Inc. — Software Engineering Intern, Embedded Systems](https://jobs.ashbyhq.com/apex-technology-inc/5ec2dfa9-724d-4ce4-ab97-5067ec747f11) — Los Angeles
@@ -183,7 +182,6 @@ Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant els
 - [base-power — Software Engineering Intern](https://jobs.ashbyhq.com/base-power/5353ea33-57d4-46fa-9a96-e392a3f841bc) — Austin, TX
 - [Beacon Software — Software Engineering Intern](https://jobs.ashbyhq.com/beaconsoftware/2452d342-a069-4eda-adbe-9df296808ca1) — San Francisco, CA
 - [bild-ai — AI/SWE Intern](https://jobs.ashbyhq.com/bild-ai/b333f0f7-0ca6-4509-8697-9303396b5364) — San Francisco
-- [BoschGroup — Autonomous Driving – Internship in Machine Learning](https://jobs.smartrecruiters.com/BoschGroup/744000140462550) — Sunnyvale, CA, us
 - [cat — 2027 Internship -  Solutions Platforms Engineered](https://cat.wd5.myworkdayjobs.com/en-US/SolarTurbines/job/San-Diego-California/XMLNAME-2027-Internship----Solutions-Platforms-Engineered_R0000381657) — San Diego, California
 - [centerfield — Data Science Intern](https://jobs.ashbyhq.com/centerfield/916dcf42-d69a-4f00-875a-f8fe630e0f33) — Los Angeles, California
 - [centerfield — Software Engineer Intern](https://jobs.ashbyhq.com/centerfield/3279e803-56ab-4e12-8168-c2fd60bc8e60) — Los Angeles, California
@@ -261,8 +259,8 @@ Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant els
 - [sonyglobal — Software Engineer Intern](https://sonyglobal.wd1.myworkdayjobs.com/en-US/sonyglobalcareers/job/San-Diego/Software-Engineer-Intern_JR-119282) — San Diego
 - [tenstorrentuniversity —  Software Engineering Intern, Power Modeling & AI Tools](https://job-boards.greenhouse.io/tenstorrentuniversity/jobs/5186916007) — Santa Clara, California, United States
 - [tenstorrentuniversity — CPU/AI Workload Analysis Intern](https://job-boards.greenhouse.io/tenstorrentuniversity/jobs/5158533007) — Santa Clara, California, United States
-- [tenstorrentuniversity — Software Intern - AI Compilers](https://job-boards.greenhouse.io/tenstorrentuniversity/jobs/4968219007) — Austin, Texas, United States
 - [tenstorrentuniversity — Software Intern - AI Compilers](https://job-boards.greenhouse.io/tenstorrentuniversity/jobs/4501189007) — Santa Clara, California, United States
+- [tenstorrentuniversity — Software Intern - AI Compilers](https://job-boards.greenhouse.io/tenstorrentuniversity/jobs/4968219007) — Austin, Texas, United States
 - [Terranox AI — Summer Intern - AI/ML Engineering](https://www.workatastartup.com/jobs/94631) 🇺🇸 — San Francisco, CA
 - [TETRAMEM — Software Engineer Intern, Embedded](https://tetramem.hrmdirect.com/employment/job-opening.php?req=3491042#job) — San Jose, CA
 - [TikTok — LLM Post-training Engineer Intern, Research & Product](https://lifeattiktok.com/search/7631599293708126517) — San Jose, CA
