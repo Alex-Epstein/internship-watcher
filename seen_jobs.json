@@ -5060,7 +5060,7 @@
     "url": "https://hp.wd5.myworkdayjobs.com/en-US/externalcareersite/job/Tlaquepaque-Jalisco-Mexico/Cloud-Engineering-Intern_3166173-1"
   },
   "https://gehc.wd5.myworkdayjobs.com/en-us/gehc_externalsite/job/waukesha/edison-engineering-development-program-intern---software_r4043933-2": {
-    "title": "Edison Engineering Development Program Intern – Software",
+    "title": "Edison Engineering Development Program Intern - Software",
     "url": "https://gehc.wd5.myworkdayjobs.com/en-US/gehc_externalsite/job/Waukesha/Edison-Engineering-Development-Program-Intern---Software_R4043933-2"
   },
   "https://gehc.wd5.myworkdayjobs.com/en-us/gehc_externalsite/job/remote/information-technology-development-program---internship_r4043927-1": {
@@ -6622,5 +6622,33 @@
   "https://jobs.smartrecruiters.com/grab/744000140890379": {
     "title": "Intern, Software Engineer, Mobile (Android)",
     "url": "https://jobs.smartrecruiters.com/Grab/744000140890379"
+  },
+  "https://jobs.smartrecruiters.com/boschgroup/744000140902779": {
+    "title": "Internship in Development and Production of MEMS Sensors",
+    "url": "https://jobs.smartrecruiters.com/BoschGroup/744000140902779"
+  },
+  "https://draper.wd5.myworkdayjobs.com/en-us/draper_careers/job/cambridge-ma/electronics---embedded-systems-intern--summer-2027-_jr002735": {
+    "title": "Electronics & Embedded Systems Intern (Summer 2027)",
+    "url": "https://draper.wd5.myworkdayjobs.com/en-US/draper_careers/job/Cambridge-MA/Electronics---Embedded-Systems-Intern--Summer-2027-_JR002735"
+  },
+  "https://dentsuaegis.wd3.myworkdayjobs.com/en-us/dan_global/job/cape-town/intern-software-development_r1128638": {
+    "title": "Intern Software Development",
+    "url": "https://dentsuaegis.wd3.myworkdayjobs.com/en-US/dan_global/job/Cape-Town/Intern-Software-Development_R1128638"
+  },
+  "https://globalfoundries.wd1.myworkdayjobs.com/en-us/external/job/essex-junction/robotics-and-automation-engineering-intern_jr-2603574": {
+    "title": "Robotics and Automation Engineering Intern",
+    "url": "https://globalfoundries.wd1.myworkdayjobs.com/en-US/external/job/Essex-Junction/Robotics-and-Automation-Engineering-Intern_JR-2603574"
+  },
+  "https://copart.wd12.myworkdayjobs.com/en-us/copart/job/dallas-tx---headquarters/software-engineering-intern_jr109964": {
+    "title": "Software Engineering Intern",
+    "url": "https://copart.wd12.myworkdayjobs.com/en-US/copart/job/Dallas-TX---Headquarters/Software-Engineering-Intern_JR109964"
+  },
+  "https://motorolasolutions.wd5.myworkdayjobs.com/en-us/careers/job/massachusetts-us-offsite/software-engineering--co-op_r66728": {
+    "title": "Software Engineering - Co-Op",
+    "url": "https://motorolasolutions.wd5.myworkdayjobs.com/en-US/careers/job/Massachusetts-US-Offsite/Software-Engineering--Co-Op_R66728"
+  },
+  "https://careers-sig.icims.com/jobs/10838/quantitative-strategy-developer-internship%3a-summer-2027/job": {
+    "title": "Quantitative Strategy Developer Internship: Summer 2027",
+    "url": "https://careers-sig.icims.com/jobs/10838/quantitative-strategy-developer-internship%3a-summer-2027/job"
   }
 }
