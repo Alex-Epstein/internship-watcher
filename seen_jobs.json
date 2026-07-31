@@ -6541,7 +6541,7 @@
   },
   "https://leidos.wd5.myworkdayjobs.com/en-us/external/job/annapolis-junction-md/software-developer-intern_r-00188311": {
     "title": "Software Developer Intern",
-    "url": "https://leidos.wd5.myworkdayjobs.com/en-US/External/job/Annapolis-Junction-MD/Software-Developer-Intern_R-00188311"
+    "url": "https://leidos.wd5.myworkdayjobs.com/en-US/external/job/Annapolis-Junction-MD/Software-Developer-Intern_R-00188311"
   },
   "https://jobs.smartrecruiters.com/boschgroup/744000140317669-adas-software-engineering-intern?oga=true": {
     "title": "ADAS Software Engineering Intern",
@@ -6553,7 +6553,7 @@
   },
   "https://leidos.wd5.myworkdayjobs.com/en-us/external/job/indianapolis-in/application-developer-intern_r-00188193-1": {
     "title": "Application Developer Intern",
-    "url": "https://leidos.wd5.myworkdayjobs.com/en-US/External/job/Indianapolis-IN/Application-Developer-Intern_R-00188193-1"
+    "url": "https://leidos.wd5.myworkdayjobs.com/en-US/external/job/Indianapolis-IN/Application-Developer-Intern_R-00188193-1"
   },
   "https://leidos.wd5.myworkdayjobs.com/en-us/external/job/san-diego-ca/data-science-intern_r-00188405": {
     "title": "Data Science Intern",
@@ -6662,5 +6662,53 @@
   "https://osv-cci.wd1.myworkdayjobs.com/en-us/ccicareers/job/stamford-ct/full-stack-software-engineer-internship--summer-2027-_r1350": {
     "title": "Full-Stack Software Engineer Intern",
     "url": "https://osv-cci.wd1.myworkdayjobs.com/en-US/CCICareers/job/Stamford-CT/Full-Stack-Software-Engineer-Internship--Summer-2027-_R1350"
+  },
+  "https://job-boards.greenhouse.io/skhynixmemorysolutionsamericainc/jobs/4342038009": {
+    "title": "Test Automation Software Engineer Intern",
+    "url": "https://job-boards.greenhouse.io/skhynixmemorysolutionsamericainc/jobs/4342038009"
+  },
+  "https://intel.wd1.myworkdayjobs.com/en-us/external/job/virtual-us/ai-software-engineer-graduate-intern_jr0285989": {
+    "title": "AI Software Engineer Graduate Intern",
+    "url": "https://intel.wd1.myworkdayjobs.com/en-US/External/job/Virtual-US/AI-Software-Engineer-Graduate-Intern_JR0285989"
+  },
+  "https://jobs.ashbyhq.com/persona.ai/ed9a7425-9798-471e-b46a-fefd59570630": {
+    "title": "Machine Learning Intern, Manipulation",
+    "url": "https://jobs.ashbyhq.com/persona.ai/ed9a7425-9798-471e-b46a-fefd59570630"
+  },
+  "https://www.drw.com/work-at-drw/listings/fpga-intern-3484423": {
+    "title": "FPGA Intern",
+    "url": "https://www.drw.com/work-at-drw/listings/fpga-intern-3484423"
+  },
+  "https://www.drw.com/work-at-drw/listings/aiml-research-intern-3466679": {
+    "title": "AI/ML Research Intern",
+    "url": "https://www.drw.com/work-at-drw/listings/aiml-research-intern-3466679"
+  },
+  "https://www.drw.com/work-at-drw/listings/platform-engineer-intern-3468737": {
+    "title": "Platform Engineer Intern",
+    "url": "https://www.drw.com/work-at-drw/listings/platform-engineer-intern-3468737"
+  },
+  "https://www.drw.com/work-at-drw/listings/quantitative-research-intern-3413670": {
+    "title": "Quantitative Research Intern",
+    "url": "https://www.drw.com/work-at-drw/listings/quantitative-research-intern-3413670"
+  },
+  "https://www.drw.com/work-at-drw/listings/quantitative-trading-analyst-intern-3375090": {
+    "title": "Quantitative Trading Analyst Intern",
+    "url": "https://www.drw.com/work-at-drw/listings/quantitative-trading-analyst-intern-3375090"
+  },
+  "https://www.drw.com/work-at-drw/listings/software-developer-intern-3466687": {
+    "title": "Software Developer Intern",
+    "url": "https://www.drw.com/work-at-drw/listings/software-developer-intern-3466687"
+  },
+  "https://www.drw.com/work-at-drw/listings/software-developer-intern-3467328": {
+    "title": "Software Developer Intern",
+    "url": "https://www.drw.com/work-at-drw/listings/software-developer-intern-3467328"
+  },
+  "https://osv-cci.wd1.myworkdayjobs.com/en-us/ccicareers/job/stamford-ct/data-science-machine-learning-internship--summer-2027-_r1344": {
+    "title": "Data Science Machine Learning Intern",
+    "url": "https://osv-cci.wd1.myworkdayjobs.com/en-US/CCICareers/job/Stamford-CT/Data-Science-Machine-Learning-Internship--Summer-2027-_R1344"
+  },
+  "https://osv-cci.wd1.myworkdayjobs.com/en-us/ccicareers/job/stamford-ct/data-engineering-internship--summer-2027-_r1346": {
+    "title": "Data Engineering Intern",
+    "url": "https://osv-cci.wd1.myworkdayjobs.com/en-US/CCICareers/job/Stamford-CT/Data-Engineering-Internship--Summer-2027-_R1346"
   }
 }
