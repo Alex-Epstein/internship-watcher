@@ -6560,7 +6560,7 @@
     "url": "https://leidos.wd5.myworkdayjobs.com/en-US/External/job/San-Diego-CA/Data-Science-Intern_R-00188405"
   },
   "https://job-boards.greenhouse.io/virtu/jobs/8657500002": {
-    "title": "2027 Internship - Frontend & User Experience",
+    "title": "2027 Internship - Frontend Engineer (UI)",
     "url": "https://job-boards.greenhouse.io/virtu/jobs/8657500002"
   },
   "https://job-boards.greenhouse.io/virturecruitinghidden/jobs/8657286002": {
@@ -6628,7 +6628,7 @@
     "url": "https://jobs.smartrecruiters.com/BoschGroup/744000140902779"
   },
   "https://draper.wd5.myworkdayjobs.com/en-us/draper_careers/job/cambridge-ma/electronics---embedded-systems-intern--summer-2027-_jr002735": {
-    "title": "Electronics & Embedded Systems Intern (Summer 2027)",
+    "title": "Electronics & Embedded Systems Intern - Summer 2027",
     "url": "https://draper.wd5.myworkdayjobs.com/en-US/draper_careers/job/Cambridge-MA/Electronics---Embedded-Systems-Intern--Summer-2027-_JR002735"
   },
   "https://dentsuaegis.wd3.myworkdayjobs.com/en-us/dan_global/job/cape-town/intern-software-development_r1128638": {
@@ -6650,5 +6650,17 @@
   "https://careers-sig.icims.com/jobs/10838/quantitative-strategy-developer-internship%3a-summer-2027/job": {
     "title": "Quantitative Strategy Developer Internship: Summer 2027",
     "url": "https://careers-sig.icims.com/jobs/10838/quantitative-strategy-developer-internship%3a-summer-2027/job"
+  },
+  "https://job-boards.greenhouse.io/virtu/jobs/8657286002": {
+    "title": "2027 Internship- Hardware Engineer (FPGA)",
+    "url": "https://job-boards.greenhouse.io/virtu/jobs/8657286002"
+  },
+  "https://jobs.smartrecruiters.com/westerndigital/744000140949875": {
+    "title": "Summer 2027 Intern - Hardware Engineering",
+    "url": "https://jobs.smartrecruiters.com/WesternDigital/744000140949875"
+  },
+  "https://osv-cci.wd1.myworkdayjobs.com/en-us/ccicareers/job/stamford-ct/full-stack-software-engineer-internship--summer-2027-_r1350": {
+    "title": "Full-Stack Software Engineer Intern",
+    "url": "https://osv-cci.wd1.myworkdayjobs.com/en-US/CCICareers/job/Stamford-CT/Full-Stack-Software-Engineer-Internship--Summer-2027-_R1350"
   }
 }
