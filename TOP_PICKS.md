@@ -1,6 +1,6 @@
 # Top picks (auto-generated)
 
-_Quant / SWE / ML roles in target cities. 244 of 659 open roles. Rebuilt every sweep: 2026-07-31 09:50 UTC._
+_Quant / SWE / ML roles in target cities. 245 of 658 open roles. Rebuilt every sweep: 2026-07-31 12:05 UTC._
 
 Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant elsewhere, then other SWE/ML. Within each, sweet-spot firms before elite.
 
@@ -74,7 +74,6 @@ Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant els
 - [Quant SPA: Connamara Technologies — Page changed - check Quant SPA: Connamara Technologies (may mean applications opened)](https://connamara.com/)
 - [Quant SPA: Dark Forest Capital Management — Page changed - check Quant SPA: Dark Forest Capital Management (may mean applications opened)](https://www.darkforesttech.com/)
 - [Quant SPA: DC Energy — Page changed - check Quant SPA: DC Energy (may mean applications opened)](https://www.dc-energy.com/careers)
-- [Quant SPA: Deep Blue Capital — Page changed - check Quant SPA: Deep Blue Capital (may mean applications opened)](https://www.deepbluecap.com/careers/)
 - [Quant SPA: Deephaven Data Labs — Page changed - check Quant SPA: Deephaven Data Labs (may mean applications opened)](https://deephaven.io/company/careers/)
 - [Quant SPA: e360 Power — Page changed - check Quant SPA: e360 Power (may mean applications opened)](https://www.e360power.com/)
 - [Quant SPA: Elmagin Capital — Page changed - check Quant SPA: Elmagin Capital (may mean applications opened)](http://www.elmagincapital.com/careers)
@@ -90,6 +89,7 @@ Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant els
 - [Quant SPA: G-Research — Page changed - check Quant SPA: G-Research (may mean applications opened)](https://www.gresearch.com/vacancies/)
 - [Quant SPA: Geode Capital Management — Page changed - check Quant SPA: Geode Capital Management (may mean applications opened)](https://www.geodecapital.com/careers)
 - [Quant SPA: GMO — Page changed - check Quant SPA: GMO (may mean applications opened)](https://www.gmo.com/americas/careers/)
+- [Quant SPA: Hard Eight Trading — Page changed - check Quant SPA: Hard Eight Trading (may mean applications opened)](https://www.hard8trading.com/careers.html)
 - [Quant SPA: Hartree Partners — Page changed - check Quant SPA: Hartree Partners (may mean applications opened)](https://www.hartreepartners.com/)
 - [Quant SPA: Hudson Bay Capital — Page changed - check Quant SPA: Hudson Bay Capital (may mean applications opened)](https://www.hudsonbaycapital.com/careers)
 - [Quant SPA: InCommodities North America — Page changed - check Quant SPA: InCommodities North America (may mean applications opened)](https://incommodities.com/join-us)
@@ -131,6 +131,7 @@ Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant els
 - [Quant SPA: Research Affiliates — Page changed - check Quant SPA: Research Affiliates (may mean applications opened)](https://www.researchaffiliates.com/about-us/careers)
 - [Quant SPA: Ridgeline — Page changed - check Quant SPA: Ridgeline (may mean applications opened)](https://ridgeline.ai/careers)
 - [Quant SPA: Saba Capital Management — Page changed - check Quant SPA: Saba Capital Management (may mean applications opened)](https://www.sabacapital.com/)
+- [Quant SPA: Saracen Energy — Page changed - check Quant SPA: Saracen Energy (may mean applications opened)](https://saracenenergy.com/careers.html)
 - [Quant SPA: Seven Eight Capital — Page changed - check Quant SPA: Seven Eight Capital (may mean applications opened)](https://www.seveneightcapital.com/)
 - [Quant SPA: Seven Points Capital — Page changed - check Quant SPA: Seven Points Capital (may mean applications opened)](https://sevenpointscapital.pinpointhq.com/)
 - [Quant SPA: SMB Capital — Page changed - check Quant SPA: SMB Capital (may mean applications opened)](https://smbcap.com/careers/)
