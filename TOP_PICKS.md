@@ -1,6 +1,6 @@
 # Top picks (auto-generated)
 
-_Quant / SWE / ML roles in target cities. 250 of 670 open roles. Rebuilt every sweep: 2026-08-01 11:22 UTC._
+_Quant / SWE / ML roles in target cities. 251 of 669 open roles. Rebuilt every sweep: 2026-08-01 13:22 UTC._
 
 Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant elsewhere, then other SWE/ML. Within each, sweet-spot firms before elite.
 
@@ -161,6 +161,7 @@ Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant els
 - [Quant SPA: WEBB Traders — Page changed - check Quant SPA: WEBB Traders (may mean applications opened)](https://www.webbtraders.com/careers)
 - [Quant SPA: Welton Investment Partners — Page changed - check Quant SPA: Welton Investment Partners (may mean applications opened)](https://www.welton.com/)
 - [Quant SPA: WH Trading — Page changed - check Quant SPA: WH Trading (may mean applications opened)](https://www.whtrading.com/)
+- [Quant SPA: Wintermute — Page changed - check Quant SPA: Wintermute (may mean applications opened)](https://www.wintermute.com/careers)
 - [Quant SPA: XBTO — Page changed - check Quant SPA: XBTO (may mean applications opened)](https://www.xbto.com/careers)
 - [Quant SPA: XO Energy — Page changed - check Quant SPA: XO Energy (may mean applications opened)](http://www.xo-energy.com/jobs)
 - [Quant SPA: XR Trading — Page changed - check Quant SPA: XR Trading (may mean applications opened)](https://www.xrtrading.com/careers)
