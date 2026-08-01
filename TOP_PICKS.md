@@ -1,6 +1,6 @@
 # Top picks (auto-generated)
 
-_Quant / SWE / ML roles in target cities. 240 of 603 open roles. Rebuilt every sweep: 2026-08-01 06:33 UTC._
+_Quant / SWE / ML roles in target cities. 249 of 670 open roles. Rebuilt every sweep: 2026-08-01 09:13 UTC._
 
 Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant elsewhere, then other SWE/ML. Within each, sweet-spot firms before elite.
 
@@ -26,6 +26,7 @@ Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant els
 - [quadrillion-labs — Software Engineering Intern (Summer 2027)](https://jobs.ashbyhq.com/quadrillion-labs/a4acc44c-31ce-41a0-ab44-2500487b4d05) — New York City
 - [Quant/Tech: Modal Labs — ML Research Intern](https://jobs.ashbyhq.com/modal/38888294-6bc7-4dab-b072-6d0f0c2ed79a) — New York
 - [Quant/Tech: Ramp — Software Engineer Internship, Android ](https://jobs.ashbyhq.com/ramp/67fadb77-43d8-4449-954b-d4cf2c6d3b8b) — New York, NY (HQ)
+- [sonyglobal — Research Intern on Generative and Protective AI for Content Creation](https://sonyglobal.wd1.myworkdayjobs.com/en-US/sonyglobalcareers/job/Remote---New-York/Research-Intern-on-Generative-and-Protective-AI-for-Content-Creation_JR-119335) — Remote - New York
 - [thetradedesk — 2027 North America Software Engineering Internship](https://job-boards.greenhouse.io/thetradedesk/jobs/5187605007) — Bellevue; Boulder; Denver; Irvine; New York; Seattle
 - [Trata — Research Scientist Intern](https://www.workatastartup.com/jobs/94620) — San Francisco, CA / New York, NY
 
@@ -48,6 +49,9 @@ Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant els
 - [Abroad: G-Research Spring into Quant Finance — Page changed - check Abroad: G-Research Spring into Quant Finance (may mean applications opened)](https://www.gresearch.com/spring-into-quant-finance/)
 - [Amazon (AWS / Robotics / all) — Quantum Signal Train Engineer Internship, Amazon Center for Quantum Computing](https://www.amazon.jobs/en/jobs/10387501/quantum-signal-train-engineer-internship-amazon-center-for-quantum-computing) — Pasadena, California, USA
 - [base-power — Quantitative Developer Intern](https://jobs.ashbyhq.com/base-power/b6b2332e-1226-4575-b2c9-9e5258f2540e) — Austin, TX
+- [chevron — 2026-2027 Supply & Trading TAMU TRIP Program - Full-Time (Previous Intern)](https://chevron.wd5.myworkdayjobs.com/en-US/university/job/Houston-1400-Smith-Street/XMLNAME-2026-2027-Supply---Trading-TAMU-TRIP-Program---Full-Time_R000072489) — Houston 1400 Smith Street
+- [chevron — 2026-2027 Supply & Trading TAMU TRIP Program Intern](https://chevron.wd5.myworkdayjobs.com/en-US/university/job/Houston-1400-Smith-Street/XMLNAME-2026-2027-Supply---Trading-TAMU-TRIP-Program-Intern_R000072485) — Houston 1400 Smith Street
+- [chevron — 2026-2027 Supply & Trading TAMU TRIP Program Intern (Previous Intern)](https://chevron.wd5.myworkdayjobs.com/en-US/university/job/Houston-1400-Smith-Street/XMLNAME-2026-2027-Supply---Trading-TAMU-TRIP-Program-Intern_R000072487) — Houston 1400 Smith Street
 - [Quant SPA: Acadian Asset Management — Page changed - check Quant SPA: Acadian Asset Management (may mean applications opened)](https://www.acadian-asset.com/careers)
 - [Quant SPA: Adaptive Financial Consulting — Page changed - check Quant SPA: Adaptive Financial Consulting (may mean applications opened)](https://weareadaptive.com/careers/)
 - [Quant SPA: AEGIS Hedging — Page changed - check Quant SPA: AEGIS Hedging (may mean applications opened)](https://aegis-hedging.com/careers)
@@ -72,7 +76,6 @@ Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant els
 - [Quant SPA: Connamara Technologies — Page changed - check Quant SPA: Connamara Technologies (may mean applications opened)](https://connamara.com/)
 - [Quant SPA: Dark Forest Capital Management — Page changed - check Quant SPA: Dark Forest Capital Management (may mean applications opened)](https://www.darkforesttech.com/)
 - [Quant SPA: DC Energy — Page changed - check Quant SPA: DC Energy (may mean applications opened)](https://www.dc-energy.com/careers)
-- [Quant SPA: Deep Blue Capital — Page changed - check Quant SPA: Deep Blue Capital (may mean applications opened)](https://www.deepbluecap.com/careers/)
 - [Quant SPA: Deephaven Data Labs — Page changed - check Quant SPA: Deephaven Data Labs (may mean applications opened)](https://deephaven.io/company/careers/)
 - [Quant SPA: e360 Power — Page changed - check Quant SPA: e360 Power (may mean applications opened)](https://www.e360power.com/)
 - [Quant SPA: Elmagin Capital — Page changed - check Quant SPA: Elmagin Capital (may mean applications opened)](http://www.elmagincapital.com/careers)
@@ -104,6 +107,7 @@ Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant els
 - [Quant SPA: MarketAxess — Page changed - check Quant SPA: MarketAxess (may mean applications opened)](https://www.marketaxess.com/careers)
 - [Quant SPA: Marquette Partners — Page changed - check Quant SPA: Marquette Partners (may mean applications opened)](http://www.marquettepartnersholdingsllc.com/)
 - [Quant SPA: Massive (formerly Polygon.io) — Page changed - check Quant SPA: Massive (formerly Polygon.io) (may mean applications opened)](https://massive.com/careers)
+- [Quant SPA: Maven Securities — Page changed - check Quant SPA: Maven Securities (may mean applications opened)](https://www.mavensecurities.com/careers/)
 - [Quant SPA: MayStreet — Page changed - check Quant SPA: MayStreet (may mean applications opened)](https://www.lseg.com/en/careers)
 - [Quant SPA: McKay Brothers / Quincy Data — Page changed - check Quant SPA: McKay Brothers / Quincy Data (may mean applications opened)](https://mckay-brothers.com/careers)
 - [Quant SPA: MIAX (Miami International Holdings) — Page changed - check Quant SPA: MIAX (Miami International Holdings) (may mean applications opened)](https://www.miaxglobal.com/company/about/careers)
@@ -130,7 +134,6 @@ Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant els
 - [Quant SPA: Research Affiliates — Page changed - check Quant SPA: Research Affiliates (may mean applications opened)](https://www.researchaffiliates.com/about-us/careers)
 - [Quant SPA: Ridgeline — Page changed - check Quant SPA: Ridgeline (may mean applications opened)](https://ridgeline.ai/careers)
 - [Quant SPA: Saba Capital Management — Page changed - check Quant SPA: Saba Capital Management (may mean applications opened)](https://www.sabacapital.com/)
-- [Quant SPA: Saracen Energy — Page changed - check Quant SPA: Saracen Energy (may mean applications opened)](https://saracenenergy.com/careers.html)
 - [Quant SPA: Seven Eight Capital — Page changed - check Quant SPA: Seven Eight Capital (may mean applications opened)](https://www.seveneightcapital.com/)
 - [Quant SPA: Seven Points Capital — Page changed - check Quant SPA: Seven Points Capital (may mean applications opened)](https://sevenpointscapital.pinpointhq.com/)
 - [Quant SPA: SMB Capital — Page changed - check Quant SPA: SMB Capital (may mean applications opened)](https://smbcap.com/careers/)
@@ -159,6 +162,7 @@ Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant els
 - [Quant SPA: Wintermute — Page changed - check Quant SPA: Wintermute (may mean applications opened)](https://www.wintermute.com/careers)
 - [Quant SPA: XBTO — Page changed - check Quant SPA: XBTO (may mean applications opened)](https://www.xbto.com/careers)
 - [Quant SPA: XO Energy — Page changed - check Quant SPA: XO Energy (may mean applications opened)](http://www.xo-energy.com/jobs)
+- [Quant SPA: XR Trading — Page changed - check Quant SPA: XR Trading (may mean applications opened)](https://www.xrtrading.com/careers)
 - [Quant: Trillium Trading — Summer 2027 Equity Trader Internship](https://www.trlm.com/apply/5076067007?gh_jid=5076067007) 🇺🇸 — Miami
 - [Quant SPA: Headlands Tech — Page changed - check Quant SPA: Headlands Tech (may mean applications opened)](https://www.headlandstech.com/careers/) ⚡elite
 - [Susquehanna — Quantitative Strategy Developer Intern](https://careers.sig.com/jobs/10838) ⚡elite — Bala Cynwyd, PA
@@ -182,9 +186,10 @@ Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant els
 - [Beacon Software — Software Engineering Intern](https://jobs.ashbyhq.com/beaconsoftware/2452d342-a069-4eda-adbe-9df296808ca1) — San Francisco, CA
 - [bild-ai — AI/SWE Intern](https://jobs.ashbyhq.com/bild-ai/b333f0f7-0ca6-4509-8697-9303396b5364) — San Francisco
 - [Castleton Commodities International — Full-Stack Software Engineer Intern](https://osv-cci.wd1.myworkdayjobs.com/en-US/CCICareers/job/Stamford-CT/Full-Stack-Software-Engineer-Internship--Summer-2027-_R1350) — Stamford, CT, Houston, TX
+- [cat — 2027 Internship -  Solutions Platforms Engineered](https://cat.wd5.myworkdayjobs.com/en-US/SolarTurbines/job/San-Diego-California/XMLNAME-2027-Internship----Solutions-Platforms-Engineered_R0000381657) — San Diego, California
 - [centerfield — Data Science Intern](https://jobs.ashbyhq.com/centerfield/916dcf42-d69a-4f00-875a-f8fe630e0f33) — Los Angeles, California
 - [centerfield — Software Engineer Intern](https://jobs.ashbyhq.com/centerfield/3279e803-56ab-4e12-8168-c2fd60bc8e60) — Los Angeles, California
-- [Chevron — 2026-2027 Information Technology - Software Engineer - Intern](https://chevron.wd5.myworkdayjobs.com/en-US/university/job/Houston-Texas-United-States-of-America/XMLNAME-2026-2027-Information-Technology---Software-Engineer---Intern_R000072398-1) — Houston, TX
+- [chevron — 2026-2027 Information Technology - Software Engineer - Intern](https://chevron.wd5.myworkdayjobs.com/en-US/university/job/Houston-Texas-United-States-of-America/XMLNAME-2026-2027-Information-Technology---Software-Engineer---Intern_R000072398-1) — Houston, Texas, United States of America
 - [circleback — Software Engineering Intern (Summer 2027)](https://jobs.ashbyhq.com/circleback/2bb6be67-d1a8-42f7-bb1b-64ee36bf613f) — San Francisco
 - [Circleback — Software Engineering Intern (Summer 2027) 🛂](https://www.ycombinator.com/companies/circleback/jobs/QMpriul-software-engineering-intern-summer-2027) — San Francisco, CA
 - [copart — Data Engineering Intern](https://copart.wd12.myworkdayjobs.com/en-US/copart/job/Dallas-TX---Headquarters/Data-Engineering-Intern_JR110075) — Dallas, TX - Headquarters
@@ -199,14 +204,17 @@ Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant els
 - [Google — Software Engineering Intern, BS (Summer 2027)](https://www.google.com/about/careers/applications/jobs/results/85564713261245126-software-engineering-intern/) — Mountain View, CA (multiple US)
 - [gritt — ML & Cloud Infrastructure Engineer Intern](https://jobs.ashbyhq.com/gritt/46af6e69-40fc-4e53-940e-a99757137523) — South San Francisco
 - [Halo Industries — Software Engineer Intern - Machine Learning Workflow](https://apply.workable.com/halo-industries/j/29728B1DAF/) — Santa Clara, CA
+- [hitachi — Research Science Intern, Financial Innovation Lab](https://hitachi.wd1.myworkdayjobs.com/en-US/hitachi/job/Santa-Clara-California-United-States/Research-Science-Intern--Financial-Innovation-Lab_R0084929) — Santa Clara, California, United States
 - [Homebase — Forward Deployed Engineering Intern, AI-Native](https://jobs.ashbyhq.com/homebase/a7ab59c0-786e-4675-b684-2ed19b240fb2) — Houston, TX, San Francisco, CA
 - [human-computer-lab — Intern - Software/ML Engineering](https://jobs.ashbyhq.com/human-computer-lab/7d13ae27-1f02-4d9b-8d39-e3d9d67df705) — San Francisco
 - [HyperLight — Software Engineer Intern](https://apply.workable.com/hyperlight/j/5581EA0668/) — Cambridge, MA
 - [iherb — Software Development Intern](https://job-boards.greenhouse.io/iherb/jobs/7776154003) — United States of America - Remote / Home Office
+- [kbr — Intern, Distributed Spacecraft Autonomy](https://kbr.wd5.myworkdayjobs.com/en-US/KBR_Careers/job/Mountain-View-California/Intern--Distributed-Spacecraft-Autonomy_R2127411) — Mountain View, California
 - [kos.ai — Software Engineer Intern](https://jobs.ashbyhq.com/kos.ai/efab6ffb-9658-47f7-8b5f-a295c55957d3) — San Francisco
 - [Kudu Dynamics — Software Engineer Intern (1) 🇺🇸](https://leidos.wd5.myworkdayjobs.com/External/job/Chantilly-VA/Software-Engineer-Intern_R-00183707) — Chantilly, VA
 - [Kudu Dynamics — Software Engineer Intern (2) 🇺🇸](https://leidos.wd5.myworkdayjobs.com/External/job/Chantilly-VA/Software-Engineer-Intern_R-00183721) — Chantilly, VA
 - [Kudu Dynamics — Software Engineer Intern (3) 🇺🇸](https://leidos.wd5.myworkdayjobs.com/External/job/Chantilly-VA/Software-Engineer-Intern_R-00183714) — Chantilly, VA
+- [leidos — Data Science Intern](https://leidos.wd5.myworkdayjobs.com/en-US/External/job/San-Diego-CA/Data-Science-Intern_R-00188405) — San Diego, CA
 - [lilasciences — Co-Op, ML Scientist for Biology](https://job-boards.greenhouse.io/lilasciences/jobs/4294212009) — San Francisco, CA USA
 - [lilasciences — Co-Op, ML Scientist for Protein Engineering](https://job-boards.greenhouse.io/lilasciences/jobs/4289387009) — San Francisco, CA USA
 - [lilasciences — Co-op, Machine Learning for Digital Twins](https://job-boards.greenhouse.io/lilasciences/jobs/4280809009) — Cambridge, MA USA
@@ -241,12 +249,13 @@ Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant els
 - [Poshmark — Cloud Platform Engineer Intern, Growth](https://jobs.ashbyhq.com/poshmark/062b84e6-1633-43ae-870b-83cb62893caa) — Redwood City, CA
 - [Prospect Equities — Backend / Frontend Developer Intern](http://prospectequities.applytojob.com/apply/XTbzSAcNtg/Backend-Frontend-Developer-Intern) — Chicago, IL
 - [pylon-labs — Software Engineer, Intern](https://jobs.ashbyhq.com/pylon-labs/fcea8b52-81f1-4b0c-b575-d7b180faec4d) — San Francisco
+- [rockwellautomation — Intern, Applied AI](https://rockwellautomation.wd1.myworkdayjobs.com/en-US/external_rockwell_automation/job/Austin-Texas-United-States/Intern--Applied-AI_R26-5631-2) — Austin, Texas, United States
 - [Salesforce — Software Engineer Intern (Futureforce) 🔒](https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/California---San-Francisco/Summer-2027-Intern---Software-Engineer_JR340771-1) — San Francisco, CA
 - [serval — Software Engineer Intern](https://jobs.ashbyhq.com/serval/d7fb089c-db8a-4877-a5f3-73a09e67f54b) — San Francisco
 - [skhynixmemorysolutionsamericainc — Software Engineer Intern](https://job-boards.greenhouse.io/skhynixmemorysolutionsamericainc/jobs/4304277009) — San Jose
 - [skhynixmemorysolutionsamericainc — Test Automation Software Engineer Intern](https://job-boards.greenhouse.io/skhynixmemorysolutionsamericainc/jobs/4342038009) — San Jose
 - [Solar Turbines (Caterpillar) — Solutions Platforms Engineered Intern (2027)](https://cat.wd5.myworkdayjobs.com/SolarTurbines/job/San-Diego-California/XMLNAME-2027-Internship----Solutions-Platforms-Engineered_R0000381657) — San Diego, CA
-- [Sony — Software Engineer Intern](https://sonyglobal.wd1.myworkdayjobs.com/en-US/sonyglobalcareers/job/San-Diego/Software-Engineer-Intern_JR-119282) — San Diego, CA
+- [sonyglobal — Software Engineer Intern](https://sonyglobal.wd1.myworkdayjobs.com/en-US/sonyglobalcareers/job/San-Diego/Software-Engineer-Intern_JR-119282) — San Diego
 - [tenstorrentuniversity —  Software Engineering Intern, Power Modeling & AI Tools](https://job-boards.greenhouse.io/tenstorrentuniversity/jobs/5186916007) — Santa Clara, California, United States
 - [tenstorrentuniversity — CPU/AI Workload Analysis Intern](https://job-boards.greenhouse.io/tenstorrentuniversity/jobs/5158533007) — Santa Clara, California, United States
 - [tenstorrentuniversity — Software Intern - AI Compilers](https://job-boards.greenhouse.io/tenstorrentuniversity/jobs/4501189007) — Santa Clara, California, United States
