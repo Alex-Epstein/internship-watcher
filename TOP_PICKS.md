@@ -1,6 +1,6 @@
 # Top picks (auto-generated)
 
-_Quant / SWE / ML roles in target cities. 247 of 662 open roles. Rebuilt every sweep: 2026-08-01 23:00 UTC._
+_Quant / SWE / ML roles in target cities. 246 of 661 open roles. Rebuilt every sweep: 2026-08-02 00:03 UTC._
 
 Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant elsewhere, then other SWE/ML. Within each, sweet-spot firms before elite.
 
@@ -76,7 +76,6 @@ Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant els
 - [Quant SPA: Connamara Technologies — Page changed - check Quant SPA: Connamara Technologies (may mean applications opened)](https://connamara.com/)
 - [Quant SPA: Dark Forest Capital Management — Page changed - check Quant SPA: Dark Forest Capital Management (may mean applications opened)](https://www.darkforesttech.com/)
 - [Quant SPA: DC Energy — Page changed - check Quant SPA: DC Energy (may mean applications opened)](https://www.dc-energy.com/careers)
-- [Quant SPA: Deep Blue Capital — Page changed - check Quant SPA: Deep Blue Capital (may mean applications opened)](https://www.deepbluecap.com/careers/)
 - [Quant SPA: Deephaven Data Labs — Page changed - check Quant SPA: Deephaven Data Labs (may mean applications opened)](https://deephaven.io/company/careers/)
 - [Quant SPA: e360 Power — Page changed - check Quant SPA: e360 Power (may mean applications opened)](https://www.e360power.com/)
 - [Quant SPA: Elmagin Capital — Page changed - check Quant SPA: Elmagin Capital (may mean applications opened)](http://www.elmagincapital.com/careers)
@@ -108,6 +107,7 @@ Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant els
 - [Quant SPA: MarketAxess — Page changed - check Quant SPA: MarketAxess (may mean applications opened)](https://www.marketaxess.com/careers)
 - [Quant SPA: Marquette Partners — Page changed - check Quant SPA: Marquette Partners (may mean applications opened)](http://www.marquettepartnersholdingsllc.com/)
 - [Quant SPA: Massive (formerly Polygon.io) — Page changed - check Quant SPA: Massive (formerly Polygon.io) (may mean applications opened)](https://massive.com/careers)
+- [Quant SPA: Maven Securities — Page changed - check Quant SPA: Maven Securities (may mean applications opened)](https://www.mavensecurities.com/careers/)
 - [Quant SPA: MayStreet — Page changed - check Quant SPA: MayStreet (may mean applications opened)](https://www.lseg.com/en/careers)
 - [Quant SPA: McKay Brothers / Quincy Data — Page changed - check Quant SPA: McKay Brothers / Quincy Data (may mean applications opened)](https://mckay-brothers.com/careers)
 - [Quant SPA: MIAX (Miami International Holdings) — Page changed - check Quant SPA: MIAX (Miami International Holdings) (may mean applications opened)](https://www.miaxglobal.com/company/about/careers)
@@ -129,7 +129,6 @@ Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant els
 - [Quant SPA: Quantitative Investment Management (QIM) — Page changed - check Quant SPA: Quantitative Investment Management (QIM) (may mean applications opened)](https://quantitative.com/)
 - [Quant SPA: Quantlab — Page changed - check Quant SPA: Quantlab (may mean applications opened)](https://www.quantlab.com/careers/)
 - [Quant SPA: Quantlab — Page changed - check Quant SPA: Quantlab (may mean applications opened)](https://www.quantlab.com/careers)
-- [Quant SPA: Qube Research & Technologies — Page changed - check Quant SPA: Qube Research & Technologies (may mean applications opened)](https://www.qube-rt.com/careers)
 - [Quant SPA: Renaissance Technologies — Page changed - check Quant SPA: Renaissance Technologies (may mean applications opened)](https://www.rentec.com/Careers.action?jobs=true)
 - [Quant SPA: Research Affiliates — Page changed - check Quant SPA: Research Affiliates (may mean applications opened)](https://www.researchaffiliates.com/about-us/careers)
 - [Quant SPA: Ridgeline — Page changed - check Quant SPA: Ridgeline (may mean applications opened)](https://ridgeline.ai/careers)
@@ -143,7 +142,6 @@ Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant els
 - [Quant SPA: Statar Capital — Page changed - check Quant SPA: Statar Capital (may mean applications opened)](https://www.statarcapital.com/)
 - [Quant SPA: Sterling Trading Tech — Page changed - check Quant SPA: Sterling Trading Tech (may mean applications opened)](https://sterlingtradingtech.com/careers)
 - [Quant SPA: Sumo Capital — Page changed - check Quant SPA: Sumo Capital (may mean applications opened)](https://sumo.co/)
-- [Quant SPA: swissQuant Group — Page changed - check Quant SPA: swissQuant Group (may mean applications opened)](https://www.swissquant.com/careers/)
 - [Quant SPA: Systematica Investments — Page changed - check Quant SPA: Systematica Investments (may mean applications opened)](https://www.systematica.com/careers)
 - [Quant SPA: T3 Trading Group — Page changed - check Quant SPA: T3 Trading Group (may mean applications opened)](https://t3trading.com/)
 - [Quant SPA: Tenaska (Power Services) — Page changed - check Quant SPA: Tenaska (Power Services) (may mean applications opened)](https://recruiting.ultipro.com/TEN1001TEINC/JobBoard/52989607-07f5-4be5-b6f7-1878fa879db5/)
@@ -152,16 +150,17 @@ Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant els
 - [Quant SPA: Trading Technologies — Page changed - check Quant SPA: Trading Technologies (may mean applications opened)](https://www.tradingtechnologies.com/careers/)
 - [Quant SPA: Tradition (Compagnie Financiere Tradition / TFS) — Page changed - check Quant SPA: Tradition (Compagnie Financiere Tradition / TFS) (may mean applications opened)](https://www.tradition.com/)
 - [Quant SPA: Trexquant Investment — Page changed - check Quant SPA: Trexquant Investment (may mean applications opened)](https://trexquant.com/careers)
-- [Quant SPA: TS Imagine — Page changed - check Quant SPA: TS Imagine (may mean applications opened)](https://tsimagine.com/careers/)
 - [Quant SPA: Twin Eagle Resource Management — Page changed - check Quant SPA: Twin Eagle Resource Management (may mean applications opened)](https://twineagleresourcemanagement.applytojob.com/apply)
 - [Quant SPA: TXSE Group (Texas Stock Exchange) — Page changed - check Quant SPA: TXSE Group (Texas Stock Exchange) (may mean applications opened)](https://www.txse.com)
 - [Quant SPA: Verition Fund Management — Page changed - check Quant SPA: Verition Fund Management (may mean applications opened)](https://www.verition.com/)
+- [Quant SPA: Volant Trading — Page changed - check Quant SPA: Volant Trading (may mean applications opened)](https://volanttrading.com/)
 - [Quant SPA: WEBB Traders — Page changed - check Quant SPA: WEBB Traders (may mean applications opened)](https://www.webbtraders.com/careers)
 - [Quant SPA: Welton Investment Partners — Page changed - check Quant SPA: Welton Investment Partners (may mean applications opened)](https://www.welton.com/)
 - [Quant SPA: WH Trading — Page changed - check Quant SPA: WH Trading (may mean applications opened)](https://www.whtrading.com/)
 - [Quant SPA: Wintermute — Page changed - check Quant SPA: Wintermute (may mean applications opened)](https://www.wintermute.com/careers)
 - [Quant SPA: XBTO — Page changed - check Quant SPA: XBTO (may mean applications opened)](https://www.xbto.com/careers)
 - [Quant SPA: XO Energy — Page changed - check Quant SPA: XO Energy (may mean applications opened)](http://www.xo-energy.com/jobs)
+- [Quant SPA: XR Trading — Page changed - check Quant SPA: XR Trading (may mean applications opened)](https://www.xrtrading.com/careers)
 - [Quant: Trillium Trading — Summer 2027 Equity Trader Internship](https://www.trlm.com/apply/5076067007?gh_jid=5076067007) 🇺🇸 — Miami
 - [Quant SPA: Headlands Tech — Page changed - check Quant SPA: Headlands Tech (may mean applications opened)](https://www.headlandstech.com/careers/) ⚡elite
 - [Susquehanna — Quantitative Strategy Developer Intern](https://careers.sig.com/jobs/10838) ⚡elite — Bala Cynwyd, PA
