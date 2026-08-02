@@ -1,11 +1,15 @@
 name: Internship Watcher
 
 on:
-  schedule:
-    # Hourly (UTC). The run now polls 200+ auto-discovered boards.
-    - cron: "0 * * * *"
-    # Sunday 14:00 UTC (~10am ET) weekly programs/scholarships/REU digest.
-    - cron: "0 14 * * 0"
+  # PAUSED 2026-07-30: Alex landed his Summer 2027 NYC quant offer, so the
+  # hourly/weekly cron is switched off. Uncomment the `schedule:` block below
+  # to reactivate (e.g. for full-time recruiting later). Manual runs via the
+  # "Run workflow" button still work in the meantime.
+  # schedule:
+  #   # Hourly (UTC). The run now polls 200+ auto-discovered boards.
+  #   - cron: "0 * * * *"
+  #   # Sunday 14:00 UTC (~10am ET) weekly programs/scholarships/REU digest.
+  #   - cron: "0 14 * * 0"
   workflow_dispatch: {}   # adds a "Run workflow" button so you can test on demand
 
 permissions:
