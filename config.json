@@ -675,22 +675,8 @@
         "register",
         "deadline"
       ],
-      "note": ""
-    },
-    {
-      "name": "Program: Citadel students (Discover / datathon)",
-      "ats": "pagewatch",
-      "url": "https://www.citadel.com/careers/students/",
-      "watch_keywords": [
-        "discover",
-        "datathon",
-        "2027",
-        "application",
-        "apply",
-        "register",
-        "deadline"
-      ],
-      "note": ""
+      "note": "",
+      "digest": true
     },
     {
       "name": "Program: Jane Street programs & events (INSIGHT/AMP/ETC)",
@@ -707,7 +693,8 @@
         "register",
         "deadline"
       ],
-      "note": ""
+      "note": "",
+      "digest": true
     },
     {
       "name": "Program: IMC students (Launchpad)",
@@ -722,12 +709,13 @@
         "register",
         "deadline"
       ],
-      "note": ""
+      "note": "",
+      "digest": true
     },
     {
       "name": "Program: DRW students",
       "ats": "pagewatch",
-      "url": "https://drw.com/work-at-drw/students",
+      "url": "https://drw.com/careers",
       "watch_keywords": [
         "discovery",
         "insight",
@@ -737,7 +725,8 @@
         "register",
         "deadline"
       ],
-      "note": ""
+      "note": "",
+      "digest": true
     },
     {
       "name": "Program: Optiver students (Springboard)",
@@ -753,12 +742,13 @@
         "register",
         "deadline"
       ],
-      "note": ""
+      "note": "",
+      "digest": true
     },
     {
       "name": "Program: HRT students",
       "ats": "pagewatch",
-      "url": "https://www.hudsonrivertrading.com/students/",
+      "url": "https://www.hudsonrivertrading.com/careers/",
       "watch_keywords": [
         "class",
         "program",
@@ -768,12 +758,13 @@
         "register",
         "deadline"
       ],
-      "note": ""
+      "note": "",
+      "digest": true
     },
     {
       "name": "Program: Two Sigma events",
       "ats": "pagewatch",
-      "url": "https://careers.twosigma.com/careers/SitePage/159397/events",
+      "url": "https://careers.twosigma.com/",
       "watch_keywords": [
         "freshman",
         "sophomore",
@@ -784,7 +775,8 @@
         "register",
         "deadline"
       ],
-      "note": ""
+      "note": "",
+      "digest": true
     },
     {
       "name": "Competition: IMC Prosperity",
@@ -799,22 +791,8 @@
         "register",
         "deadline"
       ],
-      "note": ""
-    },
-    {
-      "name": "Competition: Citadel x Correlation One datathons",
-      "ats": "pagewatch",
-      "url": "https://www.correlation-one.com/citadel",
-      "watch_keywords": [
-        "datathon",
-        "invitational",
-        "2027",
-        "application",
-        "apply",
-        "register",
-        "deadline"
-      ],
-      "note": ""
+      "note": "",
+      "digest": true
     },
     {
       "name": "Competition: WorldQuant BRAIN",
@@ -830,7 +808,8 @@
         "register",
         "deadline"
       ],
-      "note": ""
+      "note": "",
+      "digest": true
     },
     {
       "name": "Hackathons: MLH 2027 season",
@@ -841,7 +820,8 @@
         "atlanta",
         "georgia"
       ],
-      "note": ""
+      "note": "",
+      "digest": true
     },
     {
       "name": "Startup: YC events",
@@ -870,7 +850,8 @@
         "register",
         "deadline"
       ],
-      "note": ""
+      "note": "",
+      "digest": true
     },
     {
       "name": "Lab: MIT Lincoln Laboratory summer program",
@@ -884,7 +865,8 @@
         "register",
         "deadline"
       ],
-      "note": ""
+      "note": "",
+      "digest": true
     },
     {
       "name": "Trackers: underclassmen + research programs (zapplyjobs, JGCL)",
@@ -902,7 +884,8 @@
         "apply",
         "freshman",
         "sophomore"
-      ]
+      ],
+      "digest": true
     },
     {
       "name": "Da Vinci Derivatives (Amsterdam quant)",
@@ -930,7 +913,8 @@
         "deadline",
         "2026",
         "2027"
-      ]
+      ],
+      "digest": true
     },
     {
       "name": "Scholarship: GT fellowships office (Goldwater/Astronaut internal deadlines)",
@@ -943,7 +927,8 @@
         "deadline",
         "2026",
         "2027"
-      ]
+      ],
+      "digest": true
     },
     {
       "name": "Scholarship: UPE (CS honor society) awards",
@@ -956,7 +941,8 @@
         "deadline",
         "2026",
         "2027"
-      ]
+      ],
+      "digest": true
     },
     {
       "name": "Scholarship: IEEE CS Merwin",
@@ -969,7 +955,8 @@
         "deadline",
         "2026",
         "2027"
-      ]
+      ],
+      "digest": true
     },
     {
       "name": "Scholarship: IEEE CS UPE award",
@@ -982,7 +969,8 @@
         "deadline",
         "2026",
         "2027"
-      ]
+      ],
+      "digest": true
     },
     {
       "name": "Scholarship: HKN awards (Madni)",
@@ -995,7 +983,8 @@
         "deadline",
         "2026",
         "2027"
-      ]
+      ],
+      "digest": true
     },
     {
       "name": "Scholarship: GT HKN Beta Mu (induction cycles)",
@@ -1007,7 +996,8 @@
         "application",
         "fall",
         "spring"
-      ]
+      ],
+      "digest": true
     },
     {
       "name": "Scholarship: Masason Foundation",
@@ -1020,7 +1010,8 @@
         "deadline",
         "2026",
         "2027"
-      ]
+      ],
+      "digest": true
     },
     {
       "name": "Fellowship: Neo Scholars (via Substack archive)",
@@ -1031,7 +1022,8 @@
         "application",
         "cohort",
         "open"
-      ]
+      ],
+      "digest": true
     },
     {
       "name": "Fellowship: 8VC",
@@ -1044,7 +1036,8 @@
         "deadline",
         "2026",
         "2027"
-      ]
+      ],
+      "digest": true
     },
     {
       "name": "Fellowship: O'Shaughnessy (reopens Jan 1)",
@@ -1057,7 +1050,8 @@
         "deadline",
         "2026",
         "2027"
-      ]
+      ],
+      "digest": true
     },
     {
       "name": "Fellowship: Soma Fellows",
@@ -1070,7 +1064,8 @@
         "deadline",
         "2026",
         "2027"
-      ]
+      ],
+      "digest": true
     },
     {
       "name": "Fellowship: Interact",
@@ -1083,7 +1078,8 @@
         "deadline",
         "2026",
         "2027"
-      ]
+      ],
+      "digest": true
     },
     {
       "name": "Fellowship: Contrary blog (VP app announcements)",
@@ -1094,20 +1090,8 @@
         "application",
         "fellowship",
         "open"
-      ]
-    },
-    {
-      "name": "Abroad: DAAD RISE Germany (opens ~Nov)",
-      "ats": "pagewatch",
-      "url": "https://www.daad.de/rise/en/rise-germany/",
-      "watch_keywords": [
-        "open",
-        "apply",
-        "application",
-        "deadline",
-        "2026",
-        "2027"
-      ]
+      ],
+      "digest": true
     },
     {
       "name": "Abroad: ETH Zurich CS summer fellowship",
@@ -1120,7 +1104,8 @@
         "deadline",
         "2026",
         "2027"
-      ]
+      ],
+      "digest": true
     },
     {
       "name": "Abroad: Mitacs Globalink (opens ~Aug!)",
@@ -1133,12 +1118,13 @@
         "deadline",
         "2026",
         "2027"
-      ]
+      ],
+      "digest": true
     },
     {
       "name": "Abroad: CERN openlab summer",
       "ats": "pagewatch",
-      "url": "https://openlab.cern/education/CERN-openlab-Summer-Student-Programme",
+      "url": "https://openlab.cern/education",
       "watch_keywords": [
         "open",
         "apply",
@@ -1146,7 +1132,8 @@
         "deadline",
         "2026",
         "2027"
-      ]
+      ],
+      "digest": true
     },
     {
       "name": "NatSec: NSA Codebreaker (fall launch)",
@@ -1157,7 +1144,8 @@
         "register",
         "2026",
         "2027"
-      ]
+      ],
+      "digest": true
     },
     {
       "name": "NatSec: NSIN X-Force fellowship",
@@ -1170,7 +1158,8 @@
         "deadline",
         "2026",
         "2027"
-      ]
+      ],
+      "digest": true
     },
     {
       "name": "NatSec: CIA student programs",
@@ -1181,7 +1170,8 @@
         "internship",
         "apply",
         "deadline"
-      ]
+      ],
+      "digest": true
     },
     {
       "name": "GT: PURA salary award deadlines",
@@ -1194,7 +1184,8 @@
         "deadline",
         "2026",
         "2027"
-      ]
+      ],
+      "digest": true
     },
     {
       "name": "GT: CREATE-X Startup Launch",
@@ -1207,7 +1198,8 @@
         "deadline",
         "2026",
         "2027"
-      ]
+      ],
+      "digest": true
     },
     {
       "name": "Abroad: EPFL ERIP (GT students use ERIP not E3)",
@@ -1218,7 +1210,8 @@
         "2027",
         "open",
         "nomination"
-      ]
+      ],
+      "digest": true
     },
     {
       "name": "Abroad: CERN summer student",
@@ -1230,7 +1223,8 @@
         "application",
         "deadline",
         "2027"
-      ]
+      ],
+      "digest": true
     },
     {
       "name": "Abroad: UMich CERN REU (US route)",
@@ -1240,7 +1234,8 @@
         "2027",
         "portal",
         "open"
-      ]
+      ],
+      "digest": true
     },
     {
       "name": "Abroad: Max Planck CS internships",
@@ -1252,7 +1247,8 @@
         "application",
         "deadline",
         "2027"
-      ]
+      ],
+      "digest": true
     },
     {
       "name": "Abroad: G-Research Spring into Quant Finance",
@@ -1264,7 +1260,8 @@
         "application",
         "deadline",
         "2027"
-      ]
+      ],
+      "digest": true
     },
     {
       "name": "Abroad: IMC EU student programs (Launchpad)",
@@ -1274,7 +1271,8 @@
         "Launchpad",
         "2027",
         "apply"
-      ]
+      ],
+      "digest": true
     },
     {
       "name": "Abroad: AIT Budapest (Spring 2027 semester)",
@@ -1283,7 +1281,8 @@
       "watch_keywords": [
         "Spring 2027",
         "deadline"
-      ]
+      ],
+      "digest": true
     },
     {
       "name": "Abroad: ISTernship ISTA Austria (watch relaunch)",
@@ -1292,7 +1291,8 @@
       "watch_keywords": [
         "2027",
         "open"
-      ]
+      ],
+      "digest": true
     },
     {
       "name": "Scholarship: AFCEA STEM Majors (national)",
@@ -1304,7 +1304,8 @@
         "application",
         "deadline",
         "2027"
-      ]
+      ],
+      "digest": true
     },
     {
       "name": "Scholarship: AFCEA NOVA (Arlington eligible)",
@@ -1316,7 +1317,8 @@
         "application",
         "deadline",
         "2027"
-      ]
+      ],
+      "digest": true
     },
     {
       "name": "Scholarship: AFCEA Belvoir Kevin Carroll",
@@ -1328,7 +1330,8 @@
         "application",
         "deadline",
         "2027"
-      ]
+      ],
+      "digest": true
     },
     {
       "name": "Scholarship: DoD Cyber Service Academy",
@@ -1340,7 +1343,8 @@
         "application",
         "deadline",
         "2027"
-      ]
+      ],
+      "digest": true
     },
     {
       "name": "Scholarship: Lockheed STEM (relaunch watch)",
@@ -1352,7 +1356,8 @@
         "application",
         "deadline",
         "2027"
-      ]
+      ],
+      "digest": true
     },
     {
       "name": "Scholarship: GT cyber (SCP scholarships)",
@@ -1364,7 +1369,8 @@
         "application",
         "deadline",
         "2027"
-      ]
+      ],
+      "digest": true
     },
     {
       "name": "Scholarship: Two Sigma undergrad (check Sept)",
@@ -1374,7 +1380,8 @@
         "scholarship",
         "deadline",
         "2027"
-      ]
+      ],
+      "digest": true
     },
     {
       "name": "Program: HRT CppCon scholarship",
@@ -1386,7 +1393,8 @@
         "application",
         "deadline",
         "2027"
-      ]
+      ],
+      "digest": true
     },
     {
       "name": "Program: D.E. Shaw fellowships (Nexus watch)",
@@ -1396,7 +1404,8 @@
         "Nexus",
         "apply",
         "2027"
-      ]
+      ],
+      "digest": true
     },
     {
       "name": "GT: VIP research application",
@@ -1406,7 +1415,8 @@
         "apply",
         "phase",
         "open"
-      ]
+      ],
+      "digest": true
     },
     {
       "name": "GT: CREATE-X Idea to Prototype",
@@ -1418,7 +1428,8 @@
         "application",
         "deadline",
         "2027"
-      ]
+      ],
+      "digest": true
     },
     {
       "name": "GT: GT-Europe (Metz) semester",
@@ -1428,7 +1439,8 @@
         "Spring 2027",
         "apply",
         "deadline"
-      ]
+      ],
+      "digest": true
     },
     {
       "name": "Competition: DOE CyberForce",
@@ -1439,7 +1451,8 @@
         "apply",
         "open",
         "registration"
-      ]
+      ],
+      "digest": true
     },
     {
       "name": "Competition: National Cyber League",
@@ -1449,7 +1462,8 @@
         "registration",
         "season",
         "2026"
-      ]
+      ],
+      "digest": true
     },
     {
       "name": "Competition: US Cyber Games",
@@ -1460,7 +1474,8 @@
         "combine",
         "season",
         "2026"
-      ]
+      ],
+      "digest": true
     },
     {
       "name": "Competition: COMAP MCM/ICM",
@@ -1469,7 +1484,8 @@
       "watch_keywords": [
         "2027",
         "registration"
-      ]
+      ],
+      "digest": true
     },
     {
       "name": "Competition: picoCTF",
@@ -1479,7 +1495,8 @@
         "2027",
         "registration",
         "competition"
-      ]
+      ],
+      "digest": true
     },
     {
       "name": "zapplyjobs research internships tracker",
@@ -3938,6 +3955,231 @@
         "trader",
         "developer"
       ]
+    },
+    {
+      "name": "Competition: Optiver Ready Trader Go",
+      "ats": "pagewatch",
+      "url": "https://readytradergo.optiver.com/",
+      "digest": true,
+      "watch_keywords": [
+        "register",
+        "2027",
+        "apply"
+      ]
+    },
+    {
+      "name": "Competition: Jane Street puzzles (monthly)",
+      "ats": "pagewatch",
+      "url": "https://www.janestreet.com/puzzles/",
+      "digest": true
+    },
+    {
+      "name": "Competition: Jane Street Kaggle & events",
+      "ats": "pagewatch",
+      "url": "https://www.janestreet.com/join-jane-street/events/",
+      "digest": true
+    },
+    {
+      "name": "Competition: Citadel Terminal (AI algo comp)",
+      "ats": "pagewatch",
+      "url": "https://terminal.c1games.com/",
+      "digest": true
+    },
+    {
+      "name": "Competition: SIG competitions & challenges",
+      "ats": "pagewatch",
+      "url": "https://careers.sig.com/discovery-programs",
+      "digest": true
+    },
+    {
+      "name": "Competition: Kaggle featured comps",
+      "ats": "pagewatch",
+      "url": "https://www.kaggle.com/competitions",
+      "digest": true
+    },
+    {
+      "name": "Competition: QuantConnect / Quantiacs contests",
+      "ats": "pagewatch",
+      "url": "https://www.quantiacs.com/contest",
+      "digest": true
+    },
+    {
+      "name": "Competition: Putnam (MAA)",
+      "ats": "pagewatch",
+      "url": "https://maa.org/math-competitions/putnam-competition",
+      "digest": true,
+      "watch_keywords": [
+        "register",
+        "december",
+        "2026"
+      ]
+    },
+    {
+      "name": "Competition: COMAP MCM/ICM dates",
+      "ats": "pagewatch",
+      "url": "https://www.comap.com/contests/mcm-icm",
+      "digest": true
+    },
+    {
+      "name": "Competition: Virginia Tech Regional Math Contest",
+      "ats": "pagewatch",
+      "url": "https://www.math.vt.edu/",
+      "digest": true
+    },
+    {
+      "name": "Competition: IMC university math olympiad",
+      "ats": "pagewatch",
+      "url": "https://www.imc-math.org.uk/",
+      "digest": true
+    },
+    {
+      "name": "Competition: ICPC global",
+      "ats": "pagewatch",
+      "url": "https://icpc.global/",
+      "digest": true
+    },
+    {
+      "name": "Competition: ICPC Southeast USA region",
+      "ats": "pagewatch",
+      "url": "https://icpc.global/regionals/finder/southeast-usa",
+      "digest": true
+    },
+    {
+      "name": "Competition: MIT Battlecode (January)",
+      "ats": "pagewatch",
+      "url": "https://battlecode.org/",
+      "digest": true
+    },
+    {
+      "name": "Competition: IEEEXtreme (24h, October)",
+      "ats": "pagewatch",
+      "url": "https://ieeextreme.org/",
+      "digest": true
+    },
+    {
+      "name": "Competition: Google Summer of Code",
+      "ats": "pagewatch",
+      "url": "https://summerofcode.withgoogle.com/",
+      "digest": true
+    },
+    {
+      "name": "Competition: MITRE eCTF",
+      "ats": "pagewatch",
+      "url": "https://ectf.mitre.org/",
+      "digest": true
+    },
+    {
+      "name": "Competition: CSAW CTF (NYU)",
+      "ats": "pagewatch",
+      "url": "https://www.csaw.io/",
+      "digest": true
+    },
+    {
+      "name": "Competition: Hivestorm",
+      "ats": "pagewatch",
+      "url": "https://hivestorm.org/",
+      "digest": true
+    },
+    {
+      "name": "Hackathon: HackGT (Georgia Tech)",
+      "ats": "pagewatch",
+      "url": "https://hack.gt/",
+      "digest": true
+    },
+    {
+      "name": "Hackathon: HackMIT",
+      "ats": "pagewatch",
+      "url": "https://hackmit.org/",
+      "digest": true
+    },
+    {
+      "name": "Hackathon: TreeHacks (Stanford)",
+      "ats": "pagewatch",
+      "url": "https://www.treehacks.com/",
+      "digest": true
+    },
+    {
+      "name": "Hackathon: PennApps",
+      "ats": "pagewatch",
+      "url": "https://pennapps.com/",
+      "digest": true
+    },
+    {
+      "name": "Hackathon: Hack the North (Waterloo)",
+      "ats": "pagewatch",
+      "url": "https://hackthenorth.com/",
+      "digest": true
+    },
+    {
+      "name": "Hackathon: Devpost featured",
+      "ats": "pagewatch",
+      "url": "https://devpost.com/hackathons?open_to[]=public",
+      "digest": true
+    },
+    {
+      "name": "Fellowship: Thiel Fellowship",
+      "ats": "pagewatch",
+      "url": "https://thielfellowship.org/",
+      "digest": true
+    },
+    {
+      "name": "Fellowship: Z Fellows",
+      "ats": "pagewatch",
+      "url": "https://www.zfellows.com/",
+      "digest": true
+    },
+    {
+      "name": "Scholarship: DoD SMART",
+      "ats": "pagewatch",
+      "url": "https://www.smartscholarship.org/smart",
+      "digest": true,
+      "watch_keywords": [
+        "open",
+        "apply",
+        "deadline"
+      ]
+    },
+    {
+      "name": "Fellowship: Hertz (senior year)",
+      "ats": "pagewatch",
+      "url": "https://www.hertzfoundation.org/the-fellowship/",
+      "digest": true
+    },
+    {
+      "name": "Fellowship: Churchill Scholarship",
+      "ats": "pagewatch",
+      "url": "https://www.churchillscholarship.org/",
+      "digest": true
+    },
+    {
+      "name": "Fellowship: Marshall Scholarship",
+      "ats": "pagewatch",
+      "url": "https://www.marshallscholarship.org/",
+      "digest": true
+    },
+    {
+      "name": "Fellowship: Rhodes Scholarship",
+      "ats": "pagewatch",
+      "url": "https://www.rhodeshouse.ox.ac.uk/scholarships/",
+      "digest": true
+    },
+    {
+      "name": "GT: PURA salary award",
+      "ats": "pagewatch",
+      "url": "https://undergradresearch.gatech.edu/pura-salary",
+      "digest": true
+    },
+    {
+      "name": "GT: CREATE-X Startup Launch",
+      "ats": "pagewatch",
+      "url": "https://create-x.gatech.edu/",
+      "digest": true
+    },
+    {
+      "name": "GT: undergraduate research opportunities",
+      "ats": "pagewatch",
+      "url": "https://undergradresearch.gatech.edu/",
+      "digest": true
     }
   ]
 }

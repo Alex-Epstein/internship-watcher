@@ -1,7 +1,34 @@
 # Internship Watcher
 
-Hourly GitHub Actions cron that polls job boards and **emails me the moment a new
-Summer 2027 internship opens** in CS / math / quant / AI / ML / CV / defense.
+**CURRENT MODE (2026-08-03): weekly competitions digest only.** Alex signed his
+**Summer 2027 NYC quant offer**, so hourly internship polling is **paused** and the
+only live cron is the **Sunday 14:00 UTC competitions/programs digest**. See
+"Weekly digest" below. The internship machinery is intact and one uncommented cron
+line away in `.github/workflows/watch.yml` (e.g. for full-time recruiting).
+
+Originally: hourly cron that polls job boards and emails the moment a new
+Summer 2027 internship opens in CS / math / quant / AI / ML / CV / defense.
+
+## Weekly digest (the live feature)
+
+Sunday 14:00 UTC → `DIGEST_MODE=1` → `send_weekly_digest()`, which:
+1. Runs `run_digest_sweep()` over ~95 **competition/event/program** sources only
+   (parallel, 12 workers) and reports pages that **changed since last Sunday** —
+   usually meaning applications just opened.
+2. Appends the `PROGRAMS.md` master calendar, then a clickable index of every
+   watched page (generated from config, so it can't go stale).
+
+A source is in the digest iff `_is_digest_source()`: explicit `"digest": true` in
+config wins, else the `name:` prefix is one of Competition/Hackathon/Scholarship/
+Fellowship/Abroad/Program/NatSec/Lab/GT/Grant. Company job boards (`Quant SPA:`,
+`Page:`, `Firm SPA:`) are internship-hunting and stay OUT.
+
+**Pagewatch keying (gotcha #9):** pagewatch state keys are
+`pw::<url>::#<content-hash>` via `_pw_key()`. Keyed by URL alone — as it was
+before 2026-08-03 — a watcher fires **exactly once, ever**, then goes silent, so
+"tell me when applications open" never fires again. The dedicated prefix also
+avoids colliding with job URLs that contain `#` fragments. A URL with no recorded
+hash yet is baselined **silently**, so a keying change can't flood the first email.
 
 ## Who this is for (drives all filtering)
 

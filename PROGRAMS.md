@@ -1,125 +1,169 @@
-# Programs, competitions & early-pipeline calendar
-Verified 2026-07-13 by research sweep. Emailed automatically every Sunday 9am ET.
-Pagewatchers in config.json alert on changes; this file is the master calendar.
+# Competitions, programs & opportunities calendar
 
-## ⏰ NEXT 90 DAYS — act on these
-- **DoD SMART Scholarship — opens Aug 1, closes first Friday of Dec.** Full
-  tuition + stipend + DoD job; his clearance sails through adjudication.
-- **NREIP (Navy labs) — opens ~Aug, closes ~Oct 31.** Clearance = major edge.
-- **NASA Spring 2027 (OSTEM) — due Sep 14, 2026** (Summer 2027 due Feb 26, 2027).
-- **DOE SULI Spring 2027 — apps OPEN NOW, due Sep 30, 2026** (Summer 2027 ~Jan).
-- **Jane Street ETC — apps ~Sept.** Two Sigma early pool + Mentor Connect ~Aug-Sep.
-- **Discover Citadel / Citadel Securities — apps late Aug-fall** (grad Dec 2027 to
-  Jun 2029 = he qualifies; all-expenses-paid).
-- **NVIDIA Ignite — ~Oct 6-19, TWO-WEEK window** (pagewatched).
-- **JHU APL CIRCUIT — opens ~Sept, priority ~Oct** (year-long, clearance-friendly).
-- Amazon Propel + Palantir Accelerate (underclassmen) — postings ~Jul-Aug, watcher
-  catches these via the normal feeds.
+Emailed every Sunday 10am ET. Research verified 2026-07-13; reframed 2026-08-03
+after Alex signed his **Summer 2027 NYC quant offer**. Internship polling is off —
+this calendar is competitions, contests, hackathons, scholarships and research.
+The `digest: true` pagewatchers in config.json alert when these pages change.
 
-## Quant discovery / early programs
-- SIG Discovery Day — rolling on careers.sig.com/discovery-programs (pagewatched)
-- Jane Street JSIP (1st/2nd years) — 2026 deadline was Feb 8; expect ~Feb 2027
-- IMC Launchpad — **penultimate-year students graduating FA27-SP28 = EXACT fit**;
-  2-day Chicago event ~May, feeds accelerated Summer 2027 interviews
-- Discover DRW (fall) · Optiver FutureFocus (rolling) · Point72 Sophomore Summit
-  (fall-winter) · Citadel Trading Invitational (fall)
-- Aged out (skip): Jane Street FTTP (first-years only), AMP (HS grads)
+> **Summer 2027 is spoken for.** Anything below that competes for Summer 2027
+> (DAAD RISE, ETH SSRF, CERN, Mitacs, EPFL) is marked ⛔ — the same programs run
+> annually, so they become live again for **Summer 2028** roughly a year out.
+> **Spring 2027 abroad still works** (abroad in spring, NYC in summer).
 
-## Research / labs (Summer 2027 apps mostly open THIS FALL)
-- MIT Lincoln Lab Summer Research — postings Jan-Feb, needs citizenship ✓
-- LLNL DSSI — apps open Nov 2026 (~30 students/yr)
-- Sandia — rolling, heaviest fall-winter; JHU APL ASPIRE/internships fall-winter
-- NSF ETAP portal — REU deadlines cluster Jan-Mar; priority REUs for his profile:
-  UMD CAAR (algorithms/AI), DIMACS (Rutgers theory), Iowa State TrAC-AI
-- ⚠️ NASA Pathways posts on USAJOBS in ~days-long windows (Feb/Jul/Nov) —
-  **USAJOBS fetcher stays dead until USAJOBS_API_KEY + USAJOBS_EMAIL secrets are
-  set (free key: developer.usajobs.gov/apirequest). Do this.**
+---
 
-## Competitions (resume lines)
-- IMC Prosperity — register early spring, runs ~April ($50k pool, Python)
-- Citadel×Correlation One datathons — rolling, submit interest form once
-- WorldQuant BRAIN IQC — stage 1 ~March; BRAIN alphas year-round (foot in door)
-- MIT Battlecode — January ($20k+ prizes) · Jane Street puzzles — monthly
-- Putnam (first Sat of Dec, via GT math) · ICPC (fall, via GT teams)
-- Kaggle featured comps (Jane Street/Optiver ones when live)
+## ⏰ NEXT 90 DAYS — Aug–Oct 2026
 
-## Tracker coverage feeding the watcher
-- vanshb03/Summer2027 (JSON, in) · speedyapply + NUFT + sndsh404 (md, in)
-- NEW: zapplyjobs/underclassmen-internships, zapplyjobs/Research-Internships-
-  for-Undergraduates, Jose-Gael-Cruz-Lopez/underclassmen-opportunities (md, in)
-- SimplifyJobs/Summer2027 does not exist yet (probed 2026-07-13) — auto-probe on
+- **Mitacs Globalink — opens ~Aug.** ⛔ Summer 2027 conflict; note for Summer 2028.
+- **Neo Scholars cohort — expected ~Aug.** Highest-prestige fit for a CS junior.
+  Not a summer program, so no conflict. Watch the Substack archive.
+- **DoD SMART Scholarship — opened Aug 1, closes first Friday of Dec.** Full
+  tuition + stipend + a guaranteed DoD job; his clearance sails through
+  adjudication. Note: it commits post-grad years to DoD — weigh against a quant
+  career before applying.
+- **Sep 16: UPE/ACM award ($1,500)** — must join ACM + GT ACM chapter FIRST (~$19).
+- **Sep 30: IEEE CS Merwin** — needs a 3-month IEEE+CS membership clock, join NOW.
+- **NSA Codebreaker Challenge — launches ~Sept**, runs through the fall,
+  school-ranked. Direct CyberPatriot lineage and a clean resume line.
+- **HackMIT / HackGT applications ~Aug–Sep.** HackGT is on campus.
+- **~Oct 1–31: UPE Scholarship** ($1–4k, needs GT UPE membership, one nominee
+  per chapter).
+- **~Oct: GT PURA Spring-2027 deadline** — $1,500/semester for faculty research.
+  Near-automatic for a 3.87 student and it unlocks a CRA nomination later.
+- **Late Oct: VT Regional Math Contest** — free, taken at GT, ~2 hours.
+- **Oct: IEEEXtreme** (24-hour global programming contest, via GT IEEE branch).
+- **Oct 1: AIT Budapest** / **Oct 15: Budapest Semesters in Math** — Spring 2027
+  abroad deadlines. ✅ still live.
+- **Nov: DOE CyberForce** · **NCL fall season** (both team CTFs).
+- **~Dec 1: Goldwater GT internal deadline** — email
+  fellowshipsadvising@gatech.edu NOW; it needs a research narrative, which is
+  the long pole. The national app opens in the fall.
 
+---
 
-## 💰 Scholarships & fellowships (verified 2026-07-13 sweep)
+## 🏆 Competitions
 
-APPLY NOW (rolling, no deadline):
-- Z Fellows ($10k, 1-week SF) · Emergent Ventures (grant) · Afore Grants
-  ($1k, must be ≤21 — age-gated!) · 1517 Medici ($1k+) · Telora ($10k, <24)
-- CIA (+NGA/DIA) Summer 2027 undergrad internships — they run ~12 months
-  ahead, so the window is effectively NOW; clearance shortens everything
+### Trading / quant (highest signal for his lane)
+- **IMC Prosperity** — registration early spring, runs ~April. $50k pool, Python,
+  team-based. The single best-known undergrad trading competition.
+- **Optiver Ready Trader Go** — algorithmic market-making bot competition.
+- **Citadel × Correlation One datathons** — rolling; submit the interest form
+  once and they invite you to future ones.
+- **WorldQuant BRAIN IQC** — stage 1 ~March; BRAIN alphas can be submitted
+  year-round.
+- **Jane Street puzzles** — monthly, low-effort, genuinely fun.
+- **Kaggle featured comps** — especially the Jane Street / Optiver ones.
+- **Akuna Virtual Quant Trading Challenge** — ran Aug 17–21, 2026. Annual, so
+  watch for the 2027 edition next summer.
 
-FALL 2026 (junior year) calendar:
-- ~Aug: Mitacs Globalink opens (Canada summer research) · Neo Scholars cohort
-  expected (CS soph/juniors — HIGHEST prestige fit) · Contrary VP apps
-- Sep 16: UPE/ACM award ($1,500) — join ACM + GT ACM chapter FIRST (~$19)
-- Sep 30: IEEE CS Merwin — join IEEE+CS society NOW (3-month member clock)
-- Sep-Oct: Jane Street ETC · Two Sigma pool · KP Fellows + 8VC (Summer 2027
-  placements) · Goldwater national app opens (GT internal ~Dec 1 — email
-  fellowshipsadvising@gatech.edu NOW to start; needs research narrative)
-- Oct 31: UPE Scholarship ($1-4k, needs GT UPE membership; one nominee/chapter)
-- Fall: accept HKN Beta Mu induction if invited (CoC juniors 3.5+ eligible)
-  → unlocks Madni $1k (May 2027)
-- ~Dec 1: ETH Zurich CS summer fellowship · ~mid-Dec: DAAD RISE Germany
-- Jan 1: O'Shaughnessy Fellowships reopen ($100k equity-free)
-- ~Mar 30: Astronaut Scholarship (GT is a partner school, 3 GT winners in
-  2026; needs faculty nomination)
-- DEAD ENDS (verified): Tau Beta Pi (GT chapter = engineering majors only),
-  Boren for Spring 2027 (deadline passed Jan 2026), Gilman (needs Pell)
-- Senior-year flags (fall 2027): Churchill (Cambridge Part III), Hertz,
-  Phi Kappa Phi (accept top-7.5% invite), Marshall/Rhodes, CRA Outstanding
-  Undergrad Researcher (needs research record — start via PURA now)
+### Math
+- **Putnam — first Saturday of December**, register via the GT math department.
+  The most prestigious undergrad math competition in North America.
+- **COMAP MCM/ICM — late Jan/early Feb**, teams of 3, 4-day modeling contest.
+  Doable remotely from abroad.
+- **VT Regional Math Contest — late October**, free, hosted at GT.
+- **IMC (International Mathematics Competition)** — summer, if GT sends a team.
 
-## 🌍 Abroad-compatible (Spring 2027 + Summer 2027)
-- Spring 2027 destination candidates: GT-Lorraine (Metz, GT-CNRS lab access),
-  AIT Budapest (CS), Budapest Semesters in Mathematics (classic quant signal)
-- Summer 2027 funded research abroad: DAAD RISE (~Dec), ETH SSRF (~Dec 1),
-  EPFL E3 (~Jan-Feb), CERN openlab (~Dec-Jan), Mitacs (~Aug-Sep!), Imperial
-  UROP (email faculty directly), Google Summer of Code (remote, ~Mar-Apr)
-- While in Europe: Optiver + Flow Traders + IMC Amsterdam student events,
-  Da Vinci Derivatives (board now polled directly)
-- Doable from abroad online: COMAP MCM/ICM (Feb, team of 3), NCL spring
-  season, GSoC
+### CS / programming
+- **ICPC** — regionals in the fall via GT teams; Southeast USA region.
+- **MIT Battlecode — January** ($20k+ prizes), month-long AI/strategy tournament
+  that runs over IAP. Strong fit for a systems-minded player.
+- **Meta Hacker Cup** — annual, online rounds.
+- **Google Summer of Code** — ~Mar–Apr applications, remote, paid. ⛔ conflicts
+  with Summer 2027; consider for 2028.
 
-## 🎖️ NatSec / cyber / GT-internal (gap-hunt finds)
-- NSA Codebreaker Challenge (fall, school-ranked — CyberPatriot lineage)
-- Hivestorm (Oct, collegiate CyberPatriot sibling) · NCL (fall+spring) ·
-  US Cyber Games (18-26) · MITRE eCTF (Jan-Apr) · DOE CyberForce (Nov)
-- NSIN X-Force paid defense fellowship (verify cycle post-DIU-reorg)
-- GT PURA: $1,500 salary award per semester for research w/ faculty sponsor —
-  near-guaranteed for a 3.87 student; also unlocks CRA nomination later
-- GTRI student positions beyond CIPHER (rolling; clearance = huge edge)
-- CREATE-X Startup Launch ($5k+ for Volee, apps ~Jan-Mar for summer)
-- VT Regional Math Contest (late Oct, free, taken at GT) · IMC university
-  math olympiad (check if GT sends a team) · HackMIT apps ~Aug-Sep
+### Cyber / CTF (clearance-adjacent)
+- **NSA Codebreaker Challenge** (fall, school-ranked) · **MITRE eCTF** (Jan–Apr)
+- **CSAW CTF** (NYU, fall) · **DOE CyberForce** (Nov) · **Hivestorm** (Oct)
+- **National Cyber League** (fall + spring) · **picoCTF** (March)
+- **US Cyber Games** (ages 18–26)
 
-## 🎯 Highest-priority nearest deadlines (from full sweep, verified 2026-07-13)
-- **~Aug 2026:** Mitacs Globalink opens (soonest abroad deadline) · Neo Scholars cohort · CyberForce apps open
-- **Aug 1:** DoD SMART Scholarship opens (full ride + guaranteed DoD job; clearance = easy adjudication)
-- **Sep 1-Oct 31:** join ACM/IEEE now → UPE-ACM (Sep 16), Merwin (Sep 30), UPE-CS (Oct 1-31)
-- **Sep 30:** DOE SULI Spring 2027 deadline
-- **~Oct:** GT PURA Spring-2027 deadline · NREIP · AIT Budapest (Oct 1) · BSM (Oct 15) · NSA Codebreaker launches
-- **Oct-Dec:** EPFL ERIP nomination · DAAD RISE (Nov 30) · ETH SSRF (~Dec 16) · MPI-CS (~Nov 1) · Goldwater GT deadline (~Dec 1)
-- **Dec 2026-Feb 2027:** DoD Cyber Service Academy (senior-year full ride — chase GT POC via scp.cc.gatech.edu)
+### Hackathons
+- **HackGT** (on campus) · **HackMIT** · **TreeHacks** (Stanford) · **PennApps**
+- **Hack the North** (Waterloo) · **MLH 2027 season** (full calendar) · **Devpost**
 
-## 📌 Abroad Spring 2027 (you'll be overseas — verified fits)
-- **Best "be the semester itself":** GT-Europe/Metz (stack IRL 2958 research), AIT Budapest (CS), Budapest Semesters in Math, EPFL ERIP (Feb-Aug, pays you to research)
-- **Apply NOW:** Da Vinci Derivatives quant intern (May 2027, Amsterdam, targets 2028 grads) — board now polled
-- **Remote-from-abroad:** COMAP MCM/ICM (Jan 28-Feb 1), picoCTF (Mar), NCL spring, Google Summer of Code
-- **Physically-in-Europe edge:** G-Research Spring into Quant Finance (Easter, no class-year cap), IMC Launchpad (May, Amsterdam)
-- **DEAD for you:** Imperial UROP (Jan 2026 rule change bars non-UK students), Flow Traders (no intern visa sponsorship), CERN Technical Student (member-state only)
+---
 
-## ⚠️ Verified dead-ends (stop considering)
-- Tau Beta Pi (GT chapter = engineering majors only) · Boren Spring 2027 (deadline passed) · Gilman (needs Pell)
-- Most quant "diversity" programs (JS INSIGHT/IN FOCUS, DES Discovery/Latitude/Momentum, Two Sigma Diversity)
-- Sophomore-window programs you aged out of: DES Nexus, Discover Citadel 2026, Two Sigma scholarship (verify Sept)
-- RTX/Boeing/Northrop/Lockheed(paused)/Booz general scholarships (all restricted or dead)
+## 💰 Scholarships & fellowships
+
+**Rolling / no deadline — apply anytime:**
+- **Z Fellows** ($10k, 1-week SF program) · **Emergent Ventures** (grant)
+- **1517 Medici** ($1k+) · **Telora** ($10k, under 24)
+- **Afore Grants** ($1k) — ⚠️ age-gated at ≤21, check eligibility before investing time
+- **Thiel Fellowship** ($100k, requires dropping out — listed for completeness)
+
+**Fall 2026 calendar:**
+- ~Aug: **Neo Scholars** cohort · **Contrary Venture Partners** apps
+- Sep 16: **UPE/ACM award** · Sep 30: **IEEE CS Merwin**
+- Sep–Oct: **KP Fellows**, **8VC Fellowship**, **Goldwater** (GT internal ~Dec 1)
+- Oct 31: **UPE Scholarship** · Fall: accept **HKN Beta Mu** induction if invited
+  (CoC juniors 3.5+) → unlocks the Madni $1k in May 2027
+- Jan 1: **O'Shaughnessy Fellowships** reopen ($100k, equity-free)
+- ~Mar 30: **Astronaut Scholarship** — GT is a partner school (3 GT winners in
+  2026); needs a faculty nomination, so line that up in the fall
+- **AFCEA** STEM Majors / NOVA / Belvoir Kevin Carroll (Arlington-eligible)
+
+**Senior-year flags (fall 2027 — start thinking now):**
+- **Churchill** (Cambridge Part III — a genuinely elite quant/math signal)
+- **Hertz**, **Marshall**, **Rhodes**, **Phi Kappa Phi** (accept top-7.5% invite)
+- **CRA Outstanding Undergraduate Researcher** — needs a research record, which
+  is exactly why PURA this fall matters
+
+---
+
+## 🔬 Research & abroad
+
+**Spring 2027 abroad — ✅ still live, no conflict with the summer offer:**
+- **GT-Europe / Metz** (GT-CNRS lab access) · **AIT Budapest** (Oct 1)
+- **Budapest Semesters in Mathematics** (Oct 15) — a classic quant signal
+- **EPFL ERIP** (Feb–Aug, paid research; GT students use ERIP, not E3)
+- Remote-friendly while abroad: COMAP MCM/ICM, NCL spring, picoCTF
+- In-Europe edge: **G-Research Spring into Quant Finance** (Easter, no class-year
+  cap), **IMC Launchpad** (May, Amsterdam)
+
+**Research, non-summer:**
+- **GT PURA** — $1,500/semester, faculty sponsor, ~Oct deadline for Spring 2027
+- **GT undergraduate research** portal — rolling faculty positions
+- **CREATE-X Startup Launch** ($5k+, apps ~Jan–Mar) — the natural home for Volee
+- **GTRI student positions** — rolling; his clearance is a large edge
+
+**⛔ Summer 2027 conflicts (revisit for Summer 2028, ~1 year out):**
+- DAAD RISE Germany (~Nov 30) · ETH Zurich SSRF (~Dec 16) · CERN openlab /
+  CERN summer student (~Dec–Jan) · Max Planck CS (~Nov 1) · Mitacs Globalink
+  (~Aug–Sep) · MIT Lincoln Lab summer · LLNL DSSI · NSF ETAP REUs · SULI · NREIP
+
+---
+
+## 🎖️ NatSec / GT-internal
+- **NSA Codebreaker** (fall) · **DoD Cyber Service Academy** (Dec–Feb, senior-year
+  full ride — chase the GT POC via scp.cc.gatech.edu)
+- **CIA / NGA / DIA student programs** — run ~12 months ahead; clearance shortens
+  everything
+- **NSIN X-Force** paid defense fellowship (verify the cycle post-DIU reorg)
+- **GT SCP cyber scholarships**
+
+---
+
+## ⚠️ Verified dead ends (stop considering)
+- **Tau Beta Pi** — GT chapter is engineering majors only
+- **Boren** Spring 2027 — deadline passed Jan 2026 · **Gilman** — needs Pell
+- **Imperial UROP** — Jan 2026 rule change bars non-UK students
+- **CERN Technical Student** — member states only
+- Most quant "diversity" pipeline programs (JS INSIGHT/IN FOCUS, DES
+  Discovery/Latitude/Momentum, Two Sigma Diversity)
+- Aged out: Jane Street FTTP (first-years), AMP (HS grads), DES Nexus,
+  Discover Citadel 2026
+- RTX / Boeing / Northrop / Lockheed (paused) / Booz general scholarships —
+  all restricted or dead
+
+---
+
+## 📋 Standing notes
+- **USAJOBS fetcher is still inert** — needs `USAJOBS_API_KEY` + `USAJOBS_EMAIL`
+  secrets (free key: developer.usajobs.gov/apirequest). Only matters if federal
+  research programs come back into play.
+- **Hackathon and contest sites are JS single-page apps.** Their static HTML
+  barely changes, so those pagewatchers are weak — the MLH and Devpost calendars
+  are the reliable signal, plus GT club mailing lists.
+- Internship polling (hourly cron) is **paused**, not deleted. One-line revert in
+  `.github/workflows/watch.yml` if full-time recruiting ever needs it.

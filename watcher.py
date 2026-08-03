@@ -243,6 +243,21 @@ def fetch_nuft(firm):
     return out
 
 
+# Pagewatch state keys embed the page's content hash so a CHANGED page counts
+# as new. A dedicated prefix + separator keeps this from colliding with real
+# job URLs, which legitimately contain "#" fragments.
+PW_PREFIX = "pw::"
+PW_SEP = "::#"
+
+
+def _pw_key(url, digest):
+    return f"{PW_PREFIX}{url}{PW_SEP}{digest}"
+
+
+def _pw_url(key):
+    return key[len(PW_PREFIX):].rsplit(PW_SEP, 1)[0]
+
+
 def fetch_pagewatch(firm):
     """
     Change-detector for feed-less pages (REUs, NASA OSTEM, lab portals). Fetches
@@ -266,6 +281,7 @@ def fetch_pagewatch(firm):
         "url": firm["url"],
         "content": "",
         "bypass_filters": True,
+        "pagewatch": True,   # keyed by url+digest so a CHANGED page re-alerts
     }]
 
 
@@ -1157,27 +1173,197 @@ def write_top_picks(current):
 
 
 # ----------------------------- weekly digest -------------------------------- #
+# Sources that belong in the Sunday digest: competitions, events, programs,
+# scholarships, hackathons, research/abroad. Company job boards ("Quant SPA",
+# "Page", "Firm SPA") are internship-hunting and stay OUT -- Alex has his
+# Summer 2027 offer, so the digest is about "reaching new heights", not roles.
+DIGEST_PREFIXES = (
+    "competition", "hackathon", "scholarship", "fellowship", "abroad",
+    "program", "natsec", "lab", "gt", "conference", "grant",
+)
+
+
+def _is_digest_source(firm):
+    """Explicit `digest: true/false` in config wins; otherwise fall back to the
+    name prefix so newly-added Competition:/Hackathon:/... entries opt in
+    automatically."""
+    if "digest" in firm:
+        return bool(firm["digest"])
+    name = (firm.get("name") or "").strip().lower()
+    return name.split(":")[0].strip().rstrip("s") in {
+        p.rstrip("s") for p in DIGEST_PREFIXES}
+
+
+def run_digest_sweep(config, seen):
+    """Poll ONLY the competition/event/program sources and report what changed
+    since last week. Returns (changed_items, updated_seen_state).
+
+    A source's first-ever sighting is recorded silently -- otherwise the first
+    digest would scream that all ~60 sources are 'new'."""
+    sources = [f for f in config.get("firms", [])
+               if f.get("enabled", True) and _is_digest_source(f)]
+    print(f"Digest sweep: polling {len(sources)} competition/program source(s)")
+    changed, new_seen = [], dict(seen)
+    # Only URLs we've already fingerprinted can be judged "changed". A URL
+    # present only under the OLD url-only key has no recorded content hash, so
+    # its first fingerprint is a silent baseline -- otherwise the first run
+    # after this change would report every source as new.
+    fingerprinted = {_pw_url(k) for k in seen if k.startswith(PW_PREFIX)}
+
+    def poll(firm):
+        """Fetch one source. Returns (firm, items) -- never raises."""
+        fetcher = FETCHERS.get(firm.get("ats"))
+        if not fetcher:
+            print(f"  - {firm.get('name','?')}: unknown ats")
+            return firm, []
+        try:
+            return firm, fetcher(firm)
+        except Exception as e:  # noqa: BLE001 -- one dead page must not kill the digest
+            print(f"  x {firm.get('name','?')} skipped: {e}")
+            return firm, []
+
+    # Parallel: ~100 pages sequentially takes many minutes (same reason
+    # autodiscover is threaded -- see gotcha #3 in CLAUDE.md).
+    with ThreadPoolExecutor(max_workers=12) as pool:
+        results = list(pool.map(poll, sources))
+
+    for firm, items in results:
+        for j in items:
+            url = (j.get("url") or "").strip().lower()
+            key = (_pw_key(url, j["id"]) if j.get("pagewatch")
+                   else (url or f"{firm.get('name')}:{j['id']}"))
+            if key in new_seen:
+                continue
+            # Known fingerprint that moved => a real change worth emailing.
+            if url in fingerprinted:
+                changed.append({
+                    "name": firm.get("name", "") or j.get("company", ""),
+                    "url": firm.get("url") or j.get("url", ""),
+                    "title": j.get("title", ""),
+                })
+            new_seen[key] = {"title": j.get("title", ""), "url": j.get("url", "")}
+
+    print(f"Digest sweep: {len(changed)} source(s) changed since last week.")
+    return changed, new_seen
+
+
+def _digest_group(name):
+    """Bucket a source name into an email section."""
+    head = (name or "").split(":")[0].strip().lower()
+    if head.startswith("competition") or head.startswith("hackathon"):
+        return "competitions"
+    if head.startswith("scholarship") or head.startswith("fellowship") or head.startswith("grant"):
+        return "money"
+    if head.startswith("abroad") or head.startswith("lab"):
+        return "research"
+    return "programs"
+
+
 def send_weekly_digest():
-    """Sunday email: PROGRAMS.md content (scholarships/fellowships/REU deadlines)
-    plus a reminder link to the live OPEN_ROLES.md. Separate from the hourly
-    new-role alerts -- this is the 'don't forget the whole calendar' nudge."""
+    """Sunday email. Two halves:
+      1) LIVE -- competition/program pages that CHANGED this week (i.e. an
+         application probably just opened), discovered by run_digest_sweep.
+      2) The PROGRAMS.md master calendar, so nothing with a deadline slips.
+    Deliberately excludes Summer 2027 internship postings: Alex signed his NYC
+    quant offer on 2026-07-30, so this digest is competitions/events only."""
+    config = load_json(CONFIG_FILE, None) or {}
+    seen = load_json(SEEN_FILE, {}) or {}
+
+    changed, new_seen = [], seen
+    try:
+        changed, new_seen = run_digest_sweep(config, seen)
+    except Exception as e:  # noqa: BLE001 -- still send the calendar if polling dies
+        print(f"  x digest sweep failed, sending calendar only: {e}")
+
+    parts = [
+        "<p style='font-size:15px'><b>Weekly competitions &amp; opportunities "
+        "digest.</b> Trading competitions, math &amp; CS contests, hackathons, "
+        "CTFs, scholarships, fellowships, research and abroad programs &mdash; "
+        "everything worth chasing that isn't a job posting.</p>"
+    ]
+
+    if changed:
+        buckets = {"competitions": [], "programs": [], "money": [], "research": []}
+        for c in changed:
+            buckets[_digest_group(c["name"])].append(c)
+        labels = [
+            ("competitions", "&#127942; Competitions &amp; hackathons", "#b45309"),
+            ("programs", "&#128188; Programs &amp; events", "#1553b0"),
+            ("money", "&#128176; Scholarships &amp; fellowships", "#2f6f4f"),
+            ("research", "&#128300; Research &amp; abroad", "#5b3fa0"),
+        ]
+        parts.append(
+            "<div style='border-left:4px solid #b45309;padding:6px 12px;margin:16px 0;"
+            "background:#fffbeb'><h3 style='margin:4px 0'>&#9889; CHANGED THIS WEEK "
+            f"&mdash; {len(changed)} page(s)</h3><p style='margin:2px 0;color:#666;"
+            "font-size:12px'>These pages moved since last Sunday, which usually means "
+            "applications just opened. Check them first.</p></div>"
+        )
+        for key, label, color in labels:
+            if not buckets[key]:
+                continue
+            parts.append(f"<h3 style='margin:14px 0 4px;color:{color}'>{label}</h3><ul>")
+            for c in buckets[key]:
+                nm = escape(c["name"]) or "source"
+                parts.append(f"<li><a href='{escape(c['url'])}'>{nm}</a></li>")
+            parts.append("</ul>")
+    else:
+        parts.append(
+            "<p style='color:#666'>No watched competition/program page changed this "
+            "week. The calendar below is still the thing to work off of.</p>"
+        )
+
     try:
         programs = open("PROGRAMS.md", encoding="utf-8").read()
+        body = re.sub(r"^# (.*)$", r"<h2>\1</h2>", programs, flags=re.M)
+        body = re.sub(r"^## (.*)$", r"<h3>\1</h3>", body, flags=re.M)
+        body = re.sub(r"^- (.*)$", r"<li>\1</li>", body, flags=re.M)
+        body = re.sub(r"\*\*(.+?)\*\*", r"<b>\1</b>", body)
+        body = re.sub(r"\[(.+?)\]\((https?://[^)]+)\)", r"<a href='\2'>\1</a>", body)
+        parts.append(f"<hr><h2>&#128197; The calendar</h2>{body}")
     except FileNotFoundError:
-        print("PROGRAMS.md not found; skipping digest.")
-        return
-    html_body = re.sub(r"^# ", "<h2>", programs, flags=re.M)
-    html_body = re.sub(r"^## (.*)$", r"<h3>\1</h3>", html_body, flags=re.M)
-    html_body = re.sub(r"^- (.*)$", r"<li>\1</li>", html_body, flags=re.M)
-    html_body = html_body.replace("\n\n", "<br><br>")
-    html = (
-        "<p>Weekly reminder: scholarships, fellowships, REUs, competitions, "
-        "abroad programs -- everything with a deadline that isn't a normal "
-        "internship posting.</p>"
-        "<p>Live open-roles snapshot: see OPEN_ROLES.md in the repo.</p>"
-        f"<hr>{html_body}"
+        parts.append("<hr><p>PROGRAMS.md not found &mdash; calendar unavailable.</p>")
+
+    # Clickable index of everything being watched, straight from config.json so
+    # it can never drift out of date. The calendar above names programs; this
+    # makes every one of them one click away.
+    idx = {"competitions": [], "programs": [], "money": [], "research": []}
+    for f in config.get("firms", []):
+        if f.get("enabled", True) and _is_digest_source(f) and f.get("url"):
+            idx[_digest_group(f.get("name", ""))].append(
+                (f.get("name", ""), f["url"]))
+    if any(idx.values()):
+        parts.append(
+            "<hr><h2>&#128279; Every page being watched</h2>"
+            "<p style='color:#888;font-size:12px'>Checked every Sunday. A change "
+            "here is what triggers the alert at the top.</p>"
+        )
+        for key, label in (("competitions", "Competitions &amp; hackathons"),
+                           ("programs", "Programs &amp; events"),
+                           ("money", "Scholarships &amp; fellowships"),
+                           ("research", "Research &amp; abroad")):
+            if not idx[key]:
+                continue
+            parts.append(f"<h4 style='margin:12px 0 4px'>{label}</h4>"
+                         "<ul style='font-size:13px'>")
+            for nm, u in sorted(idx[key]):
+                short = escape(re.sub(r"^[^:]+:\s*", "", nm) or nm)
+                parts.append(f"<li><a href='{escape(u)}'>{short}</a></li>")
+            parts.append("</ul>")
+
+    parts.append(
+        "<p style='color:#888;font-size:12px'>Sent every Sunday by your watcher. "
+        "Internship polling is paused (offer signed); this digest is competitions "
+        "and programs only.</p>"
     )
-    send_email("[Internship Watcher] Weekly programs & deadlines digest", html)
+
+    send_email(
+        "[Watcher] Weekly competitions digest"
+        + (f" - {len(changed)} page(s) changed" if changed else ""),
+        "\n".join(parts),
+    )
+    save_json(SEEN_FILE, new_seen)
+    print(f"Digest sent; state saved ({len(new_seen)} keys).")
 
 
 # ----------------------------- main ---------------------------------------- #
@@ -1239,6 +1425,11 @@ def main():
         for j in relevant:
             url = (j.get("url") or "").strip().lower()
             gkey = url if url else f"{name}:{j['id']}"
+            # Pagewatch is a CHANGE detector: fold the content digest into the
+            # key so an edited page counts as new. Keyed by URL alone it would
+            # alert exactly once ever and then go silent forever.
+            if j.get("pagewatch"):
+                gkey = _pw_key(url, j["id"])
             # secondary dedup: same company+title+location from a different URL
             sig = "|".join([
                 (j.get("company") or name).lower().strip(),
@@ -1287,19 +1478,9 @@ def main():
     else:
         print(f"{OPEN_ROLES_FILE} not rewritten (partial sweep).")
 
-    # Weekly programs digest: the 13:00 UTC Sunday run (9am ET) mails
-    # PROGRAMS.md so upcoming windows (SMART, SULI, NREIP...) never slip.
-    now = time.gmtime()
-    if now.tm_wday == 6 and now.tm_hour == 13:
-        try:
-            prog = open("PROGRAMS.md", encoding="utf-8").read()
-            send_email(
-                "[Internship Watcher] Weekly programs digest -- apply early",
-                "<pre style='font-family:monospace;font-size:13px'>"
-                + escape(prog) + "</pre>",
-            )
-        except Exception as e:  # noqa: BLE001
-            print(f"  x weekly digest skipped: {e}")
+    # NOTE: the weekly digest is NOT triggered from here. It runs as its own
+    # scheduled job via DIGEST_MODE=1 (see send_weekly_digest). Firing it from
+    # inside the sweep too would double-email on any Sunday 13:00 UTC run.
 
     if DROP_COUNTS:
         top = sorted(DROP_COUNTS.items(), key=lambda kv: -kv[1])

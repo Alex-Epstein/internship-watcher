@@ -1,16 +1,23 @@
-name: Internship Watcher
+name: Watcher (weekly competitions digest)
 
 on:
-  # PAUSED 2026-07-30: Alex landed his Summer 2027 NYC quant offer, so the
-  # hourly/weekly cron is switched off. Uncomment the `schedule:` block below
-  # to reactivate (e.g. for full-time recruiting later). Manual runs via the
-  # "Run workflow" button still work in the meantime.
-  # schedule:
-  #   # Hourly (UTC). The run now polls 200+ auto-discovered boards.
-  #   - cron: "0 * * * *"
-  #   # Sunday 14:00 UTC (~10am ET) weekly programs/scholarships/REU digest.
-  #   - cron: "0 14 * * 0"
-  workflow_dispatch: {}   # adds a "Run workflow" button so you can test on demand
+  schedule:
+    # Sunday 14:00 UTC (~10am ET): weekly competitions/programs/scholarships
+    # digest. This is the ONLY cron still live.
+    - cron: "0 14 * * 0"
+    # HOURLY INTERNSHIP POLLING PAUSED 2026-07-30 (Alex signed his Summer 2027
+    # NYC quant offer). Uncomment to resume, e.g. for full-time recruiting.
+    # - cron: "0 * * * *"
+  workflow_dispatch:      # "Run workflow" button
+    inputs:
+      mode:
+        description: "What to run"
+        required: false
+        default: digest
+        type: choice
+        options:
+          - digest        # competitions/programs digest (the live one)
+          - internships   # full internship sweep (paused; manual only)
 
 permissions:
   contents: write          # allows committing the updated seen_jobs.json
@@ -44,7 +51,9 @@ jobs:
           EMAIL_TO: ${{ secrets.EMAIL_TO }}
           USAJOBS_API_KEY: ${{ secrets.USAJOBS_API_KEY }}
           USAJOBS_EMAIL: ${{ secrets.USAJOBS_EMAIL }}
-          DIGEST_MODE: ${{ github.event.schedule == '0 14 * * 0' && '1' || '0' }}
+          # Digest on the Sunday cron, and on a manual run unless "internships"
+          # was explicitly chosen.
+          DIGEST_MODE: ${{ (github.event.schedule == '0 14 * * 0' || github.event.inputs.mode == 'digest') && '1' || '0' }}
         run: python watcher.py
 
       - name: Save state
