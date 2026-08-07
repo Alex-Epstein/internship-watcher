@@ -6794,5 +6794,9 @@
   "pw::https://www.genevatrading.com/careers-open-positions/::#e3b0c44298fc1c14": {
     "title": "Page changed - check Quant SPA: Geneva Trading (open positions) (may mean applications opened)",
     "url": "https://www.genevatrading.com/careers-open-positions/"
+  },
+  "pw::https://www.qube-rt.com/careers::#e3b0c44298fc1c14": {
+    "title": "Page changed - check Quant SPA: Qube Research & Technologies (may mean applications opened)",
+    "url": "https://www.qube-rt.com/careers"
   }
 }
