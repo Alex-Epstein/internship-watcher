@@ -3,11 +3,13 @@ name: Watcher (weekly competitions digest)
 on:
   schedule:
     # Sunday 14:00 UTC (~10am ET): weekly competitions/programs/scholarships
-    # digest. This is the ONLY cron still live.
+    # digest.
     - cron: "0 14 * * 0"
-    # HOURLY INTERNSHIP POLLING PAUSED 2026-07-30 (Alex signed his Summer 2027
-    # NYC quant offer). Uncomment to resume, e.g. for full-time recruiting.
-    # - cron: "0 * * * *"
+    # Hourly role sweep. REINSTATED 2026-08-07, but narrowed: top-tier quant
+    # firms only, Fall-2027 cycle only (Alex has a Summer 2027 offer and is
+    # interviewing with Citadel for Fall 2027 SWE). Controlled by
+    # `top_firms_only` / `fall_2027_only` in config.json -> filters.
+    - cron: "0 * * * *"
   workflow_dispatch:      # "Run workflow" button
     inputs:
       mode:

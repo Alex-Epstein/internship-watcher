@@ -1,10 +1,20 @@
 # Internship Watcher
 
-**CURRENT MODE (2026-08-03): weekly competitions digest only.** Alex signed his
-**Summer 2027 NYC quant offer**, so hourly internship polling is **paused** and the
-only live cron is the **Sunday 14:00 UTC competitions/programs digest**. See
-"Weekly digest" below. The internship machinery is intact and one uncommented cron
-line away in `.github/workflows/watch.yml` (e.g. for full-time recruiting).
+**CURRENT MODE (2026-08-07): two crons, both narrow.**
+1. **Hourly role sweep — REINSTATED but narrowed to top-tier quant firms and the
+   FALL 2027 cycle only.** Alex has his Summer 2027 NYC quant offer and is
+   interviewing with Citadel for a Fall 2027 SWE seat. Driven by
+   `top_firms_only` / `fall_2027_only` in `config.json → filters`; gates are
+   `_is_top_firm()` (the `TOP_FIRMS` list) and `_is_fall_2027()`. Both log their
+   drops (`[-N not-top-firm]`, `[-N not-fall-2027]`). Competition/program sources
+   are skipped in this mode since Sunday already covers them.
+   **Expect a quiet inbox** — as of 2026-08-07 zero Fall-2027 roles were open
+   across 36 top-firm boards. Fall recruiting opens later in the year.
+2. **Sunday 14:00 UTC competitions/programs digest** (see "Weekly digest").
+
+`_is_fall_2027()` gotcha: a title naming another cycle ("Summer 2027 …") is that
+cycle no matter what the body says. Without that guard, JDs mentioning a "fall
+2027 return offer" were misread as fall roles.
 
 Originally: hourly cron that polls job boards and emails the moment a new
 Summer 2027 internship opens in CS / math / quant / AI / ML / CV / defense.

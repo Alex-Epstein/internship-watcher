@@ -707,6 +707,61 @@ def is_relevant(job, filters):
     return True
 
 
+# ------------- top-firm + Fall-2027 narrowing (added 2026-08-07) ------------ #
+# Alex has his Summer 2027 offer and is now interviewing with Citadel for a
+# FALL 2027 software-engineering seat. Hourly polling is back ON but
+# deliberately narrow: only top-tier quant/trading firms, only Fall-2027 roles.
+# Both gates are switched by `top_firms_only` / `fall_2027_only` in
+# config.json -> filters, so turning this off is a config edit, not a code one.
+TOP_FIRMS = [
+    "citadel", "jane street", "hudson river", "hrt", "jump trading",
+    "two sigma", "drw", "optiver", "imc", "susquehanna", "sig ", "sig,",
+    "five rings", "xtx", "point72", "cubist", "tower research", "d. e. shaw",
+    "d.e. shaw", "deshaw", "de shaw", "pdt partners", "radix", "headlands",
+    "millennium", "balyasny", "squarepoint", "virtu", "akuna", "old mission",
+    "wolverine", "gts", "jane st", "renaissance", "rentec", "aqr",
+    "bridgewater", "man group", "man ahl", "qube", "exoduspoint", "schonfeld",
+    "verition", "walleye", "voleon", "worldquant", "quantlab", "trexquant",
+    "peak6", "belvedere", "geneva trading", "transmarket", "flow traders",
+    "group one", "chicago trading", "ctc", "3red", "allston", "dv trading",
+]
+
+# Fall/autumn/off-cycle signal. \bfall\b deliberately will NOT match
+# "waterfall" (no word boundary), and content is matched only on the tight
+# "fall 2027" adjacency so prose like "prices fall" can't trigger it.
+_FALL_TITLE_RE = re.compile(r"\b(fall|autumn)\b|\boff.?cycle\b", re.I)
+_FALL_2027_TIGHT_RE = re.compile(r"\b(fall|autumn)\s*(of\s+)?(20)?27\b", re.I)
+_ANY_YEAR_RE = re.compile(r"\b(20\d{2})\b")
+_OTHER_CYCLE_RE = re.compile(r"\b(summer|spring|winter)\b", re.I)
+
+
+def _is_top_firm(company):
+    c = (company or "").lower()
+    return any(f in c for f in TOP_FIRMS)
+
+
+def _is_fall_2027(job):
+    """True for Fall-2027-cycle roles.
+
+    Mirrors gotcha #1: if a fall role names NO year at all, keep it -- postings
+    frequently omit the year and a live fall posting is almost always the next
+    cycle. If it names years, 2027 must be among them."""
+    title = job.get("title", "") or ""
+    content = (job.get("content", "") or "")[:6000]
+
+    # A title that names a different cycle IS that cycle, whatever the body
+    # says. Without this, "Summer 2027 SWE Intern" whose JD mentions a fall 2027
+    # return offer would be misread as a fall role.
+    if _OTHER_CYCLE_RE.search(title) and not _FALL_TITLE_RE.search(title):
+        return False
+
+    if _FALL_TITLE_RE.search(title):
+        years = set(_ANY_YEAR_RE.findall(f"{title} {content}"))
+        return (not years) or ("2027" in years)
+    # Not in the title -- demand the tight "Fall 2027" phrase in the body.
+    return bool(_FALL_2027_TIGHT_RE.search(f"{title} {content}"))
+
+
 def is_clearance(job, filters):
     """
     True if a role requires U.S. citizenship or a security clearance -- i.e. roles
@@ -1114,7 +1169,7 @@ def _bucket(comp, title, loc):
 DEAD_URLS = {"https://careers.ice.com/jobs/12830"}
 
 
-def write_top_picks(current):
+def write_top_picks(current, filters=None):
     """Curated subset of OPEN_ROLES: quant/SWE/ML only, target cities only.
     Ranked NYC-quant first, Chicago-quant second (Alex's stated criteria),
     then quant-elsewhere, then non-quant. Regenerated every full sweep."""
@@ -1128,7 +1183,9 @@ def write_top_picks(current):
             continue
         if any(d in (j.get('url','')) for d in DEAD_URLS):
             continue
-        if _excluded(comp):
+        # EXCLUDE_FIRMS hides firms he already applied to -- but in Fall-2027
+        # mode those same top firms are exactly the target, so it's bypassed.
+        if not (filters or {}).get("fall_2027_only") and _excluded(comp):
             continue
         if BAD_LOC_RE.search(loc) and not GOOD_LOC_RE.search(loc):
             continue
@@ -1378,6 +1435,11 @@ def main():
         sys.exit(1)
 
     filters = config.get("filters", {})
+    top_only = bool(filters.get("top_firms_only"))
+    fall_only = bool(filters.get("fall_2027_only"))
+    if top_only or fall_only:
+        print(f"NARROWED SWEEP: top_firms_only={top_only} fall_2027_only={fall_only}"
+              f" ({len(TOP_FIRMS)} firms on the top list)")
     seen = load_json(SEEN_FILE, {}) or {}
     first_run = len(seen) == 0
 
@@ -1393,6 +1455,10 @@ def main():
 
     for firm in config.get("firms", []):
         if not firm.get("enabled", True):
+            continue
+        # In narrowed mode the competition/program sources are Sunday's job --
+        # polling them hourly would spam the role email with page-change pings.
+        if (top_only or fall_only) and _is_digest_source(firm):
             continue
         if time.time() - started > run_budget:
             print("  ! run budget hit -- skipping remaining sources this run")
@@ -1416,12 +1482,29 @@ def main():
                        if j.get("bypass_filters") or _is_us_location(j.get("location"))]
         n_drop = len(relevant) - len(us_relevant)
         relevant = us_relevant
+
+        # Top-firm / Fall-2027 narrowing (2026-08-07). Applied to bypass items
+        # too -- otherwise a pagewatch alert would sail past both gates.
+        n_nontop = n_notfall = 0
+        if top_only:
+            kept = [j for j in relevant if _is_top_firm(j.get("company") or name)]
+            n_nontop = len(relevant) - len(kept)
+            relevant = kept
+        if fall_only:
+            # A top firm's careers page changing is worth knowing even though a
+            # "Page changed" alert carries no cycle text, so pagewatch is exempt.
+            kept = [j for j in relevant
+                    if j.get("pagewatch") or _is_fall_2027(j)]
+            n_notfall = len(relevant) - len(kept)
+            relevant = kept
         for j in relevant:
             j["clearance"] = is_clearance(j, filters)
         n_clear = sum(1 for j in relevant if j["clearance"])
         print(f"  ok {name}: {len(jobs)} jobs, {len(relevant)} relevant"
               + (f" ({n_clear} clearance/US-citizen)" if n_clear else "")
-              + (f" [-{n_drop} non-US]" if n_drop else ""))
+              + (f" [-{n_drop} non-US]" if n_drop else "")
+              + (f" [-{n_nontop} not-top-firm]" if n_nontop else "")
+              + (f" [-{n_notfall} not-fall-2027]" if n_notfall else ""))
         for j in relevant:
             url = (j.get("url") or "").strip().lower()
             gkey = url if url else f"{name}:{j['id']}"
@@ -1474,7 +1557,7 @@ def main():
     # would shrink the file to just the sources it reached.
     if sweep_complete:
         write_open_roles(current)
-        write_top_picks(current)
+        write_top_picks(current, filters)
     else:
         print(f"{OPEN_ROLES_FILE} not rewritten (partial sweep).")
 

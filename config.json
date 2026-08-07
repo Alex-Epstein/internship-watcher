@@ -92,15 +92,10 @@
       "sales and trading",
       "spring 2027",
       "winter 2027",
-      "fall 2027",
       "spring co-op",
       "winter co-op",
-      "fall co-op",
       "spring internship",
       "winter internship",
-      "fall internship",
-      "- fall",
-      "(fall)",
       "mechanical engineer",
       "manufacturing engineer",
       "civil engineer",
@@ -126,10 +121,6 @@
       "principal",
       "distinguished",
       "vice president",
-      "fall intern",
-      "fall-spring",
-      "off-cycle",
-      "off cycle",
       "3-month",
       "3 month",
       "6-month",
@@ -211,7 +202,9 @@
       "pasadena",
       "long beach",
       "irvine"
-    ]
+    ],
+    "top_firms_only": true,
+    "fall_2027_only": true
   },
   "firms": [
     {
