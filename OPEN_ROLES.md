@@ -1,6 +1,6 @@
 # Open roles right now
 
-_Auto-generated each run; do not hand-edit. Last update: 2026-08-08 20:39 UTC. 19 posting(s) currently open and matching filters._
+_Auto-generated each run; do not hand-edit. Last update: 2026-08-08 21:39 UTC. 18 posting(s) currently open and matching filters._
 
 ## Quant SPA: AQR Capital Management (1)
 
@@ -37,10 +37,6 @@ _Auto-generated each run; do not hand-edit. Last update: 2026-08-08 20:39 UTC. 1
 ## Quant SPA: Quantlab (1)
 
 - [Quant SPA: Quantlab — Page changed - check Quant SPA: Quantlab (may mean applications opened)](https://www.quantlab.com/careers/)
-
-## Quant SPA: Qube Research & Technologies (1)
-
-- [Quant SPA: Qube Research & Technologies — Page changed - check Quant SPA: Qube Research & Technologies (may mean applications opened)](https://www.qube-rt.com/careers)
 
 ## Quant SPA: Renaissance Technologies (1)
 
