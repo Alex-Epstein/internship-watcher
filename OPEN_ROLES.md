@@ -1,18 +1,10 @@
 # Open roles right now
 
-_Auto-generated each run; do not hand-edit. Last update: 2026-08-08 07:03 UTC. 20 posting(s) currently open and matching filters._
+_Auto-generated each run; do not hand-edit. Last update: 2026-08-08 07:59 UTC. 18 posting(s) currently open and matching filters._
 
 ## Quant SPA: AQR Capital Management (1)
 
 - [Quant SPA: AQR Capital Management — Page changed - check Quant SPA: AQR Capital Management (may mean applications opened)](https://careers.aqr.com/jobs/department/university-jobs)
-
-## Quant SPA: Bridgewater (1)
-
-- [Quant SPA: Bridgewater — Page changed - check Quant SPA: Bridgewater (may mean applications opened)](https://www.bridgewater.com/working-at-bridgewater)
-
-## Quant SPA: Cumberland (DRW) (1)
-
-- [Quant SPA: Cumberland (DRW) — Page changed - check Quant SPA: Cumberland (DRW) (may mean applications opened)](https://cumberland.io/careers/)
 
 ## Quant SPA: GTS (1)
 
