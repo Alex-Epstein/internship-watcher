@@ -6798,5 +6798,369 @@
   "pw::https://www.qube-rt.com/careers::#e3b0c44298fc1c14": {
     "title": "Page changed - check Quant SPA: Qube Research & Technologies (may mean applications opened)",
     "url": "https://www.qube-rt.com/careers"
+  },
+  "pw::https://careers.sig.com/students::#e3b0c44298fc1c14": {
+    "title": "Page changed - check Program: SIG students (Discovery Day) (may mean applications opened)",
+    "url": "https://careers.sig.com/students"
+  },
+  "pw::https://www.janestreet.com/join-jane-street/programs-and-events/::#9ebe0229f2e3d71c": {
+    "title": "Page changed - check Program: Jane Street programs & events (INSIGHT/AMP/ETC) (may mean applications opened)",
+    "url": "https://www.janestreet.com/join-jane-street/programs-and-events/"
+  },
+  "pw::https://careers.imc.com/us/en/students::#6b44a483961d387a": {
+    "title": "Page changed - check Program: IMC students (Launchpad) (may mean applications opened)",
+    "url": "https://careers.imc.com/us/en/students"
+  },
+  "pw::https://drw.com/careers::#e43ba08557cbb4f1": {
+    "title": "Page changed - check Program: DRW students (may mean applications opened)",
+    "url": "https://drw.com/careers"
+  },
+  "pw::https://optiver.com/working-at-optiver/students/::#e3b0c44298fc1c14": {
+    "title": "Page changed - check Program: Optiver students (Springboard) (may mean applications opened)",
+    "url": "https://optiver.com/working-at-optiver/students/"
+  },
+  "pw::https://www.hudsonrivertrading.com/careers/::#a9d9a2348a39a825": {
+    "title": "Page changed - check Program: HRT students (may mean applications opened)",
+    "url": "https://www.hudsonrivertrading.com/careers/"
+  },
+  "pw::https://careers.twosigma.com/::#fdacdfbf20d49fcc": {
+    "title": "Page changed - check Program: Two Sigma events (may mean applications opened)",
+    "url": "https://careers.twosigma.com/"
+  },
+  "pw::https://prosperity.imc.com/::#a8d747931790dede": {
+    "title": "Page changed - check Competition: IMC Prosperity (may mean applications opened)",
+    "url": "https://prosperity.imc.com/"
+  },
+  "pw::https://www.worldquant.com/brain/::#fda91b7e4f946009": {
+    "title": "Page changed - check Competition: WorldQuant BRAIN (may mean applications opened)",
+    "url": "https://www.worldquant.com/brain/"
+  },
+  "pw::https://mlh.io/seasons/2027/events::#8792a78859d817e6": {
+    "title": "Page changed - check Hackathons: MLH 2027 season (may mean applications opened)",
+    "url": "https://mlh.io/seasons/2027/events"
+  },
+  "pw::https://navalsteminterns.us/nreip/::#2747b855c4587d71": {
+    "title": "Page changed - check Lab: NREIP (Navy research) (may mean applications opened)",
+    "url": "https://navalsteminterns.us/nreip/"
+  },
+  "pw::https://careers.ll.mit.edu/content/summer-research/::#97a5e41b45ddd2b2": {
+    "title": "Page changed - check Lab: MIT Lincoln Laboratory summer program (may mean applications opened)",
+    "url": "https://careers.ll.mit.edu/content/Summer-Research/"
+  },
+  "pw::https://www.nvidia.com/en-us/about-nvidia/careers/university-recruiting/::#7809def9801c9553": {
+    "title": "Page changed - check Program: NVIDIA Ignite (2-week Oct window!) (may mean applications opened)",
+    "url": "https://www.nvidia.com/en-us/about-nvidia/careers/university-recruiting/"
+  },
+  "pw::https://goldwaterscholarship.gov/important-dates/::#cabe821819e64e50": {
+    "title": "Page changed - check Scholarship: Goldwater key dates (may mean applications opened)",
+    "url": "https://goldwaterscholarship.gov/important-dates/"
+  },
+  "pw::https://fellowships.oue.gatech.edu/::#0588281055f0dded": {
+    "title": "Page changed - check Scholarship: GT fellowships office (Goldwater/Astronaut internal deadlines) (may mean applications opened)",
+    "url": "https://fellowships.oue.gatech.edu/"
+  },
+  "pw::https://upe.acm.org/scholarship/::#07b793887f811a29": {
+    "title": "Page changed - check Scholarship: UPE (CS honor society) awards (may mean applications opened)",
+    "url": "https://upe.acm.org/scholarship/"
+  },
+  "pw::https://www.computer.org/volunteering/awards/scholarships/merwin::#0588281055f0dded": {
+    "title": "Page changed - check Scholarship: IEEE CS Merwin (may mean applications opened)",
+    "url": "https://www.computer.org/volunteering/awards/scholarships/merwin"
+  },
+  "pw::https://www.computer.org/volunteering/awards/scholarships/upe-student-award::#f004fca15ed3d7e1": {
+    "title": "Page changed - check Scholarship: IEEE CS UPE award (may mean applications opened)",
+    "url": "https://www.computer.org/volunteering/awards/scholarships/upe-student-award"
+  },
+  "pw::https://hkn.ieee.org/awards::#0588281055f0dded": {
+    "title": "Page changed - check Scholarship: HKN awards (Madni) (may mean applications opened)",
+    "url": "https://hkn.ieee.org/awards"
+  },
+  "pw::https://hkn.gtorg.gatech.edu/::#c56f10b6df69e9d0": {
+    "title": "Page changed - check Scholarship: GT HKN Beta Mu (induction cycles) (may mean applications opened)",
+    "url": "https://hkn.gtorg.gatech.edu/"
+  },
+  "pw::https://masason-foundation.org/en/requirements/::#0588281055f0dded": {
+    "title": "Page changed - check Scholarship: Masason Foundation (may mean applications opened)",
+    "url": "https://masason-foundation.org/en/requirements/"
+  },
+  "pw::https://www.8vc.com/fellowships::#00fb3eb64175a28e": {
+    "title": "Page changed - check Fellowship: 8VC (may mean applications opened)",
+    "url": "https://www.8vc.com/fellowships"
+  },
+  "pw::https://www.osv.llc/fellowships::#00fb3eb64175a28e": {
+    "title": "Page changed - check Fellowship: O'Shaughnessy (reopens Jan 1) (may mean applications opened)",
+    "url": "https://www.osv.llc/fellowships"
+  },
+  "pw::https://programs.somacap.com/fellows::#bc3dce25b381cee0": {
+    "title": "Page changed - check Fellowship: Soma Fellows (may mean applications opened)",
+    "url": "https://programs.somacap.com/fellows"
+  },
+  "pw::https://joininteract.com/::#9de4dc3d869eea14": {
+    "title": "Page changed - check Fellowship: Interact (may mean applications opened)",
+    "url": "https://joininteract.com/"
+  },
+  "pw::https://contrary.com/blog::#9a47ee6f9a3bc501": {
+    "title": "Page changed - check Fellowship: Contrary blog (VP app announcements) (may mean applications opened)",
+    "url": "https://contrary.com/blog"
+  },
+  "pw::https://inf.ethz.ch/studies/summer-research-fellowship.html::#71900119fee6e0fa": {
+    "title": "Page changed - check Abroad: ETH Zurich CS summer fellowship (may mean applications opened)",
+    "url": "https://inf.ethz.ch/studies/summer-research-fellowship.html"
+  },
+  "pw::https://www.mitacs.ca/our-programs/globalink-research-internship-students/::#0e1ebb5f9eb8f2ac": {
+    "title": "Page changed - check Abroad: Mitacs Globalink (opens ~Aug!) (may mean applications opened)",
+    "url": "https://www.mitacs.ca/our-programs/globalink-research-internship-students/"
+  },
+  "pw::https://openlab.cern/education::#71900119fee6e0fa": {
+    "title": "Page changed - check Abroad: CERN openlab summer (may mean applications opened)",
+    "url": "https://openlab.cern/education"
+  },
+  "pw::https://www.nsin.us/x-force/::#00fb3eb64175a28e": {
+    "title": "Page changed - check NatSec: NSIN X-Force fellowship (may mean applications opened)",
+    "url": "https://www.nsin.us/x-force/"
+  },
+  "pw::https://www.cia.gov/careers/student-programs/::#438f61e196d33289": {
+    "title": "Page changed - check NatSec: CIA student programs (may mean applications opened)",
+    "url": "https://www.cia.gov/careers/student-programs/"
+  },
+  "pw::https://experiential.learning.gatech.edu/urop/pura-salary/::#0e1ebb5f9eb8f2ac": {
+    "title": "Page changed - check GT: PURA salary award deadlines (may mean applications opened)",
+    "url": "https://experiential.learning.gatech.edu/urop/pura-salary/"
+  },
+  "pw::https://create-x.gatech.edu/launch/startup-launch::#cd50a0401433cc75": {
+    "title": "Page changed - check GT: CREATE-X Startup Launch (may mean applications opened)",
+    "url": "https://create-x.gatech.edu/launch/startup-launch"
+  },
+  "pw::https://www.epfl.ch/education/international/en/coming-to-epfl/research-internships/::#2348f99874421257": {
+    "title": "Page changed - check Abroad: EPFL ERIP (GT students use ERIP not E3) (may mean applications opened)",
+    "url": "https://www.epfl.ch/education/international/en/coming-to-epfl/research-internships/"
+  },
+  "pw::https://careers.cern/summer::#ad84346bab4c8792": {
+    "title": "Page changed - check Abroad: CERN summer student (may mean applications opened)",
+    "url": "https://careers.cern/summer"
+  },
+  "pw::https://cern-reu.physics.lsa.umich.edu/::#f85d08d044edf1ab": {
+    "title": "Page changed - check Abroad: UMich CERN REU (US route) (may mean applications opened)",
+    "url": "https://cern-reu.physics.lsa.umich.edu/"
+  },
+  "pw::https://www.cis.mpg.de/internships/::#ad84346bab4c8792": {
+    "title": "Page changed - check Abroad: Max Planck CS internships (may mean applications opened)",
+    "url": "https://www.cis.mpg.de/internships/"
+  },
+  "pw::https://www.gresearch.com/spring-into-quant-finance/::#ece535a6fdb79961": {
+    "title": "Page changed - check Abroad: G-Research Spring into Quant Finance (may mean applications opened)",
+    "url": "https://www.gresearch.com/spring-into-quant-finance/"
+  },
+  "pw::https://www.imc.com/eu/careers/students-graduates/programs::#a11a3d7faaaafc3f": {
+    "title": "Page changed - check Abroad: IMC EU student programs (Launchpad) (may mean applications opened)",
+    "url": "https://www.imc.com/eu/careers/students-graduates/programs"
+  },
+  "pw::https://cs.ait-budapest.com/application/application-dates::#dfc8aeb39828e31c": {
+    "title": "Page changed - check Abroad: AIT Budapest (Spring 2027 semester) (may mean applications opened)",
+    "url": "https://cs.ait-budapest.com/application/application-dates"
+  },
+  "pw::https://phd.pages.ist.ac.at/isternship/::#e6b0bad76ffe47ca": {
+    "title": "Page changed - check Abroad: ISTernship ISTA Austria (watch relaunch) (may mean applications opened)",
+    "url": "https://phd.pages.ist.ac.at/isternship/"
+  },
+  "pw::https://www.afcea.org/stem-majors-scholarships::#1fe289205936c3fd": {
+    "title": "Page changed - check Scholarship: AFCEA STEM Majors (national) (may mean applications opened)",
+    "url": "https://www.afcea.org/stem-majors-scholarships"
+  },
+  "pw::https://nova.afceachapters.org/scholarships::#576d6e63d5b8edbf": {
+    "title": "Page changed - check Scholarship: AFCEA NOVA (Arlington eligible) (may mean applications opened)",
+    "url": "https://nova.afceachapters.org/scholarships"
+  },
+  "pw::https://belvoir.afceachapters.org/scholarships::#ad84346bab4c8792": {
+    "title": "Page changed - check Scholarship: AFCEA Belvoir Kevin Carroll (may mean applications opened)",
+    "url": "https://belvoir.afceachapters.org/scholarships"
+  },
+  "pw::https://public.cyber.mil/wid/csa/::#e3b0c44298fc1c14": {
+    "title": "Page changed - check Scholarship: DoD Cyber Service Academy (may mean applications opened)",
+    "url": "https://public.cyber.mil/wid/csa/"
+  },
+  "pw::https://www.lockheedmartin.com/en-us/who-we-are/communities/stem-education/lm-scholarship-program.html::#576d6e63d5b8edbf": {
+    "title": "Page changed - check Scholarship: Lockheed STEM (relaunch watch) (may mean applications opened)",
+    "url": "https://www.lockheedmartin.com/en-us/who-we-are/communities/stem-education/lm-scholarship-program.html"
+  },
+  "pw::https://scp.cc.gatech.edu/scholarships::#5833e8409d166b36": {
+    "title": "Page changed - check Scholarship: GT cyber (SCP scholarships) (may mean applications opened)",
+    "url": "https://scp.cc.gatech.edu/scholarships"
+  },
+  "pw::https://www.twosigma.com/undergraduate-students/::#f552935eea2a6d76": {
+    "title": "Page changed - check Scholarship: Two Sigma undergrad (check Sept) (may mean applications opened)",
+    "url": "https://www.twosigma.com/undergraduate-students/"
+  },
+  "pw::https://cppcon.org/hrt-scholarship/::#ad84346bab4c8792": {
+    "title": "Page changed - check Program: HRT CppCon scholarship (may mean applications opened)",
+    "url": "https://cppcon.org/hrt-scholarship/"
+  },
+  "pw::https://campus.deshaw.com/fellowships::#45fca77f9d934183": {
+    "title": "Page changed - check Program: D.E. Shaw fellowships (Nexus watch) (may mean applications opened)",
+    "url": "https://campus.deshaw.com/fellowships"
+  },
+  "pw::https://vip.gatech.edu/application/::#a6ab6f5d3c681036": {
+    "title": "Page changed - check GT: VIP research application (may mean applications opened)",
+    "url": "https://vip.gatech.edu/application/"
+  },
+  "pw::https://create-x.gatech.edu/make/idea-to-prototype::#dcdf3ab688634c29": {
+    "title": "Page changed - check GT: CREATE-X Idea to Prototype (may mean applications opened)",
+    "url": "https://create-x.gatech.edu/make/idea-to-prototype"
+  },
+  "pw::https://europe.gatech.edu/::#3a1859ffd249d62a": {
+    "title": "Page changed - check GT: GT-Europe (Metz) semester (may mean applications opened)",
+    "url": "https://europe.gatech.edu/"
+  },
+  "pw::https://cyberforce.energy.gov/::#158a323a7ba44870": {
+    "title": "Page changed - check Competition: DOE CyberForce (may mean applications opened)",
+    "url": "https://cyberforce.energy.gov/"
+  },
+  "pw::https://nationalcyberleague.org/competition::#76663f7daca6e0d4": {
+    "title": "Page changed - check Competition: National Cyber League (may mean applications opened)",
+    "url": "https://nationalcyberleague.org/competition"
+  },
+  "pw::https://www.uscybergames.com/::#b5cba771814885e7": {
+    "title": "Page changed - check Competition: US Cyber Games (may mean applications opened)",
+    "url": "https://www.uscybergames.com/"
+  },
+  "pw::https://www.contest.comap.com/undergraduate/contests/::#5313e5bf17148de8": {
+    "title": "Page changed - check Competition: COMAP MCM/ICM (may mean applications opened)",
+    "url": "https://www.contest.comap.com/undergraduate/contests/"
+  },
+  "pw::https://picoctf.org/::#e3b0c44298fc1c14": {
+    "title": "Page changed - check Competition: picoCTF (may mean applications opened)",
+    "url": "https://picoctf.org/"
+  },
+  "pw::https://readytradergo.optiver.com/::#e3b0c44298fc1c14": {
+    "title": "Page changed - check Competition: Optiver Ready Trader Go (may mean applications opened)",
+    "url": "https://readytradergo.optiver.com/"
+  },
+  "pw::https://www.janestreet.com/puzzles/::#d0ef6bf7ee01657a": {
+    "title": "Page changed - check Competition: Jane Street puzzles (monthly) (may mean applications opened)",
+    "url": "https://www.janestreet.com/puzzles/"
+  },
+  "pw::https://www.janestreet.com/join-jane-street/events/::#1ad451601f1e9238": {
+    "title": "Page changed - check Competition: Jane Street Kaggle & events (may mean applications opened)",
+    "url": "https://www.janestreet.com/join-jane-street/events/"
+  },
+  "pw::https://terminal.c1games.com/::#dfe5dc0b80344adb": {
+    "title": "Page changed - check Competition: Citadel Terminal (AI algo comp) (may mean applications opened)",
+    "url": "https://terminal.c1games.com/"
+  },
+  "pw::https://careers.sig.com/discovery-programs::#247a4ec7225b294a": {
+    "title": "Page changed - check Competition: SIG competitions & challenges (may mean applications opened)",
+    "url": "https://careers.sig.com/discovery-programs"
+  },
+  "pw::https://www.kaggle.com/competitions::#f2855f6709463915": {
+    "title": "Page changed - check Competition: Kaggle featured comps (may mean applications opened)",
+    "url": "https://www.kaggle.com/competitions"
+  },
+  "pw::https://www.quantiacs.com/contest::#461f7d0b1d0389a0": {
+    "title": "Page changed - check Competition: QuantConnect / Quantiacs contests (may mean applications opened)",
+    "url": "https://www.quantiacs.com/contest"
+  },
+  "pw::https://maa.org/math-competitions/putnam-competition::#61b6a6c1badb4af9": {
+    "title": "Page changed - check Competition: Putnam (MAA) (may mean applications opened)",
+    "url": "https://maa.org/math-competitions/putnam-competition"
+  },
+  "pw::https://www.comap.com/contests/mcm-icm::#c0ee27ab5d541f55": {
+    "title": "Page changed - check Competition: COMAP MCM/ICM dates (may mean applications opened)",
+    "url": "https://www.comap.com/contests/mcm-icm"
+  },
+  "pw::https://www.math.vt.edu/::#ba8d071467eb2f4e": {
+    "title": "Page changed - check Competition: Virginia Tech Regional Math Contest (may mean applications opened)",
+    "url": "https://www.math.vt.edu/"
+  },
+  "pw::https://www.imc-math.org.uk/::#d89e4fb85744bf6a": {
+    "title": "Page changed - check Competition: IMC university math olympiad (may mean applications opened)",
+    "url": "https://www.imc-math.org.uk/"
+  },
+  "pw::https://icpc.global/::#b226613da9a28419": {
+    "title": "Page changed - check Competition: ICPC global (may mean applications opened)",
+    "url": "https://icpc.global/"
+  },
+  "pw::https://icpc.global/regionals/finder/southeast-usa::#b226613da9a28419": {
+    "title": "Page changed - check Competition: ICPC Southeast USA region (may mean applications opened)",
+    "url": "https://icpc.global/regionals/finder/southeast-usa"
+  },
+  "pw::https://battlecode.org/::#28c8ecda1157982a": {
+    "title": "Page changed - check Competition: MIT Battlecode (January) (may mean applications opened)",
+    "url": "https://battlecode.org/"
+  },
+  "pw::https://ieeextreme.org/::#adc6161d0acbb9dd": {
+    "title": "Page changed - check Competition: IEEEXtreme (24h, October) (may mean applications opened)",
+    "url": "https://ieeextreme.org/"
+  },
+  "pw::https://summerofcode.withgoogle.com/::#b03b4d3905a972ce": {
+    "title": "Page changed - check Competition: Google Summer of Code (may mean applications opened)",
+    "url": "https://summerofcode.withgoogle.com/"
+  },
+  "pw::https://ectf.mitre.org/::#103aa9a64749680b": {
+    "title": "Page changed - check Competition: MITRE eCTF (may mean applications opened)",
+    "url": "https://ectf.mitre.org/"
+  },
+  "pw::https://www.csaw.io/::#7309b793149661ad": {
+    "title": "Page changed - check Competition: CSAW CTF (NYU) (may mean applications opened)",
+    "url": "https://www.csaw.io/"
+  },
+  "pw::https://hivestorm.org/::#e8eb05621e79364c": {
+    "title": "Page changed - check Competition: Hivestorm (may mean applications opened)",
+    "url": "https://hivestorm.org/"
+  },
+  "pw::https://hack.gt/::#4915c735efe0595c": {
+    "title": "Page changed - check Hackathon: HackGT (Georgia Tech) (may mean applications opened)",
+    "url": "https://hack.gt/"
+  },
+  "pw::https://hackmit.org/::#08078451dc3e1e77": {
+    "title": "Page changed - check Hackathon: HackMIT (may mean applications opened)",
+    "url": "https://hackmit.org/"
+  },
+  "pw::https://www.treehacks.com/::#81fb47ad00cd5bce": {
+    "title": "Page changed - check Hackathon: TreeHacks (Stanford) (may mean applications opened)",
+    "url": "https://www.treehacks.com/"
+  },
+  "pw::https://pennapps.com/::#de5852a0f2ac33ea": {
+    "title": "Page changed - check Hackathon: PennApps (may mean applications opened)",
+    "url": "https://pennapps.com/"
+  },
+  "pw::https://hackthenorth.com/::#c784b83c235ac2d6": {
+    "title": "Page changed - check Hackathon: Hack the North (Waterloo) (may mean applications opened)",
+    "url": "https://hackthenorth.com/"
+  },
+  "pw::https://thielfellowship.org/::#ac53b9e3f9490cfa": {
+    "title": "Page changed - check Fellowship: Thiel Fellowship (may mean applications opened)",
+    "url": "https://thielfellowship.org/"
+  },
+  "pw::https://www.zfellows.com/::#41607f0451a3da3a": {
+    "title": "Page changed - check Fellowship: Z Fellows (may mean applications opened)",
+    "url": "https://www.zfellows.com/"
+  },
+  "pw::https://www.smartscholarship.org/smart::#e3b0c44298fc1c14": {
+    "title": "Page changed - check Scholarship: DoD SMART (may mean applications opened)",
+    "url": "https://www.smartscholarship.org/smart"
+  },
+  "pw::https://www.hertzfoundation.org/the-fellowship/::#cff0eef15c78fb58": {
+    "title": "Page changed - check Fellowship: Hertz (senior year) (may mean applications opened)",
+    "url": "https://www.hertzfoundation.org/the-fellowship/"
+  },
+  "pw::https://www.churchillscholarship.org/::#deb38513b5400357": {
+    "title": "Page changed - check Fellowship: Churchill Scholarship (may mean applications opened)",
+    "url": "https://www.churchillscholarship.org/"
+  },
+  "pw::https://www.rhodeshouse.ox.ac.uk/scholarships/::#32526b6b2b36edf8": {
+    "title": "Page changed - check Fellowship: Rhodes Scholarship (may mean applications opened)",
+    "url": "https://www.rhodeshouse.ox.ac.uk/scholarships/"
+  },
+  "pw::https://undergradresearch.gatech.edu/pura-salary::#cf55ca1efd7950cb": {
+    "title": "Page changed - check GT: PURA salary award (may mean applications opened)",
+    "url": "https://undergradresearch.gatech.edu/pura-salary"
+  },
+  "pw::https://create-x.gatech.edu/::#fa84b65a9340d7fe": {
+    "title": "Page changed - check GT: CREATE-X Startup Launch (may mean applications opened)",
+    "url": "https://create-x.gatech.edu/"
+  },
+  "pw::https://undergradresearch.gatech.edu/::#cf55ca1efd7950cb": {
+    "title": "Page changed - check GT: undergraduate research opportunities (may mean applications opened)",
+    "url": "https://undergradresearch.gatech.edu/"
   }
 }
