@@ -1,6 +1,6 @@
 # Top picks (auto-generated)
 
-_Quant / SWE / ML roles in target cities. 20 of 20 open roles. Rebuilt every sweep: 2026-08-10 17:02 UTC._
+_Quant / SWE / ML roles in target cities. 20 of 20 open roles. Rebuilt every sweep: 2026-08-10 18:01 UTC._
 
 Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant elsewhere, then other SWE/ML. Within each, sweet-spot firms before elite.
 
