@@ -1,6 +1,6 @@
 # Top picks (auto-generated)
 
-_Quant / SWE / ML roles in target cities. 19 of 19 open roles. Rebuilt every sweep: 2026-08-12 08:26 UTC._
+_Quant / SWE / ML roles in target cities. 20 of 20 open roles. Rebuilt every sweep: 2026-08-12 10:17 UTC._
 
 Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant elsewhere, then other SWE/ML. Within each, sweet-spot firms before elite.
 
@@ -9,6 +9,7 @@ Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant els
 
 - [Quant SPA: Geneva Trading (open positions) — Page changed - check Quant SPA: Geneva Trading (open positions) (may mean applications opened)](https://www.genevatrading.com/careers-open-positions/)
 - [Quant SPA: Group One Trading — Page changed - check Quant SPA: Group One Trading (may mean applications opened)](https://www.grouponetrading.com/careers/)
+- [Quant SPA: Group One Trading — Page changed - check Quant SPA: Group One Trading (may mean applications opened)](https://group1.com/careers)
 - [Quant SPA: GTS — Page changed - check Quant SPA: GTS (may mean applications opened)](https://www.gtsx.com/careers)
 - [Quant SPA: GTS — Page changed - check Quant SPA: GTS (may mean applications opened)](https://gtsx.com/careers/)
 - [Quant SPA: Peak6 — Page changed - check Quant SPA: Peak6 (may mean applications opened)](https://peak6.com/careers/)
