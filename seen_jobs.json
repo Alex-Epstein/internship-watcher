@@ -7162,5 +7162,29 @@
   "pw::https://undergradresearch.gatech.edu/::#cf55ca1efd7950cb": {
     "title": "Page changed - check GT: undergraduate research opportunities (may mean applications opened)",
     "url": "https://undergradresearch.gatech.edu/"
+  },
+  "pw::https://terminal.c1games.com/::#04edff0c36aacb3f": {
+    "title": "Page changed - check Competition: Citadel Terminal (AI algo comp) (may mean applications opened)",
+    "url": "https://terminal.c1games.com/"
+  },
+  "pw::https://pennapps.com/::#7613a8726610856c": {
+    "title": "Page changed - check Hackathon: PennApps (may mean applications opened)",
+    "url": "https://pennapps.com/"
+  },
+  "pw::https://www.hertzfoundation.org/the-fellowship/::#ae71f65925960a22": {
+    "title": "Page changed - check Fellowship: Hertz (senior year) (may mean applications opened)",
+    "url": "https://www.hertzfoundation.org/the-fellowship/"
+  },
+  "pw::https://undergradresearch.gatech.edu/pura-salary::#168c341ba9cf6a38": {
+    "title": "Page changed - check GT: PURA salary award (may mean applications opened)",
+    "url": "https://undergradresearch.gatech.edu/pura-salary"
+  },
+  "pw::https://create-x.gatech.edu/::#92068df6affddacf": {
+    "title": "Page changed - check GT: CREATE-X Startup Launch (may mean applications opened)",
+    "url": "https://create-x.gatech.edu/"
+  },
+  "pw::https://undergradresearch.gatech.edu/::#168c341ba9cf6a38": {
+    "title": "Page changed - check GT: undergraduate research opportunities (may mean applications opened)",
+    "url": "https://undergradresearch.gatech.edu/"
   }
 }
