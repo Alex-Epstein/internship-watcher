@@ -1,6 +1,6 @@
 # Open roles right now
 
-_Auto-generated each run; do not hand-edit. Last update: 2026-08-17 16:38 UTC. 20 posting(s) currently open and matching filters._
+_Auto-generated each run; do not hand-edit. Last update: 2026-08-17 17:37 UTC. 18 posting(s) currently open and matching filters._
 
 ## Quant SPA: AQR Capital Management (1)
 
@@ -42,10 +42,6 @@ _Auto-generated each run; do not hand-edit. Last update: 2026-08-17 16:38 UTC. 2
 
 - [Quant SPA: Quantlab — Page changed - check Quant SPA: Quantlab (may mean applications opened)](https://www.quantlab.com/careers/)
 
-## Quant SPA: Qube Research & Technologies (1)
-
-- [Quant SPA: Qube Research & Technologies — Page changed - check Quant SPA: Qube Research & Technologies (may mean applications opened)](https://www.qube-rt.com/careers)
-
 ## Quant SPA: Renaissance Technologies (1)
 
 - [Quant SPA: Renaissance Technologies — Page changed - check Quant SPA: Renaissance Technologies (may mean applications opened)](https://www.rentec.com/Careers.action?jobs=true)
@@ -57,10 +53,6 @@ _Auto-generated each run; do not hand-edit. Last update: 2026-08-17 16:38 UTC. 2
 ## Quant SPA: Trexquant Investment (1)
 
 - [Quant SPA: Trexquant Investment — Page changed - check Quant SPA: Trexquant Investment (may mean applications opened)](https://trexquant.com/careers)
-
-## Quant SPA: Verition Fund Management (1)
-
-- [Quant SPA: Verition Fund Management — Page changed - check Quant SPA: Verition Fund Management (may mean applications opened)](https://www.verition.com/)
 
 ## Quant SPA: Wolverine Trading (1)
 
