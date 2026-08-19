@@ -1,6 +1,6 @@
 # Open roles right now
 
-_Auto-generated each run; do not hand-edit. Last update: 2026-08-19 21:35 UTC. 19 posting(s) currently open and matching filters._
+_Auto-generated each run; do not hand-edit. Last update: 2026-08-19 22:34 UTC. 19 posting(s) currently open and matching filters._
 
 ## Quant SPA: AQR Capital Management (1)
 
