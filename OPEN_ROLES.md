@@ -1,6 +1,6 @@
 # Open roles right now
 
-_Auto-generated each run; do not hand-edit. Last update: 2026-08-21 09:46 UTC. 19 posting(s) currently open and matching filters._
+_Auto-generated each run; do not hand-edit. Last update: 2026-08-21 10:39 UTC. 20 posting(s) currently open and matching filters._
 
 ## Quant SPA: AQR Capital Management (1)
 
@@ -53,6 +53,10 @@ _Auto-generated each run; do not hand-edit. Last update: 2026-08-21 09:46 UTC. 1
 ## Quant SPA: Squarepoint Capital (1)
 
 - [Quant SPA: Squarepoint Capital — Page changed - check Quant SPA: Squarepoint Capital (may mean applications opened)](https://www.squarepoint-capital.com/early-careers)
+
+## Quant SPA: Trexquant Investment (1)
+
+- [Quant SPA: Trexquant Investment — Page changed - check Quant SPA: Trexquant Investment (may mean applications opened)](https://trexquant.com/careers)
 
 ## Quant SPA: Verition Fund Management (1)
 
