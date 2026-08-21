@@ -1,6 +1,6 @@
 # Top picks (auto-generated)
 
-_Quant / SWE / ML roles in target cities. 18 of 18 open roles. Rebuilt every sweep: 2026-08-21 15:43 UTC._
+_Quant / SWE / ML roles in target cities. 17 of 17 open roles. Rebuilt every sweep: 2026-08-21 16:45 UTC._
 
 Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant elsewhere, then other SWE/ML. Within each, sweet-spot firms before elite.
 
@@ -13,7 +13,6 @@ Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant els
 - [Quant SPA: GTS — Page changed - check Quant SPA: GTS (may mean applications opened)](https://www.gtsx.com/careers)
 - [Quant SPA: GTS — Page changed - check Quant SPA: GTS (may mean applications opened)](https://gtsx.com/careers/)
 - [Quant SPA: Peak6 — Page changed - check Quant SPA: Peak6 (may mean applications opened)](https://peak6.com/careers/)
-- [Quant SPA: Wolverine Trading — Page changed - check Quant SPA: Wolverine Trading (may mean applications opened)](https://www.wolve.com/careers)
 - [Quant SPA: Wolverine Trading — Page changed - check Quant SPA: Wolverine Trading (may mean applications opened)](https://www.wolve.com/open-positions)
 - [Quant SPA: AQR Capital Management — Page changed - check Quant SPA: AQR Capital Management (may mean applications opened)](https://careers.aqr.com/jobs/department/university-jobs)
 - [Quant SPA: Bridgewater — Page changed - check Quant SPA: Bridgewater (may mean applications opened)](https://www.bridgewater.com/working-at-bridgewater)
