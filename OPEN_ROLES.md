@@ -1,6 +1,6 @@
 # Open roles right now
 
-_Auto-generated each run; do not hand-edit. Last update: 2026-08-23 19:31 UTC. 20 posting(s) currently open and matching filters._
+_Auto-generated each run; do not hand-edit. Last update: 2026-08-23 20:32 UTC. 19 posting(s) currently open and matching filters._
 
 ## Quant SPA: AQR Capital Management (1)
 
@@ -17,10 +17,6 @@ _Auto-generated each run; do not hand-edit. Last update: 2026-08-23 19:31 UTC. 2
 ## Quant SPA: GTS (1)
 
 - [Quant SPA: GTS — Page changed - check Quant SPA: GTS (may mean applications opened)](https://www.gtsx.com/careers)
-
-## Quant SPA: Geneva Trading (open positions) (1)
-
-- [Quant SPA: Geneva Trading (open positions) — Page changed - check Quant SPA: Geneva Trading (open positions) (may mean applications opened)](https://www.genevatrading.com/careers-open-positions/)
 
 ## Quant SPA: Group One Trading (1)
 
