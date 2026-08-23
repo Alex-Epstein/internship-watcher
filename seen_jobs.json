@@ -7186,5 +7186,41 @@
   "pw::https://undergradresearch.gatech.edu/::#168c341ba9cf6a38": {
     "title": "Page changed - check GT: undergraduate research opportunities (may mean applications opened)",
     "url": "https://undergradresearch.gatech.edu/"
+  },
+  "pw::https://www.janestreet.com/puzzles/::#13fdcbe3affcb9c6": {
+    "title": "Page changed - check Competition: Jane Street puzzles (monthly) (may mean applications opened)",
+    "url": "https://www.janestreet.com/puzzles/"
+  },
+  "pw::https://www.janestreet.com/join-jane-street/events/::#53e6f7603638b537": {
+    "title": "Page changed - check Competition: Jane Street Kaggle & events (may mean applications opened)",
+    "url": "https://www.janestreet.com/join-jane-street/events/"
+  },
+  "pw::https://terminal.c1games.com/::#1a1244ebf630b89f": {
+    "title": "Page changed - check Competition: Citadel Terminal (AI algo comp) (may mean applications opened)",
+    "url": "https://terminal.c1games.com/"
+  },
+  "pw::https://www.math.vt.edu/::#5f9e62cf121d1f1e": {
+    "title": "Page changed - check Competition: Virginia Tech Regional Math Contest (may mean applications opened)",
+    "url": "https://www.math.vt.edu/"
+  },
+  "pw::https://www.zfellows.com/::#6263b0ab8798f897": {
+    "title": "Page changed - check Fellowship: Z Fellows (may mean applications opened)",
+    "url": "https://www.zfellows.com/"
+  },
+  "pw::https://www.hertzfoundation.org/the-fellowship/::#f3b2eb88cd739ee7": {
+    "title": "Page changed - check Fellowship: Hertz (senior year) (may mean applications opened)",
+    "url": "https://www.hertzfoundation.org/the-fellowship/"
+  },
+  "pw::https://undergradresearch.gatech.edu/pura-salary::#6b890fe164904e5e": {
+    "title": "Page changed - check GT: PURA salary award (may mean applications opened)",
+    "url": "https://undergradresearch.gatech.edu/pura-salary"
+  },
+  "pw::https://create-x.gatech.edu/::#73f5bc92f7717f98": {
+    "title": "Page changed - check GT: CREATE-X Startup Launch (may mean applications opened)",
+    "url": "https://create-x.gatech.edu/"
+  },
+  "pw::https://undergradresearch.gatech.edu/::#6b890fe164904e5e": {
+    "title": "Page changed - check GT: undergraduate research opportunities (may mean applications opened)",
+    "url": "https://undergradresearch.gatech.edu/"
   }
 }
