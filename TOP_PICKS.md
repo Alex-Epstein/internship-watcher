@@ -1,12 +1,13 @@
 # Top picks (auto-generated)
 
-_Quant / SWE / ML roles in target cities. 16 of 16 open roles. Rebuilt every sweep: 2026-08-25 07:01 UTC._
+_Quant / SWE / ML roles in target cities. 18 of 18 open roles. Rebuilt every sweep: 2026-08-25 07:52 UTC._
 
 Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant elsewhere, then other SWE/ML. Within each, sweet-spot firms before elite.
 
 
 ## Quant elsewhere (other US / Europe)
 
+- [Quant SPA: Geneva Trading (open positions) — Page changed - check Quant SPA: Geneva Trading (open positions) (may mean applications opened)](https://www.genevatrading.com/careers-open-positions/)
 - [Quant SPA: Group One Trading — Page changed - check Quant SPA: Group One Trading (may mean applications opened)](https://www.grouponetrading.com/careers/)
 - [Quant SPA: Group One Trading — Page changed - check Quant SPA: Group One Trading (may mean applications opened)](https://group1.com/careers)
 - [Quant SPA: GTS — Page changed - check Quant SPA: GTS (may mean applications opened)](https://www.gtsx.com/careers)
@@ -17,6 +18,7 @@ Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant els
 - [Quant SPA: AQR Capital Management — Page changed - check Quant SPA: AQR Capital Management (may mean applications opened)](https://careers.aqr.com/jobs/department/university-jobs)
 - [Quant SPA: Bridgewater — Page changed - check Quant SPA: Bridgewater (may mean applications opened)](https://www.bridgewater.com/working-at-bridgewater)
 - [Quant SPA: Man AHL (Man Group) — Page changed - check Quant SPA: Man AHL (Man Group) (may mean applications opened)](https://www.man.com/careers)
+- [Quant SPA: Qube Research & Technologies — Page changed - check Quant SPA: Qube Research & Technologies (may mean applications opened)](https://www.qube-rt.com/careers)
 - [Quant SPA: Renaissance Technologies — Page changed - check Quant SPA: Renaissance Technologies (may mean applications opened)](https://www.rentec.com/Careers.action?jobs=true)
 - [Quant SPA: Squarepoint Capital — Page changed - check Quant SPA: Squarepoint Capital (may mean applications opened)](https://www.squarepoint-capital.com/early-careers)
 - [Quant SPA: Trexquant Investment — Page changed - check Quant SPA: Trexquant Investment (may mean applications opened)](https://trexquant.com/careers)
