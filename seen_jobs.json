@@ -7222,5 +7222,9 @@
   "pw::https://undergradresearch.gatech.edu/::#6b890fe164904e5e": {
     "title": "Page changed - check GT: undergraduate research opportunities (may mean applications opened)",
     "url": "https://undergradresearch.gatech.edu/"
+  },
+  "pw::https://careers.microsoft.com/v2/global/en/students.html::#e3b0c44298fc1c14": {
+    "title": "Page changed - check Page: Microsoft Careers (may mean applications opened)",
+    "url": "https://careers.microsoft.com/v2/global/en/students.html"
   }
 }

@@ -1,6 +1,10 @@
 # Open roles right now
 
-_Auto-generated each run; do not hand-edit. Last update: 2026-08-25 17:41 UTC. 18 posting(s) currently open and matching filters._
+_Auto-generated each run; do not hand-edit. Last update: 2026-08-25 18:48 UTC. 19 posting(s) currently open and matching filters._
+
+## Page: Microsoft Careers (1)
+
+- [Page: Microsoft Careers — Page changed - check Page: Microsoft Careers (may mean applications opened)](https://careers.microsoft.com/v2/global/en/students.html)
 
 ## Quant SPA: AQR Capital Management (1)
 
