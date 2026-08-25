@@ -724,6 +724,17 @@ TOP_FIRMS = [
     "verition", "walleye", "voleon", "worldquant", "quantlab", "trexquant",
     "peak6", "belvedere", "geneva trading", "transmarket", "flow traders",
     "group one", "chicago trading", "ctc", "3red", "allston", "dv trading",
+    # Big tech + AI labs (added 2026-08-25). Alex asked to de-emphasise quant
+    # and lean big tech / AI, so the Fall-2027 sweep covers these too. Roles
+    # reach us through the trackers + direct ATS boards, not the FAANG careers
+    # SPAs (which are disabled -- their static HTML doesn't change on a posting).
+    "google", "deepmind", "meta", "facebook", "apple", "microsoft", "amazon",
+    "nvidia", "netflix", "openai", "anthropic", "scale ai", "databricks",
+    "snowflake", "stripe", "figma", "notion", "airbnb", "uber", "lyft",
+    "linkedin", "palantir", "cohere", "mistral", "hugging face", "perplexity",
+    "cursor", "anysphere", "sierra", "ramp", "plaid", "roblox", "pinterest",
+    "snap inc", "coinbase", "doordash", "instacart", "waymo", "cruise",
+    "tesla", "spacex", "anduril", "applied intuition", "figure ai",
 ]
 
 # Fall/autumn/off-cycle signal. \bfall\b deliberately will NOT match

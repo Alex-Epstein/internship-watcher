@@ -343,7 +343,8 @@
         "2027",
         "intern"
       ],
-      "note": "JS-heavy SPA - weak signal; also set Google's own job alert"
+      "note": "JS-heavy SPA - weak signal; also set Google's own job alert",
+      "enabled": false
     },
     {
       "name": "Page: Meta Careers (internships)",
@@ -353,7 +354,8 @@
         "2027",
         "intern"
       ],
-      "note": "JS-heavy SPA - weak signal; also set Meta's own job alert"
+      "note": "JS-heavy SPA - weak signal; also set Meta's own job alert",
+      "enabled": false
     },
     {
       "name": "Page: Apple Jobs",
@@ -363,7 +365,8 @@
         "2027",
         "intern"
       ],
-      "note": "best-effort"
+      "note": "best-effort",
+      "enabled": false
     },
     {
       "name": "Page: Microsoft Careers",
@@ -383,7 +386,8 @@
         "2027",
         "intern"
       ],
-      "note": "best-effort"
+      "note": "best-effort",
+      "enabled": false
     },
     {
       "name": "Anduril",
@@ -449,22 +453,24 @@
       ]
     },
     {
-      "name": "Page: MIT Lincoln Laboratory",
+      "name": "Lab: MIT Lincoln Laboratory internships",
       "ats": "pagewatch",
       "url": "https://www.ll.mit.edu/careers/entry-professionals/internships-cooperative-programs",
       "watch_keywords": [
         "2027",
         "apply"
-      ]
+      ],
+      "digest": true
     },
     {
-      "name": "Page: Johns Hopkins APL",
+      "name": "Lab: Johns Hopkins APL",
       "ats": "pagewatch",
       "url": "https://www.jhuapl.edu/careers/internships",
       "watch_keywords": [
         "2027",
         "apply"
-      ]
+      ],
+      "digest": true
     },
     {
       "name": "Page: GTRI student assistant roles",
@@ -477,13 +483,14 @@
       ]
     },
     {
-      "name": "Page: MITRE students",
+      "name": "Program: MITRE student programs",
       "ats": "pagewatch",
       "url": "https://www.mitre.org/careers/student-programs",
       "watch_keywords": [
         "2027",
         "intern"
-      ]
+      ],
+      "digest": true
     },
     {
       "name": "Flow Traders",
@@ -524,58 +531,64 @@
       "note": "needs free USAJOBS_API_KEY + USAJOBS_EMAIL secrets"
     },
     {
-      "name": "Page: NSF ETAP (all NSF REUs)",
+      "name": "Program: NSF ETAP (all NSF REUs)",
       "ats": "pagewatch",
       "url": "https://etap.nsf.gov/",
       "watch_keywords": [
         "2027",
         "apply",
         "open"
-      ]
+      ],
+      "digest": true
     },
     {
-      "name": "Page: Pathways to Science (REU database)",
+      "name": "Program: Pathways to Science (REU database)",
       "ats": "pagewatch",
       "url": "https://www.pathwaystoscience.org/",
       "watch_keywords": [
         "summer 2027",
         "2027"
-      ]
+      ],
+      "digest": true
     },
     {
-      "name": "Page: karanwxliaa research-for-UG list",
+      "name": "Program: karanwxliaa research-for-UG list",
       "ats": "pagewatch",
       "url": "https://raw.githubusercontent.com/karanwxliaa/Research-for-UG-Students/main/README.md",
       "watch_keywords": [
         "2027"
-      ]
+      ],
+      "digest": true
     },
     {
-      "name": "Page: JPL internships",
+      "name": "Lab: JPL internships",
       "ats": "pagewatch",
       "url": "https://www.jpl.nasa.gov/careers/internships/",
       "watch_keywords": [
         "2027",
         "apply"
-      ]
+      ],
+      "digest": true
     },
     {
-      "name": "Page: Sandia internships",
+      "name": "Lab: Sandia internships",
       "ats": "pagewatch",
       "url": "https://www.sandia.gov/careers/students-postdocs/internships/",
       "watch_keywords": [
         "2027",
         "apply"
-      ]
+      ],
+      "digest": true
     },
     {
-      "name": "Page: LLNL DSSI",
+      "name": "Lab: LLNL Data Science Institute",
       "ats": "pagewatch",
       "url": "https://data-science.llnl.gov/dssi",
       "watch_keywords": [
         "2027",
         "apply"
-      ]
+      ],
+      "digest": true
     },
     {
       "name": "Tracker: sndsh404 Summer2027 (quant-heavy)",
@@ -617,34 +630,37 @@
       "enabled": false
     },
     {
-      "name": "Page: NASA OSTEM internships",
+      "name": "Lab: NASA OSTEM internships",
       "ats": "pagewatch",
       "url": "https://intern.nasa.gov/",
       "watch_keywords": [
         "summer 2027",
         "fall 2027"
       ],
-      "note": "JS-heavy portal; also join their alert list"
+      "note": "JS-heavy portal; also join their alert list",
+      "digest": true
     },
     {
-      "name": "Page: DOE SULI",
+      "name": "Lab: DOE SULI",
       "ats": "pagewatch",
       "url": "https://science.osti.gov/wdts/suli",
       "watch_keywords": [
         "2027",
         "now accepting",
         "application"
-      ]
+      ],
+      "digest": true
     },
     {
-      "name": "Page: NREIP",
+      "name": "Lab: NREIP (Navy research)",
       "ats": "pagewatch",
       "url": "https://nreip.asee.org/",
       "watch_keywords": [
         "2027",
         "application",
         "now open"
-      ]
+      ],
+      "digest": true
     },
     {
       "name": "EXAMPLE Workday firm - EDIT or DELETE",
@@ -656,22 +672,6 @@
       "enabled": false
     },
     {
-      "name": "Program: SIG students (Discovery Day)",
-      "ats": "pagewatch",
-      "url": "https://careers.sig.com/students",
-      "watch_keywords": [
-        "discovery day",
-        "sophomore",
-        "2027",
-        "application",
-        "apply",
-        "register",
-        "deadline"
-      ],
-      "note": "",
-      "digest": true
-    },
-    {
       "name": "Program: Jane Street programs & events (INSIGHT/AMP/ETC)",
       "ats": "pagewatch",
       "url": "https://www.janestreet.com/join-jane-street/programs-and-events/",
@@ -680,88 +680,6 @@
         "amp",
         "etc",
         "trading challenge",
-        "2027",
-        "application",
-        "apply",
-        "register",
-        "deadline"
-      ],
-      "note": "",
-      "digest": true
-    },
-    {
-      "name": "Program: IMC students (Launchpad)",
-      "ats": "pagewatch",
-      "url": "https://careers.imc.com/us/en/students",
-      "watch_keywords": [
-        "launchpad",
-        "discovery",
-        "2027",
-        "application",
-        "apply",
-        "register",
-        "deadline"
-      ],
-      "note": "",
-      "digest": true
-    },
-    {
-      "name": "Program: DRW students",
-      "ats": "pagewatch",
-      "url": "https://drw.com/careers",
-      "watch_keywords": [
-        "discovery",
-        "insight",
-        "2027",
-        "application",
-        "apply",
-        "register",
-        "deadline"
-      ],
-      "note": "",
-      "digest": true
-    },
-    {
-      "name": "Program: Optiver students (Springboard)",
-      "ats": "pagewatch",
-      "url": "https://optiver.com/working-at-optiver/students/",
-      "watch_keywords": [
-        "springboard",
-        "insight",
-        "sophomore",
-        "2027",
-        "application",
-        "apply",
-        "register",
-        "deadline"
-      ],
-      "note": "",
-      "digest": true
-    },
-    {
-      "name": "Program: HRT students",
-      "ats": "pagewatch",
-      "url": "https://www.hudsonrivertrading.com/careers/",
-      "watch_keywords": [
-        "class",
-        "program",
-        "2027",
-        "application",
-        "apply",
-        "register",
-        "deadline"
-      ],
-      "note": "",
-      "digest": true
-    },
-    {
-      "name": "Program: Two Sigma events",
-      "ats": "pagewatch",
-      "url": "https://careers.twosigma.com/",
-      "watch_keywords": [
-        "freshman",
-        "sophomore",
-        "event",
         "2027",
         "application",
         "apply",
@@ -833,20 +751,6 @@
       "note": ""
     },
     {
-      "name": "Lab: NREIP (Navy research)",
-      "ats": "pagewatch",
-      "url": "https://navalsteminterns.us/nreip/",
-      "watch_keywords": [
-        "2027",
-        "application",
-        "apply",
-        "register",
-        "deadline"
-      ],
-      "note": "",
-      "digest": true
-    },
-    {
       "name": "Lab: MIT Lincoln Laboratory summer program",
       "ats": "pagewatch",
       "url": "https://careers.ll.mit.edu/content/Summer-Research/",
@@ -898,7 +802,7 @@
     {
       "name": "Scholarship: Goldwater key dates",
       "ats": "pagewatch",
-      "url": "https://goldwaterscholarship.gov/important-dates/",
+      "url": "https://goldwaterscholarship.gov/",
       "watch_keywords": [
         "open",
         "apply",
@@ -1167,20 +1071,6 @@
       "digest": true
     },
     {
-      "name": "GT: PURA salary award deadlines",
-      "ats": "pagewatch",
-      "url": "https://experiential.learning.gatech.edu/urop/pura-salary/",
-      "watch_keywords": [
-        "open",
-        "apply",
-        "application",
-        "deadline",
-        "2026",
-        "2027"
-      ],
-      "digest": true
-    },
-    {
       "name": "GT: CREATE-X Startup Launch",
       "ats": "pagewatch",
       "url": "https://create-x.gatech.edu/launch/startup-launch",
@@ -1257,17 +1147,6 @@
       "digest": true
     },
     {
-      "name": "Abroad: IMC EU student programs (Launchpad)",
-      "ats": "pagewatch",
-      "url": "https://www.imc.com/eu/careers/students-graduates/programs",
-      "watch_keywords": [
-        "Launchpad",
-        "2027",
-        "apply"
-      ],
-      "digest": true
-    },
-    {
       "name": "Abroad: AIT Budapest (Spring 2027 semester)",
       "ats": "pagewatch",
       "url": "https://cs.ait-budapest.com/application/application-dates",
@@ -1284,45 +1163,6 @@
       "watch_keywords": [
         "2027",
         "open"
-      ],
-      "digest": true
-    },
-    {
-      "name": "Scholarship: AFCEA STEM Majors (national)",
-      "ats": "pagewatch",
-      "url": "https://www.afcea.org/stem-majors-scholarships",
-      "watch_keywords": [
-        "open",
-        "apply",
-        "application",
-        "deadline",
-        "2027"
-      ],
-      "digest": true
-    },
-    {
-      "name": "Scholarship: AFCEA NOVA (Arlington eligible)",
-      "ats": "pagewatch",
-      "url": "https://nova.afceachapters.org/scholarships",
-      "watch_keywords": [
-        "open",
-        "apply",
-        "application",
-        "deadline",
-        "2027"
-      ],
-      "digest": true
-    },
-    {
-      "name": "Scholarship: AFCEA Belvoir Kevin Carroll",
-      "ats": "pagewatch",
-      "url": "https://belvoir.afceachapters.org/scholarships",
-      "watch_keywords": [
-        "open",
-        "apply",
-        "application",
-        "deadline",
-        "2027"
       ],
       "digest": true
     },
@@ -1361,41 +1201,6 @@
         "apply",
         "application",
         "deadline",
-        "2027"
-      ],
-      "digest": true
-    },
-    {
-      "name": "Scholarship: Two Sigma undergrad (check Sept)",
-      "ats": "pagewatch",
-      "url": "https://www.twosigma.com/undergraduate-students/",
-      "watch_keywords": [
-        "scholarship",
-        "deadline",
-        "2027"
-      ],
-      "digest": true
-    },
-    {
-      "name": "Program: HRT CppCon scholarship",
-      "ats": "pagewatch",
-      "url": "https://cppcon.org/hrt-scholarship/",
-      "watch_keywords": [
-        "open",
-        "apply",
-        "application",
-        "deadline",
-        "2027"
-      ],
-      "digest": true
-    },
-    {
-      "name": "Program: D.E. Shaw fellowships (Nexus watch)",
-      "ats": "pagewatch",
-      "url": "https://campus.deshaw.com/fellowships",
-      "watch_keywords": [
-        "Nexus",
-        "apply",
         "2027"
       ],
       "digest": true
@@ -3973,27 +3778,9 @@
       "digest": true
     },
     {
-      "name": "Competition: Citadel Terminal (AI algo comp)",
-      "ats": "pagewatch",
-      "url": "https://terminal.c1games.com/",
-      "digest": true
-    },
-    {
-      "name": "Competition: SIG competitions & challenges",
-      "ats": "pagewatch",
-      "url": "https://careers.sig.com/discovery-programs",
-      "digest": true
-    },
-    {
       "name": "Competition: Kaggle featured comps",
       "ats": "pagewatch",
       "url": "https://www.kaggle.com/competitions",
-      "digest": true
-    },
-    {
-      "name": "Competition: QuantConnect / Quantiacs contests",
-      "ats": "pagewatch",
-      "url": "https://www.quantiacs.com/contest",
       "digest": true
     },
     {
@@ -4006,12 +3793,6 @@
         "december",
         "2026"
       ]
-    },
-    {
-      "name": "Competition: COMAP MCM/ICM dates",
-      "ats": "pagewatch",
-      "url": "https://www.comap.com/contests/mcm-icm",
-      "digest": true
     },
     {
       "name": "Competition: Virginia Tech Regional Math Contest",
@@ -4029,12 +3810,6 @@
       "name": "Competition: ICPC global",
       "ats": "pagewatch",
       "url": "https://icpc.global/",
-      "digest": true
-    },
-    {
-      "name": "Competition: ICPC Southeast USA region",
-      "ats": "pagewatch",
-      "url": "https://icpc.global/regionals/finder/southeast-usa",
       "digest": true
     },
     {
@@ -4145,12 +3920,6 @@
       "digest": true
     },
     {
-      "name": "Fellowship: Marshall Scholarship",
-      "ats": "pagewatch",
-      "url": "https://www.marshallscholarship.org/",
-      "digest": true
-    },
-    {
       "name": "Fellowship: Rhodes Scholarship",
       "ats": "pagewatch",
       "url": "https://www.rhodeshouse.ox.ac.uk/scholarships/",
@@ -4163,16 +3932,399 @@
       "digest": true
     },
     {
-      "name": "GT: CREATE-X Startup Launch",
-      "ats": "pagewatch",
-      "url": "https://create-x.gatech.edu/",
-      "digest": true
-    },
-    {
       "name": "GT: undergraduate research opportunities",
       "ats": "pagewatch",
       "url": "https://undergradresearch.gatech.edu/",
       "digest": true
+    },
+    {
+      "name": "Program: Google students",
+      "ats": "pagewatch",
+      "url": "https://www.google.com/about/careers/applications/students/",
+      "digest": true,
+      "watch_keywords": [
+        "apply",
+        "application",
+        "open",
+        "deadline",
+        "2027",
+        "2028"
+      ]
+    },
+    {
+      "name": "Program: Google Research careers",
+      "ats": "pagewatch",
+      "url": "https://research.google/careers/",
+      "digest": true,
+      "watch_keywords": [
+        "apply",
+        "application",
+        "open",
+        "deadline",
+        "2027",
+        "2028"
+      ]
+    },
+    {
+      "name": "Program: Apple students",
+      "ats": "pagewatch",
+      "url": "https://www.apple.com/careers/us/students.html",
+      "digest": true,
+      "watch_keywords": [
+        "apply",
+        "application",
+        "open",
+        "deadline",
+        "2027",
+        "2028"
+      ]
+    },
+    {
+      "name": "Program: Microsoft Research careers",
+      "ats": "pagewatch",
+      "url": "https://www.microsoft.com/en-us/research/careers/",
+      "digest": true,
+      "watch_keywords": [
+        "apply",
+        "application",
+        "open",
+        "deadline",
+        "2027",
+        "2028"
+      ]
+    },
+    {
+      "name": "Program: Amazon student programs",
+      "ats": "pagewatch",
+      "url": "https://www.amazon.jobs/en/teams/internships-for-students",
+      "digest": true,
+      "watch_keywords": [
+        "apply",
+        "application",
+        "open",
+        "deadline",
+        "2027",
+        "2028"
+      ]
+    },
+    {
+      "name": "Program: OpenAI residency",
+      "ats": "pagewatch",
+      "url": "https://openai.com/residency/",
+      "digest": true,
+      "watch_keywords": [
+        "apply",
+        "application",
+        "open",
+        "deadline",
+        "2027",
+        "2028"
+      ]
+    },
+    {
+      "name": "Program: OpenAI careers",
+      "ats": "pagewatch",
+      "url": "https://openai.com/careers/",
+      "digest": true,
+      "watch_keywords": [
+        "residency",
+        "intern",
+        "apply",
+        "2027"
+      ]
+    },
+    {
+      "name": "Program: Anthropic careers",
+      "ats": "pagewatch",
+      "url": "https://www.anthropic.com/careers",
+      "digest": true,
+      "watch_keywords": [
+        "intern",
+        "fellow",
+        "residency",
+        "apply",
+        "2027"
+      ]
+    },
+    {
+      "name": "Program: Google DeepMind careers",
+      "ats": "pagewatch",
+      "url": "https://deepmind.google/about/careers/",
+      "digest": true,
+      "watch_keywords": [
+        "apply",
+        "application",
+        "open",
+        "deadline",
+        "2027",
+        "2028"
+      ]
+    },
+    {
+      "name": "Program: DeepMind education & scholarships",
+      "ats": "pagewatch",
+      "url": "https://deepmind.google/about/education/",
+      "digest": true,
+      "watch_keywords": [
+        "apply",
+        "application",
+        "open",
+        "deadline",
+        "2027",
+        "2028"
+      ]
+    },
+    {
+      "name": "Program: Cohere careers",
+      "ats": "pagewatch",
+      "url": "https://cohere.com/careers",
+      "digest": true,
+      "watch_keywords": [
+        "intern",
+        "scholar",
+        "apply",
+        "2027"
+      ]
+    },
+    {
+      "name": "Program: Hugging Face jobs",
+      "ats": "pagewatch",
+      "url": "https://huggingface.co/jobs",
+      "digest": true,
+      "watch_keywords": [
+        "intern",
+        "fellow",
+        "apply"
+      ]
+    },
+    {
+      "name": "Program: MATS (AI alignment research)",
+      "ats": "pagewatch",
+      "url": "https://www.matsprogram.org/",
+      "digest": true,
+      "watch_keywords": [
+        "apply",
+        "cohort",
+        "deadline",
+        "winter",
+        "summer"
+      ]
+    },
+    {
+      "name": "Conference: NeurIPS",
+      "ats": "pagewatch",
+      "url": "https://neurips.cc/",
+      "digest": true,
+      "watch_keywords": [
+        "volunteer",
+        "competition",
+        "deadline",
+        "registration"
+      ]
+    },
+    {
+      "name": "Conference: ICML",
+      "ats": "pagewatch",
+      "url": "https://icml.cc/",
+      "digest": true,
+      "watch_keywords": [
+        "volunteer",
+        "competition",
+        "deadline",
+        "registration"
+      ]
+    },
+    {
+      "name": "Conference: ICLR",
+      "ats": "pagewatch",
+      "url": "https://iclr.cc/",
+      "digest": true,
+      "watch_keywords": [
+        "volunteer",
+        "competition",
+        "deadline",
+        "registration"
+      ]
+    },
+    {
+      "name": "Conference: CVPR",
+      "ats": "pagewatch",
+      "url": "https://cvpr.thecvf.com/",
+      "digest": true,
+      "watch_keywords": [
+        "volunteer",
+        "competition",
+        "deadline",
+        "registration"
+      ]
+    },
+    {
+      "name": "Abroad: IMDEA Software Institute (Madrid)",
+      "ats": "pagewatch",
+      "url": "https://software.imdea.org/",
+      "digest": true,
+      "watch_keywords": [
+        "internship",
+        "student",
+        "position",
+        "open"
+      ]
+    },
+    {
+      "name": "Abroad: IMDEA Networks (Madrid)",
+      "ats": "pagewatch",
+      "url": "https://networks.imdea.org/",
+      "digest": true,
+      "watch_keywords": [
+        "internship",
+        "student",
+        "position",
+        "open"
+      ]
+    },
+    {
+      "name": "Abroad: UPM Madrid international",
+      "ats": "pagewatch",
+      "url": "https://www.upm.es/internacional",
+      "digest": true,
+      "watch_keywords": [
+        "exchange",
+        "student",
+        "apply"
+      ]
+    },
+    {
+      "name": "Abroad: Barcelona Supercomputing Center",
+      "ats": "pagewatch",
+      "url": "https://www.bsc.es/education",
+      "digest": true,
+      "watch_keywords": [
+        "internship",
+        "student",
+        "apply",
+        "open"
+      ]
+    },
+    {
+      "name": "Hackathon: HackUPC Barcelona",
+      "ats": "pagewatch",
+      "url": "https://hackupc.com/",
+      "digest": true,
+      "watch_keywords": [
+        "apply",
+        "registration",
+        "2027"
+      ]
+    },
+    {
+      "name": "Hackathon: Junction Helsinki",
+      "ats": "pagewatch",
+      "url": "https://www.hackjunction.com/",
+      "digest": true,
+      "watch_keywords": [
+        "apply",
+        "registration",
+        "2027"
+      ]
+    },
+    {
+      "name": "Lab: NIST SURF",
+      "ats": "pagewatch",
+      "url": "https://www.nist.gov/surf",
+      "digest": true,
+      "watch_keywords": [
+        "apply",
+        "application",
+        "open",
+        "deadline",
+        "2027",
+        "2028"
+      ]
+    },
+    {
+      "name": "Competition: Codeforces",
+      "ats": "pagewatch",
+      "url": "https://codeforces.com/contests",
+      "digest": true
+    },
+    {
+      "name": "Competition: AtCoder",
+      "ats": "pagewatch",
+      "url": "https://atcoder.jp/contests/",
+      "digest": true
+    },
+    {
+      "name": "Competition: Advent of Code",
+      "ats": "pagewatch",
+      "url": "https://adventofcode.com/",
+      "digest": true
+    },
+    {
+      "name": "Competition: HackTheBox CTF",
+      "ats": "pagewatch",
+      "url": "https://ctf.hackthebox.com/",
+      "digest": true,
+      "watch_keywords": [
+        "university",
+        "ctf",
+        "register"
+      ]
+    },
+    {
+      "name": "Fellowship: AI Grant",
+      "ats": "pagewatch",
+      "url": "https://aigrant.com/",
+      "digest": true,
+      "watch_keywords": [
+        "apply",
+        "application",
+        "open",
+        "deadline",
+        "2027",
+        "2028"
+      ]
+    },
+    {
+      "name": "Fellowship: 1517 Medici Project",
+      "ats": "pagewatch",
+      "url": "https://www.1517fund.com/medici-project/",
+      "digest": true,
+      "watch_keywords": [
+        "apply",
+        "application",
+        "open",
+        "deadline",
+        "2027",
+        "2028"
+      ]
+    },
+    {
+      "name": "Fellowship: South Park Commons",
+      "ats": "pagewatch",
+      "url": "https://www.southparkcommons.com/",
+      "digest": true,
+      "watch_keywords": [
+        "apply",
+        "application",
+        "open",
+        "deadline",
+        "2027",
+        "2028"
+      ]
+    },
+    {
+      "name": "Grant: USENIX student grants",
+      "ats": "pagewatch",
+      "url": "https://www.usenix.org/conferences/student-grants",
+      "digest": true,
+      "watch_keywords": [
+        "apply",
+        "application",
+        "open",
+        "deadline",
+        "2027",
+        "2028"
+      ]
     }
   ]
 }
