@@ -1,6 +1,6 @@
 # Open roles right now
 
-_Auto-generated each run; do not hand-edit. Last update: 2026-08-28 01:31 UTC. 15 posting(s) currently open and matching filters._
+_Auto-generated each run; do not hand-edit. Last update: 2026-08-28 14:14 UTC. 19 posting(s) currently open and matching filters._
 
 ## Page: Microsoft Careers (1)
 
@@ -22,6 +22,10 @@ _Auto-generated each run; do not hand-edit. Last update: 2026-08-28 01:31 UTC. 1
 
 - [Quant SPA: GTS — Page changed - check Quant SPA: GTS (may mean applications opened)](https://www.gtsx.com/careers)
 
+## Quant SPA: Geneva Trading (open positions) (1)
+
+- [Quant SPA: Geneva Trading (open positions) — Page changed - check Quant SPA: Geneva Trading (open positions) (may mean applications opened)](https://www.genevatrading.com/careers-open-positions/)
+
 ## Quant SPA: Group One Trading (1)
 
 - [Quant SPA: Group One Trading — Page changed - check Quant SPA: Group One Trading (may mean applications opened)](https://www.grouponetrading.com/careers/)
@@ -38,6 +42,10 @@ _Auto-generated each run; do not hand-edit. Last update: 2026-08-28 01:31 UTC. 1
 
 - [Quant SPA: Peak6 — Page changed - check Quant SPA: Peak6 (may mean applications opened)](https://peak6.com/careers/)
 
+## Quant SPA: Qube Research & Technologies (1)
+
+- [Quant SPA: Qube Research & Technologies — Page changed - check Quant SPA: Qube Research & Technologies (may mean applications opened)](https://www.qube-rt.com/careers)
+
 ## Quant SPA: Renaissance Technologies (1)
 
 - [Quant SPA: Renaissance Technologies — Page changed - check Quant SPA: Renaissance Technologies (may mean applications opened)](https://www.rentec.com/Careers.action?jobs=true)
@@ -49,6 +57,10 @@ _Auto-generated each run; do not hand-edit. Last update: 2026-08-28 01:31 UTC. 1
 ## Quant SPA: Trexquant Investment (1)
 
 - [Quant SPA: Trexquant Investment — Page changed - check Quant SPA: Trexquant Investment (may mean applications opened)](https://trexquant.com/careers)
+
+## Quant SPA: Verition Fund Management (1)
+
+- [Quant SPA: Verition Fund Management — Page changed - check Quant SPA: Verition Fund Management (may mean applications opened)](https://www.verition.com/)
 
 ## Quant SPA: Wolverine Trading (1)
 
