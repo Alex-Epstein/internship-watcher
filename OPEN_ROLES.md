@@ -1,6 +1,6 @@
 # Open roles right now
 
-_Auto-generated each run; do not hand-edit. Last update: 2026-08-29 00:02 UTC. 16 posting(s) currently open and matching filters._
+_Auto-generated each run; do not hand-edit. Last update: 2026-08-29 06:31 UTC. 19 posting(s) currently open and matching filters._
 
 ## Page: Microsoft Careers (1)
 
@@ -10,9 +10,21 @@ _Auto-generated each run; do not hand-edit. Last update: 2026-08-29 00:02 UTC. 1
 
 - [Quant SPA: AQR Capital Management — Page changed - check Quant SPA: AQR Capital Management (may mean applications opened)](https://careers.aqr.com/jobs/department/university-jobs)
 
+## Quant SPA: Bridgewater (1)
+
+- [Quant SPA: Bridgewater — Page changed - check Quant SPA: Bridgewater (may mean applications opened)](https://www.bridgewater.com/working-at-bridgewater)
+
+## Quant SPA: Cumberland (DRW) (1)
+
+- [Quant SPA: Cumberland (DRW) — Page changed - check Quant SPA: Cumberland (DRW) (may mean applications opened)](https://cumberland.io/careers/)
+
 ## Quant SPA: GTS (1)
 
 - [Quant SPA: GTS — Page changed - check Quant SPA: GTS (may mean applications opened)](https://www.gtsx.com/careers)
+
+## Quant SPA: Geneva Trading (open positions) (1)
+
+- [Quant SPA: Geneva Trading (open positions) — Page changed - check Quant SPA: Geneva Trading (open positions) (may mean applications opened)](https://www.genevatrading.com/careers-open-positions/)
 
 ## Quant SPA: Group One Trading (1)
 
