@@ -7226,5 +7226,181 @@
   "pw::https://careers.microsoft.com/v2/global/en/students.html::#e3b0c44298fc1c14": {
     "title": "Page changed - check Page: Microsoft Careers (may mean applications opened)",
     "url": "https://careers.microsoft.com/v2/global/en/students.html"
+  },
+  "pw::https://www.jhuapl.edu/careers/internships::#97a5e41b45ddd2b2": {
+    "title": "Page changed - check Lab: Johns Hopkins APL (may mean applications opened)",
+    "url": "https://www.jhuapl.edu/careers/internships"
+  },
+  "pw::https://etap.nsf.gov/::#e3b0c44298fc1c14": {
+    "title": "Page changed - check Program: NSF ETAP (all NSF REUs) (may mean applications opened)",
+    "url": "https://etap.nsf.gov/"
+  },
+  "pw::https://www.pathwaystoscience.org/::#e3b0c44298fc1c14": {
+    "title": "Page changed - check Program: Pathways to Science (REU database) (may mean applications opened)",
+    "url": "https://www.pathwaystoscience.org/"
+  },
+  "pw::https://raw.githubusercontent.com/karanwxliaa/research-for-ug-students/main/readme.md::#e3b0c44298fc1c14": {
+    "title": "Page changed - check Program: karanwxliaa research-for-UG list (may mean applications opened)",
+    "url": "https://raw.githubusercontent.com/karanwxliaa/Research-for-UG-Students/main/README.md"
+  },
+  "pw::https://www.sandia.gov/careers/students-postdocs/internships/::#97a5e41b45ddd2b2": {
+    "title": "Page changed - check Lab: Sandia internships (may mean applications opened)",
+    "url": "https://www.sandia.gov/careers/students-postdocs/internships/"
+  },
+  "pw::https://data-science.llnl.gov/dssi::#97a5e41b45ddd2b2": {
+    "title": "Page changed - check Lab: LLNL Data Science Institute (may mean applications opened)",
+    "url": "https://data-science.llnl.gov/dssi"
+  },
+  "pw::https://intern.nasa.gov/::#06ec365c9633264a": {
+    "title": "Page changed - check Lab: NASA OSTEM internships (may mean applications opened)",
+    "url": "https://intern.nasa.gov/"
+  },
+  "pw::https://science.osti.gov/wdts/suli::#886898baef698bb4": {
+    "title": "Page changed - check Lab: DOE SULI (may mean applications opened)",
+    "url": "https://science.osti.gov/wdts/suli"
+  },
+  "pw::https://goldwaterscholarship.gov/::#2e6f32e2cb4747c3": {
+    "title": "Page changed - check Scholarship: Goldwater key dates (may mean applications opened)",
+    "url": "https://goldwaterscholarship.gov/"
+  },
+  "pw::https://ieeextreme.org/::#de6a45a985f40927": {
+    "title": "Page changed - check Competition: IEEEXtreme (24h, October) (may mean applications opened)",
+    "url": "https://ieeextreme.org/"
+  },
+  "pw::https://www.csaw.io/::#596705a9762f43f0": {
+    "title": "Page changed - check Competition: CSAW CTF (NYU) (may mean applications opened)",
+    "url": "https://www.csaw.io/"
+  },
+  "pw::https://undergradresearch.gatech.edu/pura-salary::#2892778f6f61f122": {
+    "title": "Page changed - check GT: PURA salary award (may mean applications opened)",
+    "url": "https://undergradresearch.gatech.edu/pura-salary"
+  },
+  "pw::https://undergradresearch.gatech.edu/::#2892778f6f61f122": {
+    "title": "Page changed - check GT: undergraduate research opportunities (may mean applications opened)",
+    "url": "https://undergradresearch.gatech.edu/"
+  },
+  "pw::https://www.google.com/about/careers/applications/students/::#cf519777c02e1c53": {
+    "title": "Page changed - check Program: Google students (may mean applications opened)",
+    "url": "https://www.google.com/about/careers/applications/students/"
+  },
+  "pw::https://research.google/careers/::#5833e8409d166b36": {
+    "title": "Page changed - check Program: Google Research careers (may mean applications opened)",
+    "url": "https://research.google/careers/"
+  },
+  "pw::https://www.apple.com/careers/us/students.html::#cf519777c02e1c53": {
+    "title": "Page changed - check Program: Apple students (may mean applications opened)",
+    "url": "https://www.apple.com/careers/us/students.html"
+  },
+  "pw::https://www.microsoft.com/en-us/research/careers/::#576d6e63d5b8edbf": {
+    "title": "Page changed - check Program: Microsoft Research careers (may mean applications opened)",
+    "url": "https://www.microsoft.com/en-us/research/careers/"
+  },
+  "pw::https://www.amazon.jobs/en/teams/internships-for-students::#cf519777c02e1c53": {
+    "title": "Page changed - check Program: Amazon student programs (may mean applications opened)",
+    "url": "https://www.amazon.jobs/en/teams/internships-for-students"
+  },
+  "pw::https://openai.com/residency/::#5833e8409d166b36": {
+    "title": "Page changed - check Program: OpenAI residency (may mean applications opened)",
+    "url": "https://openai.com/residency/"
+  },
+  "pw::https://openai.com/careers/::#da108f50b623a477": {
+    "title": "Page changed - check Program: OpenAI careers (may mean applications opened)",
+    "url": "https://openai.com/careers/"
+  },
+  "pw::https://www.anthropic.com/careers::#a645b001b2afb6f3": {
+    "title": "Page changed - check Program: Anthropic careers (may mean applications opened)",
+    "url": "https://www.anthropic.com/careers"
+  },
+  "pw::https://deepmind.google/about/careers/::#5833e8409d166b36": {
+    "title": "Page changed - check Program: Google DeepMind careers (may mean applications opened)",
+    "url": "https://deepmind.google/about/careers/"
+  },
+  "pw::https://deepmind.google/about/education/::#a7dab68d10d5f5dd": {
+    "title": "Page changed - check Program: DeepMind education & scholarships (may mean applications opened)",
+    "url": "https://deepmind.google/about/education/"
+  },
+  "pw::https://cohere.com/careers::#e3f48726b892403e": {
+    "title": "Page changed - check Program: Cohere careers (may mean applications opened)",
+    "url": "https://cohere.com/careers"
+  },
+  "pw::https://huggingface.co/jobs::#e3b0c44298fc1c14": {
+    "title": "Page changed - check Program: Hugging Face jobs (may mean applications opened)",
+    "url": "https://huggingface.co/jobs"
+  },
+  "pw::https://www.matsprogram.org/::#addaa03ce0a363b2": {
+    "title": "Page changed - check Program: MATS (AI alignment research) (may mean applications opened)",
+    "url": "https://www.matsprogram.org/"
+  },
+  "pw::https://neurips.cc/::#c07004671f47c771": {
+    "title": "Page changed - check Conference: NeurIPS (may mean applications opened)",
+    "url": "https://neurips.cc/"
+  },
+  "pw::https://icml.cc/::#98dcf9014bcbf0d3": {
+    "title": "Page changed - check Conference: ICML (may mean applications opened)",
+    "url": "https://icml.cc/"
+  },
+  "pw::https://iclr.cc/::#ff74d1e3a27a7c5f": {
+    "title": "Page changed - check Conference: ICLR (may mean applications opened)",
+    "url": "https://iclr.cc/"
+  },
+  "pw::https://cvpr.thecvf.com/::#ff74d1e3a27a7c5f": {
+    "title": "Page changed - check Conference: CVPR (may mean applications opened)",
+    "url": "https://cvpr.thecvf.com/"
+  },
+  "pw::https://software.imdea.org/::#94993ee2ff679c00": {
+    "title": "Page changed - check Abroad: IMDEA Software Institute (Madrid) (may mean applications opened)",
+    "url": "https://software.imdea.org/"
+  },
+  "pw::https://networks.imdea.org/::#92a0073b86d2cda6": {
+    "title": "Page changed - check Abroad: IMDEA Networks (Madrid) (may mean applications opened)",
+    "url": "https://networks.imdea.org/"
+  },
+  "pw::https://www.upm.es/internacional::#5a27e9b8092e65c7": {
+    "title": "Page changed - check Abroad: UPM Madrid international (may mean applications opened)",
+    "url": "https://www.upm.es/internacional"
+  },
+  "pw::https://www.bsc.es/education::#fcf801e202bcc84f": {
+    "title": "Page changed - check Abroad: Barcelona Supercomputing Center (may mean applications opened)",
+    "url": "https://www.bsc.es/education"
+  },
+  "pw::https://hackupc.com/::#99c11bb76f3858bb": {
+    "title": "Page changed - check Hackathon: HackUPC Barcelona (may mean applications opened)",
+    "url": "https://hackupc.com/"
+  },
+  "pw::https://www.hackjunction.com/::#e3b0c44298fc1c14": {
+    "title": "Page changed - check Hackathon: Junction Helsinki (may mean applications opened)",
+    "url": "https://www.hackjunction.com/"
+  },
+  "pw::https://www.nist.gov/surf::#dcdf3ab688634c29": {
+    "title": "Page changed - check Lab: NIST SURF (may mean applications opened)",
+    "url": "https://www.nist.gov/surf"
+  },
+  "pw::https://codeforces.com/contests::#f93c77a1ccc9cb03": {
+    "title": "Page changed - check Competition: Codeforces (may mean applications opened)",
+    "url": "https://codeforces.com/contests"
+  },
+  "pw::https://atcoder.jp/contests/::#f3eca58915c0d208": {
+    "title": "Page changed - check Competition: AtCoder (may mean applications opened)",
+    "url": "https://atcoder.jp/contests/"
+  },
+  "pw::https://adventofcode.com/::#84d042230642f24d": {
+    "title": "Page changed - check Competition: Advent of Code (may mean applications opened)",
+    "url": "https://adventofcode.com/"
+  },
+  "pw::https://ctf.hackthebox.com/::#c18073362d17a17b": {
+    "title": "Page changed - check Competition: HackTheBox CTF (may mean applications opened)",
+    "url": "https://ctf.hackthebox.com/"
+  },
+  "pw::https://aigrant.com/::#5833e8409d166b36": {
+    "title": "Page changed - check Fellowship: AI Grant (may mean applications opened)",
+    "url": "https://aigrant.com/"
+  },
+  "pw::https://www.1517fund.com/medici-project/::#1fe289205936c3fd": {
+    "title": "Page changed - check Fellowship: 1517 Medici Project (may mean applications opened)",
+    "url": "https://www.1517fund.com/medici-project/"
+  },
+  "pw::https://www.southparkcommons.com/::#cf519777c02e1c53": {
+    "title": "Page changed - check Fellowship: South Park Commons (may mean applications opened)",
+    "url": "https://www.southparkcommons.com/"
   }
 }
