@@ -258,6 +258,50 @@ def _pw_url(key):
     return key[len(PW_PREFIX):].rsplit(PW_SEP, 1)[0]
 
 
+def fetch_rss(firm):
+    """
+    Generic RSS/Atom reader for DISCOVERY feeds (Google News queries, Reddit,
+    HN...). Each item becomes a bypass-filters record keyed by its link. If
+    `watch_keywords` is set, an item must mention one of them (title/summary),
+    which keeps a news feed from flooding the digest with unrelated stories.
+    """
+    import hashlib
+    import xml.etree.ElementTree as ET
+    r = requests.get(firm["url"], headers=HEADERS, timeout=TIMEOUT)
+    r.raise_for_status()
+    root = ET.fromstring(r.content)
+    ns = {"a": "http://www.w3.org/2005/Atom"}
+    items = root.findall(".//item") or root.findall(".//a:entry", ns)
+    kws = [k.lower() for k in firm.get("watch_keywords", [])]
+    out = []
+    for it in items:
+        def _t(tag):
+            e = it.find(tag) if not tag.startswith("a:") else it.find(tag, ns)
+            return (e.text or "").strip() if e is not None and e.text else ""
+        title = _t("title") or _t("a:title")
+        link = _t("link")
+        if not link:
+            le = it.find("a:link", ns)
+            link = (le.get("href") if le is not None else "") or ""
+        summary = re.sub(r"<[^>]+>", " ", _t("description") or _t("a:summary") or _t("a:content"))
+        hay = f"{title} {summary}".lower()
+        if kws and not any(k in hay for k in kws):
+            continue
+        if not (title and link):
+            continue
+        out.append({
+            "id": hashlib.sha256(link.encode("utf-8")).hexdigest()[:16],
+            "title": title[:200],
+            "location": "",
+            "url": link,
+            "content": summary[:600],
+            "company": firm.get("name", "RSS"),
+            "bypass_filters": True,
+            "rss": True,
+        })
+    return out[:60]
+
+
 def fetch_pagewatch(firm):
     """
     Change-detector for feed-less pages (REUs, NASA OSTEM, lab portals). Fetches
@@ -600,6 +644,7 @@ FETCHERS = {
     "autodiscover": fetch_autodiscover,
     "nuft": fetch_nuft,
     "pagewatch": fetch_pagewatch,
+    "rss": fetch_rss,
 }
 
 
@@ -1247,7 +1292,7 @@ def write_top_picks(current, filters=None):
 # Summer 2027 offer, so the digest is about "reaching new heights", not roles.
 DIGEST_PREFIXES = (
     "competition", "hackathon", "scholarship", "fellowship", "abroad",
-    "program", "natsec", "lab", "gt", "conference", "grant",
+    "program", "natsec", "lab", "gt", "conference", "grant", "event", "rss",
 )
 
 
@@ -1295,7 +1340,23 @@ def run_digest_sweep(config, seen):
     with ThreadPoolExecutor(max_workers=12) as pool:
         results = list(pool.map(poll, sources))
 
+    discovered = []
     for firm, items in results:
+        # RSS feeds: the first time we ever read a feed, record its items
+        # silently (baseline). After that, unseen items are discoveries.
+        if firm.get("ats") == "rss":
+            marker = f"rssfeed::{(firm.get('url') or '').strip().lower()}"
+            first_time = marker not in new_seen
+            new_seen.setdefault(marker, {"title": firm.get("name", ""), "url": firm.get("url", "")})
+            for j in items:
+                key = f"rss::{j['id']}"
+                if key in new_seen:
+                    continue
+                new_seen[key] = {"title": j.get("title", ""), "url": j.get("url", "")}
+                if not first_time:
+                    discovered.append({"feed": firm.get("name", ""), "title": j.get("title", ""),
+                                       "url": j.get("url", ""), "summary": j.get("content", "")})
+            continue
         for j in items:
             url = (j.get("url") or "").strip().lower()
             key = (_pw_key(url, j["id"]) if j.get("pagewatch")
@@ -1311,13 +1372,15 @@ def run_digest_sweep(config, seen):
                 })
             new_seen[key] = {"title": j.get("title", ""), "url": j.get("url", "")}
 
-    print(f"Digest sweep: {len(changed)} source(s) changed since last week.")
-    return changed, new_seen
+    print(f"Digest sweep: {len(changed)} page(s) changed, {len(discovered)} new feed item(s).")
+    return changed, discovered, new_seen
 
 
 def _digest_group(name):
     """Bucket a source name into an email section."""
     head = (name or "").split(":")[0].strip().lower()
+    if head.startswith("event"):
+        return "events"
     if head.startswith("competition") or head.startswith("hackathon"):
         return "competitions"
     if head.startswith("scholarship") or head.startswith("fellowship") or head.startswith("grant"):
@@ -1327,111 +1390,199 @@ def _digest_group(name):
     return "programs"
 
 
-def send_weekly_digest():
-    """Sunday email. Two halves:
-      1) LIVE -- competition/program pages that CHANGED this week (i.e. an
-         application probably just opened), discovered by run_digest_sweep.
-      2) The PROGRAMS.md master calendar, so nothing with a deadline slips.
-    Deliberately excludes Summer 2027 internship postings: Alex signed his NYC
-    quant offer on 2026-07-30, so this digest is competitions/events only."""
-    config = load_json(CONFIG_FILE, None) or {}
-    seen = load_json(SEEN_FILE, {}) or {}
+OPPS_FILE = "opportunities.json"
 
-    changed, new_seen = [], seen
+
+def _load_opps():
+    data = load_json(OPPS_FILE, {}) or {}
+    return data.get("opportunities", []) if isinstance(data, dict) else data
+
+
+def _opp_state(o, today):
+    """(status, days_to_deadline). status: open / closing / expired."""
+    import datetime as _dt
+    def d(x):
+        try:
+            return _dt.date.fromisoformat(x) if x else None
+        except ValueError:
+            return None
+    dl, ev = d(o.get("deadline")), d(o.get("event_date"))
+    if dl and dl < today and (not ev or ev < today):
+        return "expired", None
+    if ev and ev < today and not dl:
+        return "expired", None
+    days = (dl - today).days if dl else None
+    return ("closing" if days is not None and days <= 10 else "open"), days
+
+
+def _hidden_season(o, filters):
+    """Alex is abroad in spring 2027: hide IN-PERSON spring events. Online ones
+    stay visible since he can do those from anywhere."""
+    hide = [x.lower() for x in (filters or {}).get("hide_seasons", ["spring"])]
+    season = (o.get("season") or "").lower()
+    fmt = (o.get("format") or "").lower()
+    return season in hide and fmt != "online"
+
+
+def _opp_li(o, days, status, is_new):
+    tag = " <b style='color:#b45309'>NEW</b>" if is_new else ""
+    if days is not None:
+        when = (f"<b style='color:#b91c1c'>closes in {days}d</b>" if days <= 10
+                else f"closes in {days}d")
+        when += f" ({escape(o.get('deadline',''))})"
+    else:
+        when = "rolling / no deadline listed"
+    bits = [x for x in [
+        f"&#128197; {escape(o['event_date'])}" if o.get("event_date") else "",
+        f"&#128205; {escape(o['location'])}" if o.get("location") else "",
+        f"&#9992;&#65039; {escape(o['travel'])}" if o.get("travel") else "",
+        f"&#127942; {escape(o['prizes'])}" if o.get("prizes") else "",
+        f"&#127881; {escape(o['perks'])}" if o.get("perks") else "",
+    ] if x]
+    line = (f"<li style='margin:6px 0'><a href='{escape(o.get('url',''))}'><b>{escape(o['name'])}</b></a>"
+            f"{tag} &mdash; {when}<br><span style='font-size:12px;color:#444'>"
+            + " &middot; ".join(bits) + "</span>")
+    if o.get("eligibility"):
+        line += f"<br><span style='font-size:12px;color:#666'>Eligibility: {escape(o['eligibility'])}</span>"
+    if o.get("notes"):
+        line += f"<br><span style='font-size:12px;color:#666'>{escape(o['notes'])}</span>"
+    if o.get("apply_url"):
+        line += f"<br><span style='font-size:12px'><a href='{escape(o['apply_url'])}'>apply &rarr;</a></span>"
+    return line + "</li>"
+
+
+def send_weekly_digest():
+    """Wed + Sun email. Designed so EVERY send is the complete current picture
+    (Alex pastes it into an AI and asks what's best), not a diff:
+      1) NEW since last send -- opportunities, changed pages, discovery hits
+      2) THE COMPLETE LIST -- every opportunity still open, by deadline
+         (in-person spring events hidden: he's in Madrid Jan-May 2027)
+      3) Discovery feed -- unverified mentions from news/Reddit RSS
+      4) Index of every watched page
+    Internship postings stay out; that's the hourly sweep's job."""
+    import datetime as _dt
+    config = load_json(CONFIG_FILE, None) or {}
+    filters = config.get("filters", {})
+    seen = load_json(SEEN_FILE, {}) or {}
+    today = _dt.date.today()
+
+    changed, discovered, new_seen = [], [], seen
     try:
-        changed, new_seen = run_digest_sweep(config, seen)
-    except Exception as e:  # noqa: BLE001 -- still send the calendar if polling dies
-        print(f"  x digest sweep failed, sending calendar only: {e}")
+        changed, discovered, new_seen = run_digest_sweep(config, seen)
+    except Exception as e:  # noqa: BLE001 -- still send the list if polling dies
+        print(f"  x digest sweep failed, sending list only: {e}")
+
+    # ---- opportunities: complete list + NEW detection ----
+    opps = _load_opps()
+    visible, hidden, expired, new_ids = [], [], [], []
+    for o in opps:
+        status, days = _opp_state(o, today)
+        if status == "expired":
+            expired.append(o); continue
+        key = f"opp::{o.get('id')}"
+        is_new = key not in new_seen
+        if is_new:
+            new_ids.append(o.get("id"))
+            new_seen[key] = {"title": o.get("name", ""), "url": o.get("url", "")}
+        if _hidden_season(o, filters):
+            hidden.append(o); continue
+        visible.append((days if days is not None else 10**6, o, status, days, is_new))
+    visible.sort(key=lambda t: (t[0], t[1].get("name", "")))
+    n_new = len([v for v in visible if v[4]])
 
     parts = [
-        "<p style='font-size:15px'><b>Weekly competitions &amp; opportunities "
-        "digest.</b> Trading competitions, math &amp; CS contests, hackathons, "
-        "CTFs, scholarships, fellowships, research and abroad programs &mdash; "
-        "everything worth chasing that isn't a job posting.</p>"
+        "<p style='font-size:15px'><b>Opportunities digest</b> &mdash; competitions, "
+        "events with travel, hackathons, fellowships, research. Sent Wednesday and "
+        "Sunday. <b>Every send is the complete current list</b>, so you never need "
+        "an older email.</p>"
     ]
 
-    if changed:
-        buckets = {"competitions": [], "programs": [], "money": [], "research": []}
-        for c in changed:
-            buckets[_digest_group(c["name"])].append(c)
-        labels = [
-            ("competitions", "&#127942; Competitions &amp; hackathons", "#b45309"),
-            ("programs", "&#128188; Programs &amp; events", "#1553b0"),
-            ("money", "&#128176; Scholarships &amp; fellowships", "#2f6f4f"),
-            ("research", "&#128300; Research &amp; abroad", "#5b3fa0"),
-        ]
+    # ---- 1) NEW ----
+    if n_new or changed or discovered:
         parts.append(
             "<div style='border-left:4px solid #b45309;padding:6px 12px;margin:16px 0;"
-            "background:#fffbeb'><h3 style='margin:4px 0'>&#9889; CHANGED THIS WEEK "
-            f"&mdash; {len(changed)} page(s)</h3><p style='margin:2px 0;color:#666;"
-            "font-size:12px'>These pages moved since last Sunday, which usually means "
-            "applications just opened. Check them first.</p></div>"
-        )
-        for key, label, color in labels:
-            if not buckets[key]:
-                continue
-            parts.append(f"<h3 style='margin:14px 0 4px;color:{color}'>{label}</h3><ul>")
-            for c in buckets[key]:
-                nm = escape(c["name"]) or "source"
-                parts.append(f"<li><a href='{escape(c['url'])}'>{nm}</a></li>")
+            "background:#fffbeb'><h3 style='margin:4px 0'>&#9889; NEW since last send</h3>")
+        if n_new:
+            parts.append("<ul>")
+            for _, o, status, days, is_new in visible:
+                if is_new:
+                    parts.append(_opp_li(o, days, status, True))
             parts.append("</ul>")
+        if changed:
+            parts.append("<p style='margin:6px 0 2px'><b>Watched pages that changed</b> "
+                         "<span style='color:#666;font-size:12px'>(usually = applications opened)</span></p><ul>")
+            for c in changed:
+                parts.append(f"<li><a href='{escape(c['url'])}'>{escape(c['name'])}</a></li>")
+            parts.append("</ul>")
+        parts.append("</div>")
     else:
-        parts.append(
-            "<p style='color:#666'>No watched competition/program page changed this "
-            "week. The calendar below is still the thing to work off of.</p>"
-        )
+        parts.append("<p style='color:#666'>Nothing new since last send.</p>")
 
-    try:
-        programs = open("PROGRAMS.md", encoding="utf-8").read()
-        body = re.sub(r"^# (.*)$", r"<h2>\1</h2>", programs, flags=re.M)
-        body = re.sub(r"^## (.*)$", r"<h3>\1</h3>", body, flags=re.M)
-        body = re.sub(r"^- (.*)$", r"<li>\1</li>", body, flags=re.M)
-        body = re.sub(r"\*\*(.+?)\*\*", r"<b>\1</b>", body)
-        body = re.sub(r"\[(.+?)\]\((https?://[^)]+)\)", r"<a href='\2'>\1</a>", body)
-        parts.append(f"<hr><h2>&#128197; The calendar</h2>{body}")
-    except FileNotFoundError:
-        parts.append("<hr><p>PROGRAMS.md not found &mdash; calendar unavailable.</p>")
+    # ---- 2) COMPLETE LIST ----
+    closing = [v for v in visible if v[2] == "closing"]
+    parts.append(f"<hr><h2>&#128203; Everything currently open &mdash; {len(visible)}</h2>"
+                 "<p style='color:#666;font-size:12px'>Sorted by deadline. Rolling / undated at the bottom.</p>")
+    if closing:
+        parts.append("<h3 style='color:#b91c1c;margin:10px 0 4px'>&#9203; Closing within 10 days</h3><ul>")
+        for _, o, status, days, is_new in closing:
+            parts.append(_opp_li(o, days, status, is_new))
+        parts.append("</ul>")
+    rest = [v for v in visible if v[2] != "closing"]
+    if rest:
+        parts.append("<h3 style='margin:10px 0 4px'>Open</h3><ul>")
+        for _, o, status, days, is_new in rest:
+            parts.append(_opp_li(o, days, status, is_new))
+        parts.append("</ul>")
+    if not visible:
+        parts.append("<p>No open opportunities in the list yet.</p>")
+    if hidden:
+        parts.append(f"<p style='color:#888;font-size:12px'>Hidden: {len(hidden)} in-person spring "
+                     "event(s) &mdash; you'll be in Madrid. "
+                     + ", ".join(escape(h.get("name", "")) for h in hidden) + "</p>")
+    if expired:
+        parts.append(f"<p style='color:#aaa;font-size:11px'>Expired (kept for next year's watch): "
+                     + ", ".join(escape(x.get("name", "")) for x in expired) + "</p>")
 
-    # Clickable index of everything being watched, straight from config.json so
-    # it can never drift out of date. The calendar above names programs; this
-    # makes every one of them one click away.
-    idx = {"competitions": [], "programs": [], "money": [], "research": []}
+    # ---- 3) discovery feed ----
+    if discovered:
+        parts.append(f"<hr><h2>&#128269; Discovery feed &mdash; {len(discovered)} new mention(s)</h2>"
+                     "<p style='color:#666;font-size:12px'>Raw hits from news / Reddit / HN feeds. "
+                     "Unverified &mdash; skim, then tell me which to add to the list.</p><ul style='font-size:13px'>")
+        for d_ in discovered[:40]:
+            parts.append(f"<li><a href='{escape(d_['url'])}'>{escape(d_['title'])}</a> "
+                         f"<span style='color:#888'>&mdash; {escape(d_['feed'].replace('RSS: ',''))}</span></li>")
+        parts.append("</ul>")
+
+    # ---- 4) watched pages index ----
+    idx = {"events": [], "competitions": [], "programs": [], "money": [], "research": []}
     for f in config.get("firms", []):
-        if f.get("enabled", True) and _is_digest_source(f) and f.get("url"):
-            idx[_digest_group(f.get("name", ""))].append(
-                (f.get("name", ""), f["url"]))
-    if any(idx.values()):
-        parts.append(
-            "<hr><h2>&#128279; Every page being watched</h2>"
-            "<p style='color:#888;font-size:12px'>Checked every Sunday. A change "
-            "here is what triggers the alert at the top.</p>"
-        )
-        for key, label in (("competitions", "Competitions &amp; hackathons"),
-                           ("programs", "Programs &amp; events"),
-                           ("money", "Scholarships &amp; fellowships"),
-                           ("research", "Research &amp; abroad")):
-            if not idx[key]:
-                continue
-            parts.append(f"<h4 style='margin:12px 0 4px'>{label}</h4>"
-                         "<ul style='font-size:13px'>")
-            for nm, u in sorted(idx[key]):
-                short = escape(re.sub(r"^[^:]+:\s*", "", nm) or nm)
-                parts.append(f"<li><a href='{escape(u)}'>{short}</a></li>")
-            parts.append("</ul>")
+        if f.get("enabled", True) and _is_digest_source(f) and f.get("url") and f.get("ats") != "rss":
+            idx[_digest_group(f.get("name", ""))].append((f.get("name", ""), f["url"]))
+    parts.append("<hr><h2>&#128279; Every page being watched</h2>"
+                 "<p style='color:#888;font-size:12px'>A change on any of these is what fires the alert at the top.</p>")
+    for key, label in (("events", "Events with travel / in-person"),
+                       ("competitions", "Competitions &amp; hackathons"),
+                       ("programs", "Programs &amp; events"),
+                       ("money", "Scholarships &amp; fellowships"),
+                       ("research", "Research &amp; abroad")):
+        if not idx[key]:
+            continue
+        parts.append(f"<h4 style='margin:12px 0 4px'>{label}</h4><ul style='font-size:13px'>")
+        for nm, u in sorted(idx[key]):
+            short = escape(re.sub(r"^[^:]+:\s*", "", nm) or nm)
+            parts.append(f"<li><a href='{escape(u)}'>{short}</a></li>")
+        parts.append("</ul>")
 
-    parts.append(
-        "<p style='color:#888;font-size:12px'>Sent every Sunday by your watcher. "
-        "Internship polling is paused (offer signed); this digest is competitions "
-        "and programs only.</p>"
-    )
+    parts.append("<p style='color:#888;font-size:12px'>Sent Wed + Sun by your watcher. "
+                 "To add something: reply with the link and I'll put it in the list.</p>")
 
-    send_email(
-        "[Watcher] Weekly competitions digest"
-        + (f" - {len(changed)} page(s) changed" if changed else ""),
-        "\n".join(parts),
-    )
+    subj = f"[Watcher] {len(visible)} open"
+    if n_new: subj += f" · {n_new} new"
+    if closing: subj += f" · {len(closing)} closing soon"
+    send_email(subj + " — opportunities digest", "\n".join(parts))
     save_json(SEEN_FILE, new_seen)
-    print(f"Digest sent; state saved ({len(new_seen)} keys).")
+    print(f"Digest sent: {len(visible)} open, {n_new} new, {len(closing)} closing, "
+          f"{len(hidden)} hidden (spring), {len(discovered)} discovered.")
 
 
 # ----------------------------- main ---------------------------------------- #

@@ -204,7 +204,10 @@
       "irvine"
     ],
     "top_firms_only": true,
-    "fall_2027_only": true
+    "fall_2027_only": true,
+    "hide_seasons": [
+      "spring"
+    ]
   },
   "firms": [
     {
@@ -4242,21 +4245,9 @@
       ]
     },
     {
-      "name": "Competition: Codeforces",
-      "ats": "pagewatch",
-      "url": "https://codeforces.com/contests",
-      "digest": true
-    },
-    {
       "name": "Competition: AtCoder",
       "ats": "pagewatch",
       "url": "https://atcoder.jp/contests/",
-      "digest": true
-    },
-    {
-      "name": "Competition: Advent of Code",
-      "ats": "pagewatch",
-      "url": "https://adventofcode.com/",
       "digest": true
     },
     {
@@ -4324,6 +4315,672 @@
         "deadline",
         "2027",
         "2028"
+      ]
+    },
+    {
+      "name": "Event: Cornell Trading Competition",
+      "ats": "pagewatch",
+      "url": "https://cornellquantfund.org/competition",
+      "digest": true,
+      "watch_keywords": [
+        "apply",
+        "application",
+        "register",
+        "registration",
+        "deadline",
+        "2026",
+        "2027",
+        "competition",
+        "travel"
+      ]
+    },
+    {
+      "name": "Event: Cornell Quant Fund (home)",
+      "ats": "pagewatch",
+      "url": "https://cornellquantfund.org/",
+      "digest": true,
+      "watch_keywords": [
+        "apply",
+        "application",
+        "register",
+        "registration",
+        "deadline",
+        "2026",
+        "2027",
+        "competition",
+        "travel"
+      ]
+    },
+    {
+      "name": "Event: Citadel Intercollegiate Stock Pitch",
+      "ats": "pagewatch",
+      "url": "https://www.citadel.com/careers/investing/citadel-associate-program/apply-for-2026-intercollegiate-stock-pitch-competition/",
+      "digest": true,
+      "watch_keywords": [
+        "apply",
+        "application",
+        "register",
+        "registration",
+        "deadline",
+        "2026",
+        "2027",
+        "competition",
+        "travel"
+      ]
+    },
+    {
+      "name": "Event: Citadel Securities programs & events",
+      "ats": "pagewatch",
+      "url": "https://www.citadelsecurities.com/careers/programs-and-events/",
+      "digest": true,
+      "watch_keywords": [
+        "apply",
+        "application",
+        "register",
+        "registration",
+        "deadline",
+        "2026",
+        "2027",
+        "competition",
+        "travel"
+      ]
+    },
+    {
+      "name": "Event: Citadel Securities Trading Invitational",
+      "ats": "pagewatch",
+      "url": "https://www.citadelsecurities.com/careers/programs-and-events/the-trading-invitational/",
+      "digest": true,
+      "watch_keywords": [
+        "apply",
+        "application",
+        "register",
+        "registration",
+        "deadline",
+        "2026",
+        "2027",
+        "competition",
+        "travel"
+      ]
+    },
+    {
+      "name": "Event: Stevens HFT Competition",
+      "ats": "pagewatch",
+      "url": "https://www.stevens.edu/school-business/2026-stevens-high-frequency-trading-competition",
+      "digest": true,
+      "watch_keywords": [
+        "apply",
+        "application",
+        "register",
+        "registration",
+        "deadline",
+        "2026",
+        "2027",
+        "competition",
+        "travel"
+      ]
+    },
+    {
+      "name": "Event: Traders@MIT competition",
+      "ats": "pagewatch",
+      "url": "https://traders.mit.edu/competition",
+      "digest": true,
+      "watch_keywords": [
+        "apply",
+        "application",
+        "register",
+        "registration",
+        "deadline",
+        "2026",
+        "2027",
+        "competition",
+        "travel"
+      ]
+    },
+    {
+      "name": "Event: UChicago Midwest Trading Competition",
+      "ats": "pagewatch",
+      "url": "https://midwesttrading.uchicago.edu/competition.html",
+      "digest": true,
+      "watch_keywords": [
+        "apply",
+        "application",
+        "register",
+        "registration",
+        "deadline",
+        "2026",
+        "2027",
+        "competition",
+        "travel"
+      ]
+    },
+    {
+      "name": "Event: Traders at Berkeley competition",
+      "ats": "pagewatch",
+      "url": "https://traders.studentorg.berkeley.edu/competition.html",
+      "digest": true,
+      "watch_keywords": [
+        "apply",
+        "application",
+        "register",
+        "registration",
+        "deadline",
+        "2026",
+        "2027",
+        "competition",
+        "travel"
+      ]
+    },
+    {
+      "name": "Event: Traders at Michigan competition",
+      "ats": "pagewatch",
+      "url": "https://www.tradersatmichigan.com/trading-competition/",
+      "digest": true,
+      "watch_keywords": [
+        "apply",
+        "application",
+        "register",
+        "registration",
+        "deadline",
+        "2026",
+        "2027",
+        "competition",
+        "travel"
+      ]
+    },
+    {
+      "name": "Event: MIG Quant Conference (Michigan)",
+      "ats": "pagewatch",
+      "url": "https://www.migconf.com/",
+      "digest": true,
+      "watch_keywords": [
+        "apply",
+        "application",
+        "register",
+        "registration",
+        "deadline",
+        "2026",
+        "2027",
+        "competition",
+        "travel"
+      ]
+    },
+    {
+      "name": "Event: Michigan Investment Group events",
+      "ats": "pagewatch",
+      "url": "https://www.michiganinvestmentgroup.com/events",
+      "digest": true,
+      "watch_keywords": [
+        "apply",
+        "application",
+        "register",
+        "registration",
+        "deadline",
+        "2026",
+        "2027",
+        "competition",
+        "travel"
+      ]
+    },
+    {
+      "name": "Event: Georgetown Quants competition",
+      "ats": "pagewatch",
+      "url": "https://www.georgetownquants.com/competition",
+      "digest": true,
+      "watch_keywords": [
+        "apply",
+        "application",
+        "register",
+        "registration",
+        "deadline",
+        "2026",
+        "2027",
+        "competition",
+        "travel"
+      ]
+    },
+    {
+      "name": "Event: CMU Quant Club events",
+      "ats": "pagewatch",
+      "url": "https://cmuquant.com/events.html",
+      "digest": true,
+      "watch_keywords": [
+        "apply",
+        "application",
+        "register",
+        "registration",
+        "deadline",
+        "2026",
+        "2027",
+        "competition",
+        "travel"
+      ]
+    },
+    {
+      "name": "Event: Princeton Fintech & Quant Conference",
+      "ats": "pagewatch",
+      "url": "https://princetonfintechquant.org/",
+      "digest": true,
+      "watch_keywords": [
+        "apply",
+        "application",
+        "register",
+        "registration",
+        "deadline",
+        "2026",
+        "2027",
+        "competition",
+        "travel"
+      ]
+    },
+    {
+      "name": "Event: Princeton Quantitative Traders",
+      "ats": "pagewatch",
+      "url": "https://princeton-quant.com/",
+      "digest": true,
+      "watch_keywords": [
+        "apply",
+        "application",
+        "register",
+        "registration",
+        "deadline",
+        "2026",
+        "2027",
+        "competition",
+        "travel"
+      ]
+    },
+    {
+      "name": "Event: Rice Datathon",
+      "ats": "pagewatch",
+      "url": "https://datathon.rice.edu/",
+      "digest": true,
+      "watch_keywords": [
+        "apply",
+        "application",
+        "register",
+        "registration",
+        "deadline",
+        "2026",
+        "2027",
+        "competition",
+        "travel"
+      ]
+    },
+    {
+      "name": "Event: LMU Datathon",
+      "ats": "pagewatch",
+      "url": "https://lmudatathon.com/",
+      "digest": true,
+      "watch_keywords": [
+        "apply",
+        "application",
+        "register",
+        "registration",
+        "deadline",
+        "2026",
+        "2027",
+        "competition",
+        "travel"
+      ]
+    },
+    {
+      "name": "Event: Illinois Statistics Datathon",
+      "ats": "pagewatch",
+      "url": "https://stat.illinois.edu/datathon",
+      "digest": true,
+      "watch_keywords": [
+        "apply",
+        "application",
+        "register",
+        "registration",
+        "deadline",
+        "2026",
+        "2027",
+        "competition",
+        "travel"
+      ]
+    },
+    {
+      "name": "Event: TAMIDS data science competitions",
+      "ats": "pagewatch",
+      "url": "https://tamids.tamu.edu/student-data-science-competition/",
+      "digest": true,
+      "watch_keywords": [
+        "apply",
+        "application",
+        "register",
+        "registration",
+        "deadline",
+        "2026",
+        "2027",
+        "competition",
+        "travel"
+      ]
+    },
+    {
+      "name": "Event: Citadel datathons",
+      "ats": "pagewatch",
+      "url": "https://www.citadel.com/careers/programs-and-events/datathons/",
+      "digest": true,
+      "watch_keywords": [
+        "apply",
+        "application",
+        "register",
+        "registration",
+        "deadline",
+        "2026",
+        "2027",
+        "competition",
+        "travel"
+      ]
+    },
+    {
+      "name": "Event: SIG students (Discovery Day)",
+      "ats": "pagewatch",
+      "url": "https://careers.sig.com/students",
+      "digest": true,
+      "watch_keywords": [
+        "discovery day",
+        "2027",
+        "apply",
+        "register",
+        "deadline"
+      ]
+    },
+    {
+      "name": "Event: IMC students (Launchpad)",
+      "ats": "pagewatch",
+      "url": "https://careers.imc.com/us/en/students",
+      "digest": true,
+      "watch_keywords": [
+        "launchpad",
+        "2027",
+        "apply",
+        "register",
+        "deadline"
+      ]
+    },
+    {
+      "name": "Event: Optiver students",
+      "ats": "pagewatch",
+      "url": "https://optiver.com/working-at-optiver/students/",
+      "digest": true,
+      "watch_keywords": [
+        "2027",
+        "apply",
+        "register",
+        "deadline",
+        "event"
+      ]
+    },
+    {
+      "name": "Event: DRW students (Discover DRW)",
+      "ats": "pagewatch",
+      "url": "https://drw.com/careers",
+      "digest": true,
+      "watch_keywords": [
+        "discover",
+        "2027",
+        "apply",
+        "register",
+        "deadline"
+      ]
+    },
+    {
+      "name": "Event: Two Sigma events",
+      "ats": "pagewatch",
+      "url": "https://careers.twosigma.com/",
+      "digest": true,
+      "watch_keywords": [
+        "event",
+        "2027",
+        "apply",
+        "register",
+        "deadline"
+      ]
+    },
+    {
+      "name": "Event: Point72 (Sophomore Summit etc)",
+      "ats": "pagewatch",
+      "url": "https://careers.point72.com/",
+      "digest": true,
+      "watch_keywords": [
+        "summit",
+        "2027",
+        "apply",
+        "register",
+        "deadline"
+      ]
+    },
+    {
+      "name": "Event: D.E. Shaw fellowships/Nexus",
+      "ats": "pagewatch",
+      "url": "https://campus.deshaw.com/fellowships",
+      "digest": true,
+      "watch_keywords": [
+        "nexus",
+        "2027",
+        "apply",
+        "deadline"
+      ]
+    },
+    {
+      "name": "Event: HRT students",
+      "ats": "pagewatch",
+      "url": "https://www.hudsonrivertrading.com/careers/",
+      "digest": true,
+      "watch_keywords": [
+        "class",
+        "program",
+        "2027",
+        "apply",
+        "deadline"
+      ]
+    },
+    {
+      "name": "Event: Akuna careers/events",
+      "ats": "pagewatch",
+      "url": "https://akunacapital.com/careers",
+      "digest": true,
+      "watch_keywords": [
+        "challenge",
+        "event",
+        "2027",
+        "apply"
+      ]
+    },
+    {
+      "name": "Event: Old Mission careers/events",
+      "ats": "pagewatch",
+      "url": "https://www.oldmissioncapital.com/careers",
+      "digest": true,
+      "watch_keywords": [
+        "event",
+        "2027",
+        "apply"
+      ]
+    },
+    {
+      "name": "Event: Belvedere careers/events",
+      "ats": "pagewatch",
+      "url": "https://www.belvederetrading.com/careers",
+      "digest": true,
+      "watch_keywords": [
+        "event",
+        "2027",
+        "apply"
+      ]
+    },
+    {
+      "name": "Event: OpenQuant events calendar",
+      "ats": "pagewatch",
+      "url": "https://openquant.co/blog/quantitative-finance-events-2026",
+      "digest": true
+    },
+    {
+      "name": "Event: QuantChallenges.com (aggregator)",
+      "ats": "pagewatch",
+      "url": "https://quantchallenges.com/",
+      "digest": true
+    },
+    {
+      "name": "Event: QuantVault competitions list",
+      "ats": "pagewatch",
+      "url": "https://quantvault.org/quant-trading-competitions-2026.html",
+      "digest": true
+    },
+    {
+      "name": "RSS: Google News – trading competition (students)",
+      "ats": "rss",
+      "url": "https://news.google.com/rss/search?q=%22trading+competition%22+(undergraduate+OR+students)&hl=en-US&gl=US&ceid=US:en",
+      "digest": true,
+      "watch_keywords": [
+        "competition",
+        "hackathon",
+        "datathon",
+        "invitational",
+        "summit",
+        "challenge",
+        "conference",
+        "fellowship",
+        "scholarship",
+        "travel",
+        "all-expenses",
+        "prize",
+        "trading",
+        "quant"
+      ]
+    },
+    {
+      "name": "RSS: Google News – datathon",
+      "ats": "rss",
+      "url": "https://news.google.com/rss/search?q=datathon+students&hl=en-US&gl=US&ceid=US:en",
+      "digest": true,
+      "watch_keywords": [
+        "competition",
+        "hackathon",
+        "datathon",
+        "invitational",
+        "summit",
+        "challenge",
+        "conference",
+        "fellowship",
+        "scholarship",
+        "travel",
+        "all-expenses",
+        "prize",
+        "trading",
+        "quant"
+      ]
+    },
+    {
+      "name": "RSS: Google News – hackathon travel",
+      "ats": "rss",
+      "url": "https://news.google.com/rss/search?q=hackathon+(%22travel+reimbursement%22+OR+%22travel+stipend%22)&hl=en-US&gl=US&ceid=US:en",
+      "digest": true,
+      "watch_keywords": [
+        "competition",
+        "hackathon",
+        "datathon",
+        "invitational",
+        "summit",
+        "challenge",
+        "conference",
+        "fellowship",
+        "scholarship",
+        "travel",
+        "all-expenses",
+        "prize",
+        "trading",
+        "quant"
+      ]
+    },
+    {
+      "name": "RSS: Google News – quant competition",
+      "ats": "rss",
+      "url": "https://news.google.com/rss/search?q=quant+competition+undergraduate&hl=en-US&gl=US&ceid=US:en",
+      "digest": true,
+      "watch_keywords": [
+        "competition",
+        "hackathon",
+        "datathon",
+        "invitational",
+        "summit",
+        "challenge",
+        "conference",
+        "fellowship",
+        "scholarship",
+        "travel",
+        "all-expenses",
+        "prize",
+        "trading",
+        "quant"
+      ]
+    },
+    {
+      "name": "RSS: Google News – student fellowship",
+      "ats": "rss",
+      "url": "https://news.google.com/rss/search?q=%22fellowship%22+undergraduate+apply+2026&hl=en-US&gl=US&ceid=US:en",
+      "digest": true,
+      "watch_keywords": [
+        "competition",
+        "hackathon",
+        "datathon",
+        "invitational",
+        "summit",
+        "challenge",
+        "conference",
+        "fellowship",
+        "scholarship",
+        "travel",
+        "all-expenses",
+        "prize",
+        "trading",
+        "quant"
+      ]
+    },
+    {
+      "name": "RSS: Reddit r/quant",
+      "ats": "rss",
+      "url": "https://www.reddit.com/r/quant/new/.rss",
+      "digest": true,
+      "watch_keywords": [
+        "competition",
+        "hackathon",
+        "datathon",
+        "invitational",
+        "summit",
+        "challenge",
+        "conference",
+        "fellowship",
+        "scholarship",
+        "travel",
+        "all-expenses",
+        "prize",
+        "trading",
+        "quant"
+      ]
+    },
+    {
+      "name": "RSS: HN – competition",
+      "ats": "rss",
+      "url": "https://hnrss.org/newest?q=competition+students",
+      "digest": true,
+      "watch_keywords": [
+        "competition",
+        "hackathon",
+        "datathon",
+        "invitational",
+        "summit",
+        "challenge",
+        "conference",
+        "fellowship",
+        "scholarship",
+        "travel",
+        "all-expenses",
+        "prize",
+        "trading",
+        "quant"
       ]
     }
   ]

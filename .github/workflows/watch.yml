@@ -1,10 +1,11 @@
-name: Watcher (weekly competitions digest)
+name: Watcher (Wed+Sun opportunities digest)
 
 on:
   schedule:
-    # Sunday 14:00 UTC (~10am ET): weekly competitions/programs/scholarships
-    # digest.
-    - cron: "0 14 * * 0"
+    # Wednesday + Sunday 14:00 UTC (~10am ET): opportunities digest --
+    # competitions, travel-paid events, hackathons, fellowships. Twice a week
+    # because some of these have rolling acceptances you have to pounce on.
+    - cron: "0 14 * * 0,3"
     # Hourly role sweep. REINSTATED 2026-08-07, but narrowed: top-tier quant
     # firms only, Fall-2027 cycle only (Alex has a Summer 2027 offer and is
     # interviewing with Citadel for Fall 2027 SWE). Controlled by
@@ -55,7 +56,7 @@ jobs:
           USAJOBS_EMAIL: ${{ secrets.USAJOBS_EMAIL }}
           # Digest on the Sunday cron, and on a manual run unless "internships"
           # was explicitly chosen.
-          DIGEST_MODE: ${{ (github.event.schedule == '0 14 * * 0' || github.event.inputs.mode == 'digest') && '1' || '0' }}
+          DIGEST_MODE: ${{ (github.event.schedule == '0 14 * * 0,3' || github.event.inputs.mode == 'digest') && '1' || '0' }}
         run: python watcher.py
 
       - name: Save state

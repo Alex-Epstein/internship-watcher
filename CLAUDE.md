@@ -10,7 +10,7 @@
    are skipped in this mode since Sunday already covers them.
    **Expect a quiet inbox** — as of 2026-08-07 zero Fall-2027 roles were open
    across 36 top-firm boards. Fall recruiting opens later in the year.
-2. **Sunday 14:00 UTC competitions/programs digest** (see "Weekly digest").
+2. **Wed + Sun 14:00 UTC opportunities digest** (see "Opportunities digest").
 
 `_is_fall_2027()` gotcha: a title naming another cycle ("Summer 2027 …") is that
 cycle no matter what the body says. Without that guard, JDs mentioning a "fall
@@ -19,19 +19,46 @@ cycle no matter what the body says. Without that guard, JDs mentioning a "fall
 Originally: hourly cron that polls job boards and emails the moment a new
 Summer 2027 internship opens in CS / math / quant / AI / ML / CV / defense.
 
-## Weekly digest (the live feature)
+## Opportunities digest — Wed + Sun (the live feature)
 
-Sunday 14:00 UTC → `DIGEST_MODE=1` → `send_weekly_digest()`, which:
-1. Runs `run_digest_sweep()` over ~95 **competition/event/program** sources only
-   (parallel, 12 workers) and reports pages that **changed since last Sunday** —
-   usually meaning applications just opened.
-2. Appends the `PROGRAMS.md` master calendar, then a clickable index of every
-   watched page (generated from config, so it can't go stale).
+Cron `0 14 * * 0,3` → `DIGEST_MODE=1` → `send_weekly_digest()`. Alex's rule
+(2026-09-02): **every send is the COMPLETE current list**, not a diff — he pastes
+it into an AI and asks what's best, so he never has to open an older email.
+Twice weekly because rolling-acceptance events (Cornell Trading Comp etc.) need
+pouncing on. Sections, in order:
+1. **NEW since last send** — new `opportunities.json` entries, watched pages
+   that changed, discovery-feed hits.
+2. **Everything currently open** — every entry in `opportunities.json` whose
+   deadline/event hasn't passed, sorted by deadline, "closing ≤10d" pulled out.
+   **In-person spring entries are hidden** (`filters.hide_seasons=["spring"]`,
+   `_hidden_season()`): he's in Madrid Jan–May 2027. Online spring stays.
+3. **Discovery feed** — new items from `ats: "rss"` sources (Google News query
+   feeds, Reddit r/quant, HN) via `fetch_rss()`, keyword-gated by
+   `watch_keywords`. Unverified; he/Claude promote good ones into
+   `opportunities.json`. First read of a feed is a silent baseline
+   (`rssfeed::<url>` marker) so a new feed can't flood.
+4. Index of every watched page.
 
-A source is in the digest iff `_is_digest_source()`: explicit `"digest": true` in
-config wins, else the `name:` prefix is one of Competition/Hackathon/Scholarship/
-Fellowship/Abroad/Program/NatSec/Lab/GT/Grant. Company job boards (`Quant SPA:`,
-`Page:`, `Firm SPA:`) are internship-hunting and stay OUT.
+`opportunities.json` is the structured source of truth (id, dates ISO, format,
+season, travel, prizes, perks, eligibility). **Hand-curated** — pagewatch only
+says "a page changed"; it can't extract dates. When he finds something (or a
+watched page fires), add an entry. What he wants: **fun + travel + merch** —
+in-person student trading comps / datathons / firm invitationals with travel
+reimbursed. Not heavy quant recruiting; big tech / AI leaning.
+
+A source is in the digest iff `_is_digest_source()`: explicit `"digest": true`
+wins, else the `name:` prefix ∈ Event/Competition/Hackathon/Scholarship/
+Fellowship/Abroad/Program/NatSec/Lab/GT/Conference/Grant/RSS. `Event:` = the
+travel-paid in-person tier (university comps, SIG Discovery Day, IMC Launchpad,
+Jane Street ETC, Citadel invitationals, aggregators openquant.co /
+quantchallenges.com). Company job boards (`Quant SPA:`, `Page:`, `Firm SPA:`)
+stay OUT — that's the hourly sweep.
+
+**Not feasible (don't retry):** LinkedIn (no API, scraping blocked from
+runners), Discord (needs a bot token in each server), Reddit beyond r/quant
+(429s from CI), Devpost RSS (406), Meta/Citadel-students/Correlation One pages
+(bot-blocked). Cornell was missed originally because none of this existed —
+he found it on the Trading@GT Discord.
 
 **Pagewatch keying (gotcha #9):** pagewatch state keys are
 `pw::<url>::#<content-hash>` via `_pw_key()`. Keyed by URL alone — as it was
