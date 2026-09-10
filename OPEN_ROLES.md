@@ -1,6 +1,6 @@
 # Open roles right now
 
-_Auto-generated each run; do not hand-edit. Last update: 2026-09-10 08:53 UTC. 19 posting(s) currently open and matching filters._
+_Auto-generated each run; do not hand-edit. Last update: 2026-09-10 13:31 UTC. 18 posting(s) currently open and matching filters._
 
 ## Page: Microsoft Careers (1)
 
