@@ -1376,6 +1376,70 @@ def run_digest_sweep(config, seen):
     return changed, discovered, new_seen
 
 
+# Programs/events that firms post AS JOB LISTINGS on their ATS boards (Five
+# Rings "LINK 2027: Software Development Intensive Program", Jane Street
+# INSIGHT, SIG Discovery Day reqs...). These have no "intern" in the title and
+# aren't a hiring cycle, so the hourly sweep drops them and the digest's
+# pagewatch/RSS paths never see boards. This path closes that gap.
+PROGRAM_TITLE_RE = re.compile(
+    r"\bLINK\b|intensive|program(?!mer)|invitational|summit|discovery|insight|"
+    r"launchpad|challenge|competition|datathon|hackathon|workshop|bootcamp|"
+    r"boot camp|fellowship|scholarship|academy|trek|externship|case study|"
+    r"experience day|open day|immersion|\bweek\b|\bday\b|symposium|trading game",
+    re.I)
+# Staff-role words: a title with any of these is a job for an employee, not a
+# student program, even if it says "Program"/"Insights" ("Programs Lead",
+# "Software Engineer, Insights", "Program Coordinator").
+PROGRAM_EXCLUDE_RE = re.compile(
+    r"experienced|lateral|full[- ]?time|campus full|recent graduate|senior|"
+    r"\bphd\b|manager|director|head of|\blead\b|leader|specialist|coordinator|"
+    r"instructor|\banalyst\b|\bengineer\b|operations|compliance|strategy|"
+    r"partnerships|executive|customer|\bgtm\b|\bads\b|marketing|sales|"
+    r"recruit|associate\b|counsel|officer|\bvp\b|president|"
+    r"\bdesigner\b|assistant|\bscientist\b|\bstaff\b|program management|"
+    r"special programs|\boffice\b|"
+    r"summer intern|internship\b|\bintern\b|co-?op\b|graduate program",
+    re.I)
+
+
+def _is_program_posting(title):
+    t = title or ""
+    return bool(PROGRAM_TITLE_RE.search(t)) and not PROGRAM_EXCLUDE_RE.search(t)
+
+
+def sweep_firm_programs(config):
+    """Poll every top-firm ATS board and return program/event-style postings
+    (not internships, not full-time). Parallel; failures skipped."""
+    boards = [f for f in config.get("firms", [])
+              if f.get("enabled", True) and f.get("ats") in
+              ("greenhouse", "lever", "ashby", "workable", "smartrecruiters")
+              and _is_top_firm(f.get("name", ""))]
+
+    def poll(f):
+        try:
+            return f, FETCHERS[f["ats"]](f)
+        except Exception as e:  # noqa: BLE001
+            print(f"  x programs: {f.get('name','?')} skipped: {e}")
+            return f, []
+
+    with ThreadPoolExecutor(max_workers=12) as pool:
+        results = list(pool.map(poll, boards))
+    out, seen_urls = [], set()
+    for f, jobs in results:
+        for j in jobs:
+            if not _is_program_posting(j.get("title", "")):
+                continue
+            u = (j.get("url") or "").strip()
+            if not u or u.lower() in seen_urls:
+                continue
+            seen_urls.add(u.lower())
+            out.append({"company": j.get("company") or re.sub(r"^[^:]+:\s*", "", f.get("name", "")),
+                        "title": j.get("title", ""), "location": j.get("location", ""),
+                        "url": u, "content": (j.get("content") or "")[:400]})
+    print(f"Programs sweep: {len(boards)} boards, {len(out)} program/event posting(s).")
+    return out
+
+
 def _digest_group(name):
     """Bucket a source name into an email section."""
     head = (name or "").split(":")[0].strip().lower()
@@ -1472,6 +1536,20 @@ def send_weekly_digest():
     except Exception as e:  # noqa: BLE001 -- still send the list if polling dies
         print(f"  x digest sweep failed, sending list only: {e}")
 
+    # ---- programs/events posted on top-firm job boards (complete, NEW-flagged) ----
+    programs = []
+    try:
+        programs = sweep_firm_programs(config)
+    except Exception as e:  # noqa: BLE001
+        print(f"  x programs sweep failed: {e}")
+    for pr in programs:
+        key = f"prog::{pr['url'].strip().lower()}"
+        pr["is_new"] = key not in new_seen
+        if pr["is_new"]:
+            new_seen[key] = {"title": pr["title"], "url": pr["url"]}
+    programs.sort(key=lambda x: (not x["is_new"], x["company"].lower(), x["title"]))
+    n_new_prog = sum(1 for x in programs if x["is_new"])
+
     # ---- opportunities: complete list + NEW detection ----
     opps = _load_opps()
     visible, hidden, expired, new_ids = [], [], [], []
@@ -1498,7 +1576,7 @@ def send_weekly_digest():
     ]
 
     # ---- 1) NEW ----
-    if n_new or changed or discovered:
+    if n_new or n_new_prog or changed or discovered:
         parts.append(
             "<div style='border-left:4px solid #b45309;padding:6px 12px;margin:16px 0;"
             "background:#fffbeb'><h3 style='margin:4px 0'>&#9889; NEW since last send</h3>")
@@ -1507,6 +1585,14 @@ def send_weekly_digest():
             for _, o, status, days, is_new in visible:
                 if is_new:
                     parts.append(_opp_li(o, days, status, True))
+            parts.append("</ul>")
+        if n_new_prog:
+            parts.append("<p style='margin:6px 0 2px'><b>New programs/events on firm job boards</b></p><ul>")
+            for pr in programs:
+                if pr["is_new"]:
+                    loc = f" &mdash; {escape(pr['location'])}" if pr.get("location") else ""
+                    parts.append(f"<li><a href='{escape(pr['url'])}'><b>{escape(pr['company'])}</b> &mdash; "
+                                 f"{escape(pr['title'])}</a>{loc} <b style='color:#b45309'>NEW</b></li>")
             parts.append("</ul>")
         if changed:
             parts.append("<p style='margin:6px 0 2px'><b>Watched pages that changed</b> "
@@ -1543,6 +1629,18 @@ def send_weekly_digest():
         parts.append(f"<p style='color:#aaa;font-size:11px'>Expired (kept for next year's watch): "
                      + ", ".join(escape(x.get("name", "")) for x in expired) + "</p>")
 
+    # ---- 2b) programs/events currently posted on firm boards (always complete) ----
+    if programs:
+        parts.append(f"<hr><h2>&#127970; Programs &amp; events on firm job boards &mdash; {len(programs)}</h2>"
+                     "<p style='color:#666;font-size:12px'>Non-internship postings on the top firms' own boards "
+                     "(intensives, invitationals, insight weeks). Pulled live every send.</p><ul>")
+        for pr in programs:
+            loc = f" &mdash; {escape(pr['location'])}" if pr.get("location") else ""
+            tag = " <b style='color:#b45309'>NEW</b>" if pr["is_new"] else ""
+            parts.append(f"<li><a href='{escape(pr['url'])}'><b>{escape(pr['company'])}</b> &mdash; "
+                         f"{escape(pr['title'])}</a>{loc}{tag}</li>")
+        parts.append("</ul>")
+
     # ---- 3) discovery feed ----
     if discovered:
         parts.append(f"<hr><h2>&#128269; Discovery feed &mdash; {len(discovered)} new mention(s)</h2>"
@@ -1576,8 +1674,8 @@ def send_weekly_digest():
     parts.append("<p style='color:#888;font-size:12px'>Sent Wed + Sun by your watcher. "
                  "To add something: reply with the link and I'll put it in the list.</p>")
 
-    subj = f"[Watcher] {len(visible)} open"
-    if n_new: subj += f" · {n_new} new"
+    subj = f"[Watcher] {len(visible) + len(programs)} open"
+    if n_new + n_new_prog: subj += f" · {n_new + n_new_prog} new"
     if closing: subj += f" · {len(closing)} closing soon"
     send_email(subj + " — opportunities digest", "\n".join(parts))
     save_json(SEEN_FILE, new_seen)

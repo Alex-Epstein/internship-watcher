@@ -2,6 +2,22 @@
   "_readme": "Structured list rendered IN FULL in every Wed/Sun digest. Fields: id,name,type,url,apply_url,event_date,deadline (ISO),location,format (in-person|online|hybrid),season (fall|winter|spring|summer|rolling),travel,prizes,perks,eligibility,notes. In-person spring entries are hidden (Madrid). Add entries here or tell Claude.",
   "opportunities": [
     {
+      "id": "five-rings-link-2027",
+      "name": "Five Rings LINK 2027 — Software Development Intensive",
+      "type": "firm-program",
+      "url": "https://job-boards.greenhouse.io/fiveringsllc",
+      "event_date": "2027-01-04",
+      "deadline": null,
+      "location": "Five Rings HQ, Brookfield Place, NYC",
+      "format": "in-person",
+      "season": "winter",
+      "travel": "travel to/from NYC + housing covered",
+      "prizes": "$2,000 stipend",
+      "perks": "breakfast + lunch, social activities with the team; 5-day workshop on trading systems, C++23, Python, Linux, network stacks, distributed systems",
+      "eligibility": "CURRENT SOPHOMORES (second year of university). Apply once; session assigned in offer process.",
+      "notes": "Three sessions: Jan 4-8 2027, Jan 11-15 2027, Aug 9-13 2027. Jan sessions are before Madrid; Aug 9-13 may overlap the tail of Walleye. No deadline posted = rolling, apply now. Needs transcript upload. Found via LinkedIn (Beyond the Code)."
+    },
+    {
       "id": "cornell-trading-2026",
       "name": "Cornell Trading Competition 2026",
       "type": "trading-competition",

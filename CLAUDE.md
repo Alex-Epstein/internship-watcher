@@ -37,7 +37,16 @@ pouncing on. Sections, in order:
    `watch_keywords`. Unverified; he/Claude promote good ones into
    `opportunities.json`. First read of a feed is a silent baseline
    (`rssfeed::<url>` marker) so a new feed can't flood.
-4. Index of every watched page.
+4. **Programs & events on firm job boards** — `sweep_firm_programs()` polls
+   every top-firm ATS board live each send and lists non-internship postings
+   that match `PROGRAM_TITLE_RE` (intensive / invitational / insight / LINK /
+   discovery / summit / challenge...). Always complete, NEW-flagged via
+   `prog::<url>` keys. **Gotcha #10:** Five Rings "LINK 2027: Software
+   Development Intensive Program" ($2k + travel + housing) was polled hourly
+   and *dropped* — no "intern" in the title and not Fall 2027 — while the digest
+   never looked at boards at all. Programs posted as job reqs fell between both
+   systems. Alex found it on LinkedIn.
+5. Index of every watched page.
 
 `opportunities.json` is the structured source of truth (id, dates ISO, format,
 season, travel, prizes, perks, eligibility). **Hand-curated** — pagewatch only
