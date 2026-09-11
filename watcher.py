@@ -72,6 +72,8 @@ def fetch_greenhouse(firm):
             "location": (j.get("location") or {}).get("name", "") or "",
             "url": j.get("absolute_url", "") or "",
             "content": (j.get("content", "") or "").lower(),
+            "metadata": " | ".join(str(x.get("value")) for x in (j.get("metadata") or []) if x.get("value")),
+            "department": " | ".join(d.get("name","") for d in (j.get("departments") or [])),
         })
     return out
 
@@ -1398,13 +1400,27 @@ PROGRAM_EXCLUDE_RE = re.compile(
     r"recruit|associate\b|counsel|officer|\bvp\b|president|"
     r"\bdesigner\b|assistant|\bscientist\b|\bstaff\b|program management|"
     r"special programs|\boffice\b|"
+    r"\bjunior\b|\bgraduate\b|\bshift\b|strategist|\btrader\b|\bsre\b|"
     r"summer intern|internship\b|\bintern\b|co-?op\b|graduate program",
     re.I)
 
 
-def _is_program_posting(title):
+# Some boards label these precisely (Five Rings: Job Classification =
+# "Early Engagement"). When the ATS exposes that, trust it over the title.
+PROGRAM_META_RE = re.compile(
+    r"early engagement|early career|early careers|campus event|student program|"
+    r"insight|discovery|invitational|academy|fellowship|hackathon|competition", re.I)
+PROGRAM_META_EXCLUDE_RE = re.compile(r"summer intern|full-?time|campus hire|experienced|lateral", re.I)
+
+
+def _is_program_posting(title, meta=""):
     t = title or ""
-    return bool(PROGRAM_TITLE_RE.search(t)) and not PROGRAM_EXCLUDE_RE.search(t)
+    if PROGRAM_EXCLUDE_RE.search(t):
+        return False
+    if PROGRAM_TITLE_RE.search(t):
+        return True
+    m = meta or ""
+    return bool(PROGRAM_META_RE.search(m)) and not PROGRAM_META_EXCLUDE_RE.search(m)
 
 
 def sweep_firm_programs(config):
@@ -1427,7 +1443,7 @@ def sweep_firm_programs(config):
     out, seen_urls = [], set()
     for f, jobs in results:
         for j in jobs:
-            if not _is_program_posting(j.get("title", "")):
+            if not _is_program_posting(j.get("title", ""), j.get("metadata", "")):
                 continue
             u = (j.get("url") or "").strip()
             if not u or u.lower() in seen_urls:
