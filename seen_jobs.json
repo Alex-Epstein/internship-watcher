@@ -9098,5 +9098,133 @@
   "prog::https://www.janestreet.com/join-jane-street/apply/8827433002?gh_jid=8827433002": {
     "title": "Dean of Students, Academy of Math and Programming (AMP)",
     "url": "https://www.janestreet.com/join-jane-street/apply/8827433002?gh_jid=8827433002"
+  },
+  "pw::https://ieeextreme.org/::#e84239069780aab1": {
+    "title": "Page changed - check Competition: IEEEXtreme (24h, October) (may mean applications opened)",
+    "url": "https://ieeextreme.org/"
+  },
+  "pw::https://www.treehacks.com/::#f7157d37ad6551ef": {
+    "title": "Page changed - check Hackathon: TreeHacks (Stanford) (may mean applications opened)",
+    "url": "https://www.treehacks.com/"
+  },
+  "pw::https://www.hertzfoundation.org/the-fellowship/::#94b31f6692d5dbf3": {
+    "title": "Page changed - check Fellowship: Hertz (senior year) (may mean applications opened)",
+    "url": "https://www.hertzfoundation.org/the-fellowship/"
+  },
+  "pw::https://undergradresearch.gatech.edu/pura-salary::#b20047e4e9090662": {
+    "title": "Page changed - check GT: PURA salary award (may mean applications opened)",
+    "url": "https://undergradresearch.gatech.edu/pura-salary"
+  },
+  "pw::https://undergradresearch.gatech.edu/::#b20047e4e9090662": {
+    "title": "Page changed - check GT: undergraduate research opportunities (may mean applications opened)",
+    "url": "https://undergradresearch.gatech.edu/"
+  },
+  "pw::https://atcoder.jp/contests/::#09a14ac50496126d": {
+    "title": "Page changed - check Competition: AtCoder (may mean applications opened)",
+    "url": "https://atcoder.jp/contests/"
+  },
+  "pw::https://quantchallenges.com/::#384b0bcca8414778": {
+    "title": "Page changed - check Event: QuantChallenges.com (aggregator) (may mean applications opened)",
+    "url": "https://quantchallenges.com/"
+  },
+  "rss::d3a5a29ee4e00e03": {
+    "title": "Kean Student Teams Excel in Bloomberg Global Trading Challenge - Kean University",
+    "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPMmozcGhURlV6S2lJQ2xjY1A0M19tMFR5VGxIZXJHTWhMUWhQNzltNFZmZkw1eWxGSVpZS0JETWlMYVNaeGZUWXhBdDFHZ3BKU3hQT0VkVEhsOTFMOHRQV3VMN0hhUm5Ec1BEUFM5bm1xMk5sLTRkanNiSWc4TTNJbGd2dDNMbDBDQVA4NEZR?oc=5"
+  },
+  "rss::b4182e07a3e96951": {
+    "title": "UT Dallas Online Stock Trading Competition Draws National Interest - The University of Texas at Dallas",
+    "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPOENTQXBBVVVENG5JVE1hRHZKcDU5elB5dnFGbHdMSGFUY0JXemhNMHNsUUp0RFRuQ2sxNkNnSFRycEVmVHpaVFRQbF9aSkNVbl92LXpwamw5M0dOakxuR185VnRVaGM4dWs2WmhfTnhKMHZfUDZreV9SMkpSd25iVFYyS3kxYV92dVFFQ0ozbVJ3a0ZtblM5eV9n?oc=5"
+  },
+  "rss::78df6e7edb4855d3": {
+    "title": "Congratulations to the Faculty of Mathematics Team on their Success in this Year’s Rotman International Trading Competition! - University of Waterloo",
+    "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNdmc1MVZLbjhIWEkyeEc4NE03NjBPRjg4M1hvZUNRZ1RzNVU1RWxSS1p5SnpxVXQ5M2pNZXlIaXZQZnA1NE9Pd3RBMkJSMmFTbHBUdktJazI2VFY5RDIxSU5yei1HdVc2bGpGWVp2aEF5OEtqZVJEeGtpZkZlUjZxOUJETkhQbEU1YnpZREtRVlFETjU2NWpjdEl5OTNvZEV6eGRCdG5GX0tpNEJqVjRhNWVReXQ2MkF0MXFZNw?oc=5"
+  },
+  "rss::e712c638a524c229": {
+    "title": "MSCF Hosts 2nd Annual Datathon: Advancing Experiential Learning and Industry Connections - cmu.edu",
+    "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxONXFna21VVmE0TUhJcnhUeE84TjlUcU80M1hlMjBpbGdnOEZLS2MzcEFscURIeU9MZkdBbkhjSUZ4cVlxTTdBS1FFSTVkLVJvWVh3Ry1HbVlDNVZNUFNZM2FWam41RjNBd0VHVHo3UW5FdkxLUlkyQkJmeTlxVXhrMmhONnFSRF95YmFSVldYcE1xSXJwSzJQa1FEcDhzMVF4cGJyYUhvNFZMY1h2bHZGZ19VRm9Db1BH?oc=5"
+  },
+  "rss::e2dcf41fd6a38460": {
+    "title": "University of San Francisco Data Science Conference 2023 Datathon in partnership with AWS and Amazon SageMaker Studio Lab | Amazon Web Services - Amazon Web Services (AWS)",
+    "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPZTdqaGRNbWJCR05VTHAxaW1wNXJFLWJHMk1YQmtuN2s4QjliZGdLdG1RRENaVV9udHcxc09NZWpUZ2V1ZGhKR0pzSFZWekx3VktJMndMclRsc2p2YWpNalkxMmJGMWRKQWtWUEg5TjVFejRncmFDVlpaa3hMVEhFWWd2TUMzdUw0NGZaMnNKTElqUHp3S0lZSFlLVmxaUF84WVZBVXpCWjhRMVBLQzR0ejlXWHFzSDVuRWdRejFncXB4d3RKcEp0bEZVbldYcG8tVUt4M1Q0QXh6QzNlZUNma3BYU28zdW5ZRGJpVXIyYlhfc0FMRTQ0TjhlOEQ?oc=5"
+  },
+  "rss::5184065db6dcd01d": {
+    "title": "Students from Comillas ICAI participate in the second edition of the Datathon in collaboration with Endesa - Universidad Pontificia Comillas",
+    "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPaW5nQjBPLTk2WXRXeFVxV2R4cXZvUG5zZTFMRWdKYVBLYlJKbDA2eUk0TEJTMkNxcU42V2dhVW5sUGZwVlRKSkIwa0FXcmRqYTNZQS1sSGthN1laVGJ6c1ZrYmx4OHpZX1puZ3UwT2U3RVdzcDRFUkRKY054QmhTT3F4bXVhYTBQVVpDb3pJTkJKUi1vekZZZjViWUd1MDhTLTFvMFphLTRzNFgzMWhzczF1RVRnZTNxMzlWNzVzNlAyMDMz?oc=5"
+  },
+  "rss::ed29511961bc6ebd": {
+    "title": "Two Berkeley MFE Teams Win IAQF Student Competition - UC Berkeley Haas News",
+    "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPQ1Y5b2M1cVNGTWVMRzEzbU9vUDViTlFwMWRlcVFWcmwyZ1NsblRBTXFZOHJRNmYweW9JTU42SnBPbUhPaDQ2dkFXX1BnNkRTQnJhVDRNeFluZzF0emRQZmFDdGtYVklrTk5HaHlvbTktV1lZTkYya0xJQ3FqTkZnaE9OUXVwZDZfWHVhVVhVUTI?oc=5"
+  },
+  "rss::e78295568c9ab1c4": {
+    "title": "100 Best & Brightest Undergraduate Business Majors Of 2024 - Poets&Quants for Undergrads",
+    "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNSWxCeklZTGF1OWtNYkl3LTFwSFFIUmhhYkR2U2o2a1BnTENfYk1fYXp0N2FUSUJ6dGRKTWZzX1ZCTWFIMDhsYWdSUjc0T0lwNGotMDUtWmpyVVNNd1ZnY2RTWjJ1RzZvMVliTmlDVF9Vek02NFA4czNraHVaRjZ3UkYxNk5Pa0p2U2UzZUNYOTEwSUdJUUtSb3h1TDhjY1FMNWxSWE5McGlpZw?oc=5"
+  },
+  "rss::65a9f0168a73d5da": {
+    "title": "Literacy for Environmental Justice Climate Action Fellowship 2026–2027 at San Francisco State University: Receive a $10,000 Stipend While Advancing Climate Justice - Global South Opportunities",
+    "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5YMG0yUDFHMVRQQk9tYjdaUEF1aWpXdmJEVjJsbU9hYzN2U2YxenBacURKVjNVaE1jQUJNMXlKQTZoR2E5NTN2MlFXNzZJUlU2cDdfaC1vaTYzVnBQNzRTd2ZfZ0t3NXJ2eHRtSjFn?oc=5"
+  },
+  "rss::5a1d436ab719764e": {
+    "title": "Alpha Fellowship 2026 | Join an a16z Startup or Get Up to $250,000 - After School Africa",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE0xbGVYSEk0ejZLMUhMRG5rLVc4N3FnaFluZjZadkczQ0lKSzREckREc09wMnlFOHo5N3BXM0ZwSFdQcDhDQVdCWHVEZGRiRkhsQ3BiQzZNN1k1WW1FYXd6eUEzeDZCUU1YdHc?oc=5"
+  },
+  "rss::ee277c091da0f400": {
+    "title": "Vol questions from a personal setup: dual time conventions and theta, de-eventing RV without intraday data, and data vendors for a vol backtest",
+    "url": "https://www.reddit.com/r/quant/comments/1wrk8w3/vol_questions_from_a_personal_setup_dual_time/"
+  },
+  "rss::7c6f7da8fc16dac8": {
+    "title": "Tips on recruiting for tech?",
+    "url": "https://www.reddit.com/r/quant/comments/1wrcm5u/tips_on_recruiting_for_tech/"
+  },
+  "rss::d89b72fb10cfec86": {
+    "title": "Eqvilent trading",
+    "url": "https://www.reddit.com/r/quant/comments/1wqj9o9/eqvilent_trading/"
+  },
+  "rss::71b65ff723da7d97": {
+    "title": "Where do independent traders or small funds usually hire freelance quants?",
+    "url": "https://www.reddit.com/r/quant/comments/1wpz4xx/where_do_independent_traders_or_small_funds/"
+  },
+  "rss::305a43404e1351a0": {
+    "title": "Headhunting firms for UK/EU/APAC",
+    "url": "https://www.reddit.com/r/quant/comments/1wpp9th/headhunting_firms_for_ukeuapac/"
+  },
+  "rss::4562d6b12d0e5839": {
+    "title": "How should quants redefine a “trading day” when U.S. equities move to 23/5?",
+    "url": "https://www.reddit.com/r/quant/comments/1wpmsoz/how_should_quants_redefine_a_trading_day_when_us/"
+  },
+  "rss::fbaa1e84680166c6": {
+    "title": "London Quant Dev TC to expect?",
+    "url": "https://www.reddit.com/r/quant/comments/1wpl23m/london_quant_dev_tc_to_expect/"
+  },
+  "rss::a6ab80dbb812b6a8": {
+    "title": "Is alpha going away?",
+    "url": "https://www.reddit.com/r/quant/comments/1wp5tqu/is_alpha_going_away/"
+  },
+  "rss::a97369176b61315e": {
+    "title": "Testing whether aggressive-flow displacement efficiency has predictive value for short-horizon BTC returns",
+    "url": "https://www.reddit.com/r/quant/comments/1wox5eb/testing_whether_aggressiveflow_displacement/"
+  },
+  "rss::00dcd8d6c4de6cdf": {
+    "title": "Mumbai Quant meet up!",
+    "url": "https://www.reddit.com/r/quant/comments/1woubsb/mumbai_quant_meet_up/"
+  },
+  "rss::ffeb21dab660c3fb": {
+    "title": "Cubist performance",
+    "url": "https://www.reddit.com/r/quant/comments/1wotax9/cubist_performance/"
+  },
+  "rss::db4f26bd0a44d666": {
+    "title": "Number of features/signals mid-low to low frequency models",
+    "url": "https://www.reddit.com/r/quant/comments/1woo9f1/number_of_featuressignals_midlow_to_low_frequency/"
+  },
+  "rss::94b652f3061cbf74": {
+    "title": "Qube Research and Technologies firings",
+    "url": "https://www.reddit.com/r/quant/comments/1woiyfb/qube_research_and_technologies_firings/"
+  },
+  "prog::https://boards.greenhouse.io/andurilindustries/jobs/5087403007?gh_jid=5087403007": {
+    "title": "Chief Engineers, Advanced Aircraft Programs",
+    "url": "https://boards.greenhouse.io/andurilindustries/jobs/5087403007?gh_jid=5087403007"
+  },
+  "prog::https://job-boards.eu.greenhouse.io/imc/jobs/4979079101": {
+    "title": "2026 Chess Academy Australia & New Zealand - Expression of Interest",
+    "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4979079101"
   }
 }
