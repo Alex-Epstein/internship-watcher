@@ -1,6 +1,6 @@
 # Open roles right now
 
-_Auto-generated each run; do not hand-edit. Last update: 2026-09-28 06:34 UTC. 18 posting(s) currently open and matching filters._
+_Auto-generated each run; do not hand-edit. Last update: 2026-09-28 15:13 UTC. 19 posting(s) currently open and matching filters._
 
 ## Page: Microsoft Careers (1)
 
@@ -33,6 +33,10 @@ _Auto-generated each run; do not hand-edit. Last update: 2026-09-28 06:34 UTC. 1
 ## Quant SPA: Headlands Tech (1)
 
 - [Quant SPA: Headlands Tech — Page changed - check Quant SPA: Headlands Tech (may mean applications opened)](https://www.headlandstech.com/careers/)
+
+## Quant SPA: Man AHL (Man Group) (1)
+
+- [Quant SPA: Man AHL (Man Group) — Page changed - check Quant SPA: Man AHL (Man Group) (may mean applications opened)](https://www.man.com/careers)
 
 ## Quant SPA: Peak6 (1)
 
