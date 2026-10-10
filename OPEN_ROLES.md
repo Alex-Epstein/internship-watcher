@@ -1,6 +1,6 @@
 # Open roles right now
 
-_Auto-generated each run; do not hand-edit. Last update: 2026-10-10 18:25 UTC. 20 posting(s) currently open and matching filters._
+_Auto-generated each run; do not hand-edit. Last update: 2026-10-10 22:25 UTC. 21 posting(s) currently open and matching filters._
 
 ## Amazon (AWS / Robotics / all) (1)
 
@@ -49,6 +49,10 @@ _Auto-generated each run; do not hand-edit. Last update: 2026-10-10 18:25 UTC. 2
 ## Quant SPA: Peak6 (1)
 
 - [Quant SPA: Peak6 — Page changed - check Quant SPA: Peak6 (may mean applications opened)](https://peak6.com/careers/)
+
+## Quant SPA: Qube Research & Technologies (1)
+
+- [Quant SPA: Qube Research & Technologies — Page changed - check Quant SPA: Qube Research & Technologies (may mean applications opened)](https://www.qube-rt.com/careers)
 
 ## Quant SPA: Renaissance Technologies (1)
 
