@@ -1,6 +1,6 @@
 # Open roles right now
 
-_Auto-generated each run; do not hand-edit. Last update: 2026-10-13 21:10 UTC. 19 posting(s) currently open and matching filters._
+_Auto-generated each run; do not hand-edit. Last update: 2026-10-14 01:04 UTC. 22 posting(s) currently open and matching filters._
 
 ## Amazon (AWS / Robotics / all) (1)
 
@@ -27,6 +27,10 @@ _Auto-generated each run; do not hand-edit. Last update: 2026-10-13 21:10 UTC. 1
 
 - [Quant SPA: Cumberland (DRW) — Page changed - check Quant SPA: Cumberland (DRW) (may mean applications opened)](https://cumberland.io/careers/)
 
+## Quant SPA: GTS (1)
+
+- [Quant SPA: GTS — Page changed - check Quant SPA: GTS (may mean applications opened)](https://www.gtsx.com/careers)
+
 ## Quant SPA: Geneva Trading (open positions) (1)
 
 - [Quant SPA: Geneva Trading (open positions) — Page changed - check Quant SPA: Geneva Trading (open positions) (may mean applications opened)](https://www.genevatrading.com/careers-open-positions/)
@@ -46,6 +50,10 @@ _Auto-generated each run; do not hand-edit. Last update: 2026-10-13 21:10 UTC. 1
 ## Quant SPA: Peak6 (1)
 
 - [Quant SPA: Peak6 — Page changed - check Quant SPA: Peak6 (may mean applications opened)](https://peak6.com/careers/)
+
+## Quant SPA: Qube Research & Technologies (1)
+
+- [Quant SPA: Qube Research & Technologies — Page changed - check Quant SPA: Qube Research & Technologies (may mean applications opened)](https://www.qube-rt.com/careers)
 
 ## Quant SPA: Renaissance Technologies (1)
 
