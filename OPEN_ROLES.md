@@ -1,6 +1,6 @@
 # Open roles right now
 
-_Auto-generated each run; do not hand-edit. Last update: 2026-10-17 12:52 UTC. 21 posting(s) currently open and matching filters._
+_Auto-generated each run; do not hand-edit. Last update: 2026-10-17 16:17 UTC. 20 posting(s) currently open and matching filters._
 
 ## Amazon (AWS / Robotics / all) (1)
 
@@ -38,10 +38,6 @@ _Auto-generated each run; do not hand-edit. Last update: 2026-10-17 12:52 UTC. 2
 ## Quant SPA: Group One Trading (1)
 
 - [Quant SPA: Group One Trading — Page changed - check Quant SPA: Group One Trading (may mean applications opened)](https://www.grouponetrading.com/careers/)
-
-## Quant SPA: Headlands Tech (1)
-
-- [Quant SPA: Headlands Tech — Page changed - check Quant SPA: Headlands Tech (may mean applications opened)](https://www.headlandstech.com/careers/)
 
 ## Quant SPA: Man AHL (Man Group) (1)
 

@@ -1,6 +1,6 @@
 # Top picks (auto-generated)
 
-_Quant / SWE / ML roles in target cities. 19 of 21 open roles. Rebuilt every sweep: 2026-10-17 12:52 UTC._
+_Quant / SWE / ML roles in target cities. 18 of 20 open roles. Rebuilt every sweep: 2026-10-17 16:17 UTC._
 
 Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant elsewhere, then other SWE/ML. Within each, sweet-spot firms before elite.
 
@@ -23,7 +23,6 @@ Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant els
 - [Quant SPA: Trexquant Investment — Page changed - check Quant SPA: Trexquant Investment (may mean applications opened)](https://trexquant.com/careers)
 - [Quant SPA: Verition Fund Management — Page changed - check Quant SPA: Verition Fund Management (may mean applications opened)](https://www.verition.com/)
 - [Quant SPA: Cumberland (DRW) — Page changed - check Quant SPA: Cumberland (DRW) (may mean applications opened)](https://cumberland.io/careers/) ⚡elite
-- [Quant SPA: Headlands Tech — Page changed - check Quant SPA: Headlands Tech (may mean applications opened)](https://www.headlandstech.com/careers/) ⚡elite
 
 ## Other SWE / ML in target cities
 
