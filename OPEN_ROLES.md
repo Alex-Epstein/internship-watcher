@@ -1,13 +1,14 @@
 # Open roles right now
 
-_Auto-generated each run; do not hand-edit. Last update: 2026-10-22 19:14 UTC. 21 posting(s) currently open and matching filters._
+_Auto-generated each run; do not hand-edit. Last update: 2026-10-22 23:10 UTC. 23 posting(s) currently open and matching filters._
 
 ## Amazon (AWS / Robotics / all) (1)
 
 - [Amazon (AWS / Robotics / all) — Software Development Engineer Intern, AWS Database - 2027 (US)](https://www.amazon.jobs/en/jobs/10565667/software-development-engineer-intern-aws-database-2027-us) — Seattle, Washington, USA
 
-## Databricks (2)
+## Databricks (3)
 
+- [Databricks — Data Science Intern (2027 Start)](https://databricks.com/company/careers/open-positions/job?gh_jid=6866538002) — Mountain View, California; San Francisco, California
 - [Databricks — Software Engineering Intern (2027)](https://databricks.com/company/careers/open-positions/job?gh_jid=6865687002) — Bellevue, Washington; Mountain View, California; San Francisco, California; Vancouver, Canada
 - [Databricks — Software Engineering Intern (2027 Start) - Belgrade](https://databricks.com/company/careers/open-positions/job?gh_jid=7640764002) — Belgrade, Serbia
 
@@ -50,6 +51,10 @@ _Auto-generated each run; do not hand-edit. Last update: 2026-10-22 19:14 UTC. 2
 ## Quant SPA: Peak6 (1)
 
 - [Quant SPA: Peak6 — Page changed - check Quant SPA: Peak6 (may mean applications opened)](https://peak6.com/careers/)
+
+## Quant SPA: Qube Research & Technologies (1)
+
+- [Quant SPA: Qube Research & Technologies — Page changed - check Quant SPA: Qube Research & Technologies (may mean applications opened)](https://www.qube-rt.com/careers)
 
 ## Quant SPA: Renaissance Technologies (1)
 

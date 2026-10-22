@@ -1,6 +1,6 @@
 # Top picks (auto-generated)
 
-_Quant / SWE / ML roles in target cities. 19 of 21 open roles. Rebuilt every sweep: 2026-10-22 19:14 UTC._
+_Quant / SWE / ML roles in target cities. 21 of 23 open roles. Rebuilt every sweep: 2026-10-22 23:10 UTC._
 
 Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant elsewhere, then other SWE/ML. Within each, sweet-spot firms before elite.
 
@@ -18,6 +18,7 @@ Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant els
 - [Quant SPA: AQR Capital Management — Page changed - check Quant SPA: AQR Capital Management (may mean applications opened)](https://careers.aqr.com/jobs/department/university-jobs)
 - [Quant SPA: Bridgewater — Page changed - check Quant SPA: Bridgewater (may mean applications opened)](https://www.bridgewater.com/working-at-bridgewater)
 - [Quant SPA: Man AHL (Man Group) — Page changed - check Quant SPA: Man AHL (Man Group) (may mean applications opened)](https://www.man.com/careers)
+- [Quant SPA: Qube Research & Technologies — Page changed - check Quant SPA: Qube Research & Technologies (may mean applications opened)](https://www.qube-rt.com/careers)
 - [Quant SPA: Renaissance Technologies — Page changed - check Quant SPA: Renaissance Technologies (may mean applications opened)](https://www.rentec.com/Careers.action?jobs=true)
 - [Quant SPA: Squarepoint Capital — Page changed - check Quant SPA: Squarepoint Capital (may mean applications opened)](https://www.squarepoint-capital.com/early-careers)
 - [Quant SPA: Trexquant Investment — Page changed - check Quant SPA: Trexquant Investment (may mean applications opened)](https://trexquant.com/careers)
@@ -28,4 +29,5 @@ Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant els
 ## Other SWE / ML in target cities
 
 - [Amazon (AWS / Robotics / all) — Software Development Engineer Intern, AWS Database - 2027 (US)](https://www.amazon.jobs/en/jobs/10565667/software-development-engineer-intern-aws-database-2027-us) — Seattle, Washington, USA
+- [Databricks — Data Science Intern (2027 Start)](https://databricks.com/company/careers/open-positions/job?gh_jid=6866538002) — Mountain View, California; San Francisco, California
 - [Databricks — Software Engineering Intern (2027)](https://databricks.com/company/careers/open-positions/job?gh_jid=6865687002) — Bellevue, Washington; Mountain View, California; San Francisco, California; Vancouver, Canada
