@@ -1,6 +1,6 @@
 # Open roles right now
 
-_Auto-generated each run; do not hand-edit. Last update: 2026-10-27 07:36 UTC. 22 posting(s) currently open and matching filters._
+_Auto-generated each run; do not hand-edit. Last update: 2026-10-27 14:17 UTC. 22 posting(s) currently open and matching filters._
 
 ## Amazon (AWS / Robotics / all) (1)
 
