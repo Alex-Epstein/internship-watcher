@@ -1,0 +1,384 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//internship-watcher//opportunities//EN
+X-WR-CALNAME:Opportunities (watcher)
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:opp-point72-academy-case-comp-2026@internship-watcher
+DTSTAMP:20261029T063630Z
+DTSTART;VALUE=DATE:20261112
+DTEND;VALUE=DATE:20261113
+SUMMARY:Point72 Academy National Case Competition 2026 (stock pitch)
+DESCRIPTION:virtual rounds\; finals in NYC Nov 12-13 | see page | finalist teams travel to NYC to present | team from your university (check page for class years)
+URL:https://boards.greenhouse.io/point72/jobs/8726366002?gh_jid=8726366002
+END:VEVENT
+BEGIN:VEVENT
+UID:dl-point72-academy-case-comp-2026@internship-watcher
+DTSTAMP:20261029T063630Z
+DTSTART;VALUE=DATE:20261001
+DTEND;VALUE=DATE:20261002
+SUMMARY:DEADLINE: Point72 Academy National Case Competition 2026 (stock pitch)
+DESCRIPTION:virtual rounds\; finals in NYC Nov 12-13 | see page | finalist teams travel to NYC to present | team from your university (check page for class years)
+URL:https://boards.greenhouse.io/point72/jobs/8726366002?gh_jid=8726366002
+END:VEVENT
+BEGIN:VEVENT
+UID:opp-atl-ai-hackathon-nov-2026@internship-watcher
+DTSTAMP:20261029T063630Z
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261108
+SUMMARY:ATL AI Hackathon (Emory)
+DESCRIPTION:Emory University\, Atlanta\, GA | see page | n/a (local)
+URL:https://www.hackathonradar.com/discover/atlanta
+END:VEVENT
+BEGIN:VEVENT
+UID:opp-advent-of-code-2026@internship-watcher
+DTSTAMP:20261029T063630Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261202
+SUMMARY:Advent of Code 2026
+DESCRIPTION:online | leaderboard glory | n/a | anyone
+URL:https://adventofcode.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:opp-barcelona-hackathon-feb-2027@internship-watcher
+DTSTAMP:20261029T063630Z
+DTSTART;VALUE=DATE:20270212
+DTEND;VALUE=DATE:20270213
+SUMMARY:Barcelona Hackathon (48h\, €10k pool)
+DESCRIPTION:Barcelona\, Spain | €10\,000+ | unknown
+URL:https://hackathonhub.eu/events/barcelona-hackathon-barcelona-2027
+END:VEVENT
+BEGIN:VEVENT
+UID:opp-developerweek-ny-hack-2027@internship-watcher
+DTSTAMP:20261029T063630Z
+DTSTART;VALUE=DATE:20270615
+DTEND;VALUE=DATE:20270616
+SUMMARY:DeveloperWeek New York Hackathon 2027
+DESCRIPTION:Meadowlands Expo Center\, Secaucus NJ (NYC metro) | $12\,500 cash + products | n/a (you'll be in NYC) | open\; pro-oriented\, not student-specific
+URL:https://www.developerweek.com/newyork/
+END:VEVENT
+BEGIN:VEVENT
+UID:opp-five-rings-link-2027@internship-watcher
+DTSTAMP:20261029T063630Z
+DTSTART;VALUE=DATE:20270104
+DTEND;VALUE=DATE:20270105
+SUMMARY:Five Rings LINK 2027 — Software Development Intensive
+DESCRIPTION:Five Rings HQ\, Brookfield Place\, NYC | $2\,000 stipend | travel to/from NYC + housing covered | CURRENT SOPHOMORES (second year of university). Apply once\; session assigned in offer process.
+URL:https://job-boards.greenhouse.io/fiveringsllc
+END:VEVENT
+BEGIN:VEVENT
+UID:opp-ise-hackathon-barcelona-2027@internship-watcher
+DTSTAMP:20261029T063630Z
+DTSTART;VALUE=DATE:20270202
+DTEND;VALUE=DATE:20270203
+SUMMARY:ISE Hackathon 2027 (Barcelona\, at ISE trade show)
+DESCRIPTION:Fira de Barcelona\, Spain | see page | check page | students\, pre-selection assessment
+URL:https://www.iseurope.org/ise-hackathon
+END:VEVENT
+BEGIN:VEVENT
+UID:opp-innodata-hackathon-2026@internship-watcher
+DTSTAMP:20261029T063630Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:Innodata Hackathon 2026 (NYC\, one day)
+DESCRIPTION:St. John's University\, Manhattan campus\, NYC | $8\,750 cash to top 3 teams | none listed (NYC) | SWE/AI-ML builders\, technical students + recent grads
+URL:https://www.innodata.com/innodata-hackathon/
+END:VEVENT
+BEGIN:VEVENT
+UID:opp-start-hack-2027@internship-watcher
+DTSTAMP:20261029T063630Z
+DTSTART;VALUE=DATE:20270317
+DTEND;VALUE=DATE:20270318
+SUMMARY:START Hack 2027 (St. Gallen\, 600+ hackers\, 36h)
+DESCRIPTION:St. Gallen\, Switzerland | see page | check page | students
+URL:https://www.startglobal.org/start-hack
+END:VEVENT
+BEGIN:VEVENT
+UID:mlh-01a0ec52-db7c-0b5a-048b-65e2ac93ab5f@internship-watcher
+DTSTAMP:20261029T063630Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:SharkByte (Miami\, FL)
+DESCRIPTION:MLH hackathon
+URL:https://shark-byte.io/
+END:VEVENT
+BEGIN:VEVENT
+UID:mlh-01a06247-8bb4-b4aa-ad42-b521be80b16a@internship-watcher
+DTSTAMP:20261029T063630Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:HackTrent (Peterborough\, Ontario)
+DESCRIPTION:MLH hackathon
+URL:https://www.hacktrent.ca/
+END:VEVENT
+BEGIN:VEVENT
+UID:mlh-01a0a682-b6ce-34cc-4fb5-70e9a47a3a6c@internship-watcher
+DTSTAMP:20261029T063630Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:YCP Hacks (York PA\, PA)
+DESCRIPTION:MLH hackathon
+URL:https://ycphacks.io/
+END:VEVENT
+BEGIN:VEVENT
+UID:mlh-019f48c3-b33d-bdda-d714-5afadd68324e@internship-watcher
+DTSTAMP:20261029T063630Z
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261108
+SUMMARY:HackUTD (Richardson\, Texas)
+DESCRIPTION:MLH hackathon
+URL:https://zeroday.hackutd.co
+END:VEVENT
+BEGIN:VEVENT
+UID:mlh-019fc80d-c744-370d-6102-88c12930a4c4@internship-watcher
+DTSTAMP:20261029T063630Z
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261108
+SUMMARY:BioHacks (Hamilton\, Ontario)
+DESCRIPTION:MLH hackathon
+URL:https://www.bioeng4youth.ca
+END:VEVENT
+BEGIN:VEVENT
+UID:mlh-019eff28-42a4-3774-ce99-86bf84e3e9d6@internship-watcher
+DTSTAMP:20261029T063630Z
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261108
+SUMMARY:MakeCU (New York\, New York)
+DESCRIPTION:MLH hackathon
+URL:https://v0-curc-makecu.vercel.app/
+END:VEVENT
+BEGIN:VEVENT
+UID:mlh-019f1457-ed4b-5f05-061e-3c03a008f817@internship-watcher
+DTSTAMP:20261029T063630Z
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261108
+SUMMARY:HackRPI 2026 (Troy\, New York)
+DESCRIPTION:MLH hackathon
+URL:https://hackrpi.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:mlh-01a06251-6fac-f42e-01dc-9109348a0fdc@internship-watcher
+DTSTAMP:20261029T063630Z
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261108
+SUMMARY:Hack the Change (Calgary\, Alberta)
+DESCRIPTION:MLH hackathon
+URL:https://hackthechangeyyc.ca/
+END:VEVENT
+BEGIN:VEVENT
+UID:mlh-01a0abeb-120a-8e06-59f6-53c311f93702@internship-watcher
+DTSTAMP:20261029T063630Z
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261108
+SUMMARY:Sheridan Datathon 2026 (Mississauga\, Ontario)
+DESCRIPTION:MLH hackathon
+URL:https://sheridandatathon.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:mlh-01a0b0e3-10a9-a228-13e8-7597860d8d93@internship-watcher
+DTSTAMP:20261029T063630Z
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261108
+SUMMARY:CommuniHacks (Kitchener\, Ontario)
+DESCRIPTION:MLH hackathon
+URL:https://www.communihacks.ca
+END:VEVENT
+BEGIN:VEVENT
+UID:mlh-019ff2b7-4055-c0b3-78bf-d33c3219c43b@internship-watcher
+DTSTAMP:20261029T063630Z
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261108
+SUMMARY:MakeUC (Cincinnati \, Ohio)
+DESCRIPTION:MLH hackathon
+URL:https://makeuc.io/
+END:VEVENT
+BEGIN:VEVENT
+UID:mlh-01a08c64-1006-f464-272f-e1aa0aa28100@internship-watcher
+DTSTAMP:20261029T063630Z
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261108
+SUMMARY:HackCamp (Vancovuer\, British Columbia)
+DESCRIPTION:MLH hackathon
+URL:https://hackcamp.nwplus.io/
+END:VEVENT
+BEGIN:VEVENT
+UID:mlh-01a03900-e3b1-9c45-b1e1-8bb40989cb8e@internship-watcher
+DTSTAMP:20261029T063630Z
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261108
+SUMMARY:TAMU Datathon (College Station\, Texas)
+DESCRIPTION:MLH hackathon
+URL:https://tamudatathon.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:mlh-01a14113-89f7-abe2-97a0-411e5222d1e9@internship-watcher
+DTSTAMP:20261029T063630Z
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261108
+SUMMARY:UB Hacking (Buffalo\, Northeast )
+DESCRIPTION:MLH hackathon
+URL:https://ubhacking.cse.buffalo.edu
+END:VEVENT
+BEGIN:VEVENT
+UID:mlh-01a0abde-7c6a-f0b2-52d9-1ab37661feee@internship-watcher
+DTSTAMP:20261029T063630Z
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261108
+SUMMARY:GullHacks (Salisbury\, MD)
+DESCRIPTION:MLH hackathon
+URL:https://hub.salisbury.edu/hackathon/
+END:VEVENT
+BEGIN:VEVENT
+UID:mlh-01a0162f-b065-b062-8eb4-6a532b05ba7f@internship-watcher
+DTSTAMP:20261029T063630Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:Emory Hacks (Atlanta\, GA)
+DESCRIPTION:MLH hackathon
+URL:https://emoryhacks.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:mlh-01a0a1c6-4096-4e39-b0e6-fbb02f1dfd8a@internship-watcher
+DTSTAMP:20261029T063630Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:HackPrinceton Fall 2026 (Princeton\, New Jersey)
+DESCRIPTION:MLH hackathon
+URL:https://www.hackprinceton.com
+END:VEVENT
+BEGIN:VEVENT
+UID:mlh-01a0f9d2-8235-468a-117b-e6e10b159f31@internship-watcher
+DTSTAMP:20261029T063630Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:NASA's Space Apps Challenge NYC ( Brooklyn\, New York)
+DESCRIPTION:MLH hackathon
+URL:https://www.spaceappschallenge.org/2026/local-events/new-york/
+END:VEVENT
+BEGIN:VEVENT
+UID:mlh-019eb82c-019a-7cdf-8405-6ade2fbe2684@internship-watcher
+DTSTAMP:20261029T063630Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:HackUMass (Amherst\, MA)
+DESCRIPTION:MLH hackathon
+URL:https://www.hackumass.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:mlh-01a0aabc-89e5-455e-e716-fb22af55ff20@internship-watcher
+DTSTAMP:20261029T063630Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:HackUTA (Arlington\, Texas)
+DESCRIPTION:MLH hackathon
+URL:https://hackuta.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:mlh-01a0f9e6-f4a7-a488-8ff2-a1b83adebc0c@internship-watcher
+DTSTAMP:20261029T063630Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:SanD Hacks (La Jolla\, CA)
+DESCRIPTION:MLH hackathon
+URL:https://hackathon.csesatucsd.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:mlh-01a0f9e8-4c6a-3385-792a-2f6d7b6fc67a@internship-watcher
+DTSTAMP:20261029T063630Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:Hack The Nest (Ypsilanti\, Michigan)
+DESCRIPTION:MLH hackathon
+URL:https://hackthenest.tech/
+END:VEVENT
+BEGIN:VEVENT
+UID:mlh-01a0d389-5cc6-4658-5390-a28cf6a7e25c@internship-watcher
+DTSTAMP:20261029T063630Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:sunhacks (Tempe\, Arizona)
+DESCRIPTION:MLH hackathon
+URL:https://2026.sunhacks.io/
+END:VEVENT
+BEGIN:VEVENT
+UID:mlh-01a104c6-9b18-a67b-4a70-585e177ae7c2@internship-watcher
+DTSTAMP:20261029T063630Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:Hack Western 13 (London\, Ontario)
+DESCRIPTION:MLH hackathon
+URL:https://hackwestern.com
+END:VEVENT
+BEGIN:VEVENT
+UID:mlh-01a0de7f-c886-fc35-dd21-0502312014f2@internship-watcher
+DTSTAMP:20261029T063630Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:Tech For Community 2026 (St. John's\, Newfoundland and Labrador / Avalon Peninsula)
+DESCRIPTION:MLH hackathon
+URL:https://tecnurtur.org/hackathon
+END:VEVENT
+BEGIN:VEVENT
+UID:mlh-01a0f38e-1449-10c7-26aa-22f959036fa7@internship-watcher
+DTSTAMP:20261029T063630Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:WHACK (Wellesley Hackathon) (Wellesley \, Massachesetts)
+DESCRIPTION:MLH hackathon
+URL:https://www.wellesleyhacks.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:mlh-01a0f9e8-b03e-c774-05a6-1fa2df981ef1@internship-watcher
+DTSTAMP:20261029T063630Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:BostonHacks (Boston\, MA)
+DESCRIPTION:MLH hackathon
+URL:https://bostonhacks.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:mlh-019ec393-69be-a63b-04c3-db014796cd27@internship-watcher
+DTSTAMP:20261029T063630Z
+DTSTART;VALUE=DATE:20270109
+DTEND;VALUE=DATE:20270110
+SUMMARY:DeltaHacks (Hamilton\, Ontario)
+DESCRIPTION:MLH hackathon
+URL:https://www.deltahacks.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:mlh-019ebdcf-0a9f-874f-6be7-bd6b1ec311be@internship-watcher
+DTSTAMP:20261029T063630Z
+DTSTART;VALUE=DATE:20270115
+DTEND;VALUE=DATE:20270116
+SUMMARY:UofTHacks (Toronto\, Ontario)
+DESCRIPTION:MLH hackathon
+URL:https://uofthacks.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:mlh-019efa0f-7a9a-554b-48cf-dfd63de84b85@internship-watcher
+DTSTAMP:20261029T063630Z
+DTSTART;VALUE=DATE:20270115
+DTEND;VALUE=DATE:20270116
+SUMMARY:uOttaHack 9 (Ottawa\, Ontario )
+DESCRIPTION:MLH hackathon
+URL:https://2027.uottahack.ca/
+END:VEVENT
+BEGIN:VEVENT
+UID:mlh-01a1315e-f6a6-dd0f-237b-3ecdf0027f3c@internship-watcher
+DTSTAMP:20261029T063630Z
+DTSTART;VALUE=DATE:20270116
+DTEND;VALUE=DATE:20270117
+SUMMARY:QWER Hacks (Los Angeles\, CA)
+DESCRIPTION:MLH hackathon
+URL:https://www.qwerhacks.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:mlh-019ed5df-8f65-6d9c-3d59-c1ec15fbeff8@internship-watcher
+DTSTAMP:20261029T063630Z
+DTSTART;VALUE=DATE:20270116
+DTEND;VALUE=DATE:20270117
+SUMMARY:nwHacks (Vancouver\, British Columbia)
+DESCRIPTION:MLH hackathon
+URL:https://nwhacks.io/
+END:VEVENT
+END:VCALENDAR
