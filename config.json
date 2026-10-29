@@ -207,7 +207,9 @@
     "fall_2027_only": true,
     "hide_seasons": [
       "spring"
-    ]
+    ],
+    "devpost_min_prize_online": 10000,
+    "devpost_min_prize_inperson": 1000
   },
   "firms": [
     {
@@ -4981,6 +4983,312 @@
         "prize",
         "trading",
         "quant"
+      ]
+    },
+    {
+      "name": "Hackathon: HackHarvard",
+      "ats": "pagewatch",
+      "url": "https://hackharvard.io/",
+      "digest": true,
+      "watch_keywords": [
+        "apply",
+        "application",
+        "register",
+        "registration",
+        "2026",
+        "2027",
+        "deadline"
+      ]
+    },
+    {
+      "name": "Hackathon: HackIllinois",
+      "ats": "pagewatch",
+      "url": "https://hackillinois.org/",
+      "digest": true,
+      "watch_keywords": [
+        "apply",
+        "application",
+        "register",
+        "registration",
+        "2026",
+        "2027",
+        "deadline"
+      ]
+    },
+    {
+      "name": "Hackathon: HackPrinceton",
+      "ats": "pagewatch",
+      "url": "https://hackprinceton.com/",
+      "digest": true,
+      "watch_keywords": [
+        "apply",
+        "application",
+        "register",
+        "registration",
+        "2026",
+        "2027",
+        "deadline"
+      ]
+    },
+    {
+      "name": "Hackathon: YHack (Yale)",
+      "ats": "pagewatch",
+      "url": "https://yhack.org/",
+      "digest": true,
+      "watch_keywords": [
+        "apply",
+        "application",
+        "register",
+        "registration",
+        "2026",
+        "2027",
+        "deadline"
+      ]
+    },
+    {
+      "name": "Hackathon: LA Hacks",
+      "ats": "pagewatch",
+      "url": "https://lahacks.com/",
+      "digest": true,
+      "watch_keywords": [
+        "apply",
+        "application",
+        "register",
+        "registration",
+        "2026",
+        "2027",
+        "deadline"
+      ]
+    },
+    {
+      "name": "Hackathon: MHacks (Michigan)",
+      "ats": "pagewatch",
+      "url": "https://mhacks.org/",
+      "digest": true,
+      "watch_keywords": [
+        "apply",
+        "application",
+        "register",
+        "registration",
+        "2026",
+        "2027",
+        "deadline"
+      ]
+    },
+    {
+      "name": "Hackathon: TAMUhack",
+      "ats": "pagewatch",
+      "url": "https://tamuhack.com/",
+      "digest": true,
+      "watch_keywords": [
+        "apply",
+        "application",
+        "register",
+        "registration",
+        "2026",
+        "2027",
+        "deadline"
+      ]
+    },
+    {
+      "name": "Hackathon: nwHacks (UBC)",
+      "ats": "pagewatch",
+      "url": "https://nwhacks.io/",
+      "digest": true,
+      "watch_keywords": [
+        "apply",
+        "application",
+        "register",
+        "registration",
+        "2026",
+        "2027",
+        "deadline"
+      ]
+    },
+    {
+      "name": "Hackathon: HackTX",
+      "ats": "pagewatch",
+      "url": "https://hacktx.com/",
+      "digest": true,
+      "watch_keywords": [
+        "apply",
+        "application",
+        "register",
+        "registration",
+        "2026",
+        "2027",
+        "deadline"
+      ]
+    },
+    {
+      "name": "Hackathon: Cal Hacks",
+      "ats": "pagewatch",
+      "url": "https://www.calhacks.io/",
+      "digest": true,
+      "watch_keywords": [
+        "apply",
+        "application",
+        "register",
+        "registration",
+        "2026",
+        "2027",
+        "deadline"
+      ]
+    },
+    {
+      "name": "Hackathon: HackMadrid",
+      "ats": "pagewatch",
+      "url": "https://hackmadrid.org/",
+      "digest": true,
+      "watch_keywords": [
+        "apply",
+        "application",
+        "register",
+        "registration",
+        "2026",
+        "2027",
+        "deadline"
+      ]
+    },
+    {
+      "name": "Hackathon: HackZurich",
+      "ats": "pagewatch",
+      "url": "https://hackzurich.com/",
+      "digest": true,
+      "watch_keywords": [
+        "apply",
+        "application",
+        "register",
+        "registration",
+        "2026",
+        "2027",
+        "deadline"
+      ]
+    },
+    {
+      "name": "Hackathon: START Hack (St. Gallen)",
+      "ats": "pagewatch",
+      "url": "https://www.starthack.eu/",
+      "digest": true,
+      "watch_keywords": [
+        "apply",
+        "application",
+        "register",
+        "registration",
+        "2026",
+        "2027",
+        "deadline"
+      ]
+    },
+    {
+      "name": "Hackathon: TUM.ai Makeathon",
+      "ats": "pagewatch",
+      "url": "https://makeathon.tum-ai.com/",
+      "digest": true,
+      "watch_keywords": [
+        "apply",
+        "application",
+        "register",
+        "registration",
+        "2026",
+        "2027",
+        "deadline"
+      ]
+    },
+    {
+      "name": "Hackathon: IC Hack (Imperial)",
+      "ats": "pagewatch",
+      "url": "https://ichack.org/",
+      "digest": true,
+      "watch_keywords": [
+        "apply",
+        "application",
+        "register",
+        "registration",
+        "2026",
+        "2027",
+        "deadline"
+      ]
+    },
+    {
+      "name": "Hackathon: Innodata Hackathon",
+      "ats": "pagewatch",
+      "url": "https://www.innodata.com/innodata-hackathon/",
+      "digest": true,
+      "watch_keywords": [
+        "apply",
+        "application",
+        "register",
+        "registration",
+        "2026",
+        "2027",
+        "deadline"
+      ]
+    },
+    {
+      "name": "Hackathon: Hackalist (aggregator)",
+      "ats": "pagewatch",
+      "url": "https://www.hackalist.org/",
+      "digest": true
+    },
+    {
+      "name": "Hackathon: hackathon.com (aggregator)",
+      "ats": "pagewatch",
+      "url": "https://www.hackathon.com/",
+      "digest": true
+    },
+    {
+      "name": "Hackathon: HackerEarth hackathons",
+      "ats": "pagewatch",
+      "url": "https://www.hackerearth.com/challenges/hackathon/",
+      "digest": true
+    },
+    {
+      "name": "Hackathon: lablab.ai AI hackathons",
+      "ats": "pagewatch",
+      "url": "https://lablab.ai/event",
+      "digest": true
+    },
+    {
+      "name": "Hackathon: Luma hackathons",
+      "ats": "pagewatch",
+      "url": "https://lu.ma/hackathons",
+      "digest": true
+    },
+    {
+      "name": "Hackathon: Kaggle hackathons",
+      "ats": "pagewatch",
+      "url": "https://www.kaggle.com/competitions?hostSegmentIdFilter=8",
+      "digest": true
+    },
+    {
+      "name": "RSS: Google News – student hackathon prizes",
+      "ats": "rss",
+      "url": "https://news.google.com/rss/search?q=hackathon+(students+OR+university)+(prize+OR+%22cash+prizes%22)&hl=en-US&gl=US&ceid=US:en",
+      "digest": true,
+      "watch_keywords": [
+        "hackathon",
+        "prize",
+        "travel",
+        "students",
+        "university",
+        "apply",
+        "register"
+      ]
+    },
+    {
+      "name": "RSS: Google News – AI hackathon",
+      "ats": "rss",
+      "url": "https://news.google.com/rss/search?q=%22AI+hackathon%22+2026&hl=en-US&gl=US&ceid=US:en",
+      "digest": true,
+      "watch_keywords": [
+        "hackathon",
+        "prize",
+        "travel",
+        "students",
+        "university",
+        "apply",
+        "register"
       ]
     }
   ]

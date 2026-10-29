@@ -46,7 +46,28 @@ pouncing on. Sections, in order:
    and *dropped* — no "intern" in the title and not Fall 2027 — while the digest
    never looked at boards at all. Programs posted as job reqs fell between both
    systems. Alex found it on LinkedIn.
-5. Index of every watched page.
+5. **Hackathons — two structured feeds, always complete** (added 2026-10-29,
+   Alex: "hackathons are LIT — hella money, amazing for resume, fun + travel"):
+   - `fetch_mlh()` — MLH's 2027 season page is an Inertia app; the full
+     `upcomingEvents` list is JSON inside `<script data-page="app"
+     type="application/json">` (NOT a `data-page=` attribute, and the
+     `/events.rss` URL serves HTML). `digest_mlh()` keeps AMER+EMEA.
+   - `fetch_devpost()` — `devpost.com/api/hackathons?status[]=open&status[]=
+     upcoming` is a real JSON API (prize, dates, location, org). `digest_
+     hackathons()` keeps USD/EUR/GBP, drops high-school + India/APAC-only,
+     floors from `filters.devpost_min_prize_inperson` (1000) /
+     `devpost_min_prize_online` (10000). ~173 → ~37.
+   Both NEW-flag via `mlh::<id>` / `dp::<id>`; in-person Jan–May hidden (Madrid).
+6. Index of every watched page.
+
+**Cron reliability (gotcha #11, 2026-10-29):** GitHub throttles top-of-hour
+schedules on busy repos — only 5–8 of 24 `0 * * * *` runs were firing per day,
+and the `0 14 * * 0,3` digest landed 3–5 h late (ran 17:00–19:00 UTC). Both
+moved off :00 (`17 * * * *`, `30 13 * * 0,3`) and the digest has its own
+concurrency group so it can't queue behind / be replaced by a 20-min sweep.
+The digest DID send every Wed/Sun it ran (evidence: `prog::`/`opp::` keys in
+committed `seen_jobs.json`, first on 2026-09-13) — it goes to `EMAIL_TO`, not
+the Gmail connected to Claude.
 
 `opportunities.json` is the structured source of truth (id, dates ISO, format,
 season, travel, prizes, perks, eligibility). **Hand-curated** — pagewatch only

@@ -2,6 +2,22 @@
   "_readme": "Structured list rendered IN FULL in every Wed/Sun digest. Fields: id,name,type,url,apply_url,event_date,deadline (ISO),location,format (in-person|online|hybrid),season (fall|winter|spring|summer|rolling),travel,prizes,perks,eligibility,notes. In-person spring entries are hidden (Madrid). Add entries here or tell Claude.",
   "opportunities": [
     {
+      "id": "innodata-hackathon-2026",
+      "name": "Innodata Hackathon 2026 (NYC, one day)",
+      "type": "hackathon",
+      "url": "https://www.innodata.com/innodata-hackathon/",
+      "event_date": "2026-11-14",
+      "deadline": null,
+      "location": "St. John's University, Manhattan campus, NYC",
+      "format": "in-person",
+      "season": "fall",
+      "travel": "none listed (NYC)",
+      "prizes": "$8,750 cash to top 3 teams",
+      "perks": "welcome party + happy hour Fri Nov 13 6-8pm; teams build/demo an AI eval / synthetic data / multimodal solution in one day",
+      "eligibility": "SWE/AI-ML builders, technical students + recent grads",
+      "notes": "Sat Nov 14, 9am-5pm. 'Apply to join' = rolling, no deadline posted -- apply now. Recommended to Alex 2026-10-29."
+    },
+    {
       "id": "five-rings-link-2027",
       "name": "Five Rings LINK 2027 — Software Development Intensive",
       "type": "firm-program",

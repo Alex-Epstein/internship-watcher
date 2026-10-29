@@ -304,6 +304,162 @@ def fetch_rss(firm):
     return out[:60]
 
 
+# Hackathon location/season helpers --------------------------------------------
+_DP_MONTH = {m: i for i, m in enumerate(
+    ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"], 1)}
+_HS_RE = re.compile(r"high.?school|highschool|\bhs\b|k-?12|middle school|grades? \d", re.I)
+_NON_TARGET_LOC_RE = re.compile(
+    r"india|jaipur|bhopal|coimbatore|chennai|bangalore|hyderabad|mumbai|delhi|pune|"
+    r"singapore|malaysia|indonesia|philippines|vietnam|pakistan|bangladesh|nigeria|"
+    r"kenya|dubai|saudi|egypt|turkey|china|japan|korea|taiwan|australia|new zealand|"
+    r"brazil|mexico|argentina|chile|colombia", re.I)
+
+
+def _dp_prize(h):
+    """(currency, int amount) from Devpost's prize_amount html."""
+    raw = h.get("prize_amount") or ""
+    m = re.search(r"data-currency-value>([\d,]+)", raw)
+    cur = raw.strip()[:1] if raw.strip() else ""
+    return cur, (int(m.group(1).replace(",", "")) if m else 0)
+
+
+def _dp_start_month(h):
+    m = re.match(r"\s*([A-Za-z]{3})", h.get("submission_period_dates") or "")
+    return _DP_MONTH.get(m.group(1).lower()) if m else None
+
+
+def fetch_devpost(firm):
+    """Devpost's public hackathon JSON (open + upcoming). Returns bypass-filter
+    records with location / prize / dates pre-extracted. Filtering (prize floor,
+    in-person vs online, no high-school, no India-only) happens in the digest so
+    the floor is tunable from config: filters.devpost_min_prize_online /
+    filters.devpost_min_prize_inperson."""
+    out = []
+    for page in range(1, 8):
+        r = requests.get(
+            "https://devpost.com/api/hackathons",
+            params={"status[]": ["open", "upcoming"], "order_by": "deadline",
+                    "per_page": 40, "page": page},
+            headers=HEADERS, timeout=TIMEOUT)
+        r.raise_for_status()
+        hs = r.json().get("hackathons", [])
+        for h in hs:
+            cur, amt = _dp_prize(h)
+            loc = (h.get("displayed_location") or {}).get("location", "") or ""
+            out.append({
+                "id": str(h.get("id")),
+                "title": h.get("title", "") or "",
+                "location": loc,
+                "url": h.get("url", "") or "",
+                "content": "",
+                "company": h.get("organization_name", "") or "Devpost",
+                "bypass_filters": True,
+                "devpost": True,
+                "prize_cur": cur, "prize": amt,
+                "dates": h.get("submission_period_dates", "") or "",
+                "start_month": _dp_start_month(h),
+                "online": loc.strip().lower().startswith("online") or not loc.strip(),
+                "invite_only": bool(h.get("invite_only")),
+                "themes": ", ".join(t.get("name", "") for t in (h.get("themes") or [])[:4]),
+            })
+        if len(hs) < 40:
+            break
+    return out
+
+
+def fetch_mlh(firm=None):
+    """Major League Hacking season schedule. The page is an Inertia app with the
+    full upcoming-events list embedded as JSON in <script data-page="app">.
+    Returns normalized records (id, name, dates, city, region, format, site)."""
+    url = (firm or {}).get("url") or "https://mlh.io/seasons/2027/events"
+    r = requests.get(url, headers=HEADERS, timeout=TIMEOUT)
+    r.raise_for_status()
+    m = re.search(r'<script[^>]*data-page="app"[^>]*type="application/json"[^>]*>(.*?)</script>', r.text, re.S)
+    if not m:
+        raise RuntimeError("MLH: embedded data-page JSON not found (page layout changed?)")
+    props = json.loads(m.group(1)).get("props", {})
+    out = []
+    for e in props.get("upcomingEvents", []):
+        starts = (e.get("startsAt") or "")[:10]
+        out.append({
+            "id": str(e.get("id") or e.get("slug")),
+            "title": e.get("name", "") or "",
+            "location": e.get("location", "") or "",
+            "url": e.get("websiteUrl") or ("https://mlh.io" + (e.get("url") or "")),
+            "mlh_url": "https://mlh.io" + (e.get("url") or ""),
+            "content": "",
+            "company": "MLH",
+            "bypass_filters": True,
+            "mlh": True,
+            "dates": e.get("dateRange", "") or "",
+            "starts": starts,
+            "start_month": int(starts[5:7]) if len(starts) >= 7 else None,
+            "region": e.get("region", "") or "",
+            "fmt": (e.get("formatType") or "").lower(),   # physical / digital / hybrid
+            "online": (e.get("formatType") or "").lower() == "digital",
+        })
+    return out
+
+
+def digest_mlh(filters):
+    """MLH events Alex can actually get to: AMER + EMEA (he's in Madrid Jan-May),
+    physical/hybrid/digital. In-person spring hidden (Madrid), online spring kept."""
+    try:
+        evs = fetch_mlh()
+    except Exception as e:  # noqa: BLE001
+        print(f"  x mlh skipped: {e}")
+        return []
+    hide = [x.lower() for x in filters.get("hide_seasons", ["spring"])]
+    keep = []
+    for e in evs:
+        if e["region"] not in ("AMER", "EMEA"):
+            continue
+        if _NON_TARGET_LOC_RE.search(e["location"]) or _HS_RE.search(e["title"]):
+            continue
+        if not e["online"] and "spring" in hide and e["start_month"] in (1, 2, 3, 4, 5):
+            e["hidden_spring"] = True
+        keep.append(e)
+    keep.sort(key=lambda e: (e["online"], e["starts"]))
+    print(f"MLH: {len(evs)} upcoming -> {len(keep)} in AMER/EMEA ({sum(1 for e in keep if not e['online'])} in-person).")
+    return keep
+
+
+def digest_hackathons(filters):
+    """Devpost hackathons worth his time, per Alex (2026-10-29): 'hella money,
+    amazing for resume, fun + travel'. Keep USD/EUR/GBP; drop high-school and
+    non-target regions; in-person needs a modest prize floor (travel is the
+    point), online needs a real one. In-person spring hidden (Madrid)."""
+    try:
+        hs = fetch_devpost({"name": "Devpost"})
+    except Exception as e:  # noqa: BLE001
+        print(f"  x devpost skipped: {e}")
+        return []
+    min_on = int(filters.get("devpost_min_prize_online", 10000))
+    min_ip = int(filters.get("devpost_min_prize_inperson", 1000))
+    hide = [x.lower() for x in filters.get("hide_seasons", ["spring"])]
+    keep = []
+    for h in hs:
+        if h["invite_only"] or _HS_RE.search(h["title"]) or _HS_RE.search(h["location"]):
+            continue
+        if h["prize_cur"] not in ("$", "€", "£"):
+            continue
+        if _NON_TARGET_LOC_RE.search(h["location"]):
+            continue
+        if h["online"]:
+            if h["prize"] < min_on:
+                continue
+        else:
+            if h["prize"] < min_ip:
+                continue
+            if "spring" in hide and h["start_month"] in (1, 2, 3, 4, 5):
+                h["hidden_spring"] = True
+        keep.append(h)
+    keep.sort(key=lambda h: (h["online"], -h["prize"]))
+    print(f"Devpost: {len(hs)} open/upcoming -> {len(keep)} worth listing "
+          f"({sum(1 for h in keep if not h['online'])} in-person).")
+    return keep
+
+
 def fetch_pagewatch(firm):
     """
     Change-detector for feed-less pages (REUs, NASA OSTEM, lab portals). Fetches
@@ -647,6 +803,8 @@ FETCHERS = {
     "nuft": fetch_nuft,
     "pagewatch": fetch_pagewatch,
     "rss": fetch_rss,
+    "devpost": fetch_devpost,
+    "mlh": fetch_mlh,
 }
 
 
@@ -1401,6 +1559,7 @@ PROGRAM_EXCLUDE_RE = re.compile(
     r"\bdesigner\b|assistant|\bscientist\b|\bstaff\b|program management|"
     r"special programs|\boffice\b|"
     r"\bjunior\b|\bgraduate\b|\bshift\b|strategist|\btrader\b|\bsre\b|"
+    r"\bchief\b|\bdean\b|\bsupport\b|\bpeople\b|\bmba\b|women in|"
     r"summer intern|internship\b|\bintern\b|co-?op\b|graduate program",
     re.I)
 
@@ -1531,6 +1690,26 @@ def _opp_li(o, days, status, is_new):
     return line + "</li>"
 
 
+def _mlh_li(e):
+    tag = " <b style='color:#b45309'>NEW</b>" if e.get("is_new") else ""
+    where = "Online" if e["online"] else escape(e["location"])
+    fmt = f" &middot; {escape(e['fmt'])}" if e.get("fmt") == "hybrid" else ""
+    return (f"<li style='margin:4px 0'><a href='{escape(e['url'])}'><b>{escape(e['title'])}</b></a>{tag} "
+            f"&mdash; {escape(e['dates'])} &middot; &#128205; {where}{fmt} "
+            f"<span style='font-size:12px'>(<a href='{escape(e['mlh_url'])}'>MLH page</a>)</span></li>")
+
+
+def _hack_li(h):
+    tag = " <b style='color:#b45309'>NEW</b>" if h.get("is_new") else ""
+    prize = f"{h['prize_cur']}{h['prize']:,}" if h.get("prize") else "no cash prize listed"
+    where = "Online" if h["online"] else escape(h["location"])
+    themes = f" &middot; {escape(h['themes'])}" if h.get("themes") else ""
+    org = f" &middot; by {escape(h['company'])}" if h.get("company") else ""
+    return (f"<li style='margin:5px 0'><a href='{escape(h['url'])}'><b>{escape(h['title'])}</b></a>{tag} "
+            f"&mdash; <b>{prize}</b><br><span style='font-size:12px;color:#444'>&#128197; {escape(h['dates'])} "
+            f"&middot; &#128205; {where}{themes}{org}</span></li>")
+
+
 def send_weekly_digest():
     """Wed + Sun email. Designed so EVERY send is the complete current picture
     (Alex pastes it into an AI and asks what's best), not a diff:
@@ -1566,6 +1745,27 @@ def send_weekly_digest():
     programs.sort(key=lambda x: (not x["is_new"], x["company"].lower(), x["title"]))
     n_new_prog = sum(1 for x in programs if x["is_new"])
 
+    # ---- Devpost hackathons (complete, filtered, NEW-flagged) ----
+    hacks = digest_hackathons(filters)
+    for h in hacks:
+        key = f"dp::{h['id']}"
+        h["is_new"] = key not in new_seen
+        if h["is_new"]:
+            new_seen[key] = {"title": h["title"], "url": h["url"]}
+    mlh = digest_mlh(filters)
+    for e in mlh:
+        key = f"mlh::{e['id']}"
+        e["is_new"] = key not in new_seen
+        if e["is_new"]:
+            new_seen[key] = {"title": e["title"], "url": e["url"]}
+    mlh_vis = [e for e in mlh if not e.get("hidden_spring")]
+    mlh_hidden = [e for e in mlh if e.get("hidden_spring")]
+    n_new_mlh = sum(1 for e in mlh_vis if e["is_new"])
+
+    hacks_vis = [h for h in hacks if not h.get("hidden_spring")]
+    hacks_hidden = [h for h in hacks if h.get("hidden_spring")]
+    n_new_hack = sum(1 for h in hacks_vis if h["is_new"])
+
     # ---- opportunities: complete list + NEW detection ----
     opps = _load_opps()
     visible, hidden, expired, new_ids = [], [], [], []
@@ -1592,7 +1792,7 @@ def send_weekly_digest():
     ]
 
     # ---- 1) NEW ----
-    if n_new or n_new_prog or changed or discovered:
+    if n_new or n_new_prog or n_new_hack or n_new_mlh or changed or discovered:
         parts.append(
             "<div style='border-left:4px solid #b45309;padding:6px 12px;margin:16px 0;"
             "background:#fffbeb'><h3 style='margin:4px 0'>&#9889; NEW since last send</h3>")
@@ -1609,6 +1809,18 @@ def send_weekly_digest():
                     loc = f" &mdash; {escape(pr['location'])}" if pr.get("location") else ""
                     parts.append(f"<li><a href='{escape(pr['url'])}'><b>{escape(pr['company'])}</b> &mdash; "
                                  f"{escape(pr['title'])}</a>{loc} <b style='color:#b45309'>NEW</b></li>")
+            parts.append("</ul>")
+        if n_new_mlh:
+            parts.append("<p style='margin:6px 0 2px'><b>New MLH hackathons</b></p><ul>")
+            for e in mlh_vis:
+                if e["is_new"]:
+                    parts.append(_mlh_li(e))
+            parts.append("</ul>")
+        if n_new_hack:
+            parts.append("<p style='margin:6px 0 2px'><b>New hackathons (Devpost)</b></p><ul>")
+            for h in hacks_vis:
+                if h["is_new"]:
+                    parts.append(_hack_li(h))
             parts.append("</ul>")
         if changed:
             parts.append("<p style='margin:6px 0 2px'><b>Watched pages that changed</b> "
@@ -1644,6 +1856,37 @@ def send_weekly_digest():
     if expired:
         parts.append(f"<p style='color:#aaa;font-size:11px'>Expired (kept for next year's watch): "
                      + ", ".join(escape(x.get("name", "")) for x in expired) + "</p>")
+
+    # ---- 2a0) MLH season schedule (the collegiate in-person tier; always complete) ----
+    if mlh_vis:
+        ip = [e for e in mlh_vis if not e["online"]]; on = [e for e in mlh_vis if e["online"]]
+        parts.append(f"<hr><h2>&#127942; MLH hackathons &mdash; {len(mlh_vis)} upcoming (US/Canada/Europe)</h2>"
+                     "<p style='color:#666;font-size:12px'>Major League Hacking's official 2027 season, live every send. "
+                     "These are the real collegiate ones: free, in-person, usually with travel reimbursement for out-of-town hackers. By date.</p>")
+        if ip:
+            parts.append("<h3 style='margin:10px 0 4px'>&#9992;&#65039; In-person</h3><ul>"); parts += [_mlh_li(e) for e in ip]; parts.append("</ul>")
+        if on:
+            parts.append("<h3 style='margin:10px 0 4px'>&#127760; Online</h3><ul>"); parts += [_mlh_li(e) for e in on]; parts.append("</ul>")
+        if mlh_hidden:
+            parts.append(f"<p style='color:#888;font-size:12px'>Hidden: {len(mlh_hidden)} in-person spring MLH event(s) (Madrid): "
+                         + ", ".join(escape(e['title']) for e in mlh_hidden[:10]) + "</p>")
+
+    # ---- 2a) hackathons (always complete; in-person first, by prize) ----
+    if hacks_vis:
+        ip = [h for h in hacks_vis if not h["online"]]; on = [h for h in hacks_vis if h["online"]]
+        parts.append(f"<hr><h2>&#128187; Hackathons &mdash; {len(hacks_vis)} worth your time</h2>"
+                     "<p style='color:#666;font-size:12px'>Live from Devpost every send. Filtered: USD/EUR/GBP, "
+                     f"no high-school, no India-only; in-person &ge; ${int(filters.get('devpost_min_prize_inperson',1000)):,}, "
+                     f"online &ge; ${int(filters.get('devpost_min_prize_online',10000)):,}. Tune the floors in config.</p>")
+        if ip:
+            parts.append("<h3 style='margin:10px 0 4px'>&#9992;&#65039; In-person</h3><ul>")
+            parts += [_hack_li(h) for h in ip]; parts.append("</ul>")
+        if on:
+            parts.append("<h3 style='margin:10px 0 4px'>&#127760; Online (big prizes)</h3><ul>")
+            parts += [_hack_li(h) for h in on]; parts.append("</ul>")
+        if hacks_hidden:
+            parts.append(f"<p style='color:#888;font-size:12px'>Hidden: {len(hacks_hidden)} in-person spring hackathon(s) "
+                         "(Madrid): " + ", ".join(escape(h['title']) for h in hacks_hidden[:8]) + "</p>")
 
     # ---- 2b) programs/events currently posted on firm boards (always complete) ----
     if programs:
@@ -1690,8 +1933,8 @@ def send_weekly_digest():
     parts.append("<p style='color:#888;font-size:12px'>Sent Wed + Sun by your watcher. "
                  "To add something: reply with the link and I'll put it in the list.</p>")
 
-    subj = f"[Watcher] {len(visible) + len(programs)} open"
-    if n_new + n_new_prog: subj += f" · {n_new + n_new_prog} new"
+    subj = f"[Watcher] {len(visible) + len(programs) + len(hacks_vis) + len(mlh_vis)} open"
+    if n_new + n_new_prog + n_new_hack + n_new_mlh: subj += f" · {n_new + n_new_prog + n_new_hack + n_new_mlh} new"
     if closing: subj += f" · {len(closing)} closing soon"
     send_email(subj + " — opportunities digest", "\n".join(parts))
     save_json(SEEN_FILE, new_seen)
