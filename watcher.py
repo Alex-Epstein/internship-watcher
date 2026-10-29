@@ -489,6 +489,7 @@ def digest_mlh(filters):
         evs = fetch_mlh()
     except Exception as e:  # noqa: BLE001
         print(f"  x mlh skipped: {e}")
+        FEED_ERRORS.append(("MLH", str(e)[:140]))
         return []
     keep = []
     for e in evs:
@@ -516,6 +517,7 @@ def digest_hackathons(filters):
         hs = fetch_devpost({"name": "Devpost"})
     except Exception as e:  # noqa: BLE001
         print(f"  x devpost skipped: {e}")
+        FEED_ERRORS.append(("Devpost", str(e)[:140]))
         return []
     min_on = int(filters.get("devpost_min_prize_online", 10000))
     min_ip = int(filters.get("devpost_min_prize_inperson", 1000))
@@ -1224,7 +1226,27 @@ def build_email_html(grouped, baseline=False, filters=None):
     return "\n".join(parts)
 
 
+DRY_RUN = os.environ.get("DRY_RUN") == "1" or "--dry-run" in sys.argv
+PREVIEW_FILE = "digest_preview.html"
+
+# Per-run ledger of every source polled: (name, url, ok, error). Feeds the
+# "source health" footer (dead sources) and the feed-failure banner.
+POLL_LOG = []
+FEED_ERRORS = []
+FLAPPING = []      # (name, url, consecutive-change count) muted this run   # (feed name, error) for whole-feed failures (MLH, Devpost...)
+
+
+def _log_poll(name, url, ok, err=""):
+    POLL_LOG.append((name or "", url or "", bool(ok), str(err)[:140]))
+
+
 def send_email(subject, html):
+    if DRY_RUN:
+        with open(PREVIEW_FILE, "w", encoding="utf-8") as fh:
+            fh.write(f"<title>{escape(subject)}</title><body style='font-family:-apple-system,"
+                     f"Helvetica,Arial;max-width:860px;margin:24px auto;line-height:1.4'>{html}</body>")
+        print(f"DRY RUN: not sending. Subject: {subject!r} -> {PREVIEW_FILE} ({len(html):,} bytes)")
+        return
     host = os.environ.get("SMTP_HOST") or "smtp.gmail.com"
     port = int(os.environ.get("SMTP_PORT") or "465")
     user = os.environ.get("SMTP_USERNAME")
@@ -1241,10 +1263,19 @@ def send_email(subject, html):
     msg["To"] = to_addr
     msg.attach(MIMEText(html, "html", "utf-8"))
 
-    with smtplib.SMTP_SSL(host, port, timeout=TIMEOUT) as server:
-        server.login(user, password)
-        server.sendmail(user, [to_addr], msg.as_string())
-    print(f"Email sent to {to_addr}: {subject}")
+    last = None
+    for attempt in range(1, 4):   # Gmail SMTP hiccups are transient; retry before failing the run
+        try:
+            with smtplib.SMTP_SSL(host, port, timeout=TIMEOUT) as server:
+                server.login(user, password)
+                server.sendmail(user, [to_addr], msg.as_string())
+            print(f"Email sent to {to_addr}: {subject}")
+            return
+        except (smtplib.SMTPException, OSError) as e:  # noqa: PERF203
+            last = e
+            print(f"  ! SMTP attempt {attempt} failed: {e}")
+            time.sleep(5 * attempt)
+    raise last
 
 
 # ----------------------------- open-roles report --------------------------- #
@@ -1577,9 +1608,12 @@ def run_digest_sweep(config, seen):
             print(f"  - {firm.get('name','?')}: unknown ats")
             return firm, []
         try:
-            return firm, fetcher(firm)
+            items = fetcher(firm)
+            _log_poll(firm.get("name"), firm.get("url"), True)
+            return firm, items
         except Exception as e:  # noqa: BLE001 -- one dead page must not kill the digest
             print(f"  x {firm.get('name','?')} skipped: {e}")
+            _log_poll(firm.get("name"), firm.get("url"), False, e)
             return firm, []
 
     # Parallel: ~100 pages sequentially takes many minutes (same reason
@@ -1609,14 +1643,24 @@ def run_digest_sweep(config, seen):
             key = (_pw_key(url, j["id"]) if j.get("pagewatch")
                    else (url or f"{firm.get('name')}:{j['id']}"))
             if key in new_seen:
+                if j.get("pagewatch"):
+                    new_seen.pop(f"pwflap::{url}", None)   # stable this run -> reset flap count
                 continue
-            # Known fingerprint that moved => a real change worth emailing.
+            # Known fingerprint that moved => a real change worth emailing --
+            # unless this page changes EVERY run (countdown timers, random
+            # carousels): track consecutive changes and mute at 3+.
             if url in fingerprinted:
-                changed.append({
-                    "name": firm.get("name", "") or j.get("company", ""),
-                    "url": firm.get("url") or j.get("url", ""),
-                    "title": j.get("title", ""),
-                })
+                fk = f"pwflap::{url}"
+                flap = int((new_seen.get(fk) or {}).get("n", 0)) + 1
+                new_seen[fk] = {"n": flap, "title": firm.get("name", "")}
+                if flap >= 3:
+                    FLAPPING.append((firm.get("name", ""), firm.get("url", ""), flap))
+                else:
+                    changed.append({
+                        "name": firm.get("name", "") or j.get("company", ""),
+                        "url": firm.get("url") or j.get("url", ""),
+                        "title": j.get("title", ""),
+                    })
             new_seen[key] = {"title": j.get("title", ""), "url": j.get("url", "")}
 
     print(f"Digest sweep: {len(changed)} page(s) changed, {len(discovered)} new feed item(s).")
@@ -1629,7 +1673,7 @@ def run_digest_sweep(config, seen):
 # aren't a hiring cycle, so the hourly sweep drops them and the digest's
 # pagewatch/RSS paths never see boards. This path closes that gap.
 PROGRAM_TITLE_RE = re.compile(
-    r"\bLINK\b|intensive|program(?!mer)|invitational|summit|discovery|insight|"
+    r"\bLINK\b|intensive|program(?!mer)|invitational|summit|discovery|insight|futurefocus|kickstarter|"
     r"launchpad|challenge|competition|datathon|hackathon|workshop|bootcamp|"
     r"boot camp|fellowship|scholarship|academy|trek|externship|case study|"
     r"experience day|open day|immersion|\bweek\b|\bday\b|symposium|trading game",
@@ -1679,9 +1723,12 @@ def sweep_firm_programs(config):
 
     def poll(f):
         try:
-            return f, FETCHERS[f["ats"]](f)
+            items = FETCHERS[f["ats"]](f)
+            _log_poll(f.get("name"), f.get("url") or f.get("token"), True)
+            return f, items
         except Exception as e:  # noqa: BLE001
             print(f"  x programs: {f.get('name','?')} skipped: {e}")
+            _log_poll(f.get("name"), f.get("url") or f.get("token"), False, e)
             return f, []
 
     with ThreadPoolExecutor(max_workers=12) as pool:
@@ -1754,6 +1801,8 @@ def _hidden_season(o, filters):
 
 def _opp_li(o, days, status, is_new):
     tag = " <b style='color:#b45309'>NEW</b>" if is_new else ""
+    if o.get("_also_in_feed"):
+        tag += " <span style='color:#888;font-size:11px'>(also in hackathon feeds)</span>"
     if days is not None:
         when = (f"<b style='color:#b91c1c'>closes in {days}d</b>" if days <= 10
                 else f"closes in {days}d")
@@ -1777,6 +1826,115 @@ def _opp_li(o, days, status, is_new):
     if o.get("apply_url"):
         line += f"<br><span style='font-size:12px'><a href='{escape(o['apply_url'])}'>apply &rarr;</a></span>"
     return line + "</li>"
+
+
+def _norm_name(t):
+    """Normalize an event name for cross-feed dedup: lowercase, strip years,
+    editions, punctuation. 'HackRPI 2026: In the Clouds' == 'HackRPI'."""
+    t = re.split(r"\s*[:|–—]\s*|\s+-\s+", (t or "").lower(), maxsplit=1)[0]   # drop ': In the Clouds' subtitles
+    t = re.sub(r"\b(20\d\d|'?\d\d|v?\d+(\.\d+)?|[ivx]+)\b", " ", t)
+    t = re.sub(r"\b(the|a|an|of|at|and|hackathon|hack|edition|annual|intercollegiate|competition)\b", " ", t)
+    return re.sub(r"[^a-z0-9]+", "", t)
+
+
+def validate_config(config):
+    """Fail LOUDLY on config mistakes instead of silently polling nothing.
+    Returns a list of problems (empty = ok)."""
+    probs = []
+    firms = config.get("firms")
+    if not isinstance(firms, list) or not firms:
+        return ["config.firms missing or empty"]
+    seen_urls, seen_tokens = {}, {}
+    for i, f in enumerate(firms):
+        where = f"firms[{i}] {f.get('name','?')!r}"
+        ats = f.get("ats")
+        if ats not in FETCHERS:
+            probs.append(f"{where}: unknown ats {ats!r}")
+        if ats in ("pagewatch", "rss") and not f.get("url"):
+            probs.append(f"{where}: {ats} needs url")
+        if ats in ("greenhouse", "lever", "ashby", "workable", "smartrecruiters") and not f.get("token"):
+            probs.append(f"{where}: {ats} needs token")
+        u = (f.get("url") or "").rstrip("/").lower()
+        if u:
+            if u in seen_urls and f.get("enabled", True) and firms[seen_urls[u]].get("enabled", True):
+                probs.append(f"{where}: duplicate url of firms[{seen_urls[u]}]")
+            seen_urls.setdefault(u, i)
+        tk = (ats, (f.get("token") or "").lower())
+        if tk[1]:
+            if tk in seen_tokens:
+                probs.append(f"{where}: duplicate {ats} token {tk[1]!r} (firms[{seen_tokens[tk]}])")
+            seen_tokens.setdefault(tk, i)
+    fl = config.get("filters", {})
+    for w in fl.get("whereabouts", []):
+        try:
+            import datetime as _dt
+            a, b = _dt.date.fromisoformat(w["from"]), _dt.date.fromisoformat(w["to"])
+            if a > b:
+                probs.append(f"whereabouts {w}: from > to")
+        except Exception as e:  # noqa: BLE001
+            probs.append(f"whereabouts {w}: {e}")
+        if w.get("region") not in ("us", "europe"):
+            probs.append(f"whereabouts {w}: region must be us|europe")
+    return probs
+
+
+def validate_opportunities(opps):
+    probs, ids = [], set()
+    import datetime as _dt
+    for o in opps:
+        oid = o.get("id")
+        if not oid or oid in ids:
+            probs.append(f"opportunity missing/duplicate id: {oid!r}")
+        ids.add(oid)
+        for k in ("name", "url"):
+            if not o.get(k):
+                probs.append(f"{oid}: missing {k}")
+        for k in ("event_date", "deadline"):
+            v = o.get(k)
+            if v:
+                try:
+                    _dt.date.fromisoformat(v)
+                except ValueError:
+                    probs.append(f"{oid}: {k} not ISO date: {v!r}")
+        if o.get("format") not in (None, "", "in-person", "online", "hybrid"):
+            probs.append(f"{oid}: bad format {o.get('format')!r}")
+    return probs
+
+
+ICS_FILE = "opportunities.ics"
+
+
+def write_ics(opps_visible, mlh_visible, filters):
+    """Subscribe-able calendar: every open opportunity (event date + a separate
+    DEADLINE event) and every MLH event he can attend. Committed each run; the
+    raw GitHub URL can be added to Google Calendar as a URL subscription."""
+    import datetime as _dt
+    def esc(t):
+        return (t or "").replace("\\", "\\\\").replace(";", "\\;").replace(",", "\\,").replace("\n", "\\n")
+    def allday(uid, day, summary, desc, url, nxt=True):
+        try:
+            d = _dt.date.fromisoformat(day[:10])
+        except (ValueError, TypeError):
+            return []
+        d2 = d + _dt.timedelta(days=1)
+        return ["BEGIN:VEVENT", f"UID:{uid}@internship-watcher", f"DTSTAMP:{_dt.datetime.now(_dt.timezone.utc):%Y%m%dT%H%M%SZ}",
+                f"DTSTART;VALUE=DATE:{d:%Y%m%d}", f"DTEND;VALUE=DATE:{d2:%Y%m%d}",
+                f"SUMMARY:{esc(summary)}", f"DESCRIPTION:{esc(desc)}", f"URL:{esc(url)}", "END:VEVENT"]
+    lines = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//internship-watcher//opportunities//EN",
+             "X-WR-CALNAME:Opportunities (watcher)", "CALSCALE:GREGORIAN"]
+    for o in opps_visible:
+        desc = " | ".join(x for x in [o.get("location"), o.get("prizes"), o.get("travel"), o.get("eligibility")] if x)
+        if o.get("event_date"):
+            lines += allday(f"opp-{o['id']}", o["event_date"], o["name"], desc, o.get("url", ""))
+        if o.get("deadline"):
+            lines += allday(f"dl-{o['id']}", o["deadline"], f"DEADLINE: {o['name']}", desc, o.get("apply_url") or o.get("url", ""))
+    for e in mlh_visible:
+        if e.get("starts"):
+            lines += allday(f"mlh-{e['id']}", e["starts"], f"{e['title']} ({e['location']})", "MLH hackathon", e.get("url", ""))
+    lines.append("END:VCALENDAR")
+    with open(ICS_FILE, "w", encoding="utf-8") as fh:
+        fh.write("\r\n".join(lines) + "\r\n")
+    print(f"{ICS_FILE} written: {sum(1 for l in lines if l == 'BEGIN:VEVENT')} event(s).")
 
 
 def _mlh_li(e):
@@ -1812,6 +1970,8 @@ def send_weekly_digest():
     Internship postings stay out; that's the hourly sweep's job."""
     import datetime as _dt
     config = load_json(CONFIG_FILE, None) or {}
+    for pr in validate_config(config) + validate_opportunities(_load_opps()):
+        print(f"  ! {pr}")
     filters = config.get("filters", {})
     seen = load_json(SEEN_FILE, {}) or {}
     today = _dt.date.today()
@@ -1821,6 +1981,7 @@ def send_weekly_digest():
         changed, discovered, new_seen = run_digest_sweep(config, seen)
     except Exception as e:  # noqa: BLE001 -- still send the list if polling dies
         print(f"  x digest sweep failed, sending list only: {e}")
+        FEED_ERRORS.append(("Page-watch sweep", str(e)[:140]))
 
     # ---- programs/events posted on top-firm job boards (complete, NEW-flagged) ----
     programs = []
@@ -1828,6 +1989,7 @@ def send_weekly_digest():
         programs = sweep_firm_programs(config)
     except Exception as e:  # noqa: BLE001
         print(f"  x programs sweep failed: {e}")
+        FEED_ERRORS.append(("Firm-board programs", str(e)[:140]))
     for pr in programs:
         key = f"prog::{pr['url'].strip().lower()}"
         pr["is_new"] = key not in new_seen
@@ -1853,12 +2015,22 @@ def send_weekly_digest():
     mlh_hidden = [e for e in mlh if e.get("hidden_spring")]
     n_new_mlh = sum(1 for e in mlh_vis if e["is_new"])
 
+    # cross-feed dedup: an MLH event listed on Devpost too shows once (under MLH)
+    mlh_norms = {_norm_name(e["title"]) for e in mlh}
+    for h in hacks:
+        if _norm_name(h["title"]) in mlh_norms:
+            h["dup_mlh"] = True
+    hacks = [h for h in hacks if not h.get("dup_mlh")]
+
     hacks_vis = [h for h in hacks if not h.get("hidden_spring")]
     hacks_hidden = [h for h in hacks if h.get("hidden_spring")]
     n_new_hack = sum(1 for h in hacks_vis if h["is_new"])
 
     # ---- opportunities: complete list + NEW detection ----
     opps = _load_opps()
+    feed_norms = mlh_norms | {_norm_name(h["title"]) for h in hacks}
+    for o in opps:
+        o["_also_in_feed"] = _norm_name(o.get("name")) in feed_norms
     visible, hidden, expired, new_ids = [], [], [], []
     for o in opps:
         status, days = _opp_state(o, today)
@@ -1884,6 +2056,11 @@ def send_weekly_digest():
                              for w in filters.get("whereabouts", []))
         + " &middot; otherwise Atlanta/US. Online always shown. &#127466;&#127480; = Spain.</p>"
     ]
+
+    if FEED_ERRORS:
+        parts.append("<div style='border-left:4px solid #b91c1c;padding:6px 12px;margin:12px 0;background:#fef2f2'>"
+                     "<b>&#9888;&#65039; Feed failure this run</b> &mdash; a section below may be missing or short: "
+                     + "; ".join(f"<b>{escape(n)}</b> ({escape(e)})" for n, e in FEED_ERRORS) + "</div>")
 
     # ---- 1) NEW ----
     if n_new or n_new_prog or n_new_hack or n_new_mlh or changed or discovered:
@@ -1951,8 +2128,8 @@ def send_weekly_digest():
             parts.append("<h3 style='margin:10px 0 4px'>&#9992;&#65039; In-person</h3><ul>")
             parts += [_hack_li(h) for h in ip]; parts.append("</ul>")
         if on:
-            parts.append("<h3 style='margin:10px 0 4px'>&#127760; Online (big prizes)</h3><ul>")
-            parts += [_hack_li(h) for h in on]; parts.append("</ul>")
+            parts.append("<!--sec:devpost-online--><h3 style='margin:10px 0 4px'>&#127760; Online (big prizes)</h3><ul>")
+            parts += [_hack_li(h) for h in on]; parts.append("</ul><!--/sec:devpost-online-->")
         if hacks_hidden:
             parts.append(f"<p style='color:#888;font-size:12px'>Hidden: {len(hacks_hidden)} in-person hackathon(s) where you won't be: " + ", ".join(escape(h['title']) for h in hacks_hidden[:8]) + "</p>")
 
@@ -1983,6 +2160,7 @@ def send_weekly_digest():
 
     # ---- 2b) programs/events currently posted on firm boards (always complete) ----
     if programs:
+        parts.append("<!--sec:programs-->")
         parts.append(f"<hr><h2>&#127970; Programs &amp; events on firm job boards &mdash; {len(programs)}</h2>"
                      "<p style='color:#666;font-size:12px'>Non-internship postings on the top firms' own boards "
                      "(intensives, invitationals, insight weeks). Pulled live every send.</p><ul>")
@@ -1991,17 +2169,18 @@ def send_weekly_digest():
             tag = " <b style='color:#b45309'>NEW</b>" if pr["is_new"] else ""
             parts.append(f"<li><a href='{escape(pr['url'])}'><b>{escape(pr['company'])}</b> &mdash; "
                          f"{escape(pr['title'])}</a>{loc}{tag}</li>")
-        parts.append("</ul>")
+        parts.append("</ul><!--/sec:programs-->")
 
     # ---- 3) discovery feed ----
     if discovered:
+        parts.append("<!--sec:discovery-->")
         parts.append(f"<hr><h2>&#128269; Discovery feed &mdash; {len(discovered)} new mention(s)</h2>"
                      "<p style='color:#666;font-size:12px'>Raw hits from news / Reddit / HN feeds. "
                      "Unverified &mdash; skim, then tell me which to add to the list.</p><ul style='font-size:13px'>")
         for d_ in discovered[:15]:
             parts.append(f"<li><a href='{escape(d_['url'])}'>{escape(d_['title'])}</a> "
                          f"<span style='color:#888'>&mdash; {escape(d_['feed'].replace('RSS: ',''))}</span></li>")
-        parts.append("</ul>")
+        parts.append("</ul><!--/sec:discovery-->")
 
     # ---- 4) watched pages: one line, not 180 links (Alex: "list got bloated") ----
     n_watch = sum(1 for f in config.get("firms", []) if f.get("enabled", True) and _is_digest_source(f))
@@ -2010,11 +2189,50 @@ def send_weekly_digest():
     parts.append("<p style='color:#888;font-size:12px'>Sent Wed + Sun by your watcher. "
                  "To add something: reply with the link and I'll put it in the list.</p>")
 
+    # ---- source health ledger: consecutive failures per source, in state ----
+    dead = []
+    for name, url, ok, err in POLL_LOG:
+        hk = f"health::{(url or name).strip().lower()}"
+        n = 0 if ok else int((new_seen.get(hk) or {}).get("n", 0)) + 1
+        if n:
+            new_seen[hk] = {"n": n, "title": name, "err": err}
+        else:
+            new_seen.pop(hk, None)
+        if n >= 3:
+            dead.append((name, url, n, err))
+    if dead or FLAPPING:
+        parts.append("<!--sec:health--><hr><p style='color:#888;font-size:12px'><b>Source health.</b> ")
+        if dead:
+            parts.append(f"{len(dead)} source(s) failing 3+ runs in a row (probably dead, fix or drop in config): "
+                         + "; ".join(f"<a href='{escape(u)}'>{escape(n)}</a> ({escape(e[:60])})" for n, u, c, e in dead[:12]))
+        if FLAPPING:
+            parts.append((" &middot; " if dead else "") + f"{len(FLAPPING)} page(s) muted for changing every run: "
+                         + ", ".join(escape(n) for n, u, c in FLAPPING[:10]))
+        parts.append("</p><!--/sec:health-->")
+
+    html_out = "\n".join(parts)
+    # ---- Gmail clips messages over ~102 KB. Shed optional sections, lowest value first. ----
+    for sec in ("discovery", "programs", "devpost-online", "health"):
+        if len(html_out.encode("utf-8")) <= 95_000:
+            break
+        html_out, n = re.subn(rf"<!--sec:{sec}-->.*?<!--/sec:{sec}-->", "", html_out, flags=re.S)
+        if n:
+            html_out += f"<p style='color:#888;font-size:12px'>(Section '{sec}' omitted to stay under Gmail's size limit.)</p>"
+            print(f"  clip guard: dropped section {sec}")
+
+    try:
+        write_ics([o for _, o, *_ in visible], mlh_vis, filters)
+    except Exception as e:  # noqa: BLE001
+        print(f"  x ics not written: {e}")
+
     subj = f"[Watcher] {len(visible) + len(programs) + len(hacks_vis) + len(mlh_vis)} open"
     if n_new + n_new_prog + n_new_hack + n_new_mlh: subj += f" · {n_new + n_new_prog + n_new_hack + n_new_mlh} new"
     if closing: subj += f" · {len(closing)} closing soon"
-    send_email(subj + " — opportunities digest", "\n".join(parts))
-    save_json(SEEN_FILE, new_seen)
+    send_email(subj + " — opportunities digest", html_out)
+    if DRY_RUN:
+        print("DRY RUN: state not saved.")
+    else:
+        save_json(SEEN_FILE, new_seen)
     print(f"Digest sent: {len(visible)} open, {n_new} new, {len(closing)} closing, "
           f"{len(hidden)} hidden (spring), {len(discovered)} discovered.")
 
@@ -2029,6 +2247,11 @@ def main():
     if not config:
         print(f"ERROR: {CONFIG_FILE} is missing or invalid.", file=sys.stderr)
         sys.exit(1)
+    probs = validate_config(config)
+    if probs:
+        print("CONFIG PROBLEMS:\n  " + "\n  ".join(probs[:30]), file=sys.stderr)
+        if any("unknown ats" in p or "missing or empty" in p for p in probs):
+            sys.exit(2)
 
     filters = config.get("filters", {})
     top_only = bool(filters.get("top_firms_only"))

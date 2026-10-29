@@ -9,3 +9,6 @@ resumes/
 TOMORROW.md
 WITHDRAWALS.md
 WATCHLIST.md
+digest_preview.html
+.pytest_cache/
+__pycache__/

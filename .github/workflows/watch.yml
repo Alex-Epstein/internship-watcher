@@ -16,6 +16,10 @@ on:
     # :17 not :00 -- GitHub throttles top-of-hour schedules; observed Oct 2026
     # only 5-8 of 24 hourly runs were actually firing per day at :00.
     - cron: "17 * * * *"
+  push:
+    branches: [main]
+    paths: ["watcher.py", "config.json", "opportunities.json", "tests/**", ".github/workflows/watch.yml"]
+  pull_request:
   workflow_dispatch:      # "Run workflow" button
     inputs:
       mode:
@@ -37,7 +41,36 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  # Every push that touches logic/config runs the pure tests + a DRY_RUN build of
+  # the digest against live feeds. A red X here means the next real send would
+  # have been broken. Never sends mail, never commits state.
+  test:
+    if: github.event_name == 'push' || github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements-dev.txt
+      - name: Unit tests (no network)
+        run: python -m pytest -q tests/test_core.py
+      - name: Smoke-build the digest (network, DRY_RUN)
+        env:
+          SMOKE: "1"
+          DRY_RUN: "1"
+        run: python -m pytest -q tests/test_smoke_digest.py
+      - name: Upload digest preview
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: digest-preview
+          path: digest_preview.html
+          if-no-files-found: ignore
+
   watch:
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     timeout-minutes: 45
     steps:
@@ -73,6 +106,7 @@ jobs:
           git add seen_jobs.json
           [ -f OPEN_ROLES.md ] && git add OPEN_ROLES.md || true
           [ -f TOP_PICKS.md ] && git add TOP_PICKS.md || true
+          [ -f opportunities.ics ] && git add opportunities.ics || true
           if git diff --quiet --cached; then
             echo "No state changes to push."
             exit 0
