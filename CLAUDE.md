@@ -223,6 +223,42 @@ Read the Actions log to see which sources actually resolved.
   Actions runners. They mostly re-list ATS postings anyway, so polling the ATS
   directly is both earlier and cleaner. Don't go down this road.
 
+## Robustness layer (2026-10-29) — how the system defends itself
+
+- **Tests + CI.** `tests/test_core.py` (14 pure-function regressions, no
+  network) and `tests/test_smoke_digest.py` (builds the real digest in DRY_RUN
+  against live feeds; asserts sections, <102 KB, .ics). The `test` job runs
+  both on every push touching `watcher.py` / `config.json` /
+  `opportunities.json` / `tests/` / the workflow. **Red X = the next real send
+  would have been broken.** Run locally: `pip install -r requirements-dev.txt
+  && python -m pytest -q tests/test_core.py`; `SMOKE=1 DRY_RUN=1 python -m
+  pytest -q tests/test_smoke_digest.py` for the network one.
+- **Dry run.** `DIGEST_MODE=1 DRY_RUN=1 python watcher.py` renders
+  `digest_preview.html` (gitignored) + `opportunities.ics`, sends nothing,
+  saves no state. Use this before touching the digest.
+- **Feed failure banner.** If MLH / Devpost / page-sweep / firm-programs raise,
+  a red banner at the top of the email says so (`FEED_ERRORS`). Previously the
+  section just vanished silently — gotcha #2 class.
+- **Source health ledger.** Every poll is logged (`POLL_LOG`); consecutive
+  failures persist as `health::<url>` in `seen_jobs.json`; 3+ in a row → listed
+  in the email footer. Fix or drop them in config.
+- **Flap guard.** `pwflap::<url>` counts consecutive hash changes; a page that
+  changes every run (countdown timers) is muted at 3 and reported, instead of
+  alerting twice a week forever.
+- **Cross-feed dedup.** `_norm_name()` (strips years/editions/subtitles) — a
+  Devpost entry that's an MLH event shows once under MLH; curated entries also
+  in feeds get a tag.
+- **Gmail clip guard.** >95 KB sheds `<!--sec:…-->` blocks in order: discovery
+  → programs → devpost-online → health. Gmail clips at ~102 KB.
+- **SMTP retry.** 3 attempts with backoff before the run fails.
+- **Validation.** `validate_config()` (unknown ats, missing token/url,
+  duplicate urls/tokens, bad whereabouts) and `validate_opportunities()`
+  (ids, ISO dates, format). Hard-fail only on unknown ats / empty firms;
+  everything else is printed. Both run in tests.
+- **Calendar.** `opportunities.ics` is rewritten every digest and committed:
+  every open opportunity (event + a `DEADLINE:` event) and every attendable
+  MLH event. Subscribe in Google Calendar via the raw GitHub URL.
+
 ## Testing
 
 Filters are pure functions — test them without any network:
