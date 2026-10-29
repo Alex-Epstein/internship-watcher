@@ -315,12 +315,93 @@ _NON_TARGET_LOC_RE = re.compile(
     r"brazil|mexico|argentina|chile|colombia", re.I)
 
 
+# Where Alex physically is, by date (filters.whereabouts). An IN-PERSON event is
+# shown only if it's in the region he'll be in on its start date; online always.
+EU_LOC_RE = re.compile(
+    r"\b(spain|españa|madrid|barcelona|valencia|sevilla|seville|bilbao|lleida|zaragoza|"
+    r"m[aá]laga|granada|salamanca|portugal|lisbon|lisboa|porto|france|paris|lyon|"
+    r"germany|berlin|munich|münchen|hamburg|frankfurt|cologne|köln|switzerland|zurich|"
+    r"zürich|geneva|lausanne|st\.? gallen|austria|vienna|wien|italy|milan|milano|rome|"
+    r"roma|turin|torino|netherlands|amsterdam|rotterdam|delft|eindhoven|belgium|brussels|"
+    r"leuven|ireland|dublin|uk|united kingdom|england|london|cambridge, uk|oxford|"
+    r"manchester|edinburgh|scotland|sweden|stockholm|gothenburg|lund|denmark|copenhagen|"
+    r"norway|oslo|finland|helsinki|turku|espoo|poland|warsaw|krak[oó]w|czech|prague|"
+    r"hungary|budapest|greece|athens|romania|bucharest|estonia|tallinn|latvia|riga|"
+    r"lithuania|vilnius|luxembourg|europe|emea)\b", re.I)
+SPAIN_RE = re.compile(r"\b(spain|españa|madrid|barcelona|valencia|sevilla|seville|bilbao|lleida|zaragoza|m[aá]laga|granada|salamanca)\b", re.I)
+_US_HINT_RE = re.compile(
+    r"\b(usa|u\.s\.|united states|new york|nyc|manhattan|brooklyn|boston|cambridge, ma|"
+    r"atlanta|georgia tech|chicago|austin|dallas|houston|seattle|san francisco|bay area|"
+    r"palo alto|berkeley|los angeles|san diego|miami|philadelphia|pittsburgh|princeton|"
+    r"ithaca|new haven|ann arbor|urbana|champaign|madison|minneapolis|denver|boulder|"
+    r"phoenix|tempe|salt lake|portland|washington,? d\.?c\.?|arlington|baltimore|"
+    r"durham|chapel hill|raleigh|charlotte|nashville|columbus|troy, n|richardson|"
+    r"canada|toronto|waterloo|vancouver|montreal|ottawa|calgary|hamilton, on|mississauga|"
+    r"[A-Z][a-z]+,\s?(?:AL|AK|AZ|AR|CA|CO|CT|DE|FL|GA|HI|ID|IL|IN|IA|KS|KY|LA|ME|MD|MA|MI|MN|MS|MO|MT|NE|NV|NH|NJ|NM|NY|NC|ND|OH|OK|OR|PA|RI|SC|SD|TN|TX|UT|VT|VA|WA|WV|WI|WY|ON|BC|QC|AB))\b")
+
+
+def _loc_region(loc, mlh_region=None, online=False):
+    """'online' | 'europe' | 'us' (US+Canada) | 'other'."""
+    if online:
+        return "online"
+    if mlh_region:
+        return {"AMER": "us", "EMEA": "europe"}.get(mlh_region, "other")
+    s = loc or ""
+    if not s.strip() or s.strip().lower().startswith("online"):
+        return "online"
+    if _NON_TARGET_LOC_RE.search(s):
+        return "other"
+    if EU_LOC_RE.search(s):
+        return "europe"
+    if _US_HINT_RE.search(s):
+        return "us"
+    return "us"   # unlabelled English-looking venue names ("Heafey Hall") are overwhelmingly US
+
+
+def _alex_region(filters, day):
+    """Region Alex is in on `day` (datetime.date) per filters.whereabouts."""
+    import datetime as _dt
+    for w in filters.get("whereabouts", []):
+        try:
+            a, b = _dt.date.fromisoformat(w["from"]), _dt.date.fromisoformat(w["to"])
+        except (KeyError, ValueError):
+            continue
+        if a <= day <= b:
+            return w.get("region", "us"), w.get("label", "")
+    return filters.get("default_region", "us"), "Atlanta"
+
+
+def _event_visible(filters, region, start_iso):
+    """True if an event in `region` starting on `start_iso` (YYYY-MM-DD) is
+    somewhere Alex will physically be. Online always; 'other' never;
+    unknown date -> assume now."""
+    import datetime as _dt
+    if region == "online":
+        return True, ""
+    if region == "other":
+        return False, "outside US/Europe"
+    try:
+        day = _dt.date.fromisoformat((start_iso or "")[:10])
+    except ValueError:
+        day = _dt.date.today()
+    where, label = _alex_region(filters, day)
+    return (region == where), (f"you'll be in {label}" if region != where else "")
+
+
 def _dp_prize(h):
     """(currency, int amount) from Devpost's prize_amount html."""
     raw = h.get("prize_amount") or ""
     m = re.search(r"data-currency-value>([\d,]+)", raw)
     cur = raw.strip()[:1] if raw.strip() else ""
     return cur, (int(m.group(1).replace(",", "")) if m else 0)
+
+
+def _dp_start_iso(h):
+    d = h.get("dates") or h.get("submission_period_dates") or ""
+    m = re.match(r"\s*([A-Za-z]{3})\s+(\d{1,2})", d); y = re.search(r"(20\d\d)", d)
+    if not (m and y):
+        return ""
+    return f"{y.group(1)}-{_DP_MONTH.get(m.group(1).lower(), 1):02d}-{int(m.group(2)):02d}"
 
 
 def _dp_start_month(h):
@@ -409,15 +490,17 @@ def digest_mlh(filters):
     except Exception as e:  # noqa: BLE001
         print(f"  x mlh skipped: {e}")
         return []
-    hide = [x.lower() for x in filters.get("hide_seasons", ["spring"])]
     keep = []
     for e in evs:
         if e["region"] not in ("AMER", "EMEA"):
             continue
         if _NON_TARGET_LOC_RE.search(e["location"]) or _HS_RE.search(e["title"]):
             continue
-        if not e["online"] and "spring" in hide and e["start_month"] in (1, 2, 3, 4, 5):
-            e["hidden_spring"] = True
+        reg = _loc_region(e["location"], mlh_region=e["region"], online=e["online"])
+        e["spain"] = bool(SPAIN_RE.search(e["location"]))
+        ok, why = _event_visible(filters, reg, e["starts"])
+        if not ok:
+            e["hidden_spring"] = True; e["hide_why"] = why
         keep.append(e)
     keep.sort(key=lambda e: (e["online"], e["starts"]))
     print(f"MLH: {len(evs)} upcoming -> {len(keep)} in AMER/EMEA ({sum(1 for e in keep if not e['online'])} in-person).")
@@ -436,7 +519,6 @@ def digest_hackathons(filters):
         return []
     min_on = int(filters.get("devpost_min_prize_online", 10000))
     min_ip = int(filters.get("devpost_min_prize_inperson", 1000))
-    hide = [x.lower() for x in filters.get("hide_seasons", ["spring"])]
     keep = []
     for h in hs:
         if h["invite_only"] or _HS_RE.search(h["title"]) or _HS_RE.search(h["location"]):
@@ -451,8 +533,13 @@ def digest_hackathons(filters):
         else:
             if h["prize"] < min_ip:
                 continue
-            if "spring" in hide and h["start_month"] in (1, 2, 3, 4, 5):
-                h["hidden_spring"] = True
+        region = _loc_region(h["location"], online=h["online"])
+        if region == "other":
+            continue
+        h["region"] = region; h["spain"] = bool(SPAIN_RE.search(h["location"]))
+        ok, why = _event_visible(filters, region, _dp_start_iso(h))
+        if not ok:
+            h["hidden_spring"] = True; h["hide_why"] = why
         keep.append(h)
     keep.sort(key=lambda h: (h["online"], -h["prize"]))
     print(f"Devpost: {len(hs)} open/upcoming -> {len(keep)} worth listing "
@@ -1655,12 +1742,14 @@ def _opp_state(o, today):
 
 
 def _hidden_season(o, filters):
-    """Alex is abroad in spring 2027: hide IN-PERSON spring events. Online ones
-    stay visible since he can do those from anywhere."""
-    hide = [x.lower() for x in (filters or {}).get("hide_seasons", ["spring"])]
-    season = (o.get("season") or "").lower()
+    """Hide an IN-PERSON opportunity if Alex won't be in its region on its date
+    (filters.whereabouts). Online always visible."""
     fmt = (o.get("format") or "").lower()
-    return season in hide and fmt != "online"
+    if fmt == "online":
+        return False
+    region = _loc_region(o.get("location", ""))
+    ok, _ = _event_visible(filters or {}, region, o.get("event_date") or o.get("deadline") or "")
+    return not ok
 
 
 def _opp_li(o, days, status, is_new):
@@ -1693,6 +1782,7 @@ def _opp_li(o, days, status, is_new):
 def _mlh_li(e):
     tag = " <b style='color:#b45309'>NEW</b>" if e.get("is_new") else ""
     where = "Online" if e["online"] else escape(e["location"])
+    if e.get("spain"): where = "&#127466;&#127480; " + where
     fmt = f" &middot; {escape(e['fmt'])}" if e.get("fmt") == "hybrid" else ""
     return (f"<li style='margin:4px 0'><a href='{escape(e['url'])}'><b>{escape(e['title'])}</b></a>{tag} "
             f"&mdash; {escape(e['dates'])} &middot; &#128205; {where}{fmt} "
@@ -1703,6 +1793,7 @@ def _hack_li(h):
     tag = " <b style='color:#b45309'>NEW</b>" if h.get("is_new") else ""
     prize = f"{h['prize_cur']}{h['prize']:,}" if h.get("prize") else "no cash prize listed"
     where = "Online" if h["online"] else escape(h["location"])
+    if h.get("spain"): where = "&#127466;&#127480; " + where
     themes = f" &middot; {escape(h['themes'])}" if h.get("themes") else ""
     org = f" &middot; by {escape(h['company'])}" if h.get("company") else ""
     return (f"<li style='margin:5px 0'><a href='{escape(h['url'])}'><b>{escape(h['title'])}</b></a>{tag} "
@@ -1785,10 +1876,13 @@ def send_weekly_digest():
     n_new = len([v for v in visible if v[4]])
 
     parts = [
-        "<p style='font-size:15px'><b>Opportunities digest</b> &mdash; competitions, "
-        "events with travel, hackathons, fellowships, research. Sent Wednesday and "
-        "Sunday. <b>Every send is the complete current list</b>, so you never need "
-        "an older email.</p>"
+        "<p style='font-size:15px'><b>Opportunities digest</b> &mdash; hackathons first, then "
+        "competitions, events with travel, fellowships. Sent Wednesday and Sunday. "
+        "<b>Every send is the complete current list</b>, so you never need an older email.</p>"
+        "<p style='font-size:12px;color:#666'>In-person events are shown only where you'll physically be: "
+        + " &middot; ".join(f"<b>{escape(w.get('label',''))}</b> {w['from']} &rarr; {w['to']}"
+                             for w in filters.get("whereabouts", []))
+        + " &middot; otherwise Atlanta/US. Online always shown. &#127466;&#127480; = Spain.</p>"
     ]
 
     # ---- 1) NEW ----
@@ -1832,6 +1926,36 @@ def send_weekly_digest():
     else:
         parts.append("<p style='color:#666'>Nothing new since last send.</p>")
 
+    # ---- 2a0) MLH season schedule (the collegiate in-person tier; always complete) ----
+    if mlh_vis:
+        ip = [e for e in mlh_vis if not e["online"]]; on = [e for e in mlh_vis if e["online"]]
+        parts.append(f"<hr><h2>&#127942; MLH hackathons &mdash; {len(mlh_vis)} upcoming (US/Canada/Europe)</h2>"
+                     "<p style='color:#666;font-size:12px'>Major League Hacking's official 2027 season, live every send. "
+                     "These are the real collegiate ones: free, in-person, usually with travel reimbursement for out-of-town hackers. By date.</p>")
+        if ip:
+            parts.append("<h3 style='margin:10px 0 4px'>&#9992;&#65039; In-person</h3><ul>"); parts += [_mlh_li(e) for e in ip]; parts.append("</ul>")
+        if on:
+            parts.append("<h3 style='margin:10px 0 4px'>&#127760; Online</h3><ul>"); parts += [_mlh_li(e) for e in on]; parts.append("</ul>")
+        if mlh_hidden:
+            parts.append(f"<p style='color:#888;font-size:12px'>Hidden: {len(mlh_hidden)} in-person MLH event(s) where you won't be: "
+                         + ", ".join(escape(e['title']) for e in mlh_hidden[:10]) + "</p>")
+
+    # ---- 2a) hackathons (always complete; in-person first, by prize) ----
+    if hacks_vis:
+        ip = [h for h in hacks_vis if not h["online"]]; on = [h for h in hacks_vis if h["online"]]
+        parts.append(f"<hr><h2>&#128187; Hackathons &mdash; {len(hacks_vis)} worth your time</h2>"
+                     "<p style='color:#666;font-size:12px'>Live from Devpost every send. Filtered: USD/EUR/GBP, "
+                     f"no high-school, no India-only; in-person &ge; ${int(filters.get('devpost_min_prize_inperson',1000)):,}, "
+                     f"online &ge; ${int(filters.get('devpost_min_prize_online',10000)):,}. Tune the floors in config.</p>")
+        if ip:
+            parts.append("<h3 style='margin:10px 0 4px'>&#9992;&#65039; In-person</h3><ul>")
+            parts += [_hack_li(h) for h in ip]; parts.append("</ul>")
+        if on:
+            parts.append("<h3 style='margin:10px 0 4px'>&#127760; Online (big prizes)</h3><ul>")
+            parts += [_hack_li(h) for h in on]; parts.append("</ul>")
+        if hacks_hidden:
+            parts.append(f"<p style='color:#888;font-size:12px'>Hidden: {len(hacks_hidden)} in-person hackathon(s) where you won't be: " + ", ".join(escape(h['title']) for h in hacks_hidden[:8]) + "</p>")
+
     # ---- 2) COMPLETE LIST ----
     closing = [v for v in visible if v[2] == "closing"]
     parts.append(f"<hr><h2>&#128203; Everything currently open &mdash; {len(visible)}</h2>"
@@ -1850,43 +1974,12 @@ def send_weekly_digest():
     if not visible:
         parts.append("<p>No open opportunities in the list yet.</p>")
     if hidden:
-        parts.append(f"<p style='color:#888;font-size:12px'>Hidden: {len(hidden)} in-person spring "
-                     "event(s) &mdash; you'll be in Madrid. "
+        parts.append(f"<p style='color:#888;font-size:12px'>Hidden: {len(hidden)} in-person "
+                     "event(s) where you won't be: "
                      + ", ".join(escape(h.get("name", "")) for h in hidden) + "</p>")
     if expired:
         parts.append(f"<p style='color:#aaa;font-size:11px'>Expired (kept for next year's watch): "
                      + ", ".join(escape(x.get("name", "")) for x in expired) + "</p>")
-
-    # ---- 2a0) MLH season schedule (the collegiate in-person tier; always complete) ----
-    if mlh_vis:
-        ip = [e for e in mlh_vis if not e["online"]]; on = [e for e in mlh_vis if e["online"]]
-        parts.append(f"<hr><h2>&#127942; MLH hackathons &mdash; {len(mlh_vis)} upcoming (US/Canada/Europe)</h2>"
-                     "<p style='color:#666;font-size:12px'>Major League Hacking's official 2027 season, live every send. "
-                     "These are the real collegiate ones: free, in-person, usually with travel reimbursement for out-of-town hackers. By date.</p>")
-        if ip:
-            parts.append("<h3 style='margin:10px 0 4px'>&#9992;&#65039; In-person</h3><ul>"); parts += [_mlh_li(e) for e in ip]; parts.append("</ul>")
-        if on:
-            parts.append("<h3 style='margin:10px 0 4px'>&#127760; Online</h3><ul>"); parts += [_mlh_li(e) for e in on]; parts.append("</ul>")
-        if mlh_hidden:
-            parts.append(f"<p style='color:#888;font-size:12px'>Hidden: {len(mlh_hidden)} in-person spring MLH event(s) (Madrid): "
-                         + ", ".join(escape(e['title']) for e in mlh_hidden[:10]) + "</p>")
-
-    # ---- 2a) hackathons (always complete; in-person first, by prize) ----
-    if hacks_vis:
-        ip = [h for h in hacks_vis if not h["online"]]; on = [h for h in hacks_vis if h["online"]]
-        parts.append(f"<hr><h2>&#128187; Hackathons &mdash; {len(hacks_vis)} worth your time</h2>"
-                     "<p style='color:#666;font-size:12px'>Live from Devpost every send. Filtered: USD/EUR/GBP, "
-                     f"no high-school, no India-only; in-person &ge; ${int(filters.get('devpost_min_prize_inperson',1000)):,}, "
-                     f"online &ge; ${int(filters.get('devpost_min_prize_online',10000)):,}. Tune the floors in config.</p>")
-        if ip:
-            parts.append("<h3 style='margin:10px 0 4px'>&#9992;&#65039; In-person</h3><ul>")
-            parts += [_hack_li(h) for h in ip]; parts.append("</ul>")
-        if on:
-            parts.append("<h3 style='margin:10px 0 4px'>&#127760; Online (big prizes)</h3><ul>")
-            parts += [_hack_li(h) for h in on]; parts.append("</ul>")
-        if hacks_hidden:
-            parts.append(f"<p style='color:#888;font-size:12px'>Hidden: {len(hacks_hidden)} in-person spring hackathon(s) "
-                         "(Madrid): " + ", ".join(escape(h['title']) for h in hacks_hidden[:8]) + "</p>")
 
     # ---- 2b) programs/events currently posted on firm boards (always complete) ----
     if programs:
@@ -1905,31 +1998,15 @@ def send_weekly_digest():
         parts.append(f"<hr><h2>&#128269; Discovery feed &mdash; {len(discovered)} new mention(s)</h2>"
                      "<p style='color:#666;font-size:12px'>Raw hits from news / Reddit / HN feeds. "
                      "Unverified &mdash; skim, then tell me which to add to the list.</p><ul style='font-size:13px'>")
-        for d_ in discovered[:40]:
+        for d_ in discovered[:15]:
             parts.append(f"<li><a href='{escape(d_['url'])}'>{escape(d_['title'])}</a> "
                          f"<span style='color:#888'>&mdash; {escape(d_['feed'].replace('RSS: ',''))}</span></li>")
         parts.append("</ul>")
 
-    # ---- 4) watched pages index ----
-    idx = {"events": [], "competitions": [], "programs": [], "money": [], "research": []}
-    for f in config.get("firms", []):
-        if f.get("enabled", True) and _is_digest_source(f) and f.get("url") and f.get("ats") != "rss":
-            idx[_digest_group(f.get("name", ""))].append((f.get("name", ""), f["url"]))
-    parts.append("<hr><h2>&#128279; Every page being watched</h2>"
-                 "<p style='color:#888;font-size:12px'>A change on any of these is what fires the alert at the top.</p>")
-    for key, label in (("events", "Events with travel / in-person"),
-                       ("competitions", "Competitions &amp; hackathons"),
-                       ("programs", "Programs &amp; events"),
-                       ("money", "Scholarships &amp; fellowships"),
-                       ("research", "Research &amp; abroad")):
-        if not idx[key]:
-            continue
-        parts.append(f"<h4 style='margin:12px 0 4px'>{label}</h4><ul style='font-size:13px'>")
-        for nm, u in sorted(idx[key]):
-            short = escape(re.sub(r"^[^:]+:\s*", "", nm) or nm)
-            parts.append(f"<li><a href='{escape(u)}'>{short}</a></li>")
-        parts.append("</ul>")
-
+    # ---- 4) watched pages: one line, not 180 links (Alex: "list got bloated") ----
+    n_watch = sum(1 for f in config.get("firms", []) if f.get("enabled", True) and _is_digest_source(f))
+    parts.append(f"<hr><p style='color:#888;font-size:12px'>&#128279; {n_watch} pages/feeds watched for changes "
+                 "(university hackathons, firm programs, scholarships, EU research). Full list: WATCHLIST.md in the repo.</p>")
     parts.append("<p style='color:#888;font-size:12px'>Sent Wed + Sun by your watcher. "
                  "To add something: reply with the link and I'll put it in the list.</p>")
 

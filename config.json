@@ -205,11 +205,23 @@
     ],
     "top_firms_only": true,
     "fall_2027_only": true,
-    "hide_seasons": [
-      "spring"
-    ],
     "devpost_min_prize_online": 10000,
-    "devpost_min_prize_inperson": 1000
+    "devpost_min_prize_inperson": 1000,
+    "whereabouts": [
+      {
+        "from": "2027-01-20",
+        "to": "2027-05-20",
+        "region": "europe",
+        "label": "Madrid (study abroad)"
+      },
+      {
+        "from": "2027-06-07",
+        "to": "2027-08-14",
+        "region": "us",
+        "label": "NYC (Walleye)"
+      }
+    ],
+    "default_region": "us"
   },
   "firms": [
     {
