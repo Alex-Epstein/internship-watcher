@@ -384,6 +384,23 @@
       "perks": "",
       "eligibility": "",
       "notes": "Nov 7, 2026, per aggregator -- verify organizer page. Local to GT."
+    },
+    {
+      "id": "ai-summit-ny-hackathon-2026",
+      "name": "The AI Summit New York Hackathon",
+      "type": "hackathon",
+      "url": "https://newyork.theaisummit.com/hackathon/",
+      "event_date": "2026-12-09",
+      "end_date": "2026-12-10",
+      "deadline": null,
+      "location": "Javits Center, New York, NY",
+      "format": "in-person",
+      "season": "fall",
+      "travel": "none listed (must travel to Javits Center)",
+      "prizes": "not stated; two categories: Best App for Agentic AI, Best App for Computer Vision",
+      "perks": "build an AI app live on the AI Summit NY show floor; winners announced Dec 10",
+      "eligibility": "current US-based university students (undergrad/master's/PhD) or early-career pros, 18+; must be available in person Dec 9, 10 and 11",
+      "notes": "Scout find 2026-11-02: WebSearch, verified on organizer page. Applications 'will be open soon', no deadline posted yet. Fly ATL to NYC; check finals schedule."
     }
   ]
 }
