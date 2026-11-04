@@ -10095,40 +10095,24 @@
     "title": "Being a QR at a prop shop where traders are kings",
     "url": "https://www.reddit.com/r/quant/comments/1xess7z/being_a_qr_at_a_prop_shop_where_traders_are_kings/"
   },
-  "pwflap::https://www.computer.org/volunteering/awards/scholarships/merwin": {
-    "n": 1,
-    "title": "Scholarship: IEEE CS Merwin"
-  },
   "pw::https://www.computer.org/volunteering/awards/scholarships/merwin::#0e1ebb5f9eb8f2ac": {
     "title": "Page changed - check Scholarship: IEEE CS Merwin (may mean applications opened)",
     "url": "https://www.computer.org/volunteering/awards/scholarships/merwin"
-  },
-  "pwflap::https://www.computer.org/volunteering/awards/scholarships/upe-student-award": {
-    "n": 1,
-    "title": "Scholarship: IEEE CS UPE award"
   },
   "pw::https://www.computer.org/volunteering/awards/scholarships/upe-student-award::#07b793887f811a29": {
     "title": "Page changed - check Scholarship: IEEE CS UPE award (may mean applications opened)",
     "url": "https://www.computer.org/volunteering/awards/scholarships/upe-student-award"
   },
-  "pwflap::https://battlecode.org/": {
-    "n": 1,
-    "title": "Competition: MIT Battlecode (January)"
-  },
   "pw::https://battlecode.org/::#e5ede836885451e3": {
     "title": "Page changed - check Competition: MIT Battlecode (January) (may mean applications opened)",
     "url": "https://battlecode.org/"
-  },
-  "pwflap::https://ieeextreme.org/": {
-    "n": 1,
-    "title": "Competition: IEEEXtreme (24h, October)"
   },
   "pw::https://ieeextreme.org/::#f1a7376d4aef8ac2": {
     "title": "Page changed - check Competition: IEEEXtreme (24h, October) (may mean applications opened)",
     "url": "https://ieeextreme.org/"
   },
   "pwflap::https://www.treehacks.com/": {
-    "n": 1,
+    "n": 2,
     "title": "Hackathon: TreeHacks (Stanford)"
   },
   "pw::https://www.treehacks.com/::#49fc193ffb43572c": {
@@ -10136,7 +10120,7 @@
     "url": "https://www.treehacks.com/"
   },
   "pwflap::https://www.hertzfoundation.org/the-fellowship/": {
-    "n": 1,
+    "n": 2,
     "title": "Fellowship: Hertz (senior year)"
   },
   "pw::https://www.hertzfoundation.org/the-fellowship/::#d35a59625cddde9a": {
@@ -10144,16 +10128,12 @@
     "url": "https://www.hertzfoundation.org/the-fellowship/"
   },
   "pwflap::https://atcoder.jp/contests/": {
-    "n": 1,
+    "n": 2,
     "title": "Competition: AtCoder"
   },
   "pw::https://atcoder.jp/contests/::#c3c56789b66d6e80": {
     "title": "Page changed - check Competition: AtCoder (may mean applications opened)",
     "url": "https://atcoder.jp/contests/"
-  },
-  "pwflap::https://quantvault.org/quant-trading-competitions-2026.html": {
-    "n": 1,
-    "title": "Event: QuantVault competitions list"
   },
   "pw::https://quantvault.org/quant-trading-competitions-2026.html::#58572a599a71e26a": {
     "title": "Page changed - check Event: QuantVault competitions list (may mean applications opened)",
@@ -11208,123 +11188,435 @@
     "url": "https://www.hackathonradar.com/discover/atlanta"
   },
   "health::https://nreip.asee.org/": {
-    "n": 1,
+    "n": 2,
     "title": "Lab: NREIP (Navy research)",
     "err": "HTTPSConnectionPool(host='nreip.asee.org', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host="
   },
   "health::https://www.jpl.nasa.gov/careers/internships/": {
-    "n": 1,
+    "n": 2,
     "title": "Lab: JPL internships",
     "err": "404 Client Error: Not Found for url: https://www.jpl.nasa.gov/careers/internships/"
   },
   "health::https://www.mitre.org/careers/student-programs": {
-    "n": 1,
+    "n": 2,
     "title": "Program: MITRE student programs",
     "err": "403 Client Error: Forbidden for url: https://www.mitre.org/careers/student-programs"
   },
   "health::https://neo.substack.com/archive": {
-    "n": 1,
+    "n": 2,
     "title": "Fellowship: Neo Scholars (via Substack archive)",
     "err": "403 Client Error: Forbidden for url: https://neo.substack.com/archive"
   },
   "health::https://nsa-codebreaker.org/": {
-    "n": 1,
+    "n": 2,
     "title": "NatSec: NSA Codebreaker (fall launch)",
     "err": "403 Client Error: Forbidden for url: https://nsa-codebreaker.org/"
   },
   "health::https://www.ll.mit.edu/careers/entry-professionals/internships-cooperative-programs": {
-    "n": 1,
+    "n": 2,
     "title": "Lab: MIT Lincoln Laboratory internships",
     "err": "404 Client Error: Not Found for url: https://www.ll.mit.edu/careers/entry-professionals/internships-cooperative-programs"
   },
   "health::https://readytradergo.optiver.com/": {
-    "n": 1,
+    "n": 2,
     "title": "Competition: Optiver Ready Trader Go",
     "err": "HTTPSConnectionPool(host='readytradergo.optiver.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLS"
   },
   "health::https://ectf.mitre.org/": {
-    "n": 1,
+    "n": 2,
     "title": "Competition: MITRE eCTF",
     "err": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
   },
   "health::https://devpost.com/hackathons?open_to[]=public": {
-    "n": 1,
+    "n": 2,
     "title": "Hackathon: Devpost featured",
     "err": "406 Client Error: Not Acceptable for url: https://devpost.com/hackathons?open_to%5B%5D=public"
   },
   "health::https://www.usenix.org/conferences/student-grants": {
-    "n": 1,
+    "n": 2,
     "title": "Grant: USENIX student grants",
     "err": "403 Client Error: Forbidden for url: https://www.usenix.org/conferences/student-grants"
   },
   "health::https://www.citadel.com/careers/investing/citadel-associate-program/apply-for-2026-intercollegiate-stock-pitch-competition/": {
-    "n": 1,
+    "n": 2,
     "title": "Event: Citadel Intercollegiate Stock Pitch",
     "err": "403 Client Error: Forbidden for url: https://www.citadel.com/careers/investing/citadel-associate-program/apply-for-2026-intercollegiate-stoc"
   },
   "health::https://www.citadelsecurities.com/careers/programs-and-events/": {
-    "n": 1,
+    "n": 2,
     "title": "Event: Citadel Securities programs & events",
     "err": "403 Client Error: Forbidden for url: https://www.citadelsecurities.com/careers/programs-and-events/"
   },
   "health::https://www.citadelsecurities.com/careers/programs-and-events/the-trading-invitational/": {
-    "n": 1,
+    "n": 2,
     "title": "Event: Citadel Securities Trading Invitational",
     "err": "403 Client Error: Forbidden for url: https://www.citadelsecurities.com/careers/programs-and-events/the-trading-invitational/"
   },
   "health::https://traders.studentorg.berkeley.edu/competition.html": {
-    "n": 1,
+    "n": 2,
     "title": "Event: Traders at Berkeley competition",
     "err": "404 Client Error: Not Found for url: https://traders.studentorg.berkeley.edu/competition.html"
   },
   "health::https://datathon.rice.edu/": {
-    "n": 1,
+    "n": 2,
     "title": "Event: Rice Datathon",
     "err": "HTTPSConnectionPool(host='datathon.rice.edu', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, \"["
   },
   "health::https://www.georgetownquants.com/competition": {
-    "n": 1,
+    "n": 2,
     "title": "Event: Georgetown Quants competition",
     "err": "HTTPSConnectionPool(host='www.georgetownquants.com', port=443): Max retries exceeded with url: /competition (Caused by SSLError(SSLCertVerif"
   },
   "health::https://www.citadel.com/careers/programs-and-events/datathons/": {
-    "n": 1,
+    "n": 2,
     "title": "Event: Citadel datathons",
     "err": "403 Client Error: Forbidden for url: https://www.citadel.com/careers/programs-and-events/datathons/"
   },
   "health::https://princetonfintechquant.org/": {
-    "n": 1,
+    "n": 2,
     "title": "Event: Princeton Fintech & Quant Conference",
     "err": "HTTPSConnectionPool(host='princetonfintechquant.org', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConne"
   },
   "health::https://www.hudsonrivertrading.com/careers/": {
-    "n": 1,
+    "n": 2,
     "title": "Event: HRT students",
     "err": "403 Client Error: Forbidden for url: https://www.hudsonrivertrading.com/careers/"
   },
   "health::https://tamids.tamu.edu/student-data-science-competition/": {
-    "n": 1,
+    "n": 2,
     "title": "Event: TAMIDS data science competitions",
     "err": "404 Client Error: Not Found for url: https://tamids.tamu.edu/student-data-science-competition/"
   },
-  "health::https://hnrss.org/newest?q=competition+students": {
-    "n": 1,
-    "title": "RSS: HN – competition",
-    "err": "502 Server Error: Bad Gateway for url: https://hnrss.org/newest?q=competition+students"
-  },
   "health::https://ichack.org/": {
-    "n": 1,
+    "n": 2,
     "title": "Hackathon: IC Hack (Imperial)",
     "err": "403 Client Error: Forbidden for url: https://ichack.org/"
   },
   "health::oldmissioncapital": {
-    "n": 1,
+    "n": 2,
     "title": "Quant: Old Mission",
     "err": "404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/oldmissioncapital/jobs?content=true"
   },
   "health::plaid": {
-    "n": 1,
+    "n": 2,
     "title": "Quant/Tech: Plaid",
     "err": "404 Client Error: Not Found for url: https://api.lever.co/v0/postings/plaid?mode=json"
+  },
+  "pwflap::https://www.csaw.io/": {
+    "n": 1,
+    "title": "Competition: CSAW CTF (NYU)"
+  },
+  "pw::https://www.csaw.io/::#36a561b0cdc73a03": {
+    "title": "Page changed - check Competition: CSAW CTF (NYU) (may mean applications opened)",
+    "url": "https://www.csaw.io/"
+  },
+  "pw::https://www.treehacks.com/::#49da410cff77830e": {
+    "title": "Page changed - check Hackathon: TreeHacks (Stanford) (may mean applications opened)",
+    "url": "https://www.treehacks.com/"
+  },
+  "pw::https://www.hertzfoundation.org/the-fellowship/::#448ca60c78983788": {
+    "title": "Page changed - check Fellowship: Hertz (senior year) (may mean applications opened)",
+    "url": "https://www.hertzfoundation.org/the-fellowship/"
+  },
+  "pw::https://atcoder.jp/contests/::#45955b14bb8e95e8": {
+    "title": "Page changed - check Competition: AtCoder (may mean applications opened)",
+    "url": "https://atcoder.jp/contests/"
+  },
+  "pwflap::https://traders.mit.edu/competition": {
+    "n": 1,
+    "title": "Event: Traders@MIT competition"
+  },
+  "pw::https://traders.mit.edu/competition::#1edc29447504067f": {
+    "title": "Page changed - check Event: Traders@MIT competition (may mean applications opened)",
+    "url": "https://traders.mit.edu/competition"
+  },
+  "pwflap::https://quantchallenges.com/": {
+    "n": 1,
+    "title": "Event: QuantChallenges.com (aggregator)"
+  },
+  "pw::https://quantchallenges.com/::#10759322e055d864": {
+    "title": "Page changed - check Event: QuantChallenges.com (aggregator) (may mean applications opened)",
+    "url": "https://quantchallenges.com/"
+  },
+  "rss::349620a711b0204e": {
+    "title": "CU Students Win Exclusive Trading Challenge | Leeds School of Business - University of Colorado Boulder",
+    "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNZ2Qza2lQSWpvV2RuVzRHcDR1WTZjVmtabzZOcG8zcFczWDUxMUIxaTNaWEtfRU5nNHJrakt3YUcySC1kTms2aEx0RW5NZXB6YUFnZWl1bXNzWjN4SGlMNEEtbnRscktDUV92QkxyN1RzOG0xMEc0LUtLVVVYNEZFQjJ2TTB3UEhoa2s0R3JzSTZlclNMdWc3Yw?oc=5"
+  },
+  "rss::07a9b882c6c00754": {
+    "title": "Beckman Institute announces 2026 fellowship, award winners - Beckman Institute",
+    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPX1JnQUFEUkRHUGQ1d3l3WWFFaHlGa04zUUVRSW9lRENDRmI4U1lTN05RbUpXb1l5OFRTU1hkenBSdmk4VUdsWlpUR0dpT0Z0aFpIc0g5U3lkdnJFdVNvMjVsanhFT01QUWFiUUJiYVo2d2E2Rk9qTHdjQ0RlbklNaktORDBHeHJaal9zcXFXWVQzdXkyMXFGcURqYUNwTjZNdnpnT1NWQ0ZlNXBQVC1rMg?oc=5"
+  },
+  "rss::8cbdf372863a586c": {
+    "title": "Dr. John R. Hose P’97, P’00 Research Fellowship - Brandeis University",
+    "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNdHdGX2FzaExnUW9aNnkwTVVnQ01YaktaWUhhUHlQZU5xdWpIdGRETTNHNWxKekJWUzk3SGx4cHhoeEVlVkJwcTdCNkRWTkg1XzVUT1Bmb1pDRVNaZVg1Z2hmbHFqRTE5Zmx5eU5nZ1lOVjBmT1BlaWo4ZGlDZUJTMlRkQWNReHFmNEtkZmNBek9xR1BY?oc=5"
+  },
+  "rss::2bfd0304135ef436": {
+    "title": "AAAS Mass Media Science & Engineering Fellowship - American Association for the Advancement of Science (AAAS)",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9nNmR2Ulh5XzVJcUI3bFVDSzNTYUwtLUttUnI0a0ZfdVg5TWMteWRpRUhRWEtEN3VYQmRHOFFmWUVWQXhKUExNb1RqWHdRcGd2R2l6Rl9xLXl5LXQ3Z2hYWA?oc=5"
+  },
+  "rss::d17841ea3f2effa4": {
+    "title": "Fellowships and Education at the Schomburg Center - The New York Public Library",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE94bWJnQmJTX2h5a3NFQVpPV1F0WUQ5MjRObXY3U2lURnduOHFObHFBNFhFTTJIdjJSd2tGRGR3d1Jidmh3bmV1UHdmWG5lSkRYY3V2ZXJJUzFoS2lhVEdTcGRmRnB5VlNHcHc?oc=5"
+  },
+  "rss::63d7291d7ebddfeb": {
+    "title": "Using Quant for short term trades",
+    "url": "https://www.reddit.com/r/quant/comments/1xnxzfr/using_quant_for_short_term_trades/"
+  },
+  "rss::ff568c72b6360b10": {
+    "title": "Dealing with non-quant PMs",
+    "url": "https://www.reddit.com/r/quant/comments/1xlzkxn/dealing_with_nonquant_pms/"
+  },
+  "rss::45a40c48d5907263": {
+    "title": "non-competes practice in UK",
+    "url": "https://www.reddit.com/r/quant/comments/1xlutzu/noncompetes_practice_in_uk/"
+  },
+  "rss::fa60ff6477040f66": {
+    "title": "Weekly Megathread: Education, Early Career and Hiring/Interview Advice",
+    "url": "https://www.reddit.com/r/quant/comments/1xlqfl7/weekly_megathread_education_early_career_and/"
+  },
+  "rss::f6adcd4e0bc84907": {
+    "title": "Transitioning as a \"Bank Office Quant\" to Front Office Quant Analyst? Experience hire advice needed!",
+    "url": "https://www.reddit.com/r/quant/comments/1xlhien/transitioning_as_a_bank_office_quant_to_front/"
+  },
+  "rss::d9a455f7c0841f19": {
+    "title": "C++ low-latency engineering in MFT vs HFT firms how different is the work?",
+    "url": "https://www.reddit.com/r/quant/comments/1xkkewm/c_lowlatency_engineering_in_mft_vs_hft_firms_how/"
+  },
+  "pwflap::https://lablab.ai/event": {
+    "n": 1,
+    "title": "Hackathon: lablab.ai AI hackathons"
+  },
+  "pw::https://lablab.ai/event::#ed45c8bc041fd0b2": {
+    "title": "Page changed - check Hackathon: lablab.ai AI hackathons (may mean applications opened)",
+    "url": "https://lablab.ai/event"
+  },
+  "pwflap::https://lu.ma/hackathons": {
+    "n": 1,
+    "title": "Hackathon: Luma hackathons"
+  },
+  "pw::https://lu.ma/hackathons::#3a313fdd7c673683": {
+    "title": "Page changed - check Hackathon: Luma hackathons (may mean applications opened)",
+    "url": "https://lu.ma/hackathons"
+  },
+  "rss::a3bde38cc8754bcc": {
+    "title": "Morgan State University Students Take Home Prize Money, Land Internships After Hackathon - Morgan State University",
+    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPMXVjX01BQWFOZGN2eWVHYl9LZ3lDSUtSSXUxOHMzYndvWmF3Wl9leGlhXzEyaTAwVkRSZGlrZVZxWUlfV3o2Y2U0UFB3NjJGQlZBdDFnVl82bGZDejJfTm0tUDdDUjhIMVBOaTlOUUtVUzUyeThRLUNyVktjaXRhMkpRcGpDTG9CaEdLcm85cW0yMTFFUkx4bXdaUGV1ZFRVS3E0UTh2WV9LQWhMNE8wRndicHkxZw?oc=5"
+  },
+  "rss::92d6447722a8c66f": {
+    "title": "UNIZIK Students Clinch ₦5 Million Top Prize at Heirs Insurance Hackathon Competition - Techeconomy",
+    "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOc1F6RkdsNTRiUjRXLVJZZDExLTBlSDRmcGQybHJRSG5sV3hHMVpvdXRETGhJb0tVMjlPMHZDNUZsUGpIclZJQldEbFpITG80WFZBZEMxTUxiUm15T3VMa3MtU0daZGoxMU5nOExSX3pkaGxqS29lbjhnN0pUTV9CY3lTNG93S2NmaTgwSnpwTS1OXzlmVWR3WFNjc21GVHhLb0F0XzI5bXM0UQ?oc=5"
+  },
+  "rss::187a3c954126dc30": {
+    "title": "Students win top prizes at Wellesley hackathon - Clark University",
+    "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQbGt6dElZWTF4YnJMUXJTUTQzbE1GbjVXMFlRd2M4TWFRUEwxLXRKZmc4Z0VUb1UtdE94VWRBajNjQUh1amtfcWJ2OHRmeUtEM0U2c3ZZRFhBbHF3Ykh4V2dTdU5qUTNwUmw5SWhnU0hXeEIxMWYwNTN0VkdabWVvSmxCZDdlS3hUb2U3cVNvVQ?oc=5"
+  },
+  "rss::2700b43ac509c7a2": {
+    "title": "Morehouse College Takes Top Prize at Black Enterprise's HBCU Hackathon - Morehouse College",
+    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPbWZkNnY0UDdqRnlRc3JWM2V0LWhmb19DMmp2RXA5djFvekxnblV6NWhEX2RLa0Yyd2FNUVpKRGU2cW1UMXlCbWZxU1Q4YVFUUVFSaEZqdWtBZGF1TUZBMUNKOHo5ODNHOGxmMDNTaWttQWR4a0lqbldNa0RkSzRVamwzN2VYWm1USGF2S0J2NnExaUdLNTVROF9JZ3E4NkhNM3RWYzRMd3pGTDQxZTR0UmhUWQ?oc=5"
+  },
+  "rss::d39780302023bb3f": {
+    "title": "A Sleepless, Wonderful Weekend: Taking Home the Prize at the YQuantum 2025 Hackathon - Yale School of Management",
+    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQeGNtendaZlRtNG5KUlRFUGV5UVh6TkVrTmxzRzNMQ0s2aUFtb3Y0Mm5RUHZ2ay1nbDVuSUhTSy1MM3paeS1ZMDl5dV81eDA4WTMxbURBNEVTd0FJLTNMVG5oeTZCTndTZ2Y5UjVpUFVjd21lVlQwSzhKRFc1eFFnMFF3dTRhekI2MFNoZTNWZjE4Ty1JLVUzMkNYZlpCbTFVY05r?oc=5"
+  },
+  "rss::99b29ce59096c6ef": {
+    "title": "Microsoft Hackathon 2015 winner extends OneNote to improve learning outcomes for students - Microsoft Source",
+    "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPcWZOVjVDamY2SVNNWlNaNHNpZExQeko3MWRPQjRmUlZvZGNHdDljNmJ6dkV1Q2JsVFVMdkxPZ2s5b0FWS3dPeU1mM2NQcm5mZzBmVUJFWW1PdG1JM0M5LW82WjhiRkFnWGVFR0VHNGdPc1Q5YWtZNDB1TFUwTlNobHF4emVLQXhXdjRnMDduNWowRzA2d0RKQTJFTF8zYVE2QTRZT3BXZVkwZ2VFZ04zR1JYUVNHMVlTTExFY1NsUGV3X2M1?oc=5"
+  },
+  "rss::f53c3487e9f04c78": {
+    "title": "Student Team Wins Grand Prize at Facebook Global Hackathon - Carnegie Mellon University",
+    "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxObGZIaFNjVWVWTno4VGxMQXRkVGNKM0txZnZXLVpNNzl4M1JQRjdrSDNjeXA5VWlSbHQ2czhXTnl3bXNWRzNjOEdYX1p4cFEweHhxblQwSXR1aXlpNEkxcGhXMGtSNnJZbXpfSjlpN2JjbEZvNWFnMFN5OXNvTHZvTlZhMGRIUQ?oc=5"
+  },
+  "rss::5ad3f7410993120e": {
+    "title": "H2GRO wins $5,000 prize at the Velocity Climate Change Hackathon - University of Waterloo",
+    "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPbHZpU2Naa3gtZm1NTXpoZWRCRXJvT3UwWUswcTVxUXBnYXZRUUU1d3dDZ2FTYnh5ODdOd1lWZEhMQVNEOXFOWnFST0Q2X3pPYk5BSUNpVU40ZzJBR2Vka2YxcU5pb0FmN3R3QW4wdjBJaFFZN0Z4RFVtN3FpVmVjMXhBRmNlNjVZY2FZNHJ5U1diOV94emNxOW9nQS1FUEpH?oc=5"
+  },
+  "rss::23f073c34f3950b9": {
+    "title": "Meet the prize-winning DMU students providing green solutions to AI energy consumption - De Montfort University",
+    "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOMVk2bXE0eWlmZm1hR1hWVVlxZ2tBazJVOURXQ2dqaXJWSlVyb1lfTndJRzRPWWxFb2hwZExTaVJxZ2hPd1RYV211NlhmV252TVVCenVoMVVGQ1owWUdSTXQ5ZWlJcWZRNmFwM1JZMHo1QVhtX2lmQXhhZ2p6OXZUNmhfMThKNndZT0pobGhfVFVVcTNoVlRUT0I3cEdscjdNMGU1aHJZTzl3OTR2UVlUZ25sbEttRWtFWHEzUnpmMm9LTjNXUmE1SF9UOElzNUhkOWlLMTlxRE1Qa1hDcU1TMnFuZnltd05TR1c0?oc=5"
+  },
+  "rss::5c13edc7a04f2771": {
+    "title": "UM research team wins third prize at metaverse hackathon - University of Macau",
+    "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5LQmVXOElpblVVdFV4Q2tpTU5mUVFMaEtaSnlXa3NacGJIMm1nZVRiSUlaMnpoaFlZZTR4S215Qmk4d0JBSkg1R1V6d1ZENG9JelVkeXIzWGU4V2tkSGJoUDJrbGNMVm5OZlMyemdrcEcyYTNqYVZaeWlfbHdwQQ?oc=5"
+  },
+  "rss::aaa17cdaf5c70479": {
+    "title": "MLRIT students bag Rs 1 lakh cash prize in hackathon hosted by Google - Telangana Today",
+    "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNUXRJVm85NFczUEpvX1FGOUQ3QmVzbmJ5eWtuS3BqbGtzTHZ2a292aWx5dTdoaU1ZWktLRVdVS0s5ZXJMN3ZxZFVnTlBpNWVSMFp4bnIxbmx3M3VfeWFkdVFDemZLVTZSMGxoaURhRWFaMjVYZ2pQQ2EzeFJnMUpGYWpQaFpyYndoNGNEVFViRFhwWUdvN1l4R2ZLNWE?oc=5"
+  },
+  "rss::5ea499d4e4157ae9": {
+    "title": "GitLab AI Hackathon 2026: Meet the winners - GitLab",
+    "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5tY1ViMUtockJsS083bDdITkdyRV96NzB6clotNS05Qi05a2FSSUJjOEdWOGU0XzNGOXkzSjZOdkViQlZ2WVNRZGFVTl94WUdSOExsNk0zZW9qaS02aXE5QjF6ZzRFRnJfTEI5eGRYTVp1WWw0UldoaW5TMHM?oc=5"
+  },
+  "rss::81f102f9a0fbcf30": {
+    "title": "Saudi Arabia launches AgentX AI hackathon in Riyadh to link skills to jobs - Tbreak UAE",
+    "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1JWVIwQnFxa3o0Z1lzbER4by1PcFoyMWZTc1RVN2t1YnNCRlVNOHpCeWQxdWtBeXNkTFo0bDBNeW9PR1ZwZDlZaTFyaHk2TVRZUFAya1paaFJ4QQ?oc=5"
+  },
+  "rss::514596507aa5861a": {
+    "title": "‘Fight Like Jack’—At Gloo's 2026 AI Hackathon, Austin Christian University Students Win $100K on Behalf of Injured Classmate - ChurchLeaders",
+    "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNbXhvejBxenp5RUVqQXFPRXcyd0NIXzZ6QVlTRXJlQnFvN3dQNnRZVU9UWDRoTjRJaG1tbGVJVVVOczQ5clJYY3YwcmdJM09mM0oyekttYUZPUm9yd19ZMzBfbE1pSzZycU5vZGlid3ZfYUUtZUFsZXNtN1N2cUNhSzRTeG1hLWhTaUE1VktLNVgzaGtzT0RWTGNDQ1BXMV9fVHJIVFZXQk9GcU96Uk1fVXhQdkRpRGM2UVdwb2ZyUHlfR1E?oc=5"
+  },
+  "rss::85dfb6a03474968b": {
+    "title": "UC Santa Cruz trio takes third at 2026 Mistral AI hackathon with cybersecurity platform - UC Santa Cruz - News",
+    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxONUFmM2Fic3h4bkZZTldIb2Q5WUEyZnVVRnNjN196ZFkzbXpwR05DSFJUOFc3Vy03Nzk2YTJBTC1wY2JvOGxHUnpoT0pTX0Y0ZFMtaE9hU2ZmSHhxV09JQk9BRXhsZzVrU0dhRjJFMXlqYUxHeEphek5rbWU4MWZUdTQ4TUdKVm5CUWNoS0YwNG53aHNWQ3ozUGNkVGQ1TG5XemdxaG5vYjVwbEtzX0E?oc=5"
+  },
+  "rss::b7e1aa910e518fb3": {
+    "title": "Generative AI Hackathon to be held in Thiruvananthapuram on Saturday - The Times of India",
+    "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPbDlXNGM3bVYxTzhxdmtQLW53ZGhFODc4ZjdiWllxOXoxVklhUmI3THMyZ3hnY3dZT2FmNmZ3Mm5WYmYxVER2WTFQdXBDT1lnT29QZXRFRDdWbXNUbDdhdVFlcDNmQTlKdkNlMC1yVnFHS0o4SHpYTGRtajFCa1I1RURXTENpcUNFMzNUQWFtQzl5eXZGdm9tc3FFOVM4LXZHMVRTX3pSTkR0NVZ2VGRweEl6blQweHZvZ0ozNkw4NlJYcGsxV05ObFFaSnRDLW5wQ1ZLTlFQRXdEQXgtdWg1eVU3WnpiTjA5S0HSAe8BQVVfeXFMUC1IbUJrVV8yenRNMUt0UWlidUdrdXJkTUhnVkhxUE9Nei1IYzNFVFRHVDNIbWE5bVN2bXl1ZTlVQktIWmoxUU5JS1dZWmFyV1FGOHdPRzFwRHdxcWNUQWpQcFdhekJfQ3ZTSHdmMEtpR2JEc05MRS1MY2YtemFkWXNrTjUyTzJvUnJ3V0x6WnJ5UkZUdzZrYmRNcTlrWE1vWjY5YkwxZ2xIUjZRUk8wcTFSZ3JIcXZVTEoybkgwY2FxTEZBY1ZHS3BvWHNYUG84blZQVUdTWU9qeG9ybkE0czBYSEZuWlVLV3k4bXRwOTg?oc=5"
+  },
+  "rss::0621486070458e23": {
+    "title": "Goa unveils AI Policy 2026, launches state-level AI hackathon | Tap to know more | Inshorts - Inshorts",
+    "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOSTQ1YUFRUVhGZGhrWGNId1Zhc25mR0tLX0R4Mk4zQlUyMXNJMjhjVUp0RHFEZThlLTRXVFBWbjFsWUs5azR2SktFRlJfWnM5SmtmMEtVVFI3ZERIWnpud05uT0tWc013WFFOT0VkTFIwX3BKTmFtVjhQak1NNHpLcEktcG1hWi02Y19Bc0dDc1plVEhScGI0VVZSdEJKcXBKdlpMNGNRQdIBrAFBVV95cUxQVHFvT2J0MDhDaFZReEctdkEwVjVpUHA5a1ZFcEpwc3hFaTJZUW4tSlBadHo0R21QQ0Vyejg0RG1XVHg3OElpeW1rMVh3SmE4aFFTdi1TZ1ZkLVI2ZHJROW5XNXlmazNBWU9hQnlWRkM4ZFRnd1Q3Z3NDYXZueUkyR2JIMTdtOGt0SmpLcU5mWFRGSVpPOG4xVUl2Ulc5XzRSdGVwWXFmQ2ctWlpD?oc=5"
+  },
+  "rss::16e07c9cfb45c44c": {
+    "title": "LS&Co.’s AI Hackathon Demonstrates Innovation in Retail - Levi Strauss & Co",
+    "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5Wd3VrQkl6WUE0aFV2M05RSnBKcC1sX3M2OV9SSHdmczBCOFZjeHdVOEdyX2FNQmFHN0Zja2NfUExSc0FaLTRudXVMWjlmN2Q4VWEyR011d1F3bzJVa1kyQXo0UGptdDBq?oc=5"
+  },
+  "rss::f28c5fcdcf9e07df": {
+    "title": "Build Across the AI Stack: Join the AMD x LabLab.ai Hackathon - AMD",
+    "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNV1RQUzZrMVlDQ25ocmllSmxuOVhNWElhX0d4cHBkYXVKSFlZcmpFVkZZaERTYXVna01IWmotbm0yMURFakZFVEhOQXRvMEIxTVEwZkl2SGNFLUJHTEYzTTloQzJvME56S041WFdTNW1XTUY4NVM0azMwTVpIV2JlYXI3SDVkaXdLdDZJT2I4dTA2V2RVMmpJdkhsQWczbmxNLXdzYWZVcXRkczZ5TWZ3MEp0QjdITk1BUW5rOWtjbklCYzdiQTRvdERqTUZlS1U?oc=5"
+  },
+  "rss::2565ec1eb777e2db": {
+    "title": "Students Design AI-Powered Health Solutions at Cornell Health Hackathon - WCM Newsroom",
+    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNcE1aTFA0X1ItSE44a0NJVXJ4WGQzSUM1SkdsVktWZ3djSWdKcm5ONEtWNEtxVlk1LXVnYllQai1FdGkwd0podV9LMGFYcmNIVDV4V21tM0o0eXcwYUt2amV4YThnZ3BsQlZCSlFXaFdNYnBMVm9lZm50TjVFT1lObXBIM0cwS1ZOSjNocDREb004VkNMODJWSWxCa29IZGdGYVRhbU1HYkY0QXlvbldGcGN5Qm5pdw?oc=5"
+  },
+  "rss::b6d0cf152f2b9da8": {
+    "title": "NJ students tackle affordability at statewide AI hackathon - NJBIZ",
+    "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE43eUprQ0c5bW1tRHkzejFlUHdkdExiNGtPYjJsZ1Nrb2VzUU9ZeE1icU1hVEZaUlJKYkdUZnRXU2RvQUFqejFMSmtmaWZ1Ukw2OGVTYk1nWmxJNENZOGtDeWZQT0VFcXow?oc=5"
+  },
+  "rss::396b1fa7c6c2198b": {
+    "title": "Agentic AI Hackathon 2026 Concludes Successfully at Amrita Vishwa Vidyapeetham, Coimbatore - Amrita Vishwa Vidyapeetham",
+    "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPSVZ0RXBwNlAwM2hHNUdQVVllRkZjOGZFSy1ZYVYyWGwtc21WNGtIb0paMEhKTDRPT1g5TDNOOEtXT1VjR1BsbUZoR3RnbERGTUFONUV4NDZfUHlyNzgtR2F1dWpnbnNOQVJYSEwxWDB0bTNOT0Zsa3BkWHlZOEh1Y1pEUm9OM21TU1gtZlRiQWZka3djdTZFeE1pTDk3UzBmSmo5QnRObzU3RUJYcTkwRFAyMEdoWjJfckE?oc=5"
+  },
+  "rss::5afb3ce0c9c7b1c6": {
+    "title": "Global makers shine at Hong Kong Physical AI Hackathon_Latest News-Shenzhen Government Online - 深圳政府在线",
+    "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPTm9Ga3FVRG4wd3MxNEE0RzR1T2lRb1ItU3pDZEdGUVloYUFHUFpGQzJwUWQweVI4a1FQTzFQUUlUb1R3alJtVTAwTGdNbzJIQ1JVc2hMVkZZYWpwUzVvLWJwTU1BQ3VSblBJTWZMekR0YnhXOWVHNTVoc0w4ek1xaUpzZUdXQ28?oc=5"
+  },
+  "rss::551c8be736cf29b1": {
+    "title": "Sixteen teams compete for ASEAN AI Hackathon 2026 crown - Báo VietNamNet",
+    "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPdWZ3TWh6OVVJOWgzT1cwTHY1Rkt4VktneU5ucTJ6dk02RVdBV3pMams1Nkd6b0txcW9fTC04elVaVExseTFWeXJJTUZ1emlWNUUwYUY3MUJKcE1KdjYzY2U0NmtQWDBob2E3VWFpS0FIMVl6TkNrX3ZfMnp1WHFzT1o1UHFHSG4tS09FRThBTWZIcS1KaWFKTg?oc=5"
+  },
+  "rss::afcba37a2e8d699b": {
+    "title": "NIELIT Launches CYBER KUSHTI 2026: National Cybersecurity & AI Hackathon scores judgment rather than detection speed - www.pib.gov.in",
+    "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBjbmlqRzM3azRtU0VPM2xzdVZNcUtIMXJPTEV5cWhJdUR5UkVETy1lQVBGSzUxdGhaSjN4ZDNORV9JeDB4X2gwZHNfZWpmNUJNLXZVdWpfN2ZUSmJlaGM4S0wwX0ZReDdCaURLMVd0bDhnbXJVMmJ6M2pDSQ?oc=5"
+  },
+  "rss::66a1ef1c34eb454e": {
+    "title": "Murdoch University AI Hackathon Tackles Identity Fraud with AI Innovation - Murdoch University",
+    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPS2pTbkpHYkcwVnRtRlJCV2FtTXl6anI2SEhtZThucnpQdU9lblhwUVJFQWppQUxhRy1neFhmb0E5V2Q0ZFNUS1VJUWNVUEU2c25qT2Fud2hPc0taTlhBSTZDYUZIY1FSdzJteGgwZFpiR3V1SVpLa2VoTzJkUXFlWjFRRmlZcXNMWkdDZ3VERlhLSVhDQ3hZUl9kVnFaYnRfUGdYT19tTE9TVGtyV2dnTEVmZnE?oc=5"
+  },
+  "rss::2e01e4269e27423f": {
+    "title": "Miva AI Hackathon 2026 showcases student-led AI solutions for Africa’s real challenges - Vanguard News",
+    "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNUEwwWWF0NDA1Ui1nT3hSVEJrX0tUSmpvRmtzTVphTmlOdlFUeVJFSFlyLVJiUnlqSklFaHdFdXZHRnBTVmdiWXNPY1Bta1FOV0kzeEZPR0hpb0dsbk5qd3czN2JDaUFNVHphRzdJVjF6ZGEwRGp0MlBwbGtvVVZmVEhsWUhaX25EYWo0VTdZNjFoOXdDNmloZE9WQVVFcGxBclh1QVktWDRxMU1QRnd1SGR5elFGeWxZNW4ya1B2QdIBxAFBVV95cUxQei0wX0FBTnhxSWtNQktucWhhNTQyYmRTQThuTUJ4WU1mSE1qS0dsZGg1VFRUbXVTYUJiYm9yMFBiLXdBSll2eFFNLUMzc0JtOHZuM1F0WXpjaVozQVhDT0pXdFU5VW5Tem5DV2N0Y2JMWW5zMENuYjBLRnpQTEZXd29xQWZLSkM1cy0tX0ZUNF9uMjZWODZkZHhDRnl5X3VxeTdZNGd5TXdfQmFsS0M3VDk4VmM1bDc3TlNpM1BOY3YzZWIt?oc=5"
+  },
+  "rss::afca7417ff5929f6": {
+    "title": "Vasavi College hosts AGENTX 2026, 24-hour multi-agent AI hackathon - Telangana Today",
+    "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQa1NmaWpMRWtrQ3ZWeTV2MC1SdG9PMzBFTHd0UnN0b3lFTlhWT0tfYkgxbDduXy0teUo4ZXFLM0lfQTctc0ducjRVa3FWTDFXbG1WQlRZZXcxSElwM2Q0TTRsRVZJS04tdzkyb05HSDJFdkRURWlRZlhfQS1LV20zUW1VRFg1bUhvQVVZX2RZWVdiYWkyVE9F?oc=5"
+  },
+  "rss::79a2495504439b1b": {
+    "title": "Miva AI Hackathon 2026 showcases student solutions to Africa’s challenges - Businessday NG",
+    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOM1VpdUdXU2FKSHdLNGttR3RYYm5vb002cHg0SW9oeVFWcUFKa0RUa0xFQXR1YlNwVEpUNkJpVFI0MllQRXFXdkVYQTNnR2ZVeDR2NlVkUDAtTzIxdXJZWGVrX2FnUThTeUFUZkRxbWtxeGZRbFlxeG9CcURYUTZNaEJBSEtqZUpiV1JJaTNLdVpKclFoZkU2X3pjb2VScWJpamgxUVhCTnd3M1ExOHfSAbMBQVVfeXFMUGdKVjA4MHMzZFJrS3gxekM4eG9KUlpqX2NLUmo5MS1lajQycTFuUzNXSkJxT1c0OWFETjFQTERmelJmQUlXTXdYMDdpeWtqRGJ4amIwSFdmb1pucDVvSDZ1cl9QcGtEX1VDZzlBc1hJWkNFdk5OQlczclhQWEtMZmdtS04zV0JBYVdhQmJkZllYa3ZndXgzVzNaeXd0b1VqbmVVUUxmMm5jT2pMVWF4WWhzOHM?oc=5"
+  },
+  "rss::0b59b114f1adda09": {
+    "title": "Vietnam AI hackathon LotusHacks 2026 wraps with $1m in prizes - Tech in Asia",
+    "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOb1pJOG8zVTE1Ujk2Zy0wWV9HejFkOXZoZVloWFg4RFBnbHlaU01Dd3p6X1B0VnM1bC0zbHl5eWVNSEIzdFFaNUwtSjVDWUFUU0ZyeU5QZ0lHTXB1Mm5YQkQtclRjaEh2UkZTM0Q2WERHc2ROaTFJbnRXTXJpQnZDc19SVjJuazdDRS12eWR0cHdyRF9qNmFV?oc=5"
+  },
+  "rss::1030e70021d82d35": {
+    "title": "TCS invites students to tackle real-world challenges through AI Hackathon - Donegal Daily",
+    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPcnpzSi1PZmZtYURlR0VBZ0xMLW9DLVhpcmJuZDZ5TU1jNGJPeV95R3V6RGhHdVVsZzFYVlZ4X2RKalJUREYxMnhrWHFwSUxUUU5qUXQ1WFItaklmUW9rM0JzeS1xQVRlTW0tb05xNTFzd0Z4aTNfSGstQ2VWVjAwSjUzaFpRWDRqZVJHZHptQ28xUWYyQm5mUnA5SFZTWmFJWXg1VzdXaFZhanJRYzc1bWttLTQ?oc=5"
+  },
+  "rss::308c9b77608e8377": {
+    "title": "AI joins the judging panel for 2026 IEB TechWays AI Hackathon 2026 Winners Announced - iAfrica.com",
+    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNZVhVVW5QX3lYZkYzb2RHQm9ZR1pyQXpTOXBkMkd3UHdQdGJYRUFHZE9oclRwZHFIbl9feldZTGQ1WVJBNUY1QWg0LXB5OVkzRm1HejRIRXdRZ19kNmViRXl1ZGJ1STlKNEg3UXdTekZKU2hEazd5WjVoTE45cmFudkt4OXJfX3NjQkZXM3dJUENLZ0dNQWF2S0JsQWNpZ0JtMTJLd3hHb0Y?oc=5"
+  },
+  "rss::8336132f1b554fb7": {
+    "title": "TCS hosts AI Hackathon for 10,000 non-engineering students to boost India’s AI fluency - Tata Consultancy Services",
+    "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOQXNQeHlLUDF6Tmc2VjBKUmY5R0Q2SXRMSGduS2RzT3F5N0VwcV9yNmV4WGVpNTF2THQ1dlRBU24ta3VkMTFHUGhnSmFCUk5lNWh4bkNaZTFsQV9mR3F4endYdVdrTTNwTV9qWVJWMzd5Q3NLWHBTeVhzQmJtUlVUVVJOTVhWRHY2UnUwVXhEZkhDUHhVTGVBUmVaX1VURDBBc1FfT1EwUUQ3TVBUSVI4QVBYei1vWm0xNk5rc3p0a1diS3VrVUtfVDZSUmtLdG8?oc=5"
+  },
+  "rss::de6adfe821055a7c": {
+    "title": "Monash and NVIDIA spearhead AI hackathon to supercharge scientific projects - Monash University",
+    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPZi1YVTZpRDN2Y09QSXRFN2ZMaXRCZ2FuOTMydmF1RDVRRXJtT2tVRTgxeXctdENpWUREd1FUaHBmNEpEMTJoelItMzFmRTI5c2lld3N2OXVoOEQ0NUkyeERZLVUzaDUwMk81Wk04bWJrenJuZHBqS1hNdGNpakVIYUhWNGZpam1aZjNMVHV4eG5BbUp3MkJaQ2hLVDdVcUN2U29NdXNxZTFFNW93bW54ZjBB?oc=5"
+  },
+  "rss::41b201aabba296ff": {
+    "title": "Daffodil to host AI Hackathon 2026 to drive innovation and tech-driven solutions - The Financial Express",
+    "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPQW9hR0EwUzJMaDM0WlljNWVUVzFrSTJDbWFKMjZFeDZyOUpJMWdvVXBXSW1DRm9GSng3alItRm5FbmNPSlV1dmp0b3RFZVV2V1N2R1huaXBPeG1zZi1yRWFFVzc0SEhYNE9VUXVRM0Zfc3ZYeVRlQU9VeGxoX1g5cFhWSHFySDJPLUI5VFhTTWM4TDFHLXBmYl9lY1VzSTUxVVRDckV4YUxRVFJvYnJOZ3g3V3ptNXBacEFISU5LSmhaaWc?oc=5"
+  },
+  "rss::1733a1ae013a28cf": {
+    "title": "Daffodil to host AI Hackathon 2026 to drive innovation, tech-driven solutions - Dhaka Tribune",
+    "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNeVZkRUJZRnZYZWc5dVJLR2ZLT3dacERXSEpfVnRxWWxqMFd2UkRBOHh6Ml8tVTZHVGl5QmN5STVqTlIwUlBJaGJiQ2ZxbXdXX1Y4LTBlTzJWcHFSTTE0aEhmM2hrNlItRUpCWEd4VEt6OWFKVmdZZDNPRFd3MXl4S3dlNU40OFFXNnE3eEk2cUZGd9IBlwFBVV95cUxOSjZiNklad0gyRlJfSnpTallteGJFam1QcTVMWWsxRjNMSkRrN0EwVUZrdEpYMUJkeFh1WU81S0tnaUFqU3E3T1FzZ2tzeEd5c2hEbklQb3QyRGt0WjNGSFI2MGtCUVJCek5uM1dzLWNKTVV0bEpXNWstWEJSWFY3SEdoRjdJLWZxeG13ZGdRRkNHVEJMdU1n?oc=5"
+  },
+  "rss::9226b74bc283558a": {
+    "title": "Chin Hin Group concludes AI Hackathon 2026 which paves the way from “+AI to AI+” - Focus Malaysia",
+    "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxObnNwcFVmMGJETTBNcExMYWZkbUt3ZnkyNk10b2MtSFVvektHNmdhM3VfekxWWTVtYXdQQlRaLVNQRHRYaENTeDZESVdWdFpKU2RfOGpMRzVBbHBhdVlyMkRpb1lUV0VIZDBncTdZRTRGYlNSRVl2emZtNzNIb2Q4UjJQal9mY1JBYTJZelZDWVNkYnljYnQyLUZKRWFkLUU1MjluZw?oc=5"
+  },
+  "rss::2ef910f09f245074": {
+    "title": "NIELIT launches national Cyber Security and AI hackathon ‘Cyber Kushti 2026’ - News On AIR",
+    "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQbUo1N25EV042aS1hdmkwS1F0RXF3dE1zZTNzYjdHMGR2YjVBQWExSnBvUVIwaktTSUlPaC1NSlNqX1lyc1BOTk1ZVG5CWDYxNE5OR1lXdVlfUnNrSUROZzMzZE5TcjNlVElydWpKZlRIcEJNNWpIMF8tZEVVdzVkZ05wNW1tUG1lUHcxTnlKbGJ4TDROaWUyMk1aM0dFeW5qUlE?oc=5"
+  },
+  "rss::0c0371fdfb60be4e": {
+    "title": "Call For Applications: Hack-Nation’s 5th Global AI Hackathon – Build, Innovate and Compete for $30,000 in Prizes - MSME Africa",
+    "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOWVY4NlUwQ0RRY1hpQ3hKaUYydUxqUXBaZ1RoeU5yY1VGSWhuWTJPdVBOZUUxS0EwR0Z4TFpZaTRTQ05fLW1BNmtXUnlDcG5hTjRwN1NZR3E1QTc0UFBxTVlULTloazFEZnpjZG1BMzdmeHdlWmV5MkhGNTZDZTh5Y05tcEtVNWMtRnF0V0VqZk9UWHRtSWhmNEYtTThjazh1b2Q2bnQwbG01eVktekloY0x4UGxnOWR4TWhSX3hIRHJoZEJBS09ZVmstSnlOSEI5?oc=5"
+  },
+  "rss::683588ad2f3080a9": {
+    "title": "Last Chance to Register for the TCS Early Career AI Hackathon 2026 - Donegal Daily",
+    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNREJCdnA0VWdtQ2Q3QWs3MTJKbzk4LXYyYXV2aVFwQzEwODJLVV9KSDV4c3BIYWZYcjFLa1lJdWU1aTZ2X0pSQ0NfWURUUjdmeC1Dai15aFdwTV9wUldna1pkRTdSSHFKMm5vMk0xUEhILXJWRUFmcVV3b1k5MlhXcm1QR0N2cUs5VWVzY1VUSjBXZTQ3WlRaYXJyU3dZTi02SHZfRFNJbUlyRmhLcXcxc1R3?oc=5"
+  },
+  "rss::f86110cc2e33810d": {
+    "title": "TCS Conducts the World’s Largest AI Hackathon - Tata Consultancy Services",
+    "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNN25YWXZJbFEwX0ZBRVdDQ0VyeXF2TERXcXdOY3RiNjg0RW9GVlZUaV9BeDJ4RDJ5dW9TYWxReEZUUkYwTlo1WlZJYm9XenM2UnM1TmVVLWgwRFd2Q3V1TjAwM1JqTGtrdGt6eFBzbUhKbGlIbDNiS0FTd3poNEFybVdPOUhpWmdpajU2VVloRi03VFhScllIeWNB?oc=5"
+  },
+  "rss::c12c5e2380795290": {
+    "title": "Accessible mobile money app wins MTN Ghana AI hackathon - News Ghana",
+    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOSmFKSWFpWm1WYW5kMUdnNTZmNEYza3pfTVpNMjRMSVduUG9nZnJ2TW9BZnF2UjdNTVFVczd2YUYzQTN1cFVpUXNUdmpjaEZZcDIyaGRlZGltMExBaklDQTVsUml6cUFRTGtzZm50a2UxeGFCLWtMdFNoMVBibV9tbGJkX0wxbnJO?oc=5"
+  },
+  "pw::https://newyork.theaisummit.com/hackathon/::#1e2f52915752d6f5": {
+    "title": "Page changed - check Hackathon: AI Summit New York (may mean applications opened)",
+    "url": "https://newyork.theaisummit.com/hackathon/"
+  },
+  "pw::https://ethglobal.com/events::#16f7a76dcdbae811": {
+    "title": "Page changed - check Hackathon: ETHGlobal events (may mean applications opened)",
+    "url": "https://ethglobal.com/events"
+  },
+  "pw::https://ethprague.com/hackathon::#91f1f007de2b9424": {
+    "title": "Page changed - check Hackathon: ETHPrague (may mean applications opened)",
+    "url": "https://ethprague.com/hackathon"
+  },
+  "prog::https://boards.greenhouse.io/andurilindustries/jobs/5280378007?gh_jid=5280378007": {
+    "title": "Program Integrator",
+    "url": "https://boards.greenhouse.io/andurilindustries/jobs/5280378007?gh_jid=5280378007"
+  },
+  "dp::31252": {
+    "title": "HackUTD 2026: ZeroDay",
+    "url": "https://hackutd-zeroday.devpost.com/"
+  },
+  "dp::30743": {
+    "title": "GreatUniHack 2026",
+    "url": "https://greatunihack-2026.devpost.com/"
+  },
+  "dp::31642": {
+    "title": "AWS MSP AI Hackathon",
+    "url": "https://aws-agentic-msp.devpost.com/"
+  },
+  "dp::31083": {
+    "title": "QNX Global Hackathon",
+    "url": "https://qnx.devpost.com/"
+  },
+  "mlh::01a1a729-feed-b764-920d-5100fcd24089": {
+    "title": "HackUTD Roadshow",
+    "url": "https://luma.com/UTDRoadshow"
+  },
+  "mlh::01a19e3c-786a-47c1-3cc5-c28a9a8c4429": {
+    "title": "HackBI X",
+    "url": "https://hackbi.org/"
+  },
+  "mlh::01a1456b-e3fd-791d-2d70-f96efa81449e": {
+    "title": "HackUDC",
+    "url": "https://hackudc.com"
+  },
+  "opp::ai-summit-ny-hackathon-2026": {
+    "title": "The AI Summit New York Hackathon",
+    "url": "https://newyork.theaisummit.com/hackathon/"
+  },
+  "health::https://hkn.ieee.org/awards": {
+    "n": 1,
+    "title": "Scholarship: HKN awards (Madni)",
+    "err": "HTTPSConnectionPool(host='hkn.ieee.org', port=443): Read timed out. (read timeout=15)"
   }
 }
