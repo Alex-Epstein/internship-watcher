@@ -1695,6 +1695,7 @@ PROGRAM_EXCLUDE_RE = re.compile(
     r"special programs|\boffice\b|"
     r"\bjunior\b|\bgraduate\b|\bshift\b|strategist|\btrader\b|\bsre\b|"
     r"\bchief\b|\bdean\b|\bsupport\b|\bpeople\b|\bmba\b|women in|"
+    r"integrator|technician|architect|\bpm\b|product manager|project manager|"
     r"summer intern|internship\b|\bintern\b|co-?op\b|graduate program",
     re.I)
 
