@@ -448,26 +448,56 @@ def fetch_devpost(firm):
     return out
 
 
-def fetch_mlh(firm=None):
-    """Major League Hacking season schedule. The page is an Inertia app with the
-    full upcoming-events list embedded as JSON in <script data-page="app">.
-    Returns normalized records (id, name, dates, city, region, format, site)."""
-    url = (firm or {}).get("url") or "https://mlh.io/seasons/2027/events"
-    r = requests.get(url, headers=HEADERS, timeout=TIMEOUT)
-    r.raise_for_status()
+MLH_BASE = "https://www.mlh.com/seasons/2027/events"
+# mlh.io now 301s to www.mlh.com, which caps the embedded upcomingEvents list at
+# 24 per query (2026-11-05: 24 of ~63). Each region/search query returns a
+# different 24, so we union a fixed spread of queries. Keep the token list
+# broad: single vowels + common name fragments recover ~90% of the season.
+MLH_QUERIES = ["?region=AMER", "?region=EMEA", "?region=APAC"] + [
+    f"?search={t}" for t in ("a", "e", "i", "o", "u", "y", "hack", "hacks", "thon", "2026", "2027", "uni",
+                             "state", "tech", "ai", "data", "ca", "ny", "tx", "on", "uk", "fest", "code", "x")]
+
+
+def _mlh_page(query):
+    url = MLH_BASE + query
+    r = None
+    for attempt in (1, 2):
+        try:
+            r = requests.get(url, headers=HEADERS, timeout=40); r.raise_for_status(); break
+        except requests.RequestException:
+            if attempt == 2:
+                raise
     m = re.search(r'<script[^>]*data-page="app"[^>]*type="application/json"[^>]*>(.*?)</script>', r.text, re.S)
     if not m:
         raise RuntimeError("MLH: embedded data-page JSON not found (page layout changed?)")
-    props = json.loads(m.group(1)).get("props", {})
+    return json.loads(m.group(1)).get("props", {}).get("upcomingEvents", [])
+
+
+def fetch_mlh(firm=None):
+    """Major League Hacking season schedule, unioned across many queries (see
+    MLH_QUERIES) because the site caps each response at 24 events. Returns
+    normalized records (id, name, dates, city, region, format, site)."""
+    seen, errors = {}, 0
+    with ThreadPoolExecutor(max_workers=8) as pool:
+        for res in pool.map(lambda q: (q, _safe(_mlh_page, q)), MLH_QUERIES):
+            q, evs = res
+            if evs is None:
+                errors += 1; continue
+            for e in evs:
+                seen.setdefault(e.get("id") or e.get("slug"), e)
+    if not seen:
+        raise RuntimeError(f"MLH: all {len(MLH_QUERIES)} queries failed")
+    if errors:
+        print(f"  ! mlh: {errors}/{len(MLH_QUERIES)} queries failed; union has {len(seen)} events")
     out = []
-    for e in props.get("upcomingEvents", []):
+    for e in seen.values():
         starts = (e.get("startsAt") or "")[:10]
         out.append({
             "id": str(e.get("id") or e.get("slug")),
             "title": e.get("name", "") or "",
             "location": e.get("location", "") or "",
-            "url": e.get("websiteUrl") or ("https://mlh.io" + (e.get("url") or "")),
-            "mlh_url": "https://mlh.io" + (e.get("url") or ""),
+            "url": e.get("websiteUrl") or ("https://www.mlh.com" + (e.get("url") or "")),
+            "mlh_url": "https://www.mlh.com" + (e.get("url") or ""),
             "content": "",
             "company": "MLH",
             "bypass_filters": True,
@@ -480,6 +510,14 @@ def fetch_mlh(firm=None):
             "online": (e.get("formatType") or "").lower() == "digital",
         })
     return out
+
+
+def _safe(fn, *a):
+    try:
+        return fn(*a)
+    except Exception as e:  # noqa: BLE001
+        print(f"  x {fn.__name__}{a}: {str(e)[:80]}")
+        return None
 
 
 def digest_mlh(filters):
@@ -506,6 +544,145 @@ def digest_mlh(filters):
     keep.sort(key=lambda e: (e["online"], e["starts"]))
     print(f"MLH: {len(evs)} upcoming -> {len(keep)} in AMER/EMEA ({sum(1 for e in keep if not e['online'])} in-person).")
     return keep
+
+
+# ---------------- local events: GT Engage + Luma (Atlanta / Madrid / NYC) ----------------
+# A local event must hit a DOMAIN word; generic words (meetup/talk/panel) alone
+# let in fiber-arts meetups and club onboardings.
+DOMAIN_RE = re.compile(
+    r"\b(ai|a\.i\.|ml|machine learning|deep learning|llm|agents?|genai|hackathon|hack day|hack night|datathon|"
+    r"quant|trading|trader|capital markets|markets?|finance|fintech|investing|investment|"
+    r"startup|founder|venture|vc\b|pitch|demo day|entrepreneur|create-x|atdc|invent|"
+    r"math|mathematic|putnam|statistic|probability|algorithm|competitive programming|coding|software|computing|cs\b|"
+    r"career fair|info session|information session|tech talk|recruit|hiring|company visit|"
+    r"google|nvidia|openai|anthropic|microsoft|amazon|meta\b|apple|citadel|jane street|two sigma|optiver|imc\b|sig\b|jump trading|hrt\b|de shaw|point72|palantir|"
+    r"climb|bouldering|gymnastics|hike|hiking|kayak|ski|backpack|orgt|symphony|orchestra|museum|festival|comedy)\b", re.I)
+INTEREST_RE = re.compile(
+    r"\b(ai|a\.i\.|ml|machine learning|llm|agent|hack|hackathon|datathon|quant|trading|trader|markets?|finance|fintech|"
+    r"startup|founder|venture|vc|pitch|demo day|entrepreneur|create-x|atdc|invent|"
+    r"math|mathematic|putnam|statistic|probability|algorithm|coding|programming|software|engineer|cs\b|computing|"
+    r"research|seminar|colloquium|lecture|talk|panel|fireside|workshop|career fair|info session|tech talk|recruit|"
+    r"networking|mixer|summit|conference|symposium|meetup|google|nvidia|openai|anthropic|microsoft|amazon|meta|"
+    r"citadel|jane street|two sigma|optiver|imc|sig\b|jump|hrt|de shaw|point72|"
+    r"climb|bouldering|gymnastics|hike|hiking|kayak|ski|trip|outdoor|orgt|concert|symphony|museum|festival|comedy|film)\b", re.I)
+NOISE_RE = re.compile(
+    r"\b(bible|church|worship|prayer|fellowship dinner|sorority|fraternity|rush|greek|yoga|zumba|meditation|"
+    r"sustainability pledge|voter|senate meeting|gbm\b|general body|tabling|bake sale|fundrais|donation drive|"
+    r"intramural|pickup|study hall|office hours|exam review|tutoring)\b", re.I)
+
+
+def fetch_engage(firm=None):
+    """Georgia Tech Engage (CampusLabs) public event search -- every registered
+    student org's upcoming events, ~600 at a time. Returns normalized records."""
+    import datetime as _dt
+    since = _dt.datetime.utcnow().strftime("%Y-%m-%dT00:00:00")
+    url = ("https://gatech.campuslabs.com/engage/api/discovery/event/search"
+           f"?endsAfter={since}&orderByField=endsOn&orderByDirection=ascending&status=Approved&take=400&query=")
+    r = requests.get(url, headers={**HEADERS, "Accept": "application/json"}, timeout=TIMEOUT)
+    r.raise_for_status()
+    out = []
+    for e in r.json().get("value", []):
+        desc = re.sub(r"<[^>]+>", " ", e.get("description") or "")[:300]
+        out.append({
+            "id": f"engage-{e.get('id')}", "title": e.get("name", "") or "", "company": e.get("organizationName", "") or "GT",
+            "location": e.get("location", "") or "Georgia Tech", "url": f"https://gatech.campuslabs.com/engage/event/{e.get('id')}",
+            "content": desc, "starts": (e.get("startsOn") or "")[:10], "starts_full": e.get("startsOn") or "",
+            "cats": ", ".join(json.loads(e.get("categoryNames") or "[]") if isinstance(e.get("categoryNames"), str) else (e.get("categoryNames") or [])),
+            "perks": ", ".join(json.loads(e.get("benefitNames") or "[]") if isinstance(e.get("benefitNames"), str) else (e.get("benefitNames") or [])),
+            "source": "GT Engage", "region": "us", "city": "Atlanta, Georgia Tech", "bypass_filters": True,
+        })
+    return out
+
+
+def fetch_luma(firm):
+    """lu.ma city/calendar page: events are embedded as JSON in __NEXT_DATA__."""
+    r = requests.get(firm["url"], headers=HEADERS, timeout=TIMEOUT)
+    r.raise_for_status()
+    m = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', r.text, re.S)
+    if not m:
+        raise RuntimeError("luma: __NEXT_DATA__ not found")
+    d = json.loads(m.group(1))
+    evs = None
+    def walk(o):
+        nonlocal evs
+        if evs is not None:
+            return
+        if isinstance(o, dict):
+            for k, v in o.items():
+                if k == "events" and isinstance(v, list) and v and isinstance(v[0], dict) and "event" in v[0]:
+                    evs = v; return
+                walk(v)
+        elif isinstance(o, list):
+            for x in o:
+                walk(x)
+    walk(d)
+    out = []
+    for it in evs or []:
+        e = it.get("event", {})
+        geo = e.get("geo_address_info") or {}
+        city = geo.get("city") if isinstance(geo, dict) else ""
+        out.append({
+            "id": f"luma-{e.get('api_id') or it.get('api_id')}", "title": e.get("name", "") or "",
+            "company": ", ".join(h.get("name", "") for h in (it.get("hosts") or [])[:2]) or "lu.ma",
+            "location": (f"{city}, " if city else "") + (geo.get("full_address") or geo.get("address") or "")[:60] if isinstance(geo, dict) else "",
+            "url": "https://lu.ma/" + (e.get("url") or ""), "content": "",
+            "starts": (e.get("start_at") or "")[:10], "starts_full": e.get("start_at") or "",
+            "online": (e.get("location_type") == "online"), "source": firm.get("name", "Luma").replace("Luma: ", ""),
+            "region": firm.get("region", "us"), "city": firm.get("city", ""), "bypass_filters": True,
+        })
+    return out
+
+
+def digest_local_events(config, filters):
+    """Things to actually GO to, filtered to his interests and to where he is on
+    the event date. GT Engage always; each Luma calendar in config polled."""
+    import datetime as _dt
+    today = _dt.date.today()
+    evs = []
+    try:
+        evs += fetch_engage()
+    except Exception as e:  # noqa: BLE001
+        print(f"  x engage skipped: {e}"); FEED_ERRORS.append(("GT Engage", str(e)[:140]))
+    for f in config.get("firms", []):
+        if f.get("ats") == "luma" and f.get("enabled", True):
+            try:
+                evs += fetch_luma(f)
+            except Exception as e:  # noqa: BLE001
+                print(f"  x {f.get('name')} skipped: {e}"); FEED_ERRORS.append((f.get("name", "Luma"), str(e)[:140]))
+    keep = []
+    for e in evs:
+        title_hay = f"{e['title']} {e.get('company','')}"
+        hay = f"{title_hay} {e.get('content','')} {e.get('cats','')}"
+        if NOISE_RE.search(hay):
+            continue
+        hits = len(set(m.lower() for m in DOMAIN_RE.findall(hay)))
+        if not hits:
+            continue
+        d = _days_to(e.get("starts"), today)
+        if d is None or d < 0 or d > 45:
+            continue
+        if not e.get("online"):
+            # Must be in the CITY he's in on that date, not just the same continent.
+            day = today + _dt.timedelta(days=d)
+            if not _is_local(filters, f"{e.get('city','')} {e.get('location','')}", day):
+                continue
+        e["days"] = d
+        e["rel"] = hits + (2 if DOMAIN_RE.search(title_hay) else 0) + (1 if e.get("perks") else 0)
+        keep.append(e)
+    keep.sort(key=lambda e: (e["days"], -e["rel"], e["title"]))
+    keep = keep[:60]
+    print(f"Local events: {len(evs)} fetched -> {len(keep)} interesting, attendable, next 45 days.")
+    return keep
+
+
+def _ev_li(e):
+    tag = " <b style='color:#b45309'>NEW</b>" if e.get("is_new") else ""
+    when = e.get("starts_full", "")[:16].replace("T", " ") + "Z" if e.get("starts_full") else e.get("starts", "")
+    perks = f" &middot; {escape(e['perks'])}" if e.get("perks") else ""
+    org = f" &middot; {escape(e['company'])}" if e.get("company") else ""
+    return (f"<li style='margin:3px 0'><a href='{escape(e['url'])}'>{escape(e['title'])}</a>{tag} "
+            f"<span style='font-size:12px;color:#444'>&mdash; {escape(when)} &middot; &#128205; {escape(e.get('location') or ('online' if e.get('online') else ''))}"
+            f"{org}{perks} <span style='color:#999'>[{escape(e.get('source',''))}]</span></span></li>")
 
 
 def digest_hackathons(filters):
@@ -894,6 +1071,8 @@ FETCHERS = {
     "rss": fetch_rss,
     "devpost": fetch_devpost,
     "mlh": fetch_mlh,
+    "engage": fetch_engage,
+    "luma": fetch_luma,
 }
 
 
@@ -1808,6 +1987,8 @@ def _opp_li(o, days, status, is_new):
     tag = " <b style='color:#b45309'>NEW</b>" if is_new else ""
     if o.get("_also_in_feed"):
         tag += " <span style='color:#888;font-size:11px'>(also in hackathon feeds)</span>"
+    if (o.get("status") or "").lower() in ("applied", "done"):
+        tag += " <b style='color:#2f6f4f'>&#9989; applied</b>"
     if days is not None:
         when = (f"<b style='color:#b91c1c'>closes in {days}d</b>" if days <= 10
                 else f"closes in {days}d")
@@ -1942,6 +2123,140 @@ def write_ics(opps_visible, mlh_visible, filters):
     print(f"{ICS_FILE} written: {sum(1 for l in lines if l == 'BEGIN:VEVENT')} event(s).")
 
 
+# ---------------- ranking: "the top 5, for me, with why" ----------------
+_MONEY_RE = re.compile(r"[\$€£]\s?([\d,]{3,})")
+_TRAVEL_RE = re.compile(r"reimburs|travel (?:cover|paid|stipend|grant|expense)|all[- ]expenses|housing|lodging|hotel|stipend|flights?", re.I)
+_NOTELIG_RE = re.compile(r"not eligible|ineligible|aged out|high.?school", re.I)
+
+
+def _money(txt):
+    m = _MONEY_RE.search(txt or "")
+    return int(m.group(1).replace(",", "")) if m else 0
+
+
+def _days_to(iso, today):
+    import datetime as _dt
+    try:
+        return (_dt.date.fromisoformat(iso[:10]) - today).days
+    except (ValueError, TypeError):
+        return None
+
+
+def _rank_candidates(today, filters, opps_vis, programs, hacks_vis, mlh_vis):
+    """Unify every visible item into one scored list. Score = fit for Alex:
+    kind, travel paid, prize, urgency, being where he is, novelty. Applied /
+    ineligible / calendar-conflict items drop out. Returns sorted dicts with
+    a human 'why'."""
+    cands = []
+    def add(kind, name, url, place, date, deadline, prize_txt, travel_txt, is_new, applied, elig, conflict, base):
+        if applied or _NOTELIG_RE.search(elig or "") or _NOTELIG_RE.search(travel_txt or ""):
+            return
+        why, score = [], base
+        d_dead, d_ev = _days_to(deadline, today), _days_to(date, today)
+        if d_dead is not None and d_dead < 0:
+            return
+        if d_ev is not None and d_ev < -1:
+            return
+        if re.search(r"\(MLH\)", travel_txt or ""):
+            score += 4; why.append("MLH (travel often reimbursed)")
+        elif _TRAVEL_RE.search(travel_txt or "") and not re.search(r"none|n/a|unknown|not listed|check page|see page|tbd|tba|\?", travel_txt or "", re.I):
+            score += 20; why.append(f"travel/housing: {travel_txt[:50]}")
+        pz = _money(prize_txt)
+        if pz >= 50000: score += 15; why.append(f"${pz:,} prizes")
+        elif pz >= 10000: score += 10; why.append(f"${pz:,} prizes")
+        elif pz >= 1000: score += 5; why.append(f"${pz:,} prizes")
+        if d_dead is not None:
+            if d_dead <= 7: score += 15; why.append(f"closes in {d_dead}d")
+            elif d_dead <= 14: score += 10; why.append(f"closes in {d_dead}d")
+            elif d_dead <= 30: score += 5; why.append(f"closes in {d_dead}d")
+        elif d_ev is not None and 0 <= d_ev <= 21:
+            score += 8; why.append(f"in {d_ev}d")
+        if is_new: score += 8; why.append("new")
+        region = _loc_region(place)
+        if region != "online":
+            import datetime as _dt
+            day = _dt.date.fromisoformat(date[:10]) if date else today
+            where, label = _alex_region(filters, day)
+            local = _is_local(filters, place, day)
+            if region == where and not local:
+                score += 6; why.append("in person, " + ("US/Canada" if where == "us" else "Europe"))
+            if local: score += 18; why.append(f"local ({label.split(' (')[0]}), no travel")
+            if SPAIN_RE.search(place or ""): score += 5
+            # Feasibility: can't plan a trip to an out-of-town event that starts
+            # in <5 days (and it probably closed registration anyway).
+            if not local and d_ev is not None and d_ev < 5:
+                score -= 25; why.append("too soon to travel")
+        if (kind in ("hackathon",) and not pz and _loc_region(place) == "online"):
+            score -= 10
+        if not date and not deadline:
+            score -= 22; why.append("no date posted")
+        if conflict: score -= 30; why.append(f"calendar conflict: {conflict}")
+        cands.append({"kind": kind, "name": name, "url": url, "place": place, "date": date, "deadline": deadline,
+                      "score": score, "why": ", ".join(why) or kind.replace("-", " "), "is_new": is_new, "d_dead": d_dead})
+    for o in opps_vis:
+        base = {"hackathon": 50, "trading-competition": 45, "firm-program": 45, "pitch-competition": 30, "datathon": 45,
+                "fellowship": 25, "conference": 25, "programming-puzzles": 10}.get(o.get("type"), 25)
+        if (o.get("format") or "") == "online": base -= 20
+        add(o.get("type", "event"), o["name"], o.get("apply_url") or o.get("url", ""), o.get("location", ""), o.get("event_date"),
+            o.get("deadline"), f"{o.get('prizes','')} {o.get('perks','')}", f"{o.get('travel','')} {o.get('perks','')}",
+            o.get("_is_new"), (o.get("status") or "").lower() in ("applied", "done", "skip", "dismissed", "ignore"), o.get("eligibility", "") + " " + o.get("notes", ""),
+            o.get("conflict"), base)
+    for pr in programs:
+        add("firm-program", f"{pr['company']}: {pr['title']}", pr["url"], pr.get("location", ""), None, None, "", "",
+            pr.get("is_new"), False, "", None, 40)
+    for h in hacks_vis:
+        add("hackathon", h["title"], h["url"], "Online" if h["online"] else h["location"], _dp_start_iso(h), None,
+            f"${h['prize']:,}" if h.get("prize") else "", "", h.get("is_new"), False, "", None, 15 if h["online"] else 45)
+    for e in mlh_vis:
+        add("hackathon", e["title"], e["url"], e["location"], e.get("starts"), None, "", "travel reimbursement usual (MLH)",
+            e.get("is_new"), False, "", None, 48)
+    cands.sort(key=lambda c: (-c["score"], c["d_dead"] if c["d_dead"] is not None else 10**6))
+    return cands
+
+
+def _pick_top(cands, n=5, per_kind=3, floor=40):
+    """Top-N with diversity: at most `per_kind` of one kind so hackathons can't
+    take every slot -- but never fill a slot with something scoring under
+    `floor` (undated interest forms) just because it's a different kind. If the
+    diverse pass can't fill N above the floor, fall back to pure score order."""
+    out, seen = [], {}
+    for c in cands:
+        if c["score"] < floor:
+            break
+        if seen.get(c["kind"], 0) >= per_kind:
+            continue
+        out.append(c); seen[c["kind"]] = seen.get(c["kind"], 0) + 1
+        if len(out) >= n:
+            return out
+    for c in cands:
+        if len(out) >= n:
+            break
+        if c not in out:
+            out.append(c)
+    return out
+
+
+def _is_local(filters, place, day):
+    """Is this venue in the city Alex is in on `day`? Local events need no travel
+    and can be decided same-day, so they rank up and skip the lead-time penalty."""
+    where, label = _alex_region(filters, day)
+    for w in filters.get("whereabouts", []):
+        if w.get("label") == label and w.get("local"):
+            return bool(re.search(w["local"], place or "", re.I))
+    return bool(re.search(filters.get("default_local", r"atlanta|georgia tech|\bgt\b|midtown|\bga\b"), place or "", re.I))
+
+
+def _top_li(c, i):
+    when = ""
+    if c["d_dead"] is not None:
+        when = f" &middot; <b style='color:#b91c1c'>deadline {escape(c['deadline'])} ({c['d_dead']}d)</b>"
+    elif c.get("date"):
+        when = f" &middot; {escape(c['date'])}"
+    return (f"<li style='margin:7px 0'><b>{i}.</b> <a href='{escape(c['url'])}'><b>{escape(c['name'])}</b></a>"
+            f"{' <b style=\"color:#b45309\">NEW</b>' if c.get('is_new') else ''}{when}"
+            f"<br><span style='font-size:12px;color:#444'>&#128205; {escape(c['place'] or 'online')} &middot; why: {escape(c['why'])}</span></li>")
+
+
 def _mlh_li(e):
     tag = " <b style='color:#b45309'>NEW</b>" if e.get("is_new") else ""
     where = "Online" if e["online"] else escape(e["location"])
@@ -2010,6 +2325,15 @@ def send_weekly_digest():
         h["is_new"] = key not in new_seen
         if h["is_new"]:
             new_seen[key] = {"title": h["title"], "url": h["url"]}
+    local_evs = digest_local_events(config, filters)
+    ev_baseline = not any(k.startswith("ev::") for k in new_seen)   # first run: record silently
+    for e in local_evs:
+        key = f"ev::{e['id']}"
+        e["is_new"] = (key not in new_seen) and not ev_baseline
+        if e["is_new"]:
+            new_seen[key] = {"title": e["title"], "url": e["url"]}
+    n_new_ev = sum(1 for e in local_evs if e["is_new"])
+
     mlh = digest_mlh(filters)
     for e in mlh:
         key = f"mlh::{e['id']}"
@@ -2037,12 +2361,16 @@ def send_weekly_digest():
     for o in opps:
         o["_also_in_feed"] = _norm_name(o.get("name")) in feed_norms
     visible, hidden, expired, new_ids = [], [], [], []
+    applied = []
     for o in opps:
         status, days = _opp_state(o, today)
+        if (o.get("status") or "").lower() in ("applied", "done"):
+            applied.append(o); new_seen.setdefault(f"opp::{o.get('id')}", {"title": o.get("name", ""), "url": o.get("url", "")}); continue
         if status == "expired":
             expired.append(o); continue
         key = f"opp::{o.get('id')}"
         is_new = key not in new_seen
+        o["_is_new"] = is_new
         if is_new:
             new_ids.append(o.get("id"))
             new_seen[key] = {"title": o.get("name", ""), "url": o.get("url", "")}
@@ -2061,6 +2389,20 @@ def send_weekly_digest():
                              for w in filters.get("whereabouts", []))
         + " &middot; otherwise Atlanta/US. Online always shown. &#127466;&#127480; = Spain.</p>"
     ]
+
+    ranked = _rank_candidates(today, filters, [v[1] for v in visible], programs, hacks_vis, mlh_vis)
+    top5 = _pick_top(ranked, 5, 3)   # hackathons are #1 for him; allow 3 of a kind
+    if top5:
+        parts.append("<div style='border:2px solid #1553b0;border-radius:8px;padding:8px 14px;margin:14px 0;background:#eef4ff'>"
+                     "<h2 style='margin:4px 0'>&#11088; Your top 5 right now</h2>"
+                     "<p style='margin:2px 0 6px;color:#555;font-size:12px'>Ranked for you: travel paid, prize, deadline, where you'll be, new. "
+                     "Applied and ineligible things are excluded.</p><ol style='padding-left:18px;margin:0'>")
+        for i, c in enumerate(top5, 1):
+            parts.append(_top_li(c, i))
+        parts.append("</ol></div>")
+    if applied:
+        parts.append("<p style='font-size:12px;color:#2f6f4f'>&#9989; Applied: "
+                     + ", ".join(f"<a href='{escape(a.get('url',''))}'>{escape(a['name'])}</a>" + (f" ({a['applied_on']})" if a.get('applied_on') else "") for a in applied) + "</p>")
 
     if FEED_ERRORS:
         parts.append("<div style='border-left:4px solid #b91c1c;padding:6px 12px;margin:12px 0;background:#fef2f2'>"
@@ -2122,6 +2464,22 @@ def send_weekly_digest():
             parts.append(f"<p style='color:#888;font-size:12px'>Hidden: {len(mlh_hidden)} in-person MLH event(s) where you won't be: "
                          + ", ".join(escape(e['title']) for e in mlh_hidden[:10]) + "</p>")
 
+    # ---- 2a-local) things to go to this month (GT Engage + Luma), interest-filtered ----
+    if local_evs:
+        parts.append("<!--sec:local-->")
+        parts.append(f"<hr><h2>&#127963;&#65039; Go to this: {len(local_evs)} events near you, next 45 days</h2>"
+                     "<p style='color:#666;font-size:12px'>GT Engage (every club) + lu.ma calendars, filtered to AI / quant / math / "
+                     "startups / career / outdoors / arts, and to the city you're in on that date. "
+                     f"{n_new_ev} new since last send.</p><ul style='font-size:13px'>")
+        this_week = [e for e in local_evs if e["days"] <= 7]; later = [e for e in local_evs if e["days"] > 7]
+        if this_week:
+            parts.append("<li style='list-style:none;margin:6px 0 2px'><b>This week</b></li>")
+            parts += [_ev_li(e) for e in this_week]
+        if later:
+            parts.append("<li style='list-style:none;margin:10px 0 2px'><b>Later</b></li>")
+            parts += [_ev_li(e) for e in later[:40]]
+        parts.append("</ul><!--/sec:local-->")
+
     # ---- 2a) hackathons (always complete; in-person first, by prize) ----
     if hacks_vis:
         ip = [h for h in hacks_vis if not h["online"]]; on = [h for h in hacks_vis if h["online"]]
@@ -2176,8 +2534,9 @@ def send_weekly_digest():
                          f"{escape(pr['title'])}</a>{loc}{tag}</li>")
         parts.append("</ul><!--/sec:programs-->")
 
-    # ---- 3) discovery feed ----
-    if discovered:
+    # ---- 3) discovery feed -- OFF (Alex 2026-11-05: "cut the Reddit/news feed");
+    # RSS still runs for the scout/state, just isn't rendered. ----
+    if discovered and filters.get("show_discovery"):
         parts.append("<!--sec:discovery-->")
         parts.append(f"<hr><h2>&#128269; Discovery feed &mdash; {len(discovered)} new mention(s)</h2>"
                      "<p style='color:#666;font-size:12px'>Raw hits from news / Reddit / HN feeds. "
@@ -2217,7 +2576,7 @@ def send_weekly_digest():
 
     html_out = "\n".join(parts)
     # ---- Gmail clips messages over ~102 KB. Shed optional sections, lowest value first. ----
-    for sec in ("discovery", "programs", "devpost-online", "health"):
+    for sec in ("discovery", "programs", "devpost-online", "local", "health"):
         if len(html_out.encode("utf-8")) <= 95_000:
             break
         html_out, n = re.subn(rf"<!--sec:{sec}-->.*?<!--/sec:{sec}-->", "", html_out, flags=re.S)
@@ -2230,10 +2589,17 @@ def send_weekly_digest():
     except Exception as e:  # noqa: BLE001
         print(f"  x ics not written: {e}")
 
-    subj = f"[Watcher] {len(visible) + len(programs) + len(hacks_vis) + len(mlh_vis)} open"
-    if n_new + n_new_prog + n_new_hack + n_new_mlh: subj += f" · {n_new + n_new_prog + n_new_hack + n_new_mlh} new"
-    if closing: subj += f" · {len(closing)} closing soon"
-    send_email(subj + " — opportunities digest", html_out)
+    if top5:
+        t = top5[0]
+        hook = (f"closes in {t['d_dead']}d" if t["d_dead"] is not None else (t["date"] or "")) or t["place"]
+        subj = f"[Watcher] ★ {t['name'][:60]} — {hook}"
+        more = len(top5) - 1
+        if more: subj += f" · +{more} picks"
+        n_new_total = n_new + n_new_prog + n_new_hack + n_new_mlh + n_new_ev
+        if n_new_total: subj += f" · {n_new_total} new"
+    else:
+        subj = f"[Watcher] {len(visible) + len(programs) + len(hacks_vis) + len(mlh_vis)} open — opportunities digest"
+    send_email(subj, html_out)
     if DRY_RUN:
         print("DRY RUN: state not saved.")
     else:

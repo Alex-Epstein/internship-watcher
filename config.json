@@ -212,16 +212,25 @@
         "from": "2027-01-20",
         "to": "2027-05-20",
         "region": "europe",
-        "label": "Madrid (study abroad)"
+        "label": "Madrid (study abroad)",
+        "local": "madrid"
       },
       {
         "from": "2027-06-07",
         "to": "2027-08-14",
         "region": "us",
-        "label": "NYC (Walleye)"
+        "label": "NYC (Walleye)",
+        "local": "new york|nyc|manhattan|brooklyn|jersey city|secaucus"
       }
     ],
-    "default_region": "us"
+    "default_region": "us",
+    "profile": {
+      "grad_year": 2029,
+      "class_year": "sophomore",
+      "school": "Georgia Tech",
+      "note": "Walleye offer letter still says May 2028; eligibility checks use 2029."
+    },
+    "default_local": "atlanta|georgia tech|\\bgt\\b|midtown|decatur|\\bga\\b"
   },
   "firms": [
     {
@@ -4836,7 +4845,7 @@
       "name": "RSS: Google News – trading competition (students)",
       "ats": "rss",
       "url": "https://news.google.com/rss/search?q=%22trading+competition%22+(undergraduate+OR+students)&hl=en-US&gl=US&ceid=US:en",
-      "digest": true,
+      "digest": false,
       "watch_keywords": [
         "competition",
         "hackathon",
@@ -4858,7 +4867,7 @@
       "name": "RSS: Google News – datathon",
       "ats": "rss",
       "url": "https://news.google.com/rss/search?q=datathon+students&hl=en-US&gl=US&ceid=US:en",
-      "digest": true,
+      "digest": false,
       "watch_keywords": [
         "competition",
         "hackathon",
@@ -4880,7 +4889,7 @@
       "name": "RSS: Google News – hackathon travel",
       "ats": "rss",
       "url": "https://news.google.com/rss/search?q=hackathon+(%22travel+reimbursement%22+OR+%22travel+stipend%22)&hl=en-US&gl=US&ceid=US:en",
-      "digest": true,
+      "digest": false,
       "watch_keywords": [
         "competition",
         "hackathon",
@@ -4902,7 +4911,7 @@
       "name": "RSS: Google News – quant competition",
       "ats": "rss",
       "url": "https://news.google.com/rss/search?q=quant+competition+undergraduate&hl=en-US&gl=US&ceid=US:en",
-      "digest": true,
+      "digest": false,
       "watch_keywords": [
         "competition",
         "hackathon",
@@ -4924,7 +4933,7 @@
       "name": "RSS: Google News – student fellowship",
       "ats": "rss",
       "url": "https://news.google.com/rss/search?q=%22fellowship%22+undergraduate+apply+2026&hl=en-US&gl=US&ceid=US:en",
-      "digest": true,
+      "digest": false,
       "watch_keywords": [
         "competition",
         "hackathon",
@@ -4946,7 +4955,7 @@
       "name": "RSS: Reddit r/quant",
       "ats": "rss",
       "url": "https://www.reddit.com/r/quant/new/.rss",
-      "digest": true,
+      "digest": false,
       "watch_keywords": [
         "competition",
         "hackathon",
@@ -4968,7 +4977,7 @@
       "name": "RSS: HN – competition",
       "ats": "rss",
       "url": "https://hnrss.org/newest?q=competition+students",
-      "digest": true,
+      "digest": false,
       "watch_keywords": [
         "competition",
         "hackathon",
@@ -5266,7 +5275,7 @@
       "name": "RSS: Google News – student hackathon prizes",
       "ats": "rss",
       "url": "https://news.google.com/rss/search?q=hackathon+(students+OR+university)+(prize+OR+%22cash+prizes%22)&hl=en-US&gl=US&ceid=US:en",
-      "digest": true,
+      "digest": false,
       "watch_keywords": [
         "hackathon",
         "prize",
@@ -5281,7 +5290,7 @@
       "name": "RSS: Google News – AI hackathon",
       "ats": "rss",
       "url": "https://news.google.com/rss/search?q=%22AI+hackathon%22+2026&hl=en-US&gl=US&ceid=US:en",
-      "digest": true,
+      "digest": false,
       "watch_keywords": [
         "hackathon",
         "prize",
@@ -5329,6 +5338,360 @@
         "2027",
         "apply",
         "prize"
+      ]
+    },
+    {
+      "name": "Luma: Atlanta",
+      "ats": "luma",
+      "url": "https://lu.ma/atlanta",
+      "region": "us",
+      "digest": true,
+      "city": "Atlanta"
+    },
+    {
+      "name": "Luma: Madrid",
+      "ats": "luma",
+      "url": "https://lu.ma/madrid",
+      "region": "europe",
+      "digest": true,
+      "city": "Madrid"
+    },
+    {
+      "name": "Luma: NYC",
+      "ats": "luma",
+      "url": "https://lu.ma/nyc",
+      "region": "us",
+      "digest": true,
+      "city": "New York, NYC"
+    },
+    {
+      "name": "Event: GT College of Computing events",
+      "ats": "pagewatch",
+      "url": "https://www.cc.gatech.edu/events",
+      "digest": true,
+      "watch_keywords": [
+        "register",
+        "apply",
+        "2026",
+        "2027",
+        "event",
+        "talk",
+        "hackathon"
+      ]
+    },
+    {
+      "name": "Event: ML@GT events",
+      "ats": "pagewatch",
+      "url": "https://ml.gatech.edu/events",
+      "digest": true,
+      "watch_keywords": [
+        "register",
+        "apply",
+        "2026",
+        "2027",
+        "event",
+        "talk",
+        "hackathon"
+      ]
+    },
+    {
+      "name": "Event: GT Math seminars & colloquia",
+      "ats": "pagewatch",
+      "url": "https://math.gatech.edu/seminars-colloquia",
+      "digest": true,
+      "watch_keywords": [
+        "register",
+        "apply",
+        "2026",
+        "2027",
+        "event",
+        "talk",
+        "hackathon"
+      ]
+    },
+    {
+      "name": "Event: Scheller events",
+      "ats": "pagewatch",
+      "url": "https://www.scheller.gatech.edu/events/",
+      "digest": true,
+      "watch_keywords": [
+        "register",
+        "apply",
+        "2026",
+        "2027",
+        "event",
+        "talk",
+        "hackathon"
+      ]
+    },
+    {
+      "name": "Event: InVenture Prize",
+      "ats": "pagewatch",
+      "url": "https://inventureprize.gatech.edu/",
+      "digest": true,
+      "watch_keywords": [
+        "register",
+        "apply",
+        "2026",
+        "2027",
+        "event",
+        "talk",
+        "hackathon"
+      ]
+    },
+    {
+      "name": "Event: Startup Exchange",
+      "ats": "pagewatch",
+      "url": "https://startup.exchange/",
+      "digest": true,
+      "watch_keywords": [
+        "register",
+        "apply",
+        "2026",
+        "2027",
+        "event",
+        "talk",
+        "hackathon"
+      ]
+    },
+    {
+      "name": "Event: ORGT outdoor trips",
+      "ats": "pagewatch",
+      "url": "https://crc.gatech.edu/orgt",
+      "digest": true,
+      "watch_keywords": [
+        "register",
+        "apply",
+        "2026",
+        "2027",
+        "event",
+        "talk",
+        "hackathon"
+      ]
+    },
+    {
+      "name": "Event: GT Arts / Ferst Center",
+      "ats": "pagewatch",
+      "url": "https://arts.gatech.edu/events",
+      "digest": true,
+      "watch_keywords": [
+        "register",
+        "apply",
+        "2026",
+        "2027",
+        "event",
+        "talk",
+        "hackathon"
+      ]
+    },
+    {
+      "name": "Event: GT Daily Digest",
+      "ats": "pagewatch",
+      "url": "https://news.gatech.edu/daily-digest",
+      "digest": true,
+      "watch_keywords": [
+        "register",
+        "apply",
+        "2026",
+        "2027",
+        "event",
+        "talk",
+        "hackathon"
+      ]
+    },
+    {
+      "name": "Event: Atlanta Tech Village",
+      "ats": "pagewatch",
+      "url": "https://atlantatechvillage.com/events/",
+      "digest": true,
+      "watch_keywords": [
+        "register",
+        "apply",
+        "2026",
+        "2027",
+        "event",
+        "talk",
+        "hackathon"
+      ]
+    },
+    {
+      "name": "Event: Switchyards",
+      "ats": "pagewatch",
+      "url": "https://www.switchyards.com/events",
+      "digest": true,
+      "watch_keywords": [
+        "register",
+        "apply",
+        "2026",
+        "2027",
+        "event",
+        "talk",
+        "hackathon"
+      ]
+    },
+    {
+      "name": "Event: Atlanta Tech Week",
+      "ats": "pagewatch",
+      "url": "https://www.atlantatechweek.com/",
+      "digest": true,
+      "watch_keywords": [
+        "register",
+        "apply",
+        "2026",
+        "2027",
+        "event",
+        "talk",
+        "hackathon"
+      ]
+    },
+    {
+      "name": "Event: AI Tinkerers Atlanta",
+      "ats": "pagewatch",
+      "url": "https://atlanta.aitinkerers.org/",
+      "digest": true,
+      "watch_keywords": [
+        "register",
+        "apply",
+        "2026",
+        "2027",
+        "event",
+        "talk",
+        "hackathon"
+      ]
+    },
+    {
+      "name": "Event: High Museum",
+      "ats": "pagewatch",
+      "url": "https://high.org/events/",
+      "digest": true,
+      "watch_keywords": [
+        "register",
+        "apply",
+        "2026",
+        "2027",
+        "event",
+        "talk",
+        "hackathon"
+      ]
+    },
+    {
+      "name": "Event: ESN Madrid",
+      "ats": "pagewatch",
+      "url": "https://esnmadrid.org/",
+      "digest": true,
+      "watch_keywords": [
+        "register",
+        "apply",
+        "2026",
+        "2027",
+        "event",
+        "talk",
+        "hackathon"
+      ]
+    },
+    {
+      "name": "Event: Google for Startups Campus Madrid",
+      "ats": "pagewatch",
+      "url": "https://www.campus.co/madrid/",
+      "digest": true,
+      "watch_keywords": [
+        "register",
+        "apply",
+        "2026",
+        "2027",
+        "event",
+        "talk",
+        "hackathon"
+      ]
+    },
+    {
+      "name": "Event: South Summit Madrid",
+      "ats": "pagewatch",
+      "url": "https://www.southsummit.io/",
+      "digest": true,
+      "watch_keywords": [
+        "register",
+        "apply",
+        "2026",
+        "2027",
+        "event",
+        "talk",
+        "hackathon"
+      ]
+    },
+    {
+      "name": "Program: D. E. Shaw campus",
+      "ats": "pagewatch",
+      "url": "https://campus.deshaw.com/",
+      "digest": true,
+      "watch_keywords": [
+        "register",
+        "apply",
+        "2026",
+        "2027",
+        "event",
+        "talk",
+        "hackathon"
+      ]
+    },
+    {
+      "name": "Fellowship: a16z speedrun",
+      "ats": "pagewatch",
+      "url": "https://a16z.com/speedrun/",
+      "digest": true,
+      "watch_keywords": [
+        "register",
+        "apply",
+        "2026",
+        "2027",
+        "event",
+        "talk",
+        "hackathon"
+      ]
+    },
+    {
+      "name": "Program: YC Startup School",
+      "ats": "pagewatch",
+      "url": "https://www.startupschool.org/",
+      "digest": true,
+      "watch_keywords": [
+        "register",
+        "apply",
+        "2026",
+        "2027",
+        "event",
+        "talk",
+        "hackathon"
+      ]
+    },
+    {
+      "name": "Program: SPAR (AI safety research)",
+      "ats": "pagewatch",
+      "url": "https://sparai.org/",
+      "digest": true,
+      "watch_keywords": [
+        "register",
+        "apply",
+        "2026",
+        "2027",
+        "event",
+        "talk",
+        "hackathon"
+      ]
+    },
+    {
+      "name": "Competition: Good Judgment Open (forecasting)",
+      "ats": "pagewatch",
+      "url": "https://www.gjopen.com/",
+      "digest": true,
+      "watch_keywords": [
+        "register",
+        "apply",
+        "2026",
+        "2027",
+        "event",
+        "talk",
+        "hackathon"
       ]
     }
   ]

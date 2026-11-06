@@ -31,7 +31,9 @@
       "prizes": "$2,000 stipend",
       "perks": "breakfast + lunch, social activities with the team; 5-day workshop on trading systems, C++23, Python, Linux, network stacks, distributed systems",
       "eligibility": "CURRENT SOPHOMORES (second year of university). Apply once; session assigned in offer process.",
-      "notes": "Three sessions: Jan 4-8 2027, Jan 11-15 2027, Aug 9-13 2027. Jan sessions are before Madrid; Aug 9-13 may overlap the tail of Walleye. No deadline posted = rolling, apply now. Needs transcript upload. Found via LinkedIn (Beyond the Code)."
+      "notes": "Three sessions: Jan 4-8 2027, Jan 11-15 2027, Aug 9-13 2027. Jan sessions are before Madrid; Aug 9-13 may overlap the tail of Walleye. No deadline posted = rolling, apply now. Needs transcript upload. Found via LinkedIn (Beyond the Code).",
+      "status": "applied",
+      "applied_on": "2026-11-05"
     },
     {
       "id": "cornell-trading-2026",
@@ -401,6 +403,54 @@
       "perks": "build an AI app live on the AI Summit NY show floor; winners announced Dec 10",
       "eligibility": "current US-based university students (undergrad/master's/PhD) or early-career pros, 18+; must be available in person Dec 9, 10 and 11",
       "notes": "Scout find 2026-11-02: WebSearch, verified on organizer page. Applications 'will be open soon', no deadline posted yet. Fly ATL to NYC; check finals schedule."
+    },
+    {
+      "id": "yutc-2027",
+      "name": "Yale Undergraduate Trading Competition (YUTC) 2027",
+      "type": "trading-competition",
+      "url": "https://www.yutc.org/",
+      "event_date": "2027-04-03",
+      "deadline": "2026-11-20",
+      "location": "Omni New Haven Hotel at Yale, New Haven CT",
+      "format": "in-person",
+      "season": "spring",
+      "travel": "travel to/from New Haven reimbursed + hotel arranged for non-Yale competitors",
+      "prizes": "see page",
+      "perks": "decisions early January",
+      "eligibility": "undergraduates",
+      "notes": "Apps close Nov 20 11:59pm ET. Apr 3-4 2027 = you'll be in Madrid -- hidden by the calendar. Apply only if you'd fly back."
+    },
+    {
+      "id": "good-judgment-open",
+      "name": "Good Judgment Open (forecasting tournaments)",
+      "type": "competition",
+      "url": "https://www.gjopen.com/",
+      "event_date": null,
+      "deadline": null,
+      "location": "online",
+      "format": "online",
+      "season": "rolling",
+      "travel": "n/a",
+      "prizes": "leaderboard / superforecaster track",
+      "perks": "",
+      "eligibility": "anyone",
+      "notes": "Rolling. Metaculus blocks bots; check metaculus.com/tournaments manually."
+    },
+    {
+      "id": "yc-startup-school",
+      "name": "YC Startup School (free online course + co-founder matching)",
+      "type": "program",
+      "url": "https://www.startupschool.org/",
+      "event_date": null,
+      "deadline": null,
+      "location": "online",
+      "format": "online",
+      "season": "rolling",
+      "travel": "n/a",
+      "prizes": "",
+      "perks": "",
+      "eligibility": "anyone",
+      "notes": "Rolling."
     }
   ]
 }

@@ -10,6 +10,8 @@
    are skipped in this mode since Sunday already covers them.
    **Expect a quiet inbox** — as of 2026-08-07 zero Fall-2027 roles were open
    across 36 top-firm boards. Fall recruiting opens later in the year.
+   NOTE 2026-11-05: he now graduates May 2029, so **Summer 2028** is his next
+   real internship cycle — widen `fall_2027_only` when that opens (~Aug 2027).
 2. **Wed + Sun 14:00 UTC opportunities digest** (see "Opportunities digest").
 
 `_is_fall_2027()` gotcha: a title naming another cycle ("Summer 2027 …") is that
@@ -46,6 +48,28 @@ pouncing on. Sections, in order:
    and *dropped* — no "intern" in the title and not Fall 2027 — while the digest
    never looked at boards at all. Programs posted as job reqs fell between both
    systems. Alex found it on LinkedIn.
+0. **⭐ Your top 5 right now** (2026-11-05, Alex: "I never open it; make it so I
+   can't miss the good stuff"). `_rank_candidates()` unifies every visible item
+   (curated opps, firm programs, Devpost, MLH) and scores: kind base (in-person
+   hackathon 45–50, firm program 40–45, trading comp 45, online hackathon 15,
+   fellowship 25) + travel/housing paid 20 + prize (5/10/15) + deadline urgency
+   (≤7d 15, ≤14d 10, ≤30d 5) + new 8 + in-person where he'll be 10 + Spain 5
+   − calendar conflict 30. **Applied** (`status: applied` in opportunities.json)
+   and ineligible items are excluded. Each pick carries a generated "why". The
+   **subject line is the #1 pick** ("★ <name> — closes in Nd · +4 picks · N new"),
+   not a count. An "✅ Applied" line lists what he's done. Discovery (Reddit/
+   news RSS) is **no longer rendered** (`filters.show_discovery` to re-enable).
+4b. **"Go to this" — local events** (2026-11-05, Alex: "ANYTHING and EVERYTHING I
+   might want to go to, at GT, in Atlanta and beyond"). `fetch_engage()` hits GT
+   Engage's public CampusLabs search API (every registered club's events, ~600),
+   `fetch_luma()` reads lu.ma city calendars (Atlanta / Madrid / NYC, events in
+   `__NEXT_DATA__`). `digest_local_events()` keeps the next 45 days, requires a
+   `DOMAIN_RE` hit (AI/quant/math/startups/career/outdoors/arts — generic words
+   like "meetup" alone are not enough), drops `NOISE_RE` (worship, greek life,
+   GBMs…), and shows in-person only if `_is_local()` matches the CITY he's in on
+   that date (`whereabouts[].local` regex / `default_local`). Capped at 60, "this
+   week" first. NEW-flagged via `ev::`; first run is a silent baseline. GT's
+   calendar.gatech.edu has no feed (Localist API 404s) — Engage covers it.
 5. **Hackathons — two structured feeds, always complete** (added 2026-10-29,
    Alex: "hackathons are LIT — hella money, amazing for resume, fun + travel"):
    - `fetch_mlh()` — MLH's 2027 season page is an Inertia app; the full
@@ -99,7 +123,11 @@ hash yet is baselined **silently**, so a keying change can't flood the first ema
 
 ## Who this is for (drives all filtering)
 
-- Georgia Tech, B.S. Mathematics & Computer Science, **graduating May 2028**
+- Georgia Tech, B.S. Mathematics & Computer Science, **graduating May 2029** (corrected
+  2026-11-05; Walleye's offer letter still says May 2028). He is an **underclassman /
+  sophomore** — sophomore-only and first/second-year programs COUNT. `filters.profile`
+  in config.json carries grad_year/class_year for the scout and eligibility notes.
+  Consequence: **Summer 2028 internship recruiting is live for him** (opens ~Aug 2027).
 - **U.S. Citizen with an active Secret security clearance** — still a major edge for
   defense/gov roles, but as of 2026-07-22 clearance roles are **no longer broken into
   their own email section** (Alex's call). `clearance_keywords` / `is_clearance()` are
