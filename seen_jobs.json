@@ -11618,5 +11618,9 @@
     "n": 1,
     "title": "Scholarship: HKN awards (Madni)",
     "err": "HTTPSConnectionPool(host='hkn.ieee.org', port=443): Read timed out. (read timeout=15)"
+  },
+  "pw::https://trexquant.com/careers::#80eb45de99b05744": {
+    "title": "Page changed - check Quant SPA: Trexquant Investment (may mean applications opened)",
+    "url": "https://trexquant.com/careers"
   }
 }
