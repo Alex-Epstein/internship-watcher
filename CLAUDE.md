@@ -72,10 +72,14 @@ pouncing on. Sections, in order:
    calendar.gatech.edu has no feed (Localist API 404s) — Engage covers it.
 5. **Hackathons — two structured feeds, always complete** (added 2026-10-29,
    Alex: "hackathons are LIT — hella money, amazing for resume, fun + travel"):
-   - `fetch_mlh()` — MLH's 2027 season page is an Inertia app; the full
-     `upcomingEvents` list is JSON inside `<script data-page="app"
-     type="application/json">` (NOT a `data-page=` attribute, and the
-     `/events.rss` URL serves HTML). `digest_mlh()` keeps AMER+EMEA.
+   - `fetch_mlh()` — MLH's season page is an Inertia app; `upcomingEvents` is
+     JSON inside `<script data-page="app" type="application/json">` (NOT a
+     `data-page=` attribute; `/events.rss` serves HTML). **Gotcha #12
+     (2026-11-05): mlh.io now 301s to www.mlh.com, which caps the list at 24
+     per response** — we silently saw 24 of ~63 for a while. `fetch_mlh` unions
+     ~27 `?region=` / `?search=` queries (`MLH_QUERIES`) in parallel and dedups
+     by id; a query failing is logged, all failing raises. `digest_mlh()` keeps
+     AMER+EMEA.
    - `fetch_devpost()` — `devpost.com/api/hackathons?status[]=open&status[]=
      upcoming` is a real JSON API (prize, dates, location, org). `digest_
      hackathons()` keeps USD/EUR/GBP, drops high-school + India/APAC-only,
