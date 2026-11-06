@@ -1251,11 +1251,15 @@ def send_email(subject, html):
     port = int(os.environ.get("SMTP_PORT") or "465")
     user = os.environ.get("SMTP_USERNAME")
     password = os.environ.get("SMTP_PASSWORD")
-    to_addr = os.environ.get("EMAIL_TO") or user
+    # EMAIL_TO may be a comma/space-separated list so the digest can land in
+    # more than one inbox (e.g. school + personal) -- one missed inbox was the
+    # #1 "I'm not getting emails" cause.
+    to_addrs = [a.strip() for a in re.split(r"[,;\s]+", os.environ.get("EMAIL_TO") or user or "") if a.strip()]
 
-    if not (user and password and to_addr):
+    if not (user and password and to_addrs):
         print("ERROR: set SMTP_USERNAME, SMTP_PASSWORD, and EMAIL_TO.", file=sys.stderr)
         sys.exit(1)
+    to_addr = ", ".join(to_addrs)
 
     msg = MIMEMultipart("alternative")
     msg["Subject"] = subject
@@ -1268,7 +1272,7 @@ def send_email(subject, html):
         try:
             with smtplib.SMTP_SSL(host, port, timeout=TIMEOUT) as server:
                 server.login(user, password)
-                server.sendmail(user, [to_addr], msg.as_string())
+                server.sendmail(user, to_addrs, msg.as_string())
             print(f"Email sent to {to_addr}: {subject}")
             return
         except (smtplib.SMTPException, OSError) as e:  # noqa: PERF203
