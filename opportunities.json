@@ -33,7 +33,8 @@
       "eligibility": "CURRENT SOPHOMORES (second year of university). Apply once; session assigned in offer process.",
       "notes": "Three sessions: Jan 4-8 2027, Jan 11-15 2027, Aug 9-13 2027. Jan sessions are before Madrid; Aug 9-13 may overlap the tail of Walleye. No deadline posted = rolling, apply now. Needs transcript upload. Found via LinkedIn (Beyond the Code).",
       "status": "applied",
-      "applied_on": "2026-11-05"
+      "applied_on": "2026-11-05",
+      "conflict": "TBD Tortola trip Jan 3-8 + dentist Jan 4 10:30am (Jan session only; Aug session is separate)"
     },
     {
       "id": "cornell-trading-2026",
@@ -209,7 +210,8 @@
       "prizes": "see page",
       "perks": "present to Point72 investors",
       "eligibility": "team from your university (check page for class years)",
-      "notes": "Register by Oct 1 -> case sent Oct 2 -> submit deck by Oct 12 -> finalists named Oct 26 -> final deck Nov 9 -> finals NYC Nov 12-13. Fundamental stock pitch, not quant. Caught by the new firm-board sweep."
+      "notes": "Register by Oct 1 -> case sent Oct 2 -> submit deck by Oct 12 -> finalists named Oct 26 -> final deck Nov 9 -> finals NYC Nov 12-13. Fundamental stock pitch, not quant. Caught by the new firm-board sweep.",
+      "conflict": "CS 1332 Exam 2 at 12:30pm Nov 12 (CCB 016)"
     },
     {
       "id": "imc-chess-academy-2027",
@@ -402,7 +404,8 @@
       "prizes": "not stated; two categories: Best App for Agentic AI, Best App for Computer Vision",
       "perks": "build an AI app live on the AI Summit NY show floor; winners announced Dec 10",
       "eligibility": "current US-based university students (undergrad/master's/PhD) or early-career pros, 18+; must be available in person Dec 9, 10 and 11",
-      "notes": "Scout find 2026-11-02: WebSearch, verified on organizer page. Applications 'will be open soon', no deadline posted yet. Fly ATL to NYC; check finals schedule."
+      "notes": "Scout find 2026-11-02: WebSearch, verified on organizer page. Applications 'will be open soon', no deadline posted yet. Fly ATL to NYC; check finals schedule.",
+      "conflict": "NeurIPS in Atlanta Dec 9-13 (on calendar)"
     },
     {
       "id": "yutc-2027",
@@ -451,6 +454,58 @@
       "perks": "",
       "eligibility": "anyone",
       "notes": "Rolling."
+    },
+    {
+      "id": "emory-hacks-2026",
+      "name": "Emory Hacks 2026 (36h, Emory University)",
+      "type": "hackathon",
+      "url": "https://www.emoryhacks.com",
+      "apply_url": "https://luma.com/erlwfmoi",
+      "event_date": "2026-11-13",
+      "deadline": null,
+      "location": "Emory University, Atlanta, GA",
+      "format": "in-person",
+      "season": "fall",
+      "travel": "none (no travel reimbursement; Atlanta, no travel needed)",
+      "prizes": "not stated on site",
+      "perks": "free; food and swag provided",
+      "eligibility": "any undergraduate or graduate student; teams up to 4; rolling registration",
+      "notes": "Scout find 2026-11-09: hackathonradar.com/discover/atlanta, verified on emoryhacks.com. Tracks: healthcare, entertainment, security, rogue. Nov 13-15.",
+      "conflict": "NYC/Newark trip Nov 13-15 (United flight 9:40am Nov 13, back Nov 15)"
+    },
+    {
+      "id": "optiver-futurefocus-quants-2027",
+      "name": "Optiver FutureFocus: Quants 2027 (5-day program, Amsterdam)",
+      "type": "firm-program",
+      "url": "https://www.optiver.com/join-us/jobs/8745619002?gh_jid=8745619002",
+      "apply_url": "https://www.optiver.com/join-us/jobs/8745619002?gh_jid=8745619002",
+      "event_date": "2027-05-10",
+      "deadline": "2027-02-01",
+      "location": "Optiver HQ, Amsterdam",
+      "format": "in-person",
+      "season": "spring",
+      "travel": "fully covered (hotel + travel)",
+      "prizes": "possible fast-tracked internship offer",
+      "perks": "5 days of trading/research lectures, workshops, networking; meals",
+      "eligibility": "graduating 2029 (matches); must be studying at a university in UK/Ireland/Europe. EU week May 10 (EU deadline Feb 1, 2027); UK/IE weeks Apr 5 and Apr 12 (deadline Dec 6, 2026). Eligibility as a GT student on exchange in Madrid is UNCLEAR, worth emailing Optiver.",
+      "notes": "Scout find 2026-11-09: web search, verified on optiver.com. Class-year match is exact (2029 grads); he is in Madrid during the EU week."
+    },
+    {
+      "id": "gsa-insight-programme-2027",
+      "name": "GSA General Trading & Technology Insight Programme 2027 (London)",
+      "type": "firm-program",
+      "url": "https://www.gsacapital.com/careers/gh/?gh_jid=8870173002",
+      "apply_url": "https://www.gsacapital.com/careers/gh/?gh_jid=8870173002",
+      "event_date": null,
+      "deadline": null,
+      "location": "GSA office, London",
+      "format": "in-person",
+      "season": "spring",
+      "travel": "accommodation and travel covered (visa case by case)",
+      "prizes": "",
+      "perks": "quant research/tech challenges, 1:1 mentorship",
+      "eligibility": "first-year STEM undergrads at any university globally; second-years considered in certain cases (he is a sophomore, so a stretch). Rolling review.",
+      "notes": "Scout find 2026-11-09: builtinlondon.uk listing, confirmed via GSA's Greenhouse API (job 8870173002, published 2026-10-08). Spring 2027 dates not yet given; he is in Madrid then."
     }
   ]
 }
