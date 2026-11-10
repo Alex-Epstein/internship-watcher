@@ -1,6 +1,6 @@
 # Open roles right now
 
-_Auto-generated each run; do not hand-edit. Last update: 2026-11-10 04:45 UTC. 22 posting(s) currently open and matching filters._
+_Auto-generated each run; do not hand-edit. Last update: 2026-11-10 13:37 UTC. 23 posting(s) currently open and matching filters._
 
 ## Amazon (AWS / Robotics / all) (1)
 
@@ -71,3 +71,7 @@ _Auto-generated each run; do not hand-edit. Last update: 2026-11-10 04:45 UTC. 2
 ## Quant SPA: Wolverine Trading (1)
 
 - [Quant SPA: Wolverine Trading — Page changed - check Quant SPA: Wolverine Trading (may mean applications opened)](https://www.wolve.com/careers)
+
+## RSS: Google News – trading competition (students) (1)
+
+- [RSS: Google News – trading competition (students) — Baruch College Dominates Traders@MIT Fall Intercollegiate Trading Competition - Baruch News Center.](https://news.google.com/rss/articles/CBMi1wFBVV95cUxPU1JmU0V1ZUVpYjh5Y3IzV29rZ1FpTjNRZzdRUVZUbk1XYmN5ZU1FSnA1YkpBSTBSS2g5UnRNVHpYbExnWVFJdlZZOGkzRnhfbGlSZXpabUwwN29vRUdVaE1DWlN5NWlRWkVUb2p3Q01KNTBZclI4bkdlM0ZwQmFRMjM4N0JKSlhLWjRTSDZtWklPNkU3ZU0wRU9uM0hvMVFONTBPOUJ4Nzg2cGUzZnBtYi1MUERfbGNWdkQ5Q3JoMENFYkpPZDBRaXRWdDdtNzlFbzJCb2RoOA?oc=5)
