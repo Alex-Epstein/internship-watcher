@@ -1,6 +1,6 @@
 # Top picks (auto-generated)
 
-_Quant / SWE / ML roles in target cities. 21 of 23 open roles. Rebuilt every sweep: 2026-11-12 20:57 UTC._
+_Quant / SWE / ML roles in target cities. 22 of 24 open roles. Rebuilt every sweep: 2026-11-13 01:57 UTC._
 
 Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant elsewhere, then other SWE/ML. Within each, sweet-spot firms before elite.
 
@@ -22,6 +22,7 @@ Ranked by Alex's criteria: NYC quant first, Chicago quant second, then quant els
 - [Quant SPA: Squarepoint Capital — Page changed - check Quant SPA: Squarepoint Capital (may mean applications opened)](https://www.squarepoint-capital.com/early-careers)
 - [Quant SPA: Trexquant Investment — Page changed - check Quant SPA: Trexquant Investment (may mean applications opened)](https://trexquant.com/careers)
 - [Quant SPA: Verition Fund Management — Page changed - check Quant SPA: Verition Fund Management (may mean applications opened)](https://www.verition.com/)
+- [RSS: Google News – trading competition (students) — Baruch College Claims Two Top 10 Finishes at Traders@MIT Fall Intercollegiate Competition - Baruch News Center.](https://news.google.com/rss/articles/CBMiyAFBVV95cUxPN0gwOXZEeWxlcnhRUVJkeFpFX0NfWnNRczc3TUFnTFJCOGlpemNPd2VnVjI2eFVsbE53R0htazZYLWhSMjNqZS1SYXpGYy1kT0ZkazhYWnFVTlV3amx5R05rM3h5SHdERFowX0syVjE2UDhXeHNoNUM1d1ktSlMyV0pBS3BCWFpZeU9oVVAxajhBN01GTi16QW05ei1XN2lpS094ZXpZUlRZSTU1X0VhbkdFalJCZVVFYUNTWXJwdEZiQWYxc24xdw?oc=5)
 - [RSS: Google News – trading competition (students) — Baruch College Dominates Traders@MIT Fall Intercollegiate Trading Competition - Baruch News Center.](https://news.google.com/rss/articles/CBMi1wFBVV95cUxPU1JmU0V1ZUVpYjh5Y3IzV29rZ1FpTjNRZzdRUVZUbk1XYmN5ZU1FSnA1YkpBSTBSS2g5UnRNVHpYbExnWVFJdlZZOGkzRnhfbGlSZXpabUwwN29vRUdVaE1DWlN5NWlRWkVUb2p3Q01KNTBZclI4bkdlM0ZwQmFRMjM4N0JKSlhLWjRTSDZtWklPNkU3ZU0wRU9uM0hvMVFONTBPOUJ4Nzg2cGUzZnBtYi1MUERfbGNWdkQ5Q3JoMENFYkpPZDBRaXRWdDdtNzlFbzJCb2RoOA?oc=5)
 - [Quant SPA: Cumberland (DRW) — Page changed - check Quant SPA: Cumberland (DRW) (may mean applications opened)](https://cumberland.io/careers/) ⚡elite
 - [Quant SPA: Headlands Tech — Page changed - check Quant SPA: Headlands Tech (may mean applications opened)](https://www.headlandstech.com/careers/) ⚡elite

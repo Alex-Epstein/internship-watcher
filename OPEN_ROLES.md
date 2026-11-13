@@ -1,6 +1,6 @@
 # Open roles right now
 
-_Auto-generated each run; do not hand-edit. Last update: 2026-11-12 20:57 UTC. 23 posting(s) currently open and matching filters._
+_Auto-generated each run; do not hand-edit. Last update: 2026-11-13 01:57 UTC. 24 posting(s) currently open and matching filters._
 
 ## Amazon (AWS / Robotics / all) (1)
 
@@ -72,6 +72,7 @@ _Auto-generated each run; do not hand-edit. Last update: 2026-11-12 20:57 UTC. 2
 
 - [Quant SPA: Wolverine Trading — Page changed - check Quant SPA: Wolverine Trading (may mean applications opened)](https://www.wolve.com/careers)
 
-## RSS: Google News – trading competition (students) (1)
+## RSS: Google News – trading competition (students) (2)
 
+- [RSS: Google News – trading competition (students) — Baruch College Claims Two Top 10 Finishes at Traders@MIT Fall Intercollegiate Competition - Baruch News Center.](https://news.google.com/rss/articles/CBMiyAFBVV95cUxPN0gwOXZEeWxlcnhRUVJkeFpFX0NfWnNRczc3TUFnTFJCOGlpemNPd2VnVjI2eFVsbE53R0htazZYLWhSMjNqZS1SYXpGYy1kT0ZkazhYWnFVTlV3amx5R05rM3h5SHdERFowX0syVjE2UDhXeHNoNUM1d1ktSlMyV0pBS3BCWFpZeU9oVVAxajhBN01GTi16QW05ei1XN2lpS094ZXpZUlRZSTU1X0VhbkdFalJCZVVFYUNTWXJwdEZiQWYxc24xdw?oc=5)
 - [RSS: Google News – trading competition (students) — Baruch College Dominates Traders@MIT Fall Intercollegiate Trading Competition - Baruch News Center.](https://news.google.com/rss/articles/CBMi1wFBVV95cUxPU1JmU0V1ZUVpYjh5Y3IzV29rZ1FpTjNRZzdRUVZUbk1XYmN5ZU1FSnA1YkpBSTBSS2g5UnRNVHpYbExnWVFJdlZZOGkzRnhfbGlSZXpabUwwN29vRUdVaE1DWlN5NWlRWkVUb2p3Q01KNTBZclI4bkdlM0ZwQmFRMjM4N0JKSlhLWjRTSDZtWklPNkU3ZU0wRU9uM0hvMVFONTBPOUJ4Nzg2cGUzZnBtYi1MUERfbGNWdkQ5Q3JoMENFYkpPZDBRaXRWdDdtNzlFbzJCb2RoOA?oc=5)
