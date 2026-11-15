@@ -10111,10 +10111,6 @@
     "title": "Page changed - check Competition: IEEEXtreme (24h, October) (may mean applications opened)",
     "url": "https://ieeextreme.org/"
   },
-  "pwflap::https://www.treehacks.com/": {
-    "n": 3,
-    "title": "Hackathon: TreeHacks (Stanford)"
-  },
   "pw::https://www.treehacks.com/::#49fc193ffb43572c": {
     "title": "Page changed - check Hackathon: TreeHacks (Stanford) (may mean applications opened)",
     "url": "https://www.treehacks.com/"
@@ -10124,7 +10120,7 @@
     "url": "https://www.hertzfoundation.org/the-fellowship/"
   },
   "pwflap::https://atcoder.jp/contests/": {
-    "n": 3,
+    "n": 4,
     "title": "Competition: AtCoder"
   },
   "pw::https://atcoder.jp/contests/::#c3c56789b66d6e80": {
@@ -11184,118 +11180,104 @@
     "url": "https://www.hackathonradar.com/discover/atlanta"
   },
   "health::https://nreip.asee.org/": {
-    "n": 3,
+    "n": 4,
     "title": "Lab: NREIP (Navy research)",
     "err": "HTTPSConnectionPool(host='nreip.asee.org', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host="
   },
   "health::https://www.jpl.nasa.gov/careers/internships/": {
-    "n": 3,
+    "n": 4,
     "title": "Lab: JPL internships",
     "err": "404 Client Error: Not Found for url: https://www.jpl.nasa.gov/careers/internships/"
   },
   "health::https://www.mitre.org/careers/student-programs": {
-    "n": 3,
+    "n": 4,
     "title": "Program: MITRE student programs",
     "err": "403 Client Error: Forbidden for url: https://www.mitre.org/careers/student-programs"
   },
   "health::https://neo.substack.com/archive": {
-    "n": 3,
+    "n": 4,
     "title": "Fellowship: Neo Scholars (via Substack archive)",
     "err": "403 Client Error: Forbidden for url: https://neo.substack.com/archive"
   },
   "health::https://nsa-codebreaker.org/": {
-    "n": 3,
+    "n": 4,
     "title": "NatSec: NSA Codebreaker (fall launch)",
     "err": "403 Client Error: Forbidden for url: https://nsa-codebreaker.org/"
   },
   "health::https://www.ll.mit.edu/careers/entry-professionals/internships-cooperative-programs": {
-    "n": 3,
+    "n": 4,
     "title": "Lab: MIT Lincoln Laboratory internships",
     "err": "404 Client Error: Not Found for url: https://www.ll.mit.edu/careers/entry-professionals/internships-cooperative-programs"
   },
   "health::https://readytradergo.optiver.com/": {
-    "n": 3,
+    "n": 4,
     "title": "Competition: Optiver Ready Trader Go",
     "err": "HTTPSConnectionPool(host='readytradergo.optiver.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLS"
   },
   "health::https://devpost.com/hackathons?open_to[]=public": {
-    "n": 3,
+    "n": 4,
     "title": "Hackathon: Devpost featured",
     "err": "406 Client Error: Not Acceptable for url: https://devpost.com/hackathons?open_to%5B%5D=public"
   },
-  "health::https://www.usenix.org/conferences/student-grants": {
-    "n": 3,
-    "title": "Grant: USENIX student grants",
-    "err": "403 Client Error: Forbidden for url: https://www.usenix.org/conferences/student-grants"
-  },
   "health::https://www.citadel.com/careers/investing/citadel-associate-program/apply-for-2026-intercollegiate-stock-pitch-competition/": {
-    "n": 3,
+    "n": 4,
     "title": "Event: Citadel Intercollegiate Stock Pitch",
     "err": "403 Client Error: Forbidden for url: https://www.citadel.com/careers/investing/citadel-associate-program/apply-for-2026-intercollegiate-stoc"
   },
   "health::https://www.citadelsecurities.com/careers/programs-and-events/": {
-    "n": 3,
+    "n": 4,
     "title": "Event: Citadel Securities programs & events",
     "err": "403 Client Error: Forbidden for url: https://www.citadelsecurities.com/careers/programs-and-events/"
   },
   "health::https://www.citadelsecurities.com/careers/programs-and-events/the-trading-invitational/": {
-    "n": 3,
+    "n": 4,
     "title": "Event: Citadel Securities Trading Invitational",
     "err": "403 Client Error: Forbidden for url: https://www.citadelsecurities.com/careers/programs-and-events/the-trading-invitational/"
   },
   "health::https://traders.studentorg.berkeley.edu/competition.html": {
-    "n": 3,
+    "n": 4,
     "title": "Event: Traders at Berkeley competition",
     "err": "404 Client Error: Not Found for url: https://traders.studentorg.berkeley.edu/competition.html"
   },
   "health::https://datathon.rice.edu/": {
-    "n": 3,
+    "n": 4,
     "title": "Event: Rice Datathon",
     "err": "HTTPSConnectionPool(host='datathon.rice.edu', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, \"["
   },
   "health::https://www.georgetownquants.com/competition": {
-    "n": 3,
+    "n": 4,
     "title": "Event: Georgetown Quants competition",
     "err": "HTTPSConnectionPool(host='www.georgetownquants.com', port=443): Max retries exceeded with url: /competition (Caused by SSLError(SSLCertVerif"
   },
   "health::https://www.citadel.com/careers/programs-and-events/datathons/": {
-    "n": 3,
+    "n": 4,
     "title": "Event: Citadel datathons",
     "err": "403 Client Error: Forbidden for url: https://www.citadel.com/careers/programs-and-events/datathons/"
   },
   "health::https://princetonfintechquant.org/": {
-    "n": 3,
+    "n": 4,
     "title": "Event: Princeton Fintech & Quant Conference",
     "err": "HTTPSConnectionPool(host='princetonfintechquant.org', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConne"
   },
   "health::https://www.hudsonrivertrading.com/careers/": {
-    "n": 3,
+    "n": 4,
     "title": "Event: HRT students",
     "err": "403 Client Error: Forbidden for url: https://www.hudsonrivertrading.com/careers/"
   },
   "health::https://tamids.tamu.edu/student-data-science-competition/": {
-    "n": 3,
+    "n": 4,
     "title": "Event: TAMIDS data science competitions",
     "err": "404 Client Error: Not Found for url: https://tamids.tamu.edu/student-data-science-competition/"
   },
-  "health::https://ichack.org/": {
-    "n": 3,
-    "title": "Hackathon: IC Hack (Imperial)",
-    "err": "403 Client Error: Forbidden for url: https://ichack.org/"
-  },
   "health::oldmissioncapital": {
-    "n": 3,
+    "n": 4,
     "title": "Quant: Old Mission",
     "err": "404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/oldmissioncapital/jobs?content=true"
   },
   "health::plaid": {
-    "n": 3,
+    "n": 4,
     "title": "Quant/Tech: Plaid",
     "err": "404 Client Error: Not Found for url: https://api.lever.co/v0/postings/plaid?mode=json"
-  },
-  "pwflap::https://www.csaw.io/": {
-    "n": 2,
-    "title": "Competition: CSAW CTF (NYU)"
   },
   "pw::https://www.csaw.io/::#36a561b0cdc73a03": {
     "title": "Page changed - check Competition: CSAW CTF (NYU) (may mean applications opened)",
@@ -11318,7 +11300,7 @@
     "url": "https://traders.mit.edu/competition"
   },
   "pwflap::https://quantchallenges.com/": {
-    "n": 2,
+    "n": 3,
     "title": "Event: QuantChallenges.com (aggregator)"
   },
   "pw::https://quantchallenges.com/::#10759322e055d864": {
@@ -11370,16 +11352,12 @@
     "url": "https://www.reddit.com/r/quant/comments/1xkkewm/c_lowlatency_engineering_in_mft_vs_hft_firms_how/"
   },
   "pwflap::https://lablab.ai/event": {
-    "n": 2,
+    "n": 3,
     "title": "Hackathon: lablab.ai AI hackathons"
   },
   "pw::https://lablab.ai/event::#ed45c8bc041fd0b2": {
     "title": "Page changed - check Hackathon: lablab.ai AI hackathons (may mean applications opened)",
     "url": "https://lablab.ai/event"
-  },
-  "pwflap::https://lu.ma/hackathons": {
-    "n": 2,
-    "title": "Hackathon: Luma hackathons"
   },
   "pw::https://lu.ma/hackathons::#3a313fdd7c673683": {
     "title": "Page changed - check Hackathon: Luma hackathons (may mean applications opened)",
@@ -11606,7 +11584,7 @@
     "url": "https://trexquant.com/careers"
   },
   "pwflap::https://mlh.io/seasons/2027/events": {
-    "n": 1,
+    "n": 2,
     "title": "Hackathons: MLH 2027 season"
   },
   "pw::https://mlh.io/seasons/2027/events::#72e83a711b25c01c": {
@@ -11622,7 +11600,7 @@
     "url": "https://www.treehacks.com/"
   },
   "pwflap::https://pennapps.com/": {
-    "n": 1,
+    "n": 2,
     "title": "Hackathon: PennApps"
   },
   "pw::https://pennapps.com/::#5ab90e9a0cdb0f4d": {
@@ -11630,16 +11608,12 @@
     "url": "https://pennapps.com/"
   },
   "pwflap::https://www.rhodeshouse.ox.ac.uk/scholarships/": {
-    "n": 1,
+    "n": 2,
     "title": "Fellowship: Rhodes Scholarship"
   },
   "pw::https://www.rhodeshouse.ox.ac.uk/scholarships/::#b00b38a70522f927": {
     "title": "Page changed - check Fellowship: Rhodes Scholarship (may mean applications opened)",
     "url": "https://www.rhodeshouse.ox.ac.uk/scholarships/"
-  },
-  "pwflap::https://iclr.cc/": {
-    "n": 1,
-    "title": "Conference: ICLR"
   },
   "pw::https://iclr.cc/::#dfc8aeb39828e31c": {
     "title": "Page changed - check Conference: ICLR (may mean applications opened)",
@@ -11648,10 +11622,6 @@
   "pw::https://atcoder.jp/contests/::#88f4f0230bf4754b": {
     "title": "Page changed - check Competition: AtCoder (may mean applications opened)",
     "url": "https://atcoder.jp/contests/"
-  },
-  "pwflap::https://midwesttrading.uchicago.edu/competition.html": {
-    "n": 1,
-    "title": "Event: UChicago Midwest Trading Competition"
   },
   "pw::https://midwesttrading.uchicago.edu/competition.html::#aedc34d47cef4d6b": {
     "title": "Page changed - check Event: UChicago Midwest Trading Competition (may mean applications opened)",
@@ -11662,7 +11632,7 @@
     "url": "https://quantchallenges.com/"
   },
   "pwflap::https://quantvault.org/quant-trading-competitions-2026.html": {
-    "n": 1,
+    "n": 2,
     "title": "Event: QuantVault competitions list"
   },
   "pw::https://quantvault.org/quant-trading-competitions-2026.html::#6ed66414efd2fc26": {
@@ -11994,17 +11964,17 @@
     "url": "https://www.startupschool.org/"
   },
   "health::https://atlanta.aitinkerers.org/": {
-    "n": 1,
+    "n": 2,
     "title": "Event: AI Tinkerers Atlanta",
     "err": "406 Client Error: Not Acceptable for url: https://atlanta.aitinkerers.org/"
   },
   "health::https://www.gjopen.com/": {
-    "n": 1,
+    "n": 2,
     "title": "Competition: Good Judgment Open (forecasting)",
     "err": "406 Client Error: Not Acceptable for url: https://www.gjopen.com/"
   },
   "health::https://www.startupschool.org/": {
-    "n": 1,
+    "n": 2,
     "title": "Program: YC Startup School",
     "err": "404 Client Error: Not Found for url: https://www.startupschool.org/"
   },
@@ -12019,5 +11989,329 @@
   "https://news.google.com/rss/articles/cbmiyafbvv95cuxpn0gwoxzeewxlcnhruvjkefpfx0nfwnnrczc3tufntfjcoglpemnpd2vnvji2efvsbe53r0htazzylwhsmjnqzs1syxpgyy1kt0zkazhywnfvtlv3amx5r05rm3h5shderfowx0syvje2udhxehnonum1d1ktslmyv0pbs3bcwfpzeu9ovvaxajhbn01gti16qw05ei1xn2lps094zxpzulrzstu1x0vhbkdfaljczvvfyuntwxjwdeziqwyxc24xdw?oc=5": {
     "title": "Baruch College Claims Two Top 10 Finishes at Traders@MIT Fall Intercollegiate Competition - Baruch News Center.",
     "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPN0gwOXZEeWxlcnhRUVJkeFpFX0NfWnNRczc3TUFnTFJCOGlpemNPd2VnVjI2eFVsbE53R0htazZYLWhSMjNqZS1SYXpGYy1kT0ZkazhYWnFVTlV3amx5R05rM3h5SHdERFowX0syVjE2UDhXeHNoNUM1d1ktSlMyV0pBS3BCWFpZeU9oVVAxajhBN01GTi16QW05ei1XN2lpS094ZXpZUlRZSTU1X0VhbkdFalJCZVVFYUNTWXJwdEZiQWYxc24xdw?oc=5"
+  },
+  "pw::https://mlh.io/seasons/2027/events::#a56f3dbc3053cc78": {
+    "title": "Page changed - check Hackathons: MLH 2027 season (may mean applications opened)",
+    "url": "https://mlh.io/seasons/2027/events"
+  },
+  "pwflap::https://careers.cern/summer": {
+    "n": 1,
+    "title": "Abroad: CERN summer student"
+  },
+  "pw::https://careers.cern/summer::#5fb62bbeb107515e": {
+    "title": "Page changed - check Abroad: CERN summer student (may mean applications opened)",
+    "url": "https://careers.cern/summer"
+  },
+  "pwflap::https://www.math.vt.edu/": {
+    "n": 1,
+    "title": "Competition: Virginia Tech Regional Math Contest"
+  },
+  "pw::https://www.math.vt.edu/::#2aa151e222f97cb4": {
+    "title": "Page changed - check Competition: Virginia Tech Regional Math Contest (may mean applications opened)",
+    "url": "https://www.math.vt.edu/"
+  },
+  "pwflap::https://summerofcode.withgoogle.com/": {
+    "n": 1,
+    "title": "Competition: Google Summer of Code"
+  },
+  "pw::https://summerofcode.withgoogle.com/::#948ca76ce3a75be1": {
+    "title": "Page changed - check Competition: Google Summer of Code (may mean applications opened)",
+    "url": "https://summerofcode.withgoogle.com/"
+  },
+  "pw::https://pennapps.com/::#d8b37f3d9809a6f3": {
+    "title": "Page changed - check Hackathon: PennApps (may mean applications opened)",
+    "url": "https://pennapps.com/"
+  },
+  "pwflap::https://www.hertzfoundation.org/the-fellowship/": {
+    "n": 1,
+    "title": "Fellowship: Hertz (senior year)"
+  },
+  "pw::https://www.hertzfoundation.org/the-fellowship/::#869db5dfef3e829b": {
+    "title": "Page changed - check Fellowship: Hertz (senior year) (may mean applications opened)",
+    "url": "https://www.hertzfoundation.org/the-fellowship/"
+  },
+  "pw::https://www.rhodeshouse.ox.ac.uk/scholarships/::#abc9d715e4cda86b": {
+    "title": "Page changed - check Fellowship: Rhodes Scholarship (may mean applications opened)",
+    "url": "https://www.rhodeshouse.ox.ac.uk/scholarships/"
+  },
+  "pw::https://atcoder.jp/contests/::#1335ef4a34cc8116": {
+    "title": "Page changed - check Competition: AtCoder (may mean applications opened)",
+    "url": "https://atcoder.jp/contests/"
+  },
+  "pw::https://www.usenix.org/conferences/student-grants::#093655ab3e6f834a": {
+    "title": "Page changed - check Grant: USENIX student grants (may mean applications opened)",
+    "url": "https://www.usenix.org/conferences/student-grants"
+  },
+  "pw::https://quantchallenges.com/::#8fe15461b3b0e3fe": {
+    "title": "Page changed - check Event: QuantChallenges.com (aggregator) (may mean applications opened)",
+    "url": "https://quantchallenges.com/"
+  },
+  "pw::https://quantvault.org/quant-trading-competitions-2026.html::#7c3a9080accd1d58": {
+    "title": "Page changed - check Event: QuantVault competitions list (may mean applications opened)",
+    "url": "https://quantvault.org/quant-trading-competitions-2026.html"
+  },
+  "pwflap::https://makeathon.tum-ai.com/": {
+    "n": 1,
+    "title": "Hackathon: TUM.ai Makeathon"
+  },
+  "pw::https://makeathon.tum-ai.com/::#17d5e69dea423842": {
+    "title": "Page changed - check Hackathon: TUM.ai Makeathon (may mean applications opened)",
+    "url": "https://makeathon.tum-ai.com/"
+  },
+  "pw::https://ichack.org/::#e3b0c44298fc1c14": {
+    "title": "Page changed - check Hackathon: IC Hack (Imperial) (may mean applications opened)",
+    "url": "https://ichack.org/"
+  },
+  "pw::https://lablab.ai/event::#0cc0287b12b6141d": {
+    "title": "Page changed - check Hackathon: lablab.ai AI hackathons (may mean applications opened)",
+    "url": "https://lablab.ai/event"
+  },
+  "https://lu.ma/e1gylh3q": {
+    "title": "For Immediate Release: The State of Black Media",
+    "url": "https://lu.ma/e1gylh3q"
+  },
+  "https://lu.ma/wgjyow5d": {
+    "title": "Soft Space Studios @ The High Museum",
+    "url": "https://lu.ma/wgjyow5d"
+  },
+  "https://lu.ma/c17qs2po": {
+    "title": "Common Ground Vol. 1: Friendsgiving",
+    "url": "https://lu.ma/c17qs2po"
+  },
+  "https://lu.ma/yahkmivv": {
+    "title": "Soft Space Studios ATL x K6MIL Workshop",
+    "url": "https://lu.ma/yahkmivv"
+  },
+  "https://lu.ma/gxqbbyi0": {
+    "title": "SIP N PRESS",
+    "url": "https://lu.ma/gxqbbyi0"
+  },
+  "https://lu.ma/0qgv8b7r": {
+    "title": "Terra Dolce: December 7 - Atlanta, GA",
+    "url": "https://lu.ma/0qgv8b7r"
+  },
+  "https://lu.ma/amhab1gw": {
+    "title": "December Tech Square Game Day + Lunch HOLIDAY EDITION",
+    "url": "https://lu.ma/amhab1gw"
+  },
+  "https://lu.ma/48vcqp6k": {
+    "title": "ARC Prize @ NeurIPS 2026",
+    "url": "https://lu.ma/48vcqp6k"
+  },
+  "https://lu.ma/claude-m948": {
+    "title": "Madrid | Claude Build Workshop: Women",
+    "url": "https://lu.ma/claude-m948"
+  },
+  "https://lu.ma/beqm7gja": {
+    "title": "Inauguración",
+    "url": "https://lu.ma/beqm7gja"
+  },
+  "https://lu.ma/nz3sbuj7": {
+    "title": "Tu voz también diseña: Comunica tus ideas con impacto Workshop",
+    "url": "https://lu.ma/nz3sbuj7"
+  },
+  "https://lu.ma/guirisde-az64": {
+    "title": "GDM WEEKENDS | November Edition 👋",
+    "url": "https://lu.ma/guirisde-az64"
+  },
+  "https://lu.ma/lojncuyg": {
+    "title": "✨ SHEPLAYS GOLD · BRUNCH EDITION ✨",
+    "url": "https://lu.ma/lojncuyg"
+  },
+  "https://lu.ma/sei23sxk": {
+    "title": "Festival RIZOMA: proyeccion Ruta Norte, de Raúl García",
+    "url": "https://lu.ma/sei23sxk"
+  },
+  "https://lu.ma/98ccfocp": {
+    "title": "AI Show & Tell | Women in Tech x SheAI #2",
+    "url": "https://lu.ma/98ccfocp"
+  },
+  "https://lu.ma/backga-vglo": {
+    "title": "Backgammon Social x Expreso Martinez",
+    "url": "https://lu.ma/backga-vglo"
+  },
+  "https://lu.ma/tgh31dtk": {
+    "title": "Lenny’s Newsletter Meetup in Madrid (with free drinks courtesy of PostHog)",
+    "url": "https://lu.ma/tgh31dtk"
+  },
+  "https://lu.ma/ectvj61w": {
+    "title": "Diseño e IA by Arcasiles",
+    "url": "https://lu.ma/ectvj61w"
+  },
+  "https://lu.ma/abh2bc5z": {
+    "title": "LITTLE SCRAPS OF PAPER LIVE #2: Things we forgot to ask",
+    "url": "https://lu.ma/abh2bc5z"
+  },
+  "https://lu.ma/p7kwad2p": {
+    "title": "Native Pet Holiday Market - Public Pop-Up",
+    "url": "https://lu.ma/p7kwad2p"
+  },
+  "https://lu.ma/saucy": {
+    "title": "En Vivo: WTA Finals",
+    "url": "https://lu.ma/saucy"
+  },
+  "https://lu.ma/muatkdcv": {
+    "title": "Pudu: NYC Film Salon (November)",
+    "url": "https://lu.ma/muatkdcv"
+  },
+  "https://lu.ma/5dmrssvd": {
+    "title": "Solange Candlelit Yoga Flow & Guided Journaling with Tea Service",
+    "url": "https://lu.ma/5dmrssvd"
+  },
+  "https://lu.ma/xohi0wo7": {
+    "title": "Shelf Life: Addie Wagenknecht",
+    "url": "https://lu.ma/xohi0wo7"
+  },
+  "https://lu.ma/2ejsjzk9": {
+    "title": "Reception for Untitled (Nails) and Untitled (Triangle) by Liliana Porter",
+    "url": "https://lu.ma/2ejsjzk9"
+  },
+  "https://lu.ma/merge-00i1": {
+    "title": "Sandboxing in NYC",
+    "url": "https://lu.ma/merge-00i1"
+  },
+  "https://lu.ma/qrgyr0zq": {
+    "title": "THAW: Parenthood on Ice · NYC Premiere · Screening & Panel Discussion",
+    "url": "https://lu.ma/qrgyr0zq"
+  },
+  "https://lu.ma/eidkxzuo": {
+    "title": "Luxury, Business, & Taste with Pauline Brown, Former Chairwoman of LVMH",
+    "url": "https://lu.ma/eidkxzuo"
+  },
+  "https://lu.ma/jy5mz3eb": {
+    "title": "Non-Alcoholic Wine Tasting",
+    "url": "https://lu.ma/jy5mz3eb"
+  },
+  "https://lu.ma/voiceai-workshop-nyc-nov17": {
+    "title": "Agora × Google DeepMind: Gemini Voice AI Workshop | NYC",
+    "url": "https://lu.ma/voiceai-workshop-nyc-nov17"
+  },
+  "https://lu.ma/build-lab-mongodb": {
+    "title": "Durable Memory for AI Agents: Build Lab with MongoDB",
+    "url": "https://lu.ma/build-lab-mongoDB"
+  },
+  "https://lu.ma/reductoai-fiw4": {
+    "title": "Take Flight With Reducto",
+    "url": "https://lu.ma/reductoai-fiw4"
+  },
+  "https://lu.ma/refpxck2": {
+    "title": "Litquidity Happy Hour - Presented by DiligenceSquared",
+    "url": "https://lu.ma/refpxck2"
+  },
+  "https://lu.ma/aayo9054": {
+    "title": "Somartica",
+    "url": "https://lu.ma/aayo9054"
+  },
+  "https://lu.ma/c0b2x3kp": {
+    "title": "Animation Nights New York (ANNY) at The Gutter Spare Room!",
+    "url": "https://lu.ma/c0b2x3kp"
+  },
+  "https://lu.ma/fintech-sqre": {
+    "title": "Fintech Run Club ft. Rain + Monk + JP Morgan",
+    "url": "https://lu.ma/fintech-sqre"
+  },
+  "https://lu.ma/omfr6c0z": {
+    "title": "Ahead of Anthropic's IPO: What's Next for AI Startups?",
+    "url": "https://lu.ma/omfr6c0z"
+  },
+  "https://lu.ma/xwio3j22": {
+    "title": "dev/ai/nyc",
+    "url": "https://lu.ma/xwio3j22"
+  },
+  "https://lu.ma/txvn5a2j": {
+    "title": "Nanonite Social: NYC Nanotechnology Meetup",
+    "url": "https://lu.ma/txvn5a2j"
+  },
+  "pwflap::https://math.gatech.edu/seminars-colloquia": {
+    "n": 1,
+    "title": "Event: GT Math seminars & colloquia"
+  },
+  "pw::https://math.gatech.edu/seminars-colloquia::#802c09950cabda43": {
+    "title": "Page changed - check Event: GT Math seminars & colloquia (may mean applications opened)",
+    "url": "https://math.gatech.edu/seminars-colloquia"
+  },
+  "pwflap::https://atlantatechvillage.com/events/": {
+    "n": 1,
+    "title": "Event: Atlanta Tech Village"
+  },
+  "pw::https://atlantatechvillage.com/events/::#bf9455ebaa195b10": {
+    "title": "Page changed - check Event: Atlanta Tech Village (may mean applications opened)",
+    "url": "https://atlantatechvillage.com/events/"
+  },
+  "pwflap::https://sparai.org/": {
+    "n": 1,
+    "title": "Program: SPAR (AI safety research)"
+  },
+  "pw::https://sparai.org/::#9b1b76b97613668b": {
+    "title": "Page changed - check Program: SPAR (AI safety research) (may mean applications opened)",
+    "url": "https://sparai.org/"
+  },
+  "dp::32082": {
+    "title": "DevNetwork [API + Cloud + AI] Hackathon 2027",
+    "url": "https://devnetwork-api-hackathon-2027.devpost.com/"
+  },
+  "dp::31978": {
+    "title": "checkpoint journeys — hanoi",
+    "url": "https://checkpoint-journeys-hanoi.devpost.com/"
+  },
+  "dp::32032": {
+    "title": "Datathon PolyFinances BNC x AWS",
+    "url": "https://datathon-polyfinances-bnc-aws.devpost.com/"
+  },
+  "dp::32120": {
+    "title": "Harvard Undergraduate OpenBio Laboratory Datathon",
+    "url": "https://openbio-datathon.devpost.com/"
+  },
+  "dp::32088": {
+    "title": "UBC eProjects x n8n LOOP Hackathon",
+    "url": "https://loop.devpost.com/"
+  },
+  "dp::31879": {
+    "title": "Immerse the Bay 2026",
+    "url": "https://immerse-the-bay-2026.devpost.com/"
+  },
+  "dp::31644": {
+    "title": "Reddit’s Game of the Day Hackathon",
+    "url": "https://redditgameofday2026.devpost.com/"
+  },
+  "dp::31721": {
+    "title": "EvoHacks 2",
+    "url": "https://evohacks2.devpost.com/"
+  },
+  "dp::31973": {
+    "title": "Deck the Pixels",
+    "url": "https://deckthepixels.devpost.com/"
+  },
+  "dp::32026": {
+    "title": "Open Agentic Web Challenge",
+    "url": "https://cognizant-agenticweb.devpost.com/"
+  },
+  "opp::optiver-futurefocus-quants-2027": {
+    "title": "Optiver FutureFocus: Quants 2027 (5-day program, Amsterdam)",
+    "url": "https://www.optiver.com/join-us/jobs/8745619002?gh_jid=8745619002"
+  },
+  "opp::gsa-insight-programme-2027": {
+    "title": "GSA General Trading & Technology Insight Programme 2027 (London)",
+    "url": "https://www.gsacapital.com/careers/gh/?gh_jid=8870173002"
+  },
+  "health::https://ectf.mitre.org/": {
+    "n": 1,
+    "title": "Competition: MITRE eCTF",
+    "err": "403 Client Error: Forbidden for url: https://ectf.mitre.org/"
+  },
+  "health::https://openai.com/residency/": {
+    "n": 1,
+    "title": "Program: OpenAI residency",
+    "err": "403 Client Error: Forbidden for url: https://openai.com/residency/"
+  },
+  "health::https://openai.com/careers/": {
+    "n": 1,
+    "title": "Program: OpenAI careers",
+    "err": "403 Client Error: Forbidden for url: https://openai.com/careers/"
+  },
+  "health::https://careers.point72.com/": {
+    "n": 1,
+    "title": "Event: Point72 (Sophomore Summit etc)",
+    "err": "HTTPSConnectionPool(host='careers.point72.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "
   }
 }
