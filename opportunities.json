@@ -259,7 +259,7 @@
       "prizes": "top performers get a direct Graduate SWE offer",
       "perks": "5-day program building trading systems with Optiver engineers; AI-amplified dev workflow",
       "eligibility": "NOT ELIGIBLE this round: grad window May 2025-Aug 2027 (you're May 2028)",
-      "notes": "Next editions expected SPRING 2027 -- you'll be in Madrid, Amsterdam is a 2h flight, and the grad window should roll forward. Register interest on the page. Note Optiver's 8-month lockout applies once you sit an assessment. Trading edition is Europe-students-only."
+      "notes": "Next editions expected SPRING 2027 -- you'll be in Madrid, Amsterdam is a 2h flight, and the grad window should roll forward. Register interest on the page. Note Optiver's 8-month lockout applies once you sit an assessment. Trading edition is Europe-students-only. Scout 2026-11-16: spring edition posted (May 10-14, 2027, deadline Feb 7) but grad window is May 2025-Feb 2028, so still NOT eligible."
     },
     {
       "id": "start-hack-2027",
@@ -506,6 +506,58 @@
       "perks": "quant research/tech challenges, 1:1 mentorship",
       "eligibility": "first-year STEM undergrads at any university globally; second-years considered in certain cases (he is a sophomore, so a stretch). Rolling review.",
       "notes": "Scout find 2026-11-09: builtinlondon.uk listing, confirmed via GSA's Greenhouse API (job 8870173002, published 2026-10-08). Spring 2027 dates not yet given; he is in Madrid then."
+    },
+    {
+      "id": "citadel-securities-spark-2027",
+      "name": "Citadel Securities Spark 2027 (sophomore quant trading program)",
+      "type": "firm-program",
+      "url": "https://www.citadelsecurities.com/careers/programs-and-events/citadel-securities-spark/",
+      "apply_url": "https://www.citadelsecurities.com/careers/programs-and-events/citadel-securities-spark/",
+      "event_date": "2027-03-30",
+      "deadline": "2027-02-09",
+      "location": "London, UK (also U.S. cohorts in New York City / Miami)",
+      "format": "in-person",
+      "season": "spring",
+      "travel": "travel stipend to and from host location (NYC, Miami or London) + top-tier paid accommodation",
+      "prizes": "direct pathway to the 2028 quantitative trading internship, with a chance at a fast-tracked offer",
+      "perks": "3 days: trading games, research/modeling on real datasets, electronic trading simulation, small-group time with senior leaders",
+      "eligibility": "sophomores in math/stats/physics/CS or other quant majors graduating winter 2028 or spring 2029 (you qualify, May 2029). No finance experience needed.",
+      "notes": "Scout find 2026-11-16: citadelsecurities.com Spark page. Cohorts: U.S. March 9-11, 16-18 or 23-25, 2027 (apply by Feb 9); London March 30-April 1, 2027 (apply by Feb 19). London is the easy one from Madrid. Rolling review, technical interviews start January 2027, so apply early."
+    },
+    {
+      "id": "nwhacks-2027",
+      "name": "nwHacks 2027 (UBC, Vancouver)",
+      "type": "hackathon",
+      "url": "https://nwhacks.io/",
+      "event_date": "2027-01-16",
+      "deadline": null,
+      "location": "UBC Life Sciences Institute, Vancouver, BC, Canada",
+      "format": "in-person",
+      "season": "winter",
+      "travel": "",
+      "prizes": "",
+      "perks": "Western Canada's largest student hackathon, 12th edition",
+      "eligibility": "page says everyone is welcome; applications not open yet (interest form only)",
+      "notes": "Scout find 2026-11-16: nwhacks.io. Jan 16-17, 2027. Prizes and travel not posted yet.",
+      "conflict": "'ATL !!' block Jan 10-17 (first week of classes) and flight ATL to Washington (DL 727) Jan 17 7:59pm"
+    },
+    {
+      "id": "deltahacks-13",
+      "name": "DeltaHacks 13 (McMaster, Hamilton ON)",
+      "type": "hackathon",
+      "url": "https://deltahacks.com/",
+      "apply_url": "https://portal.deltahacks.com",
+      "event_date": "2027-01-09",
+      "deadline": null,
+      "location": "McMaster University, Hamilton, ON, Canada",
+      "format": "in-person",
+      "season": "winter",
+      "travel": "",
+      "prizes": "prizes to be released later; swag",
+      "perks": "free; food, workshops, mentors provided",
+      "eligibility": "all university students (any school or country) welcome; applications open closer to the event",
+      "notes": "Scout find 2026-11-16: deltahacks.com. Jan 9-10, 2027.",
+      "conflict": "Tortola / travel-with-friends block Jan 3-9 and flight DCA to Atlanta (DL 343) the morning of Jan 10"
     }
   ]
 }
